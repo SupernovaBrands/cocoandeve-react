@@ -20,21 +20,22 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout repository
-        uses: actions/checkout@master
-      - name: Setup node js
+      - uses: actions/checkout@master
+      - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 14.19.0
-      - name: Build and Deploy
-        uses: jeoy/github-deploy-actions@v1.0.1
+          node-version: 12.x
+
+      - name: npm install and build
+        run: |
+          npm install
+          npm run build -- --clearDeploy
+
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
         env:
-          CI: false
-          COMMIT_EMAIL: teddy@supernovabrands.com
-          COMMIT_NAME: Dev github pages auto deployment
-          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BASE_BRANCH: staging
-          DEPLOY_BRANCH: gh-pages
-          BUILD_SCRIPT: npm rebuild node-sass && npm install && npm run build
+          REPO: self
+          BRANCH: gh-pages
           FOLDER: build
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
