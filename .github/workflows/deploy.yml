@@ -30,6 +30,7 @@ jobs:
       - name: Build and Deploy
         uses: jeoy/github-deploy-actions@v1.0.1
         env:
+        CI: false
           COMMIT_EMAIL: teddy@supernovabrands.com
           COMMIT_NAME: Dev github pages auto deployment
           ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
