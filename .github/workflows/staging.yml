@@ -21,10 +21,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@master
 
-      - name: Github Build & Deploy Action
-        uses: jeoy/github-deploy-actions@v1.0.1
+      - name: Build and Deploy
+        uses: jeoy/github-deploy-actions@master
         env:
           COMMIT_EMAIL: teddy@supernovabrands.com
           COMMIT_NAME: Dev github pages auto deployment
