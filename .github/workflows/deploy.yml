@@ -21,9 +21,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@master
-      - name: Setup node 14
-        uses: ./
+      - name: Checkout repository
+        uses: actions/checkout@master
+      - name: Setup node js
+        uses: actions/setup-node@v1
         with:
           node-version: 14.19.0
       - name: Build and Deploy
