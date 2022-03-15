@@ -27,7 +27,7 @@ const MainNavigation = () => {
             <li><a className="dropdown-item" href="#">Profile</a></li>
             <li><hr className="dropdown-divider"/></li>
             <li><a className="dropdown-item" href="#">Sign out</a></li>
-          </ul>
+          </ul> 
         </div>
       </div>
     </div>
