@@ -30,10 +30,13 @@ jobs:
         run: |
           npm install
           npm run build -- --clearDeploy
+        env:
+          CI: false
 
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop
         env:
+          CI: false
           REPO: self
           BRANCH: gh-pages
           FOLDER: build
