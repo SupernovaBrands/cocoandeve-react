@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 14.19.0
       - name: Build and Deploy
-        uses: RomanosTrechlis/actions-react-build-push@v1.0
+        uses: jeoy/github-deploy-actions@v1.0.1
         env:
           COMMIT_EMAIL: teddy@supernovabrands.com
           COMMIT_NAME: Dev github pages auto deployment
