@@ -1,5 +1,7 @@
-@import '~bootstrap/scss/bootstrap.scss';
+@import '_core';
+@import "bootstrap/common";
+@import "bootstrap/main";
+@import 'common';
 
-@import 'vars.scss';
-
-@import 'templates/product.scss'
+@import 'components/_product-image-carousel.scss';
+@import 'templates/_product.scss'
