@@ -1,6 +1,6 @@
-const ProductDetail = () => {
+const TanRange = () => {
     return (
-        <div className='container'>ProductDetail</div>
+        <div className='container'>TanRange</div>
     )
 };
-export default ProductDetail
+export default TanRange
