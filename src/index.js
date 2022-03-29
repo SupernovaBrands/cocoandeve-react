@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import '../src/style.scss';
-import $ from 'jquery';
-import Popper from 'popper.js';
+import Popper from '@popperjs/core';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 ReactDOM.render(

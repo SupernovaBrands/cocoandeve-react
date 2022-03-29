@@ -23,7 +23,7 @@
 	}
 }
 
-.no-gutters {
+.g-0 {
   &__in-container {
     @include media-breakpoint-down(md) {
       margin-right: -$grid-gutter-width;
