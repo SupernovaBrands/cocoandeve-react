@@ -1,6 +1,6 @@
 const TanRange = () => {
     return (
-        <div className='container'>TanRange</div>
+        <section className='container'>TanRange</section>
     )
 };
 export default TanRange
