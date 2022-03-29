@@ -10,7 +10,7 @@ const ProductDetail = () => {
                 <div class="col-12 col-lg-5 order-lg-3 mt-2 mt-lg-0 d-flex flex-column">
                     <div class="react-yotpo-star" data-product-id="4543113265187" data-show-total="false" data-show-score="true"></div>
                     <p class="font-size-lg order-lg-0">Sunny Honey</p>
-                    <h1 class="mb-2 order-lg-0">Sunny Honey Bali Bronzing Foam</h1>
+                    <h1 class="mb-2 order-lg-0">Sunny Honey Bali Bronzing Foam <a href="">test</a></h1>
                     <p class="font-size-lg">1x Bali Bronzing Foam 200ml<br/>1x Deluxe Vegan Kabuki Brush<br/>1x Hypoallergenic Soft Velvet Mitt</p>
                     <p class="my-1 font-size-lg font-weight-bold">
                         <span class="text-primary mr-25 text-nowrap" data-variant-available="true" data-variant-price="$59.90">$59.90</span>

@@ -4,7 +4,7 @@ const ProductImageCarousel = () => {
     return (
         <Fragment>
             <div className="product-image-carousel__container col-12 col-lg-6 order-lg-2">
-                <figure id="product-image-carousel" className="product-image-carousel carousel slide mb-1 mb-lg-0 no-gutters__in-container" data-ride="carousel" data-interval="false" data-indicator="#product-image-carousel__indicator">
+                <figure id="product-image-carousel" className="product-image-carousel carousel slide mb-1 mb-lg-0 g-0__in-container" data-ride="carousel" data-interval="false" data-indicator="#product-image-carousel__indicator">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <picture>
