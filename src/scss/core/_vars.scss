@@ -97,6 +97,8 @@ $theme-colors: (
   'green-light': $green-light,
   'yellow-light': $yellow-light,
   'pink-light': $pink-light,
+  'dark': $black,
+  'gray-100': $gray-100,
 );
 
 $shade-colors: (
@@ -196,6 +198,10 @@ $hover-transition-timing: 0.15s ease-in-out;
 $card-border-radius: 0;
 $card-border-color: $gray-500;
 $card-cap-bg: transparent;
+$accordion-button-active-bg: transparent;
+$accordion-button-active-color: $black;
+$accordion-border-color: $black;
+$accordion-button-focus-border-color: $black;
 
 // navbar
 $navbar-nav-link-padding-x: 0;
