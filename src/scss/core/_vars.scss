@@ -81,6 +81,24 @@ $black: $body-color;
 $text-muted: $gray-500;
 $border-color: $gray-400;
 
+$theme-colors: (
+  'primary': $primary,
+  'primary-light': $primary-light,
+  'primary-light-second': $primary-light-second,
+  'primary-dark': $primary-dark,
+  'secondary': $secondary,
+  'secondary-light': $secondary-light,
+  'sh-purple': $sh-purple,
+  'sh-purple-light': $sh-purple-light,
+  'bali-bod-blue': $bali-bod-blue,
+  'bali-bod-blue-light': $bali-bod-blue-light,
+  'sh-orange': $sh-orange,
+  'sh-orange-light': $sh-orange-light,
+  'green-light': $green-light,
+  'yellow-light': $yellow-light,
+  'pink-light': $pink-light,
+);
+
 $shade-colors: (
   'dark': #885757,
   'ultra-dark': #5C2323,
