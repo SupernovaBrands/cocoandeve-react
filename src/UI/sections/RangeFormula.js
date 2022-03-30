@@ -1,3 +1,7 @@
+import { ReactComponent as FormulaList1 } from '../../assets/formula-list-1.svg';
+import { ReactComponent as FormulaList2 } from '../../assets/formula-list-2.svg';
+import { ReactComponent as FormulaList3 } from '../../assets/formula-list-3.svg';
+import { ReactComponent as FormulaList4 } from '../../assets/formula-list-4.svg';
 
 const RangeFormula = () => {
 	return (
@@ -7,21 +11,21 @@ const RangeFormula = () => {
 					<div className='col-12 col-lg-5 order-lg-2'>
 						<h2 className='range__formula-title text-center text-lg-start'>Revolutionary formula</h2>
 						<p className='h4 text-center text-lg-start mb-0'>NO nasties, NO orange tones.</p>
-						<ul className='list-unstyled row mt-2 mb-0'>
+						<ul className='list-unstyled row mt-2 mb-0 range__formula-list'>
 							<li className='col-12 d-flex align-items-center mb-2'>
-								<img className='me-g' src='images/formula-list-1.svg' alt='Formula' />
+								<FormulaList1 className='me-g d-flex flex-shrink-0 justify-content-center' />
 								Blurs pigmentation and perfects skin.
 							</li>
 							<li className='col-12 d-flex align-items-center mb-2'>
-								<img className='me-g' src='images/formula-list-2.svg' alt='Formula' />
+								<FormulaList2 className='me-g d-flex flex-shrink-0 justify-content-center' />
 								Tropical mango and guava scent<br />(no biscuit smell!)
 							</li>
 							<li className='col-12 d-flex align-items-center mb-2'>
-								<img className='me-g' src='images/formula-list-3.svg' alt='Formula' />
+								<FormulaList3 className='me-g d-flex flex-shrink-0 justify-content-center' />
 								Lightweight, non-sticky formula.
 							</li>
 							<li className='col-12 d-flex align-items-center'>
-								<img className='me-g' src='images/formula-list-4.svg' alt='Formula' />
+								<FormulaList4 className='me-g d-flex flex-shrink-0 justify-content-center' />
 								Developed with a green-grey base for a natural looking, golden glow with no orangey tones.
 							</li>
 						</ul>

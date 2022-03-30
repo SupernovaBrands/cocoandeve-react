@@ -1,6 +1,7 @@
 
-   
+
 import { Fragment } from 'react';
+import Footer from '../sections/Footer';
 import Header from '../sections/Header';
 
 const Layout = (props) => {
@@ -8,6 +9,7 @@ const Layout = (props) => {
     <Fragment>
         <Header />
         <main>{props.children}</main>
+        <Footer />
     </Fragment>
   );
 };

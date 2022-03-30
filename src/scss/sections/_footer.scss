@@ -1,0 +1,80 @@
+footer {
+	a {
+		color: $white;
+		text-decoration: none;
+
+		&:hover {
+			color: $white;
+			text-decoration: underline;
+		}
+	}
+
+	.btn-primary {
+		min-width: calc-em(160);
+	}
+
+	.form-control  {
+		border-bottom-left-radius: $border-radius-lg;
+		border-top-left-radius: $border-radius-lg;
+
+		&:focus {
+			z-index: 0 !important;
+		}
+	}
+}
+
+.footer-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas: "newsletter newsletter"
+			"aboutus helplinks"
+			"support followus"
+			"currency item";
+
+	@include media-breakpoint-up(lg) {
+		grid-template-columns: 2fr 1fr 1fr 1fr;
+		grid-template-rows: auto auto;
+		grid-template-areas: "newsletter aboutus helplinks support"
+				"newsletter followus currency item";
+		grid-column-gap: $grid-gutter-width-lg;
+	}
+
+	&__newsletter {
+		grid-area: newsletter;
+	}
+
+	&__about-us {
+		grid-area: aboutus;
+	}
+
+	&__help-links {
+		grid-area: helplinks;
+	}
+
+	 &__followus {
+		grid-area: followus;
+	}
+
+	&__currency {
+		grid-area: currency;
+	}
+
+	&__support {
+		grid-area: support;
+	}
+
+	.dropdown .dropdown-menu {
+		transition: all 0.3s;
+		opacity: 0;
+		height: 0;
+		bottom: 0;
+		transform: translate3d(0,0,0);
+	}
+
+	.dropdown .dropdown-menu.show {
+		opacity: 1;
+		height: calc-em(320);
+		transition: all 0.3s;
+	}
+}
