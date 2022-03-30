@@ -2,6 +2,11 @@ import { Fragment } from 'react';
 import ProductImageCarouselItem from './ProductImageCarouselItem';
 import carouselLoop from "../../modules/carousel-loop";
 
+import { ReactComponent as ChevronPrev } from '../../assets/chevron-prev.svg';
+import { ReactComponent as ChevronNext } from '../../assets/chevron-next.svg';
+import { ReactComponent as ChevronUp } from '../../assets/chevron-up.svg';
+import { ReactComponent as ChevronDown } from '../../assets/chevron-down.svg';
+
 const ProductImageCarousel = () => {
     carouselLoop('product-image-carousel__indicator');
     const PRODUCT_IMAGES = [
@@ -17,31 +22,38 @@ const ProductImageCarousel = () => {
 
     return (
         <Fragment>
-            <div className="product-image-carousel__container col-12 col-lg-6 order-lg-2">
+            <div key="product-image-carousel__container" className="product-image-carousel__container col-12 col-lg-6 order-lg-2">
                 <figure id="product-image-carousel" className="product-image-carousel carousel slide mb-1 mb-lg-0 g-0__in-container" data-bs-ride="carousel" data-bs-interval="false">
-                    <div className="carousel-inner">
+                    <div key="div-carousel-1" className="carousel-inner">
                         {PRODUCT_IMAGES.map((image, index) => (
                             <ProductImageCarouselItem
+                                key={image}
                                 imageUrl={image}
                                 index={index}
                             />
                         ))} 
                     </div>
-                    <div class="carousel-indicators d-lg-none">
+                    <div key="div-carousel-2" className="carousel-indicators d-lg-none">
                         {PRODUCT_IMAGES.map((image, index) => (
-                            <button type="button" data-bs-target="#product-image-carousel" data-bs-slide-to={index} class={`rounded-circle ${index === 0 ? 'active': ''}`}></button>
+                            <button key={image} type="button" data-bs-target="#product-image-carousel" data-bs-slide-to={index} className={`rounded-circle ${index === 0 ? 'active': ''}`}></button>
                         ))}
                     </div>
+                    <button key="btn1" className="carousel-control-prev d-block d-lg-none" type="button" data-bs-target="#product-image-carousel" data-bs-slide="prev">
+                        <ChevronPrev />
+                    </button>
+                    <button key="btn2" className="carousel-control-next d-block d-lg-none" type="button" data-bs-target="#product-image-carousel" data-bs-slide="next">
+                        <ChevronNext />
+                    </button>
                 </figure>
             </div>
 
-            <div id="product-image-carousel__indicator" className="d-none d-lg-block product-image-carousel__indicator carousel--swipe col-12 col-lg-1 order-lg-1 carousel slide carousel--loop mb-1 mb-lg-0 px-0 px-lg-g" data-bs-slide-number="5" data-bs-ride="carousel" data-bs-interval="false">
-                <button className="carousel-indicator chevron-up btn-unstyled d-none d-lg-flex mx-auto mb-1 mb-lg-3 text-center align-items-center" data-bs-slide="prev" data-bs-target="#product-image-carousel__indicator" disabled>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.6 22.6" className="svg text-primary"><path d="M20.7 17.2l-9.4-9.4-9.4 9.4L0 15.3 11.3 4l11.3 11.3-1.9 1.9z"></path></svg>
+            <div key="product-image-carousel__indicator" id="product-image-carousel__indicator" className="d-none d-lg-block product-image-carousel__indicator carousel--swipe col-12 col-lg-1 order-lg-1 carousel slide carousel--loop mb-1 mb-lg-0 px-0 px-lg-g" data-bs-slide-number="5" data-bs-ride="carousel" data-bs-interval="false">
+                <button  key="btn4" className="carousel-indicator chevron-up btn-unstyled d-none d-lg-flex mx-auto mb-1 mb-lg-3 text-center align-items-center" data-bs-slide="prev" data-bs-target="#product-image-carousel__indicator" disabled>
+                    <ChevronUp className='svg text-primary'/>
                 </button>
-                <div className="carousel-inner d-flex flex-nowrap flex-lg-column justify-content-center justify-content-lg-start">
+                <div key="carousel-inner" className="carousel-inner d-flex flex-nowrap flex-lg-column justify-content-center justify-content-lg-start">
                     {PRODUCT_IMAGES.map((image, index) => (
-                    <div data-bs-target="#product-image-carousel" data-bs-slide-to={index} className={`product-image-carousel__indicator__item carousel-item col-12 px-lg-0 pb-lg-3 mw-100 ${ index === 0 ? 'active':''}`}>
+                    <div key={image} data-bs-target="#product-image-carousel" data-bs-slide-to={index} className={`product-image-carousel__indicator__item carousel-item col-12 px-lg-0 pb-lg-3 mw-100 ${ index === 0 ? 'active':''}`}>
                         <button className="btn-unstyled border d-block w-100">
                             <picture className="ratio ratio-1x1 w-100 d-block">
                                 <img  src={image} alt="Slide {{@index}}" />
@@ -50,8 +62,8 @@ const ProductImageCarousel = () => {
                     </div>
                     ))}
                 </div>
-                <button class="carousel-indicator chevron-down btn-unstyled d-none d-lg-flex mx-auto mt-1 mt-lg-3 text-center align-items-center" data-bs-slide="next" data-bs-target="#product-image-carousel__indicator">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.6 22.6" class="svg text-primary"><path d="M1.9 5.4l9.4 9.4 9.4-9.4 1.9 1.9-11.3 11.3L0 7.3l1.9-1.9z"></path></svg>
+                <button  key="btn3" className="carousel-indicator chevron-down btn-unstyled d-none d-lg-flex mx-auto mt-1 mt-lg-3 text-center align-items-center" data-bs-slide="next" data-bs-target="#product-image-carousel__indicator">
+                    <ChevronDown className='svg text-primary'/>
                 </button>
             </div>
         </Fragment>
