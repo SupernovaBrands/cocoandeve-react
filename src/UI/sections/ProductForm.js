@@ -8,7 +8,7 @@ import { ReactComponent as FormulaList2 } from '../../assets/formula-list-2.svg'
 import { ReactComponent as FormulaList3 } from '../../assets/formula-list-3.svg';
 import { ReactComponent as FormulaList4 } from '../../assets/formula-list-4.svg';
 
-const ProductDetail = () => {
+const ProductForm = () => {
     const SHADES = [
         {
             id: '32068891541539',
@@ -27,6 +27,7 @@ const ProductDetail = () => {
         }
     ]
 
+    const [buttonUrl, setButtonUrl] = useState('');
     const [selectedVariantId, setSelectedVariantId] = useState('32068891541539');
     const [selectedVariantShadeText, setSelectedVariantShadeText] = useState('Medium - Subtle glow, lighter skin tones')
     const onSelectedVariant = (event) => {
@@ -34,6 +35,16 @@ const ProductDetail = () => {
         const shadeText = SHADES.find((shade) => shade.id === variantId)
         setSelectedVariantId(variantId);
         setSelectedVariantShadeText(shadeText.text);
+    }
+
+    const onChangeQuantity = (qty) => {
+        const url = selectedVariantId !== '' && `https://dev.cocoandeve.com?id=${selectedVariantId}&quantity=${qty}`
+        console.log(url)
+        setButtonUrl(url)
+    }
+
+    const onAddToCart = () => {
+        window.location.href = buttonUrl;
     }
 
     return (
@@ -53,14 +64,14 @@ const ProductDetail = () => {
                         <span class="text-linethrough mr-25 text-nowrap">$96.80</span>
                         <span class="text-primary text-nowrap text-save p-1">(Save 38%)</span>
                     </p>
-                    <hr className="mb-2 bg-primary mt-0"/>
+                    <hr className="mb-2 bg-primary-light-second mt-0"/>
                     <div className='d-grid gap-2 d-md-flex mb-lg-2 justify-content-center  justify-content-lg-start align-items-center'>
                         <div className="product-swatch d-flex align-items-center justify-content-center">
                             {SHADES.map((shade) => (
-                                <button type="button" onClick={onSelectedVariant} data-variant className={`variant-swatch mr-2 ${shade.class} ${ selectedVariantId === shade.id ? 'border-primary' : ''}`} data-id={shade.id}></button>
+                                <button key="ProductFormButton1" type="button" onClick={onSelectedVariant} data-variant className={`variant-swatch mr-2 ${shade.class} ${ selectedVariantId === shade.id ? 'border-primary' : ''}`} data-id={shade.id}></button>
                             ))}
                         </div>
-                        <span className='mb-1 mg-lg-0'>{selectedVariantShadeText}</span>
+                        <span className='mb-1 mb-lg-0 mg-lg-0'>{selectedVariantShadeText}</span>
                     </div>
                     <p className="d-block bg-gray-100 p-1 rounded mb-2">Not sure which shade to get? Check our <a href="">Shades Guide</a></p>
                     <div class="product-swatch-mobile__trigger order-lg-1">
@@ -69,13 +80,14 @@ const ProductDetail = () => {
                                 <div className="react-quantity-box d-none d-lg-block">
                                 <QuantityBox 
                                     quantity='1'
+                                    onChangeQuantity={onChangeQuantity}
                                 />
                                 </div>
-                                <button class="btn btn-lg btn-primary ms-lg-g w-100 text-white" type="submit">Add to Cart</button>
+                                <button key="ProductFormButton2" class="btn btn-lg btn-primary ms-lg-g w-100 text-white" type="submit" onClick={onAddToCart}>Add to Cart</button>
                             </div>
                         </div>
                     </div>
-                    <hr className="mb-2 bg-primary mt-0"/>
+                    <hr className="mb-2 bg-primary-light-second mt-0"/>
                     <ul className='list-unstyled row mb-4'>
                         <li className='col-12 d-flex align-items-center mb-2'>
                             <FormulaList1 className='me-g d-flex flex-shrink-0 justify-content-center' />
@@ -100,4 +112,4 @@ const ProductDetail = () => {
         </div>
     )
 };
-export default ProductDetail
+export default ProductForm
