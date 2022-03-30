@@ -5,7 +5,7 @@ import { ReactComponent as Youtube } from '../../assets/youtube.svg';
 import { ReactComponent as Tiktok } from '../../assets/tiktok.svg';
 import { ReactComponent as PalmTree } from '../../assets/palm-tree.svg';
 
-import SignupFooter from '../../scripts/SignupFooter';
+import SignupFooter from '../../modules/SignupFooter';
 
 const Footer = () => {
 	return (

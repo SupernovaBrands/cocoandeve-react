@@ -6,29 +6,19 @@ const SectionIRL = () => {
     const CONTENT = [
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 rounded active',
-            content: 
-                <IRLCard 
+            content:
+                <IRLCard
                     name="Sadie B. Verified Buyer"
                     caption="Shade of Tan: Medium"
                 >
                     <p>The smell is gorgeous (although when it's developed it still has a very slight fake tan smell but nothing strong) the colour is perfect, I went for dark and I was worried it wouldn't be dark enough. But after washing it off it seemed to develop even further over the next few hours! It went on so smoothly. I am converted and won't use anything else now !!</p>
-                    
+
                 </IRLCard>
         },
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
-            content: 
-                <IRLCard 
-                    name="Sadie B. Verified Buyer"
-                    caption="Shade of Tan: Medium"
-                >
-                    <p>The smell is gorgeous (although when it's developed it still has a very slight fake tan smell but nothing strong) the colour is perfect, I went for dark and I was worried it wouldn't be dark enough. But after washing it off it seemed to develop even further over the next few hours! It went on so smoothly. I am converted and won't use anything else now !!</p>
-                </IRLCard>
-        },
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
-            content: 
-                <IRLCard 
+            content:
+                <IRLCard
                     name="Sadie B. Verified Buyer"
                     caption="Shade of Tan: Medium"
                 >
@@ -37,8 +27,8 @@ const SectionIRL = () => {
         },
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
-            content: 
-                <IRLCard 
+            content:
+                <IRLCard
                     name="Sadie B. Verified Buyer"
                     caption="Shade of Tan: Medium"
                 >
@@ -47,8 +37,8 @@ const SectionIRL = () => {
         },
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
-            content: 
-                <IRLCard 
+            content:
+                <IRLCard
                     name="Sadie B. Verified Buyer"
                     caption="Shade of Tan: Medium"
                 >
@@ -57,15 +47,25 @@ const SectionIRL = () => {
         },
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
-            content: 
-                <IRLCard 
+            content:
+                <IRLCard
+                    name="Sadie B. Verified Buyer"
+                    caption="Shade of Tan: Medium"
+                >
+                    <p>The smell is gorgeous (although when it's developed it still has a very slight fake tan smell but nothing strong) the colour is perfect, I went for dark and I was worried it wouldn't be dark enough. But after washing it off it seemed to develop even further over the next few hours! It went on so smoothly. I am converted and won't use anything else now !!</p>
+                </IRLCard>
+        },
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
+            content:
+                <IRLCard
                     name="Sadie B. Verified Buyer"
                     caption="Shade of Tan: Medium"
                 >
                     <p>The smell is gorgeous (although when it's developed it still has a very slight fake tan smell but nothing strong) the colour is perfect, I went for dark and I was worried it wouldn't be dark enough. But after washing it off it seemed to develop even further over the next few hours! It went on so smoothly. I am converted and won't use anything else now !!</p>
                 </IRLCard>
         }
-    ] 
+    ]
 
 	return (
 		<section className='customer-reviews py-4'>
@@ -75,7 +75,7 @@ const SectionIRL = () => {
                 <div className='d-flex ms-1 align-items-center'><img src="../images/instagram.svg" className='font-size-sm' /><span className='ms-1 font-size-sm'>879k on Instagram</span></div>
             </div>
             <div className='container'>
-                <Carousel 
+                <Carousel
                     id="sectionIRL"
                     class="carousel slide carousel--loop carousel--mobile-half-next"
                     items={CONTENT}

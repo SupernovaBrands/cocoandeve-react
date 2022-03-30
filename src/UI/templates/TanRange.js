@@ -1,8 +1,10 @@
 import { Fragment } from "react";
-import MagicIRL from "../sections/MagicIRL";
+import CustomerReview from "../sections/CustomerReview";
+import FaqAccordion from "../sections/FaqAccordion";
 import RangeBanner from "../sections/RangeBanner";
 import RangeCarousel from "../sections/RangeCarousel";
 import RangeFormula from "../sections/RangeFormula";
+import SectionIRL from "../sections/SectionIRL";
 
 const TanRange = () => {
     return (
@@ -10,7 +12,9 @@ const TanRange = () => {
             <RangeBanner />
             <RangeCarousel />
             <RangeFormula />
-            <MagicIRL />
+            <SectionIRL />
+            <FaqAccordion />
+            <CustomerReview />
         </Fragment>
     )
 };

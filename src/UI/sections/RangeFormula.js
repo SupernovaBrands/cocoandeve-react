@@ -5,7 +5,7 @@ import { ReactComponent as FormulaList4 } from '../../assets/formula-list-4.svg'
 
 const RangeFormula = () => {
 	return (
-		<section className='range__formula'>
+		<section className='range__formula mt-4'>
 			<div className='container px-g'>
             	<div className='row align-items-center'>
 					<div className='col-12 col-lg-5 order-lg-2'>
@@ -35,7 +35,7 @@ const RangeFormula = () => {
 					</div>
 				</div>
 			</div>
-			<div className='range__formula-tagline bg-yellow-light text-center d-lg-none font-size-sm fw-bold py-g mt-2'>
+			<div className='range__formula-tagline bg-yellow-light-secondary text-center d-lg-none font-size-sm fw-bold py-g mt-2'>
 				No sulfates · No silicone · No parabenes · Vegan
 			</div>
         </section>
