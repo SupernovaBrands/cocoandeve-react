@@ -22,6 +22,22 @@ const carouselLoop = (carouselId) => {
                     }
                 }
             }
+            if (carouselId === 'product-image-carousel__indicator') {
+                const prevBtn = e.target.querySelector('.chevron-up');
+                const nextBtn = e.target.querySelector('.chevron-down');
+                console.log('prev', prevBtn, nextBtn);
+                if (idx === 0) {
+                    prevBtn.setAttribute('disabled', true);
+                } else {
+                    prevBtn.removeAttribute('disabled');
+                }
+
+                if (idx + 5 === totalItems) {
+                    nextBtn.setAttribute('disabled', true);
+                } else {
+                    nextBtn.removeAttribute('disabled');
+                }
+            }
         })
     }, 500);
 }
