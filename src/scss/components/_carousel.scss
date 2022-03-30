@@ -48,6 +48,10 @@
 	&--loop {
 		.carousel-item {
 			margin-right: 0;
+
+			@include media-breakpoint-up(lg) {
+
+			}
 		}
 
 		.carousel-item-next,
@@ -161,6 +165,29 @@
 			@include media-breakpoint-down(sm) {
 				overflow: visible;
 				transform: translateX(-60.5%);
+			}
+		}
+	}
+
+	&--mobile-half-next {
+		.carousel-item {
+			@include media-breakpoint-down(md) {
+				width: 75%;
+				margin-right: $grid-gutter-width;
+			}
+		}
+	}
+
+	&--mobile-only-half-centered {
+		.carousel-inner {
+			@include media-breakpoint-up(lg) {
+				width: 100%;
+				transform: none;
+			}
+		}
+		.carousel-item {
+			@include media-breakpoint-down(md) {
+				width: 75%;
 			}
 		}
 	}
@@ -321,6 +348,7 @@
 		}
 
 		&.carousel-control-prev {
+			left: 15px;
 			span[class*=carousel-control] {
 				left: 0;
 				border-radius: 0 calc-em(150) calc-em(150) 0;
