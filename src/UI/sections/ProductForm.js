@@ -29,18 +29,22 @@ const ProductForm = () => {
 
     const [buttonUrl, setButtonUrl] = useState('');
     const [selectedVariantId, setSelectedVariantId] = useState('32068891541539');
+    const [quantity, setQuantity] = useState(1);
     const [selectedVariantShadeText, setSelectedVariantShadeText] = useState('Medium - Subtle glow, lighter skin tones')
     const onSelectedVariant = (event) => {
         const variantId = event.target.getAttribute('data-id');
         const shadeText = SHADES.find((shade) => shade.id === variantId)
         setSelectedVariantId(variantId);
         setSelectedVariantShadeText(shadeText.text);
+        const url = selectedVariantId !== '' && `https://dev.cocoandeve.com?itemtoadd=${selectedVariantId}&quantity=${quantity}`;
+        setButtonUrl(url);
+        console.log(buttonUrl);
     }
 
     const onChangeQuantity = (qty) => {
-        const url = selectedVariantId !== '' && `https://dev.cocoandeve.com?id=${selectedVariantId}&quantity=${qty}`
-        console.log(url)
-        setButtonUrl(url)
+        const url = selectedVariantId !== '' && `https://dev.cocoandeve.com?itemtoadd=${selectedVariantId}&quantity=${qty}`;
+        setQuantity(qty);
+        setButtonUrl(url);
     }
 
     const onAddToCart = () => {
@@ -48,47 +52,47 @@ const ProductForm = () => {
     }
 
     return (
-        <div class="container px-g mb-4 mt-lg-5">
-            <div class="row align-items-start">
+        <div className="container px-g mb-4 mt-lg-4">
+            <div className="row align-items-start">
                 <ProductImageCarousel />
-                <div class="col-12 col-lg-5 order-lg-3 mt-2 mt-lg-0 d-flex flex-column">
-                    <div className="d-flex mb-1">
+                <div className="col-12 col-lg-5 order-lg-3 mt-2 mt-lg-0 d-flex flex-column text-center text-lg-start">
+                    <p className="font-size-lg order-lg-0 mb-1">Sunny Honey</p>
+                    <h1 className="mb-2 order-lg-0">Bali Bronzing Bundle</h1>
+                    <div className="d-flex mb-1 justify-content-center justify-content-lg-start">
                         <ReviewStar score={5} />
-                        <span className="d-block yotpo-widget__total mt-lg-0 ms-lg-1">4.8/5.0 220 Reviews</span>
+                        <span className="d-block yotpo-widget__total mt-lg-0 ms-lg-1 ms-1">4.8/5.0 220 Reviews</span>
                     </div>
-                    <p class="font-size-lg order-lg-0 mb-1">Sunny Honey</p>
-                    <h1 class="mb-2 order-lg-0">Bali Bronzing Bundle</h1>
-                    <p class="font-size-lg">1x Bali Bronzing Foam 200ml<br/>1x Deluxe Vegan Kabuki Brush<br/>1x Hypoallergenic Soft Velvet Mitt</p>
-                    <p class="my-1 font-size-lg font-weight-bold">
-                        <span class="text-primary mr-25 text-nowrap" data-variant-available="true" data-variant-price="$59.90">$59.90</span>
-                        <span class="text-linethrough mr-25 text-nowrap">$96.80</span>
-                        <span class="text-primary text-nowrap text-save p-1">(Save 38%)</span>
+                    <p className="font-size-lg d-none d-lg-block">The only self-tanner you need ever need. <br/>100% Natural DHA. Cruelty Free. Vegan. </p>
+                    <p className="my-1 font-size-lg font-weight-bold">
+                        <span className="text-primary mr-25 text-nowrap" data-variant-available="true" data-variant-price="$62.80">$62.80</span>
+                        <span className="text-linethrough mr-25 text-nowrap ms-1">$89.80</span>
+                        <span className="text-primary text-nowrap text-save p-1">(Save 38%)</span>
                     </p>
                     <hr className="mb-2 bg-primary-light-second mt-0"/>
                     <div className='d-grid gap-2 d-md-flex mb-lg-2 justify-content-center  justify-content-lg-start align-items-center'>
                         <div className="product-swatch d-flex align-items-center justify-content-center">
                             {SHADES.map((shade) => (
-                                <button key="ProductFormButton1" type="button" onClick={onSelectedVariant} data-variant className={`variant-swatch mr-2 ${shade.class} ${ selectedVariantId === shade.id ? 'border-primary' : ''}`} data-id={shade.id}></button>
+                                <button key={shade.id} type="button" onClick={onSelectedVariant} data-variant className={`variant-swatch mr-2 ${shade.class} ${ selectedVariantId === shade.id ? 'border-primary' : ''}`} data-id={shade.id}></button>
                             ))}
                         </div>
                         <span className='mb-1 mb-lg-0 mg-lg-0'>{selectedVariantShadeText}</span>
                     </div>
                     <p className="d-block bg-gray-100 p-1 rounded mb-2">Not sure which shade to get? Check our <a href="">Shades Guide</a></p>
-                    <div class="product-swatch-mobile__trigger order-lg-1">
-                        <div class="product-form-submit mb-3 position-relative">
-                            <div class="d-flex">
+                    <div className="product-swatch-mobile__trigger order-lg-1">
+                        <div className="product-form-submit mb-3 position-relative">
+                            <div className="d-flex">
                                 <div className="react-quantity-box d-none d-lg-block">
                                 <QuantityBox 
                                     quantity='1'
                                     onChangeQuantity={onChangeQuantity}
                                 />
                                 </div>
-                                <button key="ProductFormButton2" class="btn btn-lg btn-primary ms-lg-g w-100 text-white" type="submit" onClick={onAddToCart}>Add to Cart</button>
+                                <button key="ProductFormButton2" className="btn btn-lg btn-primary ms-lg-g w-100 text-white" type="submit" onClick={onAddToCart}>Add to Cart</button>
                             </div>
                         </div>
                     </div>
                     <hr className="mb-2 bg-primary-light-second mt-0"/>
-                    <ul className='list-unstyled row mb-4'>
+                    <ul className='list-unstyled row mb-4 text-start'>
                         <li className='col-12 d-flex align-items-center mb-2'>
                             <FormulaList1 className='me-g d-flex flex-shrink-0 justify-content-center' />
                             Blurs pigmentation and perfects skin.
