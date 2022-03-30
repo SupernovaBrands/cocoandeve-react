@@ -10,7 +10,7 @@ const RangeFormula = () => {
             	<div className='row align-items-center'>
 					<div className='col-12 col-lg-5 order-lg-2'>
 						<h2 className='range__formula-title text-center text-lg-start'>Revolutionary formula</h2>
-						<p className='h4 text-center text-lg-start mb-0'>NO nasties, NO orange tones.</p>
+						<p className='h4 text-center text-lg-start mb-0 fw-normal'>NO nasties, NO orange tones.</p>
 						<ul className='list-unstyled row mt-2 mb-0 range__formula-list'>
 							<li className='col-12 d-flex align-items-center mb-2'>
 								<FormulaList1 className='me-g d-flex flex-shrink-0 justify-content-center' />
