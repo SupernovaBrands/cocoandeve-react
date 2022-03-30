@@ -1,6 +1,8 @@
 @import '_core';
 @import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/vendor/rfs";
 @import 'common';
 
 @import 'components/product-image-carousel.scss';
-@import 'templates/product.scss'
+@import 'templates/product.scss';
+@import 'templates/range';
