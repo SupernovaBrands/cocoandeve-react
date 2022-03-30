@@ -10,6 +10,7 @@ const App = () => {
       <Routes>
         <Route path='/tan-range' element={<TanRange />} />
         <Route path='/products/:handle' element={<ProductDetail />} />
+        <Route path='/testproduct' element={<ProductDetail />} />
       </Routes>
     </Layout>
   )

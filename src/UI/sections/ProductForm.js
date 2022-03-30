@@ -3,6 +3,11 @@ import ProductImageCarousel from "../components/ProductImageCarousel";
 import QuantityBox from '../components/QuantityBox';
 import ReviewStar from '../components/ReviewStar';
 
+import { ReactComponent as FormulaList1 } from '../../assets/formula-list-1.svg';
+import { ReactComponent as FormulaList2 } from '../../assets/formula-list-2.svg';
+import { ReactComponent as FormulaList3 } from '../../assets/formula-list-3.svg';
+import { ReactComponent as FormulaList4 } from '../../assets/formula-list-4.svg';
+
 const ProductDetail = () => {
     const SHADES = [
         {
@@ -73,19 +78,19 @@ const ProductDetail = () => {
                     <hr className="mb-2 bg-primary mt-0"/>
                     <ul className='list-unstyled row mb-4'>
                         <li className='col-12 d-flex align-items-center mb-2'>
-                            <img className='me-g' src='../images/formula-list-1.svg' alt='Formula' />
+                            <FormulaList1 className='me-g d-flex flex-shrink-0 justify-content-center' />
                             Blurs pigmentation and perfects skin.
                         </li>
                         <li className='col-12 d-flex align-items-center mb-2'>
-                            <img className='me-g' src='../images/formula-list-2.svg' alt='Formula' />
+                            <FormulaList2 className='me-g d-flex flex-shrink-0 justify-content-center' />
                             Tropical mango and guava scent<br />(no biscuit smell!)
                         </li>
                         <li className='col-12 d-flex align-items-center mb-2'>
-                            <img className='me-g' src='../images/formula-list-3.svg' alt='Formula' />
+                            <FormulaList3 className='me-g d-flex flex-shrink-0 justify-content-center' />
                             Lightweight, non-sticky formula.
                         </li>
                         <li className='col-12 d-flex align-items-center'>
-                            <img className='me-g' src='../images/formula-list-4.svg' alt='Formula' />
+                            <FormulaList4 className='me-g d-flex flex-shrink-0 justify-content-center' />
                             Developed with a green-grey base for a natural looking, golden glow with no orangey tones.
                         </li>
                     </ul>
