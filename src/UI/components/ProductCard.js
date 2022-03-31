@@ -4,7 +4,7 @@ const ProductCard = (props) => {
 		<div className={`carousel-item col-9 col-md-3 product-card text-center ${props.classname}`}>
 			{/* <span class="badge badge--square bg-white position-absolute font-weight-normal font-size-sm">new</span> */}
 			<a href='/products' className='d-block'>
-				<picture className=''>
+				<picture className='embed-responsive embed-responsive-1by1 m-0'>
 					<img className='w-100' src='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902' alt='Sunny Honey Bali Bronzing Bundle' />
 				</picture>
 			</a>

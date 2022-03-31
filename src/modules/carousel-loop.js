@@ -1,6 +1,7 @@
 const carouselLoop = (carouselId) => {
     setTimeout(() => {
-        const carouselLoop = document.getElementById(carouselId)
+        const carouselLoop = document.getElementById(carouselId);
+        console.log('carouselLoop', carouselLoop);
         carouselLoop.addEventListener('slide.bs.carousel', function (e) {
             const $e = e.relatedTarget;
             const carouselInner = e.target.querySelector('.carousel-inner');
@@ -11,6 +12,12 @@ const carouselLoop = (carouselId) => {
             if (768 > window.innerWidth) {
 				itemsPerSlide = 2;
 			}
+
+            if (e.target.querySelector('.carousel--centered')) {
+                // add 1 element for negative offset of carousel inner
+                idx += 1;
+            }
+
             if (idx >= totalItems - (itemsPerSlide - 1)) {
                 const it = itemsPerSlide - (totalItems - idx);
 
@@ -25,7 +32,6 @@ const carouselLoop = (carouselId) => {
             if (carouselId === 'product-image-carousel__indicator') {
                 const prevBtn = e.target.querySelector('.chevron-up');
                 const nextBtn = e.target.querySelector('.chevron-down');
-                console.log('prev', prevBtn, nextBtn);
                 if (idx === 0) {
                     prevBtn.setAttribute('disabled', true);
                 } else {
@@ -38,7 +44,22 @@ const carouselLoop = (carouselId) => {
                     nextBtn.removeAttribute('disabled');
                 }
             }
-        })
+
+            if (e.target.querySelector('.carousel--centered')) {
+                // special case for carousel centered we would need plus 1, as we have negative offset x on carousel-inner
+                if (e.direction === 'right') {
+                    const list = [...document.querySelectorAll(`#${carouselId} .carousel-item`)];
+                    const active = document.querySelector(`#${carouselId} .carousel-item.active`);
+                    const activeIndex = list.indexOf(active);
+
+                    const selectorNthChild = `.carousel-item:nth-child(${activeIndex + 1 + parseInt(itemsPerSlide)})`;
+                    if (e.target.querySelector(selectorNthChild)) {
+                        // e.target.querySelector(selectorNthChild).classList.add('carousel-item--last');
+                    }
+                }
+            }
+        });
+
     }, 500);
 }
 

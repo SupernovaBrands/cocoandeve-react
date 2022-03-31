@@ -29,11 +29,6 @@ const RangeCarousel = () => {
 							<ProductCard title='Sunny Honey Bali Bronzing Foam' classname='' />
 							<ProductCard title='Sunny Honey Bali Bronzing Foam' classname='' />
 							<ProductCard title='Sunny Honey Bali Bronzing Foam' classname='' />
-							<ProductCard title='Sunny Honey Bali Bronzing Foam' classname='' />
-							<ProductCard title='Sunny Honey Bali Bronzing Foam' classname='' />
-							<ProductCard title='Sunny Honey Bali Bronzing Foam' classname='' />
-							<ProductCard title='Sunny Honey Bali Bronzing Foam' classname='' />
-							<ProductCard title='Sunny Honey Bali Bronzing Foam' classname='' />
 						</div>
 					</div>
 					<button class="carousel-control carousel-control-prev carousel-control--background floating-out-left justify-content-start text-primary" data-bs-target="#bestsellers" data-bs-slide="prev">

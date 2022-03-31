@@ -4,8 +4,10 @@
 	}
 }
 
-.range__carousel {
-	.carousel--loop .carousel-item {
-		max-width: 75%;
+@include media-breakpoint-down(md) {
+	.range__carousel {
+		.carousel--loop .carousel-item {
+			max-width: 75%;
+		}
 	}
 }
