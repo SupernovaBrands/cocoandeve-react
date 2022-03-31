@@ -1,0 +1,8 @@
+.badge {
+	line-height: $line-height-base;
+
+	&--square {
+		left: 2 * $grid-gutter-width;
+		top: $grid-gutter-width;
+	}
+}

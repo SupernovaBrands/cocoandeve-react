@@ -29,7 +29,9 @@ const RangeCarousel = () => {
 				rating='4.8'
 				totalReviews='199'
 				price='$96.80'
-				crossedPrice='$59.90' />
+				crossedPrice='$59.90'
+				useBadge='true'
+				textBadge='New' />
         },
 		{
             carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
@@ -51,7 +53,9 @@ const RangeCarousel = () => {
 				rating='4.8'
 				totalReviews='199'
 				price='$96.80'
-				crossedPrice='$59.90' />
+				crossedPrice='$59.90'
+				useBadge='true'
+				textBadge='New' />
         },
 		{
             carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
@@ -357,7 +361,7 @@ const RangeCarousel = () => {
 			</div>
             <div className='tab-content container px-sm-0 px-md-2 text-center'>
 				{CAROUSEL_TABS.map((item) => (
-					<Carousel id={item.carouselId} centered={true} items={item.carouselItems} slideNumber='4' className={`tab-pane fade carousel slide carousel--loop ${item.isTabActive ? 'show active' : ''}`}>
+					<Carousel id={item.carouselId} centered={true} items={item.carouselItems} slideNumber='4' className={`tab-pane fade carousel slide carousel--loop ${item.isTabActive ? 'show active' : ''}`} additionalClasses='row'>
 						<button className="carousel-control carousel-control-prev carousel-control--background floating-out-start justify-content-start text-primary d-none d-lg-flex" data-bs-target={`#${item.carouselId}`} data-bs-slide="prev">
 							<span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true">
 								<ChevronPrev />

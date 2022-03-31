@@ -7,7 +7,7 @@ const Carousel = (props) => {
         <div id={props.id} className={props.className} data-bs-slide-number={props.slideNumber} data-bs-ride="carousel" data-bs-interval="false">
             {props.centered ? (
                 <div className="carousel--centered">
-                    <div className="carousel-inner d-flex flex-nowrap">
+                    <div className={`carousel-inner d-flex flex-nowrap ${props.additionalClasses}`}>
                         {props.items.map((item, index) => (
                             <div key={`carouselItemContent1${index}`} className={item.carouselItemClass}>
                                 {item.content}
@@ -24,7 +24,7 @@ const Carousel = (props) => {
                                 {item.content}
                             </div>
                         ))}
-                        
+
                     </div>
                     {props.children}
                 </Fragment>

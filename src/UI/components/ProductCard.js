@@ -3,7 +3,10 @@ import { Fragment } from "react";
 const ProductCard = (props) => {
 	return (
 		<Fragment>
-			{/* <span className="badge badge--square bg-white position-absolute font-weight-normal font-size-sm">new</span> */}
+			{props.useBadge && (
+				<span className="badge badge--square bg-white position-absolute fw-normal font-size-sm rounded-1 text-body">{props.textBadge}</span>
+			)}
+
 			<a href={props.url} className='d-block'>
 				<picture>
 					<img className='w-100' src={props.img} alt={props.title} />
