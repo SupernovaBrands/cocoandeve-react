@@ -10,7 +10,7 @@ const ProductDetail = lazy(() => import('./UI/templates/ProductDetail'));
 const App = () => {
   return (
     <Layout>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div></div>}>
         <Routes>
           <Route path='/tan-range' element={<TanRange />} />
           <Route path='/products/:handle' element={<ProductDetail />} />
