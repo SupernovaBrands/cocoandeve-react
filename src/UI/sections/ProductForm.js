@@ -38,7 +38,6 @@ const ProductForm = () => {
         setSelectedVariantShadeText(shadeText.text);
         const url = selectedVariantId !== '' && `https://dev.cocoandeve.com?itemtoadd=${selectedVariantId}&quantity=${quantity}`;
         setButtonUrl(url);
-        console.log(buttonUrl);
     }
 
     const onChangeQuantity = (qty) => {

@@ -30,7 +30,6 @@ const pushCustEmailToSignupnl = function (email, tag, url) {
 const SignupFooter = function (event) {
 	event.preventDefault();
 	const email = document.getElementById('signup-footer').value;
-	console.log('emailSubmitted', email);
 	const filter = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	if (filter.test(email)) {
 		pushCustEmailToSignupnl(email, 'signup-footer', `https://api.cocoandeve.com/bluecore/registrations`);
