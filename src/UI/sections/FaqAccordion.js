@@ -30,7 +30,7 @@ const FaqAccordion = () => {
                         <div key={`faqitem${index}`} className={`accordion-item border-0 border-bottom border-dark ${ index === 3 ? 'border-bottom-0':''}`}>
                             <div className="accordion-header bg-yellow-light" id={`FagItemHeading${index}`}>
                                 <button className="accordion-button bg-yellow-light h2 mb-0 collapsed w-100 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target={`#FagItemContent${index}`}>
-                                    <h2 className='col-10'>{faq.title}</h2>
+                                    <h3 className='col-10 ps-0 mb-0'>{faq.title}</h3>
                                     <Plus className='plus' />
 							        <Minus className='minus' />
                                 </button>

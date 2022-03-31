@@ -4,6 +4,10 @@
             content: none;
         }
 
+        &:not(.collapsed) {
+            box-shadow: none;
+        }
+
 		cursor: pointer;
         svg {
             width: calc-em(12);
