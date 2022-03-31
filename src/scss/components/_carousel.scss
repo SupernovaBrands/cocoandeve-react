@@ -305,8 +305,8 @@
 	&--background &-prev-icon,
 	&--background &-next-icon {
 		background-color: $white;
-		width: 2.5em;
-		height: 2.5em;
+		width: calc-em(50);
+		height: calc-em(70);
 		position: absolute;
 		z-index: -1;
 	}
@@ -473,9 +473,17 @@
 }
 
 .product-carousel {
+
 	.carousel-control-prev-icon,
 	.carousel-control-next-icon {
-		top: 28%;
+		top: calc-em(98.75);
+	}
+
+
+	@include media-breakpoint-down(md) {
+		.carousel--loop .carousel-item {
+			max-width: 75%;
+		}
 	}
 }
 

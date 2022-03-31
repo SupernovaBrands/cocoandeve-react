@@ -242,10 +242,13 @@ $badge-border-radius: calc-em(8);
 $badge-circle-width: calc-em(66);
 $badge-circle-height: calc-em(66);
 
+// Nav
+$nav-link-color: $body-color;
+
 // Nav Tabs
-$nav-tabs-link-active-bg: $primary;
-$nav-tabs-link-active-color: white;
-$nav-tabs-border-width: 1px;
+$nav-tabs-link-active-bg: white;
+$nav-tabs-link-active-color: $primary;
+$nav-tabs-border-width: 0;
 $nav-tabs-border-radius: 6px;
 $nav-tabs-border-color: black;
 $nav-tabs-link-hover-border-color: $body-color;
