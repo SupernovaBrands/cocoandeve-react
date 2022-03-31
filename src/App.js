@@ -10,7 +10,7 @@ const App = () => {
       <Routes>
         <Route path='/tan-range' element={<TanRange />} />
         <Route path='/products/:handle' element={<ProductDetail />} />
-        <Route path='/testproduct' element={<ProductDetail />} />
+        <Route path='/sunny-honey-bali-bronzing-self-tan-set' element={<ProductDetail />} />
       </Routes>
     </Layout>
   )
