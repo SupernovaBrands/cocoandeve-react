@@ -31,15 +31,6 @@ const ProductDetail = () => {
         }
     ]
 
-    const [selectedVariantId, setSelectedVariantId] = useState('32068891541539');
-    const [selectedVariantShadeText, setSelectedVariantShadeText] = useState('Medium - Subtle glow, lighter skin tones')
-    const onSelectedVariant = (event) => {
-        const variantId = event.target.getAttribute('data-id');
-        const shadeText = SHADES.find((shade) => shade.id === variantId)
-        setSelectedVariantId(variantId);
-        setSelectedVariantShadeText(shadeText.text);
-    }
-
     const renderLoader = () => <p>Loading</p>;
 
     return (

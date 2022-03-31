@@ -27,10 +27,10 @@ const ProductForm = () => {
         }
     ]
 
-    const [buttonUrl, setButtonUrl] = useState('');
     const [selectedVariantId, setSelectedVariantId] = useState('32068891541539');
     const [quantity, setQuantity] = useState(1);
     const [selectedVariantShadeText, setSelectedVariantShadeText] = useState('Medium - Subtle glow, lighter skin tones')
+    const [buttonUrl, setButtonUrl] = useState(`https://dev.cocoandeve.com?itemtoadd=${selectedVariantId}&quantity=${quantity}`);
     const onSelectedVariant = (event) => {
         const variantId = event.target.getAttribute('data-id');
         const shadeText = SHADES.find((shade) => shade.id === variantId)
