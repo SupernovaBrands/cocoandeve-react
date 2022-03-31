@@ -278,6 +278,13 @@
 }
 
 .carousel-indicators {
+	.rounded-circle {
+		border: 1px solid $gray-800;
+		&:not(.active) {
+			background-color: transparent !important;
+		}
+	}
+
 	&--primary {
 		li {
 			background-color: $primary;
