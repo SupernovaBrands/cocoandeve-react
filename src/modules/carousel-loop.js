@@ -1,7 +1,6 @@
 const carouselLoop = (carouselId) => {
     setTimeout(() => {
         const carouselLoop = document.getElementById(carouselId);
-        console.log('carouselLoop', carouselLoop);
         carouselLoop.addEventListener('slide.bs.carousel', function (e) {
             const $e = e.relatedTarget;
             const carouselInner = e.target.querySelector('.carousel-inner');
