@@ -23,7 +23,9 @@ const ProductCard = (props) => {
   				</p>
 				<p className="text-center">
       				<span className="text-linethrough h4 m-1 font-weight-normal">{props.price}</span>
-    				<span className="text-primary h4">{props.crossedPrice}</span>
+					{props.isCrossedPrice && (
+						<span className="text-primary h4">{props.crossedPrice}</span>
+					)}
   				</p>
 				<button type="button" className="btn btn-lg btn-primary text-white btn-block px-0">Learn More</button>
 			</div>
