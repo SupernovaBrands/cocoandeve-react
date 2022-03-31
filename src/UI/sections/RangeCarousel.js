@@ -343,13 +343,13 @@ const RangeCarousel = () => {
 		<section className='product-carousel py-2 py-lg-4'>
 			<div className='container d-flex flex-column align-items-center px-g'>
 				<h2 className='range__formula-title mb-2'>Self-tanners for any occasion</h2>
-				<ul className="nav nav-tabs justify-content-center border-0 col-9 col-lg-5 px-0 pb-2 range__tab" role="tablist">
+				<ul className="nav nav-tabs justify-content-center border-0 col-7 col-lg-3 px-0 pb-2 range__tab" role="tablist">
 					{CAROUSEL_TABS.map((item) => (
 						<li className="nav-item">
 							<a className={`nav-link text-decoration-none h4 mb-0 fw-bold text-center ${item.isTabActive ? 'active' : ''}`}
 								data-bs-toggle="tab" href={`#${item.carouselId}`} role="tab"
 								aria-controls={item.tabLabel.replace(/\s/g, '').toLowerCase()}>
-									{item.tabLabel}
+									<nobr>{item.tabLabel}</nobr>
 							</a>
 						</li>
 					))}
