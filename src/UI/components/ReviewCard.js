@@ -1,5 +1,5 @@
 import ReviewStar from '../components/ReviewStar';
-import { ReactComponent as GreenCheck } from '../../assets/green-check.svg';
+import { ReactComponent as GreenCheck } from '../../assets/green-checkmark.svg';
 
 const ReviewCard = (props) => {
     return (
