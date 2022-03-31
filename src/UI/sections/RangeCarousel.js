@@ -1,47 +1,375 @@
 import ProductCard from "../components/ProductCard";
 import carouselLoop from "../../modules/carousel-loop";
+import Carousel from "../components/Carousel";
+
+
+import { ReactComponent as ChevronPrev } from '../../assets/chevron-prev.svg';
+import { ReactComponent as ChevronNext } from '../../assets/chevron-next.svg';
 
 const RangeCarousel = () => {
-	carouselLoop('bestsellers');
+
+	const PRODUCTS_BODY = [
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center active',
+            content: <ProductCard
+				title='Bronzing Face Drops'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Foam'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Foam'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Foam'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Foam'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Foam'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Foam'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Foam'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Foam'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        }
+	];
+
+	const PRODUCTS_FACE = [
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center active',
+            content: <ProductCard
+				title='Bronzing Face Drops (FACE)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Foam (FACE)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Foam (FACE)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Foam (FACE)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Foam (FACE)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Foam (FACE)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Foam (FACE)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Foam (FACE)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Foam (FACE)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        }
+	];
+
+	const PRODUCTS_VALUE_SETS = [
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center active',
+            content: <ProductCard
+				title='Bronzing Face Drops (Value)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Bronzing Face Drops (Value)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Bronzing Face Drops (Value)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Bronzing Face Drops (Value)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Bronzing Face Drops (Value)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Bronzing Face Drops (Value)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Bronzing Face Drops (Value)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Bronzing Face Drops (Value)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Bronzing Face Drops (Value)'
+				url='/products/test'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='199'
+				price='$96.80'
+				crossedPrice='$59.90' />
+        }
+	];
+
+	const CAROUSEL_TABS = [
+		{
+			carouselId: 'FeaturedFace',
+			isTabActive: false,
+			carouselItems: PRODUCTS_FACE,
+			tabLabel: 'Face'
+		},
+		{
+			carouselId: 'FeaturedBody',
+			isTabActive: true,
+			carouselItems: PRODUCTS_BODY,
+			tabLabel: 'Body'
+		},
+		{
+			carouselId: 'FeaturedValueSets',
+			isTabActive: false,
+			carouselItems: PRODUCTS_VALUE_SETS,
+			tabLabel: 'Value Sets'
+		}
+	];
+
+	carouselLoop('FeaturedBody');
+	carouselLoop('FeaturedFace');
+	carouselLoop('FeaturedValueSets');
+
 	return (
 		<section className='product-carousel py-2 py-lg-4'>
 			<div className='container d-flex flex-column align-items-center px-g'>
 				<h2 className='range__formula-title mb-2'>Self-tanners for any occasion</h2>
 				<ul className="nav nav-tabs justify-content-center border-0 col-9 col-lg-5 px-0 pb-2 range__tab" role="tablist">
-					<li className="nav-item">
-						<a className="nav-link text-decoration-none h4 mb-0 fw-bold text-center" data-bs-toggle="tab" href="#new" role="tab" aria-controls="new">Face</a>
-					</li>
-					<li className="nav-item">
-						<a className="nav-link text-decoration-none h4 mb-0 fw-bold text-center active" data-bs-toggle="tab" href="#bestsellers" role="tab" aria-controls="bestsellers">Body</a>
-					</li>
-					<li className="nav-item">
-						<a className="nav-link text-decoration-none h4 mb-0 fw-bold text-center" data-bs-toggle="tab" href="#value-sets" role="tab" aria-controls="value-sets">Value Sets</a>
-					</li>
+					{CAROUSEL_TABS.map((item) => (
+						<li className="nav-item">
+							<a className={`nav-link text-decoration-none h4 mb-0 fw-bold text-center ${item.isTabActive ? 'active' : ''}`}
+								data-bs-toggle="tab" href={`#${item.carouselId}`} role="tab"
+								aria-controls={item.tabLabel.replace(/\s/g, '').toLowerCase()}>
+									{item.tabLabel}
+							</a>
+						</li>
+					))}
 				</ul>
 			</div>
             <div className='tab-content container px-sm-0 px-md-2 text-center'>
-				<div className='tab-pane fade carousel slide carousel--loop' id='new' role='tabpanel' data-interval='false' aria-labelledby='new-tab' data-slide-number='4'>Tab new</div>
-				<div className='tab-pane fade carousel slide carousel--loop show active' id='bestsellers' role='tabpanel' data-bs-ride='carousel' data-bs-interval='false' aria-labelledby='bestsellers-tab' data-bs-slide-number='4'>
-					<div className='carousel--centered'>
-						<div className='carousel-inner row flex-nowrap' role='listbox'>
-							<ProductCard title='Bronzing Face Drops' classname='active' />
-							<ProductCard title='Sunny Honey Bali Bronzing Foam' classname='' />
-							<ProductCard title='Bronzing Face Drops' classname=''/>
-							<ProductCard title='Sunny Honey Bali Bronzing Foam' classname='' />
-							<ProductCard title='Sunny Honey Bali Bronzing Foam' classname='' />
-							<ProductCard title='Sunny Honey Bali Bronzing Foam' classname='' />
-							<ProductCard title='Sunny Honey Bali Bronzing Foam' classname='' />
-							<ProductCard title='Sunny Honey Bali Bronzing Foam' classname='' />
-						</div>
-					</div>
-					<button className="carousel-control carousel-control-prev carousel-control--background floating-out-start justify-content-start text-primary d-none d-lg-flex" data-bs-target="#bestsellers" data-bs-slide="prev">
-						<span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.627 22.627" className="svg"><path d="M16.2 1.885l-9.428 9.428 9.428 9.428-1.886 1.886L3 11.313 14.314 0z"></path></svg></span>
-					</button>
-					<button className="carousel-control carousel-control-next carousel-control--background floating-out-end justify-content-end text-primary d-none d-lg-flex" data-bs-target="#bestsellers" data-bs-slide="next">
-						<span className="carousel-control-next-icon d-flex justify-content-center align-items-center" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.627 22.627" className="svg"><path d="M5.428 20.742l9.428-9.428-9.428-9.428L7.314 0l11.314 11.314L7.314 22.627z"></path></svg></span>
-					</button>
-				</div>
-				<div className='tab-pane fade carousel slide carousel--loop' id='value-sets' role='tabpanel' data-interval='false' aria-labelledby='value-sets-tab' data-slide-number='4'>Tab3</div>
+				{CAROUSEL_TABS.map((item) => (
+					<Carousel id={item.carouselId} centered={true} items={item.carouselItems} slideNumber='4' className={`tab-pane fade carousel slide carousel--loop ${item.isTabActive ? 'show active' : ''}`}>
+						<button className="carousel-control carousel-control-prev carousel-control--background floating-out-start justify-content-start text-primary d-none d-lg-flex" data-bs-target={`#${item.carouselId}`} data-bs-slide="prev">
+							<span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true">
+								<ChevronPrev />
+							</span>
+						</button>
+						<button className="carousel-control carousel-control-next carousel-control--background floating-out-end justify-content-end text-primary d-none d-lg-flex" data-bs-target={`#${item.carouselId}`} data-bs-slide="next">
+							<span className="carousel-control-next-icon d-flex justify-content-center align-items-center" aria-hidden="true">
+								<ChevronNext />
+							</span>
+						</button>
+					</Carousel>
+				))}
 			</div>
         </section>
 	);
