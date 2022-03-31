@@ -10,14 +10,13 @@ import { ReactComponent as ChevronDown } from '../../assets/chevron-down.svg';
 const ProductImageCarousel = () => {
     carouselLoop('product-image-carousel__indicator');
     const PRODUCT_IMAGES = [
-        'https://cdn.shopify.com/s/files/1/0243/8817/3888/products/BronzingFoam_828x828.jpg?v=1644832516',
-        'https://cdn.shopify.com/s/files/1/0243/8817/3888/products/SH_Foam2_1140x.jpg?v=1644832516',
-        'https://cdn.shopify.com/s/files/1/0243/8817/3888/products/SH_Foam3_1140x.jpg?v=1644832516',
-        'https://cdn.shopify.com/s/files/1/0243/8817/3888/products/SH_Foam4_1140x.jpg?v=1644832516',
-        'https://cdn.shopify.com/s/files/1/0243/8817/3888/products/SH_Foam5_1140x.jpg?v=1644832516',
-        'https://cdn.shopify.com/s/files/1/0243/8817/3888/products/SH_Foam6_1140x.jpg?v=1644832516',
-        'https://cdn.shopify.com/s/files/1/0243/8817/3888/products/SH_Foam7_1140x.jpg?v=1644832516',
-        'https://cdn.shopify.com/s/files/1/0243/8817/3888/products/SH_Foam8_1140x.jpg?v=1644832516',
+        'pimage1.jpg',
+        'pimage2.jpg',
+        'pimage3.jpg',
+        'pimage4.jpg',
+        'pimage5.jpg',
+        'pimage6.jpg',
+        'pimage7.jpg',
     ];
 
     return (
@@ -35,7 +34,7 @@ const ProductImageCarousel = () => {
                     </div>
                     <div key="div-carousel-2" className="carousel-indicators d-lg-none">
                         {PRODUCT_IMAGES.map((image, index) => (
-                            <button key={image} type="button" data-bs-target="#product-image-carousel" data-bs-slide-to={index} className={`rounded-circle ${index === 0 ? 'active': ''}`}></button>
+                            <button key={image} type="button" data-bs-target="#product-image-carousel" data-bs-slide-to={index} className={`rounded-circle bg-gray-800 border-gray-800 ${index === 0 ? 'active': ''}`}></button>
                         ))}
                     </div>
                     <button key="btn1" className="carousel-control-prev d-block d-lg-none" type="button" data-bs-target="#product-image-carousel" data-bs-slide="prev">
@@ -56,7 +55,9 @@ const ProductImageCarousel = () => {
                     <div key={image} data-bs-target="#product-image-carousel" data-bs-slide-to={index} className={`product-image-carousel__indicator__item carousel-item col-12 px-lg-0 pb-lg-3 mw-100 ${ index === 0 ? 'active':''}`}>
                         <button className="btn-unstyled border d-block w-100">
                             <picture className="ratio ratio-1x1 w-100 d-block">
-                                <img  src={image} alt="Slide {{@index}}" />
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/${image.replace('jpg', 'webp')}`}/>
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/${image}`}/>
+                                <img src={`${process.env.PUBLIC_URL}/images/${image}`}  />
                             </picture>
                         </button>
                     </div>

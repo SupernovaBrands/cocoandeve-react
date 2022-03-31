@@ -14,8 +14,20 @@ const CustomerReview = () => {
                     <p>The BEST sunless tan!!</p>
                     <p>Doesn’t smell bad like some others, and goes on super smooth. Color is gorgeous, looks natural and doesn’t have any orange tint AND makes your skin look soooo healthy. Doesn’t leave streaks or blotches and fades perfectly without leaving patches. I love it!!!</p>
                     <div className='row no-gutters'>
-                        <div className='col-6'><img className='w-100' src={`${process.env.PUBLIC_URL}/images/review-customer-2.png`} /></div>
-                        <div className='col-6'><img className='w-100' src={`${process.env.PUBLIC_URL}/images/review-customer-1.png`} /></div>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-2.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-2.png`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-2.png`} className="img-fluid" />
+                            </picture>
+                        </div>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-1.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-1.png`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-1.png`} className="w-100" />
+                            </picture>
+                        </div>
                     </div>
                 </ReviewCard>
         },
@@ -29,8 +41,20 @@ const CustomerReview = () => {
                     <p>I’m a huge self tanner</p>
                     <p>I’m a huge self tanner user and this is by far the best one I’ve used. Theres no streaks, leaves you a bronze color and not orange. Smells amazing, easy application obsessed! Can’t wait to try the other products.</p>
                     <div className='row no-gutters'>
-                        <div className='col-6'><img className='w-100' src={`${process.env.PUBLIC_URL}/images/review-customer-4.png`} /></div>
-                        <div className='col-6'><img className='w-100' src={`${process.env.PUBLIC_URL}/images/review-customer-3.png`} /></div>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-4.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-4.png`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-4.png`} className="img-fluid" />
+                            </picture>
+                        </div>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-3.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-3.png`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-3.png`} className="w-100" />
+                            </picture>
+                        </div>
                     </div>
                 </ReviewCard>
         },
@@ -44,7 +68,13 @@ const CustomerReview = () => {
                     <p>Best self tanner I've tried!</p>
                     <p>Beautiful natural tan color. Easy to apply although if you have excessively dry skin it will suck up the color in those spots. Applying to feet is a little tricky but nothing you can't get the hang of after a few applications. Smells great too! I love the hair towel and the cute little eye mask!</p>
                     <div className='row no-gutters'>
-                        <div className='col-6'><img className='w-100' src={`${process.env.PUBLIC_URL}/images/review-customer-3.png`} /></div>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-3.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-3.png`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-3.png`} className="img-fluid" />
+                            </picture>
+                        </div>
                     </div>
                 </ReviewCard>
         },
@@ -57,8 +87,15 @@ const CustomerReview = () => {
                 >
                     <p>Wow!</p>
                     <p>I have sensitive dry skin and this product changed the way I see my skin now! No dry spots, no Casper white skin! I’m a whole new woman!! I was weary to try it because I haven't had success with other tanning products- but I'm SO happy I did!</p>
+
                     <div className='row no-gutters'>
-                        <div className='col-6'><img className='w-100' src={`${process.env.PUBLIC_URL}/images/review-customer-6.png`} /></div>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-6.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-6.png`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-6.png`} className="img-fluid" />
+                            </picture>
+                        </div>
                     </div>
                 </ReviewCard>
         },
@@ -72,8 +109,20 @@ const CustomerReview = () => {
                     <p>I am converted!!</p>
                     <p>I was skeptical that this would actually be any bettee than the cheap St Moritz that I use...but this was absolutely worth the money!! The smell is gorgeous (although when it's developed it still has a very slight fake tan smell but nothing strong) the colour is perfect, I went for dark and I was worried it wouldn't be dark enough. But after washing it off it seemed to develop even further over the next few hours! It went on so smoothly. I am converted and won't use anything else now !! One photo of just 1 leg is after immediately applying it, it developed much deeper after a few hours as you can see in the photo where both legs are done.</p>
                     <div className='row no-gutters'>
-                        <div className='col-6'><img className='w-100' src={`${process.env.PUBLIC_URL}/images/review-customer-8.png`} /></div>
-                        <div className='col-6'><img className='w-100' src={`${process.env.PUBLIC_URL}/images/review-customer-7.png`} /></div>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-8.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-8.png`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-8.png`} className="img-fluid" />
+                            </picture>
+                        </div>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-7.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-7.png`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-7.png`} className="w-100" />
+                            </picture>
+                        </div>
                     </div>
                 </ReviewCard>
         },
@@ -87,8 +136,20 @@ const CustomerReview = () => {
                     <p>This product is amazing!</p>
                     <p>I love the perfect golden glow the tanner gives my skin. I use the medium shade, and I'm at least two shades darker than I would be naturally. This is such a great way to get the perfect tan without causing skin damage or possible skin cancer. The photo is included to show the difference between my natural paleness and this amazing product.</p>
                     <div className='row no-gutters'>
-                        <div className='col-6'><img className='w-100' src={`${process.env.PUBLIC_URL}/images/review-customer-2.png`} /></div>
-                        <div className='col-6'><img className='w-100' src={`${process.env.PUBLIC_URL}/images/review-customer-7.png`} /></div>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-2.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-2.png`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-2.png`} className="img-fluid" />
+                            </picture>
+                            </div>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-7.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-7.png`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-7.png`} className="w-100" />
+                            </picture>
+                        </div>
                     </div>
                 </ReviewCard>
         }

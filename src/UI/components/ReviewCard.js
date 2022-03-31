@@ -2,10 +2,11 @@ import ReviewStar from '../components/ReviewStar';
 
 const ReviewCard = (props) => {
     return (
+        
         <div className=" bg-gray-100 p-1 rounded-3">
             <div className="d-flex mb-1">
                 <ReviewStar score={5} />
-                <span className="d-block yotpo-widget__total mt-lg-0 ms-lg-1">5.0</span>
+                <a href="https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set#write-a-review" className="d-block yotpo-widget__total mt-lg-0 ms-lg-1">5.0</a>
             </div>
             <p>{props.name}</p>
             <p className="fw-bold">{props.caption}</p>

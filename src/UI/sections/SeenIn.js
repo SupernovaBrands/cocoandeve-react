@@ -4,24 +4,50 @@ const SeenIn = () => {
     const CAROUSELITEMS = [
         {
             carouselItemClass: 'carousel-item col-9 col-md-3 active mt-5 text-center',
-            content: <img className="img-fluid" src={`${process.env.PUBLIC_URL}/images/glamour.png`} alt="slide 1"/>
+            content: 
+                <picture>
+                    <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/glamour.webp`} />
+                    <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/glamour.png`} />
+                    <img src={`${process.env.PUBLIC_URL}/images/glamour.png`} className="img-fluid" />
+                </picture>
         },
         {
             carouselItemClass: 'carousel-item col-9 col-md-3 active mt-5 text-center',
-            content: <img className="img-fluid" src={`${process.env.PUBLIC_URL}/images/cosmopolitan.png`} alt="slide 1"/>
+            content: 
+                <picture>
+                    <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/cosmopolitan.webp`} />
+                    <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/cosmopolitan.png`} />
+                    <img src={`${process.env.PUBLIC_URL}/images/cosmopolitan.png`} className="img-fluid" />
+                </picture>
         },
         {
             carouselItemClass: 'carousel-item col-9 col-md-3  mt-5 text-center',
-            content: <img className="img-fluid" src={`${process.env.PUBLIC_URL}/images/elle.png`} alt="slide 1"/>
+            content: 
+                <picture>
+                    <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/elle.webp`} />
+                    <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/elle.png`} />
+                    <img src={`${process.env.PUBLIC_URL}/images/elle.png`} className="img-fluid" />
+                </picture>
         },
         {
             carouselItemClass: 'carousel-item col-9 col-md-3  mt-5 text-center',
-            content: <img className="img-fluid" src={`${process.env.PUBLIC_URL}/images/mailonline.png`} alt="slide 1"/>
+            content: 
+                <picture>
+                    <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/mailonline.webp`} />
+                    <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/mailonline.png`} />
+                    <img src={`${process.env.PUBLIC_URL}/images/mailonline.png`} className="img-fluid" />
+                </picture>
         },
         {
             carouselItemClass: 'carousel-item col-9 col-md-3  mt-5 text-center',
-            content: <img className="img-fluid" src={`${process.env.PUBLIC_URL}/images/refinery29.png`} alt="slide 1"/>
+            content: 
+                <picture>
+                    <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/refinery29.webp`} />
+                    <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/refinery29.png`} />
+                    <img src={`${process.env.PUBLIC_URL}/images/refinery29.png`} className="img-fluid" />
+                </picture>
         },
+        
     ]
 	return (
 		<section className='as-seen-in py-4'>

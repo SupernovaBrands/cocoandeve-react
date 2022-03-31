@@ -1,3 +1,5 @@
+import { ReactComponent as Minus } from '../../assets/minus.svg';
+import { ReactComponent as Plus } from '../../assets/plus.svg';
 
 const FaqAccordion = () => {
     const FAQCONTENT = [
@@ -26,12 +28,14 @@ const FaqAccordion = () => {
                 <div className="accordion list-unstyled border-0 mt-4 " id="faqSection">
                     {FAQCONTENT.map((faq, index) => (
                         <div key={`faqitem${index}`} className={`accordion-item border-0 border-bottom border-dark ${ index === 3 ? 'border-bottom-0':''}`}>
-                            <h2 className="accordion-header bg-yellow-light" id={`FagItemHeading${index}`}>
-                                <button className="accordion-button bg-yellow-light h2 mb-0" type="button" data-bs-toggle="collapse" data-bs-target={`#FagItemContent${index}`}>
-                                    {faq.title}
+                            <div className="accordion-header bg-yellow-light" id={`FagItemHeading${index}`}>
+                                <button className="accordion-button bg-yellow-light h2 mb-0 collapsed w-100 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target={`#FagItemContent${index}`}>
+                                    <h2 className='col-10'>{faq.title}</h2>
+                                    <Plus className='plus' />
+							        <Minus className='minus' />
                                 </button>
-                            </h2>
-                            <div id={`FagItemContent${index}`} className={`accordion-collapse collapse bg-yellow-light ${ index === 0 ? ' show':''}`}>
+                            </div>
+                            <div id={`FagItemContent${index}`} className="accordion-collapse collapse bg-yellow-light">
                                 <div className="accordion-body" dangerouslySetInnerHTML={{ __html: faq.content }} />
                             </div>
                         </div>

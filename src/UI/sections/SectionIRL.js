@@ -1,6 +1,9 @@
 import IRLCard from '../components/IRLCard';
 import Carousel from '../components/Carousel';
 
+import { ReactComponent as InstagramIcon } from '../../assets/ig-color.svg';
+import { ReactComponent as FacebookIcon } from '../../assets/facebook-color.svg';
+
 const SectionIRL = () => {
 
     const CONTENT = [
@@ -11,6 +14,7 @@ const SectionIRL = () => {
                     name="@hughesyfit"
                     caption="Bali Bronzing Foam (Dark)"
                     image={`${process.env.PUBLIC_URL}/images/hughesyfit.jpg`}
+                    comImage={`${process.env.PUBLIC_URL}/compressed_images/hughesyfit.webp`}
                 >
                     <p>wearing @cocoandeve sunny honey bali bronzing foam in shade dark. Since not being able to go away and catch a natural tan, this has been a life saver, the smell is incredible (tropical mango and guave scent 🌴😻) it’s 100% vegan, toxin-free and cruelty free</p>
 
@@ -23,6 +27,7 @@ const SectionIRL = () => {
                     name="@hannahtucker"
                     caption="Bali Bronzing Foam (Dark)"
                     image={`${process.env.PUBLIC_URL}/images/hannahtucker.jpg`}
+                    comImage={`${process.env.PUBLIC_URL}/compressed_images/hannahtucker.webp`}
                 >
                     <p>Nothing better than a fresh tan to boost your confidence. I have been using @cocoandeve Sunny Honey Bali Bronzing foam in dark to keep a natural glow this winter, it’s super easy to apply and quick so it never feels like a chore. It has an amazing scent of Balinese Mango and Guava, 100% vegan, toxin-free, cruelty free, and gives you an olive colour (no orange vibes over here)!</p>
                 </IRLCard>
@@ -33,7 +38,8 @@ const SectionIRL = () => {
                 <IRLCard
                     name="@orianavtorres"
                     caption="Bali Bronzing Foam (Ultra Dark)"
-                    image={`${process.env.PUBLIC_URL}/images/orianavtorres.jpg`}
+                    image={`${process.env.PUBLIC_URL}/compressed_images/orianavtorres.jpg`}
+                    comImage={`${process.env.PUBLIC_URL}/compressed_images/orianavtorres.webp`}
                 >
                     <p>The perfect tan! Free of sulfate, toxins, silicones, parabens and other harmful chemicals. I use the Tanning Goddess Kit is Ultra Dark.</p>
                 </IRLCard>
@@ -44,7 +50,8 @@ const SectionIRL = () => {
                 <IRLCard
                     name="@jaydestella"
                     caption="Bali Bronzing Foam (Dark)"
-                    image={`${process.env.PUBLIC_URL}/images/jaydestella.jpg`}
+                    image={`${process.env.PUBLIC_URL}/compressed_images/jaydestella.jpg`}
+                    comImage={`${process.env.PUBLIC_URL}/compressed_images/jaydestella.webp`}
                 >
                     <p>Just tried @cocoandeve bronzing foam!!! And I’m obsessed! 🤍</p>
                 </IRLCard>
@@ -55,8 +62,8 @@ const SectionIRL = () => {
 		<section className='customer-reviews py-4'>
             <h2 className="h1 mb-3 text-center">Tan Magic IRL</h2>
             <div className='d-flex justify-content-center mb-3'>
-                <div className='d-flex align-items-center'><img src={`${process.env.PUBLIC_URL}/images/facebook.svg`} className='font-size-sm' /><span className='ms-1 font-size-sm'>287k on Facebook</span></div>
-                <div className='d-flex ms-1 align-items-center'><img src={`${process.env.PUBLIC_URL}/images/instagram.svg`} className='font-size-sm' /><span className='ms-1 font-size-sm'>879k on Instagram</span></div>
+                <div className='d-flex align-items-center'><FacebookIcon className='font-size-sm' /><span className='ms-1 font-size-sm'>287k on Facebook</span></div>
+                <div className='d-flex ms-1 align-items-center'><InstagramIcon className='font-size-sm' /><span className='ms-1 font-size-sm'>879k on Instagram</span></div>
             </div>
             <div className='container'>
                 <Carousel
