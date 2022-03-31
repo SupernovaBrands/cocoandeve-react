@@ -82,11 +82,105 @@ const RangeCarousel = () => {
 				totalReviews='96'
 				price='$24.90'
 				isCrossedPrice='false' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center active',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Bundle'
+				url='https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='4336'
+				price='$46.90'
+				isCrossedPrice='true'
+				crossedPrice='$73.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bronzing Foam'
+				url='https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-mousse'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BronzingFoam_300x.jpg?v=1644832516'
+				rating='4.8'
+				totalReviews='2021'
+				price='$34.90'
+				isCrossedPrice='false' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Tanning Goddess Kit'
+				url='https://www.cocoandeve.com/products/tanning-goddess'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/TanningGoddessKit_300x.jpg?v=1644832766'
+				rating='4.8'
+				totalReviews='2021'
+				price='$73.90'
+				isCrossedPrice='true'
+				crossedPrice='$105.80' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Self Tan Travel Kit'
+				url='https://www.cocoandeve.com/products/self-tan-travel-kit'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/TanningTravelKit_300x.jpg?v=1644832274'
+				rating='4.8'
+				totalReviews='96'
+				price='$24.90'
+				isCrossedPrice='false' />
         }
 	];
 
 	const PRODUCTS_VALUE_SETS = [
         {
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center active',
+            content: <ProductCard
+				title='Bali Bae Self Tan Set'
+				url='https://www.cocoandeve.com/products/bali-bae-self-tan-set'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/TanBundlewithBackApplicator_300x.jpg?v=1648447191'
+				rating='4.8'
+				totalReviews='4336'
+				price='$59.00'
+				isCrossedPrice='true'
+				crossedPrice='$90.80' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Sunny Honey Bali Bronzing Bundle'
+				url='https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/BaliBronzingBundle_1140x_4bfff989-782d-4e53-bbd2-4f820c79cca7_300x.jpg?v=1648446902'
+				rating='4.8'
+				totalReviews='4336'
+				price='$46.90'
+				isCrossedPrice='true'
+				crossedPrice='$73.90' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Tanning Goddess Kit'
+				url='https://www.cocoandeve.com/products/tanning-goddess'
+				img='//cdn.shopify.com/s/files/1/0243/8817/3888/products/TanningGoddessKit_300x.jpg?v=1644832766'
+				rating='4.8'
+				totalReviews='2021'
+				price='$73.90'
+				isCrossedPrice='true'
+				crossedPrice='$105.80' />
+        },
+		{
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            content: <ProductCard
+				title='Dewy Glow Bundle'
+				url='https://www.cocoandeve.com/products/dewy-glow-bundle'
+				img='//cdn.shopify.com/s/files/1/0286/1327/9779/products/DewyGlowBundle-SHWhip_300x.jpg?v=1644810274'
+				rating='4.8'
+				totalReviews='199'
+				price='$51.00'
+				isCrossedPrice='true'
+				crossedPrice='$63.80' />
+        },
+		{
             carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center active',
             content: <ProductCard
 				title='Bali Bae Self Tan Set'
