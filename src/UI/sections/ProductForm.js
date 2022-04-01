@@ -76,7 +76,7 @@ const ProductForm = () => {
                         </div>
                         <span className='mb-1 mb-lg-0 mg-lg-0'>{selectedVariantShadeText}</span>
                     </div>
-                    <p className="d-block bg-gray-100 p-1 rounded mb-2">Not sure which shade to get? Check our <a href="">Shades Guide</a></p>
+                    <p className="d-none bg-gray-100 p-1 rounded mb-2">Not sure which shade to get? Check our <a href="">Shades Guide</a></p>
                     <div className="product-swatch-mobile__trigger order-lg-1">
                         <div className="product-form-submit mb-3 position-relative">
                             <div className="d-flex">

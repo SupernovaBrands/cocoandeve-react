@@ -53,7 +53,7 @@ const ProductImageCarousel = () => {
                 <div key="carousel-inner" className="carousel-inner d-flex flex-nowrap flex-lg-column justify-content-center justify-content-lg-start">
                     {PRODUCT_IMAGES.map((image, index) => (
                     <div key={image} data-bs-target="#product-image-carousel" data-bs-slide-to={index} className={`product-image-carousel__indicator__item carousel-item col-12 px-lg-0 pb-lg-3 mw-100 ${ index === 0 ? 'active':''}`}>
-                        <button className="btn-unstyled border d-block w-100">
+                        <button className={`btn-unstyled d-block w-100 border-2 ${index === 0 ? 'border-primary': ''}`}>
                             <picture className="ratio ratio-1x1 w-100 d-block">
                                 <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/${image.replace('jpg', 'webp')}`}/>
                                 <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/${image}`}/>

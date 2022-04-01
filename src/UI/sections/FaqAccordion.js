@@ -35,7 +35,7 @@ const FaqAccordion = () => {
 							        <Minus className='minus' />
                                 </button>
                             </div>
-                            <div id={`FagItemContent${index}`} className="accordion-collapse collapse bg-yellow-light">
+                            <div data-bs-parent="#faqSection" id={`FagItemContent${index}`} className="accordion-collapse collapse bg-yellow-light">
                                 <div className="accordion-body" dangerouslySetInnerHTML={{ __html: faq.content }} />
                             </div>
                         </div>
