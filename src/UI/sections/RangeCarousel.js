@@ -2,23 +2,10 @@ import ProductCard from "../components/ProductCard";
 import carouselLoop from "../../modules/carousel-loop";
 import Carousel from "../components/Carousel";
 
-
 import { ReactComponent as ChevronPrev } from '../../assets/chevron-prev.svg';
 import { ReactComponent as ChevronNext } from '../../assets/chevron-next.svg';
-import { Fragment, useLayoutEffect, useState } from "react";
-
-const useWindowSize = () => {
-	const [size, setSize] = useState([0, 0]);
-	useLayoutEffect(() => {
-		function updateSize() {
-			setSize([window.innerWidth, window.innerHeight]);
-		  }
-		window.addEventListener('resize', updateSize);
-		updateSize();
-		  return () => window.removeEventListener('resize', updateSize);
-	}, []);
-	return size;
-}
+import { Fragment } from "react";
+import { useWindowSize } from "../../modules/Utils";
 
 const RangeCarousel = () => {
 
@@ -126,7 +113,9 @@ const RangeCarousel = () => {
 				rating='4.8'
 				totalReviews='2021'
 				price='$34.90'
-				isCrossedPrice={false} />
+				useBadge={true}
+				isCrossedPrice={false}
+				textBadge='New' />
         },
 		{
             carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',

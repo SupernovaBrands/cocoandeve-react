@@ -1,3 +1,4 @@
+import { useLayoutEffect, useState } from "react";
 
 export const Base64 = {
 	decode(str) {
@@ -38,4 +39,17 @@ export const getCookie = (name) => {
 		if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
 	}
 	return null;
+};
+
+export const useWindowSize = () => {
+	const [size, setSize] = useState([0, 0]);
+	useLayoutEffect(() => {
+		function updateSize() {
+			setSize([window.innerWidth, window.innerHeight]);
+		  }
+		window.addEventListener('resize', updateSize);
+		updateSize();
+		  return () => window.removeEventListener('resize', updateSize);
+	}, []);
+	return size;
 };
