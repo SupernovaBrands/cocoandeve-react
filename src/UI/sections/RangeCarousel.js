@@ -84,7 +84,7 @@ const RangeCarousel = () => {
 				isCrossedPrice='false' />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center active',
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
             content: <ProductCard
 				title='Sunny Honey Bali Bronzing Bundle'
 				url='https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set'
@@ -181,7 +181,7 @@ const RangeCarousel = () => {
 				crossedPrice='$63.80' />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center active',
+            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
             content: <ProductCard
 				title='Bali Bae Self Tan Set'
 				url='https://www.cocoandeve.com/products/bali-bae-self-tan-set'
