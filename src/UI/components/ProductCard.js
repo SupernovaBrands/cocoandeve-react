@@ -9,6 +9,8 @@ const ProductCard = (props) => {
 
 			<a href={props.url} className='d-block'>
 				<picture>
+					<source type="image/webp" srcSet={props.comImg} />
+					<source type="image/jpeg" srcSet={props.img} />
 					<img className='w-100' src={props.img} alt={props.title} />
 				</picture>
 			</a>
@@ -27,7 +29,7 @@ const ProductCard = (props) => {
 						<span className="text-primary h4">{props.crossedPrice}</span>
 					)}
   				</p>
-				<button type="button" className="btn btn-lg btn-primary text-white btn-block px-0">Learn More</button>
+				<a href={props.url} className="btn btn-lg btn-primary text-white btn-block px-0">Learn More</a>
 			</div>
 		</Fragment>
 	)
