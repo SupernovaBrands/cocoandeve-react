@@ -30,9 +30,11 @@ const RangeFormula = () => {
 							</li>
 						</ul>
 					</div>
-					<div className='col-12 col-lg-7 order-lg-1'>
-						<img class='w-100 d-none d-lg-block pe-4' alt='Revolutionary Formula' src='images/revolutionary-formula-dt.jpg' />
-					</div>
+					<picture className='col-12 col-lg-7 order-lg-1'>
+						<source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/revolutionary-formula-dt.webp`} />
+						<source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/revolutionary-formula-dt.jpg`} />
+						<img class='w-100 d-none d-lg-block pe-4' alt='Revolutionary Formula' src={`${process.env.PUBLIC_URL}/images/revolutionary-formula-dt.jpg`} />
+					</picture>
 				</div>
 			</div>
 			<div className='range__formula-tagline bg-yellow-light-secondary text-center d-lg-none font-size-sm fw-bold py-g mt-2'>
