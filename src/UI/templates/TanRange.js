@@ -5,6 +5,7 @@ import RangeBanner from "../sections/RangeBanner";
 import RangeCarousel from "../sections/RangeCarousel";
 import RangeFormula from "../sections/RangeFormula";
 import SectionIRL from "../sections/SectionIRL";
+import SeenIn from "../sections/SeenIn";
 
 const TanRange = () => {
     return (
@@ -13,6 +14,7 @@ const TanRange = () => {
             <RangeCarousel />
             <RangeFormula />
             <SectionIRL />
+            <SeenIn />
             <FaqAccordion />
             <CustomerReview />
         </Fragment>
