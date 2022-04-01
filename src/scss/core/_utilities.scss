@@ -37,6 +37,14 @@
 	}
 }
 
+// fixed sm bottom
+.fixed-sm-bottom {
+	@include media-breakpoint-down(lg) {
+		position: fixed;
+		bottom: 0;
+	}
+}
+
 .rounded-right-0 {
 	border-top-right-radius: 0 !important;
 	border-bottom-right-radius: 0 !important;
