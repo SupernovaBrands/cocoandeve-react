@@ -42,6 +42,7 @@ const carouselLoop = (carouselId) => {
                 } else {
                     nextBtn.removeAttribute('disabled');
                 }
+                
             }
 
             if (e.target.querySelector('.carousel--centered')) {
@@ -58,7 +59,21 @@ const carouselLoop = (carouselId) => {
                 }
             }
         });
-
+        if (carouselId === 'product-image-carousel__indicator') {
+            const carousel = document.querySelector('#product-image-carousel__indicator');
+            const items = carousel.querySelectorAll('.carousel-item');
+            Array.from(items).forEach(function(element) {
+                element.addEventListener('click', function (e) {
+                    Array.from(items).forEach(function(elToClassRemove) {
+                        elToClassRemove.querySelector('button').classList.remove('border-primary');
+                        console.log(elToClassRemove)
+                    });
+                    const targetBtn = e.target.closest('button');
+                    console.log(targetBtn);
+                    targetBtn.classList.add('border-primary');
+                });
+            });
+        }
     }, 500);
 }
 
