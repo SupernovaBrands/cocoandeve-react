@@ -74,7 +74,9 @@ const RangeCarousel = () => {
 				rating='4.8'
 				totalReviews='2021'
 				price='$34.90'
-				isCrossedPrice={false} />
+				isCrossedPrice={false}
+				useBadge={true}
+				textBadge='New' />
         },
 		{
             carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
