@@ -5,6 +5,7 @@ import Carousel from "../components/Carousel";
 
 import { ReactComponent as ChevronPrev } from '../../assets/chevron-prev.svg';
 import { ReactComponent as ChevronNext } from '../../assets/chevron-next.svg';
+import { Fragment } from "react";
 
 const RangeCarousel = () => {
 
@@ -274,16 +275,21 @@ const RangeCarousel = () => {
             <div className='tab-content container px-sm-0 px-md-2 text-center'>
 				{CAROUSEL_TABS.map((item) => (
 					<Carousel id={item.carouselId} centered={true} items={item.carouselItems} slideNumber='4' className={`tab-pane fade carousel slide carousel--loop ${item.isTabActive ? 'show active' : ''}`} additionalClasses='row'>
-						<button className="carousel-control carousel-control-prev carousel-control--background floating-out-start justify-content-start text-primary d-none d-lg-flex" data-bs-target={`#${item.carouselId}`} data-bs-slide="prev">
-							<span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true">
-								<ChevronPrev />
-							</span>
-						</button>
-						<button className="carousel-control carousel-control-next carousel-control--background floating-out-end justify-content-end text-primary d-none d-lg-flex" data-bs-target={`#${item.carouselId}`} data-bs-slide="next">
-							<span className="carousel-control-next-icon d-flex justify-content-center align-items-center" aria-hidden="true">
-								<ChevronNext />
-							</span>
-						</button>
+
+						{item.carouselItems.length > 4 && (
+							<Fragment>
+								<button className="carousel-control carousel-control-prev carousel-control--background floating-out-start justify-content-start text-primary d-none d-lg-flex" data-bs-target={`#${item.carouselId}`} data-bs-slide="prev">
+									<span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true">
+										<ChevronPrev />
+									</span>
+								</button>
+								<button className="carousel-control carousel-control-next carousel-control--background floating-out-end justify-content-end text-primary d-none d-lg-flex" data-bs-target={`#${item.carouselId}`} data-bs-slide="next">
+									<span className="carousel-control-next-icon d-flex justify-content-center align-items-center" aria-hidden="true">
+										<ChevronNext />
+									</span>
+								</button>
+							</Fragment>
+						)}
 					</Carousel>
 				))}
 			</div>
