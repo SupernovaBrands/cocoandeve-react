@@ -290,8 +290,8 @@ const RangeCarousel = () => {
 			<div className='container d-flex flex-column align-items-center px-g'>
 				<h2 className='range__formula-title mb-2'>Self-tanners for any occasion</h2>
 				<ul className="nav nav-tabs justify-content-center border-0 col-7 col-lg-3 px-0 pb-2 range__tab" role="tablist">
-					{CAROUSEL_TABS.map((item) => (
-						<li className="nav-item">
+					{CAROUSEL_TABS.map((item, idx) => (
+						<li key={`navItem${idx}`} className="nav-item">
 							<a className={`nav-link text-decoration-none h4 mb-0 fw-bold text-center ${item.isTabActive ? 'active' : ''}`}
 								data-bs-toggle="tab" href={`#${item.carouselId}`} role="tab"
 								aria-controls={item.tabLabel.replace(/\s/g, '').toLowerCase()}>
@@ -302,8 +302,8 @@ const RangeCarousel = () => {
 				</ul>
 			</div>
             <div className='tab-content container px-sm-0 px-md-2 text-center'>
-				{CAROUSEL_TABS.map((item) => (
-					<Carousel id={item.carouselId} centered={true} items={item.carouselItems.length < 4 && isMobile ? productFaceMerged : item.carouselItems} slideNumber='4' className={`tab-pane fade carousel slide carousel--loop ${item.isTabActive ? 'show active' : ''}`} additionalClasses='row'>
+				{CAROUSEL_TABS.map((item, idx) => (
+					<Carousel key={`RangeCarousel${idx}`} id={item.carouselId} centered={true} items={item.carouselItems.length < 4 && isMobile ? productFaceMerged : item.carouselItems} slideNumber='4' className={`tab-pane fade carousel slide carousel--loop ${item.isTabActive ? 'show active' : ''}`} additionalClasses='row'>
 
 						{item.carouselItems.length > 4 && (
 							<Fragment>
