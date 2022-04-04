@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import PropTypes from 'prop-types';
 import { SurveyContext } from './QuestionBox';
-import { getCookie } from '../../scripts/Utils';
+import { getCookie } from '../../modules/Utils';
 import { ReactComponent as Close } from '../../assets/close.svg';
 
 const MultipleChoice = (props) => {
@@ -11,7 +11,8 @@ const MultipleChoice = (props) => {
         lastFull,
     } = props;
 
-    const defaultSelected = getCookie('answeredQuestion') && JSON.parse(getCookie('answeredQuestion'))[ctx.currentQuestion] ? JSON.parse(getCookie('answeredQuestion'))[ctx.currentQuestion] : [];
+    const defaultSelected = getCookie('answeredQuestion') 
+        && JSON.parse(getCookie('answeredQuestion'))[ctx.currentQuestion] ? JSON.parse(getCookie('answeredQuestion'))[ctx.currentQuestion] : [];
     const [selectedItems, setSelectedItems] = useState(defaultSelected);
 
     const clearOther = () => {
@@ -50,7 +51,7 @@ const MultipleChoice = (props) => {
 
     const chooseItems = (index) => {
         return (e) => {
-            if (e.target.localName === 'label') { // execute only for target label, since click on label would trigger click by input also
+            if (e.target.localName === 'input') { // execute only for target label, since click on label would trigger click by input also
                 updateItems(answers[index].label, answers[index].type === 'checkboxAll');
             }
         }
@@ -66,7 +67,7 @@ const MultipleChoice = (props) => {
     
     return (
             answers.map((answer, index) => {
-                const full = lastFull && index + 1 === answers.length ? 'col-12' : 'col-6';
+                const full = lastFull && index + 1 === answers.length ? 'col-12 mobile-wrapper' : 'col-6 mobile-wrapper';
                 if (answer.type !== 'input') {
                     return (
                         <div key={index} className={full}>
@@ -78,7 +79,7 @@ const MultipleChoice = (props) => {
                                             justify-content-center 
                                             bg-white rounded-circle align-items-center me-1 text-primary">{selectedItems.indexOf(answer.label) + 1}</span>
                                     )}
-                                    { answer.type === 'checkbox' && <input className="me-1 mt-0 form-check-input" type="checkbox" defaultChecked={selectedItems.includes(answer.label)} value={answer} id={`${index}-flexCheckDefault`}/> }
+                                    <input className={`${answer.type !== 'checkbox' ? 'd-none' : ''} me-1 mt-0 form-check-input`} type="checkbox" defaultChecked={selectedItems.includes(answer.label)} value={answer} id={`${index}-flexCheckDefault`}/>
                                     { answer.label }
                                 </label>
                             </div>
@@ -91,7 +92,7 @@ const MultipleChoice = (props) => {
                 return (
                     <div key={index} className={full}>
                         <div className='input-group'>
-                            <input className={`${textOther ? 'border-end-0 border-primary bg-primary-light-second' : 'border-light'} form-control py-2 text-black`} type='text' value={textOther} onChange={inputChangeHandle} placeholder={answer.label}/>
+                            <input className={`${textOther ? 'border-end-0 border-primary bg-primary-light-second' : 'border-light'} form-control h-auto py-2 text-black`} type='text' value={textOther} onChange={inputChangeHandle} placeholder={answer.label}/>
                             { textOther && ( 
                                 <button onClick={clearOther} className={`${textOther ? 'border-primary bg-primary-light-second' : 'border-light'} btn border border-start-0 ps-0 pe-2`} type="button" id="inputGroupFileAddon04">
                                     <Close/>

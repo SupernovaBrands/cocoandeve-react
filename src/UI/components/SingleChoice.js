@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useContext, useState } from 'react';
-import { getCookie } from '../../scripts/Utils';
+import { getCookie } from '../../modules/Utils';
 import { SurveyContext } from './QuestionBox';
 
 const SingleChoice = (props) => {
@@ -26,7 +26,7 @@ const SingleChoice = (props) => {
                 answers.map((answer, index) => {
                     const classes = answer === selectedItem ? 'border-primary bg-primary-light-second' : 'border-light';
                     return (
-                        <div key={index} className={`${classesCol} mt-2`}>
+                        <div key={index} className={`${classesCol} mt-2 mobile-wrapper`}>
                             <button className={`${classes} btn btn-lg w-100 btn-outline text-black fw-normal border-1 py-2`}
                                 onClick={() => selectItem(index)}>
                                 {answer}

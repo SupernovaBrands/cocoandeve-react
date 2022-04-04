@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
-import { toTitleCase } from '../../scripts/Utils';
+import { toTitleCase, getCookie } from '../../modules/Utils';
 import { SurveyContext } from './QuestionBox';
 import { useContext, useState } from 'react';
-import { getCookie } from '../../scripts/Utils';
 
 const CountrySelect = (props) => {
     const ctx = useContext(SurveyContext);
@@ -20,6 +19,7 @@ const CountrySelect = (props) => {
         });
         if (!countryCode) {
             setCountryCode(geoLocation.country_code2);
+            ctx.answerAction(geoLocation.country_code2);
         }
     }
 

@@ -11,6 +11,8 @@ const QuestionBox = (props) => {
         currentQuestion,
         setCurrentQuestion,
         answerAction,
+        width,
+        height,
     } = props;
 
     const prevAction = (e) => {
@@ -31,7 +33,7 @@ const QuestionBox = (props) => {
         <div className={`${colSize} col-12 d-flex flex-wrap justify-content-center`}>
             <h1 className={caption ? 'w-100' : 'w-100 mb-4'}>{question}</h1>
             { caption && (<p className="w-100 mb-4">{caption}</p>)}
-            <SurveyContext.Provider value={{answerAction: answer, currentQuestion: currentQuestion}}>
+            <SurveyContext.Provider value={{answerAction: answer, currentQuestion: currentQuestion, width, height }}>
                 { children }
             </SurveyContext.Provider>
             <button className="mt-4 btn btn-lg btn-primary text-white" onClick={nextAction}>Next</button>
@@ -49,6 +51,8 @@ QuestionBox.propTypes = {
     currentQuestion: PropTypes.number,
     setCurrentQuestion: PropTypes.func,
     answerAction: PropTypes.func.isRequired,
+    width: PropTypes.number,
+    height: PropTypes.number,
 };
 
 export default QuestionBox;

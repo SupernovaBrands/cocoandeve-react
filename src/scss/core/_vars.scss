@@ -291,4 +291,8 @@ $popover-body-color: #fff;
 $enable-negative-margins: true;
 
 //Progress
-$progress-height: calc-em(9);
+$progress-height: calc-em(9, $unit: 1rem);
+
+//Input Range
+$form-range-track-bg: $primary-light-second;
+$form-range-track-height: calc-em(9, $unit: 1rem);

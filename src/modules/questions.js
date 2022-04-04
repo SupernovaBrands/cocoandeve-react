@@ -94,11 +94,12 @@ const Questions = [
             "Everyday! Give me that vitamin D"
         ],
         icons: [
-            'cloud-rain.svg',
+            'cloud-rain',
             '',
-            'sun.svg',
+            'sun',
         ],
-        type: 'RangeSlideIcon',
+        type: 'SingleChoiceIcon',
+        buttonType: 'full',
     },
     {
         question: "What kind of tan do you want to have?",
@@ -124,7 +125,7 @@ const Questions = [
             'images-3',
             'images-4',
         ],
-        type: 'RangeSlideImages',
+        type: 'SingleChoiceImage',
     },
     {
         question: "What’s your undertone?",
@@ -138,7 +139,7 @@ const Questions = [
             'images-2',
             'images-3',
         ],
-        type: 'RangeSlideImages',
+        type: 'SingleChoiceImage',
     },
     {
         question: 'Which areas do you want to tan?',
