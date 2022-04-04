@@ -50,8 +50,29 @@ const ProductForm = () => {
         window.location.href = buttonUrl;
     }
 
+    const mobileSwatch = document.querySelector('.product-swatch-mobile');
+    const mobileSwatchTrigger = document.querySelector('.product-swatch-mobile__trigger');
+    if (mobileSwatchTrigger && mobileSwatch) {
+        console.log('mobile');
+        const observerCallback = (entries) => {
+            entries.forEach((entry) => {
+                console.log(window.innerWidth)
+                if (window.innerWidth < 768) {
+                    console.log('entryu', entry);
+                    if (entry.isIntersecting) {
+                        mobileSwatch.classList.remove('show');
+                    } else {
+                        mobileSwatch.classList.add('show');
+                    }
+                }
+            });
+        }
+        const observer = new IntersectionObserver(observerCallback);
+	    observer.observe(mobileSwatchTrigger);
+    }
+
     return (
-        <div className="container px-g mb-4 mt-lg-4">
+        <div className="container px-g mb-0 mt-lg-4">
             <div className="row align-items-start">
                 <ProductImageCarousel />
                 <div className="col-12 col-lg-5 order-lg-3 mt-2 mt-lg-0 d-flex flex-column text-center text-lg-start">
@@ -109,7 +130,15 @@ const ProductForm = () => {
                             Developed with a green-grey base for a natural looking, golden glow with no orangey tones.
                         </li>
                     </ul>
-                    
+                    <div className='fixed-bottom d-lg-none mx-g mb-2 product-swatch-mobile'>
+                        <a href="javascript:void(0)" className='d-flex btn btn-primary btn-lg px-2' onClick={onAddToCart}>
+                            <span className="text-white w-100 m-0 d-block text-start" >Add to cart</span>
+                            <p className="d-block m-0">
+                                <span className="text-white text-linethrough mr-25 text-nowrap fw-normal">$89.80</span>
+                                <span className="text-white mr-25 text-nowrap ms-1">$62.80</span>
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
