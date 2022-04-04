@@ -1,0 +1,7 @@
+.multiple-choice-counter {
+    width: calc-em(20);
+    height: calc-em(20);
+    transition-delay: 1s;
+    transition: width 2s;
+    transition-timing-function: ease-in;
+}
