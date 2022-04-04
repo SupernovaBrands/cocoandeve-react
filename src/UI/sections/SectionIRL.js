@@ -60,7 +60,7 @@ const SectionIRL = () => {
 
 	return (
 		<section className='customer-reviews py-4'>
-            <h2 className="h1 mb-3 text-center">Tan magic IRL</h2>
+            <h2 className="h1 mb-3 text-center">Tan Magic IRL</h2>
             <div className='d-flex justify-content-center mb-3'>
                 <div className='d-flex align-items-center order-lg-2 ms-lg-1'><FacebookIcon className='font-size-sm' /><span className='ms-1 font-size-sm'>287k on Facebook</span></div>
                 <div className='d-flex ms-1 ms-lg-0 align-items-center order-lg-1'><InstagramIcon className='font-size-sm' /><span className='ms-1 font-size-sm'>879k on Instagram</span></div>
