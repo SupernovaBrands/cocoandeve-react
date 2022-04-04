@@ -63,7 +63,7 @@ const ProductImageCarousel = () => {
                     </div>
                     ))}
                 </div>
-                <button  key="btn3" className="carousel-indicator chevron-down btn-unstyled d-none d-lg-flex mx-auto mt-1 mt-lg-3 text-center align-items-center" data-bs-slide="next" data-bs-target="#product-image-carousel__indicator">
+                <button  key="btn3" className="carousel-indicator chevron-down btn-unstyled d-none d-lg-flex mx-auto mt-1 mt-lg-2 pt-lg-1 text-center align-items-center" data-bs-slide="next" data-bs-target="#product-image-carousel__indicator">
                     <ChevronDown className='svg text-primary'/>
                 </button>
             </div>

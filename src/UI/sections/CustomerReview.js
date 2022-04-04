@@ -156,7 +156,7 @@ const CustomerReview = () => {
     ] 
 
 	return (
-		<section className='customer-reviews py-4'>
+		<section className='customer-reviews pt-0 pb-2 py-lg-4'>
             <h2 className="h1 mb-4 text-center">Customer Reviews</h2>
             <div className='container'>
                 <Carousel 
