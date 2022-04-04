@@ -50,26 +50,28 @@ const ProductForm = () => {
         window.location.href = buttonUrl;
     }
 
-    const mobileSwatch = document.querySelector('.product-swatch-mobile');
-    const mobileSwatchTrigger = document.querySelector('.product-swatch-mobile__trigger');
-    if (mobileSwatchTrigger && mobileSwatch) {
-        console.log('mobile');
-        const observerCallback = (entries) => {
-            entries.forEach((entry) => {
-                console.log(window.innerWidth)
-                if (window.innerWidth < 768) {
-                    console.log('entryu', entry);
-                    if (entry.isIntersecting) {
-                        mobileSwatch.classList.remove('show');
-                    } else {
-                        mobileSwatch.classList.add('show');
+    setTimeout(function () {
+        const mobileSwatch = document.querySelector('.product-swatch-mobile');
+        const mobileSwatchTrigger = document.querySelector('.product-swatch-mobile__trigger');
+        if (mobileSwatchTrigger && mobileSwatch) {
+            console.log('mobile');
+            const observerCallback = (entries) => {
+                entries.forEach((entry) => {
+                    console.log(window.innerWidth)
+                    if (window.innerWidth < 768) {
+                        console.log('entryu', entry);
+                        if (entry.isIntersecting) {
+                            mobileSwatch.classList.remove('show');
+                        } else {
+                            mobileSwatch.classList.add('show');
+                        }
                     }
-                }
-            });
+                });
+            }
+            const observer = new IntersectionObserver(observerCallback);
+            observer.observe(mobileSwatchTrigger);
         }
-        const observer = new IntersectionObserver(observerCallback);
-	    observer.observe(mobileSwatchTrigger);
-    }
+    }, 500);
 
     return (
         <div className="container px-g mb-0 mt-lg-4">
