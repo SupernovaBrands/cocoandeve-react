@@ -15,7 +15,7 @@ import SectionIRL from '../sections/SectionIRL';
 const ProductDetail = () => {
     return (
         <Fragment>
-            <ProductForm addToCart="" />
+            <ProductForm />
             <CustomerReview />
             <SeenIn />
             <SectionIRL />

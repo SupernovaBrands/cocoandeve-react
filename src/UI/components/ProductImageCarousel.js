@@ -38,10 +38,10 @@ const ProductImageCarousel = () => {
                         ))}
                     </div>
                     <button key="btn1" className="carousel-control-prev d-block d-lg-none" type="button" data-bs-target="#product-image-carousel" data-bs-slide="prev">
-                        <ChevronPrev />
+                        <ChevronPrev className="text-primary svg" />
                     </button>
                     <button key="btn2" className="carousel-control-next d-block d-lg-none" type="button" data-bs-target="#product-image-carousel" data-bs-slide="next">
-                        <ChevronNext />
+                        <ChevronNext className="text-primary svg" />
                     </button>
                 </figure>
             </div>
