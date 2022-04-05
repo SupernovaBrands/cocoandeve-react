@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import { Fragment } from 'react';
 import ProductForm from '../sections/ProductForm';
 
@@ -13,12 +13,9 @@ import SectionIRL from '../sections/SectionIRL';
 // const SectionIRL = lazy(() => import('../sections/SectionIRL'));
 
 const ProductDetail = () => {
-
-    const renderLoader = () => <p>Loading</p>;
-
     return (
         <Fragment>
-            <ProductForm />
+            <ProductForm addToCart="" />
             <CustomerReview />
             <SeenIn />
             <SectionIRL />
