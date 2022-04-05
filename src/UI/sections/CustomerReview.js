@@ -6,7 +6,6 @@ const CustomerReview = () => {
     const CUSTOMER_REVIEWS = [
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 rounded active',
-                    caption="Shade of Tan:Dark"
             content: 
                 <ReviewCard 
                     name="Kjersti V. Verified Buyer"
@@ -33,8 +32,7 @@ const CustomerReview = () => {
                 </ReviewCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded active',
-                    caption="Shade of Tan:Dark"
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
             content: 
                 <ReviewCard 
                     name="Michelle T. Verified Buyer"
