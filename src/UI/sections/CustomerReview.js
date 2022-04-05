@@ -9,6 +9,34 @@ const CustomerReview = () => {
                     caption="Shade of Tan:Dark"
             content: 
                 <ReviewCard 
+                    name="Kjersti V. Verified Buyer"
+                    caption="Shade of Tan:Dark"
+                >
+                    <p>The BEST sunless tan!!</p>
+                    <p>Doesn’t smell bad like some others, and goes on super smooth. Color is gorgeous, looks natural and doesn’t have any orange tint AND makes your skin look soooo healthy. Doesn’t leave streaks or blotches and fades perfectly without leaving patches. I love it!!!</p>
+                    <div className='row no-gutters'>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-2.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} className="img-fluid" alt="" />
+                            </picture>
+                        </div>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-1.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-1.jpg`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-1.jpg`} className="w-100" alt="" />
+                            </picture>
+                        </div>
+                    </div>
+                </ReviewCard>
+        },
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded active',
+                    caption="Shade of Tan:Dark"
+            content: 
+                <ReviewCard 
                     name="Michelle T. Verified Buyer"
                     caption="Shade of Tan:Medium"
                 >
