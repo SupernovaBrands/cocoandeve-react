@@ -64,7 +64,7 @@ const ProductForm = (props) => {
     }
 
     const onAddToCart = () => {
-        if (typeof addToCart) {
+        if (typeof addToCart === 'function') {
             addToCart(selectedVariantId, quantity);
         } else {
             window.location.href = buttonUrl;
@@ -75,12 +75,9 @@ const ProductForm = (props) => {
         const mobileSwatch = document.querySelector('.product-swatch-mobile');
         const mobileSwatchTrigger = document.querySelector('.product-swatch-mobile__trigger');
         if (mobileSwatchTrigger && mobileSwatch) {
-            console.log('mobile');
             const observerCallback = (entries) => {
                 entries.forEach((entry) => {
-                    console.log(window.innerWidth)
                     if (window.innerWidth < 768) {
-                        console.log('entryu', entry);
                         if (entry.isIntersecting) {
                             mobileSwatch.classList.remove('show');
                         } else {
@@ -99,24 +96,24 @@ const ProductForm = (props) => {
             <div className="row align-items-start">
                 <ProductImageCarousel />
                 <div className={`col-12 col-lg-5 order-lg-3 mt-2 mt-lg-0 d-flex flex-column ${variantSelectorStyle === 'flex' ? 'text-start': 'text-center text-lg-start'}`}>
-                    <p className="font-size-lg order-lg-0 mb-1">Sunny Honey</p>
-                    <h1 className={`${titleHeading ? titleHeading : 'h2'} mb-1 mb-lg-2 order-lg-0`}>Bali Bronzing Bundle</h1>
+                    <p className="font-size-lg mb-1 order-lg-1">Sunny Honey</p>
+                    <h1 className={`${titleHeading ? titleHeading : ''} mb-1 mb-lg-2 order-lg-1`}>Bali Bronzing Bundle</h1>
                     { !noReviews && (
-                        <div className="d-flex mb-0 mb-lg-1 justify-content-center justify-content-lg-start">
-                            <ReviewStar score={5} />
-                            <a href="https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set#write-a-review" className="d-block yotpo-widget__total mt-lg-0 ms-lg-1 ms-1">4.8/5.0 220 Reviews</a>
+                        <div className="d-flex mb-0 mb-lg-1 justify-content-center justify-content-lg-start order-lg-0">
+                            <ReviewStar score={4.8} />
+                            <span className='d-block yotpo-widget__total mt-lg-0 ms-lg-1 ms-1'><span className='d-none d-lg-inline-block'>4.8/5.0</span> <a href="https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set#write-a-review">220 Reviews</a></span>
                         </div>
                     )}
                     { !hideProductCaption && (
-                        <p className="font-size-lg d-none d-lg-block">The only self-tanner you need ever need. <br/>100% Natural DHA. Cruelty Free. Vegan. </p>
+                        <p className="font-size-lg d-none d-lg-block order-lg-2">The only self-tanner you need ever need. <br/>100% Natural DHA. Cruelty Free. Vegan. </p>
                     )}
-                    <p className="my-1">
+                    <p className="my-1 order-lg-2">
                         <span className="text-primary mr-25 text-nowrap h2 " data-variant-available="true" data-variant-price="$62.80">$62.80</span>
                         <span className="text-linethrough mr-25 text-nowrap ms-1 h2 ">$89.80</span>
                         <span className="text-primary text-nowrap text-save p-1 h2 fw-normal">(Save 38%)</span>
                     </p>
-                    <hr className="mb-2 bg-primary-light-second mt-0"/>
-                    <div className={`${variantSelectorStyle === 'flex' ? 'd-flex mb-2 justify-content-start' : 'd-grid gap-2 justify-content-center justify-content-lg-start d-md-flex'} mb-lg-2 align-items-center`}>
+                    <hr className="mb-2 bg-primary-light-second mt-0 order-lg-2 d-none d-lg-block"/>
+                    <div className={`${variantSelectorStyle === 'flex' ? 'd-flex mb-2 justify-content-start' : 'd-grid gap-2 justify-content-center justify-content-lg-start d-md-flex'} mb-lg-2 align-items-center order-lg-2`}>
                         <div className="product-swatch d-flex align-items-center justify-content-center">
                             {productVariants.map((shade) => (
                                 <button key={shade.id} type="button" onClick={onSelectedVariant} data-variant className={`${variantSelectorStyle === 'flex' ? 'me-1' : ''} variant-swatch ${shade.class} ${ selectedVariantId === shade.id ? 'border-primary' : ''}`} data-id={shade.id}></button>
@@ -127,8 +124,8 @@ const ProductForm = (props) => {
                             { selectedVariantShadeCaption && (<span className='fw-normal w-100 d-block text-start'>{selectedVariantShadeCaption}</span>)}
                         </span>
                     </div>
-                    <p className="d-none bg-gray-100 p-1 rounded mb-2">Not sure which shade to get? Check our <a href="">Shades Guide</a></p>
-                    <div className="product-swatch-mobile__trigger order-lg-2">
+                    <p className="d-none bg-gray-100 p-1 rounded mb-2 order-lg-2">Not sure which shade to get? Check our <a href="">Shades Guide</a></p>
+                    <div className="product-swatch-mobile__trigger order-lg-3">
                             <div className="product-form-submit mb-3 position-relative">
                                 <div className="d-flex">
                                     <div className="react-quantity-box d-none d-lg-block">
@@ -141,8 +138,9 @@ const ProductForm = (props) => {
                                 </div>
                             </div>
                     </div>
-                    <hr className="mb-2 bg-primary-light-second mt-0"/>
-                    <ul className={`${cartPosition === 'top' ? 'order-lg-4' : ''} list-unstyled row mb-4 text-start`}>
+                    <hr className="mb-2 bg-primary-light-second mt-0 order-lg-2"/>
+                    <h2 className='d-block d-lg-none order-lg-2'>All you need for a perfect tan</h2>
+                    <ul className={`${cartPosition === 'top' ? 'order-lg-4' : ''} list-unstyled row mb-4 text-start order-lg-2`}>
                         <li className='col-12 d-flex align-items-center mb-2'>
                             <FormulaList1 className='me-g d-flex flex-shrink-0 justify-content-center' />
                             Blurs pigmentation and perfects skin.

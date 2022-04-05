@@ -395,7 +395,7 @@
 	.carousel-indicator {
 		font-size: calc-em(27);
 		&:disabled {
-			opacity: .4;
+			opacity: 0;
 			pointer-events: none;
 		}
 	}
