@@ -5,7 +5,7 @@ const FaqAccordion = () => {
     const FAQCONTENT = [
         {
             title: 'Which Sunny Honey color should I go for?',
-            content: 'Sunny Honey Self-Tan aims to get you a natural finish! So when choosing which colour to go for, consider what skin tone you are naturally and how dark you would like to go. <br/>Medium self-tan gives skin a sun-kissed glow. Great for lighter skin tones!<br/>Dark self-tan for a back from vacay bronze. Ideal for medium skin tones!<br/>Ultra Dark for a deep, rich tan. For deeper skin tones!<br><br>Check out REAL Reviews <a href="http://www.cocoandeve.com/pages/reviews">here</a>.',
+            content: 'Sunny Honey Self-Tan aims to get you a natural finish! So when choosing which colour to go for, consider what skin tone you are naturally and how dark you would like to go. <br/>Medium self-tan gives skin a sun-kissed glow. Great for lighter skin tones!<br/>Dark self-tan for a back from vacay bronze. Ideal for medium skin tones!<br/>Ultra Dark for a deep, rich tan. For deeper skin tones!<br><br>Check out REAL Reviews <a href="http://www.cocoandeve.com/pages/reviews"><span class="visually-hidden-focusable">Check out REAL Reviews</span>here</a>.',
         },
         {
             title: 'How do I apply the Sunny Honey Bali Bronzing Foam?',

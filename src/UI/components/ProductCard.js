@@ -8,6 +8,7 @@ const ProductCard = (props) => {
 			)}
 
 			<a href={props.url} className='d-block'>
+				<span className='visually-hidden-focusable'>{props.title}</span>
 				<picture>
 					<source type="image/webp" srcSet={props.comImg} />
 					<source type="image/jpeg" srcSet={props.img} />
@@ -21,7 +22,10 @@ const ProductCard = (props) => {
 					<a className='font-size-sm' href={`${props.url}#write-a-review`}>{props.totalReviews} Reviews</a>
 				</div>
 				<p className="product-card__title flex-grow-1 d-flex flex-column justify-content-center h4 h-100 mb-0 fw-normal">
-    				<a href={props.url} className="text-dark text-decoration-none">{props.title}</a>
+    				<a href={props.url} className="text-dark text-decoration-none">
+						{props.title}
+						<span className='visually-hidden-focusable'>{props.title}</span>
+					</a>
   				</p>
 				<p className="text-center">
       				<span className="text-linethrough h4 m-1 font-weight-normal">{props.price}</span>
@@ -29,7 +33,10 @@ const ProductCard = (props) => {
 						<span className="text-primary h4">{props.crossedPrice}</span>
 					)}
   				</p>
-				<a href={props.url} className="btn btn-lg btn-primary text-white btn-block px-0">Learn More</a>
+				<a href={props.url} className="btn btn-lg btn-primary text-white btn-block px-0">
+					Learn More
+					<span className='visually-hidden-focusable'>{`Learn More - ${props.title}`}</span>
+				</a>
 			</div>
 		</Fragment>
 	)
