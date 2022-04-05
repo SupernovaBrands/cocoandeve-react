@@ -1,6 +1,7 @@
 @import '_core';
-@import "~bootstrap/scss/bootstrap";
-@import "~bootstrap/scss/vendor/rfs";
+
+@import 'bootstrap/common';
+
 @import 'common';
 
 @import 'components/product-image-carousel.scss';
