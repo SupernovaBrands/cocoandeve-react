@@ -6,7 +6,7 @@ const IRLCard = (props) => {
             <picture>
                 <source type="image/webp" srcSet={props.comImage} />
                 <source type="image/jpeg" srcSet={props.image} />
-                <img src={props.image} className="w-100 mb-1" />
+                <img src={props.image} className="w-100 mb-1" alt={props.caption} />
             </picture>
             <div className="d-flex mb-1">
                 <ReviewStar score={5} />

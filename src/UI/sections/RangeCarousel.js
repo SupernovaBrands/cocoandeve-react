@@ -15,8 +15,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Bronzing Face Drops'
 				url='https://www.cocoandeve.com/products/bronzing-self-tanner-drops'
-				img={`${process.env.PUBLIC_URL}/images/Featured_BronzingFaceDrops_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BronzingFaceDrops_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_BronzingFaceDrops_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BronzingFaceDrops_532x.webp`}
 				rating='4.8'
 				totalReviews='735'
 				price='$27.90'
@@ -27,8 +27,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='SPF & Glow Kit'
 				url='https://www.cocoandeve.com/products/spf-glow-kit'
-				img={`${process.env.PUBLIC_URL}/images/Featured_CExNakedSundaysBundle_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_CExNakedSundaysBundle_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_CExNakedSundaysBundle_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_CExNakedSundaysBundle_532x.webp`}
 				rating='4.8'
 				totalReviews='735'
 				price='$45.70'
@@ -43,8 +43,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Sunny Honey Bali Bronzing Bundle'
 				url='https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set'
-				img={`${process.env.PUBLIC_URL}/images/Featured_BaliBronzingBundle_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BaliBronzingBundle_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_BaliBronzingBundle_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BaliBronzingBundle_532x.webp`}
 				rating='4.8'
 				totalReviews='4336'
 				price='$46.90'
@@ -56,8 +56,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Sunny Honey Bronzing Foam'
 				url='https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-mousse'
-				img={`${process.env.PUBLIC_URL}/images/Featured_BronzingFoam_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BronzingFoam_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_BronzingFoam_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BronzingFoam_532x.webp`}
 				rating='4.8'
 				totalReviews='2021'
 				price='$34.90'
@@ -70,8 +70,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Tanning Goddess Kit'
 				url='https://www.cocoandeve.com/products/tanning-goddess'
-				img={`${process.env.PUBLIC_URL}/images/Featured_TanningGoddessKit_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningGoddessKit_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_TanningGoddessKit_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningGoddessKit_532x.webp`}
 				rating='4.8'
 				totalReviews='2021'
 				price='$73.90'
@@ -83,8 +83,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Self Tan Travel Kit'
 				url='https://www.cocoandeve.com/products/self-tan-travel-kit'
-				img={`${process.env.PUBLIC_URL}/images/Featured_TanningTravelKit_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningTravelKit_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_TanningTravelKit_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningTravelKit_532x.webp`}
 				rating='4.8'
 				totalReviews='96'
 				price='$24.90'
@@ -95,8 +95,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Sunny Honey Bali Bronzing Bundle'
 				url='https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set'
-				img={`${process.env.PUBLIC_URL}/images/Featured_BaliBronzingBundle_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BaliBronzingBundle_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_BaliBronzingBundle_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BaliBronzingBundle_532x.webp`}
 				rating='4.8'
 				totalReviews='4336'
 				price='$46.90'
@@ -108,8 +108,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Sunny Honey Bronzing Foam'
 				url='https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-mousse'
-				img={`${process.env.PUBLIC_URL}/images/Featured_BronzingFoam_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BronzingFoam_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_BronzingFoam_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BronzingFoam_532x.webp`}
 				rating='4.8'
 				totalReviews='2021'
 				price='$34.90'
@@ -122,8 +122,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Tanning Goddess Kit'
 				url='https://www.cocoandeve.com/products/tanning-goddess'
-				img={`${process.env.PUBLIC_URL}/images/Featured_TanningGoddessKit_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningGoddessKit_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_TanningGoddessKit_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningGoddessKit_532x.webp`}
 				rating='4.8'
 				totalReviews='2021'
 				price='$73.90'
@@ -135,8 +135,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Self Tan Travel Kit'
 				url='https://www.cocoandeve.com/products/self-tan-travel-kit'
-				img={`${process.env.PUBLIC_URL}/images/Featured_TanningTravelKit_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningTravelKit_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_TanningTravelKit_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningTravelKit_532x.webp`}
 				rating='4.8'
 				totalReviews='96'
 				price='$24.90'
@@ -150,8 +150,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Bali Bae Self Tan Set'
 				url='https://www.cocoandeve.com/products/bali-bae-self-tan-set'
-				img={`${process.env.PUBLIC_URL}/images/Featured_TanBundlewithBackApplicator_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanBundlewithBackApplicator_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_TanBundlewithBackApplicator_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanBundlewithBackApplicator_532x.webp`}
 				rating='4.8'
 				totalReviews='4336'
 				price='$59.00'
@@ -163,8 +163,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Sunny Honey Bali Bronzing Bundle'
 				url='https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set'
-				img={`${process.env.PUBLIC_URL}/images/Featured_BaliBronzingBundle_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BaliBronzingBundle_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_BaliBronzingBundle_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BaliBronzingBundle_532x.webp`}
 				rating='4.8'
 				totalReviews='4336'
 				price='$46.90'
@@ -176,8 +176,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Tanning Goddess Kit'
 				url='https://www.cocoandeve.com/products/tanning-goddess'
-				img={`${process.env.PUBLIC_URL}/images/Featured_TanningGoddessKit_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningGoddessKit_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_TanningGoddessKit_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningGoddessKit_532x.webp`}
 				rating='4.8'
 				totalReviews='2021'
 				price='$73.90'
@@ -189,8 +189,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Dewy Glow Bundle'
 				url='https://www.cocoandeve.com/products/dewy-glow-bundle'
-				img={`${process.env.PUBLIC_URL}/images/Featured_DewyGlowBundle-SHWhip_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_DewyGlowBundle-SHWhip_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_DewyGlowBundle-SHWhip_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_DewyGlowBundle-SHWhip_532x.webp`}
 				rating='4.8'
 				totalReviews='199'
 				price='$51.00'
@@ -202,8 +202,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Bali Bae Self Tan Set'
 				url='https://www.cocoandeve.com/products/bali-bae-self-tan-set'
-				img={`${process.env.PUBLIC_URL}/images/Featured_TanBundlewithBackApplicator_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanBundlewithBackApplicator_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_TanBundlewithBackApplicator_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanBundlewithBackApplicator_532x.webp`}
 				rating='4.8'
 				totalReviews='4336'
 				price='$59.00'
@@ -215,8 +215,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Sunny Honey Bali Bronzing Bundle'
 				url='https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set'
-				img={`${process.env.PUBLIC_URL}/images/Featured_BaliBronzingBundle_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BaliBronzingBundle_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_BaliBronzingBundle_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BaliBronzingBundle_532x.webp`}
 				rating='4.8'
 				totalReviews='4336'
 				price='$46.90'
@@ -228,8 +228,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Tanning Goddess Kit'
 				url='https://www.cocoandeve.com/products/tanning-goddess'
-				img={`${process.env.PUBLIC_URL}/images/Featured_TanningGoddessKit_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningGoddessKit_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_TanningGoddessKit_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningGoddessKit_532x.webp`}
 				rating='4.8'
 				totalReviews='2021'
 				price='$73.90'
@@ -241,8 +241,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Dewy Glow Bundle'
 				url='https://www.cocoandeve.com/products/dewy-glow-bundle'
-				img={`${process.env.PUBLIC_URL}/images/Featured_DewyGlowBundle-SHWhip_300x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_DewyGlowBundle-SHWhip_300x.webp`}
+				img={`${process.env.PUBLIC_URL}/images/Featured_DewyGlowBundle-SHWhip_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_DewyGlowBundle-SHWhip_532x.webp`}
 				rating='4.8'
 				totalReviews='199'
 				price='$51.00'
@@ -289,12 +289,11 @@ const RangeCarousel = () => {
 		<section className='product-carousel py-2 py-lg-4'>
 			<div className='container d-flex flex-column align-items-center px-g'>
 				<h2 className='range__formula-title mb-2 text-center'>Self-tanners for any occasion</h2>
-				<ul className="nav nav-tabs justify-content-center border-0 col-8 col-lg-3 px-0 pb-2 range__tab" role="tablist">
+				<ul className="nav nav-tabs justify-content-center border-0 col-8 col-lg-3 px-0 pb-2 range__tab">
 					{CAROUSEL_TABS.map((item, idx) => (
 						<li key={`navItem${idx}`} className="nav-item">
 							<a className={`nav-link text-decoration-none h4 mb-0 fw-bold text-center ${item.isTabActive ? 'active' : ''}`}
-								data-bs-toggle="tab" href={`#${item.carouselId}`} role="tab"
-								aria-controls={item.tabLabel.replace(/\s/g, '').toLowerCase()}>
+								data-bs-toggle="tab" href={`#${item.carouselId}`}>
 									<nobr>{item.tabLabel}</nobr>
 							</a>
 						</li>

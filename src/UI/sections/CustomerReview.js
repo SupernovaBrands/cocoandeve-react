@@ -6,8 +6,8 @@ const CustomerReview = () => {
     const CUSTOMER_REVIEWS = [
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 rounded active',
-            content: 
-                <ReviewCard 
+            content:
+                <ReviewCard
                     name="Kjersti V. Verified Buyer"
                     caption="Shade of Tan:Dark"
                 >
@@ -18,14 +18,14 @@ const CustomerReview = () => {
                             <picture>
                                 <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-2.webp`} />
                                 <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} className="img-fluid" />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} className="img-fluid" alt="" />
                             </picture>
                         </div>
                         <div className='col-6'>
                             <picture>
                                 <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-1.webp`} />
                                 <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-1.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-1.jpg`} className="w-100" />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-1.jpg`} className="w-100" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -33,8 +33,8 @@ const CustomerReview = () => {
         },
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
-            content: 
-                <ReviewCard 
+            content:
+                <ReviewCard
                     name="Michelle T. Verified Buyer"
                     caption="Shade of Tan: Medium"
                 >
@@ -45,14 +45,14 @@ const CustomerReview = () => {
                             <picture>
                                 <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-4.webp`} />
                                 <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-4.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-4.jpg`} className="img-fluid" />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-4.jpg`} className="img-fluid" alt="" />
                             </picture>
                         </div>
                         <div className='col-6'>
                             <picture>
                                 <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-3.webp`} />
                                 <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-3.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-3.jpg`} className="w-100" />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-3.jpg`} className="w-100" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -60,8 +60,8 @@ const CustomerReview = () => {
         },
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
-            content: 
-                <ReviewCard 
+            content:
+                <ReviewCard
                     name="Torey M. Verified Buyer"
                     caption="Shade of Tan:Dark"
                 >
@@ -72,7 +72,7 @@ const CustomerReview = () => {
                             <picture>
                                 <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-3.webp`} />
                                 <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-3.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-3.jpg`} className="img-fluid" />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-3.jpg`} className="img-fluid" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -80,8 +80,8 @@ const CustomerReview = () => {
         },
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
-            content: 
-                <ReviewCard 
+            content:
+                <ReviewCard
                     name="Steffanie G. Verified Buyer"
                     caption="Shade of Tan: Medium"
                 >
@@ -93,7 +93,7 @@ const CustomerReview = () => {
                             <picture>
                                 <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-6.webp`} />
                                 <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-6.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-6.jpg`} className="img-fluid" />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-6.jpg`} className="img-fluid" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -101,8 +101,8 @@ const CustomerReview = () => {
         },
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
-            content: 
-                <ReviewCard 
+            content:
+                <ReviewCard
                     name="Sadie B. Verified Buyer"
                     caption="Shade of Tan: Dark"
                 >
@@ -113,14 +113,14 @@ const CustomerReview = () => {
                             <picture>
                                 <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-8.webp`} />
                                 <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-8.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-8.jpg`} className="img-fluid" />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-8.jpg`} className="img-fluid" alt="" />
                             </picture>
                         </div>
                         <div className='col-6'>
                             <picture>
                                 <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-7.webp`} />
                                 <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-7.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-7.jpg`} className="w-100" />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-7.jpg`} className="w-100" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -128,8 +128,8 @@ const CustomerReview = () => {
         },
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
-            content: 
-                <ReviewCard 
+            content:
+                <ReviewCard
                     name="Stef H. Verified Buyer"
                     caption="Shade of Tan:Medium"
                 >
@@ -140,26 +140,26 @@ const CustomerReview = () => {
                             <picture>
                                 <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-2.webp`} />
                                 <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} className="img-fluid" />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} className="img-fluid" alt="" />
                             </picture>
                             </div>
                         <div className='col-6'>
                             <picture>
                                 <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-7.webp`} />
                                 <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-7.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-7.jpg`} className="w-100" />
+                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-7.jpg`} className="w-100" alt="" />
                             </picture>
                         </div>
                     </div>
                 </ReviewCard>
         }
-    ] 
+    ]
 
 	return (
 		<section className='customer-reviews pt-0 pb-2 py-lg-4'>
             <h2 className="h1 mb-4 text-center">Customer Reviews</h2>
             <div className='container'>
-                <Carousel 
+                <Carousel
                     id="customerReviews"
                     className="carousel slide carousel--loop carousel--mobile-half-next"
                     items={CUSTOMER_REVIEWS}
