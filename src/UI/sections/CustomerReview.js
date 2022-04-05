@@ -2,7 +2,6 @@ import ReviewCard from '../components/ReviewCard';
 import Carousel from '../components/Carousel';
 
 const CustomerReview = () => {
-
     const CUSTOMER_REVIEWS = [
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 rounded active',
@@ -169,7 +168,7 @@ const CustomerReview = () => {
                                 <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} />
                                 <img src={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} className="img-fluid" alt="" />
                             </picture>
-                            </div>
+                        </div>
                         <div className='col-6'>
                             <picture>
                                 <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-7.webp`} />

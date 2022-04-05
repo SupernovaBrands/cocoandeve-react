@@ -41,11 +41,10 @@ const ProductForm = (props) => {
 
 
     const productVariants = variants ? variants : SHADES;
-
-    const [selectedVariantId, setSelectedVariantId] = useState(productVariants.at(0).id); // set to the first variant as default
+    const [selectedVariantId, setSelectedVariantId] = useState(productVariants[0].id); // set to the first variant as default
     const [quantity, setQuantity] = useState(1);
-    const [selectedVariantShadeText, setSelectedVariantShadeText] = useState(productVariants.at(0).text);
-    const [selectedVariantShadeCaption, setSelectedVariantShadeCaption] = useState(productVariants.at(0).caption);
+    const [selectedVariantShadeText, setSelectedVariantShadeText] = useState(productVariants[0].text);
+    const [selectedVariantShadeCaption, setSelectedVariantShadeCaption] = useState(productVariants[0].caption);
 
     const [buttonUrl, setButtonUrl] = useState(`https://dev.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set?itemtoadd=${selectedVariantId}&quantity=${quantity}`);
     const onSelectedVariant = (event) => {
