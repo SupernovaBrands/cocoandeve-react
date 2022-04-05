@@ -4,15 +4,20 @@ import PropTypes from 'prop-types';
 import { ReactComponent as StarFull } from '../../assets/star-full.svg';
 import { ReactComponent as StarHalf } from '../../assets/star-half.svg';
 import { ReactComponent as StarEmpty } from '../../assets/star-line.svg';
+import { ReactComponent as StarFullSharp } from '../../assets/star-full-sharp.svg';
 
 const ReviewStar = (props) => {
 	const full = Math.floor(props.score);
 	const line = 5 - Math.ceil(props.score);
 	const half = 5 - full - line;
-	
+
 	const stars = [];
 	for (let x = 0; x < full; x += 1) {
-		stars.push(<StarFull key={`full-${x}`} className={`svg text-primary ${stars.length === 0 ? '' : 'ms-25'}`} />);
+		let starFull = <StarFull key={`full-${x}`} className={`svg text-primary ${stars.length === 0 ? '' : 'ms-25'}`} />;
+		if (props.useSharpStar) {
+			starFull = <StarFullSharp key={`full-${x}`} className={`svg text-primary ${stars.length === 0 ? '' : 'ms-25'}`} />;
+		}
+		stars.push(starFull);
 	}
 	for (let x = 0; x < half; x += 1) {
 		stars.push(<StarHalf key={`half-${x}`} className={`svg text-primary ${stars.length === 0 ? '' : 'ms-25'}`} />);
