@@ -18,7 +18,7 @@ const ProductDetail = () => {
 
     return (
         <Fragment>
-            <ProductForm />
+            <ProductForm addToCart="" />
             <CustomerReview />
             <SeenIn />
             <SectionIRL />
