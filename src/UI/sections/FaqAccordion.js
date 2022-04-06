@@ -24,7 +24,7 @@ const FaqAccordion = () => {
 	return (
 		<section className='range__carousel bg-yellow-light py-3'>
             <div className="container">
-                <h2 className="h1 text-center">Your questions – answered</h2>
+                <h2 className="text-center">Your questions – answered</h2>
                 <div className="accordion list-unstyled border-0 mt-4 " id="faqSection">
                     {FAQCONTENT.map((faq, index) => (
                         <div key={`faqitem${index}`} className={`accordion-item border-0 border-bottom border-dark ${ index === 3 ? 'border-bottom-0':''}`}>

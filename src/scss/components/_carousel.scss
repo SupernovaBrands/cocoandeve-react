@@ -180,6 +180,7 @@
 
 	&--mobile-only-half-centered {
 		.carousel-inner {
+			transform: translateX(-41%);
 			@include media-breakpoint-up(lg) {
 				width: 100%;
 				transform: none;
@@ -187,7 +188,7 @@
 		}
 		.carousel-item {
 			@include media-breakpoint-down(md) {
-				width: 75%;
+				width: 60%;
 			}
 		}
 	}

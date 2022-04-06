@@ -15,7 +15,7 @@ const ReviewStar = (props) => {
 	for (let x = 0; x < full; x += 1) {
 		let starFull = <StarFull key={`full-${x}`} className={`svg text-primary ${stars.length === 0 ? '' : 'ms-25'}`} />;
 		if (props.useSharpStar) {
-			starFull = <StarFullSharp key={`full-${x}`} className={`svg text-primary ${stars.length === 0 ? '' : 'ms-25'}`} />;
+			starFull = <StarFull key={`full-${x}`} className={`svg text-primary ${stars.length === 0 ? '' : 'ms-25'}`} />;
 		}
 		stars.push(starFull);
 	}
