@@ -66,11 +66,12 @@ const carouselLoop = (carouselId) => {
                 element.addEventListener('click', function (e) {
                     Array.from(items).forEach(function(elToClassRemove) {
                         elToClassRemove.querySelector('button').classList.remove('border-primary');
-                        console.log(elToClassRemove)
+                        elToClassRemove.querySelector('button').classList.add('border-white');
                     });
                     const targetBtn = e.target.closest('button');
                     console.log(targetBtn);
                     targetBtn.classList.add('border-primary');
+                    targetBtn.classList.remove('border-white');
                 });
             });
         }

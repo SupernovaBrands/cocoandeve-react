@@ -399,9 +399,6 @@
 			pointer-events: none;
 		}
 	}
-	&__item button {
-		border: 2px solid white;
-	}
 	@include media-breakpoint-down(md) {
 		&__item.carousel-item-prev.carousel-item-end {
 			width: calc-em(75);
