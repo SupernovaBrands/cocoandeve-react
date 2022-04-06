@@ -308,13 +308,13 @@ const RangeCarousel = () => {
 							<Fragment>
 								<button className="carousel-control carousel-control-prev carousel-control--background floating-out-start justify-content-start text-primary d-none d-lg-flex" data-bs-target={`#${item.carouselId}`} data-bs-slide="prev">
 									<span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true">
-										<ChevronPrev className='svg font-size-lg' />
+										<ChevronPrev className='svg' />
 									</span>
 									<span className='visually-hidden-focusable'>Prev</span>
 								</button>
 								<button className="carousel-control carousel-control-next carousel-control--background floating-out-end justify-content-end text-primary d-none d-lg-flex" data-bs-target={`#${item.carouselId}`} data-bs-slide="next">
 									<span className="carousel-control-next-icon d-flex justify-content-center align-items-center" aria-hidden="true">
-										<ChevronNext className='svg font-size-lg' />
+										<ChevronNext className='svg' />
 									</span>
 									<span className='visually-hidden-focusable'>Next</span>
 								</button>

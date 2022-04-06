@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { ReactComponent as StarFull } from '../../assets/star-full.svg';
+import { ReactComponent as StarFullSharp } from '../../assets/star-full-sharp.svg';
 
 const ProductCard = (props) => {
 	return (
@@ -18,7 +18,7 @@ const ProductCard = (props) => {
 			</a>
 			<div className='pt-2 pb-0 position-relative flex-grow-1 d-flex flex-column px-3'>
 				<div className='d-flex justify-content-center'>
-					<StarFull className="svg text-primary ml-25" />
+					<StarFullSharp className="svg text-primary ml-25" />
 					<span className='font-size-sm ms-25 me-1'>{props.rating}/5.0</span>
 					<a className='font-size-sm' href={`${props.url}#write-a-review`}>{props.totalReviews} Reviews</a>
 				</div>
