@@ -3,7 +3,7 @@ import Carousel from '../components/Carousel';
 const SeenIn = () => {
     const CAROUSELITEMS = [
         {
-            carouselItemClass: 'carousel-item col-9 col-md-3 active mt-5 text-center',
+            carouselItemClass: 'carousel-item col-6 col-md-3 mt-5 text-center active',
             content:
                 <picture>
                     <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/glamour.webp`} />
@@ -12,7 +12,7 @@ const SeenIn = () => {
                 </picture>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-3 active mt-5 text-center',
+            carouselItemClass: 'carousel-item col-6 col-md-3  mt-5 text-center',
             content:
                 <picture>
                     <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/cosmopolitan.webp`} />
@@ -21,7 +21,7 @@ const SeenIn = () => {
                 </picture>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-3  mt-5 text-center',
+            carouselItemClass: 'carousel-item col-6 col-md-3  mt-5 text-center',
             content:
                 <picture>
                     <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/elle.webp`} />
@@ -30,7 +30,7 @@ const SeenIn = () => {
                 </picture>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-3  mt-5 text-center',
+            carouselItemClass: 'carousel-item col-6 col-md-3  mt-5 text-center',
             content:
                 <picture>
                     <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/mailonline.webp`} />
@@ -39,7 +39,7 @@ const SeenIn = () => {
                 </picture>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-3  mt-5 text-center',
+            carouselItemClass: 'carousel-item col-6 col-md-3  mt-5 text-center',
             content:
                 <picture>
                     <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/refinery29.webp`} />
