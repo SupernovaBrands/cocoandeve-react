@@ -62,14 +62,19 @@ const carouselLoop = (carouselId) => {
         if (carouselId === 'product-image-carousel__indicator') {
             const carousel = document.querySelector('#product-image-carousel__indicator');
             const items = carousel.querySelectorAll('.carousel-item');
-            Array.from(items).forEach(function(element) {
+            Array.from(items).forEach(function(element, index) {
+                console.log(index)
+                if (index === 0) {
+                    const firstBtn = element.querySelector('button');
+                    firstBtn.classList.add('border-primary');
+                    firstBtn.classList.remove('border-white');
+                }
                 element.addEventListener('click', function (e) {
                     Array.from(items).forEach(function(elToClassRemove) {
                         elToClassRemove.querySelector('button').classList.remove('border-primary');
                         elToClassRemove.querySelector('button').classList.add('border-white');
                     });
                     const targetBtn = e.target.closest('button');
-                    console.log(targetBtn);
                     targetBtn.classList.add('border-primary');
                     targetBtn.classList.remove('border-white');
                 });

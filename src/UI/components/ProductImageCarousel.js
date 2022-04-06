@@ -46,14 +46,14 @@ const ProductImageCarousel = () => {
                 </figure>
             </div>
 
-            <div key="product-image-carousel__indicator" id="product-image-carousel__indicator" className="d-none d-lg-block product-image-carousel__indicator carousel--swipe col-12 col-lg-1 order-lg-1 carousel slide carousel--loop mb-1 mb-lg-0 px-0 px-lg-g" data-bs-slide-number="5" data-bs-ride="carousel" data-bs-interval="false">
+            <div key="product-image-carousel__indicator" id="product-image-carousel__indicator" className="product-image-carousel__indicator carousel--swipe col-12 col-lg-1 order-lg-1 carousel slide carousel--loop mb-1 mb-lg-0 px-0 px-lg-g" data-bs-slide-number="5" data-bs-ride="carousel" data-bs-interval="false">
                 <button  key="btn4" className="carousel-indicator chevron-up btn-unstyled d-none d-lg-flex mx-auto mb-1 mb-lg-3 text-center align-items-center" data-bs-slide="prev" data-bs-target="#product-image-carousel__indicator" disabled>
                     <ChevronUp className='svg text-primary'/>
                 </button>
-                <div key="carousel-inner" className="carousel-inner d-flex flex-nowrap flex-lg-column justify-content-center justify-content-lg-start">
+                <div key="carousel-inner" className="carousel-inner d-flex flex-nowrap flex-lg-column">
                     {PRODUCT_IMAGES.map((image, index) => (
                     <div key={image} data-bs-target="#product-image-carousel" data-bs-slide-to={index} className={`product-image-carousel__indicator__item carousel-item col-12 px-lg-0 pb-lg-3 mw-100 ${ index === 0 ? 'active':''}`}>
-                        <button className={`btn-unstyled border d-block w-100 ${index === 0 ? 'border-primary': 'border-white'}`}>
+                        <button className={`btn-unstyled border d-block w-100 ${index === 0 ? 'border-white': 'border-white'}`}>
                             <picture className="ratio ratio-1x1 w-100 d-block">
                                 <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/${image.replace('jpg', 'webp')}`}/>
                                 <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/${image}`}/>
@@ -63,7 +63,7 @@ const ProductImageCarousel = () => {
                     </div>
                     ))}
                 </div>
-                <button  key="btn3" className="carousel-indicator chevron-down btn-unstyled d-none d-lg-flex mx-auto mt-1 mt-lg-3 text-center text-primary align-items-center" data-bs-slide="next" data-bs-target="#product-image-carousel__indicator">
+                <button  key="btn3" className="carousel-indicator chevron-down btn-unstyled d-none d-lg-flex mx-auto mt-1 mt-lg-3 text-center align-items-center" data-bs-slide="next" data-bs-target="#product-image-carousel__indicator">
                     <ChevronDown className='svg text-primary'/>
                 </button>
             </div>
