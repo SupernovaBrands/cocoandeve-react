@@ -16,8 +16,9 @@ links.forEach(link => {
 
   if (/\.css$/.test(link)) {
     fileType = "style";
-	preLoad = true;
+	  preLoad = true;
   }
+
   fileWithPreload = [
     ...fileWithPreload,
     preLoad ? `<link rel="preload" type="text/css" onload="this.rel='stylesheet'" href=".${link}" as="${fileType}">` : ''
