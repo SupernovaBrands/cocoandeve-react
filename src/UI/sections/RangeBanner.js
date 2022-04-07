@@ -4,7 +4,7 @@ const RangeBanner = () => {
 		<section className='range__banner jumbotron'>
 			<div className='d-lg-none text-center'>
 				<h1 className='mb-1'>Sunny Honey</h1>
-				<p className='mb-1'>The only safe-tanner you’ll ever need. </p>
+				<p className='mb-1'>The only self-tanner you ever need. </p>
 			</div>
 
 			<picture className="d-block w-100">
