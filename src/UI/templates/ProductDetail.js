@@ -1,5 +1,6 @@
 import React, { Fragment, lazy, Suspense } from 'react';
 import ProductForm from '../sections/ProductForm';
+import Carousel from '../components/Carousel';
 
 // import FaqAccordion from '../sections/FaqAccordion';
 // import SeenIn from '../sections/SeenIn';
