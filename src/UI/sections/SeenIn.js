@@ -1,7 +1,5 @@
 import Carousel from '../components/Carousel';
 
-import { ReactComponent as Cosmo } from '../../assets/cosmopolitan.svg';
-
 const SeenIn = () => {
     const CAROUSELITEMS = [
         {
@@ -15,7 +13,12 @@ const SeenIn = () => {
         },
         {
             carouselItemClass: 'carousel-item col-6 col-md-3  mt-5 text-center',
-            content: <Cosmo />
+            content: 
+                <picture>
+                    <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/cosmopolitan.webp`} />
+                    <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/cosmopolitan.jpg`} />
+                    <img src={`${process.env.PUBLIC_URL}/images/cosmopolitan.jpg`} className="img-fluid" alt="Glamour" />
+                </picture>
         },
         {
             carouselItemClass: 'carousel-item col-6 col-md-3  mt-5 text-center',
