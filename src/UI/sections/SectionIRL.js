@@ -37,7 +37,7 @@ const SectionIRL = () => {
             content:
                 <IRLCard
                     name="@orianavtorres"
-                    caption="Bali Bronzing Foam (Ultra Dark)"
+                    caption="Bali Bronzing Foam (Dark)"
                     image={`${process.env.PUBLIC_URL}/compressed_images/orianavtorres.jpg`}
                     comImage={`${process.env.PUBLIC_URL}/compressed_images/orianavtorres.webp`}
                 >
