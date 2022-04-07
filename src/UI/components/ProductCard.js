@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { ReactComponent as StarFull } from '../../assets/star-full.svg';
+import ReviewStar from "./ReviewStar";
 
 const ProductCard = (props) => {
 	return (
@@ -16,11 +16,10 @@ const ProductCard = (props) => {
 					<img className='w-100' src={props.img} alt={props.title} />
 				</picture>
 			</a>
-			<div className='pt-2 pb-0 position-relative flex-grow-1 d-flex flex-column px-3'>
+			<div className='pt-2 pb-0 position-relative flex-grow-1 d-flex flex-column px-2'>
 				<div className='d-flex justify-content-center'>
-					<StarFull className="svg text-primary ml-25" />
-					<span className='font-size-sm ms-25 me-1'>{props.rating}/5.0</span>
-					<a className='font-size-sm' href={`${props.url}#write-a-review`}>{props.totalReviews} Reviews</a>
+					<ReviewStar score={props.rating} />
+					<a className='ms-25 product-card__review' href={`${props.url}#write-a-review`}>({props.totalReviews})</a>
 				</div>
 				<p className="product-card__title flex-grow-1 d-flex flex-column justify-content-center h4 h-100 mb-0 fw-normal">
     				<a href={props.url} className="text-dark text-decoration-none">

@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { ReactComponent as StarFull } from '../../assets/star-full.svg';
 import { ReactComponent as StarHalf } from '../../assets/star-half.svg';
 import { ReactComponent as StarEmpty } from '../../assets/star-line.svg';
-import { ReactComponent as StarFullSharp } from '../../assets/star-full-sharp.svg';
 
 const ReviewStar = (props) => {
 	const full = Math.floor(props.score);
