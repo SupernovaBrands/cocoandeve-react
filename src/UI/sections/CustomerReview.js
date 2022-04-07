@@ -15,16 +15,16 @@ const CustomerReview = () => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-2.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} className="img-fluid" alt="" />
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image8.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image8.jpg`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/image8.jpg`} className="img-fluid" alt="" />
                             </picture>
                         </div>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-1.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-1.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-1.jpg`} className="w-100" alt="" />
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image5.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image5.jpg`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/image5.jpg`} className="w-100" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -42,16 +42,16 @@ const CustomerReview = () => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-2.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} className="img-fluid" alt="" />
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image4.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image4.jpg`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/image4.jpg`} className="img-fluid" alt="" />
                             </picture>
                         </div>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-1.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-1.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-1.jpg`} className="w-100" alt="" />
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image3.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image3.jpg`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/image3`} className="w-100" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -69,16 +69,9 @@ const CustomerReview = () => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-2.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} className="img-fluid" alt="" />
-                            </picture>
-                        </div>
-                        <div className='col-6'>
-                            <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-1.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-1.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-1.jpg`} className="w-100" alt="" />
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image3.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image3.jpg`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/image3.jpg`} className="img-fluid" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -96,9 +89,9 @@ const CustomerReview = () => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-3.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-3.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-3.jpg`} className="img-fluid" alt="" />
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image9.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image9.jpg`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/image9.jpg`} className="img-fluid" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -117,9 +110,16 @@ const CustomerReview = () => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-6.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-6.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-6.jpg`} className="img-fluid" alt="" />
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image4.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image4.jpg`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/image4.jpg`} className="img-fluid" alt="" />
+                            </picture>
+                        </div>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image2.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image2.jpg`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/image2.jpg`} className="img-fluid" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -137,16 +137,16 @@ const CustomerReview = () => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-8.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-8.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-8.jpg`} className="img-fluid" alt="" />
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image6.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image6.jpg`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/image6.jpg`} className="img-fluid" alt="" />
                             </picture>
                         </div>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-7.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-7.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-7.jpg`} className="w-100" alt="" />
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image6.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image6.jpg`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/image6.jpg`} className="w-100" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -164,16 +164,9 @@ const CustomerReview = () => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-2.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-2.jpg`} className="img-fluid" alt="" />
-                            </picture>
-                        </div>
-                        <div className='col-6'>
-                            <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/review-customer-7.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/review-customer-7.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/review-customer-7.jpg`} className="w-100" alt="" />
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image10.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/rimage10.jpg`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/image10.jpg`} className="img-fluid" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -182,7 +175,7 @@ const CustomerReview = () => {
     ]
 
 	return (
-		<section className='customer-reviews pt-0 pb-2 py-lg-4'>
+		<section className='customer-reviews pt-0 pb-2 pt-lg-4'>
             <h2 className="h1 mb-4 text-center">Customer Reviews</h2>
             <div className='container'>
                 <Carousel

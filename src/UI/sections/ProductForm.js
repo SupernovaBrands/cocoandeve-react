@@ -24,17 +24,17 @@ const ProductForm = (props) => {
     const SHADES = [
         {
             id: '32068891541539',
-            text: 'Medium - Subtle glow, lighter skin tones',
+            text: 'Medium Shade - Gives skin a sun-kissed glow. Great for lighter skin tones!',
             class: 'medium',
         },
         {
             id: '32068891607075',
-            text: 'Dark - Subtle glow, lighter skin tones',
+            text: 'Dark Shade - For a back from vacay bronze. Ideal for medium skin tones!',
             class: 'dark',
         },
         {
             id: '32068891639843',
-            text: 'Ultra Dark - Subtle glow, lighter skin tones',
+            text: 'Ultra Dark Shade - A deep, rich tan. For deeper skin tones!',
             class: 'ultra-dark',
         }
     ]
