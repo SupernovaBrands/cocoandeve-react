@@ -15,16 +15,16 @@ const CustomerReview = () => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image8.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image8.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/image8.jpg`} className="img-fluid" alt="" />
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0aacc2f1-02f9-4ee1-5994-ad647e26c300/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/acb5e8a9-bd03-4f05-d2d3-7817b1d27500/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/acb5e8a9-bd03-4f05-d2d3-7817b1d27500/200x" className="img-fluid" alt="" />
                             </picture>
                         </div>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image5.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image5.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/image5.jpg`} className="w-100" alt="" />
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d3a1a011-65bd-49e1-79ff-d9f8c33b5500/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/95e53a10-1deb-40da-52df-1891f96efe00/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/95e53a10-1deb-40da-52df-1891f96efe00/200x"className="w-100" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -42,9 +42,9 @@ const CustomerReview = () => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image7.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image7.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/image7.jpg`} className="img-fluid" alt="" />
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/cd37ece0-4c30-447a-a52b-05d5937a2b00/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7ba095e8-e3d3-4c0d-d08a-4edbb7778000/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7ba095e8-e3d3-4c0d-d08a-4edbb7778000/200x" className="img-fluid" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -62,9 +62,9 @@ const CustomerReview = () => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image3.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image3.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/image3.jpg`} className="img-fluid" alt="" />
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/68fa6642-1e94-439c-c0a4-fe31ff027f00/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/15b532db-5a1d-4a38-2bb8-5fcf59c1b700/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/15b532db-5a1d-4a38-2bb8-5fcf59c1b700/200x" className="img-fluid" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -82,9 +82,9 @@ const CustomerReview = () => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image9.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image9.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/image9.jpg`} className="img-fluid" alt="" />
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/04e43ba7-46fd-47e3-c347-8430287a7d00/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/aa96a2fc-e91d-473a-e328-0a966e9e9b00/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/aa96a2fc-e91d-473a-e328-0a966e9e9b00/200x" className="img-fluid" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -103,16 +103,16 @@ const CustomerReview = () => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image4.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image4.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/image4.jpg`} className="img-fluid" alt="" />
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d0ffe6fb-96c4-4059-95ed-a9c07006d300/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/03bb1c12-7e90-48de-21ce-c1e5d394b700/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/03bb1c12-7e90-48de-21ce-c1e5d394b700/200x" className="img-fluid" alt="" />
                             </picture>
                         </div>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image2.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image2.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/image2.jpg`} className="img-fluid" alt="" />
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/347c899b-8292-4ac2-6a35-f09291fb0e00/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/de3a2ed7-4629-4425-0a79-2ff78a07c800/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/de3a2ed7-4629-4425-0a79-2ff78a07c800/200x" className="img-fluid" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -130,16 +130,16 @@ const CustomerReview = () => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image6.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image6.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/image6.jpg`} className="img-fluid" alt="" />
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b2733858-1a83-4973-54c1-44f036a3f900/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/41b0f5a1-1fb9-4251-2403-8f7741208100/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/41b0f5a1-1fb9-4251-2403-8f7741208100/200x" className="w-100" alt="" />
                             </picture>
                         </div>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image6.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image6.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/image6.jpg`} className="w-100" alt="" />
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7a22db86-2796-4197-dae4-1148e2070500/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6682e320-30c7-4f56-2f82-355733b09800/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6682e320-30c7-4f56-2f82-355733b09800/200x" className="img-fluid" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -157,9 +157,9 @@ const CustomerReview = () => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image10.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/rimage10.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/image10.jpg`} className="img-fluid" alt="" />
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9aca4722-affa-4677-1a0e-263b6cb31c00/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/48a2621a-547c-43d3-538e-b90ba49a9200/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/48a2621a-547c-43d3-538e-b90ba49a9200/200x" className="img-fluid" alt="" />
                             </picture>
                         </div>
                     </div>
