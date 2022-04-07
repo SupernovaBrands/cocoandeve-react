@@ -13,8 +13,8 @@ const SectionIRL = () => {
                 <IRLCard
                     name="@hughesyfit"
                     caption="Bali Bronzing Foam (Dark)"
-                    image={`${process.env.PUBLIC_URL}/images/hughesyfit.jpg`}
-                    comImage={`${process.env.PUBLIC_URL}/compressed_images/hughesyfit.webp`}
+                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6dfe2acd-5388-48ff-3dd1-b2ed2b6cad00/200x"
+                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/13cb7403-0ef5-4216-3b94-e5ce95fbdc00/200x"
                 >
                     <p>wearing @cocoandeve sunny honey bali bronzing foam in shade dark. Since not being able to go away and catch a natural tan, this has been a life saver, the smell is incredible (tropical mango and guave scent 🌴😻) it’s 100% vegan, toxin-free and cruelty free</p>
 
@@ -26,8 +26,8 @@ const SectionIRL = () => {
                 <IRLCard
                     name="@hannahtucker"
                     caption="Bali Bronzing Foam (Dark)"
-                    image={`${process.env.PUBLIC_URL}/images/hannahtucker.jpg`}
-                    comImage={`${process.env.PUBLIC_URL}/compressed_images/hannahtucker.webp`}
+                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/14450439-ff6e-4fe2-0030-373f53899600/200x"
+                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/15647b0f-9340-41fb-4e09-f80692f0f800/200x"
                 >
                     <p>Nothing better than a fresh tan to boost your confidence. I have been using @cocoandeve Sunny Honey Bali Bronzing foam in dark to keep a natural glow this winter, it’s super easy to apply and quick so it never feels like a chore. It has an amazing scent of Balinese Mango and Guava, 100% vegan, toxin-free, cruelty free, and gives you an olive colour (no orange vibes over here)!</p>
                 </IRLCard>
@@ -38,8 +38,8 @@ const SectionIRL = () => {
                 <IRLCard
                     name="@orianavtorres"
                     caption="Bali Bronzing Foam (Dark)"
-                    image={`${process.env.PUBLIC_URL}/compressed_images/Orianna_tan_ba_static.jpg`}
-                    comImage={`${process.env.PUBLIC_URL}/compressed_images/Orianna_tan_ba_static.webp`}
+                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7a518864-af70-46a1-6d76-8d8f43e1d100/200x"
+                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b734bbe7-e646-4ecf-d42e-5ee4c2c60300/200x"
                 >
                     <p>The perfect tan! Free of sulfate, toxins, silicones, parabens and other harmful chemicals. I use the Tanning Goddess Kit is Ultra Dark.</p>
                 </IRLCard>
@@ -50,8 +50,8 @@ const SectionIRL = () => {
                 <IRLCard
                     name="@jaydestella"
                     caption="Bali Bronzing Foam (Dark)"
-                    image={`${process.env.PUBLIC_URL}/compressed_images/Tan_Jayde.jpg`}
-                    comImage={`${process.env.PUBLIC_URL}/compressed_images/Tan_Jayde.webp`}
+                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7bddecbc-3156-44d6-c030-baa5272a5700/200x"
+                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/68dd4111-3eae-4de7-b84c-35f1d93b7e00/200x"
                 >
                     <p>Just tried @cocoandeve bronzing foam!!! And I’m obsessed! 🤍</p>
                 </IRLCard>
