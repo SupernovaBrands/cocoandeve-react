@@ -222,13 +222,6 @@ $navbar-toggler-padding-x: 0;
 // navbar brand
 $navbar-brand-padding-y: calc-em(9, 16);
 
-// dropdown
-$dropdown-border-width: 0;
-
-// tooltip
-$tooltip-opacity: 1;
-$tooltip-font-size: $font-size-base;
-
 // Icons
 $supernova-icon-asset: url(font-url('supernova-icon.woff2')) format("woff2"),
 url(font-url('supernova-icon.woff')) format("woff");
@@ -261,12 +254,6 @@ $nav-tabs-border-color: black;
 $nav-tabs-link-hover-border-color: $body-color;
 $nav-tabs-link-active-border-color: $body-color;
 
-// Spinners
-$spinner-width: 1.9rem;
-$spinner-width: 1.9rem;
-$spinner-width-sm: .9em;
-$spinner-height-sm: .9em;
-
 //modal
 $modal-lg: calc-em(720);
 
@@ -277,16 +264,6 @@ $custom-switch-indicator-border-radius: 2em;
 $custom-control-indicator-bg: white;
 $custom-control-indicator-border-color: white;
 $custom-control-indicator-checked-disabled-bg: $gray-400;
-
-//Popover
-$popover-max-width: 275px !default;
-$popover-border-radius: calc-em(8);
-$popover-body-padding-y: calc-em(8);
-$popover-body-padding-x: calc-em(8);
-$popover-box-shadow: 0 .25em .5em rgba(black, .2);
-$popover-border-width: 0;
-$popover-bg: $primary;
-$popover-body-color: #fff;
 
 $enable-negative-margins: true;
 

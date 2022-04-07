@@ -38,7 +38,7 @@ const RangeFormula = () => {
 				</div>
 			</div>
 			<div className='range__formula-tagline bg-yellow-light-secondary text-center d-lg-none font-size-sm fw-bold py-g mt-2'>
-				No sulfates · No silicone · No parabenes · Vegan
+				No sulfates · No silicone · No parabens · Vegan
 			</div>
         </section>
 	);

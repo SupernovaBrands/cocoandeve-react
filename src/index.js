@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import '../src/style.scss';
 import Popper from '@popperjs/core';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+import './vendor/bootstrap.bundle';
 
 
 ReactDOM.render(
@@ -14,4 +14,3 @@ ReactDOM.render(
   </BrowserRouter>,
   document.getElementById('root')
 );
-
