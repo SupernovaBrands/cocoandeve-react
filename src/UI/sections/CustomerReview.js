@@ -42,16 +42,9 @@ const CustomerReview = () => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image4.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image4.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/image4.jpg`} className="img-fluid" alt="" />
-                            </picture>
-                        </div>
-                        <div className='col-6'>
-                            <picture>
-                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image3.webp`} />
-                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image3.jpg`} />
-                                <img src={`${process.env.PUBLIC_URL}/images/image3`} className="w-100" alt="" />
+                                <source type="image/webp" srcSet={`${process.env.PUBLIC_URL}/compressed_images/image7.webp`} />
+                                <source type="image/jpeg" srcSet={`${process.env.PUBLIC_URL}/images/image7.jpg`} />
+                                <img src={`${process.env.PUBLIC_URL}/images/image7.jpg`} className="img-fluid" alt="" />
                             </picture>
                         </div>
                     </div>
