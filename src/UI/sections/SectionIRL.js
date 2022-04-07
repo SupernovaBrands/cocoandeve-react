@@ -38,8 +38,8 @@ const SectionIRL = () => {
                 <IRLCard
                     name="@orianavtorres"
                     caption="Bali Bronzing Foam (Dark)"
-                    image={`${process.env.PUBLIC_URL}/compressed_images/orianavtorres.jpg`}
-                    comImage={`${process.env.PUBLIC_URL}/compressed_images/orianavtorres.webp`}
+                    image={`${process.env.PUBLIC_URL}/compressed_images/Orianna_tan_ba_static.jpg`}
+                    comImage={`${process.env.PUBLIC_URL}/compressed_images/Orianna_tan_ba_static.webp`}
                 >
                     <p>The perfect tan! Free of sulfate, toxins, silicones, parabens and other harmful chemicals. I use the Tanning Goddess Kit is Ultra Dark.</p>
                 </IRLCard>
@@ -50,8 +50,8 @@ const SectionIRL = () => {
                 <IRLCard
                     name="@jaydestella"
                     caption="Bali Bronzing Foam (Dark)"
-                    image={`${process.env.PUBLIC_URL}/compressed_images/jaydestella.jpg`}
-                    comImage={`${process.env.PUBLIC_URL}/compressed_images/jaydestella.webp`}
+                    image={`${process.env.PUBLIC_URL}/compressed_images/Tan_Jayde.jpg`}
+                    comImage={`${process.env.PUBLIC_URL}/compressed_images/Tan_Jayde.webp`}
                 >
                     <p>Just tried @cocoandeve bronzing foam!!! And I’m obsessed! 🤍</p>
                 </IRLCard>
