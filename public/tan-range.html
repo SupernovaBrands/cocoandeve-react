@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="dns-prefetch" href="//imagedelivery.net">
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+
+    <title>Award-Winning Bali Beauty - With Amazing Ingredients
+      | Coco & Eve</title>
+
+    <style>:root{--bs-body-font-family:sofia-pro,Helvetica Neue,Arial,sans-serif;--bs-body-font-size:1em;--bs-body-font-weight:400;--bs-body-line-height:1.25;--bs-body-color:#151515;--bs-body-bg:#fff}*,:after,:before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{-webkit-text-size-adjust:100%;background-color:#fff;background-color:var(--bs-body-bg);color:#151515;color:var(--bs-body-color);font-family:sofia-pro,Helvetica Neue,Arial,sans-serif;font-family:var(--bs-body-font-family);font-size:1em;font-size:var(--bs-body-font-size);font-weight:400;font-weight:var(--bs-body-font-weight);line-height:1.25;line-height:var(--bs-body-line-height);margin:0;text-align:var(--bs-body-text-align)}::-moz-focus-inner{border-style:none;padding:0}</style>
+
+    <link rel="preload" href="https://cdn.shopify.com/s/files/1/0286/1327/9779/t/122/assets/SofiaPro-Regular.woff2?v=18020716823167513507" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.shopify.com/s/files/1/0286/1327/9779/t/122/assets/SofiaPro-Bold.woff2?v=9184080048142353541" as="font" type="font/woff2" crossorigin="anonymous" />
+
+    <link rel="preload" as="image" href="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/383dbdf2-f7e4-412b-8447-54dbb0984a00/1400x" media="(min-width: 768px)" imagesrcset="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/383dbdf2-f7e4-412b-8447-54dbb0984a00/1400x" type="image/webp" />
+    <link rel="preload" as="image" href="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/383dbdf2-f7e4-412b-8447-54dbb0984a00/828x" media="(max-width: 767px)" imagesrcset="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/383dbdf2-f7e4-412b-8447-54dbb0984a00/828x" type="image/webp" />
+    
+    
+
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+        <link rel="preload" href="<%= htmlWebpackPlugin.files.css[css] %>" type="text/css" as="style" onload="this.rel='stylesheet'">
+    <% } %>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      Thiss HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <%= htmlWebpackPlugin.tags.headTags.map((tag) => tag.tagName === 'script' ? tag: '') %>
+    
+  </body>
+</html>
