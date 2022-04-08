@@ -20,11 +20,10 @@
 
     <link rel="preload" href="https://cdn.shopify.com/s/files/1/0286/1327/9779/t/122/assets/SofiaPro-Regular.woff2?v=18020716823167513507" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" href="https://cdn.shopify.com/s/files/1/0286/1327/9779/t/122/assets/SofiaPro-Bold.woff2?v=9184080048142353541" as="font" type="font/woff2" crossorigin="anonymous" />
-    <!---
+
     <% for (var css in htmlWebpackPlugin.files.css) { %>
         <link rel="preload" href="<%= htmlWebpackPlugin.files.css[css] %>" type="text/css" as="style" onload="this.rel='stylesheet'">
     <% } %>
-    -->
 
   </head>
   <body>
@@ -40,7 +39,7 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-     <!--- <%= htmlWebpackPlugin.tags.headTags.map((tag) => tag.tagName === 'script' ? tag: '') %> -->
+    <%= htmlWebpackPlugin.tags.headTags.map((tag) => tag.tagName === 'script' ? tag: '') %>
 
   </body>
 </html>
