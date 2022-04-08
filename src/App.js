@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import Layout from './UI/layout/Layout';
 import Survey from './UI/templates/Survey';
 
@@ -17,11 +17,11 @@ const App = () => {
     <Layout noFooter={noFooter()} noHeader={noHeader()}>
       <Suspense fallback={<div></div>}>
         <Routes>
-          <Route path='/tan-range' element={<TanRange />} />
-          <Route path='/1-tan-range' element={<TanRange />} />
+          <Route path='/range-tan' element={<TanRange />} />
+          <Route path='/tan-range' element={<Navigate replace to="/range-tan" />} />
           <Route path='/products/:handle' element={<ProductDetail />} />
-          <Route path='/sunny-honey-bali-bronzing-self-tan-set' element={<ProductDetail />} />
-          <Route path='/1-sunny-honey-bali-bronzing-self-tan-set' element={<ProductDetail />} />
+          <Route path='/sunny-honey-bali-bronzing-self-tan' element={<ProductDetail />} />
+          <Route path='/sunny-honey-bali-bronzing-self-tan-set' element={<Navigate replace to="/sunny-honey-bali-bronzing-self-tan" />} />
           <Route path='/survey' element={<Survey />} />
         </Routes>
       </Suspense>
