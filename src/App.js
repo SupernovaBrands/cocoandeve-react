@@ -18,8 +18,10 @@ const App = () => {
       <Suspense fallback={<div></div>}>
         <Routes>
           <Route path='/tan-range' element={<TanRange />} />
+          <Route path='/1-tan-range' element={<TanRange />} />
           <Route path='/products/:handle' element={<ProductDetail />} />
           <Route path='/sunny-honey-bali-bronzing-self-tan-set' element={<ProductDetail />} />
+          <Route path='/1-sunny-honey-bali-bronzing-self-tan-set' element={<ProductDetail />} />
           <Route path='/survey' element={<Survey />} />
         </Routes>
       </Suspense>
