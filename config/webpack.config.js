@@ -611,7 +611,8 @@ module.exports = function (webpackEnv) {
                 },
               }
             : undefined
-        )
+        ),
+        new InterpolateHtmlPlugin(HtmlWebpackPlugin, env.raw)
       ),
       new HtmlWebpackPlugin(
         Object.assign(
@@ -637,7 +638,8 @@ module.exports = function (webpackEnv) {
                 },
               }
             : undefined
-        )
+        ),
+        new InterpolateHtmlPlugin(HtmlWebpackPlugin, env.raw)
       ),
       // Inlines the webpack runtime script. This script is too small to warrant
       // a network request.
