@@ -42,7 +42,7 @@ const carouselLoop = (carouselId) => {
                 } else {
                     nextBtn.removeAttribute('disabled');
                 }
-                
+
             }
 
             if (e.target.querySelector('.carousel--centered')) {
@@ -63,7 +63,6 @@ const carouselLoop = (carouselId) => {
             const carousel = document.querySelector('#product-image-carousel__indicator');
             const items = carousel.querySelectorAll('.carousel-item');
             Array.from(items).forEach(function(element, index) {
-                console.log(index)
                 if (index === 0) {
                     const firstBtn = element.querySelector('button');
                     firstBtn.classList.add('border-primary');
