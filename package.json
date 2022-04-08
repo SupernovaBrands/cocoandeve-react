@@ -99,6 +99,7 @@
     "interpolate-html-plugin": "^4.0.0",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+    "serve": "^13.0.2",
     "webpack": "^5.65.0"
   },
   "scripts": {
