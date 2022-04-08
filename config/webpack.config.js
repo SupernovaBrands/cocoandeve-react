@@ -567,7 +567,34 @@ module.exports = function (webpackEnv) {
           {},
           {
             inject: false,
-            template: paths.appHtml,
+            template: 'public/tan-range.html',
+            filename: 'tan-range/index.html'
+          },
+          isEnvProduction
+            ? {
+                minify: {
+                  removeComments: true,
+                  collapseWhitespace: true,
+                  removeRedundantAttributes: true,
+                  useShortDoctype: true,
+                  removeEmptyAttributes: true,
+                  removeStyleLinkTypeAttributes: true,
+                  keepClosingSlash: true,
+                  minifyJS: true,
+                  minifyCSS: true,
+                  minifyURLs: true,
+                },
+              }
+            : undefined
+        )
+      ),
+      new HtmlWebpackPlugin(
+        Object.assign(
+          {},
+          {
+            inject: false,
+            template: 'public/sunny-honey-bali-bronzing-self-tan-set.html',
+            filename: 'sunny-honey-bali-bronzing-self-tan-set/index.html'
           },
           isEnvProduction
             ? {
