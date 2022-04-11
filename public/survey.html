@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="dns-prefetch" href="https://imagedelivery.net">
+    <link rel="dns-prefetch" href="https://cdn.shopify.com">
+    <meta
+      name="description"
+      content="Anti-cellulite, anti-ageing self-tan with zero nasties. Comes bundled up with a soft tanning mitt, and kabuki brush for a perfect and fuss-free application."
+    />
+
+    <title>Award-Winning Bali Beauty - With Amazing Ingredients
+      | Coco & Eve</title>
+    
+    <link rel="preload" href="https://cdn.shopify.com/s/files/1/0286/1327/9779/t/122/assets/SofiaPro-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.shopify.com/s/files/1/0286/1327/9779/t/122/assets/SofiaPro-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+        <link rel="preload" href="<%= htmlWebpackPlugin.files.css[css] %>" type="text/css" as="style" onload="this.rel='stylesheet'">
+    <% } %>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      Thiss HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <%= htmlWebpackPlugin.tags.headTags.map((tag) => tag.tagName === 'script' ? tag: '') %>
+
+  </body>
+</html>

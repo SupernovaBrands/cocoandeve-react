@@ -1,13 +1,14 @@
 import React, { Suspense, lazy } from "react";
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Layout from './UI/layout/Layout';
-import Survey from './UI/templates/Survey';
 
+// import Survey from './UI/templates/Survey';
 // import TanRange from "./UI/templates/TanRange";
 // import ProductDetail from "./UI/templates/ProductDetail";
 
 const TanRange = lazy(() => import('./UI/templates/TanRange'));
 const ProductDetail = lazy(() => import('./UI/templates/ProductDetail'));
+const Survey = lazy(() => import('./UI/templates/Survey'));
 
 const App = () => {
   const noHeader = () => window.location.pathname === '/survey';
