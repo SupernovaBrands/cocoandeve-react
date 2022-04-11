@@ -23,6 +23,8 @@ const App = () => {
           <Route path='/sunny-honey-bali-bronzing-self-tan' element={<ProductDetail />} />
           <Route path='/sunny-honey-bali-bronzing-self-tan-set' element={<Navigate replace to="/sunny-honey-bali-bronzing-self-tan" />} />
           <Route path='/survey' element={<Survey />} />
+          <Route path='/test-pdp' element={<ProductDetail />} />
+          <Route path='/test-range' element={<TanRange />} />
         </Routes>
       </Suspense>
     </Layout>

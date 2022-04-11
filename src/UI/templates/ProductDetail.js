@@ -16,10 +16,6 @@ const SectionIRL = lazy(() => import('../sections/SectionIRL'));
 const ProductDetail = () => {
     return (
         <Fragment>
-            <Helmet>
-                <link rel="preload" as="image" href="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6e673f56-7011-41f4-0076-c4fe81e67000/828x" imagesrcset="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6e673f56-7011-41f4-0076-c4fe81e67000/828x" type="image/webp" />
-                <link rel="icon" href="./favicon.ico" />
-            </Helmet>
             <ProductForm />
             <Suspense fallback={<div></div>}>
                 <CustomerReview />
