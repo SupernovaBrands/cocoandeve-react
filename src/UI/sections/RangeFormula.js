@@ -33,7 +33,7 @@ const RangeFormula = () => {
 					<picture className='col-12 col-lg-7 order-lg-1'>
 						<source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e5ee4be5-5f6e-4fe1-9248-fa04acb29b00/1140x" />
 						<source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a8440365-7bda-4690-1602-277357af8a00/1140x" />
-						<img className='w-100 d-none d-lg-block pe-4' alt='Revolutionary Formula' src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a8440365-7bda-4690-1602-277357af8a00/828x" />
+						<img className='w-100 d-none d-lg-block pe-4' alt='Revolutionary Formula' src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a8440365-7bda-4690-1602-277357af8a00/828x" loading="lazy" />
 					</picture>
 				</div>
 			</div>
