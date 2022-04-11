@@ -568,7 +568,7 @@ module.exports = function (webpackEnv) {
           {
             inject: false,
             template: 'public/sunny-honey-bali-bronzing-self-tan-set.html',
-            filename: 'test-pdp/index.html'
+            filename: 'sunny-honey-bali-bronzing-self-tan/index.html'
           },
           isEnvProduction
             ? {
@@ -594,7 +594,7 @@ module.exports = function (webpackEnv) {
           {
             inject: false,
             template: 'public/tan-range.html',
-            filename: 'test-range/index.html'
+            filename: 'range-tan/index.html'
           },
           isEnvProduction
             ? {
