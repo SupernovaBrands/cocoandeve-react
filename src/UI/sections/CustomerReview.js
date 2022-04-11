@@ -17,14 +17,14 @@ const CustomerReview = () => {
                             <picture>
                                 <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0aacc2f1-02f9-4ee1-5994-ad647e26c300/200x" />
                                 <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/acb5e8a9-bd03-4f05-d2d3-7817b1d27500/200x" />
-                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/acb5e8a9-bd03-4f05-d2d3-7817b1d27500/200x" className="img-fluid" alt="" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/acb5e8a9-bd03-4f05-d2d3-7817b1d27500/200x" className="img-fluid" alt="" loading="lazy" />
                             </picture>
                         </div>
                         <div className='col-6'>
                             <picture>
                                 <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d3a1a011-65bd-49e1-79ff-d9f8c33b5500/200x" />
                                 <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/95e53a10-1deb-40da-52df-1891f96efe00/200x" />
-                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/95e53a10-1deb-40da-52df-1891f96efe00/200x"className="w-100" alt="" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/95e53a10-1deb-40da-52df-1891f96efe00/200x"className="w-100" alt="" loading="lazy"  />
                             </picture>
                         </div>
                     </div>
