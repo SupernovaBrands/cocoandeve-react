@@ -1,4 +1,5 @@
 import { Fragment, lazy, Suspense } from "react";
+import '../../range.scss';
 
 import RangeBanner from "../sections/RangeBanner";
 // import RangeCarousel from "../sections/RangeCarousel";

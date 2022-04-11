@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import '../../survey.scss';
 import Questions from "../../modules/questions";
 import QuestionBox from "../components/QuestionBox";
 import SingleChoice from '../components/SingleChoice';
