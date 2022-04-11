@@ -1,7 +1,7 @@
 import { Fragment, lazy, Suspense } from "react";
-import '../../range.scss';
 
 import RangeBanner from "../sections/RangeBanner";
+import '../../range.scss';
 // import RangeCarousel from "../sections/RangeCarousel";
 // import RangeFormula from "../sections/RangeFormula";
 // import FaqAccordion from "../sections/FaqAccordion";
