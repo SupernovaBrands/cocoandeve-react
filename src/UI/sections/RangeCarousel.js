@@ -15,8 +15,8 @@ const RangeCarousel = () => {
             content: <ProductCard
 				title='Bronzing Face Drops'
 				url='https://www.cocoandeve.com/products/bronzing-self-tanner-drops'
-				img={`${process.env.PUBLIC_URL}/images/Featured_BronzingFaceDrops_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BronzingFaceDrops_532x.webp`}
+				img='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8c2d8c7b-46d4-4303-9ae6-106d6e25d800/828x'
+				comImg='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1a30deb4-1d70-4ad8-af43-15b446aaae00/828x'
 				rating={4.8}
 				totalReviews='735'
 				price='$27.90'
