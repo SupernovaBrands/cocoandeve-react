@@ -1,4 +1,4 @@
-import { Fragment, lazy, Suspense } from "react";
+import React, { Fragment, lazy, Suspense } from 'react';
 
 import RangeBanner from "../sections/RangeBanner";
 import '../../range.scss';
