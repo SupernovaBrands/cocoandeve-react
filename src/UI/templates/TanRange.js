@@ -1,7 +1,6 @@
 import React, { Fragment, lazy, Suspense } from 'react';
 
 import RangeBanner from "../sections/RangeBanner";
-import ProductForm from '../sections/ProductForm';
 import '../../range.scss';
 import RangeCarousel from "../sections/RangeCarousel";
 // import RangeFormula from "../sections/RangeFormula";
@@ -21,8 +20,7 @@ const TanRange = () => {
     return (
         <Fragment>
             <RangeBanner />
-            {/* <RangeCarousel /> */}
-            <ProductForm />
+            <RangeCarousel />
             <Suspense fallback={<div></div>}>
                 <RangeFormula />
                 <SectionIRL />
