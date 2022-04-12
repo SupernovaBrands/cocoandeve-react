@@ -44,8 +44,7 @@ const RangeFormula = () => {
 				No sulfates · No silicone · No parabens · Vegan
 			</div>
 			<div className='d-none'>
-				<QuantityBox />
-				<ReviewStar />
+				<ProductImageCarousel />
 			</div>
         </section>
 	);
