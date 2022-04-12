@@ -2,7 +2,9 @@ import { ReactComponent as FormulaList11 } from '../../assets/formula-list-1.svg
 import { ReactComponent as FormulaList21 } from '../../assets/formula-list-2.svg';
 import { ReactComponent as FormulaList31 } from '../../assets/formula-list-3.svg';
 import { ReactComponent as FormulaList41 } from '../../assets/formula-list-4.svg';
-import ProductImageCarousel from '../sections/ProductForm';
+import ProductImageCarousel from "../components/ProductImageCarousel";
+import QuantityBox from '../components/QuantityBox';
+import ReviewStar from '../components/ReviewStar';
 
 const RangeFormula = () => {
 	return (
@@ -43,6 +45,8 @@ const RangeFormula = () => {
 			</div>
 			<div className='d-none'>
 				<ProductImageCarousel />
+				<QuantityBox />
+				<ReviewStar />
 			</div>
         </section>
 	);
