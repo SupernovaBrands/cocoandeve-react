@@ -46,18 +46,18 @@ const ProductForm = (props) => {
     const [selectedVariantShadeText, setSelectedVariantShadeText] = useState(productVariants[0].text);
     const [selectedVariantShadeCaption, setSelectedVariantShadeCaption] = useState(productVariants[0].caption);
 
-    const [buttonUrl, setButtonUrl] = useState(`https://dev.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set?itemtoadd=${selectedVariantId}&quantity=${quantity}`);
+    const [buttonUrl, setButtonUrl] = useState(`https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set?itemtoadd=${selectedVariantId}&quantity=${quantity}`);
     const onSelectedVariant = (event) => {
         const variantId = event.target.getAttribute('data-id');
         const shadeText = productVariants.find((shade) => shade.id === variantId)
         setSelectedVariantId(variantId);
         setSelectedVariantShadeText(shadeText.text);
-        const url = selectedVariantId !== '' && `https://dev.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set?itemtoadd=${selectedVariantId}&quantity=${quantity}`;
+        const url = selectedVariantId !== '' && `https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set?itemtoadd=${selectedVariantId}&quantity=${quantity}`;
         setButtonUrl(url);
     }
 
     const onChangeQuantity = (qty) => {
-        const url = selectedVariantId !== '' && `https://dev.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set?itemtoadd=${selectedVariantId}&quantity=${qty}`;
+        const url = selectedVariantId !== '' && `https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set?itemtoadd=${selectedVariantId}&quantity=${qty}`;
         setQuantity(qty);
         setButtonUrl(url);
     }
