@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { lazy, useState } from 'react';
 import ProductImageCarousel from "../components/ProductImageCarousel";
-import QuantityBox from '../components/QuantityBox';
+// import QuantityBox from '../components/QuantityBox';
 import ReviewStar from '../components/ReviewStar';
 
 import { ReactComponent as FormulaList1 } from '../../assets/formula-list-1.svg';
@@ -9,6 +9,8 @@ import { ReactComponent as FormulaList3 } from '../../assets/formula-list-3.svg'
 import { ReactComponent as FormulaList4 } from '../../assets/formula-list-4.svg';
 
 import PropTypes from 'prop-types';
+
+const QuantityBox = lazy(() => import('../components/QuantityBox'));
 
 const ProductForm = (props) => {
     const {
@@ -128,7 +130,7 @@ const ProductForm = (props) => {
                             <div className="product-form-submit mb-3 position-relative">
                                 <div className="d-flex">
                                     <div className="react-quantity-box d-none d-lg-block">
-                                    <QuantityBox 
+                                    <QuantityBox
                                         quantity='1'
                                         onChangeQuantity={onChangeQuantity}
                                     />
