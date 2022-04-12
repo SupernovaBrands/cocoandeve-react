@@ -1,5 +1,5 @@
 import ProductCard from "../components/ProductCard";
-import carouselLoop from "../../modules/carousel-loop";
+import carouselLoopCentered from "../../modules/carousel-loop-centered";
 import Carousel from "../components/Carousel";
 
 import { ReactComponent as ChevronPrev } from '../../assets/chevron-prev.svg';
@@ -277,9 +277,9 @@ const RangeCarousel = () => {
 		}
 	];
 
-	carouselLoop('FeaturedBody');
-	carouselLoop('FeaturedFace');
-	carouselLoop('FeaturedValueSets');
+	carouselLoopCentered('FeaturedBody');
+	carouselLoopCentered('FeaturedFace');
+	carouselLoopCentered('FeaturedValueSets');
 
 	return (
 		<section className='product-carousel py-2 py-lg-4'>
