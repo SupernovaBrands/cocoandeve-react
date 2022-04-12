@@ -3,11 +3,7 @@ import React, { Fragment, lazy, Suspense } from 'react';
 import RangeBanner from "../sections/RangeBanner";
 import '../../range.scss';
 import RangeCarousel from "../sections/RangeCarousel";
-
-import ProductImageCarousel from "../components/ProductImageCarousel";
-import QuantityBox from '../components/QuantityBox';
-import ReviewStar from '../components/ReviewStar';
-import Carousel from '../components/Carousel';
+import ProductForm from '../sections/ProductForm';
 // import RangeFormula from "../sections/RangeFormula";
 // import FaqAccordion from "../sections/FaqAccordion";
 // import SectionIRL from "../sections/SectionIRL";
@@ -32,6 +28,7 @@ const TanRange = () => {
                 <SeenIn />
                 <FaqAccordion />
                 <CustomerReview />
+                <ProductForm />
             </Suspense>
         </Fragment>
     )
