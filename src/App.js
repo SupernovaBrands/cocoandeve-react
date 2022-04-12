@@ -1,8 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Layout from './UI/layout/Layout';
-import RangeBanner from './UI/sections/RangeBanner';
-import ProductForm from './UI/sections/ProductForm';
 
 
 // import Survey from './UI/templates/Survey';
