@@ -20,7 +20,7 @@ const CustomerReview = lazy(() => import('../sections/CustomerReview'));
 const TanRange = () => {
     return (
         <Fragment>
-            {/* <RangeBanner /> */}
+            <RangeBanner />
             {/* <RangeCarousel /> */}
             <ProductForm />
             <Suspense fallback={<div></div>}>
