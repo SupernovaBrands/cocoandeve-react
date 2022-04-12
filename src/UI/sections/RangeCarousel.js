@@ -1,8 +1,8 @@
 import ProductCard from "../components/ProductCard";
 import Carousel from "../components/Carousel";
 
-import { ReactComponent as ChevronPrev } from '../../assets/chevron-prev.svg';
-import { ReactComponent as ChevronNext } from '../../assets/chevron-next.svg';
+import { ReactComponent as ChevronPrev1 } from '../../assets/chevron-prev.svg';
+import { ReactComponent as ChevronNext1 } from '../../assets/chevron-next.svg';
 import { Fragment } from "react";
 import { useWindowSize } from "../../modules/Utils";
 
@@ -276,10 +276,6 @@ const RangeCarousel = () => {
 		}
 	];
 
-	// carouselLoopCentered('FeaturedBody');
-	// carouselLoopCentered('FeaturedFace');
-	// carouselLoopCentered('FeaturedValueSets');
-
 	return (
 		<section className='product-carousel py-2 py-lg-4'>
 			<div className='container d-flex flex-column align-items-center px-g'>
@@ -303,13 +299,13 @@ const RangeCarousel = () => {
 							<Fragment>
 								<button className="carousel-control carousel-control-prev carousel-control--background floating-out-start justify-content-start text-primary" data-bs-target={`#${item.carouselId}`} data-bs-slide="prev">
 									<span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true">
-										<ChevronPrev className='svg' />
+										<ChevronPrev1 className='svg' />
 									</span>
 									<span className='visually-hidden-focusable'>Prev</span>
 								</button>
 								<button className="carousel-control carousel-control-next carousel-control--background floating-out-end justify-content-end text-primary" data-bs-target={`#${item.carouselId}`} data-bs-slide="next">
 									<span className="carousel-control-next-icon d-flex justify-content-center align-items-center" aria-hidden="true">
-										<ChevronNext className='svg' />
+										<ChevronNext1 className='svg' />
 									</span>
 									<span className='visually-hidden-focusable'>Next</span>
 								</button>
