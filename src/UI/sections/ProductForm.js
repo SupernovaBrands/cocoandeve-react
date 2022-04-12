@@ -46,18 +46,18 @@ const ProductForm = (props) => {
     const [selectedVariantShadeText, setSelectedVariantShadeText] = useState(productVariants[0].text);
     const [selectedVariantShadeCaption, setSelectedVariantShadeCaption] = useState(productVariants[0].caption);
 
-    const [buttonUrl, setButtonUrl] = useState(`https://dev.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set?itemtoadd=${selectedVariantId}&quantity=${quantity}`);
+    const [buttonUrl, setButtonUrl] = useState(`https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set?itemtoadd=${selectedVariantId}&quantity=${quantity}`);
     const onSelectedVariant = (event) => {
         const variantId = event.target.getAttribute('data-id');
         const shadeText = productVariants.find((shade) => shade.id === variantId)
         setSelectedVariantId(variantId);
         setSelectedVariantShadeText(shadeText.text);
-        const url = selectedVariantId !== '' && `https://dev.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set?itemtoadd=${selectedVariantId}&quantity=${quantity}`;
+        const url = selectedVariantId !== '' && `https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set?itemtoadd=${selectedVariantId}&quantity=${quantity}`;
         setButtonUrl(url);
     }
 
     const onChangeQuantity = (qty) => {
-        const url = selectedVariantId !== '' && `https://dev.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set?itemtoadd=${selectedVariantId}&quantity=${qty}`;
+        const url = selectedVariantId !== '' && `https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set?itemtoadd=${selectedVariantId}&quantity=${qty}`;
         setQuantity(qty);
         setButtonUrl(url);
     }
@@ -107,8 +107,8 @@ const ProductForm = (props) => {
                         <p className="font-size-lg d-none d-lg-block order-lg-2">The only self-tanner you need ever need. <br/>100% Natural DHA. Cruelty Free. Vegan. </p>
                     )}
                     <p className="my-1 order-lg-2">
-                        <span className="text-primary mr-25 text-nowrap h2 " data-variant-available="true" data-variant-price="$62.80">$62.80</span>
-                        <span className="text-linethrough mr-25 text-nowrap ms-1 h2 ">$89.80</span>
+                        <span className="text-linethrough mr-25 text-nowrap h2 ">$89.80</span>
+                        <span className="text-primary mr-25 text-nowrap ms-1 h2 ">$62.80</span>
                         <span className="text-primary text-nowrap text-save p-1 h2 fw-normal">(Save 38%)</span>
                     </p>
                     <hr className="mb-2 bg-primary-light-second mt-0 order-lg-2 d-none d-lg-block"/>
