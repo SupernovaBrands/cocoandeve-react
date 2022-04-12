@@ -20,8 +20,8 @@ const TanRange = () => {
     return (
         <Fragment>
             <RangeBanner />
+            <RangeCarousel />
             <Suspense fallback={<div></div>}>
-                <RangeCarousel />
                 <RangeFormula />
                 <SectionIRL />
                 <SeenIn />
