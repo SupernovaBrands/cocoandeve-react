@@ -13,7 +13,7 @@ const ProductCard = (props) => {
 				<picture>
 					<source type="image/webp" srcSet={props.comImg} />
 					<source type="image/jpeg" srcSet={props.img} />
-					<img className='w-100' src={props.img} alt={props.title} />
+					<img className='w-100' src={props.img} alt={props.title} loading="lazy" />
 				</picture>
 			</a>
 			<div className='pt-2 pb-0 position-relative flex-grow-1 d-flex flex-column px-2'>
