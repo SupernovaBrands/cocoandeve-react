@@ -20,14 +20,14 @@ const TanRange = () => {
     return (
         <Fragment>
             {/* <RangeBanner /> */}
-            <Suspense fallback={<div></div>}>
+            {/* <Suspense fallback={<div></div>}> */}
                 {/* <RangeCarousel /> */}
                 {/* <RangeFormula /> */}
                 {/* <SectionIRL /> */}
                 {/* <SeenIn /> */}
                 {/* <FaqAccordion /> */}
                 {/* <CustomerReview /> */}
-            </Suspense>
+            {/* </Suspense> */}
         </Fragment>
     )
 };
