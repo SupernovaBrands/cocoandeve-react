@@ -19,8 +19,8 @@ const CustomerReview = lazy(() => import('../sections/CustomerReview'));
 const TanRange = () => {
     return (
         <Fragment>
-            <RangeCarousel />
             <RangeBanner />
+            <RangeCarousel />
             <Suspense fallback={<div></div>}>
                 <RangeFormula />
                 <SectionIRL />
