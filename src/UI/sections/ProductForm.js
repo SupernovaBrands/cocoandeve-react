@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ProductImageCarousel from "../components/ProductImageCarousel";
-// import QuantityBox from '../components/QuantityBox';
-import QuantityBoxNew from '../components/QuantityBoxNew';
+import QuantityBox from '../components/QuantityBox';
 import ReviewStar from '../components/ReviewStar';
 
 import { ReactComponent as FormulaList1 } from '../../assets/formula-list-1.svg';
@@ -129,7 +128,7 @@ const ProductForm = (props) => {
                             <div className="product-form-submit mb-3 position-relative">
                                 <div className="d-flex">
                                     <div className="react-quantity-box d-none d-lg-block">
-                                    <QuantityBoxNew
+                                    <QuantityBox
                                         quantity='1'
                                         onChangeQuantity={onChangeQuantity}
                                     />
