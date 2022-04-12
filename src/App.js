@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Layout from './UI/layout/Layout';
 
-import QuantityBox from '../components/QuantityBox';
+// import QuantityBox from '../components/QuantityBox';
 // import Survey from './UI/templates/Survey';
 // import TanRange from "./UI/templates/TanRange";
 // import ProductDetail from "./UI/templates/ProductDetail";
