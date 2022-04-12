@@ -21,7 +21,7 @@ const TanRange = () => {
         <Fragment>
             <RangeBanner />
             <Suspense fallback={<div></div>}>
-                <RangeCarousel />
+                <RangeFormula />
                 <SectionIRL />
                 <SeenIn />
                 <FaqAccordion />
