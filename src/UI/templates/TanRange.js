@@ -28,7 +28,7 @@ const TanRange = () => {
                 <SeenIn />
                 <FaqAccordion />
                 <CustomerReview />
-                <ProductForm />
+                {/* <ProductForm /> */}
             </Suspense>
         </Fragment>
     )
