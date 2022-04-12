@@ -2,7 +2,6 @@ import { ReactComponent as FormulaList11 } from '../../assets/formula-list-1.svg
 import { ReactComponent as FormulaList21 } from '../../assets/formula-list-2.svg';
 import { ReactComponent as FormulaList31 } from '../../assets/formula-list-3.svg';
 import { ReactComponent as FormulaList41 } from '../../assets/formula-list-4.svg';
-import QuantityBox from '../components/QuantityBox';
 
 const RangeFormula = () => {
 	return (
@@ -41,9 +40,6 @@ const RangeFormula = () => {
 			<div className='range__formula-tagline bg-yellow-light-secondary text-center d-lg-none font-size-sm fw-bold py-g mt-2'>
 				No sulfates · No silicone · No parabens · Vegan
 			</div>
-			{/* <div className='d-none'>
-				<QuantityBox />
-			</div> */}
         </section>
 	);
 };

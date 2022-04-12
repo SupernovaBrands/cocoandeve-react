@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, lazy } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import '../../survey.scss';
 import Questions from "../../modules/questions";
 import QuestionBox from "../components/QuestionBox";
@@ -7,13 +7,11 @@ import MultipleChoice from '../components/MultipleChoice';
 import SingleChoiceIcon from '../components/SingleChoiceIcon';
 import SingleChoiceImage from '../components/SingleChoiceImage';
 import CountrySelect from '../components/CountrySelect';
-// import ProductForm from '../sections/ProductForm';
+import ProductForm from '../sections/ProductForm';
 import { useResizeDetector } from 'react-resize-detector';
 
 import { setCookie, getCookie } from "../../modules/Utils";
 import { useSearchParams } from "react-router-dom";
-
-const ProductForm = lazy(() => import('../sections/ProductForm'));
 
 const Survey = () => {
     const [searchParams] = useSearchParams();
