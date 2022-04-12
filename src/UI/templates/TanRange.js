@@ -22,7 +22,7 @@ const TanRange = () => {
             <RangeBanner />
             <Suspense fallback={<div></div>}>
                 <RangeCarousel />
-                <RangeFormula />
+                {/* <RangeFormula /> */}
                 <SectionIRL />
                 <SeenIn />
                 <FaqAccordion />
