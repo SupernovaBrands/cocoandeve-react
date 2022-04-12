@@ -19,11 +19,11 @@ const App = () => {
     <Layout noFooter={noFooter()} noHeader={noHeader()}>
       <Suspense fallback={<div></div>}>
         <Routes>
+          <Route path='/range-tan' element={<TanRange />} />
+          <Route path='/range-tan-test' element={<TanRange />} />
           <Route path='/products/:handle' element={<ProductDetail />} />
           <Route path='/sunny-honey-bali-bronzing-self-tan' element={<ProductDetail />} />
           <Route path='/sunny-honey-bali-bronzing-self-tan-set' element={<Navigate replace to="/sunny-honey-bali-bronzing-self-tan" />} />
-          <Route path='/range-tan' element={<TanRange />} />
-          <Route path='/range-tan-test' element={<TanRange />} />
           <Route path='/tan-range' element={<Navigate replace to="/range-tan" />} />
           <Route path='/survey' element={<Survey />} />
           <Route path='/page-survey' element={<Survey />} />
