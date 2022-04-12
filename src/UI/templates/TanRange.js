@@ -7,6 +7,7 @@ import RangeCarousel from "../sections/RangeCarousel";
 import ProductImageCarousel from "../components/ProductImageCarousel";
 import QuantityBox from '../components/QuantityBox';
 import ReviewStar from '../components/ReviewStar';
+import Carousel from '../components/Carousel';
 // import RangeFormula from "../sections/RangeFormula";
 // import FaqAccordion from "../sections/FaqAccordion";
 // import SectionIRL from "../sections/SectionIRL";
