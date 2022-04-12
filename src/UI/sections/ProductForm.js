@@ -1,4 +1,4 @@
-import React, { lazy, useState } from 'react';
+import React, { useState, lazy } from 'react';
 import ProductImageCarousel from "../components/ProductImageCarousel";
 // import QuantityBox from '../components/QuantityBox';
 import ReviewStar from '../components/ReviewStar';

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, lazy } from "react";
 import '../../survey.scss';
 import Questions from "../../modules/questions";
 import QuestionBox from "../components/QuestionBox";
@@ -7,13 +7,15 @@ import MultipleChoice from '../components/MultipleChoice';
 import SingleChoiceIcon from '../components/SingleChoiceIcon';
 import SingleChoiceImage from '../components/SingleChoiceImage';
 import CountrySelect from '../components/CountrySelect';
-import ProductForm from '../sections/ProductForm';
+// import ProductForm from '../sections/ProductForm';
 import { useResizeDetector } from 'react-resize-detector';
 
 import { setCookie, getCookie } from "../../modules/Utils";
 import { useSearchParams } from "react-router-dom";
 
-const Survey = () => {    
+const ProductForm = lazy(() => import('../sections/ProductForm'));
+
+const Survey = () => {
     const [searchParams] = useSearchParams();
     const site = searchParams.get('site');
     const gId = searchParams.get('gaid');
@@ -21,7 +23,7 @@ const Survey = () => {
     // refference width and height
     const targetRef = useRef();
     const { width, height } = useResizeDetector({ targetRef });
-    
+
     // initial data
     const initialState = getCookie('surveyPosition') || 'start';
     const initialCurrentQuestion = getCookie('currentQuestion') ? parseInt(getCookie('currentQuestion'), 10) : 1;
@@ -58,7 +60,7 @@ const Survey = () => {
     // handler hook side effect when state changed
     useEffect(() => {
         if (currentPosition === 'start') {
-            document.body.classList.add('bg-primary-light-second');        
+            document.body.classList.add('bg-primary-light-second');
         } else {
             document.body.classList.remove('bg-primary-light-second');
         }
@@ -91,7 +93,7 @@ const Survey = () => {
             // call saving data to analytics and database
             saveData();
         }
-    } 
+    }
 
     const postMessageGaParent = (category, action) => {
         if (window.top === window.self) return;
@@ -166,8 +168,8 @@ const Survey = () => {
                                                 case 'MultipleChoice':
                                                     return (
                                                         <QuestionBox width={width} height={height} totalQuestions={item.answers.length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="col-lg-10 offset-lg-1" question={item.question} caption={item.caption}>
-                                                            <MultipleChoice answers={item.answers} 
-                                                                lastFull={item.lastFull} 
+                                                            <MultipleChoice answers={item.answers}
+                                                                lastFull={item.lastFull}
                                                                 maxChoose={item.maxChoose}
                                                                 lastDisableForAll={item.lastDisableForAll}
                                                                 />
@@ -198,7 +200,7 @@ const Survey = () => {
                                                         </QuestionBox>
                                                         );
                                                 }
-                                            } 
+                                            }
                                             return false;
                                         })
                                     }
@@ -218,4 +220,3 @@ const Survey = () => {
     )
 };
 export default Survey;
-    
