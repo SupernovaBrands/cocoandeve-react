@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Layout from './UI/layout/Layout';
+import TagManager from 'react-gtm-module'
 
 // import QuantityBox from '../components/QuantityBox';
 // import Survey from './UI/templates/Survey';
@@ -10,6 +11,12 @@ import Layout from './UI/layout/Layout';
 const ProductDetail = lazy(() => import('./UI/templates/ProductDetail'));
 const TanRange = lazy(() => import('./UI/templates/TanRange'));
 const Survey = lazy(() => import('./UI/templates/Survey'));
+
+const tagManagerArgs = {
+  gtmId: 'GTM-PGT8ZHC'
+}
+
+TagManager.initialize(tagManagerArgs)
 
 const App = () => {
   const noHeader = () => window.location.pathname === '/survey';
