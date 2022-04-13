@@ -83,7 +83,7 @@ const ProductImageCarousel = () => {
                             <picture className="ratio ratio-1x1 w-100 d-block">
                                 <source type="image/webp" srcSet={`${image.webp}/200x`}/>
                                 <source type="image/jpeg" srcSet={`${image.jpg}/200x`}/>
-                                <img src={`${image.jpg}/200x`}  />
+                                <img src={`${image.jpg}/200x`} loading="lazy" />
                             </picture>
                         </button>
                     </div>

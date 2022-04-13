@@ -8,7 +8,7 @@ const SeenIn = () => {
                 <picture>
                     <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae7f46b9-6205-4d66-3f13-0a66efac7b00/400x" />
                     <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a4cb603b-5515-4635-da4c-a6edae090400/400x" />
-                    <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a4cb603b-5515-4635-da4c-a6edae090400/400x" className="img-fluid" alt="Glamour" />
+                    <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a4cb603b-5515-4635-da4c-a6edae090400/400x" className="img-fluid" alt="Glamour" loading="lazy" />
                 </picture>
         },
         {
@@ -17,7 +17,7 @@ const SeenIn = () => {
                 <picture>
                     <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ba8ee58a-e3b6-4ecd-c87a-cd972531ac00/400x" />
                     <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7ac8eb4b-b87e-4936-f86e-570abed4a000/400x" />
-                    <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7ac8eb4b-b87e-4936-f86e-570abed4a000/400x" className="img-fluid" alt="Glamour" />
+                    <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7ac8eb4b-b87e-4936-f86e-570abed4a000/400x" className="img-fluid" alt="Glamour" loading="lazy" />
                 </picture>
         },
         {
@@ -26,7 +26,7 @@ const SeenIn = () => {
                 <picture>
                     <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2e3d1def-752b-4a39-17a3-d9abb1002f00/400x" />
                     <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/be582085-ba2b-4dc2-4d18-44360489ee00/400x" />
-                    <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/be582085-ba2b-4dc2-4d18-44360489ee00/400x" className="img-fluid"  alt="Elle" />
+                    <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/be582085-ba2b-4dc2-4d18-44360489ee00/400x" className="img-fluid"  alt="Elle" loading="lazy" />
                 </picture>
         },
         {
@@ -35,7 +35,7 @@ const SeenIn = () => {
                 <picture>
                     <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/054c9959-e8d3-431a-a420-b8a54f875b00/400x" />
                     <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/3994b20e-9db5-471a-45da-80a327d6a100/400x" />
-                    <img src={`${process.env.PUBLIC_URL}/images/mailonline.jpg`} className="img-fluid"  alt="Mail Online" />
+                    <img src={`${process.env.PUBLIC_URL}/images/mailonline.jpg`} className="img-fluid"  alt="Mail Online"  loading="lazy" />
                 </picture>
         },
         {
@@ -44,7 +44,7 @@ const SeenIn = () => {
                 <picture>
                     <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/54312adc-b757-4199-389c-6aff215fff00/400x" />
                     <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5a598c17-cd78-4212-159d-1e1677162500/400x" />
-                    <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5a598c17-cd78-4212-159d-1e1677162500/400x" className="img-fluid" alt="Refinery 29" />
+                    <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5a598c17-cd78-4212-159d-1e1677162500/400x" className="img-fluid" alt="Refinery 29" loading="lazy" />
                 </picture>
         },
 
