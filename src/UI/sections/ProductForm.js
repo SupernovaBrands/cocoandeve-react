@@ -158,13 +158,13 @@ const ProductForm = (props) => {
                         </li>
                     </ul>
                     <div className='fixed-bottom d-lg-none mx-g mb-2 product-swatch-mobile'>
-                        <a href="javascript:void(0)" className='d-flex btn btn-primary btn-lg px-2' onClick={onAddToCart}>
+                        <button className='d-flex btn btn-primary btn-lg px-2' onClick={onAddToCart}>
                             <span className="text-white w-100 m-0 d-block text-start" >Add to cart</span>
                             <p className="d-block m-0">
                                 <span className="text-white text-linethrough mr-25 text-nowrap fw-normal">$89.80</span>
                                 <span className="text-white mr-25 text-nowrap ms-1">$62.80</span>
                             </p>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>

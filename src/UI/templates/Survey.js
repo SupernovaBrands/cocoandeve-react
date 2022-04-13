@@ -6,11 +6,11 @@ import SingleChoice from '../components/SingleChoice';
 import MultipleChoice from '../components/MultipleChoice';
 import SingleChoiceIcon from '../components/SingleChoiceIcon';
 import SingleChoiceImage from '../components/SingleChoiceImage';
-import CountrySelect from '../components/CountrySelect';
 import ProductForm from '../sections/ProductForm';
 import { useResizeDetector } from 'react-resize-detector';
 
 import { setCookie, getCookie } from "../../modules/Utils";
+import ProductVariants from "../../modules/ProductVariants";
 import { useSearchParams } from "react-router-dom";
 
 const Survey = () => {
@@ -27,26 +27,9 @@ const Survey = () => {
     const initialCurrentQuestion = getCookie('currentQuestion') ? parseInt(getCookie('currentQuestion'), 10) : 1;
     const answerData = getCookie('answeredQuestion') ? JSON.parse(getCookie('answeredQuestion')) : {};
 
-    const variants = [
-        {
-            id: '32068891541539',
-            text: 'Your perfect shade – Medium',
-            class: 'medium',
-            caption: 'will give you subtle glow',
-        },
-        {
-            id: '32068891607075',
-            text: 'Your perfect shade – Dark',
-            class: 'dark',
-            caption: 'Subtle glow, lighter skin tones',
-        },
-        {
-            id: '32068891639843',
-            text: 'Your perfect shade – Ultra Dark',
-            class: 'ultra-dark',
-            caption: 'Subtle glow, lighter skin tones',
-        }
-    ];
+    const selectedSite = site ? site : 'dev.cocoandeve.com';
+
+    const variants = ProductVariants[selectedSite];
 
     // states
     const [currentPosition, setPosition] = useState(initialState);
@@ -143,7 +126,7 @@ const Survey = () => {
                         </div>
                         <div className="col-12 col-lg-5 offset-lg-1 fixed-sm-bottom">
                             <picture>
-                                <img className="w-100" src="../images/tan-types.png" alt="Tan Variants"/>
+                                <img className="w-100" src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b426a652-ee5d-4534-5039-4b10fe9a3200/1140x" alt="Tan Variants"/>
                             </picture>
                         </div>
                     </>) }
@@ -185,12 +168,6 @@ const Survey = () => {
                                                             <SingleChoiceImage className='single-choice-image' answers={item.answers} images={item.images}/>
                                                         </QuestionBox>
                                                     )
-                                                case 'CountrySelect':
-                                                    return (
-                                                        <QuestionBox width={width} height={height} totalQuestions={item.answers.length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="col-lg-10 offset-lg-1" question={item.question} caption={item.caption}>
-                                                            <CountrySelect answers={item.answers} placeholder="(Choose country)"/>
-                                                        </QuestionBox>
-                                                        );
                                                 default:
                                                     return (
                                                         <QuestionBox width={width} height={height} totalQuestions={item.answers.length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="col-lg-10 offset-lg-1" question={item.question} caption={item.caption}>

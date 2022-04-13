@@ -1,28 +1,45 @@
-import Countries from './countries';
-
 const Questions = [
     {
-        question: "What's your age",
+        question: "What kind of tan do you want to have?",
         answers: [
-            '18-24',
-            '25-34',
-            '35-44',
-            '45-54',
-            '55-64',
-            '65 up',
+            'Natural',
+            'Sun-kissed and fresh from Holiday',
+            'Deep, bronzed, and at least 2 levels darker than my original',
         ],
         type: 'SingleChoice',
+        buttonType: 'full',
     },
     {
-        question: "What's your location",
-        answers: Countries,
-        type: 'CountrySelect',
+        question: "What’s your skin tone?",
+        answers: [
+            'Fair',
+            'Light',
+            'Medium',
+            'Dark',
+        ],
+        images: [
+            'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/135ece72-ebc2-44ff-e128-a9662b04b600/1140x',
+            'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/641c99eb-9d7e-49fb-01c3-01857b1d8c00/1140x',
+            'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/eb2003d3-8542-44ba-3a21-1238363ffe00/1140x',
+            'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/01decec5-7ef4-4e14-5a7b-779a0d9bcf00/1140x',
+        ],
+        type: 'SingleChoiceImage',
     },
+    {
+        question: 'Which areas do you want to tan?',
+        answers: [
+            'Face',
+            'Body',
+            'Both',
+        ],
+        type: 'SingleChoice',
+        buttonType: 'full',
+    },    
     {
         question: "Have you used self-tanner before",
         answers: [
             "Yes, I've tried them all!",
-            "I have, but i don't always of it",
+            "I have, I am occasionally tanning with self tanner",
             "No, this would be my first",
         ],
         type: 'SingleChoice',
@@ -63,11 +80,11 @@ const Questions = [
         lastDisableForAll: true,
     },
     {
-        question: "Do you like looking tan?",
+        question: "Do you like looking tanned?",
         answers: [
-            'No',
-            'Sometimes',
-            'Yes! Bring on the glow!',
+            "Occasionally",
+            "I love a post holiday glow",
+            "I am always looking tanned",
         ],
         type: 'SingleChoice',
         buttonType: 'full',
@@ -87,70 +104,17 @@ const Questions = [
         lastFull: true,
     },
     {
-        question: "How much sun does your skin get?",
+        question: "What's your age",
         answers: [
-            "Not much, I'm usually indoors",
-            "A fair amount",
-            "Everyday! Give me that vitamin D"
-        ],
-        icons: [
-            'cloud-rain',
-            '',
-            'sun',
-        ],
-        type: 'SingleChoiceIcon',
-        buttonType: 'full',
-    },
-    {
-        question: "What kind of tan do you want to have?",
-        answers: [
-            'Natural',
-            'Sun-kissed and fresh from Bali',
-            'Deep, bronzed, and a level darker than my original skin tone',
+            '18-24',
+            '25-34',
+            '35-44',
+            '45-54',
+            '55-64',
+            '65 up',
         ],
         type: 'SingleChoice',
-        buttonType: 'full',
     },
-    {
-        question: "What’s your skin tone?",
-        answers: [
-            'Fair',
-            'Light',
-            'Medium',
-            'Dark',
-        ],
-        images: [
-            'images-1',
-            'images-2',
-            'images-3',
-            'images-4',
-        ],
-        type: 'SingleChoiceImage',
-    },
-    {
-        question: "What’s your undertone?",
-        answers: [
-            'Cool',
-            'Neutral',
-            'Warm',
-        ],
-        images: [
-            'images-1',
-            'images-2',
-            'images-3',
-        ],
-        type: 'SingleChoiceImage',
-    },
-    {
-        question: 'Which areas do you want to tan?',
-        answers: [
-            'Face',
-            'Body',
-            'Both',
-        ],
-        type: 'SingleChoice',
-        buttonType: 'full',
-    },    
 ];
 
 export default Questions;

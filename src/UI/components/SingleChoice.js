@@ -9,15 +9,16 @@ const SingleChoice = (props) => {
         buttonType,
     } = props;
 
-    const ctx = useContext(SurveyContext);
-    const defaultSelected = getCookie('answeredQuestion') ? JSON.parse(getCookie('answeredQuestion'))[ctx.currentQuestion] : null;
+    const { answerAction, currentQuestion, setDisable } = useContext(SurveyContext);
+    const defaultSelected = getCookie('answeredQuestion') ? JSON.parse(getCookie('answeredQuestion'))[currentQuestion] : null;
 
     const [selectedItem, setSelectedItem] = useState(defaultSelected);
 
     const selectItem = (answersIndex) => {
         const selected = answers[answersIndex];
         setSelectedItem(selected);
-        ctx.answerAction(selected);
+        answerAction(selected);
+        setDisable(false);
     };
 
     const classesCol = buttonType === 'full' ? 'col-12' : 'col-6';

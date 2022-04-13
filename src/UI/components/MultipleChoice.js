@@ -5,21 +5,29 @@ import { getCookie } from '../../modules/Utils';
 import { ReactComponent as Close } from '../../assets/close.svg';
 
 const MultipleChoice = (props) => {
-    const ctx = useContext(SurveyContext);
+    const { answerAction, currentQuestion, setDisable } = useContext(SurveyContext);
     const {
         answers,
         lastFull,
     } = props;
 
     const defaultSelected = getCookie('answeredQuestion') 
-        && JSON.parse(getCookie('answeredQuestion'))[ctx.currentQuestion] ? JSON.parse(getCookie('answeredQuestion'))[ctx.currentQuestion] : [];
+        && JSON.parse(getCookie('answeredQuestion'))[currentQuestion] ? JSON.parse(getCookie('answeredQuestion'))[currentQuestion] : [];
     const [selectedItems, setSelectedItems] = useState(defaultSelected);
 
+    let disableData = false;
+    if (defaultSelected && selectedItems.length === 1) {
+        const disableAllButtons = answers.find((item) => item.label === defaultSelected[0]);
+        if (disableAllButtons && disableAllButtons.type === 'checkboxAll') disableData = true;
+    }
+
+    const [disableRest, setDisableRest] = useState(disableData);
+    
     const clearOther = () => {
         let currentItems = [...selectedItems];
         currentItems = currentItems.filter((item,index)=> !item.includes('other:'))
         setSelectedItems(currentItems);
-        ctx.answerAction(currentItems);
+        answerAction(currentItems);
     }
 
     const updateItems = (text, disableAll = false) => {
@@ -30,7 +38,13 @@ const MultipleChoice = (props) => {
             if (text.trim() !== 'other:') currentItems.push(text);
         } else {
             // clear when disableAll
-            if (disableAll) currentItems = [];
+            if (disableAll) {
+                currentItems = [];
+                setDisableRest(true);
+            } else {
+                setDisableRest(false)
+            }
+
             const disableType = answers.find((answer) => answer.type === 'checkboxAll');
     
             if (disableType)
@@ -43,10 +57,11 @@ const MultipleChoice = (props) => {
             } else {
                 // push item
                 currentItems.push(text);   
-            }    
+            }
         }
+        setDisable(false);
         setSelectedItems(currentItems);
-        ctx.answerAction(currentItems);    
+        answerAction(currentItems);    
     };
 
     const chooseItems = (index) => {
@@ -71,8 +86,8 @@ const MultipleChoice = (props) => {
                 if (answer.type !== 'input') {
                     return (
                         <div key={index} className={full}>
-                            <div className={`${selectedItems.includes(answer.label) ? 'border-primary bg-primary-light-second' : 'border-light'} d-flex rounded border border-1 text-start justify-content-start align-items-center mb-2`}>
-                                <label className="w-100 p-2" htmlFor={`${index}-flexCheckDefault`} onClick={chooseItems(index)}>
+                            <div className={`${disableRest ? 'disabled' : ''} ${selectedItems.includes(answer.label) ? 'border-primary bg-primary-light-second' : 'border-light'} d-flex rounded border border-1 text-start justify-content-start align-items-center mb-2`}>
+                                <label className={`${answer.type === 'checkboxNumber' ? 'd-flex checkbox-number align-items-center' : 'd-flex checkbox-number align-items-center'} w-100 p-2`} htmlFor={`${index}-flexCheckDefault`} onClick={chooseItems(index)}>
                                     { answer.type === 'checkboxNumber' && selectedItems.includes(answer.label) && (
                                         <span className="multiple-choice-counter 
                                             fade-in-left d-inline-flex 

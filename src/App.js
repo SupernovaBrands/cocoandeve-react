@@ -12,8 +12,8 @@ const TanRange = lazy(() => import('./UI/templates/TanRange'));
 const Survey = lazy(() => import('./UI/templates/Survey'));
 
 const App = () => {
-  const noHeader = () => window.location.pathname === '/survey';
-  const noFooter = () => window.location.pathname === '/survey';
+  const noHeader = () => window.location.pathname === '/survey' || window.location.pathname === '/survey/';
+  const noFooter = () => window.location.pathname === '/survey' || window.location.pathname === '/survey/';
 
   return (
     <Layout noFooter={noFooter()} noHeader={noHeader()}>
@@ -26,7 +26,6 @@ const App = () => {
           <Route path='/sunny-honey-bali-bronzing-self-tan-set' element={<Navigate replace to="/sunny-honey-bali-bronzing-self-tan" />} />
           <Route path='/tan-range' element={<Navigate replace to="/range-tan" />} />
           <Route path='/survey' element={<Survey />} />
-          <Route path='/page-survey' element={<Survey />} />
           <Route path='/test-pdp' element={<ProductDetail />} />
 
         </Routes>

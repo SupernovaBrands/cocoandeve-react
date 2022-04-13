@@ -4,34 +4,35 @@ import { SurveyContext } from './QuestionBox';
 import { getCookie } from '../../modules/Utils';
 
 const SingleChoiceImage = (props) => {
-    const ctx = useContext(SurveyContext);
+    const { answerAction, currentQuestion, setDisable, width } = useContext(SurveyContext);
     const { 
         answers,
-        // images,
+        images,
     } = props;
 
     const changeHandle = ((index) => {
         return (e) => {
             setSelectedItem(answers[index]);
-            ctx.answerAction(answers[index]);
+            answerAction(answers[index]);
+            setDisable(false);
         };
     });
 
     const defaultSelected = getCookie('answeredQuestion') 
-        && JSON.parse(getCookie('answeredQuestion'))[ctx.currentQuestion] ? JSON.parse(getCookie('answeredQuestion'))[ctx.currentQuestion] : answers.at(0);
+        && JSON.parse(getCookie('answeredQuestion'))[currentQuestion] ? JSON.parse(getCookie('answeredQuestion'))[currentQuestion] : null;
 
     const [selectedItem, setSelectedItem] = useState(defaultSelected);
 
     return (
-        <div className='single-choice d-flex flex-wrap justify-content-center'>
+        <div className='single-choice row'>
             {
                 answers.map((item,index) => {
                     // const image = images[index];
                     return (
                         <div key={index} className='col-6 col-lg-3 px-1'>
                             <figure onClick={changeHandle(index)}>
-                                <picture>
-                                    <img src={`//via.placeholder.com/375x375?text=${index + 1}`} alt={item} className={`${item === selectedItem && ctx.width < 992 ? 'border border-5 border-primary' : ''} d-block rounded rounded-circle w-100 p-0 p-lg-1`}/>
+                                <picture className={`${item === selectedItem && width < 992 ? 'border border-5 border-primary' : ''} rounded rounded-circle d-block m-auto single-choice__image`}>
+                                    <img src={`${images[index]}`} alt={item} className='d-block rounded rounded-circle w-100 p-0 p-lg-1'/>
                                 </picture>
                                 <figcaption className="pt-2 pt-lg-0">
                                     <div className={`${item === selectedItem ? 'selected' : ''} single-choice__lines position-relative ms-n1 me-n1 d-none d-lg-block`}>

@@ -20,6 +20,13 @@
         }
     }
 
+    &__image {
+        width: calc-em(120);
+        @include media-breakpoint-up(lg) {
+            width: calc-em(150);
+        }
+    }
+
     &__icon-box {
         height: calc-em(24);
     }

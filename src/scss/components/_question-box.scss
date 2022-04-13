@@ -1,0 +1,6 @@
+.footer-action {
+    @include media-breakpoint-down(lg) {
+        position: fixed;
+        bottom: calc-em(20);
+    }
+}
