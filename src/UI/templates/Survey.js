@@ -36,7 +36,7 @@ const Survey = () => {
     const [currentQuestion, setQuestion] = useState(initialCurrentQuestion);
     const [progressValue, setProgress] = useState(currentQuestion / Questions.length * 100);
     const [currentAnswer, setAnswer] = useState(answerData);
-    const [selectedVariant] = useState([variants.at(0)]); // dummy selected array variants
+    const [selectedVariant, setSelectedVariant] = useState(null); // dummy selected array variants
 
     // handler hook side effect when state changed
     useEffect(() => {
@@ -54,6 +54,7 @@ const Survey = () => {
             setCookie('currentQuestion', currentQuestion);
             setCookie('surveyPosition', `question-${currentQuestion}`);
         }
+
         setProgress(currentQuestion / Questions.length * 100);
     }, [currentPosition, currentQuestion]);
 
@@ -63,14 +64,63 @@ const Survey = () => {
         setCookie('answeredQuestion', JSON.stringify(currentAnswer));
     };
 
+    const gettingResult = () => {
+        // check first answer
+        const firstAnswer = currentAnswer[1];
+        const firstQuestion = Questions[0];
+        const firstAnswered = firstQuestion.answers.indexOf(firstAnswer) + 1;
+
+        // check second answer
+        const secondAnswer = currentAnswer[2];
+        const secondQuestion = Questions[1];
+        const secondAnswered = firstQuestion.answers.indexOf(secondAnswer) + 1;
+
+        // check third answer
+        const thirdAnswer = currentAnswer[3];
+        const thirdQuestion = Questions[2];
+        const thirdAnswered = thirdQuestion.answers.indexOf(thirdAnswer) + 1;
+
+        let sku = 'CE0000032020'; // foam medium
+        if (firstAnswered === 1) {            
+            if (thirdAnswered === 1) {
+                sku = 'CE0000032020'; // foam medium
+            } else if (thirdAnswered === 2) {
+                sku = 'CE0000432020'; // drops medium
+            } else {
+                sku = 'CE0001202020'; // glow essential medium
+            }
+        } else if (firstAnswered === 2) {
+            if (thirdAnswered === 1) {
+                sku = 'CE0000032040'; // foam dark
+            } else if (thirdAnswered === 2) {
+                sku = 'CE0000432030'; // drops dark
+            } else {
+                sku = 'CE0001962020'; // glow essential dark
+            }
+        } else if (firstAnswered === 3) {
+            if (thirdAnswered === 1) {
+                sku = 'CE0000032060'; // foam ultra dark
+            } else if (thirdAnswered === 2) {
+                sku = 'CE0000432030'; // drops dark because drops don't have variant ultra dark
+            } else {
+                sku = 'CE0001962020'; // glow essential dark because don't have variant ultra dark
+            }
+        }
+
+        const findVariant = variants.find((variant) => variant.sku === sku);
+        if (findVariant) {
+            setSelectedVariant([findVariant]);
+            setCookie('surveyPosition', 'finished');
+            setPosition('finished');    
+        }
+    }
+
     const setQuestionState = (questionIndex) => {
         if (questionIndex <= Questions.length) {
             setQuestion(questionIndex);
             postMessageGaParent('Survey', `Submit question: ${questionIndex - 1}`);
         } else if (questionIndex >= Questions.length) {
-            setCookie('surveyPosition', 'finished');
-            setPosition('finished');
-
+            gettingResult();
             // call saving data to analytics and database
             saveData();
         }
@@ -136,7 +186,7 @@ const Survey = () => {
                             <div className="text-center col-12 col-lg-6 px-lg-0 py-4">
                                 <p>Your perfect shade is just a few clicks away</p>
                                 <div className="progress progress bg-primary-light-second">
-                                    <div className="progress-bar" style={{ width: `${progressValue}%` }} role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div className="progress-bar" style={{ width: `${progressValue}%` }} role="progressbar" defaultValue={progressValue} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <span className="mt-2 d-inline-block">{currentQuestion}/{Questions.length}</span>
                             </div>
@@ -183,7 +233,7 @@ const Survey = () => {
                         </>
                     )
                     }
-                    { currentPosition === 'finished' && (
+                    { currentPosition === 'finished' && selectedVariant && (
                             <>
                                 <h1 className="text-center mt-4 mb-2">We found your perfect match!</h1>
                                 <ProductForm variantSelectorStyle="flex" titleHeading="h1" addToCart={addToCart} noReviews={true} variants={selectedVariant} hideProductCaption={true} cartPosition="top"/>
