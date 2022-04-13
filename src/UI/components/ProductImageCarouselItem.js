@@ -6,7 +6,7 @@ const ProductImageCarouselItem = (props) => {
                 <source type="image/webp" srcSet={`${props.webp}/1140x`} media="(min-width: 992px)"/>
                 <source type="image/jpeg" srcSet={`${props.jpg}/828x`}/>
                 <source type="image/jpeg" srcSet={`${props.jpg}/1140x`} media="(min-width: 992px)"/>
-                {props.lazy ? (<img src={`${props.jpg}/828x`} alt="" className="w-100 embed-responsive-item fit--cover" loading="lazy"  />) : (<img src={`${props.jpg}/828x`} alt="" className="w-100 embed-responsive-item fit--cover"  />) }
+                {props.lazy ? (<img src={`${props.jpg}/828x`} alt="" className="w-100 embed-responsive-item fit--cover"  />) : (<img src={`${props.jpg}/828x`} alt="" className="w-100 embed-responsive-item fit--cover" loading="lazy"   />) }
                 
             </picture>
         </div>
