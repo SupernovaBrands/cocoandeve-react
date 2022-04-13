@@ -1,7 +1,7 @@
 import QuantityBox from "../components/QuantityBox";
 
 const Footer = () => {
-	const isRange = window.location.pathname === '/range-tan';
+	const isRange = window.location.pathname === '/range-tan/';
 	return (
 		<footer className='pt-md-6 pb-md-6 pt-2 pt-lg-4 pb-1 bg-secondary text-white'>
 			<div className='container px-g'>
