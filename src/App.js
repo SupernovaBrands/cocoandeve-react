@@ -12,11 +12,15 @@ const ProductDetail = lazy(() => import('./UI/templates/ProductDetail'));
 const TanRange = lazy(() => import('./UI/templates/TanRange'));
 const Survey = lazy(() => import('./UI/templates/Survey'));
 
-const tagManagerArgs = {
+const tagManagerArgs1 = {
   gtmId: 'GTM-PGT8ZHC'
 }
+const tagManagerArgs2 = {
+  gtmId: 'GTM-TGW3HBZ'
+}
 
-TagManager.initialize(tagManagerArgs)
+TagManager.initialize(tagManagerArgs1)
+TagManager.initialize(tagManagerArgs2)
 
 const App = () => {
   const noHeader = () => window.location.pathname === '/survey';
