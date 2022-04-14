@@ -1,8 +1,8 @@
 import IRLCard from '../components/IRLCard';
 import Carousel from '../components/Carousel';
 
-import { ReactComponent as InstagramIcon } from '../../assets/ig-color.svg';
-import { ReactComponent as FacebookIcon } from '../../assets/facebook-color.svg';
+import { ReactComponent as InstagramIcon } from '../../assets/instagram-clr.svg';
+import { ReactComponent as FacebookIcon } from '../../assets/facebook-clr.svg';
 
 const SectionIRL = () => {
 
