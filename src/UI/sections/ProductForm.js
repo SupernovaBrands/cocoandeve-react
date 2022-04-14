@@ -108,8 +108,8 @@ const ProductForm = (props) => {
                         <p className="font-size-lg d-none d-lg-block order-lg-2">The only self-tanner you need ever need. <br/>100% Natural DHA. Cruelty Free. Vegan. </p>
                     )}
                     <p className="my-1 order-lg-2">
-                        <span className="text-linethrough mr-25 text-nowrap h2 ">$89.80</span>
-                        <span className="text-primary mr-25 text-nowrap ms-1 h2 ">$62.80</span>
+                        <span className="text-linethrough mr-25 text-muted h2 ">$89.80</span>
+                        <span className="mr-25 text-nowrap ms-1 h2 ">$62.80</span>
                         <span className="text-primary text-nowrap text-save p-1 h2 fw-normal">(Save 38%)</span>
                     </p>
                     <hr className="mb-2 bg-primary-light-second mt-0 order-lg-2 d-none d-lg-block"/>
