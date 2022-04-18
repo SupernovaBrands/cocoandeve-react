@@ -815,6 +815,108 @@ const ProductVariants = {
       "product_title": "Bronzing Face Drops"
     }
   ],
+  "www.cocoandeve.com": [
+    {
+      "id": 29748960067648,
+      "sku": "CE0000032020",
+      "text": "Your perfect shade - Medium",
+      "class": "medium",
+      "caption": "Will give you subtle glow",
+      "price": "$34.90",
+      "compare_at_price": null,
+      "product_title": "Sunny Honey Bali Bronzing Foam"
+    },
+    {
+      "id": 29748960100416,
+      "sku": "CE0000032040",
+      "text": "Your perfect shade - Dark",
+      "class": "dark",
+      "caption": "Will give you subtle glow",
+      "price": "$34.90",
+      "compare_at_price": null,
+      "product_title": "Sunny Honey Bali Bronzing Foam"
+    },
+    {
+      "id": 29748960133184,
+      "sku": "CE0000036060",
+      "text": "Your perfect shade - Ultra Dark",
+      "class": "ultra-dark",
+      "caption": "Will give you subtle glow",
+      "price": "$34.90",
+      "compare_at_price": null,
+      "product_title": "Sunny Honey Bali Bronzing Foam"
+    },
+    {
+      "id": 29748960165952,
+      "sku": "CE0000072020",
+      "text": "Your perfect shade - Medium",
+      "class": "medium",
+      "caption": "Will give you subtle glow",
+      "price": "$46.90",
+      "compare_at_price": "$73.90",
+      "product_title": "Sunny Honey Bali Bronzing Foam"
+    },
+    {
+      "id": 29748960198720,
+      "sku": "CE0000072040",
+      "text": "Your perfect shade - Dark",
+      "class": "dark",
+      "caption": "Will give you subtle glow",
+      "price": "$46.90",
+      "compare_at_price": "$73.90",
+      "product_title": "Sunny Honey Bali Bronzing Foam"
+    },
+    {
+      "id": 31955034046528,
+      "sku": "CE0000072060",
+      "text": "Your perfect shade - Ultra Dark",
+      "class": "ultra-dark",
+      "caption": "Will give you subtle glow",
+      "price": "$46.90",
+      "compare_at_price": "$73.90",
+      "product_title": "Sunny Honey Bali Bronzing Foam"
+    },
+    {
+      "id": 32888972148800,
+      "sku": "CE0000432040",
+      "text": "Your perfect shade - Medium",
+      "class": "medium",
+      "caption": "Will give you subtle glow",
+      "price": "$27.90",
+      "compare_at_price": null,
+      "product_title": "Bronzing Face Drops"
+    },
+    {
+      "id": 39326379016256,
+      "sku": "CE0000432030",
+      "text": "Your perfect shade - Dark",
+      "class": "dark",
+      "caption": "Will give you subtle glow",
+      "price": "$27.90",
+      "compare_at_price": null,
+      "product_title": "Bronzing Face Drops"
+    },
+    {
+      "id": 32888972181568,
+      "sku": "CE0001202020",
+      "text": "Your perfect shade - Medium",
+      "class": "medium",
+      "caption": "Will give you subtle glow",
+      "price": "$53.90",
+      "compare_at_price": "$62.80",
+      "product_title": "Bronzing Face Drops"
+    },
+    {
+      "id": 32888972214336,
+      "sku": "CE0001962020",
+      "text": "Your perfect shade - Dark",
+      "class": "dark",
+      "caption": "Will give you subtle glow",
+      "price": "$53.90",
+      "compare_at_price": "$62.80",
+      "product_title": "Bronzing Face Drops"
+    }
+  ],
   "my.cocoandeve.com": [
     {
       "id": 39777105117257,
