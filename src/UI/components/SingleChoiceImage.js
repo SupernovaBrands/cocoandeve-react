@@ -1,10 +1,15 @@
 import { useContext, useState } from 'react';
 import PropTypes from 'prop-types';
 import { SurveyContext } from './QuestionBox';
-import { getCookie } from '../../modules/Utils';
 
 const SingleChoiceImage = (props) => {
-    const { answerAction, currentQuestion, setDisable, width } = useContext(SurveyContext);
+    const { 
+        answerAction, 
+        currentQuestion, 
+        setDisable, 
+        width,
+        currentAnswer,
+    } = useContext(SurveyContext);
     const { 
         answers,
         images,
@@ -18,8 +23,7 @@ const SingleChoiceImage = (props) => {
         };
     });
 
-    const defaultSelected = getCookie('answeredQuestion') 
-        && JSON.parse(getCookie('answeredQuestion'))[currentQuestion] ? JSON.parse(getCookie('answeredQuestion'))[currentQuestion] : null;
+    const defaultSelected = currentAnswer && currentAnswer[currentQuestion] ? currentAnswer[currentQuestion] : null;
 
     const [selectedItem, setSelectedItem] = useState(defaultSelected);
 

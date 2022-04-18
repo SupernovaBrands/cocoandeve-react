@@ -41,6 +41,7 @@ const ProductForm = (props) => {
 
 
     const productVariants = variants ? variants : SHADES;
+
     const [selectedVariantId, setSelectedVariantId] = useState(productVariants[0].id); // set to the first variant as default
     const [quantity, setQuantity] = useState(1);
     const [selectedVariantShadeText, setSelectedVariantShadeText] = useState(productVariants[0].text);

@@ -1,6 +1,12 @@
-.footer-action {
+.question-box {
     @include media-breakpoint-down(lg) {
-        position: fixed;
-        bottom: calc-em(20);
+        padding-bottom: calc-em(200);
+    }
+    
+    .footer-action {
+        @include media-breakpoint-down(lg) {
+            position: fixed;
+            z-index: $zindex-sticky;
+        }
     }
 }

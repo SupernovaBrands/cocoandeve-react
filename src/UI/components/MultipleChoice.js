@@ -1,18 +1,24 @@
 import React, { useContext, useState } from 'react';
 import PropTypes from 'prop-types';
 import { SurveyContext } from './QuestionBox';
-import { getCookie } from '../../modules/Utils';
 import { ReactComponent as Close } from '../../assets/close.svg';
+import { ReactComponent as Check } from '../../assets/check.svg';
 
 const MultipleChoice = (props) => {
-    const { answerAction, currentQuestion, setDisable } = useContext(SurveyContext);
+    const { 
+        answerAction, 
+        currentQuestion, 
+        setDisable,
+        currentAnswer,
+    } = useContext(SurveyContext);
     const {
         answers,
         lastFull,
     } = props;
 
-    const defaultSelected = getCookie('answeredQuestion') 
-        && JSON.parse(getCookie('answeredQuestion'))[currentQuestion] ? JSON.parse(getCookie('answeredQuestion'))[currentQuestion] : [];
+    console.log(currentAnswer, 'testing', currentQuestion);
+
+    const defaultSelected = currentAnswer && currentAnswer[currentQuestion] ? currentAnswer[currentQuestion] : [];
     const [selectedItems, setSelectedItems] = useState(defaultSelected);
 
     let disableData = false;
@@ -94,7 +100,10 @@ const MultipleChoice = (props) => {
                                             justify-content-center 
                                             bg-white rounded-circle align-items-center me-1 text-primary">{selectedItems.indexOf(answer.label) + 1}</span>
                                     )}
-                                    <input className={`${answer.type !== 'checkbox' ? 'd-none' : ''} me-1 mt-0 form-check-input`} type="checkbox" defaultChecked={selectedItems.includes(answer.label)} value={answer} id={`${index}-flexCheckDefault`}/>
+                                    <input className='d-none' type="checkbox" defaultChecked={selectedItems.includes(answer.label)} value={answer} id={`${index}-flexCheckDefault`}/>
+                                    <div className={`${answer.type !== 'checkbox' ? 'd-none' : ''} ${selectedItems.includes(answer.label) ? 'border-0 bg-primary': ''} custom-check me-1 mt-0 form-check-input text-center d-flex align-items-center justify-content-center`}>
+                                        <Check className={`${!selectedItems.includes(answer.label) ? 'd-none': ''} svg text-white`}/>
+                                    </div>
                                     { answer.label }
                                 </label>
                             </div>

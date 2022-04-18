@@ -1,0 +1,5 @@
+.survey-content {
+    @include media-breakpoint-down(lg) {
+        padding-top: calc-em(100);
+    }
+}

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { getCookie } from '../../modules/Utils';
 
 export const SurveyContext = React.createContext();
 const QuestionBox = (props) => {
@@ -12,6 +11,7 @@ const QuestionBox = (props) => {
         currentQuestion,
         setCurrentQuestion,
         answerAction,
+        currentAnswer,
         width,
         height,
     } = props;
@@ -30,20 +30,20 @@ const QuestionBox = (props) => {
         answerAction(currentQuestion, data);
     }
 
-    const defaultSelected = getCookie('answeredQuestion') ? JSON.parse(getCookie('answeredQuestion'))[currentQuestion] : null;
+    const defaultSelected = currentAnswer && currentAnswer[currentQuestion] ? currentAnswer[currentQuestion] : null;
     const [isDisabled, setDisable] = useState(defaultSelected ? false : true);
 
     return (
-        <div className={`${colSize} col-12 d-flex flex-wrap justify-content-center`}>
+        <div className={`${colSize} col-12 d-flex flex-wrap justify-content-center question-box`}>
             <h1 className={caption ? 'w-100' : 'w-100 mb-4'}>{question}</h1>
             { caption && (<p className="w-100 mb-4">{caption}</p>)}
-            <SurveyContext.Provider value={{answerAction: answer, currentQuestion: currentQuestion, width, height, setDisable: setDisable }}>
+            <SurveyContext.Provider value={{answerAction: answer, currentQuestion: currentQuestion, width, height, setDisable: setDisable, currentAnswer }}>
                 { children }
             </SurveyContext.Provider>
-            <div className="footer-action w-100">
-                <button className="mt-4 btn btn-lg btn-primary text-white" onClick={nextAction} disabled={isDisabled}>Next</button>
+            <div className="footer-action w-100 fixed-sm-bottom bg-white pb-2">
+                <button className="mt-2 mt-lg-4 btn btn-lg btn-primary text-white" onClick={nextAction} disabled={isDisabled}>Next</button>
                 {
-                    currentQuestion > 1 && (<a href="/" className="d-block text-underline text-black w-100 mt-2" onClick={prevAction}>&#60; Previous question</a>)
+                    currentQuestion > 1 && (<a href="/" className="d-block text-underline text-black w-100 mt-2 mb-lg-4" onClick={prevAction}>&#60; Previous question</a>)
                 }
             </div>
         </div>
@@ -59,6 +59,7 @@ QuestionBox.propTypes = {
     answerAction: PropTypes.func.isRequired,
     width: PropTypes.number,
     height: PropTypes.number,
+    currentAnswer: PropTypes.object,
 };
 
 export default QuestionBox;

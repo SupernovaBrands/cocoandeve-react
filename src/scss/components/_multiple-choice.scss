@@ -6,6 +6,12 @@
     transition-timing-function: ease-in;
 }
 
+.custom-check {
+    .svg {
+        width: 70%;
+    }
+}
+
 .disabled {
     opacity: 0.5;
 }
@@ -13,3 +19,4 @@
 .checkbox-number {
     max-height: calc-em(60);
 }
+

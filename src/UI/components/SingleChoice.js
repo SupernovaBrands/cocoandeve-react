@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { useContext, useState } from 'react';
-import { getCookie } from '../../modules/Utils';
 import { SurveyContext } from './QuestionBox';
 
 const SingleChoice = (props) => {
@@ -9,8 +8,14 @@ const SingleChoice = (props) => {
         buttonType,
     } = props;
 
-    const { answerAction, currentQuestion, setDisable } = useContext(SurveyContext);
-    const defaultSelected = getCookie('answeredQuestion') ? JSON.parse(getCookie('answeredQuestion'))[currentQuestion] : null;
+    const { 
+        answerAction, 
+        currentQuestion, 
+        setDisable,
+        currentAnswer,
+    } = useContext(SurveyContext);
+
+    const defaultSelected = currentAnswer && currentAnswer[currentQuestion] ? currentAnswer[currentQuestion] : null;
 
     const [selectedItem, setSelectedItem] = useState(defaultSelected);
 
