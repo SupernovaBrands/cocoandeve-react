@@ -12,8 +12,8 @@ const TanRange = lazy(() => import('./UI/templates/TanRange'));
 const Survey = lazy(() => import('./UI/templates/Survey'));
 
 const App = () => {
-  const noHeader = () => window.location.pathname === '/survey' || window.location.pathname === '/survey/';
-  const noFooter = () => window.location.pathname === '/survey' || window.location.pathname === '/survey/';
+  const noHeader = () => window.location.pathname === '/customers-survey' || window.location.pathname === '/customers-survey/';
+  const noFooter = () => window.location.pathname === '/customers-survey' || window.location.pathname === '/customers-survey/';
 
   return (
     <Layout noFooter={noFooter()} noHeader={noHeader()}>
