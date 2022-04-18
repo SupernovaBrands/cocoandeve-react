@@ -620,7 +620,6 @@ module.exports = function (webpackEnv) {
           {
             inject: false,
             template: 'public/survey.html',
-            filename: 'survey/index.html'
           },
           isEnvProduction
             ? {
