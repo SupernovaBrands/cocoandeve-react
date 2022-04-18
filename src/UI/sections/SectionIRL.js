@@ -8,7 +8,7 @@ const SectionIRL = () => {
 
     const CONTENT = [
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded active',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 active',
             content:
                 <IRLCard
                     name="@hughesyfit"
@@ -21,7 +21,7 @@ const SectionIRL = () => {
                 </IRLCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
                 <IRLCard
                     name="@hannahtucker"
@@ -33,7 +33,7 @@ const SectionIRL = () => {
                 </IRLCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
                 <IRLCard
                     name="@orianavtorres"
@@ -45,7 +45,7 @@ const SectionIRL = () => {
                 </IRLCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
                 <IRLCard
                     name="@jaydestella"
@@ -65,7 +65,7 @@ const SectionIRL = () => {
                 <div className='d-flex align-items-center'><InstagramIcon className='font-size-sm' /><span className='ms-1 font-size-sm'>879k on Instagram</span></div>
                 <div className='d-flex align-items-center ms-1'><FacebookIcon className='font-size-sm' /><span className='ms-1 font-size-sm'>287k on Facebook</span></div>
             </div>
-            <div className='container'>
+            <div className='container px-g pe-0 pe-lg-g'>
                 <Carousel
                     id="sectionIRL"
                     className="carousel slide carousel--loop carousel--mobile-half-next"

@@ -8,7 +8,7 @@ const CustomerReview = () => {
             content:
                 <ReviewCard
                     name="Kjersti V. Verified Buyer"
-                    caption="Shade of Tan:Dark"
+                    caption="Shade of Tan: Dark"
                 >
                     <p>The BEST sunless tan!!</p>
                     <p>Doesn’t smell bad like some others, and goes on super smooth. Color is gorgeous, looks natural and doesn’t have any orange tint AND makes your skin look soooo healthy. Doesn’t leave streaks or blotches and fades perfectly without leaving patches. I love it!!!</p>
@@ -35,7 +35,7 @@ const CustomerReview = () => {
             content:
                 <ReviewCard
                     name="Michelle T. Verified Buyer"
-                    caption="Shade of Tan:Medium"
+                    caption="Shade of Tan: Medium"
                 >
                     <p>I’m a huge self tanner</p>
                     <p>I’m a huge self tanner user and this is by far the best one I’ve used. Theres no streaks, leaves you a bronze color and not orange. Smells amazing, easy application obsessed! Can’t wait to try the other products.</p>
@@ -55,7 +55,7 @@ const CustomerReview = () => {
             content:
                 <ReviewCard
                 name="Torey M. Verified Buyer"
-                caption="Shade of Tan:Dark"
+                caption="Shade of Tan: Dark"
                 >
                     <p>Best self tanner I've tried!</p>
                     <p>Beautiful natural tan color. Easy to apply although if you have excessively dry skin it will suck up the color in those spots. Applying to feet is a little tricky but nothing you can't get the hang of after a few applications. Smells great too! I love the hair towel and the cute little eye mask!</p>
@@ -75,7 +75,7 @@ const CustomerReview = () => {
             content:
                 <ReviewCard
                 name="Steffanie G. Verified Buyer"
-                caption="Shade of Tan:Dark"
+                caption="Shade of Tan: Dark"
                 >
                     <p>Wow!</p>
                     <p>I have sensitive dry skin and this product changed the way I see my skin now! No dry spots, no Casper white skin! I’m a whole new woman!! I was weary to try it because I haven’t had success with other tanning products- but I’m SO happy I did!</p>
@@ -150,7 +150,7 @@ const CustomerReview = () => {
             content:
                 <ReviewCard
                 name="Stef H. Verified Buyer"
-                caption="Shade of Tan:Medium"
+                caption="Shade of Tan: Medium"
                 >
                     <p>This product is amazing!</p>
                     <p>Love the golden glow it gives my skin. Used the medium shade, and I’m at least two shades darker. Such a great way to get the perfect tan without causing skin damage or possible skin cancer. The photo shows the difference between my natural paleness and this amazing product.</p>
@@ -170,7 +170,7 @@ const CustomerReview = () => {
 	return (
 		<section className='customer-reviews pb-2 pt-2 pt-lg-4'>
             <h2 className="h1 mb-4 text-center">Customer Reviews</h2>
-            <div className='container'>
+            <div className='container px-g pe-0 pe-lg-g'>
                 <Carousel
                     id="customerReviews"
                     className="carousel slide carousel--loop carousel--mobile-half-next"

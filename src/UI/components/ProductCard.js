@@ -31,7 +31,7 @@ const ProductCard = (props) => {
 					{props.isCrossedPrice && (
 						<span className="text-linethrough h4">{props.crossedPrice}</span>
 					)}
-      				<span className="h4 m-1 text-primary font-weight-normal">{props.price}</span>
+      				<span className="h4 m-1 text-primary fw-bold">{props.price}</span>
   				</p>
 				<a href={props.url} className="btn btn-lg btn-primary text-white btn-block px-0">
 					Learn More
