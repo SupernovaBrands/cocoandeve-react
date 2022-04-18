@@ -81,7 +81,7 @@ const ProductImageCarousel = () => {
                     {PRODUCT_IMAGES.map((image, index) => (
                     <div key={image.jpg} data-bs-target="#product-image-carousel" data-bs-slide-to={index} className={`product-image-carousel__indicator__item carousel-item col-12 px-lg-0 pb-lg-3 mw-100 ${ index === 0 ? 'active':''}`}>
                         <button className={`btn-unstyled border d-block w-100 ${index === 0 ? 'border-white': 'border-white'}`}>
-                            <picture className="ratio ratio-1x1 w-100 d-block">
+                            <picture className="ratio ratio-1x1 w-100 d-block bg-shimmer">
                                 <source type="image/webp" srcSet={`${image.webp}/200x`}/>
                                 <source type="image/jpeg" srcSet={`${image.jpg}/200x`}/>
                                 <img src={`${image.jpg}/200x`} loading="lazy" />
