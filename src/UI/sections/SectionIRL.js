@@ -50,8 +50,8 @@ const SectionIRL = () => {
                 <IRLCard
                     name="@jaydestella"
                     caption="Bali Bronzing Foam (Dark)"
-                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7bddecbc-3156-44d6-c030-baa5272a5700/200x"
-                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/68dd4111-3eae-4de7-b84c-35f1d93b7e00/200x"
+                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ed15f4ee-c1a7-4486-de95-81bf1b38c400/200x"
+                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/18084a86-e332-4463-03d3-292b438d6900/200x"
                 >
                     <p>Just tried @cocoandeve bronzing foam!!! And I’m obsessed! 🤍</p>
                 </IRLCard>
