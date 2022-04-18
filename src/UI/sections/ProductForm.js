@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProductImageCarousel from "../components/ProductImageCarousel";
 import QuantityBox from '../components/QuantityBox';
 import ReviewStar from '../components/ReviewStar';
@@ -41,8 +41,19 @@ const ProductForm = (props) => {
     ]
 
 
-    const productVariants = variants ? variants : SHADES;
+    const [productVariants, setProductVariants] = useState(variants ? variants : SHADES);
 
+    useEffect(() => {
+        if (variants) {
+            setProductVariants(variants);
+            setSelectedVariantId(variants[0].id);
+            setSelectedVariantShadeText(variants[0].text);
+            setSelectedVariantShadeCaption(variants[0].caption);
+            setSelectedVariant(variants[0]);
+        }
+    }, [variants]);
+
+    const [selectedVariant, setSelectedVariant] = useState(productVariants[0]);
     const [selectedVariantId, setSelectedVariantId] = useState(productVariants[0].id); // set to the first variant as default
     const [quantity, setQuantity] = useState(1);
     const [selectedVariantShadeText, setSelectedVariantShadeText] = useState(productVariants[0].text);
@@ -92,13 +103,22 @@ const ProductForm = (props) => {
         }
     }, 500);
 
+    const getSavingSelectedVariant = () => {
+        if (!selectedVariant.compare_at_price) return 0;
+        const compareAtPrice = parseFloat(selectedVariant.compare_at_price.replace('$','').replace('£','').replace('€'));
+        const price = parseFloat(selectedVariant.compare_at_price.replace('$','').replace('£','').replace('€'));
+        const discountedPrice =  compareAtPrice - price;
+        const saving = discountedPrice / compareAtPrice * 100;
+        return saving;
+    }
+    
     return (
         <div className="container px-g mb-0 mt-lg-4">
             <div className="row align-items-start">
                 <ProductImageCarousel />
                 <div className={`col-12 col-lg-5 order-lg-3 mt-2 mt-lg-0 d-flex flex-column ${variantSelectorStyle === 'flex' ? 'text-start': 'text-center text-lg-start'}`}>
                     <p className="font-size-lg mb-1 order-lg-1">Sunny Honey</p>
-                    <h1 className={`${titleHeading ? titleHeading : ''} mb-1 mb-lg-2 order-lg-1`}>Bali Bronzing Bundle</h1>
+                    <h1 className={`${titleHeading ? titleHeading : ''} mb-1 mb-lg-2 order-lg-1`}>{ selectedVariant && selectedVariant.product_title ? selectedVariant.product_title : 'Bali Bronzing Bundle' }</h1>
                     { !noReviews && (
                         <div className="d-flex mb-0 mb-lg-1 justify-content-center justify-content-lg-start order-lg-0">
                             <ReviewStar score={4.8} />
@@ -108,11 +128,20 @@ const ProductForm = (props) => {
                     { !hideProductCaption && (
                         <p className="font-size-lg d-none d-lg-block order-lg-2">The only self-tanner you need ever need. <br/>100% Natural DHA. Cruelty Free. Vegan. </p>
                     )}
-                    <p className="my-1 order-lg-2">
-                        <span className="text-linethrough mr-25 text-muted h2 ">$89.80</span>
-                        <span className="mr-25 text-nowrap ms-1 h2 ">$62.80</span>
-                        <span className="text-primary text-nowrap text-save p-1 h2 fw-normal">(Save 38%)</span>
-                    </p>
+                    { !selectedVariant.price && (
+                        <p className="my-1 order-lg-2">
+                            <span className="text-linethrough mr-25 text-muted h2 ">$89.80</span>
+                            <span className="mr-25 text-nowrap ms-1 h2 ">$62.80</span>
+                            <span className="text-primary text-nowrap text-save p-1 h2 fw-normal">(Save {getSavingSelectedVariant()}%)</span>
+                        </p>
+                    )}
+                    {   selectedVariant.price && (
+                        <p className="my-1 order-lg-2">
+                            { selectedVariant.compare_at_price && (<span className="text-linethrough mr-25 text-muted h2 ">{selectedVariant.compare_at_price}</span>)}
+                            <span className="mr-25 text-nowrap ms-1 h2 ">{selectedVariant.price}</span>
+                            { selectedVariant.compare_at_price && (<span className="text-primary text-nowrap text-save p-1 h2 fw-normal">(Save 38%)</span>)}
+                        </p>
+                    )}
                     <hr className="mb-2 bg-primary-light-second mt-0 order-lg-2 d-none d-lg-block"/>
                     <div className={`${variantSelectorStyle === 'flex' ? 'd-flex mb-2 justify-content-start' : 'd-grid gap-2 justify-content-center justify-content-lg-start d-md-flex'} mb-lg-2 align-items-center order-lg-2`}>
                         <div className="product-swatch d-flex align-items-center justify-content-center">
