@@ -25,7 +25,7 @@ const App = () => {
           <Route path='/sunny-honey-bali-bronzing-self-tan' element={<ProductDetail />} />
           <Route path='/sunny-honey-bali-bronzing-self-tan-set' element={<Navigate replace to="/sunny-honey-bali-bronzing-self-tan" />} />
           <Route path='/tan-range' element={<Navigate replace to="/range-tan" />} />
-          <Route path='/survey' element={<Survey />} />
+          <Route path='/customers-survey' element={<Survey />} />
           <Route path='/test-pdp' element={<ProductDetail />} />
 
         </Routes>
