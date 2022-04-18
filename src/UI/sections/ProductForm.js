@@ -3,10 +3,11 @@ import ProductImageCarousel from "../components/ProductImageCarousel";
 import QuantityBox from '../components/QuantityBox';
 import ReviewStar from '../components/ReviewStar';
 
-import { ReactComponent as FormulaList1 } from '../../assets/formula-list-1.svg';
-import { ReactComponent as FormulaList2 } from '../../assets/formula-list-2.svg';
-import { ReactComponent as FormulaList3 } from '../../assets/formula-list-3.svg';
-import { ReactComponent as FormulaList4 } from '../../assets/formula-list-4.svg';
+import { ReactComponent as FormulaList1 } from '../../assets/skin-protection.svg';
+import { ReactComponent as FormulaList2 } from '../../assets/guava.svg';
+import { ReactComponent as FormulaList3 } from '../../assets/diet.svg';
+import { ReactComponent as FormulaList4 } from '../../assets/clean.svg';
+import { ReactComponent as FormulaList5 } from '../../assets/mitt.svg';
 
 import PropTypes from 'prop-types';
 
@@ -108,8 +109,8 @@ const ProductForm = (props) => {
                         <p className="font-size-lg d-none d-lg-block order-lg-2">The only self-tanner you need ever need. <br/>100% Natural DHA. Cruelty Free. Vegan. </p>
                     )}
                     <p className="my-1 order-lg-2">
-                        <span className="text-linethrough mr-25 text-nowrap h2 ">$89.80</span>
-                        <span className="text-primary mr-25 text-nowrap ms-1 h2 ">$62.80</span>
+                        <span className="text-linethrough mr-25 text-muted h2 ">$89.80</span>
+                        <span className="mr-25 text-nowrap ms-1 h2 ">$62.80</span>
                         <span className="text-primary text-nowrap text-save p-1 h2 fw-normal">(Save 38%)</span>
                     </p>
                     <hr className="mb-2 bg-primary-light-second mt-0 order-lg-2 d-none d-lg-block"/>
@@ -153,9 +154,13 @@ const ProductForm = (props) => {
                             <FormulaList3 className='me-g d-flex flex-shrink-0 justify-content-center' />
                             Lightweight, non-sticky formula.
                         </li>
-                        <li className='col-12 d-flex align-items-center'>
+                        <li className='col-12 d-flex align-items-center mb-2'>
                             <FormulaList4 className='me-g d-flex flex-shrink-0 justify-content-center' />
                             Developed with a green-grey base for a natural looking, golden glow with no orangey tones.
+                        </li>
+                        <li className='col-12 d-flex align-items-center'>
+                            <FormulaList5 className='me-g d-flex flex-shrink-0 justify-content-center' />
+                            Soft tanning mitt and kabuki brush for a perfect fuss-free application.
                         </li>
                     </ul>
                     <div className='fixed-bottom d-lg-none mx-g mb-2 product-swatch-mobile'>

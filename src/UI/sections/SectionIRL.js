@@ -1,14 +1,14 @@
 import IRLCard from '../components/IRLCard';
 import Carousel from '../components/Carousel';
 
-import { ReactComponent as InstagramIcon } from '../../assets/ig-color.svg';
-import { ReactComponent as FacebookIcon } from '../../assets/facebook-color.svg';
+import { ReactComponent as InstagramIcon } from '../../assets/instagram-clr.svg';
+import { ReactComponent as FacebookIcon } from '../../assets/facebook-clr.svg';
 
 const SectionIRL = () => {
 
     const CONTENT = [
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded active',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 active',
             content:
                 <IRLCard
                     name="@hughesyfit"
@@ -21,7 +21,7 @@ const SectionIRL = () => {
                 </IRLCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
                 <IRLCard
                     name="@hannahtucker"
@@ -33,7 +33,7 @@ const SectionIRL = () => {
                 </IRLCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
                 <IRLCard
                     name="@orianavtorres"
@@ -45,13 +45,13 @@ const SectionIRL = () => {
                 </IRLCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
                 <IRLCard
                     name="@jaydestella"
                     caption="Bali Bronzing Foam (Dark)"
-                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7bddecbc-3156-44d6-c030-baa5272a5700/200x"
-                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/68dd4111-3eae-4de7-b84c-35f1d93b7e00/200x"
+                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ed15f4ee-c1a7-4486-de95-81bf1b38c400/200x"
+                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/18084a86-e332-4463-03d3-292b438d6900/200x"
                 >
                     <p>Just tried @cocoandeve bronzing foam!!! And I’m obsessed! 🤍</p>
                 </IRLCard>
@@ -65,7 +65,7 @@ const SectionIRL = () => {
                 <div className='d-flex align-items-center'><InstagramIcon className='font-size-sm' /><span className='ms-1 font-size-sm'>879k on Instagram</span></div>
                 <div className='d-flex align-items-center ms-1'><FacebookIcon className='font-size-sm' /><span className='ms-1 font-size-sm'>287k on Facebook</span></div>
             </div>
-            <div className='container'>
+            <div className='container px-g pe-0 pe-lg-g'>
                 <Carousel
                     id="sectionIRL"
                     className="carousel slide carousel--loop carousel--mobile-half-next"

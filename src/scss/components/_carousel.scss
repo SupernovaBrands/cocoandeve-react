@@ -173,7 +173,6 @@
 		.carousel-item {
 			@include media-breakpoint-down(md) {
 				width: 75%;
-				margin-right: $grid-gutter-width;
 			}
 		}
 	}
