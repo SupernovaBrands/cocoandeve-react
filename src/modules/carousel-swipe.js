@@ -1,50 +1,47 @@
 import { Carousel } from "../vendor/bootstrap.bundle";
 const carouselSwipe = (carouselId) => {
-    setTimeout(() => {
-        const carouselSwipe = document.getElementById(carouselId);
-        const carousel = Carousel.getInstance(carouselSwipe);
-        let xDown = null;
-		let yDown = null;
+    const carouselSwipe = document.getElementById(carouselId);
 
-        function getTouches(evt) {
-			return evt.touches || evt.originalEvent.touches;
-		}
+    let xDown = null;
+    let yDown = null;
 
-        function handleTouchStart(evt) {
-			const firstTouch = getTouches(evt)[0];
-			xDown = firstTouch.clientX;
-			yDown = firstTouch.clientY;
-            console.log('xDOwn', xDown)
-            console.log('yDOwn', yDown)
-		}
+    function getTouches(evt) {
+        return evt.touches || evt.originalEvent.touches;
+    }
 
-        function handleTouchMove(evt) {
-			if (!xDown || !yDown) {
-				return;
-			}
+    function handleTouchStart(evt) {
+        const firstTouch = getTouches(evt)[0];
+        xDown = firstTouch.clientX;
+        yDown = firstTouch.clientY;
+    }
 
-            const xUp = evt.touches[0].clientX;
-			const yUp = evt.touches[0].clientY;
-
-			const xDiff = xDown - xUp;
-			const yDiff = yDown - yUp;
-
-            if (Math.abs(xDiff) > Math.abs(yDiff)) {
-
-                if (xDiff > 0) {
-                    carousel.next();
-                } else {
-                    carousel.prev();
-                }
-            } else {
-                xDown = null;
-				yDown = null;
-            }
+    function handleTouchMove(evt) {
+        if (!xDown || !yDown) {
+            return;
         }
 
-        carouselSwipe.addEventListener('touchstart', handleTouchStart, false);
-		carouselSwipe.addEventListener('touchmove', handleTouchMove, false);
-    }, 500);
+        const carousel = Carousel.getInstance(carouselSwipe);
+
+        const xUp = evt.touches[0].clientX;
+        const yUp = evt.touches[0].clientY;
+
+        const xDiff = xDown - xUp;
+        const yDiff = yDown - yUp;
+        if (Math.abs(xDiff) > Math.abs(yDiff)) {
+
+            if (xDiff > 0) {
+                carousel.next();
+            } else {
+                carousel.prev();
+            }
+        } else {
+            xDown = null;
+            yDown = null;
+        }
+    }
+
+    carouselSwipe.addEventListener('touchstart', handleTouchStart, false);
+    carouselSwipe.addEventListener('touchmove', handleTouchMove, false);
 };
 
 export default carouselSwipe;
