@@ -3,7 +3,6 @@ import { useEffect } from "react";
 const ProductImageCarouselItem = (props) => {
     const removeShimmer = (img) => {
         // eslint-disable-next-line no-param-reassign
-        console.log('remove shimmer')
         img.onload = null;
         const parent = img.closest('.bg-shimmer');
         parent.classList.add('bg-shimmer--loaded');
@@ -14,7 +13,6 @@ const ProductImageCarouselItem = (props) => {
 
     useEffect(() => {
         document.querySelectorAll('.bg-shimmer img').forEach((img) => {
-            console.log('bg shimmer load', img)
             if (img.complete) {
                 removeShimmer(img);
             } else {
