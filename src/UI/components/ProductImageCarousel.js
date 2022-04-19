@@ -1,6 +1,7 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import ProductImageCarouselItem from './ProductImageCarouselItem';
 import carouselLoop from "../../modules/carousel-loop";
+import carouselSwipe from "../../modules/carousel-swipe";
 
 import { ReactComponent as ChevronPrev } from '../../assets/chevron-prev.svg';
 import { ReactComponent as ChevronNext } from '../../assets/chevron-next.svg';
@@ -9,6 +10,9 @@ import { ReactComponent as ChevronDown } from '../../assets/chevron-down.svg';
 
 const ProductImageCarousel = () => {
     carouselLoop('product-image-carousel__indicator');
+    useEffect(() => {
+        carouselSwipe('product-image-carousel');
+    }, []);
     const PRODUCT_IMAGES = [
         {
             jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/076fb4a7-a3d0-4b7f-4f8c-3f26d0460400',
@@ -47,7 +51,7 @@ const ProductImageCarousel = () => {
     return (
         <Fragment>
             <div key="product-image-carousel__container" className="product-image-carousel__container col-12 col-lg-6 order-lg-2">
-                <figure id="product-image-carousel" className="product-image-carousel carousel slide mb-1 mb-lg-0 g-0__in-container" data-bs-ride="carousel" data-bs-interval="false">
+                <figure id="product-image-carousel" className="product-image-carousel carousel slide mb-1 mb-lg-0 g-0__in-container" data-bs-ride="carousel" data-bs-interval="false" data-bs-touch="false">
                     <div key="div-carousel-1" className="carousel-inner">
                         {PRODUCT_IMAGES.map((image, index) => (
                             <ProductImageCarouselItem
