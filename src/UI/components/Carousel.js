@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import carouselLoop from "../../modules/carousel-loop";
+import carouselSwipe from "../../modules/carousel-swipe";
 import ConditionWrapper from "../../modules/ConditionWrapper";
 import { useWindowSize } from "../../modules/Utils";
 
@@ -10,6 +11,7 @@ const Carousel = (props) => {
         selectedIndex = 3;
     }
     carouselLoop(props.id);
+    carouselSwipe(props.id);
     return (
         <div id={props.id} className={props.className} data-bs-slide-number={props.slideNumber} data-bs-ride="carousel" data-bs-interval="false">
             {props.centered ? (

@@ -7,7 +7,6 @@ import App from './App';
 import Popper from '@popperjs/core';
 import './vendor/bootstrap.bundle';
 
-
 ReactDOM.render(
   <BrowserRouter>
     <App />

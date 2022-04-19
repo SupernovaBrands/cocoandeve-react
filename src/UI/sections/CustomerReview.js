@@ -173,7 +173,7 @@ const CustomerReview = () => {
             <div className='container px-g pe-0 pe-lg-g'>
                 <Carousel
                     id="customerReviews"
-                    className="carousel slide carousel--loop carousel--mobile-half-next"
+                    className="carousel slide carousel--loop carousel--mobile-half-next carousel--swipe"
                     items={CUSTOMER_REVIEWS}
                     slideNumber="4">
                     <button className="carousel-control carousel-control-prev  floating-out-start justify-content-start text-primary d-none d-lg-flex" data-bs-target="#customerReviews" role="button" data-bs-slide="prev">
