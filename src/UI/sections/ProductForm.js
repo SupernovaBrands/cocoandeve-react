@@ -104,6 +104,7 @@ const ProductForm = (props) => {
     }, 500);
 
     const getSavingSelectedVariant = () => {
+        console.log('', selectedVariant);
         if (!selectedVariant.compare_at_price) return 0;
         const compareAtPrice = parseFloat(selectedVariant.compare_at_price.replace('$','').replace('£','').replace('€'));
         const price = parseFloat(selectedVariant.compare_at_price.replace('$','').replace('£','').replace('€'));
@@ -134,7 +135,7 @@ const ProductForm = (props) => {
                         <p className="my-1 order-lg-2">
                             <span className="text-linethrough mr-25 text-muted h2 ">$89.80</span>
                             <span className="mr-25 text-nowrap ms-1 h2 ">$62.80</span>
-                            <span className="text-primary text-nowrap text-save p-1 h2 fw-normal">(Save 38%)</span>
+                            <span className="text-primary text-nowrap text-save p-1 h2 fw-normal">(Save 30%)</span>
                         </p>
                     )}
                     {  selectedVariant.price && (
