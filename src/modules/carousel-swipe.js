@@ -1,8 +1,8 @@
-import bootstrap from "../vendor/bootstrap.bundle";
+import Carousel from "../vendor/bootstrap.bundle";
 const carouselSwipe = (carouselId) => {
     setTimeout(() => {
         const carouselSwipe = document.getElementById(carouselId);
-        const carousel = new bootstrap.Carousel(carouselSwipe);
+        const carousel = new Carousel(carouselSwipe);
 
         let xDown = null;
 		let yDown = null;
