@@ -1,7 +1,7 @@
 import bootstrap from "../vendor/bootstrap.bundle";
 const carouselSwipe = (carouselId) => {
     setTimeout(() => {
-        const carouselSwipe = document.getElementById("customerReviews");
+        const carouselSwipe = document.getElementById(carouselId);
         const carousel = new bootstrap.Carousel(carouselSwipe);
 
         let xDown = null;
