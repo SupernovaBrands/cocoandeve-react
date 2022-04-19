@@ -192,7 +192,7 @@ const ProductForm = (props) => {
                             Soft tanning mitt and kabuki brush for a perfect fuss-free application.
                         </li>
                     </ul>
-                    <div className='fixed-bottom d-lg-none mx-g mb-2 product-swatch-mobile'>
+                    <div className='fixed-bottom d-lg-none mx-g mb-2 product-swatch-mobile w-100'>
                         <button className='d-flex btn btn-primary btn-lg px-2' onClick={onAddToCart}>
                             <span className="text-white w-100 m-0 d-block text-start" >Add to cart</span>
                             <p className="d-block m-0">
