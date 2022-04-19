@@ -112,6 +112,8 @@ const ProductForm = (props) => {
         return saving;
     }
     
+    console.log(selectedVariant.price, 'testing');
+
     return (
         <div className="container px-g mb-0 mt-lg-4">
             <div className="row align-items-start">
@@ -132,14 +134,14 @@ const ProductForm = (props) => {
                         <p className="my-1 order-lg-2">
                             <span className="text-linethrough mr-25 text-muted h2 ">$89.80</span>
                             <span className="mr-25 text-nowrap ms-1 h2 ">$62.80</span>
-                            <span className="text-primary text-nowrap text-save p-1 h2 fw-normal">(Save {getSavingSelectedVariant()}%)</span>
+                            <span className="text-primary text-nowrap text-save p-1 h2 fw-normal">(Save 38%)</span>
                         </p>
                     )}
-                    {   selectedVariant.price && (
+                    {  selectedVariant.price && (
                         <p className="my-1 order-lg-2">
                             { selectedVariant.compare_at_price && (<span className="text-linethrough mr-25 text-muted h2 ">{selectedVariant.compare_at_price}</span>)}
                             <span className="mr-25 text-nowrap ms-1 h2 ">{selectedVariant.price}</span>
-                            { selectedVariant.compare_at_price && (<span className="text-primary text-nowrap text-save p-1 h2 fw-normal">(Save 38%)</span>)}
+                            { selectedVariant.compare_at_price && (<span className="text-primary text-nowrap text-save p-1 h2 fw-normal">(Save {getSavingSelectedVariant()}%)</span>)}
                         </p>
                     )}
                     <hr className="mb-2 bg-primary-light-second mt-0 order-lg-2 d-none d-lg-block"/>
