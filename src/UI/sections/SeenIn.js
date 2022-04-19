@@ -3,7 +3,16 @@ import Carousel from '../components/Carousel';
 const SeenIn = () => {
     const CAROUSELITEMS = [
         {
-            carouselItemClass: 'carousel-item col-6 col-md-3 mt-5 text-center active',
+            carouselItemClass: 'carousel-item col-6 col-md-3  mt-5 text-center active',
+            content:
+                <picture>
+                    <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/54312adc-b757-4199-389c-6aff215fff00/400x" />
+                    <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5a598c17-cd78-4212-159d-1e1677162500/400x" />
+                    <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5a598c17-cd78-4212-159d-1e1677162500/400x" className="img-fluid" alt="Refinery 29" />
+                </picture>
+        },
+        {
+            carouselItemClass: 'carousel-item col-6 col-md-3 mt-5 text-center',
             content:
                 <picture>
                     <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae7f46b9-6205-4d66-3f13-0a66efac7b00/400x" />
@@ -36,15 +45,6 @@ const SeenIn = () => {
                     <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/054c9959-e8d3-431a-a420-b8a54f875b00/400x" />
                     <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/3994b20e-9db5-471a-45da-80a327d6a100/400x" />
                     <img src={`${process.env.PUBLIC_URL}/images/mailonline.jpg`} className="img-fluid"  alt="Mail Online"   />
-                </picture>
-        },
-        {
-            carouselItemClass: 'carousel-item col-6 col-md-3  mt-5 text-center',
-            content:
-                <picture>
-                    <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/54312adc-b757-4199-389c-6aff215fff00/400x" />
-                    <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5a598c17-cd78-4212-159d-1e1677162500/400x" />
-                    <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5a598c17-cd78-4212-159d-1e1677162500/400x" className="img-fluid" alt="Refinery 29" />
                 </picture>
         },
 
