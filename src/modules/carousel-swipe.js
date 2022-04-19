@@ -30,8 +30,10 @@ const carouselSwipe = (carouselId) => {
         if (Math.abs(xDiff) > Math.abs(yDiff)) {
 
             if (xDiff > 0) {
+                console.log('next');
                 carousel.next();
             } else {
+                console.log('prev');
                 carousel.prev();
             }
         } else {

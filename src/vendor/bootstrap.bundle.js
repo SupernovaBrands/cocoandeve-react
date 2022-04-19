@@ -3,6 +3,9 @@
   * Copyright 2011-2021 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
+
+export const { Carousel } = require("bootstrap");
+
 (function (global, factory) {
   // eslint-disable-next-line no-unused-expressions
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
@@ -952,7 +955,7 @@
    * ------------------------------------------------------------------------
    */
 
-  class Carousel extends BaseComponent {
+   class Carousel extends BaseComponent {
     constructor(element, config) {
       super(element);
       this._items = null;
