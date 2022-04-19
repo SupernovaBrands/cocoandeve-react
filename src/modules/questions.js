@@ -36,7 +36,7 @@ const Questions = [
         buttonType: 'full',
     },    
     {
-        question: "Have you used self-tanner before",
+        question: "Have you used self-tanner before?",
         answers: [
             "Yes, I've tried them all!",
             "I have, I am occasionally tanning with self tanner",
@@ -104,7 +104,7 @@ const Questions = [
         lastFull: true,
     },
     {
-        question: "What's your age",
+        question: "What's your age?",
         answers: [
             '18-24',
             '25-34',

@@ -1,6 +1,7 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { SurveyContext } from './QuestionBox';
+import { getCookie, setCookie } from '../../modules/Utils';
 
 const SingleChoiceImage = (props) => {
     const { 
@@ -15,33 +16,80 @@ const SingleChoiceImage = (props) => {
         images,
     } = props;
 
+    const dataRange = [12, 38, 63, 89];
+    const range = 12;
+    let timing = null;
+
     const changeHandle = ((index) => {
         return (e) => {
             setSelectedItem(answers[index]);
             answerAction(answers[index]);
             setDisable(false);
+            document.getElementById('slide-selector').value = dataRange[index];
+            setCurrentSlide(dataRange[index]);
         };
     });
 
+    const selectedRangeIndex = (number) => {
+        let selectedIndex = 0;
+        dataRange.forEach((item, index) => {
+            const minRange = item - range;
+            const maxRange = item + range;
+
+            if (number >= minRange && number <= maxRange) {
+                selectedIndex = index;
+            }
+        });
+        return selectedIndex;
+    }
+
+    const rangeChange = (() => {
+        return (e) => {
+            const currentValue = e.target.value;
+            const selected = selectedRangeIndex(currentValue);
+
+            clearTimeout(timing);
+            timing = setTimeout(() => {
+                setSelectedItem(answers[selected]);
+                answerAction(answers[selected]);
+                setCurrentSlide(e.target.value);
+            }, 500);
+        }
+    })
+
+    const getRangeNumber = (answ) => {
+        const selected = selectedRangeIndex(answ);
+        const currentRange = dataRange[selected];
+        return currentRange;
+    }
+
     const defaultSelected = currentAnswer && currentAnswer[currentQuestion] ? currentAnswer[currentQuestion] : null;
+    const currentSlideValue = getCookie(`slide-question-${currentQuestion}`) ? getCookie(`slide-question-${currentQuestion}`) : defaultSelected ? getRangeNumber(answers.indexOf(defaultSelected)) : range;
 
     const [selectedItem, setSelectedItem] = useState(defaultSelected);
+    const [currentSlide, setCurrentSlide] = useState(currentSlideValue);
+
+    useEffect(() => {
+        if (currentSlide) setCookie(`slide-question-${currentQuestion}`, currentSlide);
+        if (width && width > 992) {
+            const selected = selectedRangeIndex(currentSlide);
+            answerAction(answers[selected]);
+            setDisable(false);
+        }
+    }, [currentSlide, currentQuestion, width]);
 
     return (
-        <div className='single-choice row'>
+        <div className='single-choice row position-relative'>
+            <input type="range" onChange={rangeChange()} className="form-range position-absolute single-choice__slide d-none d-lg-block" id="slide-selector" defaultValue={currentSlide}></input>
             {
                 answers.map((item,index) => {
-                    // const image = images[index];
                     return (
                         <div key={index} className='col-6 col-lg-3 px-1'>
                             <figure onClick={changeHandle(index)}>
                                 <picture className={`${item === selectedItem && width < 992 ? 'border border-5 border-primary' : ''} rounded rounded-circle d-block m-auto single-choice__image`}>
                                     <img src={`${images[index]}`} alt={item} className='d-block rounded rounded-circle w-100 p-0 p-lg-1'/>
                                 </picture>
-                                <figcaption className="pt-2 pt-lg-0">
-                                    <div className={`${item === selectedItem ? 'selected' : ''} single-choice__lines position-relative ms-n1 me-n1 d-none d-lg-block`}>
-                                        <hr className={`${index === 0 ? 'rounded-start' : index + 1 === answers.length ? 'rounded-end' : '' } single-choice__lines__hr bg-primary-light-second`} size="2"/>
-                                    </div>
+                                <figcaption className="pt-2 pt-lg-3">
                                     <span>{item}</span>
                                 </figcaption>
                             </figure>

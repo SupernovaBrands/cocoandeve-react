@@ -6,7 +6,7 @@ import SingleChoice from '../components/SingleChoice';
 import MultipleChoice from '../components/MultipleChoice';
 import SingleChoiceIcon from '../components/SingleChoiceIcon';
 import SingleChoiceImage from '../components/SingleChoiceImage';
-import ProductForm from '../sections/ProductForm';
+import Results from '../sections/Results';
 import { useResizeDetector } from 'react-resize-detector';
 
 import { setCookie, getCookie } from "../../modules/Utils";
@@ -299,7 +299,7 @@ const Survey = () => {
                     { currentPosition === 'finished' && (
                             <>
                                 <h1 className="text-center mt-4 mb-2">We found your perfect match!</h1>
-                                <ProductForm variantSelectorStyle="flex" titleHeading="h1" addToCart={addToCart} noReviews={true} variants={selectedVariant} hideProductCaption={true} cartPosition="top"/>
+                                <Results variantSelectorStyle="flex" titleHeading="h1" addToCart={addToCart} noReviews={true} variants={selectedVariant} hideProductCaption={true} cartPosition="top"/>
                             </>
                         )
                     }

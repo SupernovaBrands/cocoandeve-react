@@ -1,23 +1,6 @@
 .single-choice {
-    &__lines {
-        &.selected {
-            &:before {
-              content: '';
-              width: calc-em(20);
-              height: calc-em(20);
-              position: absolute;
-              left: calc(50% - #{calc-em(20/2)});
-              top: 0;
-              background: $primary;
-              display: block;
-              border-radius: 50%;
-              margin-top: -#{calc-em((20-9)/2)};
-            }
-        }
-
-        &__hr {
-            height: calc-em(9);
-        }
+    &__slide {
+        top: calc-em(150);
     }
 
     &__image {
