@@ -51,7 +51,7 @@ const ProductImageCarousel = () => {
     return (
         <Fragment>
             <div key="product-image-carousel__container" className="product-image-carousel__container col-12 col-lg-6 order-lg-2">
-                <figure id="product-image-carousel" className="product-image-carousel carousel slide mb-1 mb-lg-0 g-0__in-container" data-bs-ride="carousel" data-bs-interval="false" data-bs-touch="false">
+                <figure id="product-image-carousel" className="product-image-carousel carousel slide mb-1 mb-lg-0 g-0__in-container" data-bs-ride="carousel" data-bs-interval="false">
                     <div key="div-carousel-1" className="carousel-inner">
                         {PRODUCT_IMAGES.map((image, index) => (
                             <ProductImageCarouselItem
