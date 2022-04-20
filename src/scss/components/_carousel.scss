@@ -97,21 +97,17 @@
 			visibility: visible;
 		}
 
-		&[data-bs-slide-number="5"] {
-			.carousel-item {
-				@include media-breakpoint-up(lg) {
-					flex: 0 0 20%;
-					max-width: 20%;
-				}
+		.carousel-item.col-md-3 {
+			@include media-breakpoint-up(lg) {
+				flex: 0 0 20%;
+				max-width: 20%;
 			}
 		}
 
-		&[data-bs-slide-number="4"] {
-			.carousel-item {
-				@include media-breakpoint-up(lg) {
-					flex: 0 0 25%;
-					max-width: 25%;
-				}
+		.carousel-item.col-md-4 {
+			@include media-breakpoint-up(lg) {
+				flex: 0 0 25%;
+				max-width: 25%;
 			}
 		}
 
