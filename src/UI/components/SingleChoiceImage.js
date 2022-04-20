@@ -79,17 +79,17 @@ const SingleChoiceImage = (props) => {
     }, [currentSlide, currentQuestion, width]);
 
     return (
-        <div className='single-choice row position-relative'>
+        <div className='single-choice row position-relative w-100'>
             <input type="range" onChange={rangeChange()} className="form-range position-absolute single-choice__slide d-none d-lg-block" id="slide-selector" defaultValue={currentSlide}></input>
             {
                 answers.map((item,index) => {
                     return (
-                        <div key={index} className='col-6 col-lg-3 px-1'>
+                        <div key={index} className='col-6 col-lg-3 px-1 pb-sm-2'>
                             <figure onClick={changeHandle(index)}>
                                 <picture className={`${item === selectedItem && width < 992 ? 'border border-5 border-primary' : ''} rounded rounded-circle d-block m-auto single-choice__image`}>
-                                    <img src={`${images[index]}`} alt={item} className='d-block rounded rounded-circle w-100 p-0 p-lg-1'/>
+                                    <img src={`${images[index]}`} alt={item} className='d-block rounded rounded-circle w-100 p-0'/>
                                 </picture>
-                                <figcaption className="pt-2 pt-lg-3">
+                                <figcaption className="pt-2 pt-lg-4">
                                     <span>{item}</span>
                                 </figcaption>
                             </figure>

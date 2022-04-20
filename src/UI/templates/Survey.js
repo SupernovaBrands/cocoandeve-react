@@ -6,7 +6,6 @@ import SingleChoice from '../components/SingleChoice';
 import MultipleChoice from '../components/MultipleChoice';
 import SingleChoiceIcon from '../components/SingleChoiceIcon';
 import SingleChoiceImage from '../components/SingleChoiceImage';
-import Results from '../sections/Results';
 import { useResizeDetector } from 'react-resize-detector';
 
 import { setCookie, getCookie } from "../../modules/Utils";
@@ -127,12 +126,17 @@ const Survey = () => {
         const findVariant = variants.find((variant) => variant.sku === sku);
         if (findVariant) {
             setSelectedVariant([findVariant]);
+            
+            if (window.top !== window.self && currentPosition === 'finished') {
+                window.top.location.href = `https://${selectedSite}/products/${findVariant.product_handle}?survey=result&sku=${findVariant.sku}`;
+            }
 
             if (close) {
                 setCookie('surveyPosition', 'finished');
-                setPosition('finished');    
+                setPosition('finished');
                 postMessageCookie('surveyPosition', 'finished');
                 setPosition('finished');
+                window.top.location.href = `https://${selectedSite}/products/${findVariant.product_handle}?survey=result&sku=${findVariant.sku}`;
             }
         }
     }
@@ -246,7 +250,7 @@ const Survey = () => {
 
                     { currentPosition !== 'start' && currentPosition !== 'finished' && (
                         <>
-                            <div className="text-center col-12 col-lg-6 px-lg-0 py-4">
+                            <div className="text-center col-12 col-lg-6 px-lg-0 pt-4 pb-2 pb-lg-4">
                                 <p>Your perfect shade is just a few clicks away</p>
                                 <div className="progress progress bg-primary-light-second">
                                     <div className="progress-bar" style={{ width: `${progressValue}%` }} role="progressbar" defaultValue={progressValue} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
@@ -296,13 +300,13 @@ const Survey = () => {
                         </>
                     )
                     }
-                    { currentPosition === 'finished' && (
+                    {/* { currentPosition === 'finished' && (
                             <>
                                 <h1 className="text-center mt-4 mb-2">We found your perfect match!</h1>
                                 <Results variantSelectorStyle="flex" titleHeading="h1" addToCart={addToCart} noReviews={true} variants={selectedVariant} hideProductCaption={true} cartPosition="top"/>
                             </>
                         )
-                    }
+                    } */}
             </div>
         </div>
     )

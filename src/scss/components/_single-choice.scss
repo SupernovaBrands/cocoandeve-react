@@ -1,12 +1,16 @@
 .single-choice {
     &__slide {
-        top: calc-em(150);
+        top: calc-em(160);
     }
 
     &__image {
         width: calc-em(120);
+        min-height: calc-em(120);
+        border: calc-em(5) solid;
+        border-color: $gray-400;
         @include media-breakpoint-up(lg) {
             width: calc-em(150);
+            min-height: calc-em(150);
         }
     }
 

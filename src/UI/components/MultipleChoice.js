@@ -93,7 +93,7 @@ const MultipleChoice = (props) => {
                     return (
                         <div key={index} className={full}>
                             <div className={`${disableRest ? 'disabled' : ''} ${selectedItems.includes(answer.label) ? 'border-primary bg-primary-light-second' : 'border-light'} d-flex rounded border border-1 text-start justify-content-start align-items-center mb-2`}>
-                                <label className={`${answer.type === 'checkboxNumber' ? 'd-flex checkbox-number align-items-center' : 'd-flex checkbox-number align-items-center'} w-100 p-2`} htmlFor={`${index}-flexCheckDefault`} onClick={chooseItems(index)}>
+                                <label className={`${answer.type === 'checkboxNumber' ? 'd-flex checkbox-number align-items-center px-sm-1' : 'd-flex checkbox-number align-items-center'} w-100 p-2`} htmlFor={`${index}-flexCheckDefault`} onClick={chooseItems(index)}>
                                     { answer.type === 'checkboxNumber' && selectedItems.includes(answer.label) && (
                                         <span className="multiple-choice-counter 
                                             fade-in-left d-inline-flex 
