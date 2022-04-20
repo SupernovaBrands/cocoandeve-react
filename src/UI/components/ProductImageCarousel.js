@@ -9,9 +9,9 @@ import { ReactComponent as ChevronUp } from '../../assets/chevron-up.svg';
 import { ReactComponent as ChevronDown } from '../../assets/chevron-down.svg';
 
 const ProductImageCarousel = () => {
-    carouselLoop('product-image-carousel__indicator');
+    // carouselLoop('product-image-carousel__indicator');
     useEffect(() => {
-        carouselSwipe('product-image-carousel');
+        // carouselSwipe('product-image-carousel');
     }, []);
     const PRODUCT_IMAGES = [
         {
