@@ -165,26 +165,6 @@ const CustomerReview = () => {
                     </div>
                 </ReviewCard>
         },
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 Stef',
-            content:
-                <ReviewCard
-                name="Stef H. Verified Buyer"
-                caption="Shade of Tan: Medium"
-                >
-                    <p>This product is amazing!</p>
-                    <p>Love the golden glow it gives my skin. Used the medium shade, and I’m at least two shades darker. Such a great way to get the perfect tan without causing skin damage or possible skin cancer. The photo shows the difference between my natural paleness and this amazing product.</p>
-                    <div className='row no-gutters'>
-                        <div className='col-6'>
-                            <picture>
-                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9aca4722-affa-4677-1a0e-263b6cb31c00/200x" />
-                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/48a2621a-547c-43d3-538e-b90ba49a9200/200x" />
-                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/48a2621a-547c-43d3-538e-b90ba49a9200/200x" className="img-fluid" alt="" loading="lazy" />
-                            </picture>
-                        </div>
-                    </div>
-                </ReviewCard>
-        },
     ]
 
 	return (
