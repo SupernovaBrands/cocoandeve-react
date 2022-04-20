@@ -311,6 +311,23 @@ const RangeCarousel = () => {
 								</button>
 							</Fragment>
 						)}
+
+						{item.carouselItems.length < 4 && width < 768 && (
+							<Fragment>
+								<button className="carousel-control carousel-control-prev carousel-control--background floating-out-start justify-content-start text-primary" data-bs-target={`#${item.carouselId}`} data-bs-slide="prev">
+									<span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true">
+										<ChevronPrev1 className='svg' />
+									</span>
+									<span className='visually-hidden-focusable'>Prev</span>
+								</button>
+								<button className="carousel-control carousel-control-next carousel-control--background floating-out-end justify-content-end text-primary" data-bs-target={`#${item.carouselId}`} data-bs-slide="next">
+									<span className="carousel-control-next-icon d-flex justify-content-center align-items-center" aria-hidden="true">
+										<ChevronNext1 className='svg' />
+									</span>
+									<span className='visually-hidden-focusable'>Next</span>
+								</button>
+							</Fragment>
+						)}
 					</Carousel>
 				))}
 			</div>
