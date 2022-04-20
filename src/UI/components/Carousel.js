@@ -10,13 +10,13 @@ const Carousel = (props) => {
     if (width > 768 && props.items.length > 4) {
         selectedIndex = 3;
     }
-    // carouselLoop(props.id);
+    carouselLoop(props.id);
     useEffect(() => {
-        // carouselSwipe(props.id);
+        carouselSwipe(props.id);
     }, []);
     
     return (
-        <div id={props.id} className={props.className} data-bs-ride="carousel" data-bs-interval="false">
+        <div id={props.id} className={props.className} data-bs-ride="carousel" data-bs-interval="false" data-bs-touch="false">
             {props.centered ? (
                 <ConditionWrapper
                     condition={props.items.length > 4 || props.forceCentered}
