@@ -51,7 +51,7 @@ const SeenIn = () => {
     ]
 	return (
 		<section className='as-seen-in py-4'>
-            <div className='container'>
+            <div className='container p-0'>
                 <h2 className="h1 mb-4 text-center">As seen in</h2>
                 <Carousel id="asSeenInCarousel" centered={true} items={CAROUSELITEMS} slideNumber="5" className="carousel slide carousel--loop overflow-hidden carousel--mobile-only-half-centered">
                     <button className="carousel-control carousel-control-prev carousel-control--background floating-out-left justify-content-start text-primary d-none" data-bs-target="#asSeenInCarousel" role="button" data-bs-slide="prev">

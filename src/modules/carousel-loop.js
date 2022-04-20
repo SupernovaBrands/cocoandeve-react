@@ -1,6 +1,17 @@
 const carouselLoop = (carouselId) => {
     setTimeout(() => {
         const carouselLoop = document.getElementById(carouselId);
+        const initCarouselItems = carouselLoop.querySelectorAll('.carousel-item');
+        const initCarouselInner = carouselLoop.querySelector('.carousel-inner');
+
+        if (768 > window.innerWidth && initCarouselItems.length <= 4) {
+            for (let i = 0; i < initCarouselItems.length; i += 1) {
+                const node = initCarouselInner.querySelectorAll('.carousel-item')[i+1]
+                const itemClone = node.cloneNode(true);
+                initCarouselInner.appendChild(itemClone);
+            }
+        }
+
         carouselLoop.addEventListener('slide.bs.carousel', function (e) {
             const $e = e.relatedTarget;
             const carouselInner = e.target.querySelector('.carousel-inner');
@@ -9,7 +20,7 @@ const carouselLoop = (carouselId) => {
             let itemsPerSlide = e.target.dataset.bsSlideNumber ? e.target.dataset.bsSlideNumber : 3;
 			const totalItems = itemsEl.length;
             if (768 > window.innerWidth) {
-				itemsPerSlide = 2;
+				itemsPerSlide = 3;
 			}
 
             if (e.target.querySelector('.carousel--centered')) {
@@ -19,7 +30,6 @@ const carouselLoop = (carouselId) => {
 
             if (idx >= totalItems - (itemsPerSlide - 1)) {
                 const it = itemsPerSlide - (totalItems - idx);
-
                 for (let i = 0; i < it; i += 1) {
                     if (e.direction === 'left') {
                         carouselInner.appendChild(carouselInner.querySelectorAll('.carousel-item')[i]);

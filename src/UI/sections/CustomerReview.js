@@ -4,7 +4,7 @@ import Carousel from '../components/Carousel';
 const CustomerReview = () => {
     const CUSTOMER_REVIEWS = [
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded active px-0',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 Kjersti',
             content:
                 <ReviewCard
                     name="Kjersti V. Verified Buyer"
@@ -31,7 +31,7 @@ const CustomerReview = () => {
                 </ReviewCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 Michelle',
             content:
                 <ReviewCard
                     name="Michelle T. Verified Buyer"
@@ -51,7 +51,7 @@ const CustomerReview = () => {
                 </ReviewCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 Torey',
             content:
                 <ReviewCard
                 name="Torey M. Verified Buyer"
@@ -71,7 +71,7 @@ const CustomerReview = () => {
                 </ReviewCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 Steffanie',
             content:
                 <ReviewCard
                 name="Steffanie G. Verified Buyer"
@@ -91,7 +91,7 @@ const CustomerReview = () => {
                 </ReviewCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 Sadie',
             content:
                 <ReviewCard
                 name="Sadie B. Verified Buyer"
@@ -119,7 +119,7 @@ const CustomerReview = () => {
                 </ReviewCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 Alanna',
             content:
                 <ReviewCard
                 name="Alanna P. Verified Buyer"
@@ -146,7 +146,7 @@ const CustomerReview = () => {
                 </ReviewCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 Stef',
             content:
                 <ReviewCard
                 name="Stef H. Verified Buyer"
@@ -164,7 +164,27 @@ const CustomerReview = () => {
                         </div>
                     </div>
                 </ReviewCard>
-        }
+        },
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 Stef',
+            content:
+                <ReviewCard
+                name="Stef H. Verified Buyer"
+                caption="Shade of Tan: Medium"
+                >
+                    <p>This product is amazing!</p>
+                    <p>Love the golden glow it gives my skin. Used the medium shade, and I’m at least two shades darker. Such a great way to get the perfect tan without causing skin damage or possible skin cancer. The photo shows the difference between my natural paleness and this amazing product.</p>
+                    <div className='row no-gutters'>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9aca4722-affa-4677-1a0e-263b6cb31c00/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/48a2621a-547c-43d3-538e-b90ba49a9200/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/48a2621a-547c-43d3-538e-b90ba49a9200/200x" className="img-fluid" alt="" loading="lazy" />
+                            </picture>
+                        </div>
+                    </div>
+                </ReviewCard>
+        },
     ]
 
 	return (
@@ -175,7 +195,8 @@ const CustomerReview = () => {
                     id="customerReviews"
                     className="carousel slide carousel--loop carousel--mobile-half-next carousel--swipe"
                     items={CUSTOMER_REVIEWS}
-                    slideNumber="4">
+                    slideNumber="4"
+                    centered={true}>
                     <button className="carousel-control carousel-control-prev  floating-out-start justify-content-start text-primary d-none d-lg-flex" data-bs-target="#customerReviews" role="button" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.627 22.627" className="svg"><path d="M16.2 1.885l-9.428 9.428 9.428 9.428-1.886 1.886L3 11.313 14.314 0z"></path></svg></span>
                         <span className='visually-hidden-focusable'>Prev</span>

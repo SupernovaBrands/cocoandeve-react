@@ -170,8 +170,19 @@
 	}
 
 	&--mobile-half-next {
-		.carousel-item {
-			@include media-breakpoint-down(md) {
+		@include media-breakpoint-up(lg) {
+			.carousel--centered .carousel-inner {
+				width: 100%;
+				transform: none;
+				overflow: hidden;
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			.carousel--centered .carousel-inner {
+				transform: translateX(-74.5%);
+			}
+			.carousel-item {
 				width: 75%;
 			}
 		}
