@@ -8,7 +8,7 @@ const SectionIRL = () => {
 
     const CONTENT = [
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 active',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 active hughesyfit',
             content:
                 <IRLCard
                     name="@hughesyfit"
@@ -21,7 +21,7 @@ const SectionIRL = () => {
                 </IRLCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 hannahtucker',
             content:
                 <IRLCard
                     name="@hannahtucker"
@@ -33,7 +33,7 @@ const SectionIRL = () => {
                 </IRLCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 orianavtorres',
             content:
                 <IRLCard
                     name="@orianavtorres"
@@ -45,7 +45,7 @@ const SectionIRL = () => {
                 </IRLCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 jaydestella',
             content:
                 <IRLCard
                     name="@jaydestella"
@@ -70,7 +70,9 @@ const SectionIRL = () => {
                     id="sectionIRL"
                     className="carousel slide carousel--loop carousel--mobile-half-next"
                     items={CONTENT}
-                    slideNumber="4">
+                    slideNumber="4"
+                    forceCentered={true}
+                    centered={true}>
                     <button className="carousel-control carousel-control-prev floating-out-start justify-content-start text-primary d-none" data-bs-target="#sectionIRL" role="button" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.627 22.627" className="svg"><path d="M16.2 1.885l-9.428 9.428 9.428 9.428-1.886 1.886L3 11.313 14.314 0z"></path></svg></span>
                     </button>

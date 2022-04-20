@@ -19,9 +19,9 @@ const Carousel = (props) => {
         <div id={props.id} className={props.className} data-bs-slide-number={props.slideNumber} data-bs-ride="carousel" data-bs-interval="false" data-bs-touch="false">
             {props.centered ? (
                 <ConditionWrapper
-                    condition={props.items.length > 4}
+                    condition={props.items.length > 4 || props.forceCentered}
                     wrapper={(children) => <div className='carousel--centered'>{children}</div>}>
-                    <div className={`carousel-inner d-flex flex-nowrap ${props.additionalClasses} ${props.items.length > 4 ? '' : 'justify-content-center'}`}>
+                    <div className={`carousel-inner d-flex flex-nowrap ${props.additionalClasses} ${props.items.length > 4 || props.forceCentered ? '' : 'justify-content-center'}`}>
                         {props.items.map((item, index) => (
                             <div key={`carouselItemContent1${index}`} className={`${item.carouselItemClass} ${index === selectedIndex ? 'active' : ''}`}>
                                 {item.content}
