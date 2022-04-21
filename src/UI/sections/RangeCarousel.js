@@ -1,5 +1,6 @@
 import ProductCard from "../components/ProductCard";
 import Carousel from "../components/Carousel";
+import carouselLoop from "../../modules/carousel-loop";
 
 import { ReactComponent as ChevronPrev1 } from '../../assets/chevron-prev.svg';
 import { ReactComponent as ChevronNext1 } from '../../assets/chevron-next.svg';
@@ -10,7 +11,7 @@ const RangeCarousel = () => {
 
 	const PRODUCTS_FACE = [
         {
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Bronzing Face Drops'
 				url='https://www.cocoandeve.com/products/bronzing-self-tanner-drops'
@@ -22,7 +23,7 @@ const RangeCarousel = () => {
 				isCrossedPrice={false} />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='SPF & Glow Kit'
 				url='https://www.cocoandeve.com/products/spf-glow-kit'
@@ -38,7 +39,7 @@ const RangeCarousel = () => {
 
 	const PRODUCTS_BODY = [
         {
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Sunny Honey Bali Bronzing Bundle'
 				url='https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set'
@@ -51,7 +52,7 @@ const RangeCarousel = () => {
 				crossedPrice='$73.90' />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Sunny Honey Bronzing Foam'
 				url='https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-mousse'
@@ -63,7 +64,7 @@ const RangeCarousel = () => {
 				isCrossedPrice={false} />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Tanning Goddess Kit'
 				url='https://www.cocoandeve.com/products/tanning-goddess'
@@ -76,7 +77,7 @@ const RangeCarousel = () => {
 				crossedPrice='$105.80' />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Self Tan Travel Kit'
 				url='https://www.cocoandeve.com/products/self-tan-travel-kit'
@@ -88,7 +89,7 @@ const RangeCarousel = () => {
 				isCrossedPrice={false} />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Sunny Honey Bali Bronzing Bundle'
 				url='https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set'
@@ -101,7 +102,7 @@ const RangeCarousel = () => {
 				crossedPrice='$73.90' />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Sunny Honey Bronzing Foam'
 				url='https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-mousse'
@@ -113,7 +114,7 @@ const RangeCarousel = () => {
 				isCrossedPrice={false} />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Tanning Goddess Kit'
 				url='https://www.cocoandeve.com/products/tanning-goddess'
@@ -126,7 +127,7 @@ const RangeCarousel = () => {
 				crossedPrice='$105.80' />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Self Tan Travel Kit'
 				url='https://www.cocoandeve.com/products/self-tan-travel-kit'
@@ -141,7 +142,7 @@ const RangeCarousel = () => {
 
 	const PRODUCTS_VALUE_SETS = [
         {
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Bali Bae Self Tan Set'
 				url='https://www.cocoandeve.com/products/bali-bae-self-tan-set'
@@ -154,7 +155,7 @@ const RangeCarousel = () => {
 				crossedPrice='$90.80' />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Sunny Honey Bali Bronzing Bundle'
 				url='https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set'
@@ -167,7 +168,7 @@ const RangeCarousel = () => {
 				crossedPrice='$73.90' />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Tanning Goddess Kit'
 				url='https://www.cocoandeve.com/products/tanning-goddess'
@@ -180,7 +181,7 @@ const RangeCarousel = () => {
 				crossedPrice='$105.80' />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Dewy Glow Bundle'
 				url='https://www.cocoandeve.com/products/dewy-glow-bundle'
@@ -193,7 +194,7 @@ const RangeCarousel = () => {
 				crossedPrice='$63.80' />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Bali Bae Self Tan Set'
 				url='https://www.cocoandeve.com/products/bali-bae-self-tan-set'
@@ -206,7 +207,7 @@ const RangeCarousel = () => {
 				crossedPrice='$90.80' />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Sunny Honey Bali Bronzing Bundle'
 				url='https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set'
@@ -219,7 +220,7 @@ const RangeCarousel = () => {
 				crossedPrice='$73.90' />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Tanning Goddess Kit'
 				url='https://www.cocoandeve.com/products/tanning-goddess'
@@ -232,7 +233,7 @@ const RangeCarousel = () => {
 				crossedPrice='$105.80' />
         },
 		{
-            carouselItemClass: 'carousel-item col-9 col-md-3 product-card text-center',
+            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
 				title='Dewy Glow Bundle'
 				url='https://www.cocoandeve.com/products/dewy-glow-bundle'
@@ -276,8 +277,13 @@ const RangeCarousel = () => {
 		}
 	];
 
+
+	carouselLoop('FeaturedBody');
+	carouselLoop('FeaturedFace');
+	carouselLoop('FeaturedValueSets');
+
 	return (
-		<section className='product-carousel py-2 py-lg-4'>
+		<section className='product-carousel py-2 py-lg-4 overflow-hidden'>
 			<div className='container d-flex flex-column align-items-center px-g'>
 				<h2 className='range__formula-title mb-2 text-center'>Self-tanners for any occasion</h2>
 				<ul className="nav nav-tabs justify-content-center border-0 col-8 col-lg-3 px-0 pb-2 range__tab">

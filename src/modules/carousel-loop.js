@@ -28,6 +28,10 @@ const carouselLoop = (carouselId) => {
                 idx += 1;
             }
 
+            if (window.innerWidth > 768 && (carouselId === 'FeaturedBody' || carouselId === 'FeaturedFace' || carouselId === 'FeaturedValueSets')) {
+                idx += 1;
+            }
+
             if (idx >= totalItems - (itemsPerSlide - 1)) {
                 const it = itemsPerSlide - (totalItems - idx);
                 for (let i = 0; i < it; i += 1) {
