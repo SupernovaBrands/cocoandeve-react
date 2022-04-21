@@ -4,7 +4,7 @@ import Carousel from '../components/Carousel';
 const CustomerReview = () => {
     const CUSTOMER_REVIEWS = [
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 Kjersti',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
                 <ReviewCard
                     name="Kjersti V. Verified Buyer"
@@ -31,7 +31,7 @@ const CustomerReview = () => {
                 </ReviewCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 Michelle',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
                 <ReviewCard
                     name="Michelle T. Verified Buyer"
@@ -51,7 +51,7 @@ const CustomerReview = () => {
                 </ReviewCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 Torey',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
                 <ReviewCard
                 name="Torey M. Verified Buyer"
@@ -71,7 +71,7 @@ const CustomerReview = () => {
                 </ReviewCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 Steffanie',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
                 <ReviewCard
                 name="Steffanie G. Verified Buyer"
@@ -91,7 +91,7 @@ const CustomerReview = () => {
                 </ReviewCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 Sadie',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
                 <ReviewCard
                 name="Sadie B. Verified Buyer"
@@ -119,7 +119,7 @@ const CustomerReview = () => {
                 </ReviewCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 Alanna',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
                 <ReviewCard
                 name="Alanna P. Verified Buyer"
@@ -146,7 +146,7 @@ const CustomerReview = () => {
                 </ReviewCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 Stef',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
                 <ReviewCard
                 name="Stef H. Verified Buyer"

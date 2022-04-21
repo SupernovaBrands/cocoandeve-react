@@ -113,8 +113,6 @@ const ProductForm = (props) => {
         return saving;
     }
     
-    console.log(selectedVariant.price, 'testing');
-
     return (
         <div className="container px-g mb-0 mt-lg-4">
             <div className="row align-items-start">

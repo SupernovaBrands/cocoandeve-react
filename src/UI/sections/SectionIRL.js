@@ -8,7 +8,7 @@ const SectionIRL = () => {
 
     const CONTENT = [
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 active hughesyfit',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 active',
             content:
                 <IRLCard
                     name="@hughesyfit"
@@ -21,7 +21,7 @@ const SectionIRL = () => {
                 </IRLCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 hannahtucker',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
                 <IRLCard
                     name="@hannahtucker"
@@ -33,11 +33,11 @@ const SectionIRL = () => {
                 </IRLCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 orianavtorres',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
                 <IRLCard
                     name="@orianavtorres"
-                    caption="Bali Bronzing Foam (Dark)"
+                    caption="Bali Bronzing Foam (Utra Dark)"
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7a518864-af70-46a1-6d76-8d8f43e1d100/200x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b734bbe7-e646-4ecf-d42e-5ee4c2c60300/200x"
                 >
@@ -45,7 +45,7 @@ const SectionIRL = () => {
                 </IRLCard>
         },
         {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 jaydestella',
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
                 <IRLCard
                     name="@jaydestella"
