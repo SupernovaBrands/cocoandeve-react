@@ -13,7 +13,7 @@ const FaqAccordion = () => {
         },
         {
             title: 'How often should I self-tan?',
-            content: 'It`s completely up to you! When you have decided to re-tan, we recommend removing all of the previous tans and thoroughly exfoliating to get the best results. Tanning at least once a week will ensure you are bronzed beautifully all year round! ',
+            content: "It's completely up to you! When you have decided to re-tan, we recommend removing all of the previous tans and thoroughly exfoliating to get the best results. Tanning at least once a week will ensure you are bronzed beautifully all year round! ",
         },
         {
             title: 'Can I use Sunny Honey on sensitive skin?',
