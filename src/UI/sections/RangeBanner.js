@@ -13,7 +13,6 @@ const RangeBanner = () => {
 				<source srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/383dbdf2-f7e4-412b-8447-54dbb0984a00/828x" type="image/webp" />
 				<img
 					src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/afa85196-4f02-42da-091e-393e63d1c900/828x"
-					srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/383dbdf2-f7e4-412b-8447-54dbb0984a00/828x"
 					alt="Range banner"
 					className="w-100 fit--cover" />
 			</picture>
