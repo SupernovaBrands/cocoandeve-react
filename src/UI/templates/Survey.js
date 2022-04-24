@@ -128,6 +128,8 @@ const Survey = () => {
             setSelectedVariant([findVariant]);
             
             if (window.top !== window.self && currentPosition === 'finished') {
+                postMessageCookie('surveyResult', findVariant.productHandle);
+                postMessageCookie('surveyResultSku', findVariant.sku);
                 window.top.location.href = `https://${selectedSite}/products/${findVariant.product_handle}?survey=result&sku=${findVariant.sku}`;
             }
 
@@ -135,7 +137,8 @@ const Survey = () => {
                 setCookie('surveyPosition', 'finished');
                 setPosition('finished');
                 postMessageCookie('surveyPosition', 'finished');
-                setPosition('finished');
+                postMessageCookie('surveyResult', findVariant.productHandle);
+                postMessageCookie('surveyResultSku', findVariant.sku);
                 window.top.location.href = `https://${selectedSite}/products/${findVariant.product_handle}?survey=result&sku=${findVariant.sku}`;
             }
         }
@@ -243,7 +246,9 @@ const Survey = () => {
                         </div>
                         <div className="col-12 col-lg-5 offset-lg-1 fixed-sm-bottom zindex-n1">
                             <picture>
-                                <img className="w-100" src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/1140x" alt="Tan Variants"/>
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" />
+            					<source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b426a652-ee5d-4534-5039-4b10fe9a3200/1140x" />
+                                <img className="w-100" loading="lazy" src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" alt="Tan Variants"/>
                             </picture>
                         </div>
                     </>) }

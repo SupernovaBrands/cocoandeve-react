@@ -18,10 +18,22 @@ const Questions = [
             'Dark',
         ],
         images: [
-            'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4a3f10e2-92d0-4b86-ecf6-06f77ea66000/828x',
-            'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/df8966f0-29e7-4467-d540-f78393f72b00/828x',
-            'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/65ba074e-eee9-4b68-4bae-9ac38a7f8100/828x',
-            'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/288d7222-4d99-4452-f313-f51a68654300/828x',
+            { 
+                jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5ae2dd27-d9fe-4977-ac17-7f9fed94eb00/828x',
+                webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a071a974-5d70-4eb2-1cdf-b3fa5a86ec00/828x',
+            },
+            {
+                jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8721f91b-8b2a-47c3-90d7-8014886cb400/828x',
+                webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/74efb78a-b052-4509-dd77-342afc958a00/828x',
+            },
+            {
+                jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b46f9838-8997-4f8e-2919-f4d834801500/828x',
+                webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b26eec13-744b-4e93-845c-82e785493800/828x',
+            },
+            {
+                jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/44916792-ff79-4c61-e66f-508e0540c800/828x',
+                webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/62ec87bb-b9f4-44b7-04a2-eba153bb3900/828x',
+            },
         ],
         type: 'SingleChoiceImage',
     },
