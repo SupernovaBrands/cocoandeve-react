@@ -83,10 +83,10 @@ const Survey = () => {
     const clearCookie = () => {
         setCookie('currentQuestion', 1);
         setCookie('surveyPosition', 'start');
-        setCookie('answeredQuestion', {});
+        setCookie('answeredQuestion', '');
         postMessageCookie('currentQuestion', 1);
         postMessageCookie('surveyPosition', 'start');
-        postMessageCookie('answeredQuestion', {});        
+        postMessageCookie('answeredQuestion', '');        
     }
 
     const gettingResult = (close=false) => {
