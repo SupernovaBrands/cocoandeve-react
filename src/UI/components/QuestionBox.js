@@ -40,7 +40,7 @@ const QuestionBox = (props) => {
             <SurveyContext.Provider value={{answerAction: answer, currentQuestion: currentQuestion, width, height, setDisable: setDisable, currentAnswer }}>
                 { children }
             </SurveyContext.Provider>
-            <div className="footer-action w-100 fixed-sm-bottom pb-2">
+            <div className="footer-action w-100 fixed-sm-bottom pb-2 bg-white">
                 <button className="mt-2 mt-lg-4 btn btn-lg btn-primary text-white" onClick={nextAction} disabled={isDisabled}>Next</button>
                 {
                     currentQuestion > 1 && (<a href="/" className="d-block text-underline text-black w-100 mt-2 mb-lg-4" onClick={prevAction}>&#60; Previous question</a>)
