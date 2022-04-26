@@ -16,8 +16,6 @@ const MultipleChoice = (props) => {
         lastFull,
     } = props;
 
-    console.log(currentAnswer, 'testing', currentQuestion);
-
     const defaultSelected = currentAnswer && currentAnswer[currentQuestion] ? currentAnswer[currentQuestion] : [];
     const [selectedItems, setSelectedItems] = useState(defaultSelected);
 
