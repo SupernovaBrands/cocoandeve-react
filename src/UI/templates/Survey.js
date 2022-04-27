@@ -251,7 +251,7 @@ const Survey = () => {
     }, [currentQuestion, currentPosition, currentAnswer]);
 
     return (
-            <div ref={targetRef} className="container container--   survey">
+            <div ref={targetRef} className="container container--survey">
                 <div className="row justify-content-center align-items-center survey-content">
                     { currentPosition === 'start' && (
                     <>
