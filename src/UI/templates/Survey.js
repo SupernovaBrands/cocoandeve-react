@@ -53,9 +53,9 @@ const Survey = () => {
     // handler hook side effect when state changed
     useEffect(() => {
         if (currentPosition === 'start') {
-            document.body.classList.add('bg-primary-light-second');
+            document.getElementById('root').classList.add('bg-primary-light-second');
         } else {
-            document.body.classList.remove('bg-primary-light-second');
+            document.getElementById('root').classList.remove('bg-primary-light-second');
         }
 
         setCookie('surveyPosition', currentPosition);
@@ -251,19 +251,19 @@ const Survey = () => {
     }, [currentQuestion, currentPosition, currentAnswer]);
 
     return (
-            <div ref={targetRef} className="container">
+            <div ref={targetRef} className="container container--   survey">
                 <div className="row justify-content-center align-items-center survey-content">
                     { currentPosition === 'start' && (
                     <>
-                        <div className="col-12 col-lg-4 pt-4 text-center text-lg-start">
+                        <div className="col-12 col-lg-4 pt-4 text-center text-lg-start zindex-2">
                             <h1 className="pt-sm-2">Find your perfect tan <br/>in 90 seconds!</h1>
                             <p className="mb-0">Take the Tan matching quiz to find your perfect shade of gorgeous glow. It only takes 90 seconds to find your true colour match</p>
                             <button className="btn btn-primary text-white mt-4" onClick={() => setPosition('question-1')}>Take the Quiz</button>
                         </div>
-                        <div className="col-12 col-lg-5 offset-lg-1 fixed-sm-bottom zindex-n1">
+                        <div className="col-12 col-lg-5 offset-lg-1 fixed-sm-bottom zindex-1">
                             <picture>
                                 <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" />
-            					<source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b426a652-ee5d-4534-5039-4b10fe9a3200/1140x" />
+            					<source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b426a652-ee5d-4534-5039-4b10fe9a3200/828x" />
                                 <img className="w-100" loading="lazy" src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" alt="Tan Variants"/>
                             </picture>
                         </div>
@@ -325,7 +325,7 @@ const Survey = () => {
                     }
                     { currentPosition === 'finished' && (
                         <div className="question-box analyzing d-flex justify-content-center align-items-center flex-column">
-                            <p className="question-box__title">Analyzing your answer</p>
+                            <p className="question-box__title">Analysing your answers</p>
                             <LoaderSvg className="loader mt-0 mb-0"/>
                         </div>
                     )

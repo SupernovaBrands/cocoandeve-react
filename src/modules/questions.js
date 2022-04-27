@@ -71,7 +71,7 @@ const Questions = [
             {label: 'Loving Tan', type: 'checkbox'},
             {label: 'Other', type: 'input'},
         ],
-        caption: 'Multiple choice question',
+        caption: 'Choose all that apply!',
         type: 'MultipleChoice',
     },
     {
@@ -113,6 +113,7 @@ const Questions = [
             {label: 'Other', type: 'input'},
         ],
         type: 'MultipleChoice',
+        caption: 'Choose all that apply!',
         lastFull: true,
     },
     {
