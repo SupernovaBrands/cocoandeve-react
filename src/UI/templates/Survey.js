@@ -12,6 +12,9 @@ import { setCookie, getCookie } from "../../modules/Utils";
 import ProductVariants from "../../modules/ProductVariants";
 import { useSearchParams } from "react-router-dom";
 
+import { ReactComponent as LoaderSvg } from '../../assets/loader.svg';
+
+
 const Survey = () => {
     const [searchParams] = useSearchParams();
     const site = searchParams.get('site');
@@ -269,11 +272,13 @@ const Survey = () => {
                     { currentPosition !== 'start' && currentPosition !== 'finished' && (
                         <>
                             <div className="text-center col-12 col-lg-6 px-lg-0 pt-4 pb-2 pb-lg-4">
+                                <div className="mobile-wrapper">
                                 <p>Your perfect shade is just a few clicks away</p>
                                 <div className="progress progress bg-primary-light-second">
                                     <div className="progress-bar" style={{ width: `${progressValue}%` }} role="progressbar" defaultValue={progressValue} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <span className="mt-2 d-inline-block">{currentQuestion}/{Questions.length}</span>
+                                </div>
                             </div>
                             <div className="text-center col-12 col-lg-8">
                                     {
@@ -318,13 +323,13 @@ const Survey = () => {
                         </>
                     )
                     }
-                    {/* { currentPosition === 'finished' && (
-                            <>
-                                <h1 className="text-center mt-4 mb-2">We found your perfect match!</h1>
-                                <Results variantSelectorStyle="flex" titleHeading="h1" addToCart={addToCart} noReviews={true} variants={selectedVariant} hideProductCaption={true} cartPosition="top"/>
-                            </>
-                        )
-                    } */}
+                    { currentPosition === 'finished' && (
+                        <div className="question-box analyzing d-flex justify-content-center align-items-center flex-column">
+                            <p className="question-box__title">Analyzing your answer</p>
+                            <LoaderSvg className="loader mt-0 mb-0"/>
+                        </div>
+                    )
+                    }
             </div>
         </div>
     )

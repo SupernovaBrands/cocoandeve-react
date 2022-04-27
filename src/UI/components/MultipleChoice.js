@@ -85,8 +85,9 @@ const MultipleChoice = (props) => {
     };
     
     return (
-            answers.map((answer, index) => {
-                const full = lastFull && index + 1 === answers.length ? 'col-12 mobile-wrapper' : 'col-6 mobile-wrapper';
+        <div className="row">
+            {answers.map((answer, index) => {
+                const full = lastFull && index + 1 === answers.length ? 'col-12' : 'col-6';
                 if (answer.type !== 'input') {
                     return (
                         <div key={index} className={full}>
@@ -125,6 +126,7 @@ const MultipleChoice = (props) => {
                     </div>
                 );
             })
+        }</div>
         )
 };
 
