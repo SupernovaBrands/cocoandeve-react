@@ -250,6 +250,8 @@ const Survey = () => {
         }        
     }, [currentQuestion, currentPosition, currentAnswer]);
 
+    console.log(height);
+
     return (
             <div ref={targetRef} className="container container--survey">
                 <div className="row justify-content-center align-items-center survey-content">
@@ -259,7 +261,7 @@ const Survey = () => {
                             <picture>
                                 <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" />
             					<source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b426a652-ee5d-4534-5039-4b10fe9a3200/828x" />
-                                <img className="w-100" loading="lazy" src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" alt="Tan Variants"/>
+                                <img className="w-100" loading={height <= 510 ? 'lazy' : ''} src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" alt="Tan Variants"/>
                             </picture>
                         </div>
                         <div className="col-12 col-lg-4 pt-4 text-center text-lg-start zindex-1 order-lg-0">
