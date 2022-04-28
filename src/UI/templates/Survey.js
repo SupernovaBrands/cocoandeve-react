@@ -255,6 +255,7 @@ const Survey = () => {
     return (
             <div ref={targetRef} className="container container--survey">
                 <div className="row justify-content-center align-items-center survey-content">
+                    <div class="p-2 bg-white position-absolute">{height}</div>
                     { currentPosition === 'start' && (
                     <>
                         <div className={`${height <= 500 ? 'pull-down-20' : ''} col-12 col-lg-5 offset-lg-1 fixed-sm-bottom zindex-0 order-lg-1`}>
