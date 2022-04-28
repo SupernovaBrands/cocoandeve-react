@@ -250,12 +250,14 @@ const Survey = () => {
         }        
     }, [currentQuestion, currentPosition, currentAnswer]);
 
+    console.log(height);
+
     return (
             <div ref={targetRef} className="container container--survey">
                 <div className="row justify-content-center align-items-center survey-content">
                     { currentPosition === 'start' && (
                     <>
-                        <div className="col-12 col-lg-5 offset-lg-1 fixed-sm-bottom zindex-0 order-lg-1">
+                        <div className={`${height <= 500 ? 'pull-down-20' : ''} col-12 col-lg-5 offset-lg-1 fixed-sm-bottom zindex-0 order-lg-1`}>
                             <picture>
                                 <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" />
             					<source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b426a652-ee5d-4534-5039-4b10fe9a3200/828x" />
