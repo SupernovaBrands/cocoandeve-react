@@ -8,20 +8,6 @@
 	}
 }
 
-// fixed sm bottom
-.fixed-sm-bottom {
-	@include media-breakpoint-down(lg) {
-		position: fixed;
-		bottom: 0;
-	}
-}
-
-.pull-down-20 {
-	@include media-breakpoint-down(lg) {
-		bottom: -120px !important;
-	}
-}
-
 .zindex-1 {
 	z-index: 1;
 }

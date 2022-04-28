@@ -250,24 +250,22 @@ const Survey = () => {
         }        
     }, [currentQuestion, currentPosition, currentAnswer]);
 
-    console.log(height);
-
     return (
             <div ref={targetRef} className="container container--survey">
                 <div className="row justify-content-center align-items-center survey-content">
                     { currentPosition === 'start' && (
                     <>
-                        <div className={`${height <= 510 ? 'pull-down-20' : ''} col-12 col-lg-5 offset-lg-1 fixed-sm-bottom zindex-0 order-lg-1`}>
+                        <div className="col-12 col-lg-4 pt-4 text-center text-lg-start zindex-1">
+                            <h1 className="pt-sm-2">Find your perfect tan <br/>in 90 seconds!</h1>
+                            <p className="mb-0">Take the Tan matching quiz to find your perfect shade of gorgeous glow. It only takes 90 seconds to find your true colour match</p>
+                            <button className="btn btn-primary text-white mt-4" onClick={() => setPosition('question-1')}>Take the Quiz</button>
+                        </div>
+                        <div className={`${height <= 535 && height >= 415 ? 'pull-down' : height <= 414 ? 'd-none' : ''} col-12 col-lg-5 offset-lg-1 survey-lp-image zindex-0`}>
                             <picture>
                                 <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" />
             					<source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b426a652-ee5d-4534-5039-4b10fe9a3200/828x" />
                                 <img className="w-100" loading={height <= 510 ? 'lazy' : ''} src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" alt="Tan Variants"/>
                             </picture>
-                        </div>
-                        <div className="col-12 col-lg-4 pt-4 text-center text-lg-start zindex-1 order-lg-0">
-                            <h1 className="pt-sm-2">Find your perfect tan <br/>in 90 seconds!</h1>
-                            <p className="mb-0">Take the Tan matching quiz to find your perfect shade of gorgeous glow. It only takes 90 seconds to find your true colour match</p>
-                            <button className="btn btn-primary text-white mt-4" onClick={() => setPosition('question-1')}>Take the Quiz</button>
                         </div>
                     </>) }
 

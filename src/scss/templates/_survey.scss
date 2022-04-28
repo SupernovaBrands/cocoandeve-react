@@ -1,5 +1,11 @@
-// .survey-content {
-//     @include media-breakpoint-down(lg) {
-//         padding-top: calc-em(100);
-//     }
-// }
+.pull-down {
+	@include media-breakpoint-down(lg) {
+		bottom: -130px !important;
+	}
+}
+.survey-lp-image {
+    @include media-breakpoint-down(lg) {
+        position: fixed;
+        bottom: -20px;
+    }    
+}
