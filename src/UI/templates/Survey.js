@@ -129,9 +129,9 @@ const Survey = () => {
             if (thirdAnswered === 2) {
                 sku = 'CE0000032060'; // foam ultra dark
             } else if (thirdAnswered === 1) {
-                sku = 'CE0000432030'; // drops dark because drops don't have variant ultra dark
+                sku = 'CE0000432030'; // drops dark
             } else {
-                sku = 'CE0001962020'; // glow essential dark because don't have variant ultra dark
+                sku = 'CE0001962020'; // glow essential dark
             }
         }
 
@@ -261,7 +261,7 @@ const Survey = () => {
                             <p className="mb-0">Take the Tan matching quiz to find your perfect shade of gorgeous glow. It only takes 90 seconds to find your true colour match</p>
                             <button className="btn btn-primary text-white mt-4" onClick={() => setPosition('question-1')}>Take the Quiz</button>
                         </div>
-                        <div className={`${height <= 535 && height >= 415 ? 'pull-down' : height <= 414 ? 'd-none' : ''} col-12 col-lg-5 offset-lg-1 survey-lp-image zindex-0`}>
+                        <div className={`${height <= 535 ? 'pull-down' : ''} col-12 col-lg-5 offset-lg-1 survey-lp-image zindex-0`}>
                             <picture>
                                 <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" />
             					<source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b426a652-ee5d-4534-5039-4b10fe9a3200/828x" />
