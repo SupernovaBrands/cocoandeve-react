@@ -110,25 +110,25 @@ const Survey = () => {
 
         let sku = 'CE0000032020'; // foam medium
         if (firstAnswered === 1) {            
-            if (thirdAnswered === 1) {
+            if (thirdAnswered === 2) {
                 sku = 'CE0000032020'; // foam medium
-            } else if (thirdAnswered === 2) {
+            } else if (thirdAnswered === 1) {
                 sku = 'CE0000432020'; // drops medium
             } else {
                 sku = 'CE0001202020'; // glow essential medium
             }
         } else if (firstAnswered === 2) {
-            if (thirdAnswered === 1) {
+            if (thirdAnswered === 2) {
                 sku = 'CE0000032040'; // foam dark
-            } else if (thirdAnswered === 2) {
+            } else if (thirdAnswered === 1) {
                 sku = 'CE0000432030'; // drops dark
             } else {
                 sku = 'CE0001962020'; // glow essential dark
             }
         } else if (firstAnswered === 3) {
-            if (thirdAnswered === 1) {
+            if (thirdAnswered === 2) {
                 sku = 'CE0000032060'; // foam ultra dark
-            } else if (thirdAnswered === 2) {
+            } else if (thirdAnswered === 1) {
                 sku = 'CE0000432030'; // drops dark because drops don't have variant ultra dark
             } else {
                 sku = 'CE0001962020'; // glow essential dark because don't have variant ultra dark
@@ -136,6 +136,7 @@ const Survey = () => {
         }
 
         const findVariant = variants.find((variant) => variant.sku === sku);
+
         if (findVariant) {
             setSelectedVariant([findVariant]);
             
