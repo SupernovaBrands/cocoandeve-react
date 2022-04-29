@@ -38,7 +38,6 @@ const Survey = () => {
     const [currentQuestion, setQuestion] = useState(initialCurrentQuestion);
     const [progressValue, setProgress] = useState(currentQuestion / Questions.length * 100);
     const [currentAnswer, setAnswer] = useState(answerData);
-    const [selectedVariant, setSelectedVariant] = useState(null); // dummy selected array variants
 
     const postMessageCookie = (key, val) => {
         if (window.top === window.self) return;
@@ -138,7 +137,6 @@ const Survey = () => {
         const findVariant = variants.find((variant) => variant.sku === sku);
 
         if (findVariant) {
-            setSelectedVariant([findVariant]);
             
             if (window.top !== window.self && currentPosition === 'finished') {
                 postMessageCookie('surveyResult', findVariant.product_handle);
@@ -210,14 +208,14 @@ const Survey = () => {
         });
     }
 
-    const addToCart = (variantId, qty) => {
-        if (window.top === window.self) return;
-        window.parent.postMessage({
-            'func': 'addToCartFromMessage',
-            'variantId': variantId,
-            'quantity': qty,
-       }, `https://${site}`);
-    }
+    // const addToCart = (variantId, qty) => {
+    //     if (window.top === window.self) return;
+    //     window.parent.postMessage({
+    //         'func': 'addToCartFromMessage',
+    //         'variantId': variantId,
+    //         'quantity': qty,
+    //    }, `https://${site}`);
+    // }
 
     useEffect(() => {
         if (currentPosition === 'finished') gettingResult();

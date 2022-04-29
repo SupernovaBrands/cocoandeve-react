@@ -13,8 +13,6 @@
     
     .footer-action {
         @include media-breakpoint-down(lg) {
-            position: fixed;
-            z-index: $zindex-sticky;
             .btn-next {
                 width: calc(100% - #{$grid-gutter-width-lg});
             }
