@@ -256,7 +256,7 @@ const Survey = () => {
                     <>
                         <div className="col-12 col-lg-4 pt-4 text-center text-lg-start zindex-1">
                             <h1 className="pt-sm-2">Find your perfect tan <br/>in 90 seconds!</h1>
-                            <p className="mb-0">Take the Tan matching quiz to find your perfect shade of gorgeous glow. It only takes 90 seconds to find your true colour match</p>
+                            <p className="mb-0">Take the Tan matching quiz to find your perfect shade of gorgeous glow. It only takes 90 seconds to find your true colour match.</p>
                             <button className="btn btn-primary text-white mt-4" onClick={() => setPosition('question-1')}>Take the Quiz</button>
                         </div>
                         <div className={`${height <= 535 ? 'pull-down' : ''} col-12 col-lg-5 offset-lg-1 survey-lp-image zindex-0`}>
