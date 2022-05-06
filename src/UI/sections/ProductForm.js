@@ -14,7 +14,7 @@ import PropTypes from 'prop-types';
 
 const ProductForm = (props) => {
     let params = (new URL(document.location)).searchParams;
-	let activeStore = params.get("utm_store");
+	let activeStore = params.get("utm_store") || 'us';
 
     const productCtx = useContext(ProductContext);
     productCtx.storeChange(activeStore);
