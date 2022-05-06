@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import ProductImageCarousel from "../components/ProductImageCarousel";
 import QuantityBox from '../components/QuantityBox';
 import ReviewStar from '../components/ReviewStar';
+import ProductContext from '../../store/product-context';
 
 import { ReactComponent as FormulaList1 } from '../../assets/skin-protection.svg';
 import { ReactComponent as FormulaList2 } from '../../assets/guava.svg';
@@ -12,6 +13,15 @@ import { ReactComponent as FormulaList5 } from '../../assets/mitt.svg';
 import PropTypes from 'prop-types';
 
 const ProductForm = (props) => {
+    let params = (new URL(document.location)).searchParams;
+	let activeStore = params.get("utm_store");
+
+    const productCtx = useContext(ProductContext);
+    productCtx.storeChange(activeStore);
+
+    const defaultPrice = productCtx.price;
+    const defaultCompareAtPrice = productCtx.compareAtPrice;
+    const defaultSaving = productCtx.saving;
     const {
         noReviews,
         variants,
@@ -102,9 +112,9 @@ const ProductForm = (props) => {
             observer.observe(mobileSwatchTrigger);
         }
     }, 500);
+    
 
     const getSavingSelectedVariant = () => {
-        console.log('', selectedVariant);
         if (!selectedVariant.compare_at_price) return 0;
         const compareAtPrice = parseFloat(selectedVariant.compare_at_price.replace('$','').replace('£','').replace('€'));
         const price = parseFloat(selectedVariant.compare_at_price.replace('$','').replace('£','').replace('€'));
@@ -118,7 +128,7 @@ const ProductForm = (props) => {
             <div className="row align-items-start">
                 <ProductImageCarousel />
                 <div className={`col-12 col-lg-5 order-lg-3 mt-2 mt-lg-0 d-flex flex-column ${variantSelectorStyle === 'flex' ? 'text-start': 'text-center text-lg-start'}`}>
-                    <p className="font-size-lg mb-1 order-lg-1">Sunny Honey</p>
+                    <p className="font-size-lg mb-1 order-lg-1" >Sunny Honey</p>
                     <h1 className={`${titleHeading ? titleHeading : ''} mb-1 mb-lg-2 order-lg-1`}>{ selectedVariant && selectedVariant.product_title ? selectedVariant.product_title : 'Bali Bronzing Bundle' }</h1>
                     { !noReviews && (
                         <div className="d-flex mb-0 mb-lg-1 justify-content-center justify-content-lg-start order-lg-0">
@@ -131,9 +141,9 @@ const ProductForm = (props) => {
                     )}
                     { !selectedVariant.price && (
                         <p className="my-1 order-lg-2">
-                            <span className="text-linethrough mr-25 text-muted h2 ">$89.80</span>
-                            <span className="mr-25 text-nowrap ms-1 h2 ">$62.80</span>
-                            <span className="text-primary text-nowrap text-save p-1 h2 fw-normal">(Save 30%)</span>
+                            <span className="text-linethrough mr-25 text-muted h2 ">{defaultPrice}</span>
+                            <span className="mr-25 text-nowrap ms-1 h2 ">{defaultCompareAtPrice}</span>
+                            <span className="text-primary text-nowrap text-save p-1 h2 fw-normal">({defaultSaving})</span>
                         </p>
                     )}
                     {  selectedVariant.price && (
@@ -197,8 +207,8 @@ const ProductForm = (props) => {
                         <button className='d-flex btn btn-primary btn-lg px-2 w-100' onClick={onAddToCart}>
                             <span className="text-white w-100 m-0 d-block text-start" >Add to cart</span>
                             <p className="d-block m-0">
-                                <span className="text-white text-linethrough mr-25 text-nowrap fw-normal">$89.80</span>
-                                <span className="text-white mr-25 text-nowrap ms-1">$62.80</span>
+                                <span className="text-white text-linethrough mr-25 text-nowrap fw-normal">{defaultCompareAtPrice}</span>
+                                <span className="text-white mr-25 text-nowrap ms-1">{defaultPrice}</span>
                             </p>
                         </button>
                     </div>
