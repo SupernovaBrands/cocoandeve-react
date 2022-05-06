@@ -1,7 +1,8 @@
-import React, { Fragment, lazy, Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 import ProductForm from '../sections/ProductForm';
 import '../../product.scss';
 import Carousel from '../components/Carousel';
+import ProductProvider from '../../store/ProductProvider';
 
 // import FaqAccordion from '../sections/FaqAccordion';
 // import SeenIn from '../sections/SeenIn';
@@ -13,17 +14,17 @@ const SeenIn = lazy(() => import('../sections/SeenIn'));
 const FaqAccordion = lazy(() => import('../sections/FaqAccordion'));
 const SectionIRL = lazy(() => import('../sections/SectionIRL'));
 
-const ProductDetail = () => {
+const ProductDetail = (props) => {
     return (
-        <Fragment>
-            <ProductForm />
+        <ProductProvider>
+            <ProductForm mainContent={props.mainContent} />
             <Suspense fallback={<div></div>}>
                 <CustomerReview />
                 <SeenIn />
                 <SectionIRL />
                 <FaqAccordion />
             </Suspense>
-        </Fragment>
+        </ProductProvider>
     )
 };
 export default ProductDetail
