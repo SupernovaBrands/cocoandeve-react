@@ -1,8 +1,9 @@
-import React, { Fragment, lazy, Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 
 import RangeBanner from "../sections/RangeBanner";
 import '../../range.scss';
 import RangeCarousel from "../sections/RangeCarousel";
+import RangeProvider from "../../store/RangeProvider";
 // import ProductForm from '../sections/ProductForm';
 // import RangeFormula from "../sections/RangeFormula";
 // import FaqAccordion from "../sections/FaqAccordion";
@@ -17,9 +18,10 @@ const FaqAccordion = lazy(() => import('../sections/FaqAccordion'));
 const SectionIRL = lazy(() => import('../sections/SectionIRL'));
 const CustomerReview = lazy(() => import('../sections/CustomerReview'));
 
+
 const TanRange = () => {
     return (
-        <Fragment>
+        <RangeProvider>
             <RangeBanner />
             <RangeCarousel />
             <Suspense fallback={<div></div>}>
@@ -30,7 +32,7 @@ const TanRange = () => {
                 <CustomerReview />
                 {/* <ProductForm /> */}
             </Suspense>
-        </Fragment>
+        </RangeProvider>
     )
 };
 export default TanRange
