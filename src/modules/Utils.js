@@ -1,0 +1,64 @@
+import { useLayoutEffect, useState } from "react";
+
+export const Base64 = {
+	decode(str) {
+		return decodeURIComponent(
+			atob(str)
+				.split('')
+				.map(function (c) {
+					return `%${(`00${c.charCodeAt(0).toString(16)}`).slice(-2)}`;
+				})
+				.join(''),
+		);
+	},
+	encode(str) {
+		return btoa(
+			encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function toSolidBytes(match, p1) {
+				return String.fromCharCode(`0x${p1}`);
+			}),
+		);
+	},
+};
+
+export const setCookie = (name, value, days = 1, path = '/', domain) => {
+	let expires = '';
+	if (days) {
+		const date = new Date();
+		date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+		expires = `; expires=${date.toUTCString()}`;
+	}
+	document.cookie = `${name}=${value || ''}${expires}; path=${path}${(domain) ? `;domain=${domain}` : ''}`;
+};
+
+export const getCookie = (name) => {
+	const nameEQ = `${name}=`;
+	const ca = document.cookie.split(';');
+	for (let i = 0; i < ca.length; i += 1) {
+		let c = ca[i];
+		while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+		if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+	}
+	return null;
+};
+
+export const useWindowSize = () => {
+	const [size, setSize] = useState([0, 0]);
+	useLayoutEffect(() => {
+		function updateSize() {
+			setSize([window.innerWidth, window.innerHeight]);
+		  }
+		window.addEventListener('resize', updateSize);
+		updateSize();
+		  return () => window.removeEventListener('resize', updateSize);
+	}, []);
+	return size;
+}
+
+export const toTitleCase = (str) => {
+	return str.replace(
+	  /\w\S*/g,
+	  function(txt) {
+		return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+	  }
+	);
+};
