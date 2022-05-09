@@ -75,7 +75,7 @@ const ProductForm = (props) => {
         const shadeText = productVariants.find((shade) => shade.id === variantId)
         setSelectedVariantId(variantId);
         setSelectedVariantShadeText(shadeText.text);
-        const url = selectedVariantId !== '' && `https://www.cocoandeve.com?itemtoadd=${selectedVariantId}&quantity=${quantity}`;
+        const url = selectedVariantId !== '' && `https://www.cocoandeve.com?itemtoadd=${variantId}&quantity=${quantity}`;
         setButtonUrl(url);
     }
 
@@ -140,10 +140,10 @@ const ProductForm = (props) => {
                         <p className="font-size-lg d-none d-lg-block order-lg-2">The only self-tanner you need ever need. <br/>100% Natural DHA. Cruelty Free. Vegan. </p>
                     )}
                     { !selectedVariant.price && (
-                        <p className="my-1 order-lg-2">
-                            <span className="text-linethrough mr-25 text-muted h2 ">{defaultPrice}</span>
-                            <span className="mr-25 text-nowrap ms-1 h2 ">{defaultCompareAtPrice}</span>
-                            <span className="text-primary text-nowrap text-save p-1 h2 fw-normal">({defaultSaving})</span>
+                        <p className="my-1 order-lg-2 d-block">
+                            <span className="text-linethrough mr-25 text-muted h2 d-inline-block mb-0">{defaultCompareAtPrice}</span>
+                            <span className="mr-25 text-nowrap ms-1 h2 d-inline-block mb-0">{defaultPrice}</span>
+                            <span className="text-primary text-nowrap text-save p-1 h2 fw-normal d-inline-block mb-0 py-0">({defaultSaving})</span>
                         </p>
                     )}
                     {  selectedVariant.price && (

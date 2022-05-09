@@ -50,7 +50,7 @@ const productPrice = {
             comparePrice: '£57.20',
         },
         eu: {
-            price: '€26,90',
+            price: '€45.70',
             comparePrice: '€57.20',
         },
         au: {
@@ -58,15 +58,15 @@ const productPrice = {
             comparePrice: '$79.80',
         },
         int: {
-            price: 'SG$27.90',
-            comparePrice: null,
+            price: 'SG$45.70',
+            comparePrice: 'SG$57.20',
         },
         de: {
-            price: '€26,90',
+            price: '€45.70',
             comparePrice: '€57.20',
         },
         fr: {
-            price: '€26,90',
+            price: '€45.70',
             comparePrice: '€57.20',
         },
     },
