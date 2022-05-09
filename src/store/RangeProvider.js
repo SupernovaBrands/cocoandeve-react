@@ -240,38 +240,38 @@ const productPrice = {
             comparePrice: '€82,80',
         },
     },
-    'dewy-glow-bundle': {
+    'glowy-face-tan-set': {
         us: {
-            price: '$51.00',
-            comparePrice: '$63.80',
+            price: '$62.20',
+            comparePrice: '$77.80',
         },
         ca: {
-            price: '$7199.00',
-            comparePrice: '$88.80',
+            price: '$84.60',
+            comparePrice: '$105.80',
         },
         uk: {
-            price: '£41.40',
-            comparePrice: '£51.80',
+            price: '£54.20',
+            comparePrice: '£67.80',
         },
         eu: {
-            price: '€47.00',
-            comparePrice: '€58.80',
+            price: '€61,40',
+            comparePrice: '€76,80',
         },
         au: {
-            price: '$71.00',
-            comparePrice: '$88.80',
+            price: '$95.80',
+            comparePrice: '$119.80',
         },
         int: {
-            price: 'SG$71.80',
-            comparePrice: '$89.80',
+            price: 'SG$89.50',
+            comparePrice: 'SG$111.90',
         },
         de: {
-            price: '€47.00',
-            comparePrice: '€58.80',
+            price: '€61,40',
+            comparePrice: '€76,80',
         },
         fr: {
-            price: '€47.00',
-            comparePrice: '€58.80',
+            price: '€61,40',
+            comparePrice: '€76,80',
         },
     }
 }

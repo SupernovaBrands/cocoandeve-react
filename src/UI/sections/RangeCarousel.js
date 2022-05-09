@@ -9,6 +9,9 @@ import { useWindowSize } from "../../modules/Utils";
 
 const RangeCarousel = () => {
 
+	let params = (new URL(document.location)).searchParams;
+	let activeStore = params.get('utm_store') || 'us';
+
 	const PRODUCTS_FACE = [
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
@@ -19,18 +22,32 @@ const RangeCarousel = () => {
 				rating={4.8}
 				totalReviews='735'
 				handle='bronzing-self-tanner-drops' />
-        },
-		{
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
+        }
+	];
+
+	if (['us', 'ca', 'au'].includes(activeStore)) {
+		PRODUCTS_FACE.push({
+			carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+			content: <ProductCard
 				title='SPF & Glow Kit'
 				img={`${process.env.PUBLIC_URL}/images/Featured_CExNakedSundaysBundle_532x.jpg`}
 				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_CExNakedSundaysBundle_532x.webp`}
 				rating={4.8}
 				totalReviews='735'
 				handle='spf-glow-kit' />
-        }
-	];
+		});
+	} else {
+		PRODUCTS_FACE.push({
+			carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+			content: <ProductCard
+				title='Glowy Face Tan Set'
+				img={`${process.env.PUBLIC_URL}/images/Featured_GlowyFaceTanSet_532x.jpg`}
+				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_GlowyFaceTanSet_532x.webp`}
+				rating={4.9}
+				totalReviews='373'
+				handle='glowy-face-tan-set' />
+		});
+	}
 
 	const PRODUCTS_BODY = [
         {
@@ -145,56 +162,6 @@ const RangeCarousel = () => {
 				rating={4.8}
 				totalReviews='2021'
 				handle='tanning-goddess' />
-        },
-		{
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				title='Dewy Glow Bundle'
-				img={`${process.env.PUBLIC_URL}/images/Featured_DewyGlowBundle-SHWhip_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_DewyGlowBundle-SHWhip_532x.webp`}
-				rating={4.8}
-				totalReviews='199'
-				handle='dewy-glow-bundle' />
-        },
-		{
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				title='Bali Bae Self Tan Set'
-				img={`${process.env.PUBLIC_URL}/images/Featured_TanBundlewithBackApplicator_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanBundlewithBackApplicator_532x.webp`}
-				rating={4.8}
-				totalReviews='4336'
-				handle='bali-bae-self-tan-set' />
-        },
-		{
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				title='Sunny Honey Bali Bronzing Bundle'
-				img={`${process.env.PUBLIC_URL}/images/Featured_BaliBronzingBundle_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BaliBronzingBundle_532x.webp`}
-				rating={4.8}
-				totalReviews='4336'
-				handle='sunny-honey-bali-bronzing-self-tan-set' />
-        },
-		{
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				title='Tanning Goddess Kit'
-				img={`${process.env.PUBLIC_URL}/images/Featured_TanningGoddessKit_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningGoddessKit_532x.webp`}
-				rating={4.8}
-				totalReviews='2021'
-				handle='tanning-goddess' />
-        },
-		{
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				title='Dewy Glow Bundle'
-				img={`${process.env.PUBLIC_URL}/images/Featured_DewyGlowBundle-SHWhip_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_DewyGlowBundle-SHWhip_532x.webp`}
-				rating={4.8}
-				totalReviews='199'
-				handle='dewy-glow-bundle' />
         }
 	];
 
@@ -202,16 +169,20 @@ const RangeCarousel = () => {
 	const [width] = useWindowSize();
 	const isMobile = width < 768;
 	let productFaceMerged = [];
+	let productValuemerged = [];
 	if (isMobile) {
 		const PRODUCTS_FACE_DUP = [...PRODUCTS_FACE];
 		productFaceMerged = [...PRODUCTS_FACE, ...PRODUCTS_FACE_DUP, ...PRODUCTS_FACE_DUP];
+
+		const PRODUCTS_VALUE_DUP = [...PRODUCTS_VALUE_SETS];
+		productValuemerged = [...PRODUCTS_VALUE_SETS, ...PRODUCTS_VALUE_DUP, ...PRODUCTS_VALUE_DUP];
 	}
 
 	const CAROUSEL_TABS = [
 		{
 			carouselId: 'FeaturedFace',
 			isTabActive: false,
-			carouselItems: PRODUCTS_FACE,
+			carouselItems: PRODUCTS_FACE.length < 4 && isMobile ? productFaceMerged : PRODUCTS_FACE,
 			tabLabel: 'Face'
 		},
 		{
@@ -223,7 +194,7 @@ const RangeCarousel = () => {
 		{
 			carouselId: 'FeaturedValueSets',
 			isTabActive: false,
-			carouselItems: PRODUCTS_VALUE_SETS,
+			carouselItems: PRODUCTS_VALUE_SETS.length < 4 && isMobile ? productValuemerged : PRODUCTS_VALUE_SETS,
 			tabLabel: 'Value Sets'
 		}
 	];
@@ -250,7 +221,7 @@ const RangeCarousel = () => {
 			</div>
             <div className='tab-content container px-0 px-md-2 text-center'>
 				{CAROUSEL_TABS.map((item, idx) => (
-					<Carousel key={`RangeCarousel${idx}`} id={item.carouselId} centered={true} items={item.carouselItems.length < 4 && isMobile ? productFaceMerged : item.carouselItems} slideNumber='4' className={`tab-pane fade carousel slide carousel--loop ${item.isTabActive ? 'show active' : ''}`} additionalClasses='row'>
+					<Carousel key={`RangeCarousel${idx}`} id={item.carouselId} centered={true} items={item.carouselItems} slideNumber='4' className={`tab-pane fade carousel slide carousel--loop ${item.isTabActive ? 'show active' : ''}`} additionalClasses='row'>
 
 						{item.carouselItems.length > 4 && (
 							<Fragment>

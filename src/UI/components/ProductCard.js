@@ -3,12 +3,16 @@ import RangeContext from "../../store/range-context";
 import ReviewStar from "./ReviewStar";
 
 const ProductCard = (props) => {
-	const ProductUrl = 'https://www.cocoandeve.com/products/';
+	let ProductUrl = 'https://www.cocoandeve.com/products/';
 	let params = (new URL(document.location)).searchParams;
 	let activeStore = params.get('utm_store') || 'us';
 
 	const productCardCtx = useContext(RangeContext);
 	const productPrices = productCardCtx[props.handle][activeStore];
+
+	if (activeStore !== 'us') {
+		ProductUrl = ProductUrl.replace(ProductUrl.split('//')[1].split('.')[0], activeStore);
+	}
 
 	return (
 		<Fragment>
