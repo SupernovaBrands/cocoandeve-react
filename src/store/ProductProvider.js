@@ -28,13 +28,13 @@ const price = {
         saving: 'Save 29%',
     },
     int: {
-        price: '$64.90',
-        compareAtPrice: '$101.90',
+        price: 'SG$64.90',
+        compareAtPrice: 'SG$101.90',
         saving: 'Save 36%',
     },
     fr: {
-        price: '$69.20',
-        compareAtPrice: '$99.90',
+        price: '€46,90',
+        compareAtPrice: '€65,90',
         saving: '29% de réduction',
     },
     de: {
