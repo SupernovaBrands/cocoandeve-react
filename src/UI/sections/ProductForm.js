@@ -75,7 +75,7 @@ const ProductForm = (props) => {
         const shadeText = productVariants.find((shade) => shade.id === variantId)
         setSelectedVariantId(variantId);
         setSelectedVariantShadeText(shadeText.text);
-        const url = selectedVariantId !== '' && `https://www.cocoandeve.com?itemtoadd=${selectedVariantId}&quantity=${quantity}`;
+        const url = selectedVariantId !== '' && `https://www.cocoandeve.com?itemtoadd=${variantId}&quantity=${quantity}`;
         setButtonUrl(url);
     }
 
