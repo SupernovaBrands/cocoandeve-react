@@ -22,7 +22,7 @@ const FaqAccordion = () => {
     ]
 
 	return (
-		<section className='range__carousel bg-yellow-light py-3'>
+		<section className='range__carousel faq-accordion bg-yellow-light py-3'>
             <div className="container">
                 <h2 className="text-center">Your questions – answered</h2>
                 <div className="accordion list-unstyled border-0 mt-4 " id="faqSection">
