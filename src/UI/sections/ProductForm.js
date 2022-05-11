@@ -89,6 +89,9 @@ const ProductForm = (props) => {
         if (typeof addToCart === 'function') {
             addToCart(selectedVariantId, quantity);
         } else {
+            if (typeof(ga) == 'function') {
+                window.ga('send', 'event', 'Add to Cart', 'lp_pdp_cta', 'sunny-honey-bali-bronzing-self-tan-set');
+            }
             window.location.href = buttonUrl;
         }
     }
