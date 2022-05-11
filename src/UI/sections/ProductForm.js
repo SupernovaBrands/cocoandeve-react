@@ -91,7 +91,7 @@ const ProductForm = (props) => {
         } else {
             if (typeof (ga) === 'function') {
                 window.ga('send', 'event', {
-                    eventCategory: 'Add to Cart LP',
+                    eventCategory: 'Add to Cart',
                     eventAction: 'lp_pdp_cta',
                     eventLabel: 'sunny-honey-bali-bronzing-self-tan-set',
                     eventValue: 0,
