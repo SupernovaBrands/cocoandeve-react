@@ -132,7 +132,7 @@ const ProductForm = (props) => {
     }
     
     return (
-        <div className="container px-g mb-0 mt-lg-4">
+        <div className="product-form container px-g mb-0 mt-lg-4">
             <div className="row align-items-start">
                 <ProductImageCarousel />
                 <div className={`col-12 col-lg-5 order-lg-3 mt-2 mt-lg-0 d-flex flex-column ${variantSelectorStyle === 'flex' ? 'text-start': 'text-center text-lg-start'}`}>
