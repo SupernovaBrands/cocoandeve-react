@@ -15,34 +15,3 @@
 		}
 	}
 }
-
-.pdp-abtest {
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-
-        > div, > section {
-            width: 100%;
-        }
-    }
-
-    .product-form {
-        order: 0;
-    }
-
-    .faq-accordion {
-        order: 1;
-        margin-top: calc-em(20);
-
-		@include media-breakpoint-up(lg) {
-			margin-top: calc-em(40);
-		}
-    }
-
-    .customer-reviews,
-    .as-seen-in,
-    .customer-reviews {
-        order: 2;
-    }
-}

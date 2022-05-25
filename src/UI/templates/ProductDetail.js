@@ -10,13 +10,6 @@ const SeenIn = lazy(() => import('../sections/SeenIn'));
 const FaqAccordion = lazy(() => import('../sections/FaqAccordion'));
 const SectionIRL = lazy(() => import('../sections/SectionIRL'));
 
-isABTest('o3JFdSN0S1Ogpio5tWJmBg').then(({ test, value }) => {
-    if (test && value === '1') {
-        var body = document.querySelector('body');
-        body.classList.add('pdp-abtest');
-    }
-});
-
 const ProductDetail = (props) => {
     return (
         <ProductProvider>
