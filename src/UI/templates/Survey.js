@@ -323,7 +323,7 @@ const Survey = () => {
                     }
                     { currentPosition === 'finished' && (
                         <div className="question-box analyzing d-flex justify-content-center align-items-center flex-column">
-                            <p className="question-box__title">Analysing your answers</p>
+                            <p className="question-box__title">{Translations[lang].loading}</p>
                             <LoaderSvg className="loader mt-0 mb-0"/>
                         </div>
                     )

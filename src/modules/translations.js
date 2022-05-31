@@ -8,7 +8,8 @@ const Translations = {
             next: 'Next',
             prev: 'Previous Question',
             result: 'See results!',
-        }
+        },
+        loading: 'Analysing your answers',
     },
     fr: {
         heading: "Trouvez votre teinte d'autobronzant parfaite \nen 90 secondes !",
@@ -19,7 +20,8 @@ const Translations = {
             next: 'Suivant',
             prev: 'Question précédente',
             result: 'Voir les résultats !',
-        }
+        },
+        loading: 'Analyse de vos réponses',
     },
     de: {
         heading: "Finde deine perfekte Bräune \nin 90 Sekunden!",
@@ -30,7 +32,8 @@ const Translations = {
             next: 'Weiter',
             prev: 'Vorherige Frage',
             result: 'Siehe Ergebnisse!',
-        }
+        },
+        loading: 'Analyse Ihrer Antworten',
     }
 }
 
