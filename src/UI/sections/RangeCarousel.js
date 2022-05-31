@@ -1,16 +1,23 @@
 import ProductCard from "../components/ProductCard";
 import Carousel from "../components/Carousel";
 import carouselLoop from "../../modules/carousel-loop";
+import RangeContext from "../../store/range-context";
 
 import { ReactComponent as ChevronPrev1 } from '../../assets/chevron-prev.svg';
 import { ReactComponent as ChevronNext1 } from '../../assets/chevron-next.svg';
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
 import { useWindowSize } from "../../modules/Utils";
 
 const RangeCarousel = () => {
 
 	let params = (new URL(document.location)).searchParams;
 	let activeStore = params.get('utm_store') || 'us';
+
+	const rangeCtx = useContext(RangeContext);
+	let carouselData = rangeCtx.carouselSection[activeStore];
+	if (!carouselData) {
+		carouselData = rangeCtx.carouselSection['us'];
+	}
 
 	const PRODUCTS_FACE = [
         {
@@ -29,7 +36,6 @@ const RangeCarousel = () => {
 		PRODUCTS_FACE.push({
 			carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
 			content: <ProductCard
-				title='SPF & Glow Kit'
 				img={`${process.env.PUBLIC_URL}/images/Featured_CExNakedSundaysBundle_532x.jpg`}
 				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_CExNakedSundaysBundle_532x.webp`}
 				rating={4.8}
@@ -40,7 +46,6 @@ const RangeCarousel = () => {
 		PRODUCTS_FACE.push({
 			carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
 			content: <ProductCard
-				title='Glowy Face Tan Set'
 				img={`${process.env.PUBLIC_URL}/images/Featured_GlowyFaceTanSet_532x.jpg`}
 				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_GlowyFaceTanSet_532x.webp`}
 				rating={4.9}
@@ -53,7 +58,6 @@ const RangeCarousel = () => {
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
-				title='Sunny Honey Bali Bronzing Bundle'
 				img={`${process.env.PUBLIC_URL}/images/Featured_BaliBronzingBundle_532x.jpg`}
 				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BaliBronzingBundle_532x.webp`}
 				rating={4.8}
@@ -63,7 +67,6 @@ const RangeCarousel = () => {
 		{
             carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
-				title='Sunny Honey Bronzing Foam'
 				img={`${process.env.PUBLIC_URL}/images/Featured_BronzingFoam_532x.jpg`}
 				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BronzingFoam_532x.webp`}
 				rating={4.8}
@@ -73,7 +76,6 @@ const RangeCarousel = () => {
 		{
             carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
-				title='Tanning Goddess Kit'
 				img={`${process.env.PUBLIC_URL}/images/Featured_TanningGoddessKit_532x.jpg`}
 				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningGoddessKit_532x.webp`}
 				rating={4.8}
@@ -83,7 +85,6 @@ const RangeCarousel = () => {
 		{
             carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
-				title='Self Tan Travel Kit'
 				img={`${process.env.PUBLIC_URL}/images/Featured_TanningTravelKit_532x.jpg`}
 				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningTravelKit_532x.webp`}
 				rating={4.8}
@@ -93,7 +94,6 @@ const RangeCarousel = () => {
 		{
             carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
-				title='Sunny Honey Bali Bronzing Bundle'
 				img={`${process.env.PUBLIC_URL}/images/Featured_BaliBronzingBundle_532x.jpg`}
 				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BaliBronzingBundle_532x.webp`}
 				rating={4.8}
@@ -103,7 +103,6 @@ const RangeCarousel = () => {
 		{
             carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
-				title='Sunny Honey Bronzing Foam'
 				img={`${process.env.PUBLIC_URL}/images/Featured_BronzingFoam_532x.jpg`}
 				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BronzingFoam_532x.webp`}
 				rating={4.8}
@@ -113,7 +112,6 @@ const RangeCarousel = () => {
 		{
             carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
-				title='Tanning Goddess Kit'
 				img={`${process.env.PUBLIC_URL}/images/Featured_TanningGoddessKit_532x.jpg`}
 				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningGoddessKit_532x.webp`}
 				rating={4.8}
@@ -123,7 +121,6 @@ const RangeCarousel = () => {
 		{
             carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
-				title='Self Tan Travel Kit'
 				img={`${process.env.PUBLIC_URL}/images/Featured_TanningTravelKit_532x.jpg`}
 				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningTravelKit_532x.webp`}
 				rating={4.8}
@@ -136,7 +133,6 @@ const RangeCarousel = () => {
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
-				title='Bali Bae Self Tan Set'
 				img={`${process.env.PUBLIC_URL}/images/Featured_TanBundlewithBackApplicator_532x.jpg`}
 				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanBundlewithBackApplicator_532x.webp`}
 				rating={4.8}
@@ -146,7 +142,6 @@ const RangeCarousel = () => {
 		{
             carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
-				title='Sunny Honey Bali Bronzing Bundle'
 				img={`${process.env.PUBLIC_URL}/images/Featured_BaliBronzingBundle_532x.jpg`}
 				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BaliBronzingBundle_532x.webp`}
 				rating={4.8}
@@ -156,7 +151,6 @@ const RangeCarousel = () => {
 		{
             carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
             content: <ProductCard
-				title='Tanning Goddess Kit'
 				img={`${process.env.PUBLIC_URL}/images/Featured_TanningGoddessKit_532x.jpg`}
 				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningGoddessKit_532x.webp`}
 				rating={4.8}
@@ -183,19 +177,19 @@ const RangeCarousel = () => {
 			carouselId: 'FeaturedFace',
 			isTabActive: false,
 			carouselItems: PRODUCTS_FACE.length < 4 && isMobile ? productFaceMerged : PRODUCTS_FACE,
-			tabLabel: 'Face'
+			tabLabel: carouselData.face
 		},
 		{
 			carouselId: 'FeaturedBody',
 			isTabActive: true,
 			carouselItems: PRODUCTS_BODY,
-			tabLabel: 'Body'
+			tabLabel: carouselData.body
 		},
 		{
 			carouselId: 'FeaturedValueSets',
 			isTabActive: false,
 			carouselItems: PRODUCTS_VALUE_SETS.length < 4 && isMobile ? productValuemerged : PRODUCTS_VALUE_SETS,
-			tabLabel: 'Value Sets'
+			tabLabel: carouselData.valuesets
 		}
 	];
 
@@ -207,7 +201,7 @@ const RangeCarousel = () => {
 	return (
 		<section className='product-carousel py-2 py-lg-4 overflow-hidden'>
 			<div className='container d-flex flex-column align-items-center px-g'>
-				<h2 className='range__formula-title mb-2 text-center'>Self-tanners for any occasion</h2>
+				<h2 className='range__formula-title mb-2 text-center'>{carouselData.title}</h2>
 				<ul className="nav nav-tabs justify-content-center border-0 col-8 col-lg-3 px-0 pb-2 range__tab">
 					{CAROUSEL_TABS.map((item, idx) => (
 						<li key={`navItem${idx}`} className="nav-item">

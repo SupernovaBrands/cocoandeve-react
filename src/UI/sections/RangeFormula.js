@@ -1,32 +1,44 @@
+import { useContext } from "react";
+
+import RangeContext from "../../store/range-context";
 import { ReactComponent as FormulaList11 } from '../../assets/skin-protection.svg';
 import { ReactComponent as FormulaList21 } from '../../assets/guava.svg';
 import { ReactComponent as FormulaList31 } from '../../assets/diet.svg';
 import { ReactComponent as FormulaList41 } from '../../assets/clean.svg';
 
 const RangeFormula = () => {
+	let params = (new URL(document.location)).searchParams;
+	let activeStore = params.get('utm_store') || 'us';
+
+	const rangeCtx = useContext(RangeContext);
+	let formulaData = rangeCtx.formulaSection[activeStore];
+	if (!formulaData) {
+		formulaData = rangeCtx.formulaSection['us'];
+	}
+
 	return (
 		<section className='range__formula mt-2 mt-lg-4'>
 			<div className='container px-g'>
             	<div className='row align-items-center'>
 					<div className='col-12 col-lg-5 order-lg-2'>
-						<h2 className='range__formula-title text-center text-lg-start'>Revolutionary formula</h2>
-						<p className='h4 text-center text-lg-start mb-0 fw-normal'>NO nasties, NO orange tones.</p>
+						<h2 className='range__formula-title text-center text-lg-start'>{formulaData.title}</h2>
+						<p className='h4 text-center text-lg-start mb-0 fw-normal'>{formulaData.subtitle}</p>
 						<ul className='list-unstyled row mt-2 mb-0 range__formula-list'>
 							<li className='col-12 d-flex align-items-center mb-2'>
 								<FormulaList11 className='me-g d-flex flex-shrink-0 justify-content-center' />
-								Blurs pigmentation and perfects skin.
+								{formulaData.list1}
 							</li>
 							<li className='col-12 d-flex align-items-center mb-2'>
 								<FormulaList21 className='me-g d-flex flex-shrink-0 justify-content-center' />
-								Tropical mango and guava scent<br />(no biscuit smell!)
+								{formulaData.list2}
 							</li>
 							<li className='col-12 d-flex align-items-center mb-2'>
 								<FormulaList31 className='me-g d-flex flex-shrink-0 justify-content-center' />
-								Lightweight, non-sticky formula.
+								{formulaData.list3}
 							</li>
 							<li className='col-12 d-flex align-items-center'>
 								<FormulaList41 className='me-g d-flex flex-shrink-0 justify-content-center' />
-								Developed with a green-grey base for a natural looking, golden glow with no orangey tones.
+								{formulaData.list4}
 							</li>
 						</ul>
 					</div>
@@ -38,7 +50,7 @@ const RangeFormula = () => {
 				</div>
 			</div>
 			<div className='range__formula-tagline bg-yellow-light-secondary text-center d-lg-none font-size-sm fw-bold py-g mt-2'>
-				No sulfates · No silicone · No parabens · Vegan
+				{formulaData.footer}
 			</div>
         </section>
 	);
