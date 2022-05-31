@@ -185,7 +185,7 @@ const Survey = () => {
         keys.forEach((key,index) => {
             const q = Questions[index];
             const a = currentAnswer[key];
-            const label = q.question;
+            const label = q.question[lang];
             const action = typeof(a) === 'object' ? a.join(',') : a;
             window.parent.postMessage({
                 'func': 'callGaEvent',
@@ -201,7 +201,7 @@ const Survey = () => {
         for (const [key, value] of Object.entries(currentAnswer)) {
             const idxQ = key - 1;
             if (Questions[idxQ]) {
-                const questionText = `${key}: ${Questions[idxQ].question}`;
+                const questionText = `${key}: ${Questions[idxQ].question[lang]}`;
                 dataForSaving[questionText] = value;
             }
         }
