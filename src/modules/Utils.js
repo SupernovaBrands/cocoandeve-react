@@ -62,3 +62,29 @@ export const toTitleCase = (str) => {
 	  }
 	);
 };
+
+export const waitFor = (condition, cb, errorCb = null, count = 0, counterLimit = 50) => {
+	// only try for 10s
+	if (typeof condition === 'function' && typeof cb === 'function' && count < counterLimit) {
+		setTimeout(() => {
+			if (condition()) {
+				cb();
+			} else {
+				waitFor(condition, cb, errorCb, count + 1, counterLimit);
+			}
+		}, 200);
+	} else if (typeof errorCb === 'function') {
+		errorCb();
+	}
+};
+
+export const isABTest = (testID) => new Promise((resolve) => {
+	waitFor(() => window.google_optimize && window.google_optimize.get, () => {
+		const testValue = window.google_optimize.get(testID);
+		if (!testValue) {
+			resolve({ test: false });
+		} else {
+			resolve({ test: true, value: `${testValue}` });
+		}
+	});
+});

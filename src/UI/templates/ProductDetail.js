@@ -3,11 +3,7 @@ import ProductForm from '../sections/ProductForm';
 import '../../product.scss';
 import Carousel from '../components/Carousel';
 import ProductProvider from '../../store/ProductProvider';
-
-// import FaqAccordion from '../sections/FaqAccordion';
-// import SeenIn from '../sections/SeenIn';
-// import CustomerReview from '../sections/CustomerReview';
-// import SectionIRL from '../sections/SectionIRL';
+import { isABTest } from "../../modules/Utils";
 
 const CustomerReview = lazy(() => import('../sections/CustomerReview'));
 const SeenIn = lazy(() => import('../sections/SeenIn'));
