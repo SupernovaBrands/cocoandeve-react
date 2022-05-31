@@ -35,23 +35,23 @@ const ProductForm = (props) => {
     const SHADES = [
         {
             id: 'medium',
-            text: 'Medium Shade - Gives skin a sun-kissed glow. Great for lighter skin tones!',
+            text: productCtx.shades.medium,
             class: 'medium',
         },
         {
             id: 'dark',
-            text: 'Dark Shade - For a back from vacay bronze. Ideal for medium skin tones!',
+            text: productCtx.shades.dark,
             class: 'dark',
         },
         {
             id: 'ultra-dark',
-            text: 'Ultra Dark Shade - A deep, rich tan. For deeper skin tones!',
+            text: productCtx.shades.ultra,
             class: 'ultra-dark',
         }
     ]
 
 
-    const [productVariants, setProductVariants] = useState(variants ? variants : SHADES);
+    const [productVariants, setProductVariants] = useState(SHADES);
 
     useEffect(() => {
         if (variants) {
@@ -136,8 +136,8 @@ const ProductForm = (props) => {
             <div className="row align-items-start">
                 <ProductImageCarousel />
                 <div className={`col-12 col-lg-5 order-lg-3 mt-2 mt-lg-0 d-flex flex-column ${variantSelectorStyle === 'flex' ? 'text-start': 'text-center text-lg-start'}`}>
-                    <p className="font-size-lg mb-1 order-lg-1" >Sunny Honey</p>
-                    <h1 className={`${titleHeading ? titleHeading : ''} mb-1 mb-lg-2 order-lg-1`}>{ selectedVariant && selectedVariant.product_title ? selectedVariant.product_title : 'Bali Bronzing Bundle' }</h1>
+                    <p className="font-size-lg mb-1 order-lg-1" >{productCtx.title1}</p>
+                    <h1 className={`${titleHeading ? titleHeading : ''} mb-1 mb-lg-2 order-lg-1`}>{ selectedVariant && selectedVariant.product_title ? selectedVariant.product_title : productCtx.title2 }</h1>
                     { !noReviews && (
                         <div className="d-flex mb-0 mb-lg-1 justify-content-center justify-content-lg-start order-lg-0">
                             <ReviewStar score={4.8} />
@@ -145,7 +145,7 @@ const ProductForm = (props) => {
                         </div>
                     )}
                     { !hideProductCaption && (
-                        <p className="font-size-lg d-none d-lg-block order-lg-2">The only self-tanner you need ever need. <br/>100% Natural DHA. Cruelty Free. Vegan. </p>
+                        <p className="font-size-lg d-none d-lg-block order-lg-2" dangerouslySetInnerHTML={{ __html: productCtx.description }}></p>
                     )}
                     { !selectedVariant.price && (
                         <p className="my-1 order-lg-2 d-block">
@@ -183,7 +183,7 @@ const ProductForm = (props) => {
                                         onChangeQuantity={onChangeQuantity}
                                     />
                                     </div>
-                                    <button key="ProductFormButton2" className="btn btn-lg btn-primary ms-lg-g w-100 text-white" type="submit" onClick={onAddToCart}>Add to Cart</button>
+                                    <button key="ProductFormButton2" className="btn btn-lg btn-primary ms-lg-g w-100 text-white" type="submit" onClick={onAddToCart}>{productCtx.atc}</button>
                                 </div>
                             </div>
                     </div>
@@ -192,23 +192,23 @@ const ProductForm = (props) => {
                     <ul className={`${cartPosition === 'top' ? 'order-lg-4' : ''} list-unstyled row mb-4 text-start order-lg-2`}>
                         <li className='col-12 d-flex align-items-center mb-2'>
                             <FormulaList1 className='me-g d-flex flex-shrink-0 justify-content-center' />
-                            Blurs pigmentation and perfects skin.
+                            {productCtx.benefits.formula1}
                         </li>
                         <li className='col-12 d-flex align-items-center mb-2'>
                             <FormulaList2 className='me-g d-flex flex-shrink-0 justify-content-center' />
-                            Tropical mango and guava scent<br />(no biscuit smell!)
+                            {productCtx.benefits.formula2}
                         </li>
                         <li className='col-12 d-flex align-items-center mb-2'>
                             <FormulaList3 className='me-g d-flex flex-shrink-0 justify-content-center' />
-                            Lightweight, non-sticky formula.
+                            {productCtx.benefits.formula3}
                         </li>
                         <li className='col-12 d-flex align-items-center mb-2'>
                             <FormulaList4 className='me-g d-flex flex-shrink-0 justify-content-center' />
-                            Developed with a green-grey base for a natural looking, golden glow with no orangey tones.
+                            {productCtx.benefits.formula4}
                         </li>
                         <li className='col-12 d-flex align-items-center'>
                             <FormulaList5 className='me-g d-flex flex-shrink-0 justify-content-center' />
-                            Soft tanning mitt and kabuki brush for a perfect fuss-free application.
+                            {productCtx.benefits.formula5}
                         </li>
                     </ul>
                     <div className='fixed-bottom d-lg-none mx-g mb-2 product-swatch-mobile'>

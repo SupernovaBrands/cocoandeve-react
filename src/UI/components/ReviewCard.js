@@ -1,6 +1,8 @@
 import ReviewStar from '../components/ReviewStar';
 import { ReactComponent as GreenCheck } from '../../assets/green-checkmark.svg';
 
+import { decodeHtml } from "../../modules/Utils";
+
 const ReviewCard = (props) => {
     return (
 
@@ -11,6 +13,7 @@ const ReviewCard = (props) => {
             </div>
             <p>{props.name}<GreenCheck className='ms-1' /></p>
             <p className="fw-bold">{props.caption}</p>
+            <div dangerouslySetInnerHTML={{ __html: props.text }}></div>
             {props.children}
         </div>
     )
