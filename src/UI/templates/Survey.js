@@ -13,19 +13,21 @@ import ProductVariants from "../../modules/ProductVariants";
 import { useSearchParams } from "react-router-dom";
 
 import { ReactComponent as LoaderSvg } from '../../assets/loader.svg';
-
+import Translations from '../../modules/translations';
 
 const Survey = () => {
     const [searchParams] = useSearchParams();
     const site = searchParams.get('site');
     const gId = searchParams.get('gaid');
+    const surveyState = searchParams.get('state');
+    const language = searchParams.get('lang');
 
     // refference width and height
     const targetRef = useRef();
     const { width, height } = useResizeDetector({ targetRef });
 
     // initial data
-    const initialState = getCookie('surveyPosition') || 'start';
+    const initialState = getCookie('surveyPosition') || surveyState ? 'question-1' : 'start';
     const initialCurrentQuestion = getCookie('currentQuestion') ? parseInt(getCookie('currentQuestion'), 10) : 1;
     const answerData = getCookie('answeredQuestion') ? JSON.parse(getCookie('answeredQuestion')) : {};
 
@@ -38,6 +40,12 @@ const Survey = () => {
     const [currentQuestion, setQuestion] = useState(initialCurrentQuestion);
     const [progressValue, setProgress] = useState(currentQuestion / Questions.length * 100);
     const [currentAnswer, setAnswer] = useState(answerData);
+
+    let lang = 'en';
+
+    if (language && ['en','de','fr'].includes(language)) {
+        lang = language;
+    }
 
     const postMessageCookie = (key, val) => {
         if (window.top === window.self) return;
@@ -88,14 +96,14 @@ const Survey = () => {
         setCookie('answeredQuestion', '');
         postMessageCookie('currentQuestion', 1);
         postMessageCookie('surveyPosition', 'start');
-        postMessageCookie('answeredQuestion', '');        
+        postMessageCookie('answeredQuestion', '');
     }
 
     const gettingResult = (close=false) => {
         // check first answer
         const firstAnswer = currentAnswer[1];
         const firstQuestion = Questions[0];
-        const firstAnswered = firstQuestion.answers.indexOf(firstAnswer) + 1;
+        const firstAnswered = firstQuestion.answers[lang].indexOf(firstAnswer) + 1;
 
         // check second answer
         // const secondAnswer = currentAnswer[2];
@@ -105,10 +113,10 @@ const Survey = () => {
         // check third answer
         const thirdAnswer = currentAnswer[3];
         const thirdQuestion = Questions[2];
-        const thirdAnswered = thirdQuestion.answers.indexOf(thirdAnswer) + 1;
+        const thirdAnswered = thirdQuestion.answers[lang].indexOf(thirdAnswer) + 1;
 
         let sku = 'CE0000032020'; // foam medium
-        if (firstAnswered === 1) {            
+        if (firstAnswered === 1) {
             if (thirdAnswered === 2) {
                 sku = 'CE0000032020'; // foam medium
             } else if (thirdAnswered === 1) {
@@ -137,7 +145,7 @@ const Survey = () => {
         const findVariant = variants.find((variant) => variant.sku === sku);
 
         if (findVariant) {
-            
+
             if (window.top !== window.self && currentPosition === 'finished') {
                 postMessageCookie('surveyResult', findVariant.product_handle);
                 postMessageCookie('surveyResultSku', findVariant.sku);
@@ -177,7 +185,7 @@ const Survey = () => {
         keys.forEach((key,index) => {
             const q = Questions[index];
             const a = currentAnswer[key];
-            const label = q.question;
+            const label = q.question[lang];
             const action = typeof(a) === 'object' ? a.join(',') : a;
             window.parent.postMessage({
                 'func': 'callGaEvent',
@@ -193,7 +201,7 @@ const Survey = () => {
         for (const [key, value] of Object.entries(currentAnswer)) {
             const idxQ = key - 1;
             if (Questions[idxQ]) {
-                const questionText = `${key}: ${Questions[idxQ].question}`;
+                const questionText = `${key}: ${Questions[idxQ].question[lang]}`;
                 dataForSaving[questionText] = value;
             }
         }
@@ -207,15 +215,6 @@ const Survey = () => {
             body: JSON.stringify(data),
         });
     }
-
-    // const addToCart = (variantId, qty) => {
-    //     if (window.top === window.self) return;
-    //     window.parent.postMessage({
-    //         'func': 'addToCartFromMessage',
-    //         'variantId': variantId,
-    //         'quantity': qty,
-    //    }, `https://${site}`);
-    // }
 
     useEffect(() => {
         if (currentPosition === 'finished') gettingResult();
@@ -241,12 +240,12 @@ const Survey = () => {
                 gettingResult();
             }
         }
-        
+
         if (window.addEventListener) {
             window.addEventListener('message', window.onMessage, false);
         } else if (window.attachEvent) {
             window.attachEvent('onmessage', window.onMessage, false);
-        }        
+        }
     }, [currentQuestion, currentPosition, currentAnswer]);
 
     return (
@@ -255,9 +254,9 @@ const Survey = () => {
                     { currentPosition === 'start' && (
                     <>
                         <div className="col-12 col-lg-4 pt-4 text-center text-lg-start zindex-1">
-                            <h1 className="pt-sm-2">Find your perfect tan <br/>in 90 seconds!</h1>
-                            <p className="mb-0">Take the Tan matching quiz to find your perfect shade of gorgeous glow. It only takes 90 seconds to find your true colour match.</p>
-                            <button className="btn btn-primary text-white mt-4" onClick={() => setPosition('question-1')}>Take the Quiz</button>
+                            <h1 className="pt-sm-2">{Translations[lang].heading}</h1>
+                            <p className="mb-0">{Translations[lang].subheading}</p>
+                            <button className="btn btn-primary text-white mt-4" onClick={() => setPosition('question-1')}>{Translations[lang].btn.start}</button>
                         </div>
                         <div className={`${height <= 535 ? 'pull-down' : ''} col-12 col-lg-5 offset-lg-1 survey-lp-image zindex-0`}>
                             <picture>
@@ -272,7 +271,7 @@ const Survey = () => {
                         <>
                             <div className="text-center col-12 col-lg-6 px-lg-0 pt-4 pb-2 pb-lg-4">
                                 <div className="mobile-wrapper">
-                                <p>Your perfect shade is just a few clicks away</p>
+                                <p>{Translations[lang].caption}</p>
                                 <div className="progress progress bg-primary-light-second">
                                     <div className="progress-bar" style={{ width: `${progressValue}%` }} role="progressbar" defaultValue={progressValue} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
@@ -287,8 +286,8 @@ const Survey = () => {
                                                 switch(item.type) {
                                                 case 'MultipleChoice':
                                                     return (
-                                                        <QuestionBox currentAnswer={currentAnswer} width={width} height={height} totalQuestions={item.answers.length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="col-lg-10 offset-lg-1" question={item.question} caption={item.caption}>
-                                                            <MultipleChoice answers={item.answers}
+                                                        <QuestionBox lang={lang} currentAnswer={currentAnswer} width={width} height={height} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="col-lg-10 offset-lg-1" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
+                                                            <MultipleChoice answers={item.answers[lang]}
                                                                 lastFull={item.lastFull}
                                                                 maxChoose={item.maxChoose}
                                                                 lastDisableForAll={item.lastDisableForAll}
@@ -297,20 +296,20 @@ const Survey = () => {
                                                         );
                                                 case 'SingleChoiceIcon':
                                                     return (
-                                                        <QuestionBox currentAnswer={currentAnswer} width={width} height={height} totalQuestions={item.answers.length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="" question={item.question} caption={item.caption}>
-                                                            <SingleChoiceIcon className='single-choice-icon' answers={item.answers} icons={item.icons} buttonType={item.buttonType}/>
+                                                        <QuestionBox lang={lang} currentAnswer={currentAnswer} width={width} height={height} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
+                                                            <SingleChoiceIcon className='single-choice-icon' answers={item.answers[lang]} icons={item.icons} buttonType={item.buttonType}/>
                                                         </QuestionBox>
                                                     )
                                                 case 'SingleChoiceImage':
                                                     return (
-                                                        <QuestionBox currentAnswer={currentAnswer} width={width} height={height} totalQuestions={item.answers.length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="" question={item.question} caption={item.caption}>
-                                                            <SingleChoiceImage className='single-choice-image' answers={item.answers} images={item.images}/>
+                                                        <QuestionBox lang={lang} currentAnswer={currentAnswer} width={width} height={height} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
+                                                            <SingleChoiceImage className='single-choice-image' answers={item.answers[lang]} images={item.images}/>
                                                         </QuestionBox>
                                                     )
                                                 default:
                                                     return (
-                                                        <QuestionBox currentAnswer={currentAnswer} width={width} height={height} totalQuestions={item.answers.length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="col-lg-10 offset-lg-1" question={item.question} caption={item.caption}>
-                                                            <SingleChoice answers={item.answers} buttonType={item.buttonType}/>
+                                                        <QuestionBox lang={lang} currentAnswer={currentAnswer} width={width} height={height} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="col-lg-10 offset-lg-1" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
+                                                            <SingleChoice answers={item.answers[lang]} buttonType={item.buttonType}/>
                                                         </QuestionBox>
                                                         );
                                                 }
@@ -324,7 +323,7 @@ const Survey = () => {
                     }
                     { currentPosition === 'finished' && (
                         <div className="question-box analyzing d-flex justify-content-center align-items-center flex-column">
-                            <p className="question-box__title">Analysing your answers</p>
+                            <p className="question-box__title">{Translations[lang].loading}</p>
                             <LoaderSvg className="loader mt-0 mb-0"/>
                         </div>
                     )

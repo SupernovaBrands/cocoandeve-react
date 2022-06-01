@@ -5,9 +5,9 @@ import { ReactComponent as Close } from '../../assets/close.svg';
 import { ReactComponent as Check } from '../../assets/check.svg';
 
 const MultipleChoice = (props) => {
-    const { 
-        answerAction, 
-        currentQuestion, 
+    const {
+        answerAction,
+        currentQuestion,
         setDisable,
         currentAnswer,
     } = useContext(SurveyContext);
@@ -26,7 +26,7 @@ const MultipleChoice = (props) => {
     }
 
     const [disableRest, setDisableRest] = useState(disableData);
-    
+
     const clearOther = () => {
         let currentItems = [...selectedItems];
         currentItems = currentItems.filter((item,index)=> !item.includes('other:'))
@@ -50,7 +50,7 @@ const MultipleChoice = (props) => {
             }
 
             const disableType = answers.find((answer) => answer.type === 'checkboxAll');
-    
+
             if (disableType)
                 currentItems = currentItems.filter((item) => item !== disableType.label);
 
@@ -60,12 +60,12 @@ const MultipleChoice = (props) => {
                 currentItems.splice(curIndex, 1);
             } else {
                 // push item
-                currentItems.push(text);   
+                currentItems.push(text);
             }
         }
         setDisable(false);
         setSelectedItems(currentItems);
-        answerAction(currentItems);    
+        answerAction(currentItems);
     };
 
     const chooseItems = (index) => {
@@ -83,7 +83,7 @@ const MultipleChoice = (props) => {
             clearOther();
         }
     };
-    
+
     return (
         <div className="row">
             {answers.map((answer, index) => {
@@ -94,9 +94,9 @@ const MultipleChoice = (props) => {
                             <div className={`${disableRest && !selectedItems.includes(answer.label) ? 'disabled' : ''} ${selectedItems.includes(answer.label) ? 'border-primary bg-primary-light-second' : 'border-light'} d-flex rounded border border-1 text-start justify-content-start align-items-center mb-2`}>
                                 <label className={`${answer.type === 'checkboxNumber' ? 'd-flex checkbox-number align-items-center px-sm-1' : 'd-flex checkbox-number align-items-center'} w-100 p-2`} htmlFor={`${index}-flexCheckDefault`} onClick={chooseItems(index)}>
                                     { answer.type === 'checkboxNumber' && selectedItems.includes(answer.label) && (
-                                        <span className="multiple-choice-counter 
-                                            fade-in-left d-inline-flex 
-                                            justify-content-center 
+                                        <span className="multiple-choice-counter
+                                            fade-in-left d-inline-flex
+                                            justify-content-center
                                             bg-white rounded-circle align-items-center me-1 text-primary">{selectedItems.indexOf(answer.label) + 1}</span>
                                     )}
                                     <input className='d-none' type="checkbox" defaultChecked={selectedItems.includes(answer.label)} value={answer} id={`${index}-flexCheckDefault`}/>
@@ -116,7 +116,7 @@ const MultipleChoice = (props) => {
                     <div key={index} className={full}>
                         <div className='input-group'>
                             <input className={`${textOther ? 'border-end-0 border-primary bg-primary-light-second' : 'border-light'} form-control h-auto py-2 text-black`} type='text' value={textOther} onChange={inputChangeHandle} placeholder={answer.label}/>
-                            { textOther && ( 
+                            { textOther && (
                                 <button onClick={clearOther} className={`${textOther ? 'border-primary bg-primary-light-second' : 'border-light'} btn border border-start-0 ps-0 pe-2`} type="button" id="inputGroupFileAddon04">
                                     <Close/>
                                 </button>
