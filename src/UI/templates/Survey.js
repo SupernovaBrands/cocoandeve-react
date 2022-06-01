@@ -65,7 +65,11 @@ const Survey = () => {
     const { width, height } = useResizeDetector({ targetRef });
 
     // initial data
-    const initialState = getCookie('surveyPosition') || surveyState ? 'question-1' : 'start';
+    let initialState = getCookie('surveyPosition') || 'start';
+    if (surveyState && (getCookie('surveyPosition') === null || getCookie('surveyPosition') === '')) {
+        initialState = 'question-1';
+        setCookie('answeredQuestion', '');
+    }
     const initialCurrentQuestion = getCookie('currentQuestion') ? parseInt(getCookie('currentQuestion'), 10) : 1;
     const answerData = getCookieAnsweredQuestion() ? getCookieAnsweredQuestion() : {};
 
