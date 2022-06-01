@@ -24,7 +24,6 @@ const ProductForm = (props) => {
     const defaultSaving = productCtx.saving;
     const {
         noReviews,
-        variants,
         addToCart,
         hideProductCaption,
         cartPosition,
@@ -52,16 +51,6 @@ const ProductForm = (props) => {
 
 
     const [productVariants, setProductVariants] = useState(SHADES);
-
-    useEffect(() => {
-        if (variants) {
-            setProductVariants(variants);
-            setSelectedVariantId(variants[0].id);
-            setSelectedVariantShadeText(variants[0].text);
-            setSelectedVariantShadeCaption(variants[0].caption);
-            setSelectedVariant(variants[0]);
-        }
-    }, [variants]);
 
     const [selectedVariant, setSelectedVariant] = useState(productVariants[0]);
     const [selectedVariantId, setSelectedVariantId] = useState(productVariants[0].id); // set to the first variant as default
@@ -141,7 +130,7 @@ const ProductForm = (props) => {
                     { !noReviews && (
                         <div className="d-flex mb-0 mb-lg-1 justify-content-center justify-content-lg-start order-lg-0">
                             <ReviewStar score={4.8} />
-                            <span className='d-block yotpo-widget__total mt-lg-0 ms-lg-1 ms-1'><span className='d-none d-lg-inline-block'>4.8/5.0</span> <a href="https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set#write-a-review">220 Reviews</a></span>
+                            <span className='d-block yotpo-widget__total mt-lg-0 ms-lg-1 ms-1'><span className='d-none d-lg-inline-block'>4.8 stars</span> <a className="link-secondary text-underline" href="https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set#write-a-review">(220)</a></span>
                         </div>
                     )}
                     { !hideProductCaption && (

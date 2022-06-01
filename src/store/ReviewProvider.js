@@ -202,7 +202,7 @@ const _content = {
         ],
     },
     int: {
-        heading: 'Customer Reviews',
+        heading: 'Commentaires des clients',
         reviews: [
             {
                 name: 'Kjersti V. Verified Buyer',
@@ -247,77 +247,77 @@ const _content = {
             {
                 name: 'Kjersti V. Acheteur vérifié',
                 shade: "Teinte d'autobronzant: Dark",
-                text: "<p>Le MEILLEUR autobronzant !<br />Il n'a pas d'odeur désagréable comme d'autres et s'applique très facilement. La teinte est magnifique, naturelle et n'a pas de ton orangé, elle donne à votre peau un bel éclat. Il ne laisse pas de traces ou de marques et s'estompe parfaitement sans laisser de taches. Je l'adore !!!</p>",
+                text: "<p>Le MEILLEUR autobronzant !</p><p>Il n'a pas d'odeur désagréable comme d'autres et s'applique très facilement. La teinte est magnifique, naturelle et n'a pas de ton orangé, elle donne à votre peau un bel éclat. Il ne laisse pas de traces ou de marques et s'estompe parfaitement sans laisser de taches. Je l'adore !!!</p>",
             },
             {
                 name: 'Michelle T. Acheteur vérifié',
                 shade: "Teinte d'autobronzant: Medium",
-                text: "<p>Je suis une grande fan d'autobronzant<br>Je suis une grande adepte de l'autobronzant et celui-ci est de loin le meilleur que j'ai testé. Il ne laisse pas de traces, permet d'obtenir un teint bronzé et non pas orangé. L'odeur est incroyable, l'application est très facile ! J'ai hâte de tester les autres produits.</p>",
+                text: "<p>Je suis une grande fan d'autobronzant</p><p>Je suis une grande adepte de l'autobronzant et celui-ci est de loin le meilleur que j'ai testé. Il ne laisse pas de traces, permet d'obtenir un teint bronzé et non pas orangé. L'odeur est incroyable, l'application est très facile ! J'ai hâte de tester les autres produits.</p>",
             },
             {
                 name: 'Torey M. Acheteur vérifié',
                 shade: "Teinte d'autobronzant: Dark",
-                text: "<p>Le meilleur autobronzant que j'ai testé !<br>Une belle teinte naturelle. Facile à appliquer, mais si vous avez une peau très sèche, la couleur n'adhérera pas aux parties concernées. L'application sur les pieds est un peu plus délicate, mais rien que l'on ne puisse maîtriser après quelques applications. Il sent également très bon ! J'adore la serviette pour les cheveux et le petit masque pour les yeux !</p>",
+                text: "<p>Le meilleur autobronzant que j'ai testé !</p><p>Une belle teinte naturelle. Facile à appliquer, mais si vous avez une peau très sèche, la couleur n'adhérera pas aux parties concernées. L'application sur les pieds est un peu plus délicate, mais rien que l'on ne puisse maîtriser après quelques applications. Il sent également très bon ! J'adore la serviette pour les cheveux et le petit masque pour les yeux !</p>",
             },
             {
                 name: 'Steffanie G. Acheteur vérifié',
                 shade: "Teinte d'autobronzant: Dark",
-                text: "<p>Waouh !<br />J'ai une peau sensible et sèche et ce produit a complètement changé ma vision de ma peau ! Pas de zones sèches, pas de peau pâle comme Casper ! Je suis une nouvelle femme ! J'étais réticente à l'idée d'essayer ce produit parce que je n'avais pas eu beaucoup de réussite avec d'autres produits autobronzants, mais je suis tellement heureuse de l'avoir fait !</p>",
+                text: "<p>Waouh !</p><p>J'ai une peau sensible et sèche et ce produit a complètement changé ma vision de ma peau ! Pas de zones sèches, pas de peau pâle comme Casper ! Je suis une nouvelle femme ! J'étais réticente à l'idée d'essayer ce produit parce que je n'avais pas eu beaucoup de réussite avec d'autres produits autobronzants, mais je suis tellement heureuse de l'avoir fait !</p>",
             },
             {
                 name: 'Sadie B. Acheteur vérifié',
                 shade: "Teinte d'autobronzant: Medium",
-                text: "<p>Je suis convertie !<br />L'odeur est géniale, il y a une légère odeur d'autobronzant. La couleur est parfaite. J'ai pris la teinte Dark et elle s'est intensifiée au bout de quelques heures ! La première photo a été prise juste après avoir bronzé une jambe. La seconde a été prise après quelques heures et les deux jambes étaient bronzées.</p>",
+                text: "<p>Je suis convertie !</p><p>L'odeur est géniale, il y a une légère odeur d'autobronzant. La couleur est parfaite. J'ai pris la teinte Dark et elle s'est intensifiée au bout de quelques heures ! La première photo a été prise juste après avoir bronzé une jambe. La seconde a été prise après quelques heures et les deux jambes étaient bronzées.</p>",
             },
             {
                 name: 'Alanna P. Acheteur vérifié',
                 shade: "Teinte d'autobronzant: Dark",
-                text: "<p>Problèmes de peau : Sécheresse, cellulite<br/>Super produit !<br/> C'était la première fois que j'utilisais un autobronzant et je l'ai trouvé super facile à appliquer et il sent délicieusement bon. Le pinceau est très utile pour le visage, les mains et les pieds. Ma cellulite est moins visible et ma peau est hydratée.</p>",
+                text: "<p>Problèmes de peau : Sécheresse, cellulite</p><p>Super produit !<br/> C'était la première fois que j'utilisais un autobronzant et je l'ai trouvé super facile à appliquer et il sent délicieusement bon. Le pinceau est très utile pour le visage, les mains et les pieds. Ma cellulite est moins visible et ma peau est hydratée.</p>",
             },
             {
                 name: 'Stef H. Acheteur vérifié',
                 shade: "Teinte d'autobronzant: Medium",
-                text: "<p>Ce produit est incroyable !<br>J'adore l'éclat doré qu'il donne à mon teint. J'ai utilisé la teinte Medium, et je suis au moins deux nuances plus foncée. C'est une excellente manière d'obtenir un bronzage parfait sans abîmer la peau ou provoquer un éventuel cancer cutané. La photo montre la différence entre ma pâleur naturelle et ce superbe produit.</p>",
+                text: "<p>Ce produit est incroyable !</p><p>J'adore l'éclat doré qu'il donne à mon teint. J'ai utilisé la teinte Medium, et je suis au moins deux nuances plus foncée. C'est une excellente manière d'obtenir un bronzage parfait sans abîmer la peau ou provoquer un éventuel cancer cutané. La photo montre la différence entre ma pâleur naturelle et ce superbe produit.</p>",
             },
         ],
     },
     de: {
-        heading: 'Customer Reviews',
+        heading: 'Kundenbewertungen',
         reviews: [
             {
                 name: 'Kjersti V. Verifizierter Käufer',
                 shade: 'Nuance: Dark',
-                text: "<p>Die BESTE sonnenlose Bräune!!<br/>Riecht nicht schlecht wie einige andere und mach die Haut super glatt. Die Nuance ist wunderschön, sieht natürlich aus und hat keinen Orangestich UND lässt deine Haut soooo gesund aussehen. Hinterlässt keine Streifen oder Flecken und verblasst perfekt, ohne Flecken zu hinterlassen. Ich liebe es!!!</p>",
+                text: "<p>Die BESTE sonnenlose Bräune!!</p><p>Riecht nicht schlecht wie einige andere und mach die Haut super glatt. Die Nuance ist wunderschön, sieht natürlich aus und hat keinen Orangestich UND lässt deine Haut soooo gesund aussehen. Hinterlässt keine Streifen oder Flecken und verblasst perfekt, ohne Flecken zu hinterlassen. Ich liebe es!!!</p>",
             },
             {
                 name: 'Michelle T. Verifizierter Käufer',
                 shade: 'Nuance: Medium',
-                text: "<p>Ich bin ein großer Selbstbräuner-Fan<br />Ich bin ein großer Benutzer von Selbstbräunern und dies ist bei weitem der Beste, den ich je benutzt habe. Es gibt keine Streifen, hinterlässt eine bronzene Farbe und macht nicht Orange. Riecht unglaublich gut und ist einfach anzuwenden. Ich bin besessen von diesem Selbstbräuner! Ich kann es kaum erwarten, die anderen Produkte auszuprobieren.</p>",
+                text: "<p>Ich bin ein großer Selbstbräuner-Fan</p><p>Ich bin ein großer Benutzer von Selbstbräunern und dies ist bei weitem der Beste, den ich je benutzt habe. Es gibt keine Streifen, hinterlässt eine bronzene Farbe und macht nicht Orange. Riecht unglaublich gut und ist einfach anzuwenden. Ich bin besessen von diesem Selbstbräuner! Ich kann es kaum erwarten, die anderen Produkte auszuprobieren.</p>",
             },
             {
                 name: 'Torey M. Verifizierter Käufer',
                 shade: 'Nuance: Dark',
-                text: "<p>Bester Selbstbräuner den ich probiert habe!<br />Schöne natürliche Bräunungsfarbe. Einfach aufzutragen, aber wenn du übermäßig trockene Haut hast, wird es die Farbe an diesen Stellen aufsaugen. Das Auftragen auf die Füße ist etwas knifflig, aber nichts, was du nach ein paar Anwendungen nicht beherrschst. Riecht auch toll! Ich liebe das Haartuch und die süße kleine Augenmaske!</p>",
+                text: "<p>Bester Selbstbräuner den ich probiert habe!</p><p>Schöne natürliche Bräunungsfarbe. Einfach aufzutragen, aber wenn du übermäßig trockene Haut hast, wird es die Farbe an diesen Stellen aufsaugen. Das Auftragen auf die Füße ist etwas knifflig, aber nichts, was du nach ein paar Anwendungen nicht beherrschst. Riecht auch toll! Ich liebe das Haartuch und die süße kleine Augenmaske!</p>",
             },
             {
                 name: 'Steffanie G. Verifizierter Käufer',
                 shade: 'Nuance: Dark',
-                text: "<p>Wow!<br/>Ich habe empfindliche trockene Haut und dieses Produkt hat die Art und Weise verändert, wie ich meine Haut jetzt sehe! Keine trockenen Stellen, keine schneeweiße Haut mehr! Ich bin eine ganz neue Frau!! Ich hatte erst keine Lust den Selbstbräuner auszuprobieren, weil ich mit anderen Bräunungsprodukten keinen Erfolg hatte – aber ich bin SO froh, dass ich es getan habe!</p>",
+                text: "<p>Wow!</p><p>Ich habe empfindliche trockene Haut und dieses Produkt hat die Art und Weise verändert, wie ich meine Haut jetzt sehe! Keine trockenen Stellen, keine schneeweiße Haut mehr! Ich bin eine ganz neue Frau!! Ich hatte erst keine Lust den Selbstbräuner auszuprobieren, weil ich mit anderen Bräunungsprodukten keinen Erfolg hatte – aber ich bin SO froh, dass ich es getan habe!</p>",
             },
             {
                 name: 'Sadie B. Verifizierter Käufer',
                 shade: 'Nuance: Medium',
-                text: "<p>Ich bin konvertiert!!<br/>Der Geruch ist wunderschön, aber es gibt einen leichten typischen Selbstbräunergeruch. Die Nuance ist perfekt. Ich habe mich für die dunkle Nuance entschieden und die Bräune hat sich schon nach ein paar Stunden entwickelt! Das erste Foto wurde unmittelbar nach dem Bräunen eines meiner Beine aufgenommen. Das Zweite wurde nach ein paar Stunden aufgenommen und beide Beine waren gebräunt.</p>",
+                text: "<p>Ich bin konvertiert!!</p><p>Der Geruch ist wunderschön, aber es gibt einen leichten typischen Selbstbräunergeruch. Die Nuance ist perfekt. Ich habe mich für die dunkle Nuance entschieden und die Bräune hat sich schon nach ein paar Stunden entwickelt! Das erste Foto wurde unmittelbar nach dem Bräunen eines meiner Beine aufgenommen. Das Zweite wurde nach ein paar Stunden aufgenommen und beide Beine waren gebräunt.</p>",
             },
             {
                 name: 'Alanna P. Verifizierter Käufer',
                 shade: 'Nuance: Dark',
-                text: "<p>Gutes Produkt!<br/>Es war das erste Mal, dass ich in irgendeiner Art einen Selbstbräuner benutzt habe und ich fand es super einfach anzuwenden und er riecht köstlich. Der Pinsel ist sehr hilfreich für Gesicht, Hände und Füße. Dadurch war meine Cellulite weniger auffällig und meine Haut fühlte sich mit Feuchtigkeit versorgt an.</p>",
+                text: "<p>Gutes Produkt!</p><p>Es war das erste Mal, dass ich in irgendeiner Art einen Selbstbräuner benutzt habe und ich fand es super einfach anzuwenden und er riecht köstlich. Der Pinsel ist sehr hilfreich für Gesicht, Hände und Füße. Dadurch war meine Cellulite weniger auffällig und meine Haut fühlte sich mit Feuchtigkeit versorgt an.</p>",
             },
             {
                 name: 'Stef H. Verifizierter Käufer',
                 shade: 'Nuance: Medium',
-                text: "<p>Dieses Produkt ist erstaunlich!<br/>Dieses Produkt ist erstaunlich!<br/>Ich liebe den goldenen Schimmer, den es meiner Haut verleiht. Ich habe den Selbstbräune in der Nuance Medium verwendet und bin mindestens zwei Nuancen dunkler. Eine großartige Möglichkeit, die perfekte Bräune zu erhalten, ohne Hautschäden oder möglichen Hautkrebs zu verursachen. Das Foto zeigt den Unterschied zwischen meiner natürlichen Blässe und meinem Bräunungsergebniss mit diesem erstaunlichen Produkt.</p>",
+                text: "<p>Dieses Produkt ist erstaunlich!</p><p>Ich liebe den goldenen Schimmer, den es meiner Haut verleiht. Ich habe den Selbstbräune in der Nuance Medium verwendet und bin mindestens zwei Nuancen dunkler. Eine großartige Möglichkeit, die perfekte Bräune zu erhalten, ohne Hautschäden oder möglichen Hautkrebs zu verursachen. Das Foto zeigt den Unterschied zwischen meiner natürlichen Blässe und meinem Bräunungsergebniss mit diesem erstaunlichen Produkt.</p>",
             }
         ],
     }

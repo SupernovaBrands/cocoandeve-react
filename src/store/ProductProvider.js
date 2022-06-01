@@ -162,7 +162,7 @@ const _content = {
         saving: 'Spare 30%',
         title1: 'Sunny Honey',
         title2: 'Bali Bronzing Bundle',
-        description: 'The only self-tanner you need ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
+        description: 'Der einzige Selbstbräuner, den du jemals brauchen wirst.<br />100% natürliches DHA. Tierversuchsfrei. Vegan.',
         benefits: {
             formula1: 'Blurs pigmentation and perfects skin.',
             formula2: 'Tropical mango and guava scent (no biscuit smell!)',
