@@ -8,7 +8,7 @@ const _content = {
             {
                 name: 'Kjersti V. Verified Buyer',
                 shade: 'Shade of Tan: Dark',
-                text: "Doesn't smell bad like some others, and goes on super smooth. Color is gorgeous, looks natural and doesn't have any orange tint AND makes your skin look soooo healthy. Doesn't leave streaks or blotches and fades perfectly without leaving patches. I love it!!!",
+                text: "<p>The BEST sunless tan!!</p><p>Doesn't smell bad like some others, and goes on super smooth. Color is gorgeous, looks natural and doesn't have any orange tint AND makes your skin look soooo healthy. Doesn't leave streaks or blotches and fades perfectly without leaving patches. I love it!!!</p>",
             },
             {
                 name: 'Michelle T. Verified Buyer',
@@ -43,24 +43,11 @@ const _content = {
         ],
     },
     uk: {
-        price: '£39.90',
-        compareAtPrice: '£56.90',
-        saving: 'Save 30%',
-        title1: 'Sunny Honey',
-        title2: 'Bali Bronzing Bundle',
-        description: 'The only self-tanner you need ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
-        benefits: {
-            formula1: 'Blurs pigmentation and perfects skin.',
-            formula2: 'Tropical mango and guava scent (no biscuit smell!)',
-            formula3: 'Lightweight, non-sticky formula.',
-            formula4: 'Developed with a green-grey base for a natural looking, golden glow with no orangey tones.',
-            formula5: 'Soft tanning mitt and kabuki brush for a perfect fuss-free application.',
-        },
         reviews: [
             {
                 name: 'Kjersti V. Verified Buyer',
                 shade: 'Shade of Tan: Dark',
-                text: "Doesn't smell bad like some others, and goes on super smooth. Color is gorgeous, looks natural and doesn't have any orange tint AND makes your skin look soooo healthy. Doesn't leave streaks or blotches and fades perfectly without leaving patches. I love it!!!",
+                text: "<p>The BEST sunless tan!!</p><p>Doesn't smell bad like some others, and goes on super smooth. Color is gorgeous, looks natural and doesn't have any orange tint AND makes your skin look soooo healthy. Doesn't leave streaks or blotches and fades perfectly without leaving patches. I love it!!!</p>",
             },
             {
                 name: 'Michelle T. Verified Buyer',
@@ -100,7 +87,7 @@ const _content = {
             {
                 name: 'Kjersti V. Verified Buyer',
                 shade: 'Shade of Tan: Dark',
-                text: "Doesn't smell bad like some others, and goes on super smooth. Color is gorgeous, looks natural and doesn't have any orange tint AND makes your skin look soooo healthy. Doesn't leave streaks or blotches and fades perfectly without leaving patches. I love it!!!",
+                text: "<p>The BEST sunless tan!!</p><p>Doesn't smell bad like some others, and goes on super smooth. Color is gorgeous, looks natural and doesn't have any orange tint AND makes your skin look soooo healthy. Doesn't leave streaks or blotches and fades perfectly without leaving patches. I love it!!!</p>",
             },
             {
                 name: 'Michelle T. Verified Buyer',
@@ -140,7 +127,7 @@ const _content = {
             {
                 name: 'Kjersti V. Verified Buyer',
                 shade: 'Shade of Tan: Dark',
-                text: "Doesn't smell bad like some others, and goes on super smooth. Color is gorgeous, looks natural and doesn't have any orange tint AND makes your skin look soooo healthy. Doesn't leave streaks or blotches and fades perfectly without leaving patches. I love it!!!",
+                text: "<p>The BEST sunless tan!!</p><p>Doesn't smell bad like some others, and goes on super smooth. Color is gorgeous, looks natural and doesn't have any orange tint AND makes your skin look soooo healthy. Doesn't leave streaks or blotches and fades perfectly without leaving patches. I love it!!!</p>",
             },
             {
                 name: 'Michelle T. Verified Buyer',
@@ -180,7 +167,7 @@ const _content = {
             {
                 name: 'Kjersti V. Verified Buyer',
                 shade: 'Shade of Tan: Dark',
-                text: "Doesn't smell bad like some others, and goes on super smooth. Color is gorgeous, looks natural and doesn't have any orange tint AND makes your skin look soooo healthy. Doesn't leave streaks or blotches and fades perfectly without leaving patches. I love it!!!",
+                text: "<p>The BEST sunless tan!!</p><p>Doesn't smell bad like some others, and goes on super smooth. Color is gorgeous, looks natural and doesn't have any orange tint AND makes your skin look soooo healthy. Doesn't leave streaks or blotches and fades perfectly without leaving patches. I love it!!!</p>",
             },
             {
                 name: 'Michelle T. Verified Buyer',
@@ -220,7 +207,7 @@ const _content = {
             {
                 name: 'Kjersti V. Verified Buyer',
                 shade: 'Shade of Tan: Dark',
-                text: "Doesn't smell bad like some others, and goes on super smooth. Color is gorgeous, looks natural and doesn't have any orange tint AND makes your skin look soooo healthy. Doesn't leave streaks or blotches and fades perfectly without leaving patches. I love it!!!",
+                text: "<p>The BEST sunless tan!!</p><p>Doesn't smell bad like some others, and goes on super smooth. Color is gorgeous, looks natural and doesn't have any orange tint AND makes your skin look soooo healthy. Doesn't leave streaks or blotches and fades perfectly without leaving patches. I love it!!!</p>",
             },
             {
                 name: 'Michelle T. Verified Buyer',

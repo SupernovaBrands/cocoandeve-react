@@ -163,14 +163,14 @@ const _content = {
             formula2: 'Tropical mango and guava scent (no biscuit smell!)',
             formula3: 'Lightweight, non-sticky formula.',
             formula4: 'Developed with a green-grey base for a natural looking, golden glow with no orangey tones.',
-            formula5: 'Soft tanning mitt and kabuki brush for a perfect fuss-free application.',
+            formula5: 'Weicher Bräunungshandschuh und Kabuki-Bürste für eine perfekte, unkomplizierte Anwendung.',
         },
-        asSeenin: 'Comme on peut le voir dans',
+        asSeenin: 'Wie zusehen in',
         atc: 'Jetzt kaufen',
         shades: {
-            medium: 'Medium Shade - Gives skin a sun-kissed glow. Great for lighter skin tones!',
-            dark: 'Dark Shade - For a back from vacay bronze. Ideal for medium skin tones!',
-            ultra: 'Ultra Dark Shade - A deep, rich tan. For deeper skin tones!',
+            medium: 'Nuance: Medium - Verleiht der Haut einen sonnengeküssten Glow. Super für hellere Hauttöne!',
+            dark: 'Nuance: Dark - Für eine perfekte Urlaubsbräune. Ideal für mittlere Hauttöne!',
+            ultra: 'Nuance: Ultra Dark – Eine tiefe, satte Bräune. Für dunklere Hauttöne!',
         },
     }
 }

@@ -144,7 +144,7 @@ const _content = {
         ],
     },
     de: {
-        heading: '',
+        heading: 'Deine Fragen – beantwortet',
         items: [
             {
                 title: 'Welche Sunny Honey Nuance soll ich auswählen?',
