@@ -24,6 +24,7 @@ const ProductForm = (props) => {
     const defaultSaving = productCtx.saving;
     const {
         noReviews,
+        variants,
         addToCart,
         hideProductCaption,
         cartPosition,
@@ -51,6 +52,13 @@ const ProductForm = (props) => {
 
 
     const [productVariants, setProductVariants] = useState(SHADES);
+
+    useEffect(() => {
+        setSelectedVariantId(SHADES[0].id);
+        setSelectedVariantShadeText(SHADES[0].text);
+        setSelectedVariantShadeCaption(SHADES[0].caption);
+        setSelectedVariant(SHADES[0]);
+    }, [productCtx]);
 
     const [selectedVariant, setSelectedVariant] = useState(SHADES[0]);
     const [selectedVariantId, setSelectedVariantId] = useState(SHADES[0].id); // set to the first variant as default
