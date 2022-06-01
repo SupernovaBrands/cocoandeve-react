@@ -62,6 +62,11 @@ const _content = {
         },
         asSeenin: 'As seen in',
         atc: 'Add to cart',
+        shades: {
+            medium: 'Medium Shade - Gives skin a sun-kissed glow. Great for lighter skin tones!',
+            dark: 'Dark Shade - For a back from vacay bronze. Ideal for medium skin tones!',
+            ultra: 'Ultra Dark Shade - A deep, rich tan. For deeper skin tones!',
+        },
     },
     au: {
         price: '$69.20',
