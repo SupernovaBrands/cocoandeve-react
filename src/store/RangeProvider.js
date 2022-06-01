@@ -344,7 +344,7 @@ const formulaSection = {
         list2: 'Tropischer Mango- und Guavenduft\n (kein Keksgeruch!)',
         list3: 'Leichte, nicht klebrige Formel.',
         list4: 'Entwickelt mit einer grüngrauen Basis für einen natürlich aussehenden, goldenen Schimmer ohne Orangetöne.',
-        footer: 'No sulfates · No silicone · No parabens · Vegan',
+        footer: 'Ohne Sulfate · Ohne Silikone · Ohne Parabene · Vegan',
     },
 };
 
