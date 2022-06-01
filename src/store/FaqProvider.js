@@ -7,7 +7,7 @@ const _content = {
         items: [
             {
                 title: 'Which Sunny Honey color should I go for?',
-                text: 'Sunny Honey Self-Tan aims to get you a natural finish! So when choosing which colour to go for, consider what skin tone you are naturally and how dark you would like to go.<br/> Medium self-tan gives skin a sun-kissed glow. Great for lighter skin tones!<br/>Dark self-tan for a back from vacay bronze. Ideal for medium skin tones!<br/>Ultra Dark for a deep, rich tan. For deeper skin tones!<br/><br/>Check out REAL Reviews <a href="/pages/reviews">here</a>.',
+                text: 'Sunny Honey Self-Tan aims to get you a natural finish! So when choosing which colour to go for, consider what skin tone you are naturally and how dark you would like to go.<br/> Medium self-tan gives skin a sun-kissed glow. Great for lighter skin tones!<br/>Dark self-tan for a back from vacay bronze. Ideal for medium skin tones!<br/>Ultra Dark for a deep, rich tan. For deeper skin tones!<br/><br/>Check out REAL Reviews <a href="https://www.cocoandeve.com/pages/reviews">here</a>.',
             },
             {
                 title: 'How do I apply the Sunny Honey Bali Bronzing Foam?',
@@ -28,7 +28,7 @@ const _content = {
         items: [
             {
                 title: 'Which Sunny Honey color should I go for?',
-                text: 'Sunny Honey Self-Tan aims to get you a natural finish! So when choosing which colour to go for, consider what skin tone you are naturally and how dark you would like to go.<br/> Medium self-tan gives skin a sun-kissed glow. Great for lighter skin tones!<br/>Dark self-tan for a back from vacay bronze. Ideal for medium skin tones!<br/>Ultra Dark for a deep, rich tan. For deeper skin tones!<br/><br/>Check out REAL Reviews <a href="/pages/reviews">here</a>.',
+                text: 'Sunny Honey Self-Tan aims to get you a natural finish! So when choosing which colour to go for, consider what skin tone you are naturally and how dark you would like to go.<br/> Medium self-tan gives skin a sun-kissed glow. Great for lighter skin tones!<br/>Dark self-tan for a back from vacay bronze. Ideal for medium skin tones!<br/>Ultra Dark for a deep, rich tan. For deeper skin tones!<br/><br/>Check out REAL Reviews <a href="https://www.cocoandeve.com/pages/reviews">here</a>.',
             },
             {
                 title: 'How do I apply the Sunny Honey Bali Bronzing Foam?',
@@ -49,7 +49,7 @@ const _content = {
         items: [
             {
                 title: 'Which Sunny Honey color should I go for?',
-                text: 'Sunny Honey Self-Tan aims to get you a natural finish! So when choosing which colour to go for, consider what skin tone you are naturally and how dark you would like to go.<br/> Medium self-tan gives skin a sun-kissed glow. Great for lighter skin tones!<br/>Dark self-tan for a back from vacay bronze. Ideal for medium skin tones!<br/>Ultra Dark for a deep, rich tan. For deeper skin tones!<br/><br/>Check out REAL Reviews <a href="/pages/reviews">here</a>.',
+                text: 'Sunny Honey Self-Tan aims to get you a natural finish! So when choosing which colour to go for, consider what skin tone you are naturally and how dark you would like to go.<br/> Medium self-tan gives skin a sun-kissed glow. Great for lighter skin tones!<br/>Dark self-tan for a back from vacay bronze. Ideal for medium skin tones!<br/>Ultra Dark for a deep, rich tan. For deeper skin tones!<br/><br/>Check out REAL Reviews <a href="https://www.cocoandeve.com/pages/reviews">here</a>.',
             },
             {
                 title: 'How do I apply the Sunny Honey Bali Bronzing Foam?',
@@ -70,7 +70,7 @@ const _content = {
         items: [
             {
                 title: 'Which Sunny Honey color should I go for?',
-                text: 'Sunny Honey Self-Tan aims to get you a natural finish! So when choosing which colour to go for, consider what skin tone you are naturally and how dark you would like to go.<br/> Medium self-tan gives skin a sun-kissed glow. Great for lighter skin tones!<br/>Dark self-tan for a back from vacay bronze. Ideal for medium skin tones!<br/>Ultra Dark for a deep, rich tan. For deeper skin tones!<br/><br/>Check out REAL Reviews <a href="/pages/reviews">here</a>.',
+                text: 'Sunny Honey Self-Tan aims to get you a natural finish! So when choosing which colour to go for, consider what skin tone you are naturally and how dark you would like to go.<br/> Medium self-tan gives skin a sun-kissed glow. Great for lighter skin tones!<br/>Dark self-tan for a back from vacay bronze. Ideal for medium skin tones!<br/>Ultra Dark for a deep, rich tan. For deeper skin tones!<br/><br/>Check out REAL Reviews <a href="https://www.cocoandeve.com/pages/reviews">here</a>.',
             },
             {
                 title: 'How do I apply the Sunny Honey Bali Bronzing Foam?',
@@ -91,7 +91,7 @@ const _content = {
         items: [
             {
                 title: 'Which Sunny Honey color should I go for?',
-                text: 'Sunny Honey Self-Tan aims to get you a natural finish! So when choosing which colour to go for, consider what skin tone you are naturally and how dark you would like to go.<br/> Medium self-tan gives skin a sun-kissed glow. Great for lighter skin tones!<br/>Dark self-tan for a back from vacay bronze. Ideal for medium skin tones!<br/>Ultra Dark for a deep, rich tan. For deeper skin tones!<br/><br/>Check out REAL Reviews <a href="/pages/reviews">here</a>.',
+                text: 'Sunny Honey Self-Tan aims to get you a natural finish! So when choosing which colour to go for, consider what skin tone you are naturally and how dark you would like to go.<br/> Medium self-tan gives skin a sun-kissed glow. Great for lighter skin tones!<br/>Dark self-tan for a back from vacay bronze. Ideal for medium skin tones!<br/>Ultra Dark for a deep, rich tan. For deeper skin tones!<br/><br/>Check out REAL Reviews <a href="https://www.cocoandeve.com/pages/reviews">here</a>.',
             },
             {
                 title: 'How do I apply the Sunny Honey Bali Bronzing Foam?',
@@ -112,7 +112,7 @@ const _content = {
         items: [
             {
                 title: 'Which Sunny Honey color should I go for?',
-                text: 'Sunny Honey Self-Tan aims to get you a natural finish! So when choosing which colour to go for, consider what skin tone you are naturally and how dark you would like to go.<br/> Medium self-tan gives skin a sun-kissed glow. Great for lighter skin tones!<br/>Dark self-tan for a back from vacay bronze. Ideal for medium skin tones!<br/>Ultra Dark for a deep, rich tan. For deeper skin tones!<br/><br/>Check out REAL Reviews <a href="/pages/reviews">here</a>.',
+                text: 'Sunny Honey Self-Tan aims to get you a natural finish! So when choosing which colour to go for, consider what skin tone you are naturally and how dark you would like to go.<br/> Medium self-tan gives skin a sun-kissed glow. Great for lighter skin tones!<br/>Dark self-tan for a back from vacay bronze. Ideal for medium skin tones!<br/>Ultra Dark for a deep, rich tan. For deeper skin tones!<br/><br/>Check out REAL Reviews <a href="https://www.cocoandeve.com/pages/reviews">here</a>.',
             },
             {
                 title: 'How do I apply the Sunny Honey Bali Bronzing Foam?',
@@ -133,7 +133,7 @@ const _content = {
         items: [
             {
                 title: 'Quelle teinte de Sunny Honney choisir ?',
-                text: "L'objectif de l'autobronzant Sunny Honey est d'obtenir un résultat naturel ! Pour choisir la couleur qu'il te faut, tiens compte de ton teint naturel et de l'intensité du hâle que tu souhaites obtenir. <br />Notre teinte Medium donne à la peau un éclat discret. Idéale pour les peaux plus claires !<br/>Notre teinte Dark permet d'obtemir un bronzage digne d'un retour de vacances. Parfaite pour les peaux médiums ! <br/>Opte pour la teinte Ultra Dark si tu as un teint plus hâlé et que tu veux donner encore plus d'éclat à ta peau.<br />Jette un œil à de VRAIS avis <a href='/pages/reviews'>ici</a>.",
+                text: "L'objectif de l'autobronzant Sunny Honey est d'obtenir un résultat naturel ! Pour choisir la couleur qu'il te faut, tiens compte de ton teint naturel et de l'intensité du hâle que tu souhaites obtenir. <br />Notre teinte Medium donne à la peau un éclat discret. Idéale pour les peaux plus claires !<br/>Notre teinte Dark permet d'obtemir un bronzage digne d'un retour de vacances. Parfaite pour les peaux médiums ! <br/>Opte pour la teinte Ultra Dark si tu as un teint plus hâlé et que tu veux donner encore plus d'éclat à ta peau.<br />Jette un œil à de VRAIS avis <a href='https://www.cocoandeve.com/pages/reviews'>ici</a>.",
             },
             {
                 title: 'Comment appliquer la Mousse bronzante Sunny Honey ?',
@@ -154,7 +154,7 @@ const _content = {
         items: [
             {
                 title: 'Welche Sunny Honey Nuance soll ich auswählen?',
-                text: "Sunny Honey Selbstbräuner zielt darauf ab, dir einen natürlichen Finish zu verleihen! Berücksichtige also bei der Auswahl der Nuance, welchen Hautton du von Natur aus hast und wie dunkel du werden möchtest.<br />Der Selbstbräuner in Medium verleiht der Haut einen sonnengeküssten Glow. Super für hellere Hauttöne!<br />Der Selbstbräuner in Dark schenkt dir eine perfekte Urlaubsbräune. Ideal für mittlere Hauttöne!<br />Der Selbstbräuner in Ultra Dark ist für eine tiefe, satte Bräune. Für dunklere Hauttöne!<br /><br />ECHTE Bewertungen findest du <a href='/pages/reviews'>hier</a>.",
+                text: "Sunny Honey Selbstbräuner zielt darauf ab, dir einen natürlichen Finish zu verleihen! Berücksichtige also bei der Auswahl der Nuance, welchen Hautton du von Natur aus hast und wie dunkel du werden möchtest.<br />Der Selbstbräuner in Medium verleiht der Haut einen sonnengeküssten Glow. Super für hellere Hauttöne!<br />Der Selbstbräuner in Dark schenkt dir eine perfekte Urlaubsbräune. Ideal für mittlere Hauttöne!<br />Der Selbstbräuner in Ultra Dark ist für eine tiefe, satte Bräune. Für dunklere Hauttöne!<br /><br />ECHTE Bewertungen findest du <a href='https://www.cocoandeve.com/pages/reviews'>hier</a>.",
             },
             {
                 title: 'Wie trage ich die Sunny Honey Selbstbräuner Mousse auf?',
