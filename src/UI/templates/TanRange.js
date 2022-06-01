@@ -4,6 +4,7 @@ import RangeBanner from "../sections/RangeBanner";
 import '../../range.scss';
 import RangeCarousel from "../sections/RangeCarousel";
 import RangeProvider from "../../store/RangeProvider";
+import IRLProvider from '../../store/IRLProvider';
 // import ProductForm from '../sections/ProductForm';
 // import RangeFormula from "../sections/RangeFormula";
 // import FaqAccordion from "../sections/FaqAccordion";
@@ -26,7 +27,9 @@ const TanRange = () => {
             <RangeCarousel />
             <Suspense fallback={<div></div>}>
                 <RangeFormula />
-                <SectionIRL />
+                <IRLProvider>
+                    <SectionIRL />
+                </IRLProvider>
                 <SeenIn />
                 <FaqAccordion />
                 <CustomerReview />

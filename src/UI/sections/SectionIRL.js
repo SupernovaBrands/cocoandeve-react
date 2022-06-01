@@ -1,7 +1,7 @@
 
 import { useContext } from "react";
 
-import RangeContext from "../../store/range-context";
+import IRLContext from "../../store/irl-context";
 import IRLCard from '../components/IRLCard';
 import Carousel from '../components/Carousel';
 
@@ -13,11 +13,8 @@ const SectionIRL = () => {
     let params = (new URL(document.location)).searchParams;
 	let activeStore = params.get('utm_store') || 'us';
 
-	const rangeCtx = useContext(RangeContext);
-	let irlSection = rangeCtx.irlSection[activeStore];
-	if (!irlSection) {
-		irlSection = rangeCtx.irlSection['us'];
-	}
+	const irlCtx = useContext(IRLContext);
+    irlCtx.storeChange(activeStore);
 
     const CONTENT = [
         {
@@ -25,11 +22,11 @@ const SectionIRL = () => {
             content:
                 <IRLCard
                     name="@hughesyfit"
-                    caption={irlSection.caption1}
+                    caption={irlCtx.caption1}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6dfe2acd-5388-48ff-3dd1-b2ed2b6cad00/200x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/13cb7403-0ef5-4216-3b94-e5ce95fbdc00/200x"
                 >
-                    <p>{irlSection.review1}</p>
+                    <p>{irlCtx.review1}</p>
 
                 </IRLCard>
         },
@@ -38,11 +35,11 @@ const SectionIRL = () => {
             content:
                 <IRLCard
                     name="@hannahtucker"
-                    caption={irlSection.caption2}
+                    caption={irlCtx.caption2}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/14450439-ff6e-4fe2-0030-373f53899600/200x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/15647b0f-9340-41fb-4e09-f80692f0f800/200x"
                 >
-                    <p>{irlSection.review2}</p>
+                    <p>{irlCtx.review2}</p>
                 </IRLCard>
         },
         {
@@ -50,11 +47,11 @@ const SectionIRL = () => {
             content:
                 <IRLCard
                     name="@orianavtorres"
-                    caption={irlSection.caption3}
+                    caption={irlCtx.caption3}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7a518864-af70-46a1-6d76-8d8f43e1d100/200x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b734bbe7-e646-4ecf-d42e-5ee4c2c60300/200x"
                 >
-                    <p>{irlSection.review3}</p>
+                    <p>{irlCtx.review3}</p>
                 </IRLCard>
         },
         {
@@ -62,21 +59,21 @@ const SectionIRL = () => {
             content:
                 <IRLCard
                     name="@jaydestella"
-                    caption={irlSection.caption4}
+                    caption={irlCtx.caption4}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ed15f4ee-c1a7-4486-de95-81bf1b38c400/200x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/18084a86-e332-4463-03d3-292b438d6900/200x"
                 >
-                    <p>{irlSection.review4}</p>
+                    <p>{irlCtx.review4}</p>
                 </IRLCard>
         }
     ]
 
 	return (
 		<section className='customer-reviews py-4'>
-            <h2 className="h1 mb-3 text-center">{irlSection.title}</h2>
+            <h2 className="h1 mb-3 text-center">{irlCtx.title}</h2>
             <div className='d-flex justify-content-center mb-3'>
-                <div className='d-flex align-items-center'><InstagramIcon className='font-size-sm' /><span className='ms-1 font-size-sm'>879k {irlSection.on} Instagram</span></div>
-                <div className='d-flex align-items-center ms-1'><FacebookIcon className='font-size-sm' /><span className='ms-1 font-size-sm'>287k {irlSection.on} Facebook</span></div>
+                <div className='d-flex align-items-center'><InstagramIcon className='font-size-sm' /><span className='ms-1 font-size-sm'>879k {irlCtx.on} Instagram</span></div>
+                <div className='d-flex align-items-center ms-1'><FacebookIcon className='font-size-sm' /><span className='ms-1 font-size-sm'>287k {irlCtx.on} Facebook</span></div>
             </div>
             <div className='container px-g pe-0 pe-lg-g'>
                 <Carousel

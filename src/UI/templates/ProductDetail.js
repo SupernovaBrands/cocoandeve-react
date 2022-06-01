@@ -4,6 +4,7 @@ import '../../product.scss';
 import Carousel from '../components/Carousel';
 import ProductProvider from '../../store/ProductProvider';
 import { isABTest } from "../../modules/Utils";
+import IRLProvider from '../../store/IRLProvider';
 
 const CustomerReview = lazy(() => import('../sections/CustomerReview'));
 const SeenIn = lazy(() => import('../sections/SeenIn'));
@@ -17,7 +18,9 @@ const ProductDetail = (props) => {
             <Suspense fallback={<div></div>}>
                 <CustomerReview />
                 <SeenIn />
-                <SectionIRL />
+                <IRLProvider>
+                    <SectionIRL />
+                </IRLProvider>
                 <FaqAccordion />
             </Suspense>
         </ProductProvider>
