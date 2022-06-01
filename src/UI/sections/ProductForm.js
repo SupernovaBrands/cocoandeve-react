@@ -52,16 +52,16 @@ const ProductForm = (props) => {
 
     const [productVariants, setProductVariants] = useState(SHADES);
 
-    const [selectedVariant, setSelectedVariant] = useState(productVariants[0]);
-    const [selectedVariantId, setSelectedVariantId] = useState(productVariants[0].id); // set to the first variant as default
+    const [selectedVariant, setSelectedVariant] = useState(SHADES[0]);
+    const [selectedVariantId, setSelectedVariantId] = useState(SHADES[0].id); // set to the first variant as default
     const [quantity, setQuantity] = useState(1);
-    const [selectedVariantShadeText, setSelectedVariantShadeText] = useState(productVariants[0].text);
-    const [selectedVariantShadeCaption, setSelectedVariantShadeCaption] = useState(productVariants[0].caption);
+    const [selectedVariantShadeText, setSelectedVariantShadeText] = useState(SHADES[0].text);
+    const [selectedVariantShadeCaption, setSelectedVariantShadeCaption] = useState(SHADES[0].caption);
 
     const [buttonUrl, setButtonUrl] = useState(`https://www.cocoandeve.com?itemtoadd=${selectedVariantId}&quantity=${quantity}`);
     const onSelectedVariant = (event) => {
         const variantId = event.target.getAttribute('data-id');
-        const shadeText = productVariants.find((shade) => shade.id === variantId)
+        const shadeText = SHADES.find((shade) => shade.id === variantId)
         setSelectedVariantId(variantId);
         setSelectedVariantShadeText(shadeText.text);
         const url = selectedVariantId !== '' && `https://www.cocoandeve.com?itemtoadd=${variantId}&quantity=${quantity}`;

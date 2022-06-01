@@ -17,9 +17,9 @@ const ProductContext = React.createContext({
     asSeenin: 'As seen in',
     atc: 'Add to cart',
     shades: {
-        medium: 'Medium Shade - Gives skin a sun-kissed glow. Great for lighter skin tones!',
-        dark: 'Dark Shade - For a back from vacay bronze. Ideal for medium skin tones!',
-        ultra: 'Ultra Dark Shade - A deep, rich tan. For deeper skin tones!',
+        medium: '',
+        dark: '',
+        ultra: '',
     },
     storeChange: (activeStore) => {},
 });
