@@ -3,7 +3,10 @@ import ProductForm from '../sections/ProductForm';
 import '../../product.scss';
 import Carousel from '../components/Carousel';
 import ProductProvider from '../../store/ProductProvider';
+import FaqProvider from '../../store/FaqProvider';
+import ReviewProvider from '../../store/ReviewProvider';
 import { isABTest } from "../../modules/Utils";
+import IRLProvider from '../../store/IRLProvider';
 
 const CustomerReview = lazy(() => import('../sections/CustomerReview'));
 const SeenIn = lazy(() => import('../sections/SeenIn'));
@@ -15,10 +18,16 @@ const ProductDetail = (props) => {
         <ProductProvider>
             <ProductForm mainContent={props.mainContent} />
             <Suspense fallback={<div></div>}>
-                <CustomerReview />
+                <ReviewProvider>
+                    <CustomerReview />
+                </ ReviewProvider>
                 <SeenIn />
-                <SectionIRL />
-                <FaqAccordion />
+                <IRLProvider>
+                    <SectionIRL />
+                </IRLProvider>
+                <FaqProvider>
+                    <FaqAccordion />
+                </FaqProvider>
             </Suspense>
         </ProductProvider>
     )

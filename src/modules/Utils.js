@@ -88,3 +88,9 @@ export const isABTest = (testID) => new Promise((resolve) => {
 		}
 	});
 });
+
+export const decodeHtml = (html) => {
+	const txt = document.createElement('textarea');
+	txt.innerHTML = html;
+	return txt.value;
+};
