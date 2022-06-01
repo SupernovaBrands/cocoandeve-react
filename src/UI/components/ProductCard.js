@@ -16,6 +16,11 @@ const ProductCard = (props) => {
 
 	const productTitle = productContent.title ? productContent.title : productCardCtx.products[props.handle]['us'].title;
 
+	let carouselData = productCardCtx.carouselSection[activeStore];
+	if (!carouselData) {
+		carouselData = productCardCtx.carouselSection['us'];
+	}
+
 	return (
 		<Fragment>
 			{props.useBadge && (
@@ -48,8 +53,8 @@ const ProductCard = (props) => {
       				<span className="h4 m-1 text-primary fw-bold">{productContent.price}</span>
   				</p>
 				<a href={`${ProductUrl}${props.handle}`} className="btn btn-lg btn-primary text-white btn-block px-0">
-					Learn More
-					<span className='visually-hidden-focusable'>{`Learn More - ${productTitle}`}</span>
+					{carouselData.learnMore}
+					<span className='visually-hidden-focusable'>{`${carouselData.learnMore} - ${productTitle}`}</span>
 				</a>
 			</div>
 		</Fragment>

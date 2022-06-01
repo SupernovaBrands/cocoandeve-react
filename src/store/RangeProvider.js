@@ -302,19 +302,22 @@ const carouselSection = {
         title: 'Self-tanners for any occasion',
         face: 'Face',
         body: 'Body',
-        valuesets: 'Value Sets'
+        valuesets: 'Value Sets',
+        learnMore: 'Learn More',
     },
     fr: {
         title: 'Des autobronzants pour toutes les occasions.',
         face: 'Visage',
         body: 'Corps',
-        valuesets: 'Kits'
+        valuesets: 'Kits',
+        learnMore: 'En savoir plus',
     },
     de: {
         title: 'Selbstbräuner für jeden Anlass',
         face: 'Gesicht',
         body: 'Körper',
-        valuesets: 'Sets & Kits'
+        valuesets: 'Sets & Kits',
+        learnMore: 'Erfahre mehr',
     }
 };
 

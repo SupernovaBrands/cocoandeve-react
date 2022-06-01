@@ -42,16 +42,6 @@ const RangeCarousel = () => {
 				totalReviews='735'
 				handle='spf-glow-kit' />
 		});
-	} else {
-		PRODUCTS_FACE.push({
-			carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-			content: <ProductCard
-				img={`${process.env.PUBLIC_URL}/images/Featured_GlowyFaceTanSet_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_GlowyFaceTanSet_532x.webp`}
-				rating={4.9}
-				totalReviews='373'
-				handle='glowy-face-tan-set' />
-		});
 	}
 
 	const PRODUCTS_BODY = [
@@ -176,7 +166,7 @@ const RangeCarousel = () => {
 		{
 			carouselId: 'FeaturedFace',
 			isTabActive: false,
-			carouselItems: PRODUCTS_FACE.length < 4 && isMobile ? productFaceMerged : PRODUCTS_FACE,
+			carouselItems: PRODUCTS_FACE.length < 4 && PRODUCTS_FACE.length > 1 && isMobile ? productFaceMerged : PRODUCTS_FACE,
 			tabLabel: carouselData.face
 		},
 		{
@@ -192,7 +182,6 @@ const RangeCarousel = () => {
 			tabLabel: carouselData.valuesets
 		}
 	];
-
 
 	carouselLoop('FeaturedBody');
 	carouselLoop('FeaturedFace');
@@ -234,7 +223,7 @@ const RangeCarousel = () => {
 							</Fragment>
 						)}
 
-						{item.carouselItems.length < 4 && width < 768 && (
+						{item.carouselItems.length < 4 && item.carouselItems.length > 1 && width < 768 && (
 							<Fragment>
 								<button className="carousel-control carousel-control-prev carousel-control--background floating-out-start justify-content-start text-primary" data-bs-target={`#${item.carouselId}`} data-bs-slide="prev">
 									<span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true">
