@@ -7,6 +7,7 @@ import RangeProvider from "../../store/RangeProvider";
 import IRLProvider from '../../store/IRLProvider';
 import FaqProvider from '../../store/FaqProvider';
 import ReviewProvider from '../../store/ReviewProvider';
+import ProductProvider from '../../store/ProductProvider';
 // import ProductForm from '../sections/ProductForm';
 // import RangeFormula from "../sections/RangeFormula";
 // import FaqAccordion from "../sections/FaqAccordion";
@@ -32,7 +33,9 @@ const TanRange = () => {
                 <IRLProvider>
                     <SectionIRL />
                 </IRLProvider>
-                <SeenIn />
+                <ProductProvider>
+                    <SeenIn />
+                </ProductProvider>
                 <FaqProvider>
                     <FaqAccordion />
                 </FaqProvider>
