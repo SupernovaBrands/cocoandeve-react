@@ -16,7 +16,7 @@ const MultipleChoice = (props) => {
         lastFull,
     } = props;
 
-    const defaultSelected = currentAnswer && currentAnswer[currentQuestion] ? currentAnswer[currentQuestion] : [];
+    const defaultSelected = currentAnswer && currentAnswer[currentQuestion] ? currentAnswer[currentQuestion].split(",") : [];
     const [selectedItems, setSelectedItems] = useState(defaultSelected);
 
     let disableData = false;

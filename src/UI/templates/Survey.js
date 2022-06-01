@@ -15,12 +15,50 @@ import { useSearchParams } from "react-router-dom";
 import { ReactComponent as LoaderSvg } from '../../assets/loader.svg';
 import Translations from '../../modules/translations';
 
+window.getCookie = getCookie;
+
 const Survey = () => {
     const [searchParams] = useSearchParams();
     const site = searchParams.get('site');
     const gId = searchParams.get('gaid');
     const surveyState = searchParams.get('state');
     const language = searchParams.get('lang');
+
+    const setCookieAnsweredQuestion = (object) => {
+        if (typeof object === 'object') {
+            Object.entries(object).forEach((data) => {
+                const key = data[0];
+                const value = decodeURI(data[1]);
+                object[key] = encodeURI(value);
+            });
+            setCookie('answeredQuestion', JSON.stringify(object));
+            postMessageCookie('answeredQuestion', JSON.stringify(object));
+        } else {
+            setCookie('answeredQuestion', '');
+        }
+    }
+
+    const getCookieAnsweredQuestion = () => {
+        if (getCookie('answeredQuestion')) {
+            const object = JSON.parse(getCookie('answeredQuestion'));
+            Object.entries(object).forEach((data) => {
+                const key = data[0];
+                const value = data[1];
+                object[key] = decodeURI(value);
+            });
+            return object;
+        }
+        return null;
+    }
+
+    const decodeAnswers = (object) => {
+        Object.entries(object).forEach((data) => {
+            const key = data[0];
+            const value = data[1];
+            object[key] = decodeURI(value);
+        });
+        return object;
+    }
 
     // refference width and height
     const targetRef = useRef();
@@ -29,7 +67,7 @@ const Survey = () => {
     // initial data
     const initialState = getCookie('surveyPosition') || surveyState ? 'question-1' : 'start';
     const initialCurrentQuestion = getCookie('currentQuestion') ? parseInt(getCookie('currentQuestion'), 10) : 1;
-    const answerData = getCookie('answeredQuestion') ? JSON.parse(getCookie('answeredQuestion')) : {};
+    const answerData = getCookieAnsweredQuestion() ? getCookieAnsweredQuestion() : {};
 
     const selectedSite = site ? site : 'dev.cocoandeve.com';
 
@@ -83,11 +121,8 @@ const Survey = () => {
 
     const answerAction = (question, answers) => {
         currentAnswer[question] = answers;
-        setAnswer(currentAnswer);
-        setCookie('answeredQuestion', JSON.stringify(currentAnswer));
-
-        // send cookie data to the parent window
-        postMessageCookie('answeredQuestion', JSON.stringify(currentAnswer));
+        setAnswer(decodeAnswers(currentAnswer));
+        setCookieAnsweredQuestion(decodeAnswers(currentAnswer));
     };
 
     const clearCookie = () => {
@@ -218,35 +253,7 @@ const Survey = () => {
 
     useEffect(() => {
         if (currentPosition === 'finished') gettingResult();
-
-        // listener message from parent
-        window.onMessage = (event) => {
-            const data = event.data;
-            if (typeof (window[data.func]) === 'function') {
-                window[data.func].call(null, data);
-            }
-        };
-
-        window.setupDataFromParent = (data) => {
-            if (data.key === 'currentQuestion') {
-                setQuestion(parseInt(data.value, 10));
-            } else if (data.key === 'surveyPosition') {
-                setPosition(data.value);
-            } else if (data.key === 'answeredQuestion') {
-                setAnswer(JSON.parse(data.value));
-            }
-
-            if (currentAnswer) {
-                gettingResult();
-            }
-        }
-
-        if (window.addEventListener) {
-            window.addEventListener('message', window.onMessage, false);
-        } else if (window.attachEvent) {
-            window.attachEvent('onmessage', window.onMessage, false);
-        }
-    }, [currentQuestion, currentPosition, currentAnswer]);
+   }, [currentPosition]);
 
     return (
             <div ref={targetRef} className="container container--survey">
@@ -286,7 +293,7 @@ const Survey = () => {
                                                 switch(item.type) {
                                                 case 'MultipleChoice':
                                                     return (
-                                                        <QuestionBox lang={lang} currentAnswer={currentAnswer} width={width} height={height} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="col-lg-10 offset-lg-1" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
+                                                        <QuestionBox lang={lang} currentAnswer={decodeAnswers(currentAnswer)} width={width} height={height} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="col-lg-10 offset-lg-1" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
                                                             <MultipleChoice answers={item.answers[lang]}
                                                                 lastFull={item.lastFull}
                                                                 maxChoose={item.maxChoose}
@@ -296,19 +303,19 @@ const Survey = () => {
                                                         );
                                                 case 'SingleChoiceIcon':
                                                     return (
-                                                        <QuestionBox lang={lang} currentAnswer={currentAnswer} width={width} height={height} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
+                                                        <QuestionBox lang={lang} currentAnswer={decodeAnswers(currentAnswer)} width={width} height={height} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
                                                             <SingleChoiceIcon className='single-choice-icon' answers={item.answers[lang]} icons={item.icons} buttonType={item.buttonType}/>
                                                         </QuestionBox>
                                                     )
                                                 case 'SingleChoiceImage':
                                                     return (
-                                                        <QuestionBox lang={lang} currentAnswer={currentAnswer} width={width} height={height} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
+                                                        <QuestionBox lang={lang} currentAnswer={decodeAnswers(currentAnswer)} width={width} height={height} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
                                                             <SingleChoiceImage className='single-choice-image' answers={item.answers[lang]} images={item.images}/>
                                                         </QuestionBox>
                                                     )
                                                 default:
                                                     return (
-                                                        <QuestionBox lang={lang} currentAnswer={currentAnswer} width={width} height={height} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="col-lg-10 offset-lg-1" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
+                                                        <QuestionBox lang={lang} currentAnswer={decodeAnswers(currentAnswer)} width={width} height={height} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="col-lg-10 offset-lg-1" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
                                                             <SingleChoice answers={item.answers[lang]} buttonType={item.buttonType}/>
                                                         </QuestionBox>
                                                         );
