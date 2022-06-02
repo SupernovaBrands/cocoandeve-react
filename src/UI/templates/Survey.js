@@ -66,7 +66,8 @@ const Survey = () => {
 
     // initial data
     let initialState = getCookie('surveyPosition') || 'start';
-    if (surveyState && (getCookie('surveyPosition') === null || getCookie('surveyPosition') === '')) {
+    console.log(surveyState, getCookie('surveyPosition'), 'debug');
+    if (surveyState === 'started' && (getCookie('surveyPosition') === 'start' || getCookie('surveyPosition') === null || getCookie('surveyPosition') === '')) {
         initialState = 'question-1';
         setCookie('answeredQuestion', '');
     }
