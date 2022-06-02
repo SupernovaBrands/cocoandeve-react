@@ -196,8 +196,8 @@ const Questions = [
                 {label: 'Keine Orangetöne', type: 'checkboxNumber'},
                 {label: 'Keine unangenehmen Bräunungsgerüche', type: 'checkboxNumber'},
                 {label: 'Nicht klebrig und leicht', type: 'checkboxNumber'},
-                {label: 'Das trifft auf mich nicht zu', type: 'checkboxNumber'},
-                {label: "Vegan und tierversuchsfrei", type: 'checkboxAll'},
+                {label: 'Vegan und tierversuchsfrei', type: 'checkboxNumber'},
+                {label: "Das trifft auf mich nicht zu", type: 'checkboxAll'},
             ],
             fr: [
                 {label: 'Application facile', type: 'checkboxNumber'},
@@ -205,8 +205,8 @@ const Questions = [
                 {label: 'Pas de sous-tons orangés', type: 'checkboxNumber'},
                 {label: 'Pas de mauvaises senteurs', type: 'checkboxNumber'},
                 {label: 'Léger et non collant', type: 'checkboxNumber'},
-                {label: 'Cela ne me concerne pas', type: 'checkboxNumber'},
-                {label: "Vegan et non testé sur les animaux", type: 'checkboxAll'},
+                {label: 'Vegan et non testé sur les animaux', type: 'checkboxNumber'},
+                {label: "Cela ne me concerne pas", type: 'checkboxAll'},
             ]
         },
         caption: {
