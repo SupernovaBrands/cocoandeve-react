@@ -8,7 +8,7 @@ const _content = {
         saving: 'Save 37%',
         title1: 'Sunny Honey',
         title2: 'Bali Bronzing Bundle',
-        description: 'The only self-tanner you need ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
+        description: 'The only self-tanner you will ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
         benefits: {
             formula1: 'Blurs pigmentation and perfects skin.',
             formula2: 'Tropical mango and guava scent (no biscuit smell!)',
@@ -30,7 +30,7 @@ const _content = {
         saving: 'Save 36%',
         title1: 'Sunny Honey',
         title2: 'Bali Bronzing Bundle',
-        description: 'The only self-tanner you need ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
+        description: 'The only self-tanner you will ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
         benefits: {
             formula1: 'Blurs pigmentation and perfects skin.',
             formula2: 'Tropical mango and guava scent (no biscuit smell!)',
@@ -52,7 +52,7 @@ const _content = {
         saving: 'Save 30%',
         title1: 'Sunny Honey',
         title2: 'Bali Bronzing Bundle',
-        description: 'The only self-tanner you need ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
+        description: 'The only self-tanner you will ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
         benefits: {
             formula1: 'Blurs pigmentation and perfects skin.',
             formula2: 'Tropical mango and guava scent (no biscuit smell!)',
@@ -74,7 +74,7 @@ const _content = {
         saving: 'Save 41%',
         title1: 'Sunny Honey',
         title2: 'Bali Bronzing Bundle',
-        description: 'The only self-tanner you need ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
+        description: 'The only self-tanner you will ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
         benefits: {
             formula1: 'Blurs pigmentation and perfects skin.',
             formula2: 'Tropical mango and guava scent (no biscuit smell!)',
@@ -96,7 +96,7 @@ const _content = {
         saving: 'Save 31%',
         title1: 'Sunny Honey',
         title2: 'Bali Bronzing Bundle',
-        description: 'The only self-tanner you need ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
+        description: 'The only self-tanner you will ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
         benefits: {
             formula1: 'Blurs pigmentation and perfects skin.',
             formula2: 'Tropical mango and guava scent (no biscuit smell!)',
@@ -118,7 +118,7 @@ const _content = {
         saving: 'Save 29%',
         title1: 'Sunny Honey',
         title2: 'Bali Bronzing Bundle',
-        description: 'The only self-tanner you need ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
+        description: 'The only self-tanner you will ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
         benefits: {
             formula1: 'Blurs pigmentation and perfects skin.',
             formula2: 'Tropical mango and guava scent (no biscuit smell!)',
@@ -140,7 +140,7 @@ const _content = {
         saving: 'Save 36%',
         title1: 'Sunny Honey',
         title2: 'Bali Bronzing Bundle',
-        description: 'The only self-tanner you need ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
+        description: 'The only self-tanner you will ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
         benefits: {
             formula1: 'Blurs pigmentation and perfects skin.',
             formula2: 'Tropical mango and guava scent (no biscuit smell!)',
