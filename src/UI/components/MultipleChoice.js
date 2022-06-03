@@ -115,9 +115,9 @@ const MultipleChoice = (props) => {
                 return (
                     <div key={index} className={full}>
                         <div className='input-group'>
-                            <input className={`${textOther ? 'border-end-0 border-primary bg-primary-light-second' : 'border-light'} form-control h-auto py-2 text-black`} type='text' value={textOther} onChange={inputChangeHandle} placeholder={answer.label}/>
+                            <input className={`${textOther ? 'border-end-0 border-primary bg-primary-light-second' : ''} form-control h-auto py-2 text-black`} type='text' value={textOther} onChange={inputChangeHandle} placeholder={answer.label}/>
                             { textOther && (
-                                <button onClick={clearOther} className={`${textOther ? 'border-primary bg-primary-light-second' : 'border-light'} btn border border-start-0 ps-0 pe-2`} type="button" id="inputGroupFileAddon04">
+                                <button onClick={clearOther} className={`${textOther ? 'border-primary bg-primary-light-second' : ''} btn border border-start-0 ps-0 pe-2`} type="button" id="inputGroupFileAddon04">
                                     <Close/>
                                 </button>
                                 )
