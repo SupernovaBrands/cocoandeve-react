@@ -24,6 +24,28 @@ const _content = {
             ultra: 'Ultra Dark Shade - A deep, rich tan. For deeper skin tones!',
         },
     },
+    my: {
+        price: 'RM199.00',
+        compareAtPrice: 'RM312.00',
+        saving: 'Save 36%',
+        title1: 'Sunny Honey',
+        title2: 'Bali Bronzing Bundle',
+        description: 'The only self-tanner you need ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
+        benefits: {
+            formula1: 'Blurs pigmentation and perfects skin.',
+            formula2: 'Tropical mango and guava scent (no biscuit smell!)',
+            formula3: 'Lightweight, non-sticky formula.',
+            formula4: 'Developed with a green-grey base for a natural looking, golden glow with no orangey tones.',
+            formula5: 'Soft tanning mitt and kabuki brush for a perfect fuss-free application.',
+        },
+        asSeenin: 'As seen in',
+        atc: 'Add to cart',
+        shades: {
+            medium: 'Medium Shade - Gives skin a sun-kissed glow. Great for lighter skin tones!',
+            dark: 'Dark Shade - For a back from vacay bronze. Ideal for medium skin tones!',
+            ultra: 'Ultra Dark Shade - A deep, rich tan. For deeper skin tones!',
+        },
+    },
     uk: {
         price: '£39.90',
         compareAtPrice: '£56.90',
@@ -187,7 +209,8 @@ const productReducer = (state, action) => {
 const ProductProvider = props => {
     const [productState, dispatchProductAction] = useReducer(productReducer, _content.us);
     const storeChangeHandler = (activeStore) => {
-        dispatchProductAction({type: 'CHANGESTORE', activeStore: activeStore})
+        const validStore = ['us', 'au', 'ca', 'uk', 'eu', 'int', 'de', 'fr', 'my'].indexOf(activeStore) !== -1 ? activeStore : 'us';
+        dispatchProductAction({type: 'CHANGESTORE', activeStore: validStore})
     };
 
     const productContext = { ...productState, storeChange: storeChangeHandler };
