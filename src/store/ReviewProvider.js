@@ -330,7 +330,8 @@ const reviewReducer = (state, action) => {
 const ReviewProvider = props => {
     const [reviewState, dispatchReviewAction] = useReducer(reviewReducer, _content.us);
     const storeChangeHandler = (activeStore) => {
-        dispatchReviewAction({type: 'CHANGESTORE', activeStore: activeStore})
+        const validStore = ['us', 'au', 'ca', 'uk', 'eu', 'int', 'de', 'fr'].indexOf(activeStore) !== -1 ? activeStore : 'us';
+        dispatchReviewAction({type: 'CHANGESTORE', activeStore: validStore})
     };
 
     const reviewContext = { ...reviewState, storeChange: storeChangeHandler };

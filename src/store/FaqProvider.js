@@ -179,7 +179,8 @@ const faqReducer = (state, action) => {
 const FaqProvider = props => {
     const [faqState, dispatchFaqAction] = useReducer(faqReducer, _content.us);
     const storeChangeHandler = (activeStore) => {
-        dispatchFaqAction({type: 'CHANGESTORE', activeStore: activeStore})
+        const validStore = ['us', 'au', 'ca', 'uk', 'eu', 'int', 'de', 'fr'].indexOf(activeStore) !== -1 ? activeStore : 'us';
+        dispatchFaqAction({type: 'CHANGESTORE', activeStore: validStore})
     };
 
     const faqContext = { ...faqState, storeChange: storeChangeHandler };
