@@ -202,7 +202,7 @@ const _content = {
         ],
     },
     int: {
-        heading: 'Commentaires des clients',
+        heading: 'Customer Reviews',
         reviews: [
             {
                 name: 'Kjersti V. Verified Buyer',
@@ -242,7 +242,7 @@ const _content = {
         ],
     },
     fr: {
-        heading: 'Customer Reviews',
+        heading: 'Commentaires des clients',
         reviews: [
             {
                 name: 'Kjersti V. Acheteur vérifié',
