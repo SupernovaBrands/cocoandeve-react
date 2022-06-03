@@ -66,7 +66,6 @@ const Survey = () => {
 
     // initial data
     let initialState = getCookie('surveyPosition') || 'start';
-    console.log(surveyState, getCookie('surveyPosition'), 'debug');
     if (surveyState === 'started' && (getCookie('surveyPosition') === 'start' || getCookie('surveyPosition') === null || getCookie('surveyPosition') === '')) {
         initialState = 'question-1';
         setCookie('answeredQuestion', '');
@@ -258,10 +257,24 @@ const Survey = () => {
 
     useEffect(() => {
         if (currentPosition === 'finished') gettingResult();
-   }, [currentPosition]);
+    }, [currentPosition]);
+
+    const postIframeHeight = (key, val) => {
+        if (window.top === window.self) return;
+
+        window.parent.postMessage({
+            'func': 'updateIframeHeight',
+            'key': key,
+            'value': val,
+        }, `https://${site}`);
+    }
+
+    useEffect(() => {
+        postIframeHeight('height', height);
+    }, [height]);
 
     return (
-            <div ref={targetRef} className="container container--survey">
+            <div ref={targetRef} className={`${currentPosition === 'start' ? 'cover' : ''} container container--survey`}>
                 <div className="row justify-content-center align-items-center survey-content">
                     { currentPosition === 'start' && (
                     <>

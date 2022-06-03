@@ -17,8 +17,10 @@
 
 .container {
     &--survey {
-        @include media-breakpoint-down(lg) {
-            height: 100vh;
+        &.cover {
+            @include media-breakpoint-down(lg) {
+                height: 100vh;
+            }
         }
     }
 }
