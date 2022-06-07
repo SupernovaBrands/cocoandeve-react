@@ -287,12 +287,12 @@ const _content = {
             {
                 name: 'Kjersti V. Verifizierter Käufer',
                 shade: 'Nuance: Dark',
-                text: "<p>Die BESTE sonnenlose Bräune!!</p><p>Riecht nicht schlecht wie einige andere und mach die Haut super glatt. Die Nuance ist wunderschön, sieht natürlich aus und hat keinen Orangestich UND lässt deine Haut soooo gesund aussehen. Hinterlässt keine Streifen oder Flecken und verblasst perfekt, ohne Flecken zu hinterlassen. Ich liebe es!!!</p>",
+                text: "<p>Die BESTE sonnenlose Bräune!!</p><p>Riecht nicht so übel wie viele andere und macht die Haut super glatt. Die Nuance ist wunderschön, sieht natürlich aus und hat keinen Orangestich UND lässt deine Haut soooo gesund aussehen. Hinterlässt keine Streifen oder Flecken und verblasst perfekt, ohne Flecken zu hinterlassen. Ich liebe es!!!</p>",
             },
             {
                 name: 'Michelle T. Verifizierter Käufer',
                 shade: 'Nuance: Medium',
-                text: "<p>Ich bin ein großer Selbstbräuner-Fan</p><p>Ich bin ein großer Benutzer von Selbstbräunern und dies ist bei weitem der Beste, den ich je benutzt habe. Es gibt keine Streifen, hinterlässt eine bronzene Farbe und macht nicht Orange. Riecht unglaublich gut und ist einfach anzuwenden. Ich bin besessen von diesem Selbstbräuner! Ich kann es kaum erwarten, die anderen Produkte auszuprobieren.</p>",
+                text: "<p>Ich bin ein großer Selbstbräuner-Fan</p><p>Ich habe schon viele Selbstbräuner benutzt und das ist bei weitem der Beste, den ich je verwendet habe. Es gibt keine Streifen, hinterlässt eine bronzene Farbe und macht nicht Orange. Es riecht unglaublich gut und ist einfach anzuwenden. Ich bin besessen von diesem Selbstbräuner! Ich kann es kaum erwarten, die anderen Produkte auszuprobieren.</p>",
             },
             {
                 name: 'Torey M. Verifizierter Käufer',
@@ -312,7 +312,7 @@ const _content = {
             {
                 name: 'Alanna P. Verifizierter Käufer',
                 shade: 'Nuance: Dark',
-                text: "<p>Gutes Produkt!</p><p>Es war das erste Mal, dass ich in irgendeiner Art einen Selbstbräuner benutzt habe und ich fand es super einfach anzuwenden und er riecht köstlich. Der Pinsel ist sehr hilfreich für Gesicht, Hände und Füße. Dadurch war meine Cellulite weniger auffällig und meine Haut fühlte sich mit Feuchtigkeit versorgt an.</p>",
+                text: "<p>Gutes Produkt!</p><p>Es war das erste Mal, dass ich in irgendeiner Art einen Selbstbräuner benutzt habe und ich fand es super einfach anzuwenden und er riecht himmlisch. Der Pinsel ist sehr hilfreich für Gesicht, Hände und Füße. Dadurch war meine Cellulite weniger auffällig und meine Haut fühlte sich mit Feuchtigkeit versorgt an.</p>",
             },
             {
                 name: 'Stef H. Verifizierter Käufer',
