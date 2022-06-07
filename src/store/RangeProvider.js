@@ -346,7 +346,7 @@ const formulaSection = {
         list1: 'Verwischt Pigmentflecken und perfektioniert die Haut.',
         list2: 'Tropischer Mango- und Guavenduft\n (kein Keksgeruch!)',
         list3: 'Leichte, nicht klebrige Formel.',
-        list4: 'Entwickelt mit einer grüngrauen Basis für einen natürlich aussehenden, goldenen Schimmer ohne Orangetöne.',
+        list4: 'Entwickelt mit einer grüngrauen Basis für einen natürlich aussehendes, goldenes Strahlen ohne Orangetöne.',
         footer: 'Ohne Sulfate · Ohne Silikone · Ohne Parabene · Vegan',
     },
 };

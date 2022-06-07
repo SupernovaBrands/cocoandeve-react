@@ -166,7 +166,7 @@ const _content = {
             },
             {
                 title: 'Kann ich Sunny Honey auf empfindlicher Haut verwenden?',
-                text: "Ja, unsere Formel ist perfekt für alle Hauttypen, einschließlich empfindlicher Haut. Sie ist nährend, feuchtigkeitsspendend und enthält Inhaltsstoffe, die die Poren nicht verstopfen und Unreinheiten verursachen.<br/>Wir empfehlen, vor dem Auftragen einer Ganzkörperbräune einen Epikutantest durchzuführen. Wenn der Epikutantest keine negativen Anzeichen zeigt, ist es sicher, eine Ganzkörperbräune zu verwenden.<br/>Vermeide es, die Bräune auf Bereiche mit verletzter Haut oder auf Haut aufzutragen, die Anzeichen einer Reizung zeigt.",
+                text: "Ja, unsere Formel ist perfekt für alle Hauttypen, einschließlich empfindlicher Haut. Sie ist nährend, feuchtigkeitsspendend und enthält Inhaltsstoffe, die die Poren nicht verstopfen und Unreinheiten verursachen.<br/>Wir empfehlen, vor dem Auftragen einer Ganzkörperbräune einen Hautverträglichkeitstest durchzuführen. Wenn der Hautverträglichkeitstest keine negativen Anzeichen zeigt, ist es sicher, eine Ganzkörperbräune zu verwenden.<br/>Vermeide es, die Bräune auf Bereiche mit verletzter Haut oder auf Haut aufzutragen, die Anzeichen einer Reizung zeigt.",
             },
         ],
     }

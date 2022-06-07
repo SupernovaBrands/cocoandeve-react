@@ -307,7 +307,7 @@ const _content = {
             {
                 name: 'Sadie B. Verifizierter Käufer',
                 shade: 'Nuance: Medium',
-                text: "<p>Ich bin konvertiert!!</p><p>Der Geruch ist wunderschön, aber es gibt einen leichten typischen Selbstbräunergeruch. Die Nuance ist perfekt. Ich habe mich für die dunkle Nuance entschieden und die Bräune hat sich schon nach ein paar Stunden entwickelt! Das erste Foto wurde unmittelbar nach dem Bräunen eines meiner Beine aufgenommen. Das Zweite wurde nach ein paar Stunden aufgenommen und beide Beine waren gebräunt.</p>",
+                text: "<p>Ich bin konvertiert!!</p><p>Der Geruch ist großartig, aber es gibt einen leichten typischen Selbstbräunergeruch. Die Nuance ist perfekt. Ich habe mich für die dunkle Nuance entschieden und die Bräune hat sich schon nach ein paar Stunden entwickelt! Das erste Foto wurde unmittelbar nach dem Bräunen eines meiner Beine aufgenommen. Das Zweite wurde nach ein paar Stunden aufgenommen und beide Beine waren toll gebräunt.</p>",
             },
             {
                 name: 'Alanna P. Verifizierter Käufer',
@@ -317,7 +317,7 @@ const _content = {
             {
                 name: 'Stef H. Verifizierter Käufer',
                 shade: 'Nuance: Medium',
-                text: "<p>Dieses Produkt ist erstaunlich!</p><p>Ich liebe den goldenen Schimmer, den es meiner Haut verleiht. Ich habe den Selbstbräune in der Nuance Medium verwendet und bin mindestens zwei Nuancen dunkler. Eine großartige Möglichkeit, die perfekte Bräune zu erhalten, ohne Hautschäden oder möglichen Hautkrebs zu verursachen. Das Foto zeigt den Unterschied zwischen meiner natürlichen Blässe und meinem Bräunungsergebniss mit diesem erstaunlichen Produkt.</p>",
+                text: "<p>Dieses Produkt ist erstaunlich!</p><p>Ich liebe das goldene Strahlen, das es meiner Haut verleiht. Ich habe den Selbstbräuner in der Nuance Medium verwendet und bin mindestens zwei Nuancen dunkler. Eine großartige Möglichkeit, die perfekte Bräune zu bekommen, ohne Hautschäden oder möglichen Hautkrebs zu verursachen. Das Foto zeigt den Unterschied zwischen meiner natürlichen Blässe und meinem Bräunungsergebniss mit diesem erstaunlichen Produkt.</p>",
             }
         ],
     }
@@ -335,7 +335,7 @@ const ReviewProvider = props => {
     };
 
     const reviewContext = { ...reviewState, storeChange: storeChangeHandler };
-    
+
 
     return (
         <ReviewContext.Provider value={reviewContext}>
