@@ -189,10 +189,10 @@ const _content = {
             formula1: 'Verwischt Pigmentflecken und perfektioniert die Haut.',
             formula2: 'Tropischer Mango- und Guavenduft (kein Keksgeruch!)',
             formula3: 'Leichte, nicht klebrige Formel.',
-            formula4: 'Entwickelt mit einer grüngrauen Basis für einen natürlich aussehenden, goldenen Schimmer ohne Orangetöne.',
-            formula5: 'Weicher Bräunungshandschuh und Kabuki-Bürste für eine perfekte, unkomplizierte Anwendung.',
+            formula4: 'Entwickelt mit einer grüngrauen Basis für einen natürlich aussehendes, goldenes Strahlen ohne Orangetöne.',
+            formula5: 'Weicher Bräunungshandschuh und Kabuki-Pinsel für eine perfekte, stressfreie Anwendung.',
         },
-        asSeenin: 'Wie zusehen in',
+        asSeenin: 'Empfohlen von',
         atc: 'Jetzt kaufen',
         shades: {
             medium: 'Nuance: Medium - Verleiht der Haut einen sonnengeküssten Glow. Super für hellere Hauttöne!',

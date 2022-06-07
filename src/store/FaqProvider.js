@@ -162,7 +162,7 @@ const _content = {
             },
             {
                 title: 'Wie oft sollte ich mich selbstbräunen?',
-                text: "Es liegt ganz bei dir! Wenn du dich für eine erneute Bräunung entschieden hast, empfehlen wir den vorherigen Selbstbräuner zu entfernen und ein gründliches Peeling durchzuführen, um die besten Ergebnisse zu erzielen. Bräune dich mindestens einmal pro Woche, um sicherzustellen, dass du das ganze Jahr über schön gebräunt bist!",
+                text: "Es liegt ganz bei dir! Wenn du dich für eine erneute Bräunung entschieden hast, empfehlen wir den vorherigen Selbstbräuner zu entfernen und ein gründliches Peeling durchzuführen, um die besten Ergebnisse zu erzielen. Bräune dich mindestens einmal pro Woche, wenn du sicherstellen willst, dass du das ganze Jahr über schön gebräunt bist!",
             },
             {
                 title: 'Kann ich Sunny Honey auf empfindlicher Haut verwenden?',

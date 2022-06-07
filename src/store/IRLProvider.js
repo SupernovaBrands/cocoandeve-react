@@ -30,7 +30,7 @@ const irlReviews = {
         title: 'Bräunungs-Magie IRL',
         on: 'auf',
         caption1: 'Selbstbräuner Mousse (Dark)',
-        review1: 'Ich trage @cocoandeve Sunny Honey Selbstbräuner Mousse in der Nuance Dark. Da ich nicht in den Urlaub fliegen und eine natürliche Bräune bekommen konnte, war dies ein Lebensretter, der Geruch ist unglaublich (tropischer Mango- und Guave-Duft 🌴😻), es ist 100% vegan, frei von Toxinen und Tierversuchen',
+        review1: 'Ich trage @cocoandeve Sunny Honey Selbstbräuner Mousse in der Nuance Dark. Da ich nicht in den Urlaub fliegen und eine natürliche Bräune bekommen konnte, war das mein Lebensretter, der Geruch ist unglaublich (tropische Mango und Guave🌴😻), es ist 100% vegan, frei von Toxinen und Tierversuchen',
         caption2: 'Selbstbräuner Mousse (Dark)',
         review2: 'Nichts ist besser als eine frische Bräune, um dein Selbstvertrauen zu stärken. Ich habe @cocoandeve Sunny Honey Selbstbräuner Mousse in Dark verwendet, um diesen Winter einen natürlichen Glow zu erhalten. Sie lässt sich super einfach und schnell auftragen, sodass sich das bräunen nie wie eine lästige Pflicht anfühlt. Sie hat einen großartigen Duft nach balinesischer Mango und Guave, ist 100% vegan, frei von Toxinen, frei von Tierversuchen und verleiht dir eine olivfarbene Haut (hier gibt es keine orangen Vibes)!',
         caption3: 'Selbstbräuner Mousse (Utra Dark)',
