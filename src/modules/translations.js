@@ -33,7 +33,7 @@ const Translations = {
             prev: 'Vorherige Frage',
             result: 'Siehe Ergebnisse!',
         },
-        loading: 'Analyse Ihrer Antworten',
+        loading: 'Analyse deiner Antworten',
     }
 }
 
