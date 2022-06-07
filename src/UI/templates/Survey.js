@@ -190,7 +190,7 @@ const Survey = () => {
                 postMessageCookie('surveyResultSku', findVariant.sku);
                 postMessageCookie('surveySubmitNew', true);
                 clearCookie();
-                window.top.location.href = `https://${selectedSite}/products/${findVariant.product_handle}?survey=result&sku=${findVariant.sku}`;
+                // window.top.location.href = `https://${selectedSite}/products/${findVariant.product_handle}?survey=result&sku=${findVariant.sku}`;
             }
 
             if (close) {
@@ -201,7 +201,7 @@ const Survey = () => {
                 postMessageCookie('surveyResultSku', findVariant.sku);
                 postMessageCookie('surveySubmitNew', true);
                 clearCookie();
-                window.top.location.href = `https://${selectedSite}/products/${findVariant.product_handle}?survey=result&sku=${findVariant.sku}`;
+                // window.top.location.href = `https://${selectedSite}/products/${findVariant.product_handle}?survey=result&sku=${findVariant.sku}`;
             }
         }
     }
@@ -210,7 +210,7 @@ const Survey = () => {
         if (questionIndex <= Questions.length) {
             const targetQuestion = Questions[questionIndex];
             if (targetQuestion && targetQuestion.rule && targetQuestion.rule.skipped) {
-                const targetAnswer = currentAnswer[targetQuestion.rule.question];
+                const targetAnswer = decodeAnswers(currentAnswer)[targetQuestion.rule.question];
                 if (targetAnswer === targetQuestion.rule.answer[lang]) {
                     answerAction(questionIndex, '');
                     const targetQuestionIndex = currentQuestion < questionIndex ? questionIndex + 1 : questionIndex - 1;

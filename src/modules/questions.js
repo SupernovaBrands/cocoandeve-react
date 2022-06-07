@@ -274,7 +274,7 @@ const Questions = [
                 {label: 'Urlaub', type: 'checkbox'},
                 {label: 'Party', type: 'checkbox'},
                 {label: 'Trainieren', type: 'checkbox'},
-                {label: 'Besseres Wetterr', type: 'checkbox'},
+                {label: 'Besseres Wetter', type: 'checkbox'},
                 {label: 'Gesünder aussehen', type: 'checkbox'},
                 {label: 'Hautton ausgleichen', type: 'checkbox'},
                 {label: 'Sonstiges', type: 'input'},
@@ -318,7 +318,7 @@ const Questions = [
             '35-44',
             '45-54',
             '55-64',
-            '65 up',
+            '65+',
             ],
             fr: [
             '18-24',
