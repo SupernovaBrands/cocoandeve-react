@@ -105,9 +105,9 @@ const Questions = [
         },
         answers: {
             en: [
-            "Yes, I've tried them all!",
-            "I have, I am occasionally tanning with self tanner",
-            "No, this would be my first",
+                "Yes, I've tried them all!",
+                "I have, I am occasionally tanning with self tanner",
+                "No, this would be my first",
             ],
             de: [
                 'Ja, ich habe sie alle ausprobiert!',
@@ -218,6 +218,15 @@ const Questions = [
         lastFull: true,
         maxChoose: 6,
         lastDisableForAll: true,
+        rule: {
+            skipped: true,
+            question: 4,
+            answer: {
+                en: 'No, this would be my first',
+                de: 'Nein, das wäre mein erstes Mal',
+                fr: 'Non, ce serait la première fois',
+            },
+        },
     },
     {
         question: {

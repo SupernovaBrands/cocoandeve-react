@@ -208,7 +208,19 @@ const Survey = () => {
 
     const setQuestionState = (questionIndex) => {
         if (questionIndex <= Questions.length) {
-            setQuestion(questionIndex);
+            const targetQuestion = Questions[questionIndex];
+            if (targetQuestion && targetQuestion.rule && targetQuestion.rule.skipped) {
+                const targetAnswer = currentAnswer[targetQuestion.rule.question];
+                if (targetAnswer === targetQuestion.rule.answer[lang]) {
+                    answerAction(questionIndex, '');
+                    const targetQuestionIndex = currentQuestion < questionIndex ? questionIndex + 1 : questionIndex - 1;
+                    setQuestion(targetQuestionIndex);
+                } else {
+                    setQuestion(questionIndex);
+                }
+            } else {
+                setQuestion(questionIndex);
+            }
         } else if (questionIndex >= Questions.length) {
             gettingResult(true);
             // call saving data to analytics and database
