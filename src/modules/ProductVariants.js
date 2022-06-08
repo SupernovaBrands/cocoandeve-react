@@ -32,7 +32,7 @@ const ProductVariants = {
     },
     {
       "id": 32363243831331,
-      "sku": "CE0000432020",
+      "sku": "CE0000432040",
       "product_handle": "bronzing-self-tanner-drops"
     },
     {

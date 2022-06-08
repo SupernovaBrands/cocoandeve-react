@@ -159,7 +159,7 @@ const Survey = () => {
             if (thirdAnswered === 2) {
                 sku = 'CE0000032020'; // foam medium
             } else if (thirdAnswered === 1) {
-                sku = 'CE0000432020'; // drops medium
+                sku = 'CE0000432040'; // drops medium
             } else {
                 sku = 'CE0001202020'; // glow essential medium
             }
@@ -208,9 +208,7 @@ const Survey = () => {
     }
 
     const setQuestionState = (questionIndex) => {
-        console.log(questionIndex, Questions.length, Questions);
         if (questionIndex <= Questions.length) {
-            console.log('process button');
             const targetQuestion = Questions[questionIndex];
             if (targetQuestion && targetQuestion.rule && targetQuestion.rule.skipped) {
                 const targetAnswer = decodeAnswers(currentAnswer)[targetQuestion.rule.question];
@@ -225,7 +223,6 @@ const Survey = () => {
                 setQuestion(questionIndex);
             }
         } else if (questionIndex >= Questions.length) {
-            console.log('process result');
             gettingResult(true);
             // call saving data to analytics and database
             saveData();
