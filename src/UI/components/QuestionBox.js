@@ -21,6 +21,7 @@ const QuestionBox = (props) => {
 
     const prevAction = () => {
         return (e) => {
+            console.log('clicked p');
             setCurrentQuestion(currentQuestion - 1);
             e.preventDefault();
         }
@@ -28,6 +29,7 @@ const QuestionBox = (props) => {
 
     const nextAction = () => {
         return (e) => {
+            console.log('clicked n');
             setCurrentQuestion(currentQuestion + 1);
             e.preventDefault();
         }

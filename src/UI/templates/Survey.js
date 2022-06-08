@@ -207,7 +207,9 @@ const Survey = () => {
     }
 
     const setQuestionState = (questionIndex) => {
+        console.log(questionIndex, Questions.length, Questions);
         if (questionIndex <= Questions.length) {
+            console.log('process button');
             const targetQuestion = Questions[questionIndex];
             if (targetQuestion && targetQuestion.rule && targetQuestion.rule.skipped) {
                 const targetAnswer = decodeAnswers(currentAnswer)[targetQuestion.rule.question];
@@ -222,6 +224,7 @@ const Survey = () => {
                 setQuestion(questionIndex);
             }
         } else if (questionIndex >= Questions.length) {
+            console.log('process result');
             gettingResult(true);
             // call saving data to analytics and database
             saveData();
