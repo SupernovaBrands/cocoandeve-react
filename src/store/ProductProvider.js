@@ -161,7 +161,7 @@ const _content = {
         compareAtPrice: '€65,90',
         saving: '29% de réduction',
         title1: 'Sunny Honey',
-        title2: 'Bali Bronzing Bundle',
+        title2: 'Kit de Bronzage',
         description: 'Le seul autobronzant dont tu auras besoin. <br />DHA 100% naturelle. Non testé sur les animaux. Vegan. ',
         benefits: {
             formula1: 'PAS de substances nocives, PAS de sous-tons orangés.',
@@ -183,7 +183,7 @@ const _content = {
         compareAtPrice: '€65,90',
         saving: 'Spare 29%',
         title1: 'Sunny Honey',
-        title2: 'Bali Bronzing Bundle',
+        title2: 'Selbstbräuner Set',
         description: 'Der einzige Selbstbräuner, den du jemals brauchen wirst.<br />100% natürliches DHA. Tierversuchsfrei. Vegan.',
         benefits: {
             formula1: 'Verwischt Pigmentflecken und perfektioniert die Haut.',
