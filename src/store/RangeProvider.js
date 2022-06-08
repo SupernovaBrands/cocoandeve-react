@@ -38,6 +38,10 @@ const productList = {
             comparePrice: null,
             title: 'Sérum bronzant pour le visage',
         },
+        my: {
+            price: 'RM119.00',
+            comparePrice: null,
+        },
     },
     'spf-glow-kit': {
         us: {
@@ -110,6 +114,10 @@ const productList = {
             comparePrice: '€65,90',
             title: 'Kit de Bronzage de Bali Sunny Honey',
         },
+        my: {
+            price: 'RM199.00',
+            comparePrice: 'RM312.00',
+        },
     },
     'sunny-honey-bali-bronzing-self-tan-mousse': {
         us: {
@@ -146,6 +154,10 @@ const productList = {
             price: '€31,90',
             comparePrice: null,
             title: 'Sunny Honey Mousse de bronzage',
+        },
+        my: {
+            price: 'RM150.00',
+            comparePrice: null,
         },
     },
     'tanning-goddess': {
@@ -184,6 +196,10 @@ const productList = {
             comparePrice: '€95,80',
             title: 'Kit de bronzage Goddess',
         },
+        my: {
+            price: 'RM313.00',
+            comparePrice: 'RM447.00',
+        },
     },
     'self-tan-travel-kit': {
         us: {
@@ -220,6 +236,10 @@ const productList = {
             price: '€24,90',
             comparePrice: null,
             title: 'Kit de voyage Autobronzant',
+        },
+        my: {
+            price: 'RM107.00',
+            comparePrice: null,
         },
     },
     'bali-bae-self-tan-set': {
@@ -258,6 +278,10 @@ const productList = {
             comparePrice: '€82,80',
             title: 'Kit de Bronzage Bali Bae',
         },
+        my: {
+            price: 'RM273.00',
+            comparePrice: 'RM388.00',
+        },
     },
     'glowy-face-tan-set': {
         us: {
@@ -293,6 +317,10 @@ const productList = {
             price: '€61,40',
             comparePrice: '€76,80',
             title: 'Glowy Face Bronzage Kit',
+        },
+        my: {
+            price: 'RM275.00',
+            comparePrice: 'RM336.00',
         },
     }
 };
