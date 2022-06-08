@@ -558,7 +558,69 @@ const ProductVariants = {
       "sku": "CE0001962020",
       "product_handle": "glow-essentials-bundle"
     }
-  ]
+  ],
+  "my.cocoandeve.com": [
+    {
+      "id": 6708372963401,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-mousse",
+      "sku": "CE0000032020"
+    },
+    {
+      "id": 6708372963401,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-mousse",
+      "sku": "CE0000032040"
+    },
+    {
+      "id": 6708372963401,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-mousse",
+      "sku": "CE0000032060"
+    },
+    {
+      "id": 6708372963401,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-mousse",
+      "sku": "CE0000072020"
+    },
+    {
+      "id": 6708372963401,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-mousse",
+      "sku": "CE0000072040"
+    },
+    {
+      "id": 6708372963401,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-mousse",
+      "sku": "CE0000072060"
+    },
+    {
+      "id": 6708374765641,
+      "product_handle": "bronzing-self-tanner-drops",
+      "sku": "CE0000432040"
+    },
+    {
+      "id": 6708374765641,
+      "product_handle": "bronzing-self-tanner-drops",
+      "sku": "CE0000432030"
+    },
+    {
+      "id": 6708374765641,
+      "product_handle": "bronzing-self-tanner-drops",
+      "sku": "CE0001202020"
+    },
+    {
+      "id": 6708374765641,
+      "product_handle": "bronzing-self-tanner-drops",
+      "sku": "CE0001962020"
+    },
+    {
+      "id": 6708371652681,
+      "product_handle": "glow-essentials-bundle",
+      "sku": "CE0001202020"
+    },
+    {
+      "id": 6708371652681,
+      "product_handle": "glow-essentials-bundle",
+      "sku": "CE0001962020"
+    }
+  ],
 };
 
-  export default ProductVariants;
+export default ProductVariants;
