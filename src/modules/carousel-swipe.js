@@ -1,7 +1,6 @@
-// import { Carousel } from "../vendor/bootstrap.bundle";
+import { Carousel } from 'bootstrap';
 
 const carouselSwipe = (carouselId) => {
-    const bootstrap = require('../vendor/bootstrap.bundle.js');
     const carouselSwipe = document.getElementById(carouselId);
 
     let xDown = null;
@@ -23,13 +22,18 @@ const carouselSwipe = (carouselId) => {
         }
 
         // const carousel = Carousel.getInstance(carouselSwipe);
-        const carousel = new bootstrap.Carousel(carouselSwipe);
+        const carousel = new Carousel(carouselSwipe);
+        console.log('carousel obj', carousel);
 
         const xUp = evt.touches[0].clientX;
+        console.log('xUp', xUp);
         const yUp = evt.touches[0].clientY;
+        console.log('yUp', yUp);
 
         const xDiff = xDown - xUp;
+        console.log('xDiff', xDiff);
         const yDiff = yDown - yUp;
+        console.log('yDiff', yDiff);
         if (Math.abs(xDiff) > Math.abs(yDiff)) {
 
             if (xDiff > 0) {
