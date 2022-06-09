@@ -1,6 +1,7 @@
-import { Carousel } from 'bootstrap';
+// import { Carousel } from 'bootstrap';
 
 const carouselSwipe = (carouselId) => {
+    const bootstrap = require('../vendor/bootstrap.bundle.js');
     const carouselSwipe = document.getElementById(carouselId);
 
     let xDown = null;
@@ -22,7 +23,7 @@ const carouselSwipe = (carouselId) => {
         }
 
         // const carousel = Carousel.getInstance(carouselSwipe);
-        const carousel = new Carousel(carouselSwipe);
+        const carousel = new bootstrap.Carousel(carouselSwipe);
         console.log('carousel obj', carousel);
 
         const xUp = evt.touches[0].clientX;
