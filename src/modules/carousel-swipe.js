@@ -1,7 +1,7 @@
 // import { Carousel } from "../vendor/bootstrap.bundle";
 
 const carouselSwipe = (carouselId) => {
-    const bootstrap = require('../vendor/bootstrap.bundle');
+    const bootstrap = require('../vendor/bootstrap.bundle.js');
     const carouselSwipe = document.getElementById(carouselId);
 
     let xDown = null;
