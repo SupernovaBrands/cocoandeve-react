@@ -4,8 +4,6 @@
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 
-// export const { Carousel } = require("bootstrap");
-
 (function (global, factory) {
   // eslint-disable-next-line no-unused-expressions
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
