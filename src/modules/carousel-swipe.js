@@ -4,6 +4,7 @@ const carouselSwipe = (carouselId) => {
     const bootstrap = require('../vendor/bootstrap.bundle.js');
     console.log('carouselId', carouselId);
     const carouselSwipe = document.querySelector(`#${carouselId}`);
+    console.log('carouselSwipe', carouselSwipe);
 
     let xDown = null;
     let yDown = null;
