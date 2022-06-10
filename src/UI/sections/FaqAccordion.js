@@ -3,12 +3,35 @@ import { ReactComponent as Minus } from '../../assets/minus.svg';
 import { ReactComponent as Plus } from '../../assets/plus.svg';
 import FaqContext from '../../store/faq-context';
 
+import {Collapse} from 'bootstrap';
+
 const FaqAccordion = () => {
     let params = (new URL(document.location)).searchParams;
 	let activeStore = params.get("utm_store") || 'us';
 
     const faqCtx = useContext(FaqContext);
     faqCtx.storeChange(activeStore);
+
+    const accordionHandle = (e) => {
+        const btnToggle = document.querySelectorAll('.accordion-button');
+        for (let i = 0; i < btnToggle.length; i++) {
+            btnToggle[i].classList.add('collapsed');
+        }
+
+        const collapse = new Collapse(document.getElementById(e.currentTarget.dataset.target), {
+            toggle: true,
+        });
+
+        const btnIndex = e.currentTarget.dataset.btnindex;
+        document.querySelector(`#FagButtonToggle${btnIndex}`).classList.toggle('collapsed');
+        setTimeout(function () {
+            if (collapse._element.classList.contains('show')) {
+                document.getElementById(`FagButtonToggle${btnIndex}`).classList.remove('collapsed');
+            } else {
+                document.getElementById(`FagButtonToggle${btnIndex}`).classList.add('collapsed');
+            }
+        }, 390);
+    };
 
 	return (
 		<section className='range__carousel faq-accordion bg-yellow-light py-3'>
@@ -18,13 +41,13 @@ const FaqAccordion = () => {
                     {faqCtx.items.map((faq, index) => (
                         <div key={`faqitem${index}`} className={`accordion-item border-0 border-bottom border-dark ${ index === 3 ? 'border-bottom-0':''}`}>
                             <div className="accordion-header bg-yellow-light" id={`FagItemHeading${index}`}>
-                                <button className="accordion-button bg-yellow-light h2 mb-0 collapsed w-100 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target={`#FagItemContent${index}`}>
+                                <button className="accordion-button bg-yellow-light h2 mb-0 collapsed w-100 d-flex justify-content-between" type="button" data-target={`FagItemContent${index}`} data-btnindex={index} id={`FagButtonToggle${index}`} onClick={accordionHandle}>
                                     <h3 className='col-10 ps-0 mb-0'>{faq.title}</h3>
                                     <Plus className='plus' />
 							        <Minus className='minus' />
                                 </button>
                             </div>
-                            <div data-bs-parent="#faqSection" id={`FagItemContent${index}`} className="accordion-collapse collapse bg-yellow-light">
+                            <div data-bs-parent="#faqSection" id={`FagItemContent${index}`} className="accordion-collapse collapse bg-yellow-light" aria-expanded="false">
                                 <div className="accordion-body" dangerouslySetInnerHTML={{ __html: faq.text }} />
                             </div>
                         </div>
