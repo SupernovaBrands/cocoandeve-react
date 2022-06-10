@@ -32,7 +32,7 @@ const RangeCarousel = () => {
         }
 	];
 
-	if (['us', 'ca', 'au'].includes(activeStore)) {
+	if (['ca', 'au'].includes(activeStore)) {
 		PRODUCTS_FACE.push({
 			carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
 			content: <ProductCard
