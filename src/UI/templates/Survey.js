@@ -191,7 +191,9 @@ const Survey = () => {
                 postMessageCookie('surveyResultSku', findVariant.sku);
                 postMessageCookie('surveySubmitNew', true);
                 clearCookie();
-                window.top.location.href = `https://${selectedSite}/products/${findVariant.product_handle}?survey=result&sku=${findVariant.sku}`;
+                setTimeout(function(){
+                    window.top.location.href = `https://${selectedSite}/products/${findVariant.product_handle}?survey=result&sku=${findVariant.sku}`;
+                }, 3000);
             }
 
             if (close) {
@@ -202,7 +204,9 @@ const Survey = () => {
                 postMessageCookie('surveyResultSku', findVariant.sku);
                 postMessageCookie('surveySubmitNew', true);
                 clearCookie();
-                window.top.location.href = `https://${selectedSite}/products/${findVariant.product_handle}?survey=result&sku=${findVariant.sku}`;
+                setTimeout(function(){
+                    window.top.location.href = `https://${selectedSite}/products/${findVariant.product_handle}?survey=result&sku=${findVariant.sku}`;
+                }, 3000);
             }
         }
     }
@@ -227,6 +231,7 @@ const Survey = () => {
             // call saving data to analytics and database
             saveData();
             postMessageGaParent();
+            gettingResult(true);
         }
     }
 
