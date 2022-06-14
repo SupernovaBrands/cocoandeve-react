@@ -237,11 +237,12 @@ const Survey = () => {
 
     const postMessageGaParent = () => {
         if (window.top === window.self) return;
-        const keys = Object.keys(currentAnswer);
+        const gaAnswers = decodeAnswers(currentAnswer)
+        const keys = Object.keys(gaAnswers);
 
         keys.forEach((key,index) => {
             const q = Questions[index];
-            const a = currentAnswer[key];
+            const a = gaAnswers[key];
             const label = q.question[lang];
             const action = typeof(a) === 'object' ? a.join(',') : a;
             window.parent.postMessage({
