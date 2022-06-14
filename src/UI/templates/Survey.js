@@ -173,7 +173,7 @@ const Survey = () => {
             }
         } else if (firstAnswered === 3) {
             if (thirdAnswered === 2) {
-                sku = 'CE0000032060'; // foam ultra dark
+                sku = ['us.cocoandeve.com', 'www.cocoandeve.com'].includes(site) ? 'CE0000036060' : 'CE0000032060'; // foam ultra dark
             } else if (thirdAnswered === 1) {
                 sku = 'CE0000432030'; // drops dark
             } else {
