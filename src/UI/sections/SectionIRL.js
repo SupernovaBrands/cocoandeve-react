@@ -1,3 +1,7 @@
+
+import { useContext } from "react";
+
+import IRLContext from "../../store/irl-context";
 import IRLCard from '../components/IRLCard';
 import Carousel from '../components/Carousel';
 
@@ -6,17 +10,23 @@ import { ReactComponent as FacebookIcon } from '../../assets/facebook-clr.svg';
 
 const SectionIRL = () => {
 
+    let params = (new URL(document.location)).searchParams;
+	let activeStore = params.get('utm_store') || 'us';
+
+	const irlCtx = useContext(IRLContext);
+    irlCtx.storeChange(activeStore);
+
     const CONTENT = [
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 active',
             content:
                 <IRLCard
                     name="@hughesyfit"
-                    caption="Bali Bronzing Foam (Dark)"
+                    caption={irlCtx.caption1}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6dfe2acd-5388-48ff-3dd1-b2ed2b6cad00/200x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/13cb7403-0ef5-4216-3b94-e5ce95fbdc00/200x"
                 >
-                    <p>wearing @cocoandeve sunny honey bali bronzing foam in shade dark. Since not being able to go away and catch a natural tan, this has been a life saver, the smell is incredible (tropical mango and guave scent 🌴😻) it’s 100% vegan, toxin-free and cruelty free</p>
+                    <p>{irlCtx.review1}</p>
 
                 </IRLCard>
         },
@@ -25,11 +35,11 @@ const SectionIRL = () => {
             content:
                 <IRLCard
                     name="@hannahtucker"
-                    caption="Bali Bronzing Foam (Dark)"
+                    caption={irlCtx.caption2}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/14450439-ff6e-4fe2-0030-373f53899600/200x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/15647b0f-9340-41fb-4e09-f80692f0f800/200x"
                 >
-                    <p>Nothing better than a fresh tan to boost your confidence. I have been using @cocoandeve Sunny Honey Bali Bronzing foam in dark to keep a natural glow this winter, it’s super easy to apply and quick so it never feels like a chore. It has an amazing scent of Balinese Mango and Guava, 100% vegan, toxin-free, cruelty free, and gives you an olive colour (no orange vibes over here)!</p>
+                    <p>{irlCtx.review2}</p>
                 </IRLCard>
         },
         {
@@ -37,11 +47,11 @@ const SectionIRL = () => {
             content:
                 <IRLCard
                     name="@orianavtorres"
-                    caption="Bali Bronzing Foam (Utra Dark)"
+                    caption={irlCtx.caption3}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7a518864-af70-46a1-6d76-8d8f43e1d100/200x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b734bbe7-e646-4ecf-d42e-5ee4c2c60300/200x"
                 >
-                    <p>The perfect tan! Free of sulfate, toxins, silicones, parabens and other harmful chemicals. I use the Tanning Goddess Kit is Ultra Dark.</p>
+                    <p>{irlCtx.review3}</p>
                 </IRLCard>
         },
         {
@@ -49,21 +59,21 @@ const SectionIRL = () => {
             content:
                 <IRLCard
                     name="@jaydestella"
-                    caption="Bali Bronzing Foam (Dark)"
+                    caption={irlCtx.caption4}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ed15f4ee-c1a7-4486-de95-81bf1b38c400/200x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/18084a86-e332-4463-03d3-292b438d6900/200x"
                 >
-                    <p>Just tried @cocoandeve bronzing foam!!! And I’m obsessed! 🤍</p>
+                    <p>{irlCtx.review4}</p>
                 </IRLCard>
         }
     ]
 
 	return (
 		<section className='customer-reviews py-4'>
-            <h2 className="h1 mb-3 text-center">Tan Magic IRL</h2>
+            <h2 className="h1 mb-3 text-center">{irlCtx.title}</h2>
             <div className='d-flex justify-content-center mb-3'>
-                <div className='d-flex align-items-center'><InstagramIcon className='font-size-sm' /><span className='ms-1 font-size-sm'>879k on Instagram</span></div>
-                <div className='d-flex align-items-center ms-1'><FacebookIcon className='font-size-sm' /><span className='ms-1 font-size-sm'>287k on Facebook</span></div>
+                <div className='d-flex align-items-center'><InstagramIcon className='font-size-sm' /><span className='ms-1 font-size-sm'>879k {irlCtx.on} Instagram</span></div>
+                <div className='d-flex align-items-center ms-1'><FacebookIcon className='font-size-sm' /><span className='ms-1 font-size-sm'>287k {irlCtx.on} Facebook</span></div>
             </div>
             <div className='container px-g pe-0 pe-lg-g'>
                 <Carousel

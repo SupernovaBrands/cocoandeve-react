@@ -8,9 +8,9 @@ const SingleChoice = (props) => {
         buttonType,
     } = props;
 
-    const { 
-        answerAction, 
-        currentQuestion, 
+    const {
+        answerAction,
+        currentQuestion,
         setDisable,
         currentAnswer,
     } = useContext(SurveyContext);
@@ -41,7 +41,7 @@ const SingleChoice = (props) => {
                         </div>
                     );
                 })
-            } 
+            }
             </div>
         )
 };

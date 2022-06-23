@@ -6,7 +6,7 @@
             font-size: $h1-font-size;
         }
     }
-    
+
     .footer-action {
         @include media-breakpoint-down(lg) {
             .btn-next {
@@ -25,7 +25,14 @@
 
         @include media-breakpoint-up(lg) {
             width: calc-em(150);
-            height: calc-em(150);    
+            height: calc-em(150);
+        }
+    }
+
+    .form-control:focus {
+        border-color: $primary !important;
+        &::placeholder {
+            color: transparent;
         }
     }
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Questions from '../../modules/questions';
+import Translations from '../../modules/translations';
 
 export const SurveyContext = React.createContext();
 const QuestionBox = (props) => {
@@ -15,17 +16,25 @@ const QuestionBox = (props) => {
         currentAnswer,
         width,
         height,
+        lang,
     } = props;
 
-    const prevAction = (e) => {
-        setCurrentQuestion(currentQuestion - 1);
-        e.preventDefault();
+    const prevAction = () => {
+        return (e) => {
+            console.log('clicked p');
+            setCurrentQuestion(currentQuestion - 1);
+            e.preventDefault();
+        }
     }
 
-    const nextAction = (e) => {
-        setCurrentQuestion(currentQuestion + 1);
-        e.preventDefault();
+    const nextAction = () => {
+        return (e) => {
+            console.log('clicked n');
+            setCurrentQuestion(currentQuestion + 1);
+            e.preventDefault();
+        }
     }
+
 
     const answer = (data) => {
         answerAction(currentQuestion, data);
@@ -43,9 +52,9 @@ const QuestionBox = (props) => {
                     { children }
                 </SurveyContext.Provider>
                 <div className="footer-action w-100 pb-2 bg-white">
-                    <button className="mt-2 mt-lg-4 btn btn-lg btn-primary text-white btn-next" onClick={nextAction} disabled={isDisabled}>{ isLastQuestion ? 'See results!' : 'Next' }</button>
+                    <button className="mt-2 mt-lg-4 btn btn-lg btn-primary text-white btn-next" onClick={nextAction()} disabled={isDisabled}><span>{ isLastQuestion ? Translations[lang].btn.result : Translations[lang].btn.next }</span></button>
                     {
-                        currentQuestion > 1 && (<a href="/" className="d-block text-underline text-black w-100 mt-2 mb-lg-4" onClick={prevAction}>Previous question</a>)
+                        currentQuestion > 1 && (<a href="/" className="d-block text-underline text-black w-100 mt-2 mb-lg-4" onClick={prevAction()}>{Translations[lang].btn.prev}</a>)
                     }
                 </div>
         </div>
@@ -62,6 +71,7 @@ QuestionBox.propTypes = {
     width: PropTypes.number,
     height: PropTypes.number,
     currentAnswer: PropTypes.object,
+    lang: PropTypes.string.isRequired,
 };
 
 export default QuestionBox;

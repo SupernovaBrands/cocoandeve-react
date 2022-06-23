@@ -8,10 +8,17 @@ const ProductCard = (props) => {
 	let activeStore = params.get('utm_store') || 'us';
 
 	const productCardCtx = useContext(RangeContext);
-	const productPrices = productCardCtx[props.handle][activeStore];
+	const productContent = productCardCtx.products[props.handle][activeStore];
 
 	if (activeStore !== 'us') {
 		ProductUrl = ProductUrl.replace(ProductUrl.split('//')[1].split('.')[0], activeStore);
+	}
+
+	const productTitle = productContent.title ? productContent.title : productCardCtx.products[props.handle]['us'].title;
+
+	let carouselData = productCardCtx.carouselSection[activeStore];
+	if (!carouselData) {
+		carouselData = productCardCtx.carouselSection['us'];
 	}
 
 	return (
@@ -21,11 +28,11 @@ const ProductCard = (props) => {
 			)}
 
 			<a href={`${ProductUrl}${props.handle}`} className='d-block'>
-				<span className='visually-hidden-focusable'>{props.title}</span>
+				<span className='visually-hidden-focusable'>{productTitle}</span>
 				<picture>
 					<source type="image/webp" srcSet={props.comImg} />
 					<source type="image/jpeg" srcSet={props.img} />
-					<img className='w-100' src={props.img} alt={props.title} loading="lazy" />
+					<img className='w-100' src={props.img} alt={productTitle} loading="lazy" />
 				</picture>
 			</a>
 			<div className='pt-2 pb-0 position-relative flex-grow-1 d-flex flex-column px-2'>
@@ -35,19 +42,19 @@ const ProductCard = (props) => {
 				</div>
 				<p className="product-card__title flex-grow-1 d-flex flex-column justify-content-center h4 h-100 mb-0 fw-normal">
     				<a href={`${ProductUrl}${props.handle}`} className="text-dark text-decoration-none">
-						{props.title}
-						<span className='visually-hidden-focusable'>{props.title}</span>
+						{productTitle}
+						<span className='visually-hidden-focusable'>{productTitle}</span>
 					</a>
   				</p>
 				<p className="text-center">
-					{productPrices.comparePrice !== null && (
-						<span className="text-linethrough h4">{productPrices.comparePrice}</span>
+					{productContent.comparePrice !== null && (
+						<span className="text-linethrough h4">{productContent.comparePrice}</span>
 					)}
-      				<span className="h4 m-1 text-primary fw-bold">{productPrices.price}</span>
+      				<span className="h4 m-1 text-primary fw-bold">{productContent.price}</span>
   				</p>
 				<a href={`${ProductUrl}${props.handle}`} className="btn btn-lg btn-primary text-white btn-block px-0">
-					Learn More
-					<span className='visually-hidden-focusable'>{`Learn More - ${props.title}`}</span>
+					{carouselData.learnMore}
+					<span className='visually-hidden-focusable'>{`${carouselData.learnMore} - ${productTitle}`}</span>
 				</a>
 			</div>
 		</Fragment>

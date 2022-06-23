@@ -6,7 +6,8 @@ const carouselLoop = (carouselId) => {
 
         if (768 > window.innerWidth && initCarouselItems.length <= 5) {
             for (let i = 0; i < initCarouselItems.length; i += 1) {
-                const node = initCarouselInner.querySelectorAll('.carousel-item')[i+1]
+                const node = initCarouselInner.querySelectorAll('.carousel-item')[i+1];
+                if (!node) continue;
                 const itemClone = node.cloneNode(true);
                 initCarouselInner.appendChild(itemClone);
             }
