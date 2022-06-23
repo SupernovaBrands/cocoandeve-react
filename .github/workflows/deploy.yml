@@ -21,15 +21,15 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
 
-      - name: Build and Deploy
+      - name: Github Build & Deploy Action
         uses: jeoy/github-deploy-actions@v1.0.1
         env:
           COMMIT_EMAIL: teddy@supernovabrands.com
           COMMIT_NAME: Dev github pages auto deployment
           ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BASE_BRANCH: staging
+          BASE_BRANCH: master
           DEPLOY_BRANCH: gh-pages
           BUILD_SCRIPT: npm install && npm run build
           FOLDER: build
