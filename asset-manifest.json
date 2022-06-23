@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "../static/js/main.504fd145.js",
+    "main.js": "../static/js/main.b0f6f744.js",
     "static/css/149.37960ad5.chunk.css": "../static/css/149.37960ad5.chunk.css",
     "static/js/149.2f1a1f34.chunk.js": "../static/js/149.2f1a1f34.chunk.js",
     "static/css/434.80a75e19.chunk.css": "../static/css/434.80a75e19.chunk.css",
@@ -14,7 +14,7 @@
     "static/js/264.0e43aa99.chunk.js": "../static/js/264.0e43aa99.chunk.js",
     "static/js/304.74893366.chunk.js": "../static/js/304.74893366.chunk.js",
     "static/js/80.0dcf5fb5.chunk.js": "../static/js/80.0dcf5fb5.chunk.js",
-    "static/js/888.2d8ff169.chunk.js": "../static/js/888.2d8ff169.chunk.js",
+    "static/js/888.af2e6265.chunk.js": "../static/js/888.af2e6265.chunk.js",
     "static/js/303.668f7a90.chunk.js": "../static/js/303.668f7a90.chunk.js",
     "sunny-honey-bali-bronzing-self-tan/index.html": "../sunny-honey-bali-bronzing-self-tan/index.html",
     "range-tan/index.html": "../range-tan/index.html",
@@ -43,7 +43,7 @@
     "static/media/chevron-prev.svg": "../static/media/chevron-prev.6f5ec3d1afc044e39f753bab386ec51c.svg",
     "static/media/chevron-up.svg": "../static/media/chevron-up.cadd116a7939fea7e4b266c64ffefa59.svg",
     "static/media/chevron-down.svg": "../static/media/chevron-down.6b10250df20474511cb9f46a308f53e3.svg",
-    "main.504fd145.js.map": "../static/js/main.504fd145.js.map",
+    "main.b0f6f744.js.map": "../static/js/main.b0f6f744.js.map",
     "149.37960ad5.chunk.css.map": "../static/css/149.37960ad5.chunk.css.map",
     "149.2f1a1f34.chunk.js.map": "../static/js/149.2f1a1f34.chunk.js.map",
     "434.80a75e19.chunk.css.map": "../static/css/434.80a75e19.chunk.css.map",
@@ -57,10 +57,10 @@
     "264.0e43aa99.chunk.js.map": "../static/js/264.0e43aa99.chunk.js.map",
     "304.74893366.chunk.js.map": "../static/js/304.74893366.chunk.js.map",
     "80.0dcf5fb5.chunk.js.map": "../static/js/80.0dcf5fb5.chunk.js.map",
-    "888.2d8ff169.chunk.js.map": "../static/js/888.2d8ff169.chunk.js.map",
+    "888.af2e6265.chunk.js.map": "../static/js/888.af2e6265.chunk.js.map",
     "303.668f7a90.chunk.js.map": "../static/js/303.668f7a90.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.504fd145.js"
+    "static/js/main.b0f6f744.js"
   ]
 }
