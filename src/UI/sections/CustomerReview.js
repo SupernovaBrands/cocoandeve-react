@@ -3,14 +3,14 @@ import ReviewCard from '../components/ReviewCard';
 import Carousel from '../components/Carousel';
 import ReviewContext from '../../store/reviews-context';
 
-const CustomerReview = () => {
+const CustomerReview = (props) => {
     let params = (new URL(document.location)).searchParams;
 	let activeStore = params.get("utm_store") || 'us';
 
     const reviewsCtx = useContext(ReviewContext);
-    reviewsCtx.storeChange(activeStore);
+    reviewsCtx.storeChange(activeStore, props.range);
 
-    const CUSTOMER_REVIEWS = [
+    const CUSTOMER_REVIEWS_TAN = [
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
             content:
@@ -167,6 +167,147 @@ const CustomerReview = () => {
         },
     ]
 
+    const CUSTOMER_REVIEWS_HAIR = [
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            content:
+                <ReviewCard
+                    name={reviewsCtx.reviews[0].name}
+                    caption={reviewsCtx.reviews[0].shade}
+                    text={reviewsCtx.reviews[0].text}
+                >
+                    <div className='row no-gutters'>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/23a4499f-89dc-47ab-33f7-0aec0b9afd00/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/23a4499f-89dc-47ab-33f7-0aec0b9afd00/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/23a4499f-89dc-47ab-33f7-0aec0b9afd00/200x" className="img-fluid" alt="" loading="lazy" />
+                            </picture>
+                        </div>
+                    </div>
+                </ReviewCard>
+        },
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            content:
+                <ReviewCard
+                    name={reviewsCtx.reviews[1].name}
+                    caption={reviewsCtx.reviews[1].shade}
+                    text={reviewsCtx.reviews[1].text}
+                >
+                    <div className='row no-gutters'>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a02ab0a2-270a-4b44-160e-5fb1b14e2400/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a2e3aedf-026b-491a-8953-e7a71686d900/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a2e3aedf-026b-491a-8953-e7a71686d900/200x" className="img-fluid" alt="" loading="lazy" />
+                            </picture>
+                        </div>
+                    </div>
+                </ReviewCard>
+        },
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            content:
+                <ReviewCard
+                    name={reviewsCtx.reviews[2].name}
+                    caption={reviewsCtx.reviews[2].shade}
+                    text={reviewsCtx.reviews[2].text}
+                >
+                    <div className='row no-gutters'>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e3b6abad-3888-440f-f23f-37bbe3358d00/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9c104813-c18a-4dbf-aa62-cd93685d6900/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9c104813-c18a-4dbf-aa62-cd93685d6900/200x" className="img-fluid" alt="" loading="lazy" />
+                            </picture>
+                        </div>
+                    </div>
+                </ReviewCard>
+        },
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            content:
+                <ReviewCard
+                    name={reviewsCtx.reviews[3].name}
+                    caption={reviewsCtx.reviews[3].shade}
+                    text={reviewsCtx.reviews[3].text}
+                >
+                    <div className='row no-gutters'>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/db054539-903c-471d-0cea-7945b0b3e300/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7b46dbef-6eb4-40f1-e4d0-f8ae36971c00/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7b46dbef-6eb4-40f1-e4d0-f8ae36971c00/200x" className="img-fluid" alt="" loading="lazy" />
+                            </picture>
+                        </div>
+                    </div>
+                </ReviewCard>
+        },
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            content:
+                <ReviewCard
+                    name={reviewsCtx.reviews[4].name}
+                    caption={reviewsCtx.reviews[4].shade}
+                    text={reviewsCtx.reviews[4].text}
+                >
+                    <div className='row no-gutters'>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a707fa8b-43a3-4995-a87c-0b31a5295200/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4d25cbcf-0fac-4b24-22e0-6c7abacc0600/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4d25cbcf-0fac-4b24-22e0-6c7abacc0600/200x" className="img-fluid" alt="" loading="lazy" />
+                            </picture>
+                        </div>
+                    </div>
+                </ReviewCard>
+        },
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            content:
+                <ReviewCard
+                    name={reviewsCtx.reviews[5].name}
+                    caption={reviewsCtx.reviews[5].shade}
+                    text={reviewsCtx.reviews[5].text}
+                 >
+                    <div className='row no-gutters'>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/da8d1785-b568-4e68-7a71-f0eab5cd3700/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6e7f315c-1e56-41e9-a678-392764264c00/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6e7f315c-1e56-41e9-a678-392764264c00/200x" className="w-100" alt="" loading="lazy" />
+                            </picture>
+                        </div>
+                    </div>
+                </ReviewCard>
+        },
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            content:
+                <ReviewCard
+                    name={reviewsCtx.reviews[6].name}
+                    caption={reviewsCtx.reviews[6].shade}
+                    text={reviewsCtx.reviews[6].text}
+                    >
+                    <div className='row no-gutters'>
+                        <div className='col-6'>
+                            <picture>
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/25d84f47-9b33-4063-faf6-375d9e750400/200x" />
+                                <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c536fe17-1c4b-400b-e7c8-6bf029154300/200x" />
+                                <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c536fe17-1c4b-400b-e7c8-6bf029154300/200x" className="img-fluid" alt="" loading="lazy" />
+                            </picture>
+                        </div>
+                    </div>
+                </ReviewCard>
+        },
+    ]
+
+    let CONTENT = CUSTOMER_REVIEWS_TAN;
+    if (props.range === 'hair') {
+        CONTENT = CUSTOMER_REVIEWS_HAIR;
+    }
+
 	return (
 		<section className='customer-reviews pb-2 pt-2 pt-lg-4'>
             <h2 className="h1 mb-4 text-center">{reviewsCtx.heading}</h2>
@@ -174,7 +315,7 @@ const CustomerReview = () => {
                 <Carousel
                     id="customerReviews"
                     className="carousel slide carousel--loop carousel--mobile-half-next carousel--swipe"
-                    items={CUSTOMER_REVIEWS}
+                    items={CONTENT}
                     slideNumber="4"
                     centered={true}>
                     <button className="carousel-control carousel-control-prev  floating-out-start justify-content-start text-primary d-none d-lg-flex" data-bs-target="#customerReviews" role="button" data-bs-slide="prev">
