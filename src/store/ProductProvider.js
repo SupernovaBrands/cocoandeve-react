@@ -255,7 +255,7 @@ const _content = {
             }
         ]
     },
-}
+} 
 
 const productReducer = (state, action) => {
     const defaultObj = _content[action.handle].us;
