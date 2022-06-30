@@ -248,7 +248,7 @@ const productReducer = (state, action) => {
 const ProductProvider = props => {
     const [productState, dispatchProductAction] = useReducer(productReducer, _content.default);
     const storeChangeHandler = (activeStore, handle) => {
-        const validStore = ['us', 'de', 'fr', 'int'].indexOf(activeStore) !== -1 ? activeStore : 'us';
+        const validStore = ['us', 'de', 'fr', 'int', 'my', 'eu', 'fr', 'de', 'uk', 'ca', 'au'].indexOf(activeStore) !== -1 ? activeStore : 'us';
         dispatchProductAction({type: 'CHANGESTORE', activeStore: validStore, handle})
     };
 
