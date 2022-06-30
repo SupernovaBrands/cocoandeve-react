@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { Fragment, useContext, useEffect, useState } from 'react';
 import ProductImageCarousel from "../components/ProductImageCarousel";
 import QuantityBox from '../components/QuantityBox';
 import ReviewStar from '../components/ReviewStar';
@@ -10,92 +10,78 @@ import { ReactComponent as FormulaList3 } from '../../assets/diet.svg';
 import { ReactComponent as FormulaList4 } from '../../assets/clean.svg';
 import { ReactComponent as FormulaList5 } from '../../assets/mitt.svg';
 
-import PropTypes from 'prop-types';
+import { ReactComponent as FormulaList6 } from '../../assets/hair_icon_drop.svg';
+import { ReactComponent as FormulaList7 } from '../../assets/hair_icon_shield.svg';
+import { ReactComponent as FormulaList8 } from '../../assets/hair_icon_nourish.svg';
+import { ReactComponent as FormulaList9 } from '../../assets/hair_icon_signature.svg';
 
 const ProductForm = (props) => {
     let params = (new URL(document.location)).searchParams;
 	let activeStore = params.get("utm_store") || 'us';
 
     const productCtx = useContext(ProductContext);
-    productCtx.storeChange(activeStore);
+    productCtx.storeChange(activeStore, props.handle);
 
-    const defaultPrice = productCtx.price;
-    const defaultCompareAtPrice = productCtx.compareAtPrice;
-    const defaultSaving = productCtx.saving;
+    const host = 'https://www.cocoandeve.com';
+    
     const {
-        noReviews,
-        variants,
-        addToCart,
-        hideProductCaption,
-        cartPosition,
-        titleHeading,
-        variantSelectorStyle,
-    } = props;
+        price,
+        compareAtPrice,
+        saving,
+        title1,
+        title2,
+        description,
+        handle,
+        shades
+    } = productCtx;
 
-    const SHADES = [
-        {
-            id: 'medium',
-            text: productCtx.shades.medium,
-            class: 'medium',
-        },
-        {
-            id: 'dark',
-            text: productCtx.shades.dark,
-            class: 'dark',
-        },
-        {
-            id: 'ultra-dark',
-            text: productCtx.shades.ultra,
-            class: 'ultra-dark',
-        }
-    ]
-
-
-    const [productVariants, setProductVariants] = useState(SHADES);
+    const [selectedSwatch, setSelectedSwatch] = useState(null);
+    const [quantity, setQuantity] = useState(1);
+    const [selectedSwatchText, setSelectedSwatchText] = useState('');
+    const [buttonUrl, setButtonUrl] = useState(host);
 
     useEffect(() => {
-        setSelectedVariantId(SHADES[0].id);
-        setSelectedVariantShadeText(SHADES[0].text);
-        setSelectedVariantShadeCaption(SHADES[0].caption);
-        setSelectedVariant(SHADES[0]);
-    }, [productCtx]);
+        setUrl();
+    }, [quantity, selectedSwatch]);
 
-    const [selectedVariant, setSelectedVariant] = useState(SHADES[0]);
-    const [selectedVariantId, setSelectedVariantId] = useState(SHADES[0].id); // set to the first variant as default
-    const [quantity, setQuantity] = useState(1);
-    const [selectedVariantShadeText, setSelectedVariantShadeText] = useState(SHADES[0].text);
-    const [selectedVariantShadeCaption, setSelectedVariantShadeCaption] = useState(SHADES[0].caption);
+    useEffect(() => {
+        setUrl();
+        if (shades.length > 0 && selectedSwatch === null) {
+            setSelectedSwatch(shades[0].swatch);
+            setSelectedSwatchText(shades[0].text);
+        }
+    }, [productCtx])
 
-    const [buttonUrl, setButtonUrl] = useState(`https://www.cocoandeve.com?itemtoadd=${selectedVariantId}&quantity=${quantity}`);
     const onSelectedVariant = (event) => {
-        const variantId = event.target.getAttribute('data-id');
-        const shadeText = SHADES.find((shade) => shade.id === variantId)
-        setSelectedVariantId(variantId);
-        setSelectedVariantShadeText(shadeText.text);
-        const url = selectedVariantId !== '' && `https://www.cocoandeve.com?itemtoadd=${variantId}&quantity=${quantity}`;
-        setButtonUrl(url);
+        const dataId = event.target.getAttribute('data-id');
+        if (shades.length > 0) {
+            const swatch = shades.find((shade) => shade.swatch === dataId)
+            setSelectedSwatchText(swatch.text);
+            setSelectedSwatch(swatch.swatch);
+        }
     }
 
     const onChangeQuantity = (qty) => {
-        const url = selectedVariantId !== '' && `https://www.cocoandeve.com?itemtoadd=${selectedVariantId}&quantity=${qty}`;
         setQuantity(qty);
+    }
+
+    const setUrl = () => {
+        let url = `${host}?lp_handle=${handle}&lp_quantity=${quantity}`;
+        url = shades.length > 0 && selectedSwatch !== null ? `${url}&lp_swatch=${selectedSwatch}` : url;
         setButtonUrl(url);
     }
 
     const onAddToCart = () => {
-        if (typeof addToCart === 'function') {
-            addToCart(selectedVariantId, quantity);
-        } else {
-            if (typeof (ga) === 'function') {
-                window.ga('send', 'event', {
-                    eventCategory: 'Add to Cart',
-                    eventAction: 'lp_pdp_cta',
-                    eventLabel: 'sunny-honey-bali-bronzing-self-tan-set',
-                    eventValue: 0,
-                });
-            }
-            window.location.href = buttonUrl;
+        if (typeof (ga) === 'function') {
+            window.ga('send', 'event', {
+                eventCategory: 'Add to Cart',
+                eventAction: 'lp_pdp_cta',
+                eventLabel: handle,
+                eventValue: 0,
+            });
         }
+        window.location.href = buttonUrl;
+        
     }
 
     setTimeout(function () {
@@ -118,58 +104,38 @@ const ProductForm = (props) => {
         }
     }, 500);
     
-
-    const getSavingSelectedVariant = () => {
-        if (!selectedVariant.compare_at_price) return 0;
-        const compareAtPrice = parseFloat(selectedVariant.compare_at_price.replace('$','').replace('£','').replace('€'));
-        const price = parseFloat(selectedVariant.compare_at_price.replace('$','').replace('£','').replace('€'));
-        const discountedPrice =  compareAtPrice - price;
-        const saving = discountedPrice / compareAtPrice * 100;
-        return saving;
-    }
-    
     return (
         <div className="product-form container px-g mb-0 mt-lg-4">
             <div className="row align-items-start">
-                <ProductImageCarousel />
-                <div className={`col-12 col-lg-5 order-lg-3 mt-2 mt-lg-0 d-flex flex-column ${variantSelectorStyle === 'flex' ? 'text-start': 'text-center text-lg-start'}`}>
-                    <p className="font-size-lg mb-1 order-lg-1" >{productCtx.title1}</p>
-                    <h1 className={`${titleHeading ? titleHeading : ''} mb-1 mb-lg-2 order-lg-1`}>{ selectedVariant && selectedVariant.product_title ? selectedVariant.product_title : productCtx.title2 }</h1>
-                    { !noReviews && (
-                        <div className="d-flex mb-0 mb-lg-1 justify-content-center justify-content-lg-start order-lg-0">
-                            <ReviewStar score={4.8} />
-                            <span className='d-block yotpo-widget__total mt-lg-0 ms-lg-1 ms-1'><span className='d-none d-lg-inline-block'>4.8 stars</span> <a className="link-secondary text-underline" href="https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set#write-a-review">(220)</a></span>
-                        </div>
-                    )}
-                    { !hideProductCaption && (
-                        <p className="font-size-lg d-none d-lg-block order-lg-2" dangerouslySetInnerHTML={{ __html: productCtx.description }}></p>
-                    )}
-                    { !selectedVariant.price && (
-                        <p className="my-1 order-lg-2 d-block">
-                            <span className="text-linethrough mr-25 text-muted h2 d-inline-block mb-0">{defaultCompareAtPrice}</span>
-                            <span className="mr-25 text-nowrap ms-1 h2 d-inline-block mb-0">{defaultPrice}</span>
-                            <span className="text-primary text-nowrap text-save p-1 h2 fw-normal d-inline-block mb-0 py-0">({defaultSaving})</span>
-                        </p>
-                    )}
-                    {  selectedVariant.price && (
-                        <p className="my-1 order-lg-2">
-                            { selectedVariant.compare_at_price && (<span className="text-linethrough mr-25 text-muted h2 ">{selectedVariant.compare_at_price}</span>)}
-                            <span className="mr-25 text-nowrap ms-1 h2 ">{selectedVariant.price}</span>
-                            { selectedVariant.compare_at_price && (<span className="text-primary text-nowrap text-save p-1 h2 fw-normal">(Save {getSavingSelectedVariant()}%)</span>)}
-                        </p>
-                    )}
-                    <hr className="mb-2 bg-primary-light-second mt-0 order-lg-2 d-none d-lg-block"/>
-                    <div className={`${variantSelectorStyle === 'flex' ? 'd-flex mb-2 justify-content-start' : 'd-grid gap-2 justify-content-center justify-content-lg-start d-md-flex'} mb-lg-2 align-items-center order-lg-2`}>
-                        <div className="product-swatch d-flex align-items-center justify-content-center">
-                            {productVariants.map((shade) => (
-                                <button key={shade.id} type="button" onClick={onSelectedVariant} data-variant className={`${variantSelectorStyle === 'flex' ? 'me-1' : ''} variant-swatch ${shade.class} ${ selectedVariantId === shade.id ? 'border-primary' : ''}`} data-id={shade.id}></button>
-                            ))}
-                        </div>
-                        <span className={`${selectedVariantShadeCaption ? 'fw-bold' : 'mb-1' } mb-lg-0 mg-lg-0`}>
-                            {selectedVariantShadeText}
-                            { selectedVariantShadeCaption && (<span className='fw-normal w-100 d-block text-start'>{selectedVariantShadeCaption}</span>)}
-                        </span>
+                <ProductImageCarousel handle={props.handle} />
+                <div className="col-12 col-lg-5 order-lg-3 mt-2 mt-lg-0 d-flex flex-column text-center text-lg-start">
+                    <p className="font-size-lg mb-1 order-lg-1" >{title1}</p>
+                    <h1 className="mb-1 mb-lg-2 order-lg-1">{ title2 }</h1>
+                    <div className="d-flex mb-0 mb-lg-1 justify-content-center justify-content-lg-start order-lg-0">
+                        <ReviewStar score={4.8} />
+                        <span className='d-block yotpo-widget__total mt-lg-0 ms-lg-1 ms-1'><span className='d-none d-lg-inline-block'>4.8 stars</span> <a className="link-secondary text-underline" href="https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set#write-a-review">(220)</a></span>
                     </div>
+                    <p className="font-size-lg d-none d-lg-block order-lg-2" dangerouslySetInnerHTML={{ __html: description }}></p>
+                    <p className="my-1 order-lg-2 d-block">
+                        <span className="text-linethrough mr-25 text-muted h2 d-inline-block mb-0">{compareAtPrice}</span>
+                        <span className="mr-25 text-nowrap ms-1 h2 d-inline-block mb-0">{price}</span>
+                        <span className="text-primary text-nowrap text-save p-1 h2 fw-normal d-inline-block mb-0 py-0">({saving})</span>
+                    </p>
+                    {shades.length > 0 && (
+                        <Fragment>
+                            <hr className="mb-2 bg-primary-light-second mt-0 order-lg-2 d-none d-lg-block"/>
+                            <div className="d-grid gap-2 justify-content-center justify-content-lg-start d-md-flex mb-lg-2 align-items-center order-lg-2">
+                                <div className="product-swatch d-flex align-items-center justify-content-center">
+                                    {shades.map((shade) => (
+                                        <button key={shade.id} type="button" onClick={onSelectedVariant} data-variant className={`variant-swatch ${shade.class} ${ selectedSwatch === shade.swatch ? 'border-primary' : ''}`} data-id={shade.swatch}></button>
+                                    ))}
+                                </div>
+                                <span className='mb-1 mb-lg-0 mg-lg-0'>
+                                    {selectedSwatchText}
+                                </span>
+                            </div>
+                        </Fragment>
+                    )}
                     <p className="d-none bg-gray-100 p-1 rounded mb-2 order-lg-2">Not sure which shade to get? Check our <a href="">Shades Guide</a></p>
                     <div className="product-swatch-mobile__trigger order-lg-3">
                             <div className="product-form-submit mb-3 position-relative">
@@ -186,34 +152,58 @@ const ProductForm = (props) => {
                     </div>
                     <hr className="mb-2 bg-primary-light-second mt-0 order-lg-2"/>
                     <h2 className='d-block d-lg-none order-lg-2'>All you need for a perfect tan</h2>
-                    <ul className={`${cartPosition === 'top' ? 'order-lg-4' : ''} list-unstyled row mb-4 text-start order-lg-2`}>
-                        <li className='col-12 d-flex align-items-center mb-2'>
-                            <FormulaList1 className='me-g d-flex flex-shrink-0 justify-content-center' />
-                            {productCtx.benefits.formula1}
-                        </li>
-                        <li className='col-12 d-flex align-items-center mb-2'>
-                            <FormulaList2 className='me-g d-flex flex-shrink-0 justify-content-center' />
-                            {productCtx.benefits.formula2}
-                        </li>
-                        <li className='col-12 d-flex align-items-center mb-2'>
-                            <FormulaList3 className='me-g d-flex flex-shrink-0 justify-content-center' />
-                            {productCtx.benefits.formula3}
-                        </li>
-                        <li className='col-12 d-flex align-items-center mb-2'>
-                            <FormulaList4 className='me-g d-flex flex-shrink-0 justify-content-center' />
-                            {productCtx.benefits.formula4}
-                        </li>
-                        <li className='col-12 d-flex align-items-center'>
-                            <FormulaList5 className='me-g d-flex flex-shrink-0 justify-content-center' />
-                            {productCtx.benefits.formula5}
-                        </li>
+                    <ul className="list-unstyled row mb-4 text-start order-lg-2">
+                        {handle === 'sunny-honey-bali-bronzing-self-tan-set' ? (
+                            <Fragment>
+                                <li className='col-12 d-flex align-items-center mb-2'>
+                                    <FormulaList1 className='me-g d-flex flex-shrink-0 justify-content-center' />
+                                    {productCtx.benefits.formula1}
+                                </li>
+                                <li className='col-12 d-flex align-items-center mb-2'>
+                                    <FormulaList2 className='me-g d-flex flex-shrink-0 justify-content-center' />
+                                    {productCtx.benefits.formula2}
+                                </li>
+                                <li className='col-12 d-flex align-items-center mb-2'>
+                                    <FormulaList3 className='me-g d-flex flex-shrink-0 justify-content-center' />
+                                    {productCtx.benefits.formula3}
+                                </li>
+                                <li className='col-12 d-flex align-items-center mb-2'>
+                                    <FormulaList4 className='me-g d-flex flex-shrink-0 justify-content-center' />
+                                    {productCtx.benefits.formula4}
+                                </li>
+                                <li className='col-12 d-flex align-items-center'>
+                                    <FormulaList5 className='me-g d-flex flex-shrink-0 justify-content-center' />
+                                    {productCtx.benefits.formula5}
+                                </li>
+                            </Fragment>
+                        ) : (
+                            <Fragment>
+                                <li className='col-12 d-flex align-items-center mb-2'>
+                                    <FormulaList6 className='me-g d-flex flex-shrink-0 justify-content-center' />
+                                    {productCtx.benefits.formula1}
+                                </li>
+                                <li className='col-12 d-flex align-items-center mb-2'>
+                                    <FormulaList7 className='me-g d-flex flex-shrink-0 justify-content-center' />
+                                    {productCtx.benefits.formula2}
+                                </li>
+                                <li className='col-12 d-flex align-items-center mb-2'>
+                                    <FormulaList8 className='me-g d-flex flex-shrink-0 justify-content-center' />
+                                    {productCtx.benefits.formula3}
+                                </li>
+                                <li className='col-12 d-flex align-items-center mb-2'>
+                                    <FormulaList9 className='me-g d-flex flex-shrink-0 justify-content-center' />
+                                    {productCtx.benefits.formula4}
+                                </li>
+                            </Fragment>
+                        )}
+                        
                     </ul>
                     <div className='fixed-bottom d-lg-none mx-g mb-2 product-swatch-mobile'>
                         <button className='d-flex btn btn-primary btn-lg px-2 w-100' onClick={onAddToCart}>
                             <span className="text-white w-100 m-0 d-block text-start" >Add to cart</span>
                             <p className="d-block m-0">
-                                <span className="text-white text-linethrough mr-25 text-nowrap fw-normal">{defaultCompareAtPrice}</span>
-                                <span className="text-white mr-25 text-nowrap ms-1">{defaultPrice}</span>
+                                <span className="text-white text-linethrough mr-25 text-nowrap fw-normal">{compareAtPrice}</span>
+                                <span className="text-white mr-25 text-nowrap ms-1">{price}</span>
                             </p>
                         </button>
                     </div>
@@ -221,16 +211,6 @@ const ProductForm = (props) => {
             </div>
         </div>
     )
-};
-
-ProductForm.propTypes = {
-    addToCart: PropTypes.func,
-    noReviews: PropTypes.bool,
-    variants: PropTypes.array,
-    cartPosition: PropTypes.string,
-    hideProductCaption: PropTypes.bool,
-    titleHeading: PropTypes.string,
-    variantSelectorStyle: PropTypes.string,
 };
 
 export default ProductForm

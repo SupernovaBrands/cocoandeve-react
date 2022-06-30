@@ -1,154 +1,24 @@
-import ProductCard from "../components/ProductCard";
 import Carousel from "../components/Carousel";
 import carouselLoop from "../../modules/carousel-loop";
 import RangeContext from "../../store/range-context";
+import StoreContext from "../../store/store-context";
 
 import { ReactComponent as ChevronPrev1 } from '../../assets/chevron-prev.svg';
 import { ReactComponent as ChevronNext1 } from '../../assets/chevron-next.svg';
 import { Fragment, useContext } from "react";
 import { useWindowSize } from "../../modules/Utils";
+import { PRODUCTS_FACE, PRODUCTS_BODY, PRODUCTS_VALUE_SETS, PRODUCTS_HAIR_1, PRODUCTS_HAIR_2, PRODUCTS_HAIR_3 } from "../../modules/carousel-data";
 
-const RangeCarousel = () => {
+const RangeCarousel = (props) => {
 
 	let params = (new URL(document.location)).searchParams;
 	let activeStore = params.get('utm_store') || 'us';
 
 	const rangeCtx = useContext(RangeContext);
-	let carouselData = rangeCtx.carouselSection[activeStore];
+	let carouselData = rangeCtx.carouselSection[props.range][activeStore];
 	if (!carouselData) {
-		carouselData = rangeCtx.carouselSection['us'];
+		carouselData = rangeCtx.carouselSection[props.range]['us'];
 	}
-
-	const PRODUCTS_FACE = [
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				title='Bronzing Face Drops'
-				img='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8c2d8c7b-46d4-4303-9ae6-106d6e25d800/828x'
-				comImg='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1a30deb4-1d70-4ad8-af43-15b446aaae00/828x'
-				rating={4.8}
-				totalReviews='735'
-				handle='bronzing-self-tanner-drops' />
-        }
-	];
-
-	if (['ca', 'au'].includes(activeStore)) {
-		PRODUCTS_FACE.push({
-			carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-			content: <ProductCard
-				img={`${process.env.PUBLIC_URL}/images/Featured_CExNakedSundaysBundle_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_CExNakedSundaysBundle_532x.webp`}
-				rating={4.8}
-				totalReviews='735'
-				handle='spf-glow-kit' />
-		});
-	}
-
-	const PRODUCTS_BODY = [
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				img={`${process.env.PUBLIC_URL}/images/Featured_BaliBronzingBundle_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BaliBronzingBundle_532x.webp`}
-				rating={4.8}
-				totalReviews='4336'
-				handle='sunny-honey-bali-bronzing-self-tan-set' />
-        },
-		{
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				img={`${process.env.PUBLIC_URL}/images/Featured_BronzingFoam_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BronzingFoam_532x.webp`}
-				rating={4.8}
-				totalReviews='2021'
-				handle='sunny-honey-bali-bronzing-self-tan-mousse' />
-        },
-		{
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				img={`${process.env.PUBLIC_URL}/images/Featured_TanningGoddessKit_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningGoddessKit_532x.webp`}
-				rating={4.8}
-				totalReviews='2021'
-				handle='tanning-goddess' />
-        },
-		{
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				img={`${process.env.PUBLIC_URL}/images/Featured_TanningTravelKit_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningTravelKit_532x.webp`}
-				rating={4.8}
-				totalReviews='96'
-				handle='self-tan-travel-kit' />
-        },
-		{
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				img={`${process.env.PUBLIC_URL}/images/Featured_BaliBronzingBundle_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BaliBronzingBundle_532x.webp`}
-				rating={4.8}
-				totalReviews='4336'
-				handle='sunny-honey-bali-bronzing-self-tan-set' />
-        },
-		{
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				img={`${process.env.PUBLIC_URL}/images/Featured_BronzingFoam_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BronzingFoam_532x.webp`}
-				rating={4.8}
-				totalReviews='2021'
-				handle='sunny-honey-bali-bronzing-self-tan-mousse' />
-        },
-		{
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				img={`${process.env.PUBLIC_URL}/images/Featured_TanningGoddessKit_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningGoddessKit_532x.webp`}
-				rating={4.8}
-				totalReviews='2021'
-				handle='tanning-goddess' />
-        },
-		{
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				img={`${process.env.PUBLIC_URL}/images/Featured_TanningTravelKit_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningTravelKit_532x.webp`}
-				rating={4.8}
-				totalReviews='96'
-				handle='self-tan-travel-kit' />
-        }
-	];
-
-	const PRODUCTS_VALUE_SETS = [
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				img={`${process.env.PUBLIC_URL}/images/Featured_TanBundlewithBackApplicator_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanBundlewithBackApplicator_532x.webp`}
-				rating={4.8}
-				totalReviews='4336'
-				handle='bali-bae-self-tan-set' />
-        },
-		{
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				img={`${process.env.PUBLIC_URL}/images/Featured_BaliBronzingBundle_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_BaliBronzingBundle_532x.webp`}
-				rating={4.8}
-				totalReviews='4336'
-				handle='sunny-honey-bali-bronzing-self-tan-set' />
-        },
-		{
-            carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-            content: <ProductCard
-				img={`${process.env.PUBLIC_URL}/images/Featured_TanningGoddessKit_532x.jpg`}
-				comImg={`${process.env.PUBLIC_URL}/compressed_images/Featured_TanningGoddessKit_532x.webp`}
-				rating={4.8}
-				totalReviews='2021'
-				handle='tanning-goddess' />
-        }
-	];
-
 
 	const [width] = useWindowSize();
 	const isMobile = width < 768;
@@ -162,7 +32,7 @@ const RangeCarousel = () => {
 		productValuemerged = [...PRODUCTS_VALUE_SETS, ...PRODUCTS_VALUE_DUP, ...PRODUCTS_VALUE_DUP];
 	}
 
-	const CAROUSEL_TABS = [
+	const CAROUSEL_TABS_TAN = [
 		{
 			carouselId: 'FeaturedFace',
 			isTabActive: false,
@@ -183,6 +53,35 @@ const RangeCarousel = () => {
 		}
 	];
 
+	const CAROUSEL_TABS_HAIR = [
+		{
+			carouselId: 'FeaturedHair1',
+			isTabActive: false,
+			carouselItems: PRODUCTS_HAIR_1.length < 4 && PRODUCTS_HAIR_1.length > 1 && isMobile ? productFaceMerged : PRODUCTS_HAIR_1,
+			tabLabel: carouselData.face
+		},
+		{
+			carouselId: 'FeaturedHair2',
+			isTabActive: true,
+			carouselItems: PRODUCTS_HAIR_2,
+			tabLabel: carouselData.body
+		},
+		{
+			carouselId: 'FeaturedHair3',
+			isTabActive: false,
+			carouselItems: PRODUCTS_HAIR_3.length < 4 && isMobile ? productValuemerged : PRODUCTS_HAIR_3,
+			tabLabel: carouselData.valuesets
+		}
+	];
+
+	let CAROUSEL_TABS = CAROUSEL_TABS_TAN;
+
+	if (props.range === 'hair') {
+		CAROUSEL_TABS = CAROUSEL_TABS_HAIR;
+	} else if (props.range === 'tan') {
+		CAROUSEL_TABS = CAROUSEL_TABS_TAN;
+	}
+
 	carouselLoop('FeaturedBody');
 	carouselLoop('FeaturedFace');
 	carouselLoop('FeaturedValueSets');
@@ -192,7 +91,7 @@ const RangeCarousel = () => {
 			<div className='container d-flex flex-column align-items-center px-g'>
 				<h2 className='range__formula-title mb-2 text-center'>{carouselData.title}</h2>
 				<ul className="nav nav-tabs justify-content-center border-0 col-8 col-lg-3 px-0 pb-2 range__tab">
-					{CAROUSEL_TABS.map((item, idx) => (
+					{carouselData.carouselTabs.map((item, idx) => (
 						<li key={`navItem${idx}`} className="nav-item">
 							<a className={`nav-link text-decoration-none h4 mb-0 fw-bold text-center ${item.isTabActive ? 'active' : ''}`}
 								data-bs-toggle="tab" href={`#${item.carouselId}`}>

@@ -16,17 +16,17 @@ const SectionIRL = lazy(() => import('../sections/SectionIRL'));
 const ProductDetail = (props) => {
     return (
         <ProductProvider>
-            <ProductForm mainContent={props.mainContent} />
+            <ProductForm range={props.range} handle={props.handle} />
             <Suspense fallback={<div></div>}>
                 <ReviewProvider>
-                    <CustomerReview />
+                    <CustomerReview range={props.range} />
                 </ ReviewProvider>
-                <SeenIn />
+                <SeenIn handle={props.handle} />
                 <IRLProvider>
-                    <SectionIRL />
+                    <SectionIRL range={props.range} />
                 </IRLProvider>
                 <FaqProvider>
-                    <FaqAccordion />
+                    <FaqAccordion range={props.range} />
                 </FaqProvider>
             </Suspense>
         </ProductProvider>
