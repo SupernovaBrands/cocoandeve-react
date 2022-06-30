@@ -2,6 +2,12 @@
 	flex: 1 0 0;
 }
 
+.range__formula-list {
+	svg {
+		height: 2.5em;
+	}
+}
+
 @include media-breakpoint-up(lg) {
 	.range__formula-title {
 		@include font-size($h1-font-size);

@@ -27,7 +27,7 @@ const App = () => {
           <Route path='/tan-range' element={<Navigate replace to="/range-tan" />} />
           <Route path='/customers-survey' element={<Survey />} />
           <Route path='/test-pdp' element={<ProductDetail />} />
-          <Route path='/hair-range-test' element={<HairRange />} />
+          <Route path='/range-hair' element={<HairRange />} />
           <Route path='/deep-conditioning-bundle-test' element={<ProductDetail handle="deep-condition-bundle" range="hair" />} />
         </Routes>
       </Suspense>
