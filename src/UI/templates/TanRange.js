@@ -4,6 +4,7 @@ import RangeBanner from "../sections/RangeBanner";
 import '../../range.scss';
 import RangeCarousel from "../sections/RangeCarousel";
 import RangeProvider from "../../store/RangeProvider";
+import StoreProvider from "../../store/StoreProvider";
 import IRLProvider from '../../store/IRLProvider';
 import FaqProvider from '../../store/FaqProvider';
 import ReviewProvider from '../../store/ReviewProvider';
@@ -22,25 +23,26 @@ const FaqAccordion = lazy(() => import('../sections/FaqAccordion'));
 const SectionIRL = lazy(() => import('../sections/SectionIRL'));
 const CustomerReview = lazy(() => import('../sections/CustomerReview'));
 
-
 const TanRange = () => {
     return (
         <RangeProvider>
-            <RangeBanner />
-            <RangeCarousel />
+            <RangeBanner range='tan' />
+            <StoreProvider>
+                <RangeCarousel range='tan' />
+            </StoreProvider>
             <Suspense fallback={<div></div>}>
-                <RangeFormula />
+                <RangeFormula range="tan" />
                 <IRLProvider>
-                    <SectionIRL />
+                    <SectionIRL range="tan" />
                 </IRLProvider>
                 <ProductProvider>
-                    <SeenIn />
+                    <SeenIn range="tan" />
                 </ProductProvider>
                 <FaqProvider>
-                    <FaqAccordion />
+                    <FaqAccordion range="tan" />
                 </FaqProvider>
                 <ReviewProvider>
-                    <CustomerReview />
+                    <CustomerReview range="tan" />
                 </ ReviewProvider>
                 {/* <ProductForm /> */}
             </Suspense>

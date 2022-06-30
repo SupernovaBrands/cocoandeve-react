@@ -5,12 +5,12 @@ import FaqContext from '../../store/faq-context';
 
 import {Collapse} from 'bootstrap';
 
-const FaqAccordion = () => {
+const FaqAccordion = (props) => {
     let params = (new URL(document.location)).searchParams;
 	let activeStore = params.get("utm_store") || 'us';
 
     const faqCtx = useContext(FaqContext);
-    faqCtx.storeChange(activeStore);
+    faqCtx.storeChange(activeStore, props.range);
 
     const accordionHandle = (e) => {
         const btnToggle = document.querySelectorAll('.accordion-button');

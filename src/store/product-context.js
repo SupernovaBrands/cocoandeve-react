@@ -7,6 +7,8 @@ const ProductContext = React.createContext({
     title1: 'Sunny Honey',
     title2: 'Bali Bronzing Bundle',
     description: 'The only self-tanner you need ever need. <br />100% Natural DHA. Cruelty Free. Vegan.',
+    rating: '220',
+    stars: '4.8',
     benefits: {
         formula1: 'Blurs pigmentation and perfects skin.',
         formula2: 'Tropical mango and guava scent (no biscuit smell!)',
@@ -16,12 +18,8 @@ const ProductContext = React.createContext({
     },
     asSeenin: 'As seen in',
     atc: 'Add to cart',
-    shades: {
-        medium: '',
-        dark: '',
-        ultra: '',
-    },
-    storeChange: (activeStore) => {},
+    shades: [],
+    storeChange: (activeStore, range) => {},
 });
 
 export default ProductContext;

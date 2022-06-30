@@ -322,79 +322,468 @@ const productList = {
             price: 'RM275.00',
             comparePrice: 'RM336.00',
         },
+    },
+    'super-nourishing-coconut-fig-hair-masque': {
+        us: {
+            price: '$39.90',
+            title: 'Like A Virgin Hair Masque',
+        },
+        ca: {
+            price: '$57.90',
+        },
+        uk: {
+            price: '£32.90',
+        },
+        eu: {
+            price: '€32,90',
+        },
+        au: {
+            price: '$57.90',
+        },
+        int: {
+            price: 'SG$57.90',
+        },
+        de: {
+            price: '€32,90',
+            title: 'Like A Virgin Haarmaske',
+        },
+        fr: {
+            price: '€32,90',
+            title: 'Masque Cheveux Like a Virgin',
+        },
+        my: {
+            price: 'RM178.00',
+        },
+    },
+    'clean-scalp-treatment': {
+        us: {
+            price: '$29.00',
+            title: 'Deep Clean Scalp Scrub',
+        },
+        ca: {
+            price: '$39.00',
+        },
+        uk: {
+            price: '£24.50',
+        },
+        eu: {
+            price: '€28,00',
+        },
+        au: {
+            price: '$46.00',
+        },
+        int: {
+            price: 'SG$45.00',
+        },
+        de: {
+            price: '€28,00',
+        },
+        fr: {
+            price: '€28,00',
+            title: 'Scrub Lavant Purifiant',
+        },
+        my: {
+            price: 'RM138.00',
+        },
+    },
+    'deep-condition-bundle': {
+        us: {
+            price: '$70.10',
+            comparePrice: '$87.70',
+            title: 'Deep Condition Bundle',
+        },
+        ca: {
+            price: '$97.30',
+            comparePrice: '$121.70',
+        },
+        uk: {
+            price: '£54.90',
+            comparePrice: '£68.70',
+        },
+        eu: {
+            price: '€63,70',
+            comparePrice: '€79,70',
+        },
+        au: {
+            price: '$103.70',
+            comparePrice: '$129.70',
+        },
+        int: {
+            price: 'SG$102.90',
+            comparePrice: 'SG$128.70',
+        },
+        de: {
+            price: '€63,70',
+            comparePrice: '€79,70',
+        },
+        fr: {
+            price: '€63,70',
+            comparePrice: '€79,70',
+            title: 'Deep Condition Kit',
+        },
+        my: {
+            price: 'RM395.00',
+            comparePrice: 'RM316.00',
+        },
+    },
+    'hydrating-shampoo': {
+        us: {
+            price: '$24.90',
+            title: 'Super Hydrating Shampoo',
+        },
+        ca: {
+            price: '$32.90',
+        },
+        uk: {
+            price: '£15.90',
+        },
+        eu: {
+            price: '€24,90',
+        },
+        au: {
+            price: '$36.90',
+        },
+        int: {
+            price: 'SG$36.90',
+        },
+        de: {
+            price: '€24,90',
+        },
+        fr: {
+            price: '€24,90',
+            title: 'Glowy Face Bronzage Kit',
+        },
+        my: {
+            price: 'RM113.00',
+        },
+    },
+    'hydrating-conditioner': {
+        us: {
+            price: '$24.90',
+            title: 'Super Hydrating Cream Conditioner',
+        },
+        ca: {
+            price: '$32.90',
+        },
+        uk: {
+            price: '£22.90',
+        },
+        eu: {
+            price: '€24,90',
+        },
+        au: {
+            price: '$36.90',
+        },
+        int: {
+            price: 'SG$36.90',
+        },
+        de: {
+            price: '€24,90',
+        },
+        fr: {
+            price: '€24,90',
+            title: 'Après-Shampooing Super Hydratant',
+        },
+        my: {
+            price: 'RM113.00',
+        },
     }
 };
 
 const carouselSection = {
-    us: {
-        title: 'Self-tanners for any occasion',
-        face: 'Face',
-        body: 'Body',
-        valuesets: 'Value Sets',
-        learnMore: 'Learn More',
+    tan: {
+        us: {
+            title: 'Self-tanners for any occasion',
+            tab1: 'Face',
+            tab2: 'Body',
+            tab3: 'Value Sets',
+            learnMore: 'Learn More',
+            carouselTabs: [
+                {
+                    carouselId: 'FeaturedFace',
+                    isTabActive: false,
+                    tabLabel: 'Face',
+                },
+                {
+                    carouselId: 'FeaturedBody',
+                    isTabActive: true,
+                    tabLabel: 'Body'
+                },
+                {
+                    carouselId: 'FeaturedValueSets',
+                    isTabActive: false,
+                    tabLabel: 'Value Sets'
+                }
+            ]
+        },
+        fr: {
+            title: 'Des autobronzants pour toutes les occasions.',
+            face: 'Visage',
+            body: 'Corps',
+            valuesets: 'Kits',
+            learnMore: 'En savoir plus',
+            carouselTabs: [
+                {
+                    carouselId: 'FeaturedFace',
+                    isTabActive: false,
+                    tabLabel: 'Face',
+                },
+                {
+                    carouselId: 'FeaturedBody',
+                    isTabActive: true,
+                    tabLabel: 'Body'
+                },
+                {
+                    carouselId: 'FeaturedValueSets',
+                    isTabActive: false,
+                    tabLabel: 'Value Sets'
+                }
+            ]
+        },
+        de: {
+            title: 'Selbstbräuner für jeden Anlass',
+            face: 'Gesicht',
+            body: 'Körper',
+            valuesets: 'Sets & Kits',
+            learnMore: 'Erfahre mehr',
+            carouselTabs: [
+                {
+                    carouselId: 'FeaturedFace',
+                    isTabActive: false,
+                    tabLabel: 'Face',
+                },
+                {
+                    carouselId: 'FeaturedBody',
+                    isTabActive: true,
+                    tabLabel: 'Body'
+                },
+                {
+                    carouselId: 'FeaturedValueSets',
+                    isTabActive: false,
+                    tabLabel: 'Value Sets'
+                }
+            ]
+        }
     },
-    fr: {
-        title: 'Des autobronzants pour toutes les occasions.',
-        face: 'Visage',
-        body: 'Corps',
-        valuesets: 'Kits',
-        learnMore: 'En savoir plus',
+    hair: {
+        us: {
+            title: 'Hair products for any occasion',
+            face: 'New',
+            body: 'Best Seller',
+            valuesets: 'Kits',
+            learnMore: 'Learn More',
+            carouselTabs: [
+                {
+                    carouselId: 'FeaturedHair1',
+                    isTabActive: false,
+                    tabLabel: 'New'
+                },
+                {
+                    carouselId: 'FeaturedHair2',
+                    isTabActive: true,
+                    tabLabel: 'Best Seller'
+                },
+                {
+                    carouselId: 'FeaturedHair3',
+                    isTabActive: false,
+                    tabLabel: 'Value Sets'
+                }
+            ]
+        },
+        fr: {
+            title: 'Hair products for any occasion',
+            face: 'New',
+            body: 'Best Seller',
+            valuesets: 'Kits',
+            learnMore: 'En savoir plus',
+            carouselTabs: [
+                {
+                    carouselId: 'FeaturedHair1',
+                    isTabActive: false,
+                    tabLabel: 'New'
+                },
+                {
+                    carouselId: 'FeaturedHair2',
+                    isTabActive: true,
+                    tabLabel: 'Best Seller'
+                },
+                {
+                    carouselId: 'FeaturedHair3',
+                    isTabActive: false,
+                    tabLabel: 'Value Sets'
+                }
+            ]
+        },
+        de: {
+            title: 'Hair products for any occasion',
+            face: 'New',
+            body: 'Best Seller',
+            valuesets: 'Sets & Kits',
+            learnMore: 'Erfahre mehr',
+            carouselTabs: [
+                {
+                    carouselId: 'FeaturedHair1',
+                    isTabActive: false,
+                    tabLabel: 'New'
+                },
+                {
+                    carouselId: 'FeaturedHair2',
+                    isTabActive: true,
+                    tabLabel: 'Best Seller'
+                },
+                {
+                    carouselId: 'FeaturedHair3',
+                    isTabActive: false,
+                    tabLabel: 'Value Sets'
+                }
+            ]
+        }
     },
-    de: {
-        title: 'Selbstbräuner für jeden Anlass',
-        face: 'Gesicht',
-        body: 'Körper',
-        valuesets: 'Sets & Kits',
-        learnMore: 'Erfahre mehr',
-    }
 };
 
 const formulaSection = {
-    us: {
-        title: 'Revolutionary formula',
-        subtitle: 'NO nasties, NO orange tones.',
-        list1: 'Blurs pigmentation and perfects skin.',
-        list2: 'Tropical mango and guava scent\n (no biscuit smell!)',
-        list3: 'Lightweight, non-sticky formula.',
-        list4: 'Developed with a green-grey base for a natural looking, golden glow with no orangey tones.',
-        footer: 'No sulfates · No silicone · No parabens · Vegan',
+    tan: {
+        jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a8440365-7bda-4690-1602-277357af8a00',
+        webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e5ee4be5-5f6e-4fe1-9248-fa04acb29b00',
+        us: {
+            title: 'Revolutionary formula',
+            subtitle: 'NO nasties, NO orange tones.',
+            list1: 'Blurs pigmentation and perfects skin.',
+            list2: 'Tropical mango and guava scent\n (no biscuit smell!)',
+            list3: 'Lightweight, non-sticky formula.',
+            list4: 'Developed with a green-grey base for a natural looking, golden glow with no orangey tones.',
+            footer: 'No sulfates · No silicone · No parabens · Vegan',
+        },
+        fr: {
+            title: 'Une formule révolutionnaire',
+            subtitle: 'PAS de substances nocives, PAS de sous-tons orangés.',
+            list1: 'Estompe les tâches de pigmentation et embellit la peau.',
+            list2: 'Parfum mangue et goyave.\n (sans odeur de biscuit !)',
+            list3: 'Formule légère et non collante.',
+            list4: 'Développé avec une base verte-grise pour un éclat doré naturel, sans sous-tons orangés.',
+            footer: 'Sans sulfates · Sans silicones · Sans parabènes · Végan',
+        },
+        de: {
+            title: 'Revolutionäre Formel',
+            subtitle: 'KEINE schädlichen Zusätze, KEINE Orangetöne.',
+            list1: 'Verwischt Pigmentflecken und perfektioniert die Haut.',
+            list2: 'Tropischer Mango- und Guavenduft\n (kein Keksgeruch!)',
+            list3: 'Leichte, nicht klebrige Formel.',
+            list4: 'Entwickelt mit einer grüngrauen Basis für einen natürlich aussehendes, goldenes Strahlen ohne Orangetöne.',
+            footer: 'Ohne Sulfate · Ohne Silikone · Ohne Parabene · Vegan',
+        },
     },
-    fr: {
-        title: 'Une formule révolutionnaire',
-        subtitle: 'PAS de substances nocives, PAS de sous-tons orangés.',
-        list1: 'Estompe les tâches de pigmentation et embellit la peau.',
-        list2: 'Parfum mangue et goyave.\n (sans odeur de biscuit !)',
-        list3: 'Formule légère et non collante.',
-        list4: 'Développé avec une base verte-grise pour un éclat doré naturel, sans sous-tons orangés.',
-        footer: 'Sans sulfates · Sans silicones · Sans parabènes · Végan',
-    },
-    de: {
-        title: 'Revolutionäre Formel',
-        subtitle: 'KEINE schädlichen Zusätze, KEINE Orangetöne.',
-        list1: 'Verwischt Pigmentflecken und perfektioniert die Haut.',
-        list2: 'Tropischer Mango- und Guavenduft\n (kein Keksgeruch!)',
-        list3: 'Leichte, nicht klebrige Formel.',
-        list4: 'Entwickelt mit einer grüngrauen Basis für einen natürlich aussehendes, goldenes Strahlen ohne Orangetöne.',
-        footer: 'Ohne Sulfate · Ohne Silikone · Ohne Parabene · Vegan',
+    hair: {
+        jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0e23c0bf-f145-45ed-96e0-82077d3c1100',
+        webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/29c53a74-6170-494f-949f-9016477e4400',
+        us: {
+            title: 'Revolutionary formula',
+            subtitle: 'Multi-award winning hair range',
+            list1: 'Hydrates and deeply conditions',
+            list2: 'Treats split ends and tames frizz.',
+            list3: 'Visibly glossier, shinier & smoother hair.',
+            list4: 'Suitable for normal to dry hair.',
+            footer: 'No sulfates · No silicone · No parabenes · Vegan',
+        },
+        fr: {
+            title: 'Revolutionary formula',
+            subtitle: 'Multi-award winning hair range',
+            list1: 'Hydrates and deeply conditions',
+            list2: 'Treats split ends and tames frizz.',
+            list3: 'Visibly glossier, shinier & smoother hair.',
+            list4: 'Suitable for normal to dry hair.',
+            footer: 'No sulfates · No silicone · No parabenes · Vegan',
+        },
+        de: {
+            title: 'Revolutionary formula',
+            subtitle: 'Multi-award winning hair range',
+            list1: 'Hydrates and deeply conditions',
+            list2: 'Treats split ends and tames frizz.',
+            list3: 'Visibly glossier, shinier & smoother hair.',
+            list4: 'Suitable for normal to dry hair.',
+            footer: 'No sulfates · No silicone · No parabenes · Vegan',
+        },
     },
 };
 
 const bannerSection = {
-    us: {
-        title: 'The only self tanner you\'ll ever need.',
-        webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e597aaa2-22fb-416e-0572-2671dd39f000/1400x',
-        jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a8d30ba5-6fc6-41ee-5462-cc9bbaacd800/1400x',
+    tan: {
+        us: {
+            title: 'Sunny Honey',
+            subtitle: 'The only self tanner you\'ll ever need.',
+            desktop: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e597aaa2-22fb-416e-0572-2671dd39f000/1400x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a8d30ba5-6fc6-41ee-5462-cc9bbaacd800/1400x',
+            },
+            mobile: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/383dbdf2-f7e4-412b-8447-54dbb0984a00/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/afa85196-4f02-42da-091e-393e63d1c900/828x',
+            }
+        },
+        fr: {
+            title: 'Sunny Honey',
+            subtitle: 'Le seul autobronzant dont tu auras besoin.',
+            desktop: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/cddf3aee-8c02-41dc-fb57-c4aed2a98400/1400x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/11df0a91-b8a5-4cfc-ab0a-218feb6c5900/1400x',
+            },
+            mobile: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/383dbdf2-f7e4-412b-8447-54dbb0984a00/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/afa85196-4f02-42da-091e-393e63d1c900/828x',
+            }
+        },
+        de: {
+            title: 'Sunny Honey',
+            subtitle: 'Der einzige Selbstbräuner, den du jemals brauchen wirst.',
+            desktop: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/43439088-3d3a-420e-b165-436332838000/1400x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d16a2f1f-a383-4dfa-5e44-37fa00844700/1400x',
+            },
+            mobile: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/383dbdf2-f7e4-412b-8447-54dbb0984a00/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/afa85196-4f02-42da-091e-393e63d1c900/828x',
+            }
+        }
     },
-    fr: {
-        title: 'Le seul autobronzant dont tu auras besoin.',
-        webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/cddf3aee-8c02-41dc-fb57-c4aed2a98400/1400x',
-        jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/11df0a91-b8a5-4cfc-ab0a-218feb6c5900/1400x',
-    },
-    de: {
-        title: 'Der einzige Selbstbräuner, den du jemals brauchen wirst.',
-        webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/43439088-3d3a-420e-b165-436332838000/1400x',
-        jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d16a2f1f-a383-4dfa-5e44-37fa00844700/1400x',
-    },
+    hair: {
+        us: {
+            title: 'Like A Virgin',
+            subtitle: 'Transform you hair so it feels like a virgin..again!',
+            desktop: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b9f3ec91-69b1-4f69-21e6-bcaf9037ed00/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4723a381-3b0c-4880-cf23-4c3d978aa700/1140x',
+            },
+            mobile: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4fdd78e9-e970-4764-05e9-6a2d2489fb00/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b5e9f771-3abd-404a-9823-de03a738c700/1140x',
+            }
+        },
+        fr: {
+            title: 'Like A Virgin',
+            subtitle: 'Transform you hair so it feels like a virgin..again!',
+            desktop: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b9f3ec91-69b1-4f69-21e6-bcaf9037ed00/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/11df0a91-b8a5-4cfc-ab0a-218feb6c5900/1400x',
+            },
+            mobile: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/383dbdf2-f7e4-412b-8447-54dbb0984a00/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b5e9f771-3abd-404a-9823-de03a738c700/1140x',
+            }
+        },
+        de: {
+            title: 'Like A Virgin',
+            subtitle: 'Transform you hair so it feels like a virgin..again!',
+            desktop: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b9f3ec91-69b1-4f69-21e6-bcaf9037ed00/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d16a2f1f-a383-4dfa-5e44-37fa00844700/1400x',
+            },
+            mobile: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4fdd78e9-e970-4764-05e9-6a2d2489fb00/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b5e9f771-3abd-404a-9823-de03a738c700/1140x',
+            }
+        }
+    }
+    
 };
 
 const rangeReducer = (state, action) => {

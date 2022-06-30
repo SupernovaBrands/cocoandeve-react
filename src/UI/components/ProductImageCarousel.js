@@ -8,12 +8,12 @@ import { ReactComponent as ChevronNext } from '../../assets/chevron-next.svg';
 import { ReactComponent as ChevronUp } from '../../assets/chevron-up.svg';
 import { ReactComponent as ChevronDown } from '../../assets/chevron-down.svg';
 
-const ProductImageCarousel = () => {
+const ProductImageCarousel = (props) => {
     carouselLoop('product-image-carousel__indicator');
     useEffect(() => {
         carouselSwipe('product-image-carousel');
     }, []);
-    const PRODUCT_IMAGES = [
+    const PRODUCT_IMAGES_TAN = [
         {
             jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/076fb4a7-a3d0-4b7f-4f8c-3f26d0460400',
             webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6e673f56-7011-41f4-0076-c4fe81e67000',
@@ -47,6 +47,38 @@ const ProductImageCarousel = () => {
             webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/09e14d12-2fdb-4d92-4aa9-c9005d99a600',
         }
     ];
+
+    const PRODUCT_IMAGES_HAIR = [
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/18a41d7d-60e3-4fab-05e0-e86402a9a500',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2904a7b6-0289-47be-78fc-981eec823d00',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0d370dd9-70e0-4048-f63a-f7669f4a0200',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1d19a70f-25dc-45d4-b2e9-ade6275cd000',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/77d75a23-c302-4968-8afd-b782a3316700',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bf5675b1-f3c8-4a5a-e26f-e8a801b6ab00',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/34a76b43-50c0-45f0-4c95-69139003d800',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4b80f6e9-31c2-45c4-e92d-5aa26541ad00',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f103ea34-056f-4c82-7ed4-0742f84c1700',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e1f5adb8-486f-45a0-c689-b12fd388b300',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/372f3617-2106-4869-4bf4-88f2dca2a900',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/372f3617-2106-4869-4bf4-88f2dca2a900',
+        }
+    ];
+
+    let PRODUCT_IMAGES = PRODUCT_IMAGES_TAN;
+    if (props.handle === 'deep-condition-bundle') {
+        PRODUCT_IMAGES = PRODUCT_IMAGES_HAIR;
+    }
 
     return (
         <Fragment>

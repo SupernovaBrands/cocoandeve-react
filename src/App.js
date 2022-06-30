@@ -9,6 +9,7 @@ import Layout from './UI/layout/Layout';
 
 const ProductDetail = lazy(() => import('./UI/templates/ProductDetail'));
 const TanRange = lazy(() => import('./UI/templates/TanRange'));
+const HairRange = lazy(() => import('./UI/templates/HairRange'));
 const Survey = lazy(() => import('./UI/templates/Survey'));
 
 const App = () => {
@@ -21,13 +22,13 @@ const App = () => {
         <Routes>
           <Route path='/range-tan' element={<TanRange />} />
           <Route path='/range-tan-test' element={<TanRange />} />
-          <Route path='/products/:handle' element={<ProductDetail />} />
-          <Route path='/sunny-honey-bali-bronzing-self-tan' element={<ProductDetail />} />
+          <Route path='/sunny-honey-bali-bronzing-self-tan' element={<ProductDetail handle="sunny-honey-bali-bronzing-self-tan-set" range="tan" />} />
           <Route path='/sunny-honey-bali-bronzing-self-tan-set' element={<Navigate replace to="/sunny-honey-bali-bronzing-self-tan" />} />
           <Route path='/tan-range' element={<Navigate replace to="/range-tan" />} />
           <Route path='/customers-survey' element={<Survey />} />
           <Route path='/test-pdp' element={<ProductDetail />} />
-
+          <Route path='/hair-range-test' element={<HairRange />} />
+          <Route path='/deep-conditioning-bundle-test' element={<ProductDetail handle="deep-condition-bundle" range="hair" />} />
         </Routes>
       </Suspense>
     </Layout>

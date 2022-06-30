@@ -1,11 +1,16 @@
 import { Fragment, useContext } from "react";
 import RangeContext from "../../store/range-context";
+import StoreContext from "../../store/store-context";
 import ReviewStar from "./ReviewStar";
 
 const ProductCard = (props) => {
 	let ProductUrl = 'https://www.cocoandeve.com/products/';
 	let params = (new URL(document.location)).searchParams;
 	let activeStore = params.get('utm_store') || 'us';
+
+	const storeCtx = useContext(StoreContext);
+	storeCtx.storeChange(activeStore);
+	storeCtx.rangeChange('hair');
 
 	const productCardCtx = useContext(RangeContext);
 	const productContent = productCardCtx.products[props.handle][activeStore];
@@ -15,10 +20,9 @@ const ProductCard = (props) => {
 	}
 
 	const productTitle = productContent.title ? productContent.title : productCardCtx.products[props.handle]['us'].title;
-
-	let carouselData = productCardCtx.carouselSection[activeStore];
+	let carouselData = productCardCtx.carouselSection['tan'][activeStore];
 	if (!carouselData) {
-		carouselData = productCardCtx.carouselSection['us'];
+		carouselData = productCardCtx.carouselSection['tan']['us'];
 	}
 
 	return (

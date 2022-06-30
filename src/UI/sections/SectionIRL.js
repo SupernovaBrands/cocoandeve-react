@@ -8,15 +8,15 @@ import Carousel from '../components/Carousel';
 import { ReactComponent as InstagramIcon } from '../../assets/instagram-clr.svg';
 import { ReactComponent as FacebookIcon } from '../../assets/facebook-clr.svg';
 
-const SectionIRL = () => {
+const SectionIRL = (props) => {
 
     let params = (new URL(document.location)).searchParams;
 	let activeStore = params.get('utm_store') || 'us';
 
 	const irlCtx = useContext(IRLContext);
-    irlCtx.storeChange(activeStore);
+    irlCtx.storeChange(activeStore, props.range);
 
-    const CONTENT = [
+    const CONTENT_TAN = [
         {
             carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 active',
             content:
@@ -68,6 +68,111 @@ const SectionIRL = () => {
         }
     ]
 
+    const CONTENT_HAIR = [
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            content:
+                <IRLCard
+                    name="@thatcurlblog"
+                    caption={irlCtx.caption1}
+                    image="https://via.placeholder.com/240x240"
+                    comImage="https://via.placeholder.com/240x240"
+                >
+                    <p>{irlCtx.review1}</p>
+
+                </IRLCard>
+        },
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            content:
+                <IRLCard
+                    name="@mairaaiellohair"
+                    caption={irlCtx.caption2}
+                    image="https://via.placeholder.com/240x240"
+                    comImage="https://via.placeholder.com/240x240"
+                >
+                    <p>{irlCtx.review2}</p>
+                </IRLCard>
+        },
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            content:
+                <IRLCard
+                    name="@lanasummer"
+                    caption={irlCtx.caption3}
+                    image="https://via.placeholder.com/240x240"
+                    comImage="https://via.placeholder.com/240x240"
+                >
+                    <p>{irlCtx.review3}</p>
+                </IRLCard>
+        },
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            content:
+                <IRLCard
+                    name="@zainahussain"
+                    caption={irlCtx.caption4}
+                    image="https://via.placeholder.com/240x240"
+                    comImage="https://via.placeholder.com/240x240"
+                >
+                    <p>{irlCtx.review4}</p>
+                </IRLCard>
+        },
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            content:
+                <IRLCard
+                    name="@bilaldelpesche"
+                    caption={irlCtx.caption5}
+                    image="https://via.placeholder.com/240x240"
+                    comImage="https://via.placeholder.com/240x240"
+                >
+                    <p>{irlCtx.review5}</p>
+                </IRLCard>
+        },
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            content:
+                <IRLCard
+                    name="@kaelatavares_"
+                    caption={irlCtx.caption6}
+                    image="https://via.placeholder.com/240x240"
+                    comImage="https://via.placeholder.com/240x240"
+                >
+                    <p>{irlCtx.review6}</p>
+                </IRLCard>
+        },
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            content:
+                <IRLCard
+                    name="@zara.howey"
+                    caption={irlCtx.caption7}
+                    image="https://via.placeholder.com/240x240"
+                    comImage="https://via.placeholder.com/240x240"
+                >
+                    <p>{irlCtx.review7}</p>
+                </IRLCard>
+        },
+        {
+            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+            content:
+                <IRLCard
+                    name="@jasmine_lars"
+                    caption={irlCtx.caption8}
+                    image="https://via.placeholder.com/240x240"
+                    comImage="https://via.placeholder.com/240x240"
+                >
+                    <p>{irlCtx.review8}</p>
+                </IRLCard>
+        }
+    ]
+
+    let CONTENT = CONTENT_TAN;
+    if (props.range === 'hair') {
+        CONTENT = CONTENT_HAIR;
+    }
+
 	return (
 		<section className='customer-reviews py-4'>
             <h2 className="h1 mb-3 text-center">{irlCtx.title}</h2>
@@ -78,16 +183,18 @@ const SectionIRL = () => {
             <div className='container px-g pe-0 pe-lg-g'>
                 <Carousel
                     id="sectionIRL"
-                    className="carousel slide carousel--loop carousel--mobile-half-next"
+                    className="carousel slide carousel--loop carousel--mobile-half-next carousel--swipe"
                     items={CONTENT}
                     slideNumber="4"
                     forceCentered={true}
                     centered={true}>
-                    <button className="carousel-control carousel-control-prev floating-out-start justify-content-start text-primary d-none" data-bs-target="#sectionIRL" role="button" data-bs-slide="prev">
+                    <button className={`carousel-control carousel-control-prev  floating-out-start justify-content-start text-primary d-none ${CONTENT.length <= 4 ? 'd-lg-flex' : '' } `} data-bs-target="#sectionIRL" role="button" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.627 22.627" className="svg"><path d="M16.2 1.885l-9.428 9.428 9.428 9.428-1.886 1.886L3 11.313 14.314 0z"></path></svg></span>
+                        <span className='visually-hidden-focusable'>Prev</span>
                     </button>
-                    <button className="carousel-control carousel-control-next floating-out-end justify-content-end text-primary d-none" data-bs-target="#sectionIRL" role="button" data-bs-slide="next">
+                    <button className={`carousel-control carousel-control-next  floating-out-end justify-content-end text-primary d-none ${CONTENT.length <= 4 ? 'd-lg-flex' : '' }`} data-bs-target="#sectionIRL" role="button" data-bs-slide="next">
                         <span className="carousel-control-next-icon d-flex justify-content-center align-items-center" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.627 22.627" className="svg"><path d="M5.428 20.742l9.428-9.428-9.428-9.428L7.314 0l11.314 11.314L7.314 22.627z"></path></svg></span>
+                        <span className='visually-hidden-focusable'>Next</span>
                     </button>
                 </Carousel>
             </div>
