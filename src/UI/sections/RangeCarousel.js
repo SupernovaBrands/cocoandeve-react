@@ -78,13 +78,19 @@ const RangeCarousel = (props) => {
 
 	if (props.range === 'hair') {
 		CAROUSEL_TABS = CAROUSEL_TABS_HAIR;
+
+		carouselLoop('FeaturedHair1');
+		carouselLoop('FeaturedHair2');
+		carouselLoop('FeaturedHair3');
 	} else if (props.range === 'tan') {
 		CAROUSEL_TABS = CAROUSEL_TABS_TAN;
+
+		carouselLoop('FeaturedBody');
+		carouselLoop('FeaturedFace');
+		carouselLoop('FeaturedValueSets');
 	}
 
-	carouselLoop('FeaturedBody');
-	carouselLoop('FeaturedFace');
-	carouselLoop('FeaturedValueSets');
+	
 
 	return (
 		<section className='product-carousel py-2 py-lg-4 overflow-hidden'>

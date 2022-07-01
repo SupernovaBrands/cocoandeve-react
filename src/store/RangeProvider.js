@@ -487,7 +487,267 @@ const productList = {
         my: {
             price: 'RM113.00',
         },
-    }
+    },
+    'leave-in-conditioner': {
+        us: {
+            price: '$22.00',
+            title: 'Leave In Conditioner',
+        },
+        ca: {
+            price: '$28.00',
+        },
+        uk: {
+            price: '£20.00',
+        },
+        eu: {
+            price: '€22,00',
+        },
+        au: {
+            price: '$34.00',
+        },
+        int: {
+            price: 'SG$36.90',
+        },
+        de: {
+            price: '€22,00',
+        },
+        fr: {
+            price: '€22,00',
+            title: 'Soin Sans Rinçage',
+        },
+        my: {
+            price: 'RM98.00',
+        },
+    },
+    'daily-essentials-bundle': {
+        us: {
+            price: '$57.40',
+            comparePrice: '$71.80',
+            title: 'Leave In Conditioner',
+        },
+        ca: {
+            price: '$75.00',
+            comparePrice: '$93.80',
+        },
+        uk: {
+            price: '£47.00',
+            comparePrice: '£58.80',
+        },
+        eu: {
+            price: '€57,40',
+            comparePrice: '€71,80',
+        },
+        au: {
+            price: '$86.20',
+            comparePrice: '$107.80',
+        },
+        int: {
+            price: 'SG$84.60',
+            comparePrice: 'SG$105.80',
+        },
+        de: {
+            price: '€57,40',
+            comparePrice: '€71,80',
+        },
+        fr: {
+            price: '€57,40',
+            comparePrice: '€71,80',
+            title: 'Kit Essentiels du Quotidien',
+        },
+        my: {
+            comparePrice: 'RM324.00',
+            price: 'RM259.20',
+        },
+    },
+    'hair-necessities-kit': {
+        us: {
+            price: '$43.90',
+            comparePrice: '$51.80',
+            title: 'Hair Necessities Kit',
+        },
+        ca: {
+            price: '$59.90',
+            comparePrice: '$72.80',
+        },
+        uk: {
+            price: '£39.90',
+            comparePrice: '£45.30',
+        },
+        eu: {
+            price: '€40,90',
+            comparePrice: '€46,80',
+        },
+        au: {
+            price: '$66.90',
+            comparePrice: '$79.80',
+        },
+        int: {
+            price: 'SG$51.90',
+            comparePrice: 'SG$78.80',
+        },
+        de: {
+            price: '€40,90',
+            comparePrice: '€46,80',
+        },
+        fr: {
+            price: '€40,90',
+            comparePrice: '€46,80',
+            title: 'Coffret Les Essentiels',
+        },
+        my: {
+            comparePrice: 'RM324.00',
+            price: 'RM259.20',
+        },
+    },
+    'super-hydration-kit': {
+        us: {
+            price: '$86.90',
+            comparePrice: '$125.50',
+            title: 'Super Hydration Kit',
+        },
+        ca: {
+            price: '$118.90',
+            comparePrice: '$170.60',
+        },
+        uk: {
+            price: '£45.80',
+            comparePrice: '£34.00',
+        },
+        eu: {
+            price: '€81,90',
+            comparePrice: '€117,50',
+        },
+        au: {
+            price: '$66.90',
+            comparePrice: '$79.80',
+        },
+        int: {
+            price: 'SG$51.90',
+            comparePrice: 'SG$78.80',
+        },
+        de: {
+            price: '€81,90',
+            comparePrice: '€117,50',
+        },
+        fr: {
+            price: '€81,90',
+            comparePrice: '€117,50',
+        },
+        my: {
+            price: 'SG$128.90',
+            comparePrice: 'SG$185.50',
+        },
+    },
+    'shampoo-conditioner-set': {
+        us: {
+            price: '$39.50',
+            comparePrice: '$49.80',
+            title: 'Super Hydrating Shampoo & Conditioner Set',
+        },
+        ca: {
+            price: '$53.00',
+            comparePrice: '$65.80',
+        },
+        uk: {
+            price: '£34.00',
+            comparePrice: '£45.80',
+        },
+        eu: {
+            price: '€38,00',
+            comparePrice: '€49,80',
+        },
+        au: {
+            price: '$66.90',
+            comparePrice: '$79.80',
+        },
+        int: {
+            price: 'SG$59.90',
+            comparePrice: 'SG$73.80',
+        },
+        de: {
+            price: '€38,00',
+            comparePrice: '€49,80',
+        },
+        fr: {
+            price: '€38,00',
+            comparePrice: '€49,80',
+            title: 'Shampooing et Après-Shampooing Super Hydratants',
+        },
+        my: {
+            comparePrice: 'RM184.00',
+            price: 'RM226.00',
+        },
+    },
+    'miracle-elixir-hair-oil-treatment': {
+        us: {
+            price: '$29.90',
+            title: 'Miracle Hair Elixir',
+        },
+        ca: {
+            price: '$39.90',
+        },
+        uk: {
+            price: '£28.90',
+        },
+        eu: {
+            price: '€51,50',
+        },
+        au: {
+            price: '$44.90',
+        },
+        int: {
+            price: 'SG$46.90',
+        },
+        de: {
+            price: '€51,50',
+        },
+        fr: {
+            price: '€51,50',
+            title: 'Elixir Miracle Pour Cheveux',
+        },
+        my: {
+            price: 'RM144.00',
+        },
+    },
+    'silky-hair-set': {
+        us: {
+            price: '$59.80',
+            comparePrice: '$67.80',
+            title: 'Silky Hair Set',
+        },
+        ca: {
+            price: '$83.80',
+            comparePrice: '$95.80',
+        },
+        uk: {
+            price: '£51.00',
+            comparePrice: '£58.80',
+        },
+        eu: {
+            price: '€51,50',
+            comparePrice: '€54,40',
+        },
+        au: {
+            price: '$87.80',
+            comparePrice: '$100.80',
+        },
+        int: {
+            price: 'SG$88.60 ',
+            comparePrice: 'SG$101.80',
+        },
+        de: {
+            price: '€51,50',
+            comparePrice: '€54,40',
+        },
+        fr: {
+            price: '€51,50',
+            comparePrice: '€54,40',
+        },
+        my: {
+            comparePrice: 'RM272.00',
+            price: 'RM313.00',
+        },
+    },
 };
 
 const carouselSection = {

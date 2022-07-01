@@ -23,7 +23,7 @@ const ProductForm = (props) => {
     productCtx.storeChange(activeStore, props.handle);
 
     const host = 'https://www.cocoandeve.com';
-
+    
     const {
         price,
         compareAtPrice,
@@ -35,20 +35,22 @@ const ProductForm = (props) => {
         shades
     } = productCtx;
 
-    useEffect(() => {
-        if (shades.length > 0) {
-            setSelectedSwatch(shades[0].swatch);
-            setSelectedSwatchText(shades[0].text);
-        }
-        setUrl();
-    }, [productCtx]);
-
     const [selectedSwatch, setSelectedSwatch] = useState(null);
     const [quantity, setQuantity] = useState(1);
     const [selectedSwatchText, setSelectedSwatchText] = useState('');
     const [buttonUrl, setButtonUrl] = useState(host);
 
-    
+    useEffect(() => {
+        setUrl();
+    }, [quantity, selectedSwatch]);
+
+    useEffect(() => {
+        setUrl();
+        if (shades.length > 0 && selectedSwatch === null) {
+            setSelectedSwatch(shades[0].swatch);
+            setSelectedSwatchText(shades[0].text);
+        }
+    }, [productCtx])
 
     const onSelectedVariant = (event) => {
         const dataId = event.target.getAttribute('data-id');
@@ -57,17 +59,15 @@ const ProductForm = (props) => {
             setSelectedSwatchText(swatch.text);
             setSelectedSwatch(swatch.swatch);
         }
-        setUrl();
     }
 
     const onChangeQuantity = (qty) => {
         setQuantity(qty);
-        setUrl();
     }
 
     const setUrl = () => {
         let url = `${host}?lp_handle=${handle}&lp_quantity=${quantity}`;
-        url = selectedSwatch !== null && `${url}&lp_swatch=${selectedSwatch}`;
+        url = shades.length > 0 && selectedSwatch !== null ? `${url}&lp_swatch=${selectedSwatch}` : url;
         setButtonUrl(url);
     }
 
@@ -81,6 +81,7 @@ const ProductForm = (props) => {
             });
         }
         window.location.href = buttonUrl;
+        
     }
 
     setTimeout(function () {

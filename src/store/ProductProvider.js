@@ -234,26 +234,7 @@ const _content = {
         },
         asSeenin: 'As seen in',
         atc: 'Add to cart',
-        shades: [
-            {
-                type: 'swatch',
-                swatch: 'medium',
-                text: 'Medium Shade - Gives skin a sun-kissed glow. Great for lighter skin tones!',
-                class: 'medium',
-            },
-            {
-                type: 'swatch',
-                swatch: 'dark',
-                text: 'Dark Shade - For a back from vacay bronze. Ideal for medium skin tones!',
-                class: 'dark',
-            },
-            {
-                type: 'swatch',
-                swatch: 'ultra-dark',
-                text: 'Ultra Dark Shade - A deep, rich tan. For deeper skin tones!',
-                class: 'ultra-dark',
-            }
-        ]
+        shades: []
     },
 } 
 
@@ -267,7 +248,7 @@ const productReducer = (state, action) => {
 const ProductProvider = props => {
     const [productState, dispatchProductAction] = useReducer(productReducer, _content.default);
     const storeChangeHandler = (activeStore, handle) => {
-        const validStore = ['us', 'de', 'fr', 'int'].indexOf(activeStore) !== -1 ? activeStore : 'us';
+        const validStore = ['us', 'de', 'fr', 'int', 'my', 'eu', 'fr', 'de', 'uk', 'ca', 'au'].indexOf(activeStore) !== -1 ? activeStore : 'us';
         dispatchProductAction({type: 'CHANGESTORE', activeStore: validStore, handle})
     };
 

@@ -594,7 +594,7 @@ module.exports = function (webpackEnv) {
           {
             inject: false,
             template: 'public/hair-range-template.html',
-            filename: 'hair-range-test/index.html'
+            filename: 'range-hair/index.html'
           },
           isEnvProduction
             ? {
