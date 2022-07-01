@@ -934,8 +934,8 @@ const formulaSection = {
         },
     },
     hair: {
-        jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0e23c0bf-f145-45ed-96e0-82077d3c1100',
-        webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/29c53a74-6170-494f-949f-9016477e4400',
+        jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8d241b66-7b80-43bb-f59f-a9eedf7e8d00',
+        webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2aaaf539-0ab5-44f6-bb94-44a0aaf1ff00',
         us: {
             title: 'Revolutionary formula',
             subtitle: 'Multi-award winning hair range',
@@ -1010,8 +1010,8 @@ const bannerSection = {
             title: 'Like A Virgin',
             subtitle: 'Transform you hair so it feels like a virgin..again!',
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b9f3ec91-69b1-4f69-21e6-bcaf9037ed00/1140x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4723a381-3b0c-4880-cf23-4c3d978aa700/1140x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0f61851c-a4ed-4f12-4e75-21b0e67c7d00/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/58f7eeb3-0c8d-45ec-4321-cd23eb3d2800/1140x',
             },
             mobile: {
                 webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4fdd78e9-e970-4764-05e9-6a2d2489fb00/828x',
