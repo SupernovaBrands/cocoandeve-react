@@ -188,7 +188,6 @@ const Survey = () => {
     }
 
     const completed = (handle, sku) => {
-        postMessageToParentCookie('quizQuestionsAnswers', getCookie('answeredQuestion'));
         clearCookie();
         setTimeout(function(){
             window.top.location.href = `https://${selectedSite}/products/${handle}?survey=result&sku=${sku}`;
@@ -263,8 +262,6 @@ const Survey = () => {
             'action': 'completed',
             'label': email,
         }, `https://${site}`);
-
-        postMessageToParentCookie('quizEmail', email);
     }
 
     const saveData = () => {
@@ -294,6 +291,7 @@ const Survey = () => {
         setCookie('quizEmail', email);
         setEmail(email);
         setSubmitted(true);
+        postMessageToParentCookie('quizEmail', email);
 
         if (window.top !== window.self) {
             window.parent.postMessage({
