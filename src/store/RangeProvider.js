@@ -523,7 +523,7 @@ const productList = {
         us: {
             price: '$57.40',
             comparePrice: '$71.80',
-            title: 'Leave In Conditioner',
+            title: 'Daily Essentials Bundle',
         },
         ca: {
             price: '$75.00',
@@ -829,7 +829,7 @@ const carouselSection = {
         us: {
             title: 'Hair products for any occasion',
             face: 'New',
-            body: 'Best Seller',
+            body: 'Bestsellers',
             valuesets: 'Kits',
             learnMore: 'Learn More',
             carouselTabs: [
@@ -841,7 +841,7 @@ const carouselSection = {
                 {
                     carouselId: 'FeaturedHair2',
                     isTabActive: true,
-                    tabLabel: 'Best Seller'
+                    tabLabel: 'Bestsellers'
                 },
                 {
                     carouselId: 'FeaturedHair3',
@@ -943,7 +943,7 @@ const formulaSection = {
             list2: 'Treats split ends and tames frizz.',
             list3: 'Visibly glossier, shinier & smoother hair.',
             list4: 'Suitable for normal to dry hair.',
-            footer: 'No sulfates · No silicone · No parabenes · Vegan',
+            footer: 'Vegan · Cruelty-free · No nasties',
         },
         fr: {
             title: 'Revolutionary formula',
@@ -952,7 +952,7 @@ const formulaSection = {
             list2: 'Treats split ends and tames frizz.',
             list3: 'Visibly glossier, shinier & smoother hair.',
             list4: 'Suitable for normal to dry hair.',
-            footer: 'No sulfates · No silicone · No parabenes · Vegan',
+            footer: 'Vegan · Non testé sur les animaux · Sans substances nocives',
         },
         de: {
             title: 'Revolutionary formula',
@@ -961,7 +961,7 @@ const formulaSection = {
             list2: 'Treats split ends and tames frizz.',
             list3: 'Visibly glossier, shinier & smoother hair.',
             list4: 'Suitable for normal to dry hair.',
-            footer: 'No sulfates · No silicone · No parabenes · Vegan',
+            footer: 'Vegan · Tierversuchsfrei · Keine Chemikalien.',
         },
     },
 };

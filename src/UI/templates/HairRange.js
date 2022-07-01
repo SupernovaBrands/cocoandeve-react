@@ -32,9 +32,9 @@ const HairRange = () => {
                 <IRLProvider>
                     <SectionIRL range="hair" />
                 </IRLProvider>
-                <ProductProvider>
+                <ReviewProvider>
                     <SeenIn range="hair" />
-                </ProductProvider>
+                </ ReviewProvider>
                 <FaqProvider>
                     <FaqAccordion range="hair" />
                 </FaqProvider>

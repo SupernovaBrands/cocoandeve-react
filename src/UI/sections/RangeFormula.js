@@ -56,15 +56,15 @@ const RangeFormula = (props) => {
 									{formulaData.list1}
 								</li>
 								<li className='col-12 d-flex align-items-center mb-2'>
-									<FormulaList22 className='me-g d-flex flex-shrink-0 justify-content-center' />
+									<FormulaList11 className='me-g d-flex flex-shrink-0 justify-content-center' />
 									{formulaData.list2}
 								</li>
 								<li className='col-12 d-flex align-items-center mb-2'>
-									<FormulaList32 className='me-g d-flex flex-shrink-0 justify-content-center' />
+									<FormulaList41 className='me-g d-flex flex-shrink-0 justify-content-center' />
 									{formulaData.list3}
 								</li>
 								<li className='col-12 d-flex align-items-center'>
-									<FormulaList42 className='me-g d-flex flex-shrink-0 justify-content-center' />
+									<FormulaList32 className='me-g d-flex flex-shrink-0 justify-content-center' />
 									{formulaData.list4}
 								</li>
 							</ul>
@@ -77,7 +77,7 @@ const RangeFormula = (props) => {
 					</picture>
 				</div>
 			</div>
-			<div className='range__formula-tagline bg-yellow-light-secondary text-center d-lg-none font-size-sm fw-bold py-g mt-2'>
+			<div className={`range__formula-tagline ${ props.range === 'tan' ? 'bg-yellow-light-secondary' : 'bg-primary-light-second' } text-center d-lg-none font-size-sm fw-bold py-g mt-2`}>
 				{formulaData.footer}
 			</div>
         </section>

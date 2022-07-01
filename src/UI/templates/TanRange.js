@@ -35,9 +35,9 @@ const TanRange = () => {
                 <IRLProvider>
                     <SectionIRL range="tan" />
                 </IRLProvider>
-                <ProductProvider>
+                <ReviewProvider>
                     <SeenIn range="tan" />
-                </ProductProvider>
+                </ ReviewProvider>
                 <FaqProvider>
                     <FaqAccordion range="tan" />
                 </FaqProvider>
