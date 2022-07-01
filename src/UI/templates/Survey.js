@@ -6,6 +6,8 @@ import SingleChoice from '../components/SingleChoice';
 import MultipleChoice from '../components/MultipleChoice';
 import SingleChoiceIcon from '../components/SingleChoiceIcon';
 import SingleChoiceImage from '../components/SingleChoiceImage';
+import EmailForm from '../components/EmailForm';
+import ResultContent from '../components/ResultContent';
 import { useResizeDetector } from 'react-resize-detector';
 
 import { setCookie, getCookie } from "../../modules/Utils";
@@ -15,14 +17,13 @@ import { useSearchParams } from "react-router-dom";
 import { ReactComponent as LoaderSvg } from '../../assets/loader.svg';
 import Translations from '../../modules/translations';
 
-window.getCookie = getCookie;
-
 const Survey = () => {
     const [searchParams] = useSearchParams();
     const site = searchParams.get('site');
     const gId = searchParams.get('gaid');
     const surveyState = searchParams.get('state');
     const language = searchParams.get('lang');
+    const abTest = searchParams.get('abtest');
 
     const setCookieAnsweredQuestion = (object) => {
         if (typeof object === 'object') {
@@ -32,7 +33,6 @@ const Survey = () => {
                 object[key] = encodeURI(value);
             });
             setCookie('answeredQuestion', JSON.stringify(object));
-            postMessageCookie('answeredQuestion', JSON.stringify(object));
         } else {
             setCookie('answeredQuestion', '');
         }
@@ -71,9 +71,11 @@ const Survey = () => {
         setCookie('answeredQuestion', '');
     }
     const initialCurrentQuestion = getCookie('currentQuestion') ? parseInt(getCookie('currentQuestion'), 10) : 1;
+    const initialSubmitted = getCookie('quizEmail') ? true : false;
     const answerData = getCookieAnsweredQuestion() ? getCookieAnsweredQuestion() : {};
 
     const selectedSite = site ? site : 'dev.cocoandeve.com';
+    const initializeAdditionalStep = ['dev.cocoandeve.com', 'us.cocoandeve.com', 'www.cocoandeve.com'].includes(selectedSite);
 
     const variants = ProductVariants[selectedSite];
 
@@ -82,21 +84,15 @@ const Survey = () => {
     const [currentQuestion, setQuestion] = useState(initialCurrentQuestion);
     const [progressValue, setProgress] = useState(currentQuestion / Questions.length * 100);
     const [currentAnswer, setAnswer] = useState(answerData);
+    const [submitted, setSubmitted] = useState(initialSubmitted);
+    const [redirect, setRedirect] = useState(false);
+    const [email, setEmail] = useState('');
+    const [additionalStep, setAdditionalStep] = useState(initializeAdditionalStep);
 
     let lang = 'en';
 
     if (language && ['en','de','fr'].includes(language)) {
         lang = language;
-    }
-
-    const postMessageCookie = (key, val) => {
-        if (window.top === window.self) return;
-
-        window.parent.postMessage({
-            'func': 'setCookieFromMessage',
-            'key': key,
-            'value': val,
-        }, `https://${site}`);
     }
 
     // handler hook side effect when state changed
@@ -108,16 +104,12 @@ const Survey = () => {
         }
 
         setCookie('surveyPosition', currentPosition);
-        // postMessageCookie('surveyPosition', currentPosition); don't send to parent window when initialize survey state
     }, [currentPosition]);
 
     useEffect(() => {
         if (currentQuestion <= Questions.length && currentPosition !== 'finished' && currentPosition !== 'start') {
             setCookie('currentQuestion', currentQuestion);
             setCookie('surveyPosition', `question-${currentQuestion}`);
-            // send cookie data to the parent window
-            postMessageCookie('currentQuestion', currentQuestion);
-            postMessageCookie('surveyPosition', `question-${currentQuestion}`);
         }
 
         setProgress(currentQuestion / Questions.length * 100);
@@ -133,9 +125,7 @@ const Survey = () => {
         setCookie('currentQuestion', 1);
         setCookie('surveyPosition', 'start');
         setCookie('answeredQuestion', '');
-        postMessageCookie('currentQuestion', 1);
-        postMessageCookie('surveyPosition', 'start');
-        postMessageCookie('answeredQuestion', '');
+        setCookie('quizEmail', '');
     }
 
     const gettingResult = (close=false) => {
@@ -185,30 +175,29 @@ const Survey = () => {
         console.log(sku, findVariant, 'variant data');
 
         if (findVariant) {
-
+            // handle when inside iframe
             if (window.top !== window.self && currentPosition === 'finished') {
-                postMessageCookie('surveyResult', findVariant.product_handle);
-                postMessageCookie('surveyResultSku', findVariant.sku);
-                postMessageCookie('surveySubmitNew', true);
-                clearCookie();
-                setTimeout(function(){
-                    window.top.location.href = `https://${selectedSite}/products/${findVariant.product_handle}?survey=result&sku=${findVariant.sku}`;
-                }, 3000);
+                completed(findVariant.product_handle,findVariant.sku);
             }
 
             if (close) {
-                setCookie('surveyPosition', 'finished');
-                setPosition('finished');
-                postMessageCookie('surveyPosition', 'finished');
-                postMessageCookie('surveyResult', findVariant.product_handle);
-                postMessageCookie('surveyResultSku', findVariant.sku);
-                postMessageCookie('surveySubmitNew', true);
-                clearCookie();
-                setTimeout(function(){
-                    window.top.location.href = `https://${selectedSite}/products/${findVariant.product_handle}?survey=result&sku=${findVariant.sku}`;
-                }, 3000);
+                setFinished();
+                completed(findVariant.product_handle,findVariant.sku);
             }
         }
+    }
+
+    const completed = (handle, sku) => {
+        postMessageToParentCookie('quizQuestionsAnswers', getCookie('answeredQuestion'));
+        clearCookie();
+        setTimeout(function(){
+            window.top.location.href = `https://${selectedSite}/products/${handle}?survey=result&sku=${sku}`;
+        }, 3000);
+    }
+
+    const setFinished = () => {
+        setCookie('surveyPosition', 'finished');
+        setPosition('finished');
     }
 
     const setQuestionState = (questionIndex) => {
@@ -227,12 +216,26 @@ const Survey = () => {
                 setQuestion(questionIndex);
             }
         } else if (questionIndex >= Questions.length) {
-            gettingResult(true);
-            // call saving data to analytics and database
-            saveData();
-            postMessageGaParent();
-            gettingResult(true);
+            if (additionalStep) {
+                setFinished();
+            } else {
+                // call saving data to analytics and database
+                setRedirect(true);
+                saveData();
+                postMessageGaParent();
+                gettingResult(true);
+            }
         }
+    }
+
+    const postMessageToParentCookie = (key, val) => {
+        if (window.top === window.self) return;
+
+        window.parent.postMessage({
+            'func': 'setCookieFromMessage',
+            'key': key,
+            'value': val,
+        }, `https://${site}`);
     }
 
     const postMessageGaParent = () => {
@@ -252,6 +255,16 @@ const Survey = () => {
                 'label': label,
             }, `https://${site}`);
         });
+
+        // send completed event
+        window.parent.postMessage({
+            'func': 'callGaEvent',
+            'category': 'Survey',
+            'action': 'completed',
+            'label': email,
+        });
+
+        postMessageToParentCookie('quizEmail', email);
     }
 
     const saveData = () => {
@@ -263,7 +276,10 @@ const Survey = () => {
                 dataForSaving[questionText] = value;
             }
         }
-        const data = { _ga: gId, questions_answers: dataForSaving };
+
+        const gAid = gId !== null ? gId : getCookie('_gid');
+        const data = { _ga: gAid, questions_answers: dataForSaving, email };
+
         fetch('https://api.cocoandeve.com/surveys', {
             method: 'POST',
             headers: {
@@ -274,9 +290,18 @@ const Survey = () => {
         });
     }
 
-    useEffect(() => {
-        if (currentPosition === 'finished') gettingResult();
-    }, [currentPosition]);
+    const onSubmit = (email) => {
+        setCookie('quizEmail', email);
+        setEmail(email);
+        setSubmitted(true);
+    }
+
+    const viewMyResult = () => {
+        setRedirect(true);
+        saveData();
+        postMessageGaParent();
+        gettingResult(true);
+    }
 
     const postIframeHeight = (key, val) => {
         if (window.top === window.self) return;
@@ -291,6 +316,10 @@ const Survey = () => {
     useEffect(() => {
         postIframeHeight('height', height);
     }, [height]);
+
+    useEffect(() => {
+        if (abTest) setAdditionalStep(false);
+    }, [additionalStep]);
 
     return (
             <div ref={targetRef} className={`${currentPosition === 'start' ? 'cover' : ''} container container--survey`}>
@@ -365,7 +394,18 @@ const Survey = () => {
                         </>
                     )
                     }
-                    { currentPosition === 'finished' && (
+
+                    { currentPosition === 'finished' && !submitted && additionalStep && !redirect && (
+                        <EmailForm lang={lang} onSubmit={onSubmit} viewMyResult={viewMyResult} />
+                    )
+                    }
+
+                    { currentPosition === 'finished' && submitted && additionalStep && !redirect && (
+                        <ResultContent lang={lang} viewMyResult={viewMyResult}/>
+                    )
+                    }
+
+                    { currentPosition === 'finished' && redirect && (
                         <div className="question-box analyzing d-flex justify-content-center align-items-center flex-column">
                             <p className="question-box__title">{Translations[lang].loading}</p>
                             <LoaderSvg className="loader mt-0 mb-0"/>
