@@ -262,7 +262,7 @@ const Survey = () => {
             'category': 'Survey',
             'action': 'completed',
             'label': email,
-        });
+        }, `https://${site}`);
 
         postMessageToParentCookie('quizEmail', email);
     }
@@ -294,6 +294,15 @@ const Survey = () => {
         setCookie('quizEmail', email);
         setEmail(email);
         setSubmitted(true);
+
+        if (window.top !== window.self) {
+            window.parent.postMessage({
+                'func': 'callGaEvent',
+                'category': 'Survey',
+                'action': 'submitEmail',
+                'label': email,
+            }, `https://${site}`);
+        }
     }
 
     const viewMyResult = () => {
