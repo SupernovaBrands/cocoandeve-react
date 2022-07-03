@@ -1010,8 +1010,8 @@ const bannerSection = {
             title: 'Like A Virgin',
             subtitle: 'Transform you hair so it feels like a virgin..again!',
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0f61851c-a4ed-4f12-4e75-21b0e67c7d00/1140x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/58f7eeb3-0c8d-45ec-4321-cd23eb3d2800/1140x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0f61851c-a4ed-4f12-4e75-21b0e67c7d00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/58f7eeb3-0c8d-45ec-4321-cd23eb3d2800/2280x',
             },
             mobile: {
                 webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4fdd78e9-e970-4764-05e9-6a2d2489fb00/828x',
