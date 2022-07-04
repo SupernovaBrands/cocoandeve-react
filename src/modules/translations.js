@@ -17,7 +17,7 @@ const Translations = {
             caption: 'Enter your email to view your results!<br/>Plus, get a promocode for <strong>10% OFF</strong> for your purchase.',
             email: 'Email',
             button: 'Submit',
-            term: 'I agree to <a href="https://www.cocoandeve.com/pages/privacy-policy">Privacy Policy</a> & <a href="https://www.cocoandeve.com/pages/terms-and-conditions">ToS</a>',
+            term: 'I agree to <a target="_blank" href="https://www.cocoandeve.com/pages/privacy-policy">Privacy Policy</a> & <a target="_blank" href="https://www.cocoandeve.com/pages/terms-and-conditions">ToS</a>',
             condition: 'By signing up, you agree to receive exclusive offers via email.\nSign up not required for purchase. Opt out any time.'
         },
         result: {
@@ -44,7 +44,7 @@ const Translations = {
             caption: 'Enter your email to view your results!<br/>Plus, get a promocode for <strong>10% OFF</strong> for your purchase.',
             email: 'Email',
             button: 'Submit',
-            term: 'I agree to <a href="https://www.cocoandeve.com/pages/privacy-policy">Privacy Policy</a> & <a href="https://www.cocoandeve.com/pages/terms-and-conditions">ToS</a>',
+            term: 'I agree to <a target="_blank" href="https://www.cocoandeve.com/pages/privacy-policy">Privacy Policy</a> & <a target="_blank" href="https://www.cocoandeve.com/pages/terms-and-conditions">ToS</a>',
             condition: 'By signing up, you agree to receive exclusive offers via email.\nSign up not required for purchase. Opt out any time.'
         },
         result: {
@@ -71,7 +71,7 @@ const Translations = {
             caption: 'Enter your email to view your results!<br/>Plus, get a promocode for <strong>10% OFF</strong> for your purchase.',
             email: 'Email',
             button: 'Submit',
-            term: 'I agree to <a href="https://www.cocoandeve.com/pages/privacy-policy">Privacy Policy</a> & <a href="https://www.cocoandeve.com/pages/terms-and-conditions">ToS</a>',
+            term: 'I agree to <a target="_blank" href="https://www.cocoandeve.com/pages/privacy-policy">Privacy Policy</a> & <a target="_blank" href="https://www.cocoandeve.com/pages/terms-and-conditions">ToS</a>',
             condition: 'By signing up, you agree to receive exclusive offers via email.\nSign up not required for purchase. Opt out any time.'
         },
         result: {
