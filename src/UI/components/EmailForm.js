@@ -44,7 +44,7 @@ const EmailForm = (props) => {
                             <Check className={`${!termChecked ? 'd-none' : ''} svg text-white`}/>
                         </div>
                     </label>
-                    <label dangerouslySetInnerHTML={{ __html: t.formEmail.term }} htmlFor="agree"></label>
+                    <label className="font-size-sm" dangerouslySetInnerHTML={{ __html: t.formEmail.term }} htmlFor="agree"></label>
                 </div>
                 <p className="font-size-sm">{ t.formEmail.condition}</p>
             </div>
