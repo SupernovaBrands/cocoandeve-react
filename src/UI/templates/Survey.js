@@ -67,6 +67,7 @@ const Survey = () => {
     // initial data
     let initialState = getCookie('surveyPosition') || 'start';
     if (surveyState === 'started' && (getCookie('surveyPosition') === 'start' || getCookie('surveyPosition') === null || getCookie('surveyPosition') === '')) {
+        postMessageData('Survey', 'started');
         initialState = 'question-1';
         setCookie('answeredQuestion', '');
     }
@@ -237,8 +238,22 @@ const Survey = () => {
         }, `https://${site}`);
     }
 
+    const postMessageData = (category,action,label) => {
+        if (window.top === window.self) return;
+        window.parent.postMessage({
+            'func': 'callGaEvent',
+            'category': category,
+            'action': action,
+            'label': label,
+        }, `https://${site}`);
+    }
+
     const postMessageGaParent = () => {
         if (window.top === window.self) return;
+
+        // send completed event
+        postMessageData('Survey', 'completed', email);
+
         const gaAnswers = decodeAnswers(currentAnswer)
         const keys = Object.keys(gaAnswers);
 
@@ -247,21 +262,8 @@ const Survey = () => {
             const a = gaAnswers[key];
             const label = q.question[lang];
             const action = typeof(a) === 'object' ? a.join(',') : a;
-            window.parent.postMessage({
-                'func': 'callGaEvent',
-                'category': 'Survey',
-                'action': action,
-                'label': label,
-            }, `https://${site}`);
+            postMessageData('Survey',action,label);
         });
-
-        // send completed event
-        window.parent.postMessage({
-            'func': 'callGaEvent',
-            'category': 'Survey',
-            'action': 'completed',
-            'label': email,
-        }, `https://${site}`);
     }
 
     const saveData = () => {
@@ -320,6 +322,11 @@ const Survey = () => {
         }, `https://${site}`);
     }
 
+    const startQuiz = () => {
+        postMessageData('Survey', 'started');
+        setPosition('question-1');
+    }
+
     useEffect(() => {
         postIframeHeight('height', height);
     }, [height]);
@@ -336,7 +343,7 @@ const Survey = () => {
                         <div className="col-12 col-lg-4 pt-4 text-center text-lg-start zindex-1">
                             <h1 className="pt-sm-2">{Translations[lang].heading}</h1>
                             <p className="mb-0">{Translations[lang].subheading}</p>
-                            <button className="btn btn-primary text-white mt-4" onClick={() => setPosition('question-1')}>{Translations[lang].btn.start}</button>
+                            <button className="btn btn-primary text-white mt-4" onClick={() => startQuiz()}>{Translations[lang].btn.start}</button>
                         </div>
                         <div className={`${height <= 535 ? 'pull-down' : ''} col-12 col-lg-5 offset-lg-1 survey-lp-image zindex-0`}>
                             <picture>
