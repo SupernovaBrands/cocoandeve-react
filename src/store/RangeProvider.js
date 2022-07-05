@@ -1014,8 +1014,8 @@ const bannerSection = {
                 jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/58f7eeb3-0c8d-45ec-4321-cd23eb3d2800/2280x',
             },
             mobile: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4fdd78e9-e970-4764-05e9-6a2d2489fb00/1140x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b5e9f771-3abd-404a-9823-de03a738c700/1140x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f81f61eb-6e10-460a-35b3-beb2279d0700/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c25f520f-7c4d-412a-9aa5-258798b21f00/1140x',
             }
         },
         fr: {
@@ -1026,8 +1026,8 @@ const bannerSection = {
                 jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/11df0a91-b8a5-4cfc-ab0a-218feb6c5900/1400x',
             },
             mobile: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/383dbdf2-f7e4-412b-8447-54dbb0984a00/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b5e9f771-3abd-404a-9823-de03a738c700/1140x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f81f61eb-6e10-460a-35b3-beb2279d0700/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c25f520f-7c4d-412a-9aa5-258798b21f00/1140x',
             }
         },
         de: {
@@ -1038,8 +1038,8 @@ const bannerSection = {
                 jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d16a2f1f-a383-4dfa-5e44-37fa00844700/1400x',
             },
             mobile: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4fdd78e9-e970-4764-05e9-6a2d2489fb00/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b5e9f771-3abd-404a-9823-de03a738c700/1140x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f81f61eb-6e10-460a-35b3-beb2279d0700/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c25f520f-7c4d-412a-9aa5-258798b21f00/1140x',
             }
         }
     }
