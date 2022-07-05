@@ -190,6 +190,10 @@ const Survey = () => {
 
     const completed = (handle, sku) => {
         clearCookie();
+        postMessageToParentCookie('surveyResult', handle);
+        postMessageToParentCookie('surveyResultSku', sku);
+        postMessageToParentCookie('surveySubmitNew', 'true');
+
         setTimeout(function(){
             window.top.location.href = `https://${selectedSite}/products/${handle}?survey=result&sku=${sku}`;
         }, 3000);
