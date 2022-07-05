@@ -23,7 +23,7 @@ const Translations = {
         result: {
             title: 'Thanks! Here is your promocode:',
             code: 'QUIZ10',
-            note: 'Promo applies only to first purchase.'
+            note: 'Promo code applies only for first purchases.'
         }
     },
     fr: {
@@ -50,7 +50,7 @@ const Translations = {
         result: {
             title: 'Thanks!\nHere is your promocode:',
             code: 'QUIZ10',
-            note: 'Promo applies only to first purchase.'
+            note: 'Promo code applies only for first purchases.'
         }
     },
     de: {
@@ -77,7 +77,7 @@ const Translations = {
         result: {
             title: 'Thanks! Here is your promocode:',
             code: 'QUIZ10',
-            note: 'Promo applies only to first purchase.'
+            note: 'Promo code applies only for first purchases.'
         }
     }
 }
