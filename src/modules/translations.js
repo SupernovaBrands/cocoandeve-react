@@ -14,7 +14,7 @@ const Translations = {
         loading: 'Analysing your answers',
         formEmail: {
             title: 'We found your perfect match!',
-            caption: 'Enter your email to view your results!<br/>Plus, get a promocode for <strong>10% OFF</strong> for your purchase.',
+            caption: 'Enter your email to view your results!<br/>Plus, get a promo code for <strong>10% OFF</strong> your first purchase.',
             email: 'Email',
             button: 'Submit',
             term: 'I agree to <a target="_blank" href="https://www.cocoandeve.com/pages/privacy-policy">Privacy Policy</a> & <a target="_blank" href="https://www.cocoandeve.com/pages/terms-and-conditions">ToS</a>',
@@ -41,7 +41,7 @@ const Translations = {
         loading: 'Analyse de vos réponses',
         formEmail: {
             title: 'We found your perfect match!',
-            caption: 'Enter your email to view your results!<br/>Plus, get a promocode for <strong>10% OFF</strong> for your purchase.',
+            caption: 'Enter your email to view your results!<br/>Plus, get a promo code for <strong>10% OFF</strong> your first purchase.',
             email: 'Email',
             button: 'Submit',
             term: 'I agree to <a target="_blank" href="https://www.cocoandeve.com/pages/privacy-policy">Privacy Policy</a> & <a target="_blank" href="https://www.cocoandeve.com/pages/terms-and-conditions">ToS</a>',
@@ -68,7 +68,7 @@ const Translations = {
         loading: 'Analyse deiner Antworten',
         formEmail: {
             title: 'We found your perfect match!',
-            caption: 'Enter your email to view your results!<br/>Plus, get a promocode for <strong>10% OFF</strong> for your purchase.',
+            caption: 'Enter your email to view your results!<br/>Plus, get a promo code for <strong>10% OFF</strong> your first purchase.',
             email: 'Email',
             button: 'Submit',
             term: 'I agree to <a target="_blank" href="https://www.cocoandeve.com/pages/privacy-policy">Privacy Policy</a> & <a target="_blank" href="https://www.cocoandeve.com/pages/terms-and-conditions">ToS</a>',
