@@ -21,7 +21,7 @@ const Translations = {
             condition: 'By signing up, you agree to receive exclusive offers via email.\nSign up not required for purchase. Opt out any time.'
         },
         result: {
-            title: 'Thanks! Here is your promocode:',
+            title: 'Thanks! Here is your promo code:',
             code: 'QUIZ10',
             note: 'Promo code applies only for first purchases.'
         }
@@ -48,7 +48,7 @@ const Translations = {
             condition: 'By signing up, you agree to receive exclusive offers via email.\nSign up not required for purchase. Opt out any time.'
         },
         result: {
-            title: 'Thanks!\nHere is your promocode:',
+            title: 'Thanks!\nHere is your promo code:',
             code: 'QUIZ10',
             note: 'Promo code applies only for first purchases.'
         }
@@ -75,7 +75,7 @@ const Translations = {
             condition: 'By signing up, you agree to receive exclusive offers via email.\nSign up not required for purchase. Opt out any time.'
         },
         result: {
-            title: 'Thanks! Here is your promocode:',
+            title: 'Thanks! Here is your promo code:',
             code: 'QUIZ10',
             note: 'Promo code applies only for first purchases.'
         }
