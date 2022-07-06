@@ -218,6 +218,70 @@ const _content = {
             shades: []
         }
     },
+    "repairing-restoring-hair-mask": {
+        us: {
+            handle: 'repairing-restoring-hair-mask',
+            price: '$34.90',
+            compareAtPrice: '',
+            saving: '',
+            title1: '',
+            title2: 'Sweet Repair Hair Mask',
+            description: '1x Sweet Repair Hair Mask 7.2oz<br/>',
+            rating: '220',
+            stars: '4.8',
+            benefits: {
+                formula1: '<FormulaList1 className="me-g d-flex flex-shrink-0 justify-content-center" /> Hair repair powerblend of active ingredients: Biomimetic Ceramides, Vegan Keratin Complex and Hyaluronic Acid reduce hair damage and repair hair weakened by heat, chemical damage and color.',
+                formula2: 'Clinically proven: improves hair strength by 85% and reduces damage by up to 65%.',
+                formula3: 'Hair is completely restored and cracks are repaired from first use for healthier, smoother, softer hair.',
+                formula4: 'Scientifically formulated to deeply repair and restore in just 5 minutes!',
+            },
+            asSeenin: 'As seen in',
+            atc: 'Add to cart',
+            shades: []
+        },
+        fr: {
+            handle: 'deep-condition-bundle',
+            price: '€46,90',
+            compareAtPrice: '€65,90',
+            saving: '29% de réduction',
+            title1: 'Sunny Honey',
+            title2: 'Kit de Bronzage',
+            description: 'Le seul autobronzant dont tu auras besoin. <br />DHA 100% naturelle. Non testé sur les animaux. Vegan. ',
+            rating: '220',
+            stars: '4.8',
+            benefits: {
+                formula1: 'PAS de substances nocives, PAS de sous-tons orangés.',
+                formula2: 'Estompe les tâches de pigmentation et embellit la peau.',
+                formula3: 'Parfum mangue et goyave. (sans odeur de biscuit !)',
+                formula4: 'Formule légère et non collante.',
+                formula5: 'Un gant de bronzage et un pinceau kabuki pour une application facile et impeccable.',
+            },
+            asSeenin: 'Comme on peut le voir dans',
+            atc: 'Ajouter au panier',
+            shades: []
+        },
+        de: {
+            handle: 'deep-condition-bundle',
+            price: '€46,90',
+            compareAtPrice: '€65,90',
+            saving: 'Spare 29%',
+            title1: 'Sunny Honey',
+            title2: 'Selbstbräuner Set',
+            description: 'Der einzige Selbstbräuner, den du jemals brauchen wirst.<br />100% natürliches DHA. Tierversuchsfrei. Vegan.',
+            rating: '220',
+            stars: '4.8',
+            benefits: {
+                formula1: 'Verwischt Pigmentflecken und perfektioniert die Haut.',
+                formula2: 'Tropischer Mango- und Guavenduft (kein Keksgeruch!)',
+                formula3: 'Leichte, nicht klebrige Formel.',
+                formula4: 'Entwickelt mit einer grüngrauen Basis für einen natürlich aussehendes, goldenes Strahlen ohne Orangetöne.',
+                formula5: 'Weicher Bräunungshandschuh und Kabuki-Pinsel für eine perfekte, stressfreie Anwendung.',
+            },
+            asSeenin: 'Empfohlen von',
+            atc: 'Jetzt kaufen',
+            shades: []
+        }
+    },
     default: {
         price: '$70.10',
         compareAtPrice: '$87.70',

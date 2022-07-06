@@ -117,9 +117,9 @@ const ProductForm = (props) => {
                     </div>
                     <p className="font-size-lg d-none d-lg-block order-lg-2" dangerouslySetInnerHTML={{ __html: description }}></p>
                     <p className="my-1 order-lg-2 d-block">
-                        <span className="text-linethrough mr-25 text-muted h2 d-inline-block mb-0">{compareAtPrice}</span>
-                        <span className="mr-25 text-nowrap ms-1 h2 d-inline-block mb-0">{price}</span>
-                        <span className="text-primary text-nowrap text-save p-1 h2 fw-normal d-inline-block mb-0 py-0">({saving})</span>
+                        {compareAtPrice !== '' && (<span className="text-linethrough mr-25 text-muted h2 d-inline-block mb-0 me-1">{compareAtPrice}</span>)}
+                        <span className="mr-25 text-nowrap h2 d-inline-block mb-0">{price}</span>
+                        {saving !== '' && (<span className="text-primary text-nowrap text-save p-1 h2 fw-normal d-inline-block mb-0 py-0">({saving})</span>)}
                     </p>
                     {shades.length > 0 && (
                         <Fragment>

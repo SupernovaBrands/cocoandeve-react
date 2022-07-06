@@ -29,6 +29,7 @@ const App = () => {
           <Route path='/test-pdp' element={<ProductDetail />} />
           <Route path='/range-hair' element={<HairRange />} />
           <Route path='/deep-conditioning-bundle-test' element={<ProductDetail handle="deep-condition-bundle" range="hair" />} />
+          <Route path='/repairing-restoring-hair-mask-test' element={<ProductDetail handle="repairing-restoring-hair-mask" range="hair" />} />
         </Routes>
       </Suspense>
     </Layout>
