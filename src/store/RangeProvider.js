@@ -1022,8 +1022,8 @@ const bannerSection = {
             title: 'Like A Virgin',
             subtitle: 'Transforme ta chevelure pour qu`elle soit "like a virgin"... à nouveau !',
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b9f3ec91-69b1-4f69-21e6-bcaf9037ed00/1140x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/11df0a91-b8a5-4cfc-ab0a-218feb6c5900/1400x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/3c47eb6e-cfa4-4fcd-9344-e5b353dcba00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6ac3073d-6eaa-44b8-4ee9-f66911027400/2280x',
             },
             mobile: {
                 webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f81f61eb-6e10-460a-35b3-beb2279d0700/1140x',
@@ -1034,8 +1034,8 @@ const bannerSection = {
             title: 'Like A Virgin',
             subtitle: 'Verwandel dein Haar, damit es sich wieder frisch anfühlt!',
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b9f3ec91-69b1-4f69-21e6-bcaf9037ed00/1140x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d16a2f1f-a383-4dfa-5e44-37fa00844700/1400x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2d610ad0-4182-4fd3-a49d-b9f67b9cec00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0bb5834c-1c27-44dc-043d-779c28950900/2280x',
             },
             mobile: {
                 webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f81f61eb-6e10-460a-35b3-beb2279d0700/1140x',
