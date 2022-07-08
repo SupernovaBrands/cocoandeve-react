@@ -852,25 +852,25 @@ const carouselSection = {
         },
         fr: {
             title: 'Des produits de soin capillaire pour toutes les occasions',
-            face: 'Nouveautés',
-            body: 'Meilleures ventes',
-            valuesets: 'Coffrets & Sets',
+            face: 'Nouveau',
+            body: 'Bestseller',
+            valuesets: 'Kits',
             learnMore: 'En savoir plus',
             carouselTabs: [
                 {
                     carouselId: 'FeaturedHair1',
                     isTabActive: false,
-                    tabLabel: 'Nouveautés'
+                    tabLabel: 'Nouveau'
                 },
                 {
                     carouselId: 'FeaturedHair2',
                     isTabActive: true,
-                    tabLabel: 'Meilleures ventes'
+                    tabLabel: 'Bestseller'
                 },
                 {
                     carouselId: 'FeaturedHair3',
                     isTabActive: false,
-                    tabLabel: 'Coffrets & Sets'
+                    tabLabel: 'Kits'
                 }
             ]
         },
@@ -878,7 +878,7 @@ const carouselSection = {
             title: 'Haarprodukte für jeden Anlass',
             face: 'Neu',
             body: 'Bestseller',
-            valuesets: 'Sets & Kits',
+            valuesets: 'Sets',
             learnMore: 'Erfahre mehr',
             carouselTabs: [
                 {
@@ -894,7 +894,7 @@ const carouselSection = {
                 {
                     carouselId: 'FeaturedHair3',
                     isTabActive: false,
-                    tabLabel: 'Sets & Kits'
+                    tabLabel: 'Sets'
                 }
             ]
         }
