@@ -136,8 +136,8 @@ const SectionIRL = (props) => {
                 <IRLCard
                     name="@kaelatavares_"
                     caption={irlCtx.caption6}
-                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/3de71cdf-8645-44f9-32c1-11c980642e00/400x"
-                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/aa86462f-f3d7-41da-98df-b12806888e00/400x"
+                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae6a4377-05de-432f-d843-1db6d7e3c200/400x"
+                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae6a4377-05de-432f-d843-1db6d7e3c200/400x"
                 >
                     <p>{irlCtx.review6}</p>
                 </IRLCard>
