@@ -851,50 +851,50 @@ const carouselSection = {
             ]
         },
         fr: {
-            title: 'Hair products for any occasion',
-            face: 'New',
-            body: 'Best Seller',
-            valuesets: 'Kits',
+            title: 'Des produits de soin capillaire pour toutes les occasions',
+            face: 'Nouveautés',
+            body: 'Meilleures ventes',
+            valuesets: 'Coffrets & Sets',
             learnMore: 'En savoir plus',
             carouselTabs: [
                 {
                     carouselId: 'FeaturedHair1',
                     isTabActive: false,
-                    tabLabel: 'New'
+                    tabLabel: 'Nouveautés'
                 },
                 {
                     carouselId: 'FeaturedHair2',
                     isTabActive: true,
-                    tabLabel: 'Best Seller'
+                    tabLabel: 'Meilleures ventes'
                 },
                 {
                     carouselId: 'FeaturedHair3',
                     isTabActive: false,
-                    tabLabel: 'Value Sets'
+                    tabLabel: 'Coffrets & Sets'
                 }
             ]
         },
         de: {
-            title: 'Hair products for any occasion',
-            face: 'New',
-            body: 'Best Seller',
+            title: 'Haarprodukte für jeden Anlass',
+            face: 'Neu',
+            body: 'Bestseller',
             valuesets: 'Sets & Kits',
             learnMore: 'Erfahre mehr',
             carouselTabs: [
                 {
                     carouselId: 'FeaturedHair1',
                     isTabActive: false,
-                    tabLabel: 'New'
+                    tabLabel: 'Neu'
                 },
                 {
                     carouselId: 'FeaturedHair2',
                     isTabActive: true,
-                    tabLabel: 'Best Seller'
+                    tabLabel: 'Bestseller'
                 },
                 {
                     carouselId: 'FeaturedHair3',
                     isTabActive: false,
-                    tabLabel: 'Value Sets'
+                    tabLabel: 'Sets & Kits'
                 }
             ]
         }
@@ -1020,7 +1020,7 @@ const bannerSection = {
         },
         fr: {
             title: 'Like A Virgin',
-            subtitle: 'Transform you hair so it feels like a virgin..again!',
+            subtitle: 'Transforme ta chevelure pour qu`elle soit "like a virgin"... à nouveau !',
             desktop: {
                 webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b9f3ec91-69b1-4f69-21e6-bcaf9037ed00/1140x',
                 jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/11df0a91-b8a5-4cfc-ab0a-218feb6c5900/1400x',
@@ -1032,7 +1032,7 @@ const bannerSection = {
         },
         de: {
             title: 'Like A Virgin',
-            subtitle: 'Transform you hair so it feels like a virgin..again!',
+            subtitle: 'Verwandel dein Haar, damit es sich wieder frisch anfühlt!',
             desktop: {
                 webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b9f3ec91-69b1-4f69-21e6-bcaf9037ed00/1140x',
                 jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d16a2f1f-a383-4dfa-5e44-37fa00844700/1400x',
