@@ -144,7 +144,7 @@ const _content = {
                 },
                 {
                     name: 'Pryncess H. Verified Buyer',
-                    shade: 'Shade of Tan: Dark',
+                    shade: '',
                     text: "<p><b>Hair Concern:Dryness</b></p><p>I’m absolutely in love with these products. Not only does it make my hair look and feel great but the smell is absolutely amazing! I have already re-ordered three times and will continue to do so.</p>",
                 },
                 {
