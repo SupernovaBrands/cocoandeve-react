@@ -939,7 +939,7 @@ const formulaSection = {
         us: {
             title: 'Revolutionary formula',
             subtitle: 'Multi-award winning hair range',
-            list1: 'Hydrates and deeply conditions',
+            list1: 'Hydrates and deeply conditions.',
             list2: 'Treats split ends and tames frizz.',
             list3: 'Visibly glossier, shinier & smoother hair.',
             list4: 'Suitable for normal to dry hair.',
