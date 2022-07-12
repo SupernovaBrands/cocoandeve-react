@@ -105,6 +105,7 @@ const Survey = () => {
         }
 
         setCookie('surveyPosition', currentPosition);
+        if (currentPosition === 'finished' && !additionalStep) clearCookie();
     }, [currentPosition]);
 
     useEffect(() => {
@@ -189,12 +190,12 @@ const Survey = () => {
     }
 
     const completed = (handle, sku) => {
-        clearCookie();
         postMessageToParentCookie('surveyResult', handle);
         postMessageToParentCookie('surveyResultSku', sku);
         postMessageToParentCookie('surveySubmitNew', 'true');
 
         setTimeout(function(){
+            clearCookie();
             window.top.location.href = `https://${selectedSite}/products/${handle}?survey=result&sku=${sku}`;
         }, 3000);
     }
@@ -337,6 +338,10 @@ const Survey = () => {
 
     useEffect(() => {
         if (abTest) setAdditionalStep(false);
+        if (currentPosition === 'finished' && !additionalStep) {
+            clearCookie();
+            setPosition('start');
+        }
     }, [additionalStep]);
 
     return (
