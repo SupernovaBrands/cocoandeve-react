@@ -69,7 +69,7 @@ const _content = {
     },
     hair: {
         us: {
-            heading: 'Your questions - answered?',
+            heading: 'Your questions - answered',
             items: [
                 {
                     title: 'How do I apply the hair masque?',
@@ -90,7 +90,7 @@ const _content = {
             ],
         },
         fr: {
-            heading: 'Vos questions - réponses?',
+            heading: 'Vos questions - réponses',
             items: [
                 {
                     title: 'Comment appliquer le masque capillaire?',
@@ -111,7 +111,7 @@ const _content = {
             ],
         },
         de: {
-            heading: 'Deine Fragen - beantwortet?',
+            heading: 'Deine Fragen - beantwortet',
             items: [
                 {
                     title: 'Wie wende ich die Haarmaske an?',
