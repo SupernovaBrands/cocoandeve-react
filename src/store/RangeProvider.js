@@ -948,7 +948,7 @@ const formulaSection = {
         fr: {
             title: 'Une formule révolutionnaire',
             subtitle: 'Une gamme de produits capillaires plusieurs fois récompensée',
-            list1: 'Hydrate et soigne en profondeur',
+            list1: 'Hydrate et soigne en profondeur.',
             list2: 'Traite les pointes fourchues et dompte les frisottis.',
             list3: 'Les cheveux sont visiblement plus brillants, plus lisses et plus éclatants.',
             list4: 'Convient aux cheveux normaux à secs.',
@@ -957,7 +957,7 @@ const formulaSection = {
         de: {
             title: 'Revolutionäre Formel',
             subtitle: 'Mehrfach preisgekrönte Haarserie',
-            list1: 'Spendet Feuchtigkeit und pflegt tiefenwirksam',
+            list1: 'Spendet Feuchtigkeit und pflegt tiefenwirksam.',
             list2: 'Behandelt Spliss und bändigt Frizz.',
             list3: 'Sichtbar gepflegteres, glänzenderes und glatteres Haar.',
             list4: 'Für normales bis trockenes Haar geeignet.',
