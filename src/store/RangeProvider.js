@@ -851,7 +851,7 @@ const carouselSection = {
             ]
         },
         fr: {
-            title: 'Des produits de soin capillaire pour toutes les occasions',
+            title: 'Des produits de soins capillaires pour toutes les occasions',
             face: 'Nouveau',
             body: 'Bestseller',
             valuesets: 'Kits',
