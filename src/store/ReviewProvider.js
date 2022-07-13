@@ -140,12 +140,12 @@ const _content = {
                 {
                     name: 'Samantha L. Verified Buyer',
                     shade: '',
-                    text: "<p><b>I’m absolutely in love with these products.</b></p><p>I’m absolutely in love with these products. Not only does it make my hair look and feel great but the smell is absolutely amazing! I have already re-ordered three times and will continue to do so.</p>",
+                    text: "<p><b>Super soft and smells amazing!</b></p><p>I have very thick, curly hair that has been dyed so as you can imagine that’s the perfect recipe for very dry hair. Since using this hair mask my hair is so much softer and shinier! It smells amazing too! Highly recommended for anyone with dry, thick, curly hair like me!</p>",
                 },
                 {
                     name: 'Pryncess H. Verified Buyer',
                     shade: '',
-                    text: "<p><b>Hair Concern:Dryness</b></p><p>I’m absolutely in love with these products. Not only does it make my hair look and feel great but the smell is absolutely amazing! I have already re-ordered three times and will continue to do so.</p>",
+                    text: "<p><b>I’m absolutely in love with these products.</b></p><p>Not only does it make my hair look and feel great but the smell is absolutely amazing! I have already re-ordered three times and will continue to do so.</p>",
                 },
                 {
                     name: 'Yelena A. Verified Buyer',
