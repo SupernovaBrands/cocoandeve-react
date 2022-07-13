@@ -748,6 +748,36 @@ const productList = {
             price: 'RM313.00',
         },
     },
+    'repairing-restoring-hair-mask': {
+        us: {
+            price: '$34.90',
+            title: 'Sweet Repair Hair Mask',
+        },
+        ca: {
+            price: '$43.90',
+        },
+        uk: {
+            price: '£30.90',
+        },
+        eu: {
+            price: '€34,90',
+        },
+        au: {
+            price: '$51.90',
+        },
+        int: {
+            price: 'SG$50.90',
+        },
+        de: {
+            price: '€34,90',
+        },
+        fr: {
+            price: '€34,90',
+        },
+        my: {
+            price: 'RM156.00',
+        },
+    },
 };
 
 const carouselSection = {
