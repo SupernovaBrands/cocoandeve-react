@@ -140,7 +140,7 @@ const _content = {
                 {
                     name: 'Samantha L. Verified Buyer',
                     shade: '',
-                    text: "<p><b>Super soft and smells amazing!</b></p><p>I have very thick, curly hair that has been dyed so as you can imagine that’s the perfect recipe for very dry hair. Since using this hair mask my hair is so much softer and shinier! It smells amazing too! Highly recommended for anyone with dry, thick, curly hair like me!</p>",
+                    text: "<p><b>I’m absolutely in love with these products.</b></p><p>I’m absolutely in love with these products. Not only does it make my hair look and feel great but the smell is absolutely amazing! I have already re-ordered three times and will continue to do so.</p>",
                 },
                 {
                     name: 'Pryncess H. Verified Buyer',
@@ -174,37 +174,37 @@ const _content = {
             asSeenin: 'Comme on peut le voir dans',
             reviews: [
                 {
-                    name: 'Bianca I. Verified Buyer',
+                    name: 'Bianca I. Acheteur vérifié',
                     shade: '',
                     text: "<p><b>Le meilleur !</b></p><p>Je l'adore, mes cheveux avaient vraiment besoin d'amour ! Après l'avoir utilisé pendant quelques semaines, mes cheveux sont maintenant beaux et brillants et ont l'air et se sentent en bonne santé. J'ai plus souvent mes cheveux détachés maintenant ! De plus, ma commande a été traitée très rapidement, cela a donc été une très bonne expérience :)</p>",
                 },
                 {
-                    name: 'Samantha L. Verified Buyer',
+                    name: 'Samantha L. Acheteur vérifié',
                     shade: '',
                     text: "<p><b>Super doux et sent incroyablement bon !</b></p><p>J'ai des cheveux très épais et bouclés qui ont été colorés, donc comme vous pouvez l'imaginer, le résultat a toujours été des cheveux très secs. Depuis que j'utilise ce masque capillaire, mes cheveux sont tellement plus doux et plus brillants ! Il sent aussi très bon ! Vraiment recommandé pour toute personne ayant des cheveux secs, épais et bouclés comme moi !</p>",
                 },
                 {
-                    name: 'Pryncess H. Verified Buyer',
+                    name: 'Pryncess H. Acheteur vérifié',
                     shade: '',
-                    text: "<p><b>Problèmes capillaires :Sécheresse</b></p><p>Je suis absolument amoureuse de ces produits. Non seulement mes cheveux ont l'air et se sentent bien, mais l'odeur est absolument incroyable ! J'ai déjà commandé à nouveau trois fois et je continuerai à le faire.</p>",
+                    text: "<p><b>Je suis absolument amoureuse de ces produits.</b></p><p>Je suis absolument amoureuse de ces produits. Non seulement mes cheveux ont l'air et se sentent bien, mais l'odeur est absolument incroyable ! J'ai déjà commandé à nouveau trois fois et je continuerai à le faire.</p>",
                 },
                 {
-                    name: 'Yelena A. Verified Buyer',
+                    name: 'Yelena A. Acheteur vérifié',
                     shade: '',
                     text: "<p><b>Odeur super</b></p><p>L'odeur est super, mes cheveux sont plus brillants et plus souples. Personnellement, je préfère le laisser agir après l'après-shampooing, comme ça il pénètre dans mes cheveux et les garde doux.</p>",
                 },
                 {
-                    name: 'Andy D. Verified Buyer',
+                    name: 'Andy D. Acheteur vérifié',
                     shade: '',
                     text: "<p><b>J'adore ce masque capillaire !</b></p><p>C'est le meilleur masque capillaire que j'ai jamais essayé. C’était super facile de démêler mes cheveux après l'avoir appliqué et mes cheveux étaient doux, souples et super hydratés. Pour l'élixir, juste un peu de produit suffit et comme c'est décrit : merveilleux pour la protection contre la chaleur, l'hydratation et le coiffage.",
                 },
                 {
-                    name: 'Jeyanthy J. Verified Buyer',
+                    name: 'Jeyanthy J. Acheteur vérifié',
                     shade: '',
                     text: "<p><b>Le meilleur de tous les temps</b></p><p>J'utilise ce produit depuis 3 mois et les changements sont énormes. Je suis heureux de dire que mes cheveux sont brillants et plus doux. Je rachèterai certainement ce produit. Il est également sûr à utiliser car c'est un produit clean. Un achat qui vaut la peine d'être fait pour faire le traitement plusieurs fois à la maison.</p>",
                 },
                 {
-                    name: 'Katie D. Verified Buyer',
+                    name: 'Katie D. Acheteur vérifié',
                     shade: '',
                     text: "<p><b>Mes cheveux sont de retour</b></p><p>Je suis à fond, mes frisottis sont presque inexistants et mes ondulations sont de retour. J'avais perdu confiance en moi en ayant des cheveux abîmés mais depuis que j'utilise la gamme Like A Virgin, j'ai retrouvé la confiance nécessaire pour laisser les autres toucher et admirer mes cheveux. Je pensais que les masques capillaires étaient juste une autre arnaque pour se faire de l'argent et que c'était plutôt le travail des après-shampooings de toute façon, mais j'avais tort.</p>",
                 },
@@ -215,37 +215,37 @@ const _content = {
             asSeenin: 'Empfohlen von',
             reviews: [
                 {
-                    name: 'Bianca I. Verified Buyer',
+                    name: 'Bianca I. Verifizierte Käuferin',
                     shade: '',
                     text: "<p><b>Das beste Produkt!</b></p><p>Ich liebe es, meine Haare brauchten wirklich etwas Liebe! Nachdem ich es ein paar Wochen lang verwendet habe, sind meine Haare jetzt schön und glänzend , sehen gesund aus und fühlen sich auch so an. Ich trage meine Haare jetzt öfter offen! Außerdem wurde meine Bestellung super schnell bearbeitet, also war es eine insgesamt sehr gute Erfahrung :)</p>",
                 },
                 {
-                    name: 'Samantha L. Verified Buyer',
+                    name: 'Samantha L. Verifizierte Käuferin',
                     shade: '',
                     text: "<p><b>Super weich und duftet fantastisch!</b></p><p>Ich habe sehr dickes, lockiges Haar, das gefärbt wurde, daher waren meine Ergebnisse, wie du dir vorstellen kannst, immer sehr trocken. Seit ich diese Haarmaske verwende, sind meine Haare so viel weicher und glänzender! Sie riecht auch sehr gut! Definitiv empfehlenswert für alle mit trockenem, dickem und lockigem Haar wie mir!</p>",
                 },
                 {
-                    name: 'Pryncess H. Verified Buyer',
+                    name: 'Pryncess H. Verifizierte Käuferin',
                     shade: '',
-                    text: "<p><b>Haarprobleme: Trockenheit</b></p><p>Ich bin absolut verliebt in diese Produkte. Mein Haar sieht nicht nur toll aus und fühlt sich auch so an, es riecht absolut fantastisch! Ich habe bereits dreimal nachbestellt und werde dies auch weiterhin tun.</p>",
+                    text: "<p><b>Ich bin absolut verliebt in diese Produkte.</b></p><p>Ich bin absolut verliebt in diese Produkte. Mein Haar sieht nicht nur toll aus und fühlt sich auch so an, es riecht absolut fantastisch! Ich habe bereits dreimal nachbestellt und werde dies auch weiterhin tun.</p>",
                 },
                 {
-                    name: 'Yelena A. Verified Buyer',
+                    name: 'Yelena A. Verifizierte Käuferin',
                     shade: '',
                     text: "<p><b>Fantastischer Geruch</b></p><p>Der Duft ist fantastisch, meine Haare sind glänzender und weicher. Ich persönlich lasse die Haarmaske lieber nach der Spülung einwirken, damit es in mein Haar einzieht und es geschmeidig hält.</p>",
                 },
                 {
-                    name: 'Andy D. Verified Buyer',
+                    name: 'Andy D. Verifizierte Käuferin',
                     shade: '',
                     text: "<p><b>Ich liebe diese Haarmaske!</b></p><p>Das ist die beste Haarmaske, die ich je probiert habe. Es war super einfach, mein Haar nach dem Auftragen zu entwirren und mein Haar fühlte sich weich, voluminös und super hydratisiert an. Für das Elixier reicht schon eine kleine Menge Produkt und wie beschrieben: Wunderbar für Hitzeschutz, Feuchtigkeit und Styling. ",
                 },
                 {
-                    name: 'Jeyanthy J. Verified Buyer',
+                    name: 'Jeyanthy J. Verifizierte Käuferin',
                     shade: '',
                     text: "<p><b>Das Beste aller Zeiten</b></p><p>Ich benutze dieses Produkt seit 3 Monaten und die Veränderungen sind enorm. Ich freue mich sagen zu können, dass mein Haar glänzender und weicher ist. Ich werde dieses Produkt auf jeden Fall nachkaufen. Es ist auch sicher in der Anwendung, da es sich um ein Produkt ohne ungesunde Chemikalien handelt. Eine Anschaffung die sich lohnt, um deine Haare professionell zu Hause zu pflegen.</p>",
                 },
                 {
-                    name: 'Katie D. Verified Buyer',
+                    name: 'Katie D. Verifizierte Käuferin',
                     shade: '',
                     text: "<p><b>Meine Haare sind wieder nachgewachsen</b></p><p>Ich bin total überzeugt, mein Frizz ist fast nicht mehr vorhanden und meine Wellen sind zurück. Ich hatte mein Selbstvertrauen verloren, weil ich so kaputtes Haar hatte, aber seit ich die Like A Virgin-Reihe verwende und Leute mein Haare bewundern, fühle ich mich wieder stark. Ich dachte, Haarmasken seien nur ein weiterer Betrug und Conditioner wären viel besser, aber ich habe mich geirrt.</p>",
                 },
