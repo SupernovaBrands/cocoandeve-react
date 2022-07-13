@@ -186,7 +186,7 @@ const _content = {
                 {
                     name: 'Pryncess H. Acheteur vérifié',
                     shade: '',
-                    text: "<p><b>Je suis absolument amoureuse de ces produits.</b></p><p>Je suis absolument amoureuse de ces produits. Non seulement mes cheveux ont l'air et se sentent bien, mais l'odeur est absolument incroyable ! J'ai déjà commandé à nouveau trois fois et je continuerai à le faire.</p>",
+                    text: "<p><b>Je suis absolument amoureuse de ces produits.</b></p><p>Non seulement mes cheveux ont l'air et se sentent bien, mais l'odeur est absolument incroyable ! J'ai déjà commandé à nouveau trois fois et je continuerai à le faire.</p>",
                 },
                 {
                     name: 'Yelena A. Acheteur vérifié',
@@ -227,7 +227,7 @@ const _content = {
                 {
                     name: 'Prinzessin H. Verifizierte Käuferin',
                     shade: '',
-                    text: "<p><b>Ich bin absolut verliebt in diese Produkte.</b></p><p>Ich bin absolut verliebt in diese Produkte. Mein Haar sieht nicht nur toll aus und fühlt sich auch so an, es riecht absolut fantastisch! Ich habe bereits dreimal nachbestellt und werde dies auch weiterhin tun.</p>",
+                    text: "<p><b>Ich bin absolut verliebt in diese Produkte.</b></p><p>Mein Haar sieht nicht nur toll aus und fühlt sich auch so an, es riecht absolut fantastisch! Ich habe bereits dreimal nachbestellt und werde dies auch weiterhin tun.</p>",
                 },
                 {
                     name: 'Yelena A. Verifizierte Käuferin',
