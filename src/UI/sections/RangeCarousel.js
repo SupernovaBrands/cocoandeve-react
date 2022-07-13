@@ -95,7 +95,7 @@ const RangeCarousel = (props) => {
 	return (
 		<section className='product-carousel py-2 py-lg-4 overflow-hidden'>
 			<div className='container d-flex flex-column align-items-center px-g'>
-				<h2 className='range__formula-title mb-2 text-center'>{carouselData.title}</h2>
+				<h1 className='range__formula-title mb-2 text-center h2'>{carouselData.title}</h1>
 				<ul className={`nav nav-tabs justify-content-center border-0  col-lg-3 col-8  px-0 pb-2 range__tab`}>
 					{carouselData.carouselTabs.map((item, idx) => (
 						<li key={`navItem${idx}`} className="nav-item">

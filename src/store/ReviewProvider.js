@@ -225,7 +225,7 @@ const _content = {
                     text: "<p><b>Super weich und duftet fantastisch!</b></p><p>Ich habe sehr dickes, lockiges Haar, das gefärbt wurde, daher waren meine Ergebnisse, wie du dir vorstellen kannst, immer sehr trocken. Seit ich diese Haarmaske verwende, sind meine Haare so viel weicher und glänzender! Sie riecht auch sehr gut! Definitiv empfehlenswert für alle mit trockenem, dickem und lockigem Haar wie mir!</p>",
                 },
                 {
-                    name: 'Pryncess H. Verifizierte Käuferin',
+                    name: 'Prinzessin H. Verifizierte Käuferin',
                     shade: '',
                     text: "<p><b>Ich bin absolut verliebt in diese Produkte.</b></p><p>Ich bin absolut verliebt in diese Produkte. Mein Haar sieht nicht nur toll aus und fühlt sich auch so an, es riecht absolut fantastisch! Ich habe bereits dreimal nachbestellt und werde dies auch weiterhin tun.</p>",
                 },
