@@ -129,7 +129,7 @@ const Survey = () => {
         setCookie('quizEmail', '');
     }
 
-    const gettingResult = (close=false) => {
+    const gettingResult = async (close=false) => {
         // check first answer
         const firstAnswer = currentAnswer[1];
         const firstQuestion = Questions[0];
@@ -172,16 +172,32 @@ const Survey = () => {
             }
         }
 
+        // mapping for US,CA,UK store since foam medium and dark has different sku
+        const diffSkus = ['www.cocoandeve.com', 'us.cocoandeve.com', 'ca.cocoandeve.com', 'uk.cocoandeve.com']
+        const caUs = ['www.cocoandeve.com', 'us.cocoandeve.com', 'ca.cocoandeve.com'];
+        const us = ['www.cocoandeve.com', 'us.cocoandeve.com'];
+        if (diffSkus.includes(selectedSite)) {
+            if (sku === 'CE0000032020') {
+                sku = 'CE0000036020';
+            } else if (sku === 'CE0000032040' && us.includes(selectedSite)) {
+                sku = 'CE0000036040';
+            } else if (sku === 'CE0000032060' && caUs.includes(selectedSite)) {
+                sku = 'CE0000036060';
+            }
+        }
+
         const findVariant = variants.find((variant) => variant.sku === sku);
         console.log(sku, findVariant, 'variant data');
 
         if (findVariant) {
             // handle when inside iframe
             if (window.top !== window.self && currentPosition === 'finished') {
+                await saveData(findVariant.product_handle, findVariant.sku);
                 completed(findVariant.product_handle,findVariant.sku);
             }
 
             if (close) {
+                await saveData(findVariant.product_handle, findVariant.sku);
                 setFinished();
                 completed(findVariant.product_handle,findVariant.sku);
             }
@@ -225,7 +241,6 @@ const Survey = () => {
             } else {
                 // call saving data to analytics and database
                 setRedirect(true);
-                saveData();
                 postMessageGaParent();
                 gettingResult(true);
             }
@@ -270,7 +285,7 @@ const Survey = () => {
         });
     }
 
-    const saveData = () => {
+    const saveData = (product, sku) => {
         const dataForSaving = {};
         for (const [key, value] of Object.entries(currentAnswer)) {
             const idxQ = key - 1;
@@ -281,9 +296,9 @@ const Survey = () => {
         }
 
         const gAid = gId !== null ? gId : getCookie('_gid');
-        const data = { _ga: gAid, questions_answers: dataForSaving, email };
+        const data = { _ga: gAid, questions_answers: dataForSaving, email, product, sku };
 
-        fetch('https://api.cocoandeve.com/surveys', {
+        return fetch('https://api.cocoandeve.com/surveys', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -311,7 +326,6 @@ const Survey = () => {
 
     const viewMyResult = () => {
         setRedirect(true);
-        saveData();
         postMessageGaParent();
         gettingResult(true);
     }
