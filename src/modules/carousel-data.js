@@ -173,6 +173,15 @@ const PRODUCTS_HAIR_1 = [
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
         content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/cbc423ec-78a5-44e7-1170-3a7359ca1900/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/80718850-39b2-4d3a-f82c-09be6320c700/828x"
+            rating={4.8}
+            totalReviews='20'
+            handle='repairing-restoring-hair-mask' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
             img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6d7b7e0b-1dcf-409a-0b9a-01d0fc3cdd00/828x"
             comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/950c9d87-c6b0-42f8-76f2-f0b2fc4dee00/828x"
             rating={4.8}
@@ -205,6 +214,15 @@ const PRODUCTS_HAIR_1 = [
             rating={4.8}
             totalReviews='1417'
             handle='super-hydration-kit' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/cbc423ec-78a5-44e7-1170-3a7359ca1900/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/80718850-39b2-4d3a-f82c-09be6320c700/828x"
+            rating={4.8}
+            totalReviews='20'
+            handle='repairing-restoring-hair-mask' />
     }
 ];
 
@@ -248,6 +266,15 @@ const PRODUCTS_HAIR_2 = [
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
         content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/cbc423ec-78a5-44e7-1170-3a7359ca1900/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/80718850-39b2-4d3a-f82c-09be6320c700/828x"
+            rating={4.8}
+            totalReviews='20'
+            handle='repairing-restoring-hair-mask' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
             img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/30afaedc-2ddc-44b9-e57e-1da4c5a0fa00/828x"
             comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e24dd53e-b0e1-4def-7490-9bb441048f00/828x"
             rating={4.8}
@@ -280,6 +307,15 @@ const PRODUCTS_HAIR_2 = [
             rating={4.8}
             totalReviews='37'
             handle='leave-in-conditioner' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/cbc423ec-78a5-44e7-1170-3a7359ca1900/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/80718850-39b2-4d3a-f82c-09be6320c700/828x"
+            rating={4.8}
+            totalReviews='20'
+            handle='repairing-restoring-hair-mask' />
     },
 ];
 
