@@ -179,7 +179,7 @@ const CustomerReview = (props) => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/23a4499f-89dc-47ab-33f7-0aec0b9afd00/200x" />
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a02ab0a2-270a-4b44-160e-5fb1b14e2400/200x" />
                                 <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/23a4499f-89dc-47ab-33f7-0aec0b9afd00/200x" />
                                 <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/23a4499f-89dc-47ab-33f7-0aec0b9afd00/200x" className="img-fluid" alt="" loading="lazy" />
                             </picture>
@@ -198,7 +198,7 @@ const CustomerReview = (props) => {
                     <div className='row no-gutters'>
                         <div className='col-6'>
                             <picture>
-                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a02ab0a2-270a-4b44-160e-5fb1b14e2400/200x" />
+                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/57b4d825-e5a7-47e3-f4d8-c9ca3936f700/200x" />
                                 <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a2e3aedf-026b-491a-8953-e7a71686d900/200x" />
                                 <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a2e3aedf-026b-491a-8953-e7a71686d900/200x" className="img-fluid" alt="" loading="lazy" />
                             </picture>

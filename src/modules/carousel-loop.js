@@ -29,7 +29,13 @@ const carouselLoop = (carouselId) => {
                 idx += 1;
             }
 
-            if (window.innerWidth > 768 && (carouselId === 'FeaturedBody' || carouselId === 'FeaturedFace' || carouselId === 'FeaturedValueSets')) {
+            if (window.innerWidth > 768 && (
+                carouselId === 'FeaturedBody'
+                || carouselId === 'FeaturedFace'
+                || carouselId === 'FeaturedValueSets'
+                || carouselId === 'FeaturedHair1'
+                || carouselId === 'FeaturedHair2'
+                || carouselId === 'FeaturedHair3')) {
                 idx += 1;
             }
 

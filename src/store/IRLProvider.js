@@ -45,7 +45,7 @@ const irlReviews = {
             title: 'Like A Virgin Results IRL',
             on: 'on',
             caption1: 'Like A Virgin Hair Masque',
-            review1: 'Tried the Like a Virgin Hair Mask from @cocoandeve and I have to say it`s great for nourishing and deep conditioning, especially during winter! @thatcurlblog',
+            review1: 'Tried the Like a Virgin Hair Mask from @cocoandeve and I have to say it`s great for nourishing and deep conditioning, especially during winter!',
             caption2: 'Like A Virgin Hair Masque',
             review2: 'My hair is truely like a virgin again! Growing out my hair has caused it to have split ends and this coupled with how it`s prone to frizz has left it looking like unruly in the past. But after using the mask from @cocoandeve just once, my hair has been transformed. It tamed my hair without weighing it down and has left it looking so silky smooth ✨',
             caption3: 'Like A Virgin Hair Masque',

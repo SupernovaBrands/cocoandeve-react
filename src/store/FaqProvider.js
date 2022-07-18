@@ -73,19 +73,19 @@ const _content = {
             items: [
                 {
                     title: 'How do I apply the hair masque?',
-                    text: '1. Shampoo your hair as normal, ideally using a sulfate-free shampoo.<br>2. Evenly distribute a generous amount of product to your towel-dried hair and brush through with the tangle tamer.<br>3. Leave for 5 to 10 minutes then rinse with warm water.<br>4. For dry hair, use 2-3 times a week, for normal hair, 1-2 times a week and for oily hair just once a week and focus the product towards the ends of the hair and avoid the scalp!',
+                    text: '<p>1. Shampoo your hair as normal, ideally using a sulfate-free shampoo.<br>2. Evenly distribute a generous amount of product to your towel-dried hair and brush through with the tangle tamer.<br>3. Leave for 5 to 10 minutes then rinse with warm water.<br>4. For dry hair, use 2-3 times a week, for normal hair, 1-2 times a week and for oily hair just once a week and focus the product towards the ends of the hair and avoid the scalp!</p>',
                 },
                 {
                     title: 'What hair types can you use the hair mask on?',
-                    text: 'Our hair masque is safe and suitable for all hair types! <br />Its formula is super nourishing and will benefit damaged hair from dyes, bleaching, heat, styling and chemicals by repairing, nourishing and strengthening it. Its rich, hydrating formula will revive curls to bring their bounce back, detangle and tame frizz! If you want a smooth, sleek look our masque will smooth flyaways and prevent split ends. You can even use it on hair extensions as it is sulfate free and will not dry them out.',
+                    text: '<p>Our hair masque is safe and suitable for all hair types! <br /><br />Its formula is super nourishing and will benefit damaged hair from dyes, bleaching, heat, styling and chemicals by repairing, nourishing and strengthening it. Its rich, hydrating formula will revive curls to bring their bounce back, detangle and tame frizz! If you want a smooth, sleek look our masque will smooth flyaways and prevent split ends. You can even use it on hair extensions as it is sulfate free and will not dry them out.</p>',
                 },
                 {
-                    title: 'How does the Super Hydrating Shampoo & Cream Conditioner work',
-                    text: "Our Shampoo will give you the cleanest hair ever thanks to a sulfate free, triple cleansing formula using Soap Nuts, Fruit Enzymes & Coconut Oil to thoroughly wash your locks without over-drying hair.It will instantly boost your hair's hydration thanks to Coconut, Avocado & ResistHyal™ technology; a powerblend of Hyaluronic Acid to increase moisture by 51% for more softness, smoothness & gloss. <br/ >Our Conditioner gives instant hair mask like results thanks to its rich formula that is 3 times thicker than a regular conditioner. This allows the formula to deeply and quickly penetrate strands delivering silicone-free hydration from ResistHyal™ technology which will increase hydration by 26 times. Get stronger, longer hair with a formula that instantly detangles for less breakage whilst pea proteins repair & reduce damage by 65%.",
+                    title: 'How does the Super Hydrating Shampoo & Cream Conditioner work?',
+                    text: "<p>Our Shampoo will give you the cleanest hair ever thanks to a sulfate free, triple cleansing formula using Soap Nuts, Fruit Enzymes & Coconut Oil to thoroughly wash your locks without over-drying hair. It will instantly boost your hair's hydration thanks to Coconut, Avocado & ResistHyal™ technology; a powerblend of Hyaluronic Acid to increase moisture by 51% for more softness, smoothness & gloss. <br/ ><br/ >Our Conditioner gives instant hair mask like results thanks to its rich formula that is 3 times thicker than a regular conditioner. This allows the formula to deeply and quickly penetrate strands delivering silicone-free hydration from ResistHyal™ technology which will increase hydration by 26 times. Get stronger, longer hair with a formula that instantly detangles for less breakage whilst pea proteins repair & reduce damage by 65%.</p>",
                 },
                 {
                     title: 'How often should I wash my hair with the Coco & Eve Super Hydrating Shampoo & Conditioner?',
-                    text: 'Our Shampoo can be used daily for frequent cleansing & hydration. <br />We recommend to use our Conditioner 3/4 times weekly.',
+                    text: '<p>Our Shampoo can be used daily for frequent cleansing & hydration. <br />We recommend to use our Conditioner 3/4 times weekly.</p>',
                 },
             ],
         },
@@ -93,19 +93,19 @@ const _content = {
             heading: 'Vos questions - réponses',
             items: [
                 {
-                    title: 'Comment appliquer le masque capillaire ?',
+                    title: 'Comment appliquer le masque capillaire?',
                     text: "1. Lave tes cheveux comme à ton habitude, idéalement en utilisant un shampooing sans sulfate.<br />2. Répartis uniformément une quantité généreuse de produit sur tes cheveux essorés et démêle-les. <br />3. Laisse agir 5 à 10 minutes puis rince à l`eau tiède.<br />4. Pour les cheveux secs, utilise 2 à 3 fois par semaine, pour les cheveux normaux, 1 à 2 fois par semaine et pour les cheveux gras, une seule fois par semaine. Concentre le produit sur les pointes des cheveux et évite le cuir chevelu !",
                 },
                 {
-                    title: 'Sur quels types de cheveux peut-on utiliser le masque capillaire ?',
+                    title: 'Sur quels types de cheveux peut-on utiliser le masque capillaire?',
                     text: "Notre masque capillaire est sûr et convient à tous les types de cheveux ! <br/><br/>Sa formule est super nourrissante et sera bénéfique pour les cheveux abimés par les colorations, les décolorations, la chaleur, le coiffage et les produits chimiques en les réparant, les nourrissant et les renforçant. Sa formule riche et hydratante ravivera les boucles pour leur redonner du rebond, les démêler et dompter les frisottis !<br/>Si vous souhaitez un look lisse et épuré, notre masque lissera les cheveux rebelles et évitera les pointes fourchues.<br/>Vous pouvez même l'utiliser sur les extensions de cheveux car il est sans sulfates et ne les dessèchera pas.",
                 },
                 {
-                    title: "Comment fonctionnent le Shampooing et l'Après-Shampooing Super Hydratants ?",
-                    text: "Notre Shampooing vous donnera les cheveux les plus propres de tous les temps grâce à une formule triple nettoyage sans sulfate utilisant des noix de savon, des enzymes de fruits et de l'huile de coco, pour laver tes cheveux en profondeur sans les assécher. Il boostera instantanément l'hydratation grâce aux extraits de noix de coco, d'avocat et à la technologie ResistHyal™ ; un mélange puissant d'acide hyaluronique pour augmenter l'hydratation de 51% pour plus de douceur, d'éclat et de brillance. <br/>Notre Après-Shampooing donne instantanément des résultats semblables à ceux d'un masque capillaire grâce à sa formule riche qui est 3 fois plus épaisse qu'un après-shampooing ordinaire. Cela permet à la formule de pénétrer profondément et rapidement dans les longueurs en apportant une hydratation sans silicone grâce à la technologie ResistHyal™ qui augmentera l'hydratation de 26 fois. Obtiens des cheveux plus forts et plus longs avec une formule qui démêle instantanément pour moins de casse, tandis que les protéines de pois réparent et réduisent les dommages de 65%.",
+                    title: "Comment fonctionnent le Shampooing et l'Après-Shampooing Super Hydratants?",
+                    text: "Notre Shampooing vous donnera les cheveux les plus propres de tous les temps grâce à une formule triple nettoyage sans sulfate utilisant des noix de savon, des enzymes de fruits et de l'huile de coco, pour laver tes cheveux en profondeur sans les assécher. Il boostera instantanément l'hydratation grâce aux extraits de noix de coco, d'avocat et à la technologie ResistHyal™ ; un mélange puissant d'acide hyaluronique pour augmenter l'hydratation de 51% pour plus de douceur, d'éclat et de brillance. <br/><br/>Notre Après-Shampooing donne instantanément des résultats semblables à ceux d'un masque capillaire grâce à sa formule riche qui est 3 fois plus épaisse qu'un après-shampooing ordinaire. Cela permet à la formule de pénétrer profondément et rapidement dans les longueurs en apportant une hydratation sans silicone grâce à la technologie ResistHyal™ qui augmentera l'hydratation de 26 fois. Obtiens des cheveux plus forts et plus longs avec une formule qui démêle instantanément pour moins de casse, tandis que les protéines de pois réparent et réduisent les dommages de 65%.",
                 },
                 {
-                    title: 'À quelle fréquence dois-je laver mes cheveux avec le shampooing et l`après-shampooing super hydratants de Coco & Eve ?',
+                    title: 'À quelle fréquence dois-je laver mes cheveux avec le shampooing et l`après-shampooing super hydratants de Coco & Eve?',
                     text: "Notre shampooing peut être utilisé quotidiennement pour un nettoyage et une hydratation fréquents. <br/>Nous recommandons d'utiliser notre après-shampooing 3/4 fois par semaine.",
                 },
             ],
@@ -119,7 +119,7 @@ const _content = {
                 },
                 {
                     title: 'Bei welchen Haartypen kannst du die Haarmaske verwenden?',
-                    text: 'Unsere Haarmaske ist sicher und für alle Haartypen geeignet!<br/>Seine Formel ist super pflegend und wird, durch Färben, Bleichen, Hitze, Styling und Chemikalien geschädigtes Haar profitieren, indem es repariert, genährt und gestärkt wird.<br/>Seine reichhaltige, feuchtigkeitsspendende Formel wird Locken wiederbeleben, um ihre Sprungkraft zurückzubringen, zu entwirren und Frizz zu bändigen!<br/>Wenn du dir einen glatten, geschmeidigen Look wünschst, dann hilft dir unsere Haarmaske Frizz und Spliss vorzubeugen.<br/>Du kannst es sogar für Haarverlängerungen verwenden, da es sulfatfrei ist und sie nicht austrocknet.',
+                    text: 'Unsere Haarmaske ist sicher und für alle Haartypen geeignet!<br/>Ihre Formel ist super pflegend und wird, durch Färben, Bleichen, Hitze, Styling und Chemikalien geschädigtes Haar profitieren, indem es repariert, genährt und gestärkt wird.<br/>Seine reichhaltige, feuchtigkeitsspendende Formel wird Locken wiederbeleben, um ihre Sprungkraft zurückzubringen, zu entwirren und Frizz zu bändigen!<br/>Wenn du dir einen glatten, geschmeidigen Look wünschst, dann hilft dir unsere Haarmaske Frizz und Spliss vorzubeugen.<br/>Du kannst es sogar für Haarverlängerungen verwenden, da es sulfatfrei ist und sie nicht austrocknet.',
                 },
                 {
                     title: 'Wie funktioniert das Super Pflegende Shampoo & Conditioner Duo?',

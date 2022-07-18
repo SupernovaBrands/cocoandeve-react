@@ -75,8 +75,8 @@ const SectionIRL = (props) => {
                 <IRLCard
                     name="@thatcurlblog"
                     caption={irlCtx.caption1}
-                    image="https://via.placeholder.com/240x240"
-                    comImage="https://via.placeholder.com/240x240"
+                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7fd80ee2-3a90-4835-6e85-e2552c85c500/400x"
+                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6d60ae9f-feab-48da-efc9-fad0bd41d100/400x"
                 >
                     <p>{irlCtx.review1}</p>
 
@@ -88,8 +88,8 @@ const SectionIRL = (props) => {
                 <IRLCard
                     name="@mairaaiellohair"
                     caption={irlCtx.caption2}
-                    image="https://via.placeholder.com/240x240"
-                    comImage="https://via.placeholder.com/240x240"
+                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e998a8b9-d0f4-43a0-3b99-eee55acc0300/400x"
+                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bddfa405-8940-4c07-6c7a-6d808ce03f00/400x"
                 >
                     <p>{irlCtx.review2}</p>
                 </IRLCard>
@@ -100,8 +100,8 @@ const SectionIRL = (props) => {
                 <IRLCard
                     name="@lanasummer"
                     caption={irlCtx.caption3}
-                    image="https://via.placeholder.com/240x240"
-                    comImage="https://via.placeholder.com/240x240"
+                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d6879fb3-f21e-41e7-13dc-d319a9d19000/400x"
+                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/15d98a3c-5e21-41f5-5720-6b5724d00e00/400x"
                 >
                     <p>{irlCtx.review3}</p>
                 </IRLCard>
@@ -112,8 +112,8 @@ const SectionIRL = (props) => {
                 <IRLCard
                     name="@zainahussain"
                     caption={irlCtx.caption4}
-                    image="https://via.placeholder.com/240x240"
-                    comImage="https://via.placeholder.com/240x240"
+                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a724bbe0-6572-4997-a9f4-f504053a4200/400x"
+                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7c4f5624-763f-46af-b37a-2ffcad792c00/400x"
                 >
                     <p>{irlCtx.review4}</p>
                 </IRLCard>
@@ -124,8 +124,8 @@ const SectionIRL = (props) => {
                 <IRLCard
                     name="@bilaldelpesche"
                     caption={irlCtx.caption5}
-                    image="https://via.placeholder.com/240x240"
-                    comImage="https://via.placeholder.com/240x240"
+                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/eed416cb-2670-4167-838a-62fcf20efa00/400x"
+                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ec0bbc04-5e4a-481b-6a8a-d3d96d118000/400x"
                 >
                     <p>{irlCtx.review5}</p>
                 </IRLCard>
@@ -136,8 +136,8 @@ const SectionIRL = (props) => {
                 <IRLCard
                     name="@kaelatavares_"
                     caption={irlCtx.caption6}
-                    image="https://via.placeholder.com/240x240"
-                    comImage="https://via.placeholder.com/240x240"
+                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae6a4377-05de-432f-d843-1db6d7e3c200/400x"
+                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae6a4377-05de-432f-d843-1db6d7e3c200/400x"
                 >
                     <p>{irlCtx.review6}</p>
                 </IRLCard>
@@ -148,8 +148,8 @@ const SectionIRL = (props) => {
                 <IRLCard
                     name="@zara.howey"
                     caption={irlCtx.caption7}
-                    image="https://via.placeholder.com/240x240"
-                    comImage="https://via.placeholder.com/240x240"
+                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c866f6ed-affe-4025-7682-42d77c80a900/400x"
+                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/fdcfcf9b-c7b8-4e6b-bb06-f527cdd00800/400x"
                 >
                     <p>{irlCtx.review7}</p>
                 </IRLCard>
@@ -160,8 +160,8 @@ const SectionIRL = (props) => {
                 <IRLCard
                     name="@jasmine_lars"
                     caption={irlCtx.caption8}
-                    image="https://via.placeholder.com/240x240"
-                    comImage="https://via.placeholder.com/240x240"
+                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5fbfa92b-05d7-4340-4fd5-cf7d9a6bdf00/400x"
+                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1edca4dd-0bd1-48ab-ba08-de95aa161700/400x"
                 >
                     <p>{irlCtx.review8}</p>
                 </IRLCard>

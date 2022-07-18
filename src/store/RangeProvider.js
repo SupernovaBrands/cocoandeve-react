@@ -523,7 +523,7 @@ const productList = {
         us: {
             price: '$57.40',
             comparePrice: '$71.80',
-            title: 'Leave In Conditioner',
+            title: 'Daily Essentials Bundle',
         },
         ca: {
             price: '$75.00',
@@ -748,6 +748,36 @@ const productList = {
             price: 'RM313.00',
         },
     },
+    'repairing-restoring-hair-mask': {
+        us: {
+            price: '$34.90',
+            title: 'Sweet Repair Hair Mask',
+        },
+        ca: {
+            price: '$43.90',
+        },
+        uk: {
+            price: '£30.90',
+        },
+        eu: {
+            price: '€34,90',
+        },
+        au: {
+            price: '$51.90',
+        },
+        int: {
+            price: 'SG$50.90',
+        },
+        de: {
+            price: '€34,90',
+        },
+        fr: {
+            price: '€34,90',
+        },
+        my: {
+            price: 'RM156.00',
+        },
+    },
 };
 
 const carouselSection = {
@@ -829,7 +859,7 @@ const carouselSection = {
         us: {
             title: 'Hair products for any occasion',
             face: 'New',
-            body: 'Best Seller',
+            body: 'Bestsellers',
             valuesets: 'Kits',
             learnMore: 'Learn More',
             carouselTabs: [
@@ -841,7 +871,7 @@ const carouselSection = {
                 {
                     carouselId: 'FeaturedHair2',
                     isTabActive: true,
-                    tabLabel: 'Best Seller'
+                    tabLabel: 'Bestsellers'
                 },
                 {
                     carouselId: 'FeaturedHair3',
@@ -851,50 +881,50 @@ const carouselSection = {
             ]
         },
         fr: {
-            title: 'Hair products for any occasion',
-            face: 'New',
-            body: 'Best Seller',
+            title: 'Des produits de soins capillaires pour toutes les occasions',
+            face: 'Nouveau',
+            body: 'Bestseller',
             valuesets: 'Kits',
             learnMore: 'En savoir plus',
             carouselTabs: [
                 {
                     carouselId: 'FeaturedHair1',
                     isTabActive: false,
-                    tabLabel: 'New'
+                    tabLabel: 'Nouveau'
                 },
                 {
                     carouselId: 'FeaturedHair2',
                     isTabActive: true,
-                    tabLabel: 'Best Seller'
+                    tabLabel: 'Bestseller'
                 },
                 {
                     carouselId: 'FeaturedHair3',
                     isTabActive: false,
-                    tabLabel: 'Value Sets'
+                    tabLabel: 'Kits'
                 }
             ]
         },
         de: {
-            title: 'Hair products for any occasion',
-            face: 'New',
-            body: 'Best Seller',
-            valuesets: 'Sets & Kits',
+            title: 'Haarprodukte für jeden Anlass',
+            face: 'Neu',
+            body: 'Bestseller',
+            valuesets: 'Sets',
             learnMore: 'Erfahre mehr',
             carouselTabs: [
                 {
                     carouselId: 'FeaturedHair1',
                     isTabActive: false,
-                    tabLabel: 'New'
+                    tabLabel: 'Neu'
                 },
                 {
                     carouselId: 'FeaturedHair2',
                     isTabActive: true,
-                    tabLabel: 'Best Seller'
+                    tabLabel: 'Bestseller'
                 },
                 {
                     carouselId: 'FeaturedHair3',
                     isTabActive: false,
-                    tabLabel: 'Value Sets'
+                    tabLabel: 'Sets'
                 }
             ]
         }
@@ -934,34 +964,34 @@ const formulaSection = {
         },
     },
     hair: {
-        jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0e23c0bf-f145-45ed-96e0-82077d3c1100',
-        webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/29c53a74-6170-494f-949f-9016477e4400',
+        jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8d241b66-7b80-43bb-f59f-a9eedf7e8d00',
+        webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2aaaf539-0ab5-44f6-bb94-44a0aaf1ff00',
         us: {
             title: 'Revolutionary formula',
             subtitle: 'Multi-award winning hair range',
-            list1: 'Hydrates and deeply conditions',
+            list1: 'Hydrates and deeply conditions.',
             list2: 'Treats split ends and tames frizz.',
             list3: 'Visibly glossier, shinier & smoother hair.',
             list4: 'Suitable for normal to dry hair.',
-            footer: 'No sulfates · No silicone · No parabenes · Vegan',
+            footer: 'Vegan · Cruelty-free · No nasties',
         },
         fr: {
-            title: 'Revolutionary formula',
-            subtitle: 'Multi-award winning hair range',
-            list1: 'Hydrates and deeply conditions',
-            list2: 'Treats split ends and tames frizz.',
-            list3: 'Visibly glossier, shinier & smoother hair.',
-            list4: 'Suitable for normal to dry hair.',
-            footer: 'No sulfates · No silicone · No parabenes · Vegan',
+            title: 'Une formule révolutionnaire',
+            subtitle: 'Une gamme de produits capillaires plusieurs fois récompensée',
+            list1: 'Hydrate et soigne en profondeur.',
+            list2: 'Traite les pointes fourchues et dompte les frisottis.',
+            list3: 'Les cheveux sont visiblement plus brillants, plus lisses et plus éclatants.',
+            list4: 'Convient aux cheveux normaux à secs.',
+            footer: 'Vegan. Non testé sur les animaux. Sans substances nocives.',
         },
         de: {
-            title: 'Revolutionary formula',
-            subtitle: 'Multi-award winning hair range',
-            list1: 'Hydrates and deeply conditions',
-            list2: 'Treats split ends and tames frizz.',
-            list3: 'Visibly glossier, shinier & smoother hair.',
-            list4: 'Suitable for normal to dry hair.',
-            footer: 'No sulfates · No silicone · No parabenes · Vegan',
+            title: 'Revolutionäre Formel',
+            subtitle: 'Mehrfach preisgekrönte Haarserie',
+            list1: 'Spendet Feuchtigkeit und pflegt tiefenwirksam.',
+            list2: 'Behandelt Spliss und bändigt Frizz.',
+            list3: 'Sichtbar gepflegteres, glänzenderes und glatteres Haar.',
+            list4: 'Für normales bis trockenes Haar geeignet.',
+            footer: 'Vegan. Tierversuchsfrei. Keine Chemikalien.',
         },
     },
 };
@@ -1010,36 +1040,36 @@ const bannerSection = {
             title: 'Like A Virgin',
             subtitle: 'Transform you hair so it feels like a virgin..again!',
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b9f3ec91-69b1-4f69-21e6-bcaf9037ed00/1140x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4723a381-3b0c-4880-cf23-4c3d978aa700/1140x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/015806e1-79a9-4c34-3f70-d4f43eb87f00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9886312a-e128-41cc-38b4-6d626e899500/2280x',
             },
             mobile: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4fdd78e9-e970-4764-05e9-6a2d2489fb00/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b5e9f771-3abd-404a-9823-de03a738c700/1140x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f81f61eb-6e10-460a-35b3-beb2279d0700/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c25f520f-7c4d-412a-9aa5-258798b21f00/1140x',
             }
         },
         fr: {
             title: 'Like A Virgin',
-            subtitle: 'Transform you hair so it feels like a virgin..again!',
+            subtitle: 'Transforme ta chevelure pour qu`elle soit "like a virgin"... à nouveau !',
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b9f3ec91-69b1-4f69-21e6-bcaf9037ed00/1140x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/11df0a91-b8a5-4cfc-ab0a-218feb6c5900/1400x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/3c47eb6e-cfa4-4fcd-9344-e5b353dcba00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6ac3073d-6eaa-44b8-4ee9-f66911027400/2280x',
             },
             mobile: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/383dbdf2-f7e4-412b-8447-54dbb0984a00/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b5e9f771-3abd-404a-9823-de03a738c700/1140x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f81f61eb-6e10-460a-35b3-beb2279d0700/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c25f520f-7c4d-412a-9aa5-258798b21f00/1140x',
             }
         },
         de: {
             title: 'Like A Virgin',
-            subtitle: 'Transform you hair so it feels like a virgin..again!',
+            subtitle: 'Verwandel dein Haar, damit es sich wieder frisch anfühlt!',
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b9f3ec91-69b1-4f69-21e6-bcaf9037ed00/1140x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d16a2f1f-a383-4dfa-5e44-37fa00844700/1400x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2d610ad0-4182-4fd3-a49d-b9f67b9cec00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0bb5834c-1c27-44dc-043d-779c28950900/2280x',
             },
             mobile: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4fdd78e9-e970-4764-05e9-6a2d2489fb00/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b5e9f771-3abd-404a-9823-de03a738c700/1140x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f81f61eb-6e10-460a-35b3-beb2279d0700/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c25f520f-7c4d-412a-9aa5-258798b21f00/1140x',
             }
         }
     }
