@@ -29,7 +29,7 @@ const App = () => {
           <Route path='/range-hair' element={<HairRange />} />
           <Route path='/deep-conditioning-bundle' element={<ProductDetail handle="deep-condition-bundle" range="hair" />} />
           <Route path='/repairing-restoring-hair-mask' element={<ProductDetail handle="repairing-restoring-hair-mask" range="hair" />} />
-          <Route path='/shampoo-conditioner-sett' element={<ProductDetail handle="shampoo-conditioner-set" range="hair" />} />
+          <Route path='/shampoo-conditioner-set' element={<ProductDetail handle="shampoo-conditioner-set" range="hair" />} />
           <Route path='/super-nourishing-coconut-fig-hair-masque' element={<ProductDetail handle="super-nourishing-coconut-fig-hair-masque" range="hair" />} />
         </Routes>
       </Suspense>
