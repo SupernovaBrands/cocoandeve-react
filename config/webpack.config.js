@@ -620,7 +620,7 @@ module.exports = function (webpackEnv) {
           {
             inject: false,
             template: 'public/deep-conditioning-bundle-template.html',
-            filename: 'deep-conditioning-bundle-test/index.html'
+            filename: 'deep-conditioning-bundle/index.html'
           },
           isEnvProduction
             ? {
@@ -646,7 +646,59 @@ module.exports = function (webpackEnv) {
           {
             inject: false,
             template: 'public/repairing-restoring-hair-mask-template.html',
-            filename: 'repairing-restoring-hair-mask-test/index.html'
+            filename: 'repairing-restoring-hair-mask/index.html'
+          },
+          isEnvProduction
+            ? {
+                minify: {
+                  removeComments: true,
+                  collapseWhitespace: true,
+                  removeRedundantAttributes: true,
+                  useShortDoctype: true,
+                  removeEmptyAttributes: true,
+                  removeStyleLinkTypeAttributes: true,
+                  keepClosingSlash: true,
+                  minifyJS: true,
+                  minifyCSS: true,
+                  minifyURLs: true,
+                },
+              }
+            : undefined
+        )
+      ),
+      new HtmlWebpackPlugin(
+        Object.assign(
+          {},
+          {
+            inject: false,
+            template: 'public/shampoo-conditioner-set-template.html',
+            filename: 'shampoo-conditioner-set/index.html'
+          },
+          isEnvProduction
+            ? {
+                minify: {
+                  removeComments: true,
+                  collapseWhitespace: true,
+                  removeRedundantAttributes: true,
+                  useShortDoctype: true,
+                  removeEmptyAttributes: true,
+                  removeStyleLinkTypeAttributes: true,
+                  keepClosingSlash: true,
+                  minifyJS: true,
+                  minifyCSS: true,
+                  minifyURLs: true,
+                },
+              }
+            : undefined
+        )
+      ),
+      new HtmlWebpackPlugin(
+        Object.assign(
+          {},
+          {
+            inject: false,
+            template: 'public/super-nourishing-coconut-fig-hair-masque-template.html',
+            filename: 'super-nourishing-coconut-fig-hair-masque/index.html'
           },
           isEnvProduction
             ? {

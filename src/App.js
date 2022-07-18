@@ -26,10 +26,11 @@ const App = () => {
           <Route path='/sunny-honey-bali-bronzing-self-tan-set' element={<Navigate replace to="/sunny-honey-bali-bronzing-self-tan" />} />
           <Route path='/tan-range' element={<Navigate replace to="/range-tan" />} />
           <Route path='/customers-survey' element={<Survey />} />
-          <Route path='/test-pdp' element={<ProductDetail />} />
           <Route path='/range-hair' element={<HairRange />} />
-          <Route path='/deep-conditioning-bundle-test' element={<ProductDetail handle="deep-condition-bundle" range="hair" />} />
-          <Route path='/repairing-restoring-hair-mask-test' element={<ProductDetail handle="repairing-restoring-hair-mask" range="hair" />} />
+          <Route path='/deep-conditioning-bundle' element={<ProductDetail handle="deep-condition-bundle" range="hair" />} />
+          <Route path='/repairing-restoring-hair-mask' element={<ProductDetail handle="repairing-restoring-hair-mask" range="hair" />} />
+          <Route path='/shampoo-conditioner-sett' element={<ProductDetail handle="shampoo-conditioner-set" range="hair" />} />
+          <Route path='/super-nourishing-coconut-fig-hair-masque' element={<ProductDetail handle="super-nourishing-coconut-fig-hair-masque" range="hair" />} />
         </Routes>
       </Suspense>
     </Layout>
