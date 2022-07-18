@@ -119,7 +119,7 @@ const _content = {
                 },
                 {
                     title: 'Bei welchen Haartypen kannst du die Haarmaske verwenden?',
-                    text: 'Unsere Haarmaske ist sicher und für alle Haartypen geeignet!<br/>Seine Formel ist super pflegend und wird, durch Färben, Bleichen, Hitze, Styling und Chemikalien geschädigtes Haar profitieren, indem es repariert, genährt und gestärkt wird.<br/>Seine reichhaltige, feuchtigkeitsspendende Formel wird Locken wiederbeleben, um ihre Sprungkraft zurückzubringen, zu entwirren und Frizz zu bändigen!<br/>Wenn du dir einen glatten, geschmeidigen Look wünschst, dann hilft dir unsere Haarmaske Frizz und Spliss vorzubeugen.<br/>Du kannst es sogar für Haarverlängerungen verwenden, da es sulfatfrei ist und sie nicht austrocknet.',
+                    text: 'Unsere Haarmaske ist sicher und für alle Haartypen geeignet!<br/>Ihre Formel ist super pflegend und wird, durch Färben, Bleichen, Hitze, Styling und Chemikalien geschädigtes Haar profitieren, indem es repariert, genährt und gestärkt wird.<br/>Seine reichhaltige, feuchtigkeitsspendende Formel wird Locken wiederbeleben, um ihre Sprungkraft zurückzubringen, zu entwirren und Frizz zu bändigen!<br/>Wenn du dir einen glatten, geschmeidigen Look wünschst, dann hilft dir unsere Haarmaske Frizz und Spliss vorzubeugen.<br/>Du kannst es sogar für Haarverlängerungen verwenden, da es sulfatfrei ist und sie nicht austrocknet.',
                 },
                 {
                     title: 'Wie funktioniert das Super Pflegende Shampoo & Conditioner Duo?',
