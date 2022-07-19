@@ -2,7 +2,7 @@ import { Fragment, useEffect } from 'react';
 import ProductImageCarouselItem from './ProductImageCarouselItem';
 import carouselLoop from "../../modules/carousel-loop";
 import carouselSwipe from "../../modules/carousel-swipe";
-import { PRODUCT_IMAGES_LIST, PRODUCT_IMAGES_TAN } from '../../modules/product-images';
+import { PRODUCT_IMAGES_LIST } from '../../modules/product-images';
 
 import { ReactComponent as ChevronPrev } from '../../assets/chevron-prev.svg';
 import { ReactComponent as ChevronNext } from '../../assets/chevron-next.svg';
@@ -16,10 +16,7 @@ const ProductImageCarousel = (props) => {
     }, []);
     
 
-    let PRODUCT_IMAGES = PRODUCT_IMAGES_TAN;
-    if (props.handle) {
-        PRODUCT_IMAGES = PRODUCT_IMAGES_LIST[props.handle];
-    }
+    const PRODUCT_IMAGES = PRODUCT_IMAGES_LIST[props.handle];
 
     return (
         <Fragment>

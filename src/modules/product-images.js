@@ -1,39 +1,38 @@
-const PRODUCT_IMAGES_TAN = [
-    {
-        jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/076fb4a7-a3d0-4b7f-4f8c-3f26d0460400',
-        webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6e673f56-7011-41f4-0076-c4fe81e67000',
-    },
-    {
-        jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1950f6db-f70a-4680-fe91-de8248953400',
-        webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c230678d-097c-4c4e-35ee-2df25efcba00',
-    },
-    {
-        jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9e7d1cb9-0d18-4755-6037-d860c7a02e00',
-        webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/979c96b6-c8d1-44eb-b08c-ce31a8d86500',
-    },
-    {
-        jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/92fce513-c585-48fe-1a42-b5cc3cbbf700',
-        webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5b4fe917-bc28-48aa-aec2-5e6620e71600',
-    },
-    {
-        jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5d1b97ef-e9e5-439c-23e1-4ef0c885cc00',
-        webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4326a114-43dc-438e-c394-d92615239b00',
-    },
-    {
-        jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8aaabdcd-fde4-4e41-daba-10ef508e5d00',
-        webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b248874b-dca6-44ba-85c9-cd5a70a6ec00',
-    },
-    {
-        jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/79303a66-7bf3-4244-0974-544d8bb53400',
-        webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b568e2c7-9c2b-41b9-0950-78394c86ab00',
-    },
-    {
-        jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1105da83-a237-4ac5-132f-bcd15143c100',
-        webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/09e14d12-2fdb-4d92-4aa9-c9005d99a600',
-    }
-];
-
 const PRODUCT_IMAGES_LIST = {
+    "sunny-honey-bali-bronzing-self-tan-set": [
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/076fb4a7-a3d0-4b7f-4f8c-3f26d0460400',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6e673f56-7011-41f4-0076-c4fe81e67000',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1950f6db-f70a-4680-fe91-de8248953400',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c230678d-097c-4c4e-35ee-2df25efcba00',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9e7d1cb9-0d18-4755-6037-d860c7a02e00',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/979c96b6-c8d1-44eb-b08c-ce31a8d86500',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/92fce513-c585-48fe-1a42-b5cc3cbbf700',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5b4fe917-bc28-48aa-aec2-5e6620e71600',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5d1b97ef-e9e5-439c-23e1-4ef0c885cc00',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4326a114-43dc-438e-c394-d92615239b00',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8aaabdcd-fde4-4e41-daba-10ef508e5d00',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b248874b-dca6-44ba-85c9-cd5a70a6ec00',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/79303a66-7bf3-4244-0974-544d8bb53400',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b568e2c7-9c2b-41b9-0950-78394c86ab00',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1105da83-a237-4ac5-132f-bcd15143c100',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/09e14d12-2fdb-4d92-4aa9-c9005d99a600',
+        }
+    ],
     'deep-condition-bundle': [
         {
             jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/18a41d7d-60e3-4fab-05e0-e86402a9a500',
@@ -140,4 +139,4 @@ const PRODUCT_IMAGES_LIST = {
     ]
 };
 
-export { PRODUCT_IMAGES_LIST, PRODUCT_IMAGES_TAN };
+export { PRODUCT_IMAGES_LIST };
