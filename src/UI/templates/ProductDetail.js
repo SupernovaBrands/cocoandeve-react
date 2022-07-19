@@ -20,12 +20,12 @@ const ProductDetail = (props) => {
             <Suspense fallback={<div></div>}>
                 {props.handle !== 'repairing-restoring-hair-mask' && (
                     <ReviewProvider>
-                        <CustomerReview range={props.range} />
+                        <CustomerReview range={props.range} handle={props.handle} />
                     </ ReviewProvider>
-                )};
+                )}
                 <SeenIn handle={props.handle} />
                 <IRLProvider>
-                    <SectionIRL range={props.range} />
+                    <SectionIRL range={props.range} handle={props.handle} />
                 </IRLProvider>
                 <FaqProvider>
                     <FaqAccordion range={props.range} handle={props.handle} />
