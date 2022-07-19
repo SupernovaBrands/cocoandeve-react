@@ -25,6 +25,7 @@ const SectionIRL = (props) => {
                     caption={irlCtx.caption1}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6dfe2acd-5388-48ff-3dd1-b2ed2b6cad00/200x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/13cb7403-0ef5-4216-3b94-e5ce95fbdc00/200x"
+                    handle={props.handle}
                 >
                     <p>{irlCtx.review1}</p>
 
@@ -38,6 +39,7 @@ const SectionIRL = (props) => {
                     caption={irlCtx.caption2}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/14450439-ff6e-4fe2-0030-373f53899600/200x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/15647b0f-9340-41fb-4e09-f80692f0f800/200x"
+                    handle={props.handle}
                 >
                     <p>{irlCtx.review2}</p>
                 </IRLCard>
@@ -50,6 +52,7 @@ const SectionIRL = (props) => {
                     caption={irlCtx.caption3}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7a518864-af70-46a1-6d76-8d8f43e1d100/200x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b734bbe7-e646-4ecf-d42e-5ee4c2c60300/200x"
+                    handle={props.handle}
                 >
                     <p>{irlCtx.review3}</p>
                 </IRLCard>
@@ -62,6 +65,7 @@ const SectionIRL = (props) => {
                     caption={irlCtx.caption4}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ed15f4ee-c1a7-4486-de95-81bf1b38c400/200x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/18084a86-e332-4463-03d3-292b438d6900/200x"
+                    handle={props.handle}
                 >
                     <p>{irlCtx.review4}</p>
                 </IRLCard>
@@ -77,6 +81,7 @@ const SectionIRL = (props) => {
                     caption={irlCtx.caption1}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7fd80ee2-3a90-4835-6e85-e2552c85c500/400x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6d60ae9f-feab-48da-efc9-fad0bd41d100/400x"
+                    handle={props.handle}
                 >
                     <p>{irlCtx.review1}</p>
 
@@ -90,6 +95,7 @@ const SectionIRL = (props) => {
                     caption={irlCtx.caption2}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e998a8b9-d0f4-43a0-3b99-eee55acc0300/400x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bddfa405-8940-4c07-6c7a-6d808ce03f00/400x"
+                    handle={props.handle}
                 >
                     <p>{irlCtx.review2}</p>
                 </IRLCard>
@@ -102,6 +108,7 @@ const SectionIRL = (props) => {
                     caption={irlCtx.caption3}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d6879fb3-f21e-41e7-13dc-d319a9d19000/400x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/15d98a3c-5e21-41f5-5720-6b5724d00e00/400x"
+                    handle={props.handle}
                 >
                     <p>{irlCtx.review3}</p>
                 </IRLCard>
@@ -114,6 +121,7 @@ const SectionIRL = (props) => {
                     caption={irlCtx.caption4}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a724bbe0-6572-4997-a9f4-f504053a4200/400x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7c4f5624-763f-46af-b37a-2ffcad792c00/400x"
+                    handle={props.handle}
                 >
                     <p>{irlCtx.review4}</p>
                 </IRLCard>
@@ -138,6 +146,7 @@ const SectionIRL = (props) => {
                     caption={irlCtx.caption6}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae6a4377-05de-432f-d843-1db6d7e3c200/400x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae6a4377-05de-432f-d843-1db6d7e3c200/400x"
+                    handle={props.handle}
                 >
                     <p>{irlCtx.review6}</p>
                 </IRLCard>
@@ -150,6 +159,7 @@ const SectionIRL = (props) => {
                     caption={irlCtx.caption7}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c866f6ed-affe-4025-7682-42d77c80a900/400x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/fdcfcf9b-c7b8-4e6b-bb06-f527cdd00800/400x"
+                    handle={props.handle}
                 >
                     <p>{irlCtx.review7}</p>
                 </IRLCard>
@@ -162,6 +172,7 @@ const SectionIRL = (props) => {
                     caption={irlCtx.caption8}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5fbfa92b-05d7-4340-4fd5-cf7d9a6bdf00/400x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1edca4dd-0bd1-48ab-ba08-de95aa161700/400x"
+                    handle={props.handle}
                 >
                     <p>{irlCtx.review8}</p>
                 </IRLCard>
