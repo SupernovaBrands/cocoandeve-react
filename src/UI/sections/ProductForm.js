@@ -92,20 +92,14 @@ const ProductForm = (props) => {
             const observerCallback = (entries) => {
                 console.log('entries', entries)
                 entries.forEach((entry) => {
-                    if (window.innerWidth < 768) {
-                        if (entry.isIntersecting) {
-                            mobileSwatch.classList.remove('show');
-                        } else {
-                            mobileSwatch.classList.add('show');
-                        }
-
-                        window.onscroll = function(ev) {
-                            if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+                    window.onscroll = function(ev) {
+                        if (window.innerWidth < 768) {
+                            if (entry.isIntersecting || (window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
                                 mobileSwatch.classList.remove('show');
                             } else {
                                 mobileSwatch.classList.add('show');
                             }
-                        };
+                        }
                     }
                 });
             }
