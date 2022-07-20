@@ -134,6 +134,7 @@ const SectionIRL = (props) => {
                     caption={irlCtx.caption5}
                     image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/eed416cb-2670-4167-838a-62fcf20efa00/400x"
                     comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ec0bbc04-5e4a-481b-6a8a-d3d96d118000/400x"
+                    handle={props.handle}
                 >
                     <p>{irlCtx.review5}</p>
                 </IRLCard>

@@ -14,6 +14,7 @@ import { ReactComponent as FormulaList6 } from '../../assets/hair_icon_drop.svg'
 import { ReactComponent as FormulaList7 } from '../../assets/hair_icon_shield.svg';
 import { ReactComponent as FormulaList8 } from '../../assets/hair_icon_nourish.svg';
 import { ReactComponent as FormulaList9 } from '../../assets/hair_icon_signature.svg';
+import { ReactComponent as FormulaList10 } from '../../assets/hair_icon_pore.svg';
 
 const ProductForm = (props) => {
     let params = (new URL(document.location)).searchParams;
@@ -89,6 +90,7 @@ const ProductForm = (props) => {
         const mobileSwatchTrigger = document.querySelector('.product-swatch-mobile__trigger');
         if (mobileSwatchTrigger && mobileSwatch) {
             const observerCallback = (entries) => {
+                console.log('entries', entries)
                 entries.forEach((entry) => {
                     if (window.innerWidth < 768) {
                         if (entry.isIntersecting) {
@@ -96,6 +98,14 @@ const ProductForm = (props) => {
                         } else {
                             mobileSwatch.classList.add('show');
                         }
+
+                        window.onscroll = function(ev) {
+                            if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+                                mobileSwatch.classList.remove('show');
+                            } else {
+                                mobileSwatch.classList.add('show');
+                            }
+                        };
                     }
                 });
             }
@@ -190,10 +200,16 @@ const ProductForm = (props) => {
                                     <FormulaList8 className='me-g d-flex flex-shrink-0 justify-content-center' />
                                     {productCtx.benefits.formula3}
                                 </li>
+                                {handle === 'repairing-restoring-hair-mask' ? (
+                                <li className='col-12 d-flex align-items-center mb-2'>
+                                    <FormulaList10 className='me-g d-flex flex-shrink-0 justify-content-center' />
+                                    {productCtx.benefits.formula4}
+                                </li>
+                                ) : (
                                 <li className='col-12 d-flex align-items-center mb-2'>
                                     <FormulaList9 className='me-g d-flex flex-shrink-0 justify-content-center' />
                                     {productCtx.benefits.formula4}
-                                </li>
+                                </li>)}
                             </Fragment>
                         )}
                         
