@@ -81,8 +81,8 @@ const PRODUCT_IMAGES_LIST = {
             webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1dfb54e3-f067-488a-96ab-13b8b13da600',
         },
         {
-            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7c0c0a62-e2ea-4be3-c508-010483745100/1140x',
-            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/40782909-fd9f-45b7-4c26-e4bda905f700/1140x',
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7c0c0a62-e2ea-4be3-c508-010483745100',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/40782909-fd9f-45b7-4c26-e4bda905f700',
         }
     ],
     'shampoo-conditioner-set': [
