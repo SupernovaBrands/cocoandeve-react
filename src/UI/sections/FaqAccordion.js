@@ -10,7 +10,12 @@ const FaqAccordion = (props) => {
 	let activeStore = params.get("utm_store") || 'us';
 
     const faqCtx = useContext(FaqContext);
-    faqCtx.storeChange(activeStore, props.range);
+
+    if (props.handle) {
+        faqCtx.storeChange(activeStore, props.handle);
+    } else {
+        faqCtx.storeChange(activeStore, props.range);
+    }
 
     const accordionHandle = (e) => {
         const btnToggle = document.querySelectorAll('.accordion-button');
