@@ -208,7 +208,7 @@ const _content = {
             benefits: {
                 formula1: 'Intensiv Pflegender Conditioner mit sofortigem Feuchtigkeitsboost für sichtbar glänzendes, geschmeidiges Haar.',
                 formula2: 'Super Pflegendes Shampoo pflegt und reinigt dein Haar ohne auszutrocknen oder ihm Farbglanz zu entziehen.',
-                formula3: 'Farbglanz zu entziehen. Super Pflegende Haarmaske repariert dein Haar von innen heraus, verbessert die Struktur und den Glanz mit einer Haarwäsche.',
+                formula3: 'Super Pflegende Haarmaske repariert dein Haar von innen heraus, verbessert die Struktur und den Glanz mit einer Haarwäsche.',
                 formula4: 'Unser unverwechselbarer Duft aus Kokosnuss & Feige nimmt deine Haare mit auf eine Reise ins Paradies!',
             },
             asSeenin: 'Empfohlen von',
@@ -374,7 +374,7 @@ const _content = {
             rating: '1419',
             stars: '4.8',
             benefits: {
-                formula1: '26-mal mehr Feuchtigkeitspflege mit ResistHyalTM Hyaluronsäuren-Technologie. & keine Silikone, die dem Haar Volumen entnehmen.',
+                formula1: '26-mal mehr Feuchtigkeitspflege mit ResistHyalTM Hyaluronsäuren-Technologie & keine Silikone, die dem Haar Volumen entnehmen.',
                 formula2: 'Dein Haar bleibt länger sauber & keine austrocknenden Sulfate.',
                 formula3: '7-in-1 Rezeptur für sofortige Feuchtigkeitspflege, Glanz, Geschmeidigkeit, Kraft und Volumen & kein Spliss oder Frizz.',
                 formula4: 'Beliebter Kokosnuss & Feigen Duft bringt dich ins Paradies.',

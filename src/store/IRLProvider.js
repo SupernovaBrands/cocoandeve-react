@@ -270,7 +270,7 @@ const irlReviews = {
             on: 'auf',
             caption1: 'Super Pflegendes Shampoo und Conditioner Set',
             review1: "Das @cocoandeve Shampoo und Conditioner Duo ist die perfekte Kombination für mein lockiges Haar. Sie sind von Natur aus trocken und kraus, aber mit diesen beiden Produkten wird meine Kopfhaut mit Feuchtigkeit versorgt und gereinigt und frei von lästigem Frizz. Ich bin total süchtig danach!",
-            caption2: 'Super Hydrating Shampoo & Conditioner Set',
+            caption2: 'Super Pflegendes Shampoo und Conditioner Set',
             review2: "Diese Ergebnisse sind unübertroffen! 💞Das neue Shampoo und die neue Spülung werde ich ab jetzt immer verwenden🙌🏽🥥✨",
             caption3: 'Super Pflegendes Shampoo und Conditioner Set',
             review3: "Ich habe glattes Haar und es kann schnell fettig werden. Als ich das @cocoandeve Shampoo und Conditioner ausprobierte, war ich angenehm überrascht, wie sauber meine Kopfhaut und mein Haar nach der Anwendung waren. Es hat meine Kopfhaut überhaupt nicht ausgetrocknet, im Gegenteil, es hat sie mit Feuchtigkeit versorgt, was ich sehr mag! Der Conditioner hat auch gut für mein Haar funktioniert, da er die perfekte Menge an Feuchtigkeit spendet, ohne es fettig aussehen zu lassen. Ich liebe es 😍",

@@ -352,8 +352,8 @@ const SectionIRL = (props) => {
                     <IRLCard
                         name="@itshollylc"
                         caption={irlCtx.caption1}
-                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7fd80ee2-3a90-4835-6e85-e2552c85c500/400x"
-                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6d60ae9f-feab-48da-efc9-fad0bd41d100/400x"
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a487362b-b361-4df8-28e0-36a521557c00/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a487362b-b361-4df8-28e0-36a521557c00/400x"
                         handle={props.handle}
                     >
                         <p>{irlCtx.review1}</p>
@@ -365,8 +365,8 @@ const SectionIRL = (props) => {
                     <IRLCard
                         name="@monicarosemua"
                         caption={irlCtx.caption2}
-                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e998a8b9-d0f4-43a0-3b99-eee55acc0300/400x"
-                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bddfa405-8940-4c07-6c7a-6d808ce03f00/400x"
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/303825ae-59a4-4452-3d5e-c590112e9a00/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/303825ae-59a4-4452-3d5e-c590112e9a00/400x"
                         handle={props.handle}
                     >
                         <p>{irlCtx.review2}</p>
@@ -378,8 +378,8 @@ const SectionIRL = (props) => {
                     <IRLCard
                         name="@valerie"
                         caption={irlCtx.caption3}
-                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d6879fb3-f21e-41e7-13dc-d319a9d19000/400x"
-                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/15d98a3c-5e21-41f5-5720-6b5724d00e00/400x"
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/805bdce4-8380-405b-126f-7fd1cafd1b00/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/805bdce4-8380-405b-126f-7fd1cafd1b00/400x"
                         handle={props.handle}
                     >
                         <p>{irlCtx.review3}</p>
