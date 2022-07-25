@@ -76,7 +76,6 @@ const Survey = () => {
     const answerData = getCookieAnsweredQuestion() ? getCookieAnsweredQuestion() : {};
 
     const selectedSite = site ? site : 'dev.cocoandeve.com';
-    const initializeAdditionalStep = ['dev.cocoandeve.com', 'us.cocoandeve.com', 'www.cocoandeve.com'].includes(selectedSite);
 
     const variants = ProductVariants[selectedSite];
 
@@ -88,7 +87,7 @@ const Survey = () => {
     const [submitted, setSubmitted] = useState(initialSubmitted);
     const [redirect, setRedirect] = useState(false);
     const [email, setEmail] = useState('');
-    const [additionalStep, setAdditionalStep] = useState(initializeAdditionalStep);
+    const additionalStep = true;
 
     let lang = 'en';
 
@@ -349,14 +348,6 @@ const Survey = () => {
     useEffect(() => {
         postIframeHeight('height', height);
     }, [height]);
-
-    useEffect(() => {
-        if (abTest) setAdditionalStep(false);
-        if (currentPosition === 'finished' && !additionalStep) {
-            clearCookie();
-            setPosition('start');
-        }
-    }, [additionalStep]);
 
     return (
             <div ref={targetRef} className={`${currentPosition === 'start' ? 'cover' : ''} container container--survey`}>
