@@ -224,7 +224,7 @@ const _content = {
             items: [
                 {
                     title: 'À quelle fréquence dois-je utiliser chaque produit?',
-                    text: "<p><b>Shampoing et Après-shampooing </b>: Il n'y a pas de nombre de fois défini pour se laver les cheveux, mais nous recommandons généralement de se laver les cheveux 3 à 5 fois par semaine ou selon tes besoins. Selon ton type de cheveux, lave les moins souvent si tu as les cheveux secs, et plus souvent s' ils sont gras.<br/><b>Puis-je utiliser le shampooing pour les cheveux décolorés / abîmés?</b> Oui, notre shampooing convient à tous les types de cheveux. Il est formulé pour hydrater, renforcer, adoucir et empêcher la casse des cheveux tout en stimulant la vivacité de la couleur.<br/><b>Est-ce que je peux dormir avec le masque sur les cheveux?</b> Tout à fait ! Si tu penses que tes cheveux sont particulièrement secs essaie de dormir avec notre masque cheveux. Applique SIMPLEMENT le masque à la fin de ta douche (ou sur cheveux secs) et recouvre tes cheveux avec un bonnet de douche ou notre serviette turban en microfibres. Rince le lendemain matin et tu auras des cheveux tout doux !<br/><b>Le masque peut-il être utilisé sur des cheveux lissés/teints chimiquement?</b>Oui ! Ce masque aide à réparer les cheveux abîmés par les teintures, la chaleur, les coiffures et les produits chimiques. Il aura un effet nourrissant et fortifiant.</p>",
+                    text: "<p><b>Shampoing et Après-shampooing</b>: Il n'y a pas de nombre de fois défini pour se laver les cheveux, mais nous recommandons généralement de se laver les cheveux 3 à 5 fois par semaine ou selon tes besoins. Selon ton type de cheveux, lave les moins souvent si tu as les cheveux secs, et plus souvent s' ils sont gras.<br/><b>Puis-je utiliser le shampooing pour les cheveux décolorés / abîmés?</b> Oui, notre shampooing convient à tous les types de cheveux. Il est formulé pour hydrater, renforcer, adoucir et empêcher la casse des cheveux tout en stimulant la vivacité de la couleur.<br/><b>Est-ce que je peux dormir avec le masque sur les cheveux?</b> Tout à fait! Si tu penses que tes cheveux sont particulièrement secs essaie de dormir avec notre masque cheveux. Applique SIMPLEMENT le masque à la fin de ta douche (ou sur cheveux secs) et recouvre tes cheveux avec un bonnet de douche ou notre serviette turban en microfibres. Rince le lendemain matin et tu auras des cheveux tout doux !<br/><b>Le masque peut-il être utilisé sur des cheveux lissés/teints chimiquement?</b>Oui! Ce masque aide à réparer les cheveux abîmés par les teintures, la chaleur, les coiffures et les produits chimiques. Il aura un effet nourrissant et fortifiant.</p>",
                 },
                 {
                     title: 'Puis-je utiliser le shampooing pour les cheveux décolorés / abîmés?',
@@ -232,11 +232,11 @@ const _content = {
                 },
                 {
                     title: "Est-ce que je peux dormir avec le masque sur les cheveux?",
-                    text: "<p>Tout à fait ! Si tu penses que tes cheveux sont particulièrement secs essaie de dormir avec notre masque cheveux. Applique SIMPLEMENT le masque à la fin de ta douche (ou sur cheveux secs) et recouvre tes cheveux avec un bonnet de douche ou notre serviette turban en microfibres. Rince le lendemain matin et tu auras des cheveux tout doux!</p>",
+                    text: "<p>Tout à fait! Si tu penses que tes cheveux sont particulièrement secs essaie de dormir avec notre masque cheveux. Applique SIMPLEMENT le masque à la fin de ta douche (ou sur cheveux secs) et recouvre tes cheveux avec un bonnet de douche ou notre serviette turban en microfibres. Rince le lendemain matin et tu auras des cheveux tout doux!</p>",
                 },
                 {
                     title: 'Le masque peut-il être utilisé sur des cheveux lissés/teints chimiquement?',
-                    text: "<p>Oui ! Ce masque aide à réparer les cheveux abîmés par les teintures, la chaleur, les coiffures et les produits chimiques. Il aura un effet nourrissant et fortifiant.</p>",
+                    text: "<p>Oui! Ce masque aide à réparer les cheveux abîmés par les teintures, la chaleur, les coiffures et les produits chimiques. Il aura un effet nourrissant et fortifiant.</p>",
                 },
             ],
         },
@@ -411,15 +411,15 @@ const _content = {
                 },
                 {
                     title: 'Est-ce que je peux appliquer ce masque sur cheveux secs?',
-                    text: "<p>Oui ! Si tu veux consacrer un peu plus de temps au soin de tes cheveux, applique ton masque sur cheveux secs et laisse-les l'absorber pendant environ 20 minutes (tu peux le faire le dimanche matin avant de prendre ta douche !) ou pendant une nuit, si tes cheveux sont très secs.</p>",
+                    text: "<p>Oui! Si tu veux consacrer un peu plus de temps au soin de tes cheveux, applique ton masque sur cheveux secs et laisse-les l'absorber pendant environ 20 minutes (tu peux le faire le dimanche matin avant de prendre ta douche !) ou pendant une nuit, si tes cheveux sont très secs.</p>",
                 },
                 {
                     title: 'Est-ce que je peux dormir avec le masque sur les cheveux?',
-                    text: "<p>Tout à fait ! Si tu penses que tes cheveux sont particulièrement secs, essaie de dormir avec notre masque capillaire. Applique SIMPLEMENT le masque à la fin de ta douche (ou sur cheveux secs) et recouvre tes cheveux avec un bonnet de douche ou une écharpe en soie qui ne craint rien. Rince le lendemain matin et tu auras des cheveux tout doux !</p>",
+                    text: "<p>Tout à fait! Si tu penses que tes cheveux sont particulièrement secs, essaie de dormir avec notre masque capillaire. Applique SIMPLEMENT le masque à la fin de ta douche (ou sur cheveux secs) et recouvre tes cheveux avec un bonnet de douche ou une écharpe en soie qui ne craint rien. Rince le lendemain matin et tu auras des cheveux tout doux !</p>",
                 },
                 {
                     title: 'Le masque peut-il être utilisé sur des cheveux lissés/teints chimiquement?',
-                    text: "<p>Oui ! Ce masque aide à réparer les cheveux abîmés par les teintures, la chaleur, les coiffures et les produits chimiques. Il aura un effet nourrissant et fortifiant.</p>",
+                    text: "<p>Oui! Ce masque aide à réparer les cheveux abîmés par les teintures, la chaleur, les coiffures et les produits chimiques. Il aura un effet nourrissant et fortifiant.</p>",
                 },
             ],
         },
