@@ -252,7 +252,7 @@ const _content = {
                     text: 'Ja, unser Shampoo ist frei von Parabenen, Sulfaten, Silikonen und anderen Schadstoffen! Vollgepackt mit balinesischen Pflanzenstoffen und ResistHyal™ Technologie zur effektiven Reinigung und Feuchtigkeitspflege deiner Haare von der Kopfhaut bis in die Spitzen ohne auszutrocknen oder deine Kopfhaut zu reizen. Ich benutze das Shampoo für gebleichtes/geschädigtes Haar?',
                 },
                 {
-                    title: 'Kann ich mit der Haarmaske schlafen gehen?',
+                    title: 'Kann ich die Maske über Nacht im Haar lassen?',
                     text: "Auf jeden Fall! Wenn dein Haar besonders trocken ist, kannst du die Maske gerne über Nacht im Haar lassen. Trage die Maske einfach nach dem Waschen auf die noch feuchten (oder auch trockenen) Haare auf und bedecke sie dann mit einer Duschhaube oder einem alten Seidenschal. Wasche die Maske am nächsten Morgen aus und erfreue dich an seidig schönen Haaren!",
                 },
                 {

@@ -417,9 +417,7 @@ const _content = {
     "super-nourishing-coconut-fig-hair-masque": {
         us: {
             handle: 'super-nourishing-coconut-fig-hair-masque',
-            price: '$33.90',
-            compareAtPrice: '$39.90',
-            saving: 'Save 15%',
+            price: '$39.90',
             title1: '',
             title2: 'Like A Virgin Hair Masque',
             description: '1x Like a Virgin Hair Masque 7.2oz<br/>1x Tangle Tamer',
@@ -437,9 +435,7 @@ const _content = {
         },
         fr: {
             handle: 'super-nourishing-coconut-fig-hair-masque',
-            price: '€28,00',
-            compareAtPrice: '€32,90',
-            saving: '15% de réduction',
+            price: '€32,90',
             title1: '',
             title2: 'Masque Cheveux Like a Virgin',
             description: '1 Masque Capillaire Like a Virgin (212 ml)<br/>1 Brosse démêlante',
@@ -457,9 +453,7 @@ const _content = {
         },
         de: {
             handle: 'super-nourishing-coconut-fig-hair-masque',
-            price: '€28,00',
-            compareAtPrice: '€32,90',
-            saving: '(Spare 15%)',
+            price: '€32,90',
             title1: '',
             title2: 'Like A Virgin Haarmaske',
             description: '1x Like a Virgin Haarmaske 212ml<br/>1x Tangle Tamer',
@@ -479,29 +473,19 @@ const _content = {
             price: 'RM178.00',
         },
         uk: {
-            price: '£28.00',
-            compareAtPrice: '£32.90',
-            saving: 'Save 15%',
+            price: '£32.90',
         },
         ca: {
-            price: '$49.20',
-            compareAtPrice: '$57.90',
-            saving: 'Save 15%',
+            price: '$57.90',
         },
         au: {
-            price: '$49.20',
-            compareAtPrice: '$57.90',
-            saving: 'Save 15%',
+            price: '57.90',
         },
         eu: {
-            price: '€28,00',
-            compareAtPrice: '€32,90',
-            saving: 'Save 15%',
+            price: '€32,90',
         },
         int: {
-            price: 'SG$49.20',
-            compareAtPrice: 'SG$57.90',
-            saving: 'Save 15%',
+            price: 'SG$57.90',
         }
     },
     default: {
