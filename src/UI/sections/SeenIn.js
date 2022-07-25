@@ -7,7 +7,7 @@ const SeenIn = (props) => {
 	let activeStore = params.get("utm_store") || 'us';
 
     const ctx = useContext(ReviewContext);
-    ctx.storeChange(activeStore, props.range);
+    ctx.storeChange(activeStore, props.range, props.handle);
 
     const CAROUSELITEMS = [
         {
