@@ -7,19 +7,19 @@ const _content = {
             heading: 'Your questions – answered',
             items: [
                 {
-                    title: 'Which Sunny Honey color should I go for ?',
+                    title: 'Which Sunny Honey color should I go for?',
                     text: 'Sunny Honey Self-Tan aims to get you a natural finish! So when choosing which colour to go for, consider what skin tone you are naturally and how dark you would like to go.<br/> Medium self-tan gives skin a sun-kissed glow. Great for lighter skin tones!<br/>Dark self-tan for a back from vacay bronze. Ideal for medium skin tones!<br/>Ultra Dark for a deep, rich tan. For deeper skin tones!<br/><br/>Check out REAL Reviews <a href="https://www.cocoandeve.com/pages/reviews">here</a>.',
                 },
                 {
-                    title: 'How do I apply the Sunny Honey Bali Bronzing Foam ?',
+                    title: 'How do I apply the Sunny Honey Bali Bronzing Foam?',
                     text: '1. Remove unwanted hair and exfoliate thoroughly (ideally 6-24 hours before.)<br />2. Apply to dry skin, free from moisturisers.<br />3. Use Mitt & Brush to apply to tricky areas like the feet, hands, face & ears.<br />4. Use the Back Tan Applicator to apply the tan evenly across your back.<br />5. Allow to develop for a minimum of 2 hours or overnight for a deeper tan.<br />6. Shower in warm water to remove the guide colour and pat skin dry.<br />7. Repeat every 5-7 days or when needed. Moisturise daily to maintain results.',
                 },
                 {
-                    title: 'How often should I self-tan ?',
+                    title: 'How often should I self-tan?',
                     text: "It's completely up to you! When you have decided to re-tan, we recommend removing all of the previous tans and thoroughly exfoliating to get the best results. Tanning at least once a week will ensure you are bronzed beautifully all year round! ",
                 },
                 {
-                    title: 'Can I use Sunny Honey on sensitive skin ?',
+                    title: 'Can I use Sunny Honey on sensitive skin?',
                     text: 'Yes, our formula is perfect for all skin types including sensitive skin. It is nourishing, hydrating and contains ingredients that will not clog pores and cause breakouts. <br />We do advise doing a skin patch test before applying a full body tan. If the skin patch test shows no negative signs, it is safe to use a full-body tan.<br />Avoid applying the tan to areas with broken skin or skin which is showing signs of aggravation. ',
                 },
             ],
@@ -49,19 +49,19 @@ const _content = {
             heading: 'Deine Fragen – beantwortet',
             items: [
                 {
-                    title: 'Welche Sunny Honey Nuance soll ich auswählen ?',
+                    title: 'Welche Sunny Honey Nuance soll ich auswählen?',
                     text: "Sunny Honey Selbstbräuner zielt darauf ab, dir einen natürlichen Finish zu verleihen! Berücksichtige also bei der Auswahl der Nuance, welchen Hautton du von Natur aus hast und wie dunkel du werden möchtest.<br />Der Selbstbräuner in Medium verleiht der Haut einen sonnengeküssten Glow. Super für hellere Hauttöne!<br />Der Selbstbräuner in Dark schenkt dir eine perfekte Urlaubsbräune. Ideal für mittlere Hauttöne!<br />Der Selbstbräuner in Ultra Dark ist für eine tiefe, satte Bräune. Für dunklere Hauttöne!<br /><br />ECHTE Bewertungen findest du <a href='https://www.cocoandeve.com/pages/reviews'>hier</a>.",
                 },
                 {
-                    title: 'Wie trage ich die Sunny Honey Selbstbräuner Mousse auf ?',
+                    title: 'Wie trage ich die Sunny Honey Selbstbräuner Mousse auf?',
                     text: '1. Entferne unerwünschte Haare und peele dich gründlich (idealerweise 6-24 Stunden vorher.)<br />2. Auf die trockene, eingecremte Haut auftragen.<br />3. Verwende Bräunungshandschuh & Pinsel zum Auftragen auf schwierige Bereiche wie Füße, Hände, Gesicht und Ohren.<br/>4. Verwende den Bräunungsapplikator für den Rücken, um die Bräune gleichmäßig auf deinen Rücken aufzutragen.<br/>5. Für eine tiefere Bräune mindestens 2 Stunden oder über Nacht einwirken lassen.<br/>6. Dusche in warmem Wasser, um die Führungsfarbe zu entfernen und tupfe deine Haut trocken.<br/>7. Alle 5-7 Tage oder bei Bedarf wiederholen. Täglich eincremen, um die Ergebnisse aufrechtzuerhalten.',
                 },
                 {
-                    title: 'Wie oft sollte ich mich selbstbräunen ?',
+                    title: 'Wie oft sollte ich mich selbstbräunen?',
                     text: "Es liegt ganz bei dir! Wenn du dich für eine erneute Bräunung entschieden hast, empfehlen wir den vorherigen Selbstbräuner zu entfernen und ein gründliches Peeling durchzuführen, um die besten Ergebnisse zu erzielen. Bräune dich mindestens einmal pro Woche, wenn du sicherstellen willst, dass du das ganze Jahr über schön gebräunt bist!",
                 },
                 {
-                    title: 'Kann ich Sunny Honey auf empfindlicher Haut verwenden ?',
+                    title: 'Kann ich Sunny Honey auf empfindlicher Haut verwenden?',
                     text: "Ja, unsere Formel ist perfekt für alle Hauttypen, einschließlich empfindlicher Haut. Sie ist nährend, feuchtigkeitsspendend und enthält Inhaltsstoffe, die die Poren nicht verstopfen und Unreinheiten verursachen.<br/>Wir empfehlen, vor dem Auftragen einer Ganzkörperbräune einen Hautverträglichkeitstest durchzuführen. Wenn der Hautverträglichkeitstest keine negativen Anzeichen zeigt, ist es sicher, eine Ganzkörperbräune zu verwenden.<br/>Vermeide es, die Bräune auf Bereiche mit verletzter Haut oder auf Haut aufzutragen, die Anzeichen einer Reizung zeigt.",
                 },
             ],
@@ -72,15 +72,15 @@ const _content = {
             heading: 'Your questions - answered',
             items: [
                 {
-                    title: 'How do I apply the hair masque ?',
+                    title: 'How do I apply the hair masque?',
                     text: '<p>1. Shampoo your hair as normal, ideally using a sulfate-free shampoo.<br>2. Evenly distribute a generous amount of product to your towel-dried hair and brush through with the tangle tamer.<br>3. Leave for 5 to 10 minutes then rinse with warm water.<br>4. For dry hair, use 2-3 times a week, for normal hair, 1-2 times a week and for oily hair just once a week and focus the product towards the ends of the hair and avoid the scalp!</p>',
                 },
                 {
-                    title: 'What hair types can you use the hair mask on ?',
+                    title: 'What hair types can you use the hair mask on?',
                     text: '<p>Our hair masque is safe and suitable for all hair types! <br /><br />Its formula is super nourishing and will benefit damaged hair from dyes, bleaching, heat, styling and chemicals by repairing, nourishing and strengthening it. Its rich, hydrating formula will revive curls to bring their bounce back, detangle and tame frizz! If you want a smooth, sleek look our masque will smooth flyaways and prevent split ends. You can even use it on hair extensions as it is sulfate free and will not dry them out.</p>',
                 },
                 {
-                    title: 'How does the Super Hydrating Shampoo & Cream Conditioner work ?',
+                    title: 'How does the Super Hydrating Shampoo & Cream Conditioner work?',
                     text: "<p>Our Shampoo will give you the cleanest hair ever thanks to a sulfate free, triple cleansing formula using Soap Nuts, Fruit Enzymes & Coconut Oil to thoroughly wash your locks without over-drying hair. It will instantly boost your hair's hydration thanks to Coconut, Avocado & ResistHyal™ technology; a powerblend of Hyaluronic Acid to increase moisture by 51% for more softness, smoothness & gloss. <br/ ><br/ >Our Conditioner gives instant hair mask like results thanks to its rich formula that is 3 times thicker than a regular conditioner. This allows the formula to deeply and quickly penetrate strands delivering silicone-free hydration from ResistHyal™ technology which will increase hydration by 26 times. Get stronger, longer hair with a formula that instantly detangles for less breakage whilst pea proteins repair & reduce damage by 65%.</p>",
                 },
                 {
@@ -94,7 +94,7 @@ const _content = {
             items: [
                 {
                     title: 'Comment appliquer le masque capillaire ?',
-                    text: "1. Lave tes cheveux comme à ton habitude, idéalement en utilisant un shampooing sans sulfate.<br />2. Répartis uniformément une quantité généreuse de produit sur tes cheveux essorés et démêle-les. <br />3. Laisse agir 5 à 10 minutes puis rince à l`eau tiède.<br />4. Pour les cheveux secs, utilise 2 à 3 fois par semaine, pour les cheveux normaux, 1 à 2 fois par semaine et pour les cheveux gras, une seule fois par semaine. Concentre le produit sur les pointes des cheveux et évite le cuir chevelu !",
+                    text: "1. Lave tes cheveux comme à ton habitude, idéalement en utilisant un shampooing sans sulfate.<br />2. Répartis uniformément une quantité généreuse de produit sur tes cheveux essorés et démêle-les. <br />3. Laisse agir 5 à 10 minutes puis rince à l'eau tiède.<br />4. Pour les cheveux secs, utilise 2 à 3 fois par semaine, pour les cheveux normaux, 1 à 2 fois par semaine et pour les cheveux gras, une seule fois par semaine. Concentre le produit sur les pointes des cheveux et évite le cuir chevelu !",
                 },
                 {
                     title: 'Sur quels types de cheveux peut-on utiliser le masque capillaire ?',
@@ -105,7 +105,7 @@ const _content = {
                     text: "Notre Shampooing vous donnera les cheveux les plus propres de tous les temps grâce à une formule triple nettoyage sans sulfate utilisant des noix de savon, des enzymes de fruits et de l'huile de coco, pour laver tes cheveux en profondeur sans les assécher. Il boostera instantanément l'hydratation grâce aux extraits de noix de coco, d'avocat et à la technologie ResistHyal™ ; un mélange puissant d'acide hyaluronique pour augmenter l'hydratation de 51% pour plus de douceur, d'éclat et de brillance. <br/><br/>Notre Après-Shampooing donne instantanément des résultats semblables à ceux d'un masque capillaire grâce à sa formule riche qui est 3 fois plus épaisse qu'un après-shampooing ordinaire. Cela permet à la formule de pénétrer profondément et rapidement dans les longueurs en apportant une hydratation sans silicone grâce à la technologie ResistHyal™ qui augmentera l'hydratation de 26 fois. Obtiens des cheveux plus forts et plus longs avec une formule qui démêle instantanément pour moins de casse, tandis que les protéines de pois réparent et réduisent les dommages de 65%.",
                 },
                 {
-                    title: 'À quelle fréquence dois-je laver mes cheveux avec le shampooing et l`après-shampooing super hydratants de Coco & Eve ?',
+                    title: "À quelle fréquence dois-je laver mes cheveux avec le shampooing et l'après-shampooing super hydratants de Coco & Eve ?",
                     text: "Notre shampooing peut être utilisé quotidiennement pour un nettoyage et une hydratation fréquents. <br/>Nous recommandons d'utiliser notre après-shampooing 3/4 fois par semaine.",
                 },
             ],
@@ -114,19 +114,19 @@ const _content = {
             heading: 'Deine Fragen - beantwortet',
             items: [
                 {
-                    title: 'Wie wende ich die Haarmaske an ?',
+                    title: 'Wie wende ich die Haarmaske an?',
                     text: "1. Wasche deine Haare wie gewohnt, am besten mit einem sulfatfreien Shampoo.<br/>2. Verteile eine großzügige Menge des Produkts gleichmäßig auf deinem handtuchtrockenen Haar und entwirre es mit einem Kamm.<br/>3. 5 bis 10 Minuten einwirken lassen und dann mit lauwarmem Wasser ausspülen.<br/>4. Bei trockenem Haar 2-3 Mal pro Woche anwenden, bei normalem Haar 1-2 Mal pro Woche und bei fettigem Haar nur einmal pro Woche. Trage das Produkt nur auf die Haarspitzen auf und vermeide die Kopfhaut!",
                 },
                 {
-                    title: 'Bei welchen Haartypen kannst du die Haarmaske verwenden ?',
+                    title: 'Bei welchen Haartypen kannst du die Haarmaske verwenden?',
                     text: 'Unsere Haarmaske ist sicher und für alle Haartypen geeignet!<br/>Ihre Formel ist super pflegend und wird, durch Färben, Bleichen, Hitze, Styling und Chemikalien geschädigtes Haar profitieren, indem es repariert, genährt und gestärkt wird.<br/>Seine reichhaltige, feuchtigkeitsspendende Formel wird Locken wiederbeleben, um ihre Sprungkraft zurückzubringen, zu entwirren und Frizz zu bändigen!<br/>Wenn du dir einen glatten, geschmeidigen Look wünschst, dann hilft dir unsere Haarmaske Frizz und Spliss vorzubeugen.<br/>Du kannst es sogar für Haarverlängerungen verwenden, da es sulfatfrei ist und sie nicht austrocknet.',
                 },
                 {
-                    title: 'Wie funktioniert das Super Pflegende Shampoo & Conditioner Duo ?',
+                    title: 'Wie funktioniert das Super Pflegende Shampoo & Conditioner Duo?',
                     text: "Unser Shampoo verleiht dir das sauberste Haar aller Zeiten, dank einer sulfatfreien Dreifach-Reinigungsformel mit Waschnüssen, Fruchtenzymen und Kokosnussöl, um deine Locken gründlich zu waschen, ohne das Haar zu stark auszutrocknen. Avocado & ResistHyal™-Technologie; eine leistungsstarke Mischung aus Hyaluronsäure zur Erhöhung der Feuchtigkeit um 51% für mehr Weichheit, Geschmeidigkeit und Glanz.<br/><br/> Unser Conditioner liefert sofort haarmaskenähnliche Ergebnisse mit seiner reichhaltigen Formel, die dreimal dicker ist als herkömmliche Conditioner. Dadurch dringt die Formel tief und schnell in die Strähnen ein und liefert eine silikonfreien Feuchtigkeitsboost durch die ResistHyal™-Technologie für 26x mehr Feuchtigkeit. Erhalte kräftigeres, längeres Haar mit einer Formel, die sofort entwirrt und weniger Haarbruch verursacht, während Erbsenproteine reparieren und Schäden um 65% reduzieren.",
                 },
                 {
-                    title: 'Wie oft sollte ich meine Haare mit dem Coco & Eve Super Pflegendem Shampoo & Conditioner Duo waschen ?',
+                    title: 'Wie oft sollte ich meine Haare mit dem Coco & Eve Super Pflegendem Shampoo & Conditioner Duo waschen?',
                     text: "Unser Shampoo kann täglich zur Reinigung und Pflege verwendet werden. Wir empfehlen, unseren Conditioner 3-4 mal wöchentlich zu verwenden.",
                 },
             ],
@@ -137,19 +137,19 @@ const _content = {
             heading: 'Your questions – answered',
             items: [
                 {
-                    title: 'Which Sunny Honey color should I go for ?',
+                    title: 'Which Sunny Honey color should I go for?',
                     text: 'Sunny Honey Self-Tan aims to get you a natural finish! So when choosing which colour to go for, consider what skin tone you are naturally and how dark you would like to go.<br/> Medium self-tan gives skin a sun-kissed glow. Great for lighter skin tones!<br/>Dark self-tan for a back from vacay bronze. Ideal for medium skin tones!<br/>Ultra Dark for a deep, rich tan. For deeper skin tones!<br/><br/>Check out REAL Reviews <a href="https://www.cocoandeve.com/pages/reviews">here</a>.',
                 },
                 {
-                    title: 'How do I apply the Sunny Honey Bali Bronzing Foam ?',
+                    title: 'How do I apply the Sunny Honey Bali Bronzing Foam?',
                     text: '1. Remove unwanted hair and exfoliate thoroughly (ideally 6-24 hours before.)<br />2. Apply to dry skin, free from moisturisers.<br />3. Use Mitt & Brush to apply to tricky areas like the feet, hands, face & ears.<br />4. Use the Back Tan Applicator to apply the tan evenly across your back.<br />5. Allow to develop for a minimum of 2 hours or overnight for a deeper tan.<br />6. Shower in warm water to remove the guide colour and pat skin dry.<br />7. Repeat every 5-7 days or when needed. Moisturise daily to maintain results.',
                 },
                 {
-                    title: 'How often should I self-tan ?',
+                    title: 'How often should I self-tan?',
                     text: "It's completely up to you! When you have decided to re-tan, we recommend removing all of the previous tans and thoroughly exfoliating to get the best results. Tanning at least once a week will ensure you are bronzed beautifully all year round! ",
                 },
                 {
-                    title: 'Can I use Sunny Honey on sensitive skin ?',
+                    title: 'Can I use Sunny Honey on sensitive skin?',
                     text: 'Yes, our formula is perfect for all skin types including sensitive skin. It is nourishing, hydrating and contains ingredients that will not clog pores and cause breakouts. <br />We do advise doing a skin patch test before applying a full body tan. If the skin patch test shows no negative signs, it is safe to use a full-body tan.<br />Avoid applying the tan to areas with broken skin or skin which is showing signs of aggravation. ',
                 },
             ],
@@ -179,19 +179,19 @@ const _content = {
             heading: 'Deine Fragen – beantwortet',
             items: [
                 {
-                    title: 'Welche Sunny Honey Nuance soll ich auswählen ?',
+                    title: 'Welche Sunny Honey Nuance soll ich auswählen?',
                     text: "Sunny Honey Selbstbräuner zielt darauf ab, dir einen natürlichen Finish zu verleihen! Berücksichtige also bei der Auswahl der Nuance, welchen Hautton du von Natur aus hast und wie dunkel du werden möchtest.<br />Der Selbstbräuner in Medium verleiht der Haut einen sonnengeküssten Glow. Super für hellere Hauttöne!<br />Der Selbstbräuner in Dark schenkt dir eine perfekte Urlaubsbräune. Ideal für mittlere Hauttöne!<br />Der Selbstbräuner in Ultra Dark ist für eine tiefe, satte Bräune. Für dunklere Hauttöne!<br /><br />ECHTE Bewertungen findest du <a href='https://www.cocoandeve.com/pages/reviews'>hier</a>.",
                 },
                 {
-                    title: 'Wie trage ich die Sunny Honey Selbstbräuner Mousse auf ?',
+                    title: 'Wie trage ich die Sunny Honey Selbstbräuner Mousse auf?',
                     text: '1. Entferne unerwünschte Haare und peele dich gründlich (idealerweise 6-24 Stunden vorher.)<br />2. Auf die trockene, eingecremte Haut auftragen.<br />3. Verwende Bräunungshandschuh & Pinsel zum Auftragen auf schwierige Bereiche wie Füße, Hände, Gesicht und Ohren.<br/>4. Verwende den Bräunungsapplikator für den Rücken, um die Bräune gleichmäßig auf deinen Rücken aufzutragen.<br/>5. Für eine tiefere Bräune mindestens 2 Stunden oder über Nacht einwirken lassen.<br/>6. Dusche in warmem Wasser, um die Führungsfarbe zu entfernen und tupfe deine Haut trocken.<br/>7. Alle 5-7 Tage oder bei Bedarf wiederholen. Täglich eincremen, um die Ergebnisse aufrechtzuerhalten.',
                 },
                 {
-                    title: 'Wie oft sollte ich mich selbstbräunen ?',
+                    title: 'Wie oft sollte ich mich selbstbräunen?',
                     text: "Es liegt ganz bei dir! Wenn du dich für eine erneute Bräunung entschieden hast, empfehlen wir den vorherigen Selbstbräuner zu entfernen und ein gründliches Peeling durchzuführen, um die besten Ergebnisse zu erzielen. Bräune dich mindestens einmal pro Woche, wenn du sicherstellen willst, dass du das ganze Jahr über schön gebräunt bist!",
                 },
                 {
-                    title: 'Kann ich Sunny Honey auf empfindlicher Haut verwenden ?',
+                    title: 'Kann ich Sunny Honey auf empfindlicher Haut verwenden?',
                     text: "Ja, unsere Formel ist perfekt für alle Hauttypen, einschließlich empfindlicher Haut. Sie ist nährend, feuchtigkeitsspendend und enthält Inhaltsstoffe, die die Poren nicht verstopfen und Unreinheiten verursachen.<br/>Wir empfehlen, vor dem Auftragen einer Ganzkörperbräune einen Hautverträglichkeitstest durchzuführen. Wenn der Hautverträglichkeitstest keine negativen Anzeichen zeigt, ist es sicher, eine Ganzkörperbräune zu verwenden.<br/>Vermeide es, die Bräune auf Bereiche mit verletzter Haut oder auf Haut aufzutragen, die Anzeichen einer Reizung zeigt.",
                 },
             ],
@@ -202,11 +202,11 @@ const _content = {
             heading: 'Your questions - answered',
             items: [
                 {
-                    title: 'How often should I use each product ?',
+                    title: 'How often should I use each product?',
                     text: '<p><b>Shampoo & Conditioner</b>: There’s no set amount of times you should wash your hair but we generally recommend washing your hair 3-5 times a week or as needed. Depending on your hair type, wash less if you have dry hair and more for oily hair.<br/><b>Hair Masque</b>: For dry hair, use 2-3 times a week. For normal hair, use 1-2 times a week. For oily hair just once a week and focus the product towards the ends of the hair and avoid the scalp!</p>',
                 },
                 {
-                    title: 'Can I use the shampoo for bleached/damaged hair ?',
+                    title: 'Can I use the shampoo for bleached/damaged hair?',
                     text: '<p>Yes, our shampoo is suitable for all hair types. It’s formulated to hydrate, strengthen and soften hair and to replenish hair with moisture from the inside out strengthening, preventing breakage whilst boosting vibrancy of hair color.</p>',
                 },
                 {
@@ -223,19 +223,19 @@ const _content = {
             heading: 'Vos questions - réponses',
             items: [
                 {
-                    title: 'À quelle fréquence dois-je utiliser chaque produit?',
+                    title: 'À quelle fréquence dois-je utiliser chaque produit ?',
                     text: "<p><b>Shampoing et Après-shampooing</b>: Il n'y a pas de nombre de fois défini pour se laver les cheveux, mais nous recommandons généralement de se laver les cheveux 3 à 5 fois par semaine ou selon tes besoins. Selon ton type de cheveux, lave les moins souvent si tu as les cheveux secs, et plus souvent s' ils sont gras.<br/><b>Puis-je utiliser le shampooing pour les cheveux décolorés / abîmés?</b> Oui, notre shampooing convient à tous les types de cheveux. Il est formulé pour hydrater, renforcer, adoucir et empêcher la casse des cheveux tout en stimulant la vivacité de la couleur.<br/><b>Est-ce que je peux dormir avec le masque sur les cheveux?</b> Tout à fait! Si tu penses que tes cheveux sont particulièrement secs essaie de dormir avec notre masque cheveux. Applique SIMPLEMENT le masque à la fin de ta douche (ou sur cheveux secs) et recouvre tes cheveux avec un bonnet de douche ou notre serviette turban en microfibres. Rince le lendemain matin et tu auras des cheveux tout doux !<br/><b>Le masque peut-il être utilisé sur des cheveux lissés/teints chimiquement?</b> Oui! Ce masque aide à réparer les cheveux abîmés par les teintures, la chaleur, les coiffures et les produits chimiques. Il aura un effet nourrissant et fortifiant.</p>",
                 },
                 {
-                    title: 'Puis-je utiliser le shampooing pour les cheveux décolorés / abîmés?',
+                    title: 'Puis-je utiliser le shampooing pour les cheveux décolorés / abîmés ?',
                     text: "<p>Oui, notre shampooing convient à tous les types de cheveux. Il est formulé pour hydrater, renforcer, adoucir et empêcher la casse des cheveux tout en stimulant la vivacité de la couleur.</p>",
                 },
                 {
-                    title: "Est-ce que je peux dormir avec le masque sur les cheveux?",
+                    title: "Est-ce que je peux dormir avec le masque sur les cheveux ?",
                     text: "<p>Tout à fait! Si tu penses que tes cheveux sont particulièrement secs essaie de dormir avec notre masque cheveux. Applique SIMPLEMENT le masque à la fin de ta douche (ou sur cheveux secs) et recouvre tes cheveux avec un bonnet de douche ou notre serviette turban en microfibres. Rince le lendemain matin et tu auras des cheveux tout doux!</p>",
                 },
                 {
-                    title: 'Le masque peut-il être utilisé sur des cheveux lissés/teints chimiquement?',
+                    title: 'Le masque peut-il être utilisé sur des cheveux lissés/teints chimiquement ?',
                     text: "<p>Oui! Ce masque aide à réparer les cheveux abîmés par les teintures, la chaleur, les coiffures et les produits chimiques. Il aura un effet nourrissant et fortifiant.</p>",
                 },
             ],
@@ -284,15 +284,15 @@ const _content = {
             heading: 'Vos questions - réponses',
             items: [
                 {
-                    title: 'Sur quels types de cheveux peut-on utiliser le masque capillaire?',
+                    title: 'Sur quels types de cheveux peut-on utiliser le masque capillaire ?',
                     text: "<p>Notre gamme Sweet Repair est conçue pour cibler les cheveux abîmés, secs et fragilisés, sujets aux cassures. Elle peut être utilisée par des personnes dont les cheveux sont endommagés, ou pour les moments où les cheveux sont plus secs et facilement cassants, nécessitant un traitement réparateur plus intensif, par exemple en raison de dommages chimiques ou thermiques (colorations fréquentes, coiffures, lissage, séchage à haute température, exposition excessive au soleil, etc). Pour les moments quotidiens, les personnes ayant des cheveux normaux ou moins abîmés peuvent utiliser notre masque Like a Virgin qui restaure également l'hydratation et lisse les cheveux pour faciliter leur manipulation quotidienne. </p>",
                 },
                 {
-                    title: 'Comment fonctionne le masque capillaire Sweet Repair?',
+                    title: 'Comment fonctionne le masque capillaire Sweet Repair ?',
                     text: "<p>Le masque Sweet Repair est conçu pour cibler les cheveux endommagés, secs et fragilisés, ou sujets à la casse. Nous te recommandons vivement de l'essayer si tu as des cheveux très abîmés, ou bien pendant les périodes où tes cheveux sont fragilisés ! Notre masque fonctionne aussi incroyablement bien sur les cheveux secs et facilement cassants, nécessitant un traitement réparateur intensif en raison de dommages chimiques ou thermiques (par exemple, des colorations fréquentes, un coiffage fréquent, le lissage des cheveux, le séchage à haute température, une exposition excessive au soleil, etc...). <br/>Voici notre formule magique, une mélange puissant d'ingrédients actifs pour réparer tes cheveux en profondeur :<br><br><b>Céramides biomimétiques</b> - Renforcent et lissent la fibre capillaire grâce à l'intégration de lipides.<br/><b>Complexe de kératine vegan</b> - Une chaîne d'acides aminés d'origine végétale qui reproduit les performances de la kératine pour donner aux cheveux beaucoup plus de force et d'élasticité.<br/><b>Acide hyaluronique</b> - un ingrédient bio-actif qui apporte hydratation, souplesse et douceur, en resserrant les cellules de la cuticule du cheveu, ce qui donne volume et brillance, tout en évitant les frisottis. <br/><b>Des fruits venus tout droit de Bali</b> (banane, avocat, goyave, ramboutan et notre célèbre noix de coco) - tous chargés de minéraux, de nutriments, d'acides aminés et d'antioxydants.</p>",
                 },
                 {
-                    title: "Comment dois-je appliquer le masque capillaire?",
+                    title: "Comment dois-je appliquer le masque capillaire ?",
                     text: "<p>1. Lave tes cheveux normalement, en utilisant idéalement un shampoing sans sulfates.<br/>2. Répartit uniformément une quantité généreuse de produit sur tes cheveux essorés et peigne-les.<br/>3. Laisse le masque agir pendant 5 minutes puis rince à l'eau tiède.<br/>4. Cheveux secs : 2 à 3 fois par semaine<br/><span style='margin-left:1.15em;'>Cheveux normaux : 1 à 2 fois par semaine</span><br/><span style='margin-left:1.15em;'>Cheveux gras : une fois par semaine</span></p>",
                 },
             ],
@@ -341,19 +341,19 @@ const _content = {
             heading: 'Vos questions - réponses',
             items: [
                 {
-                    title: 'À quelle fréquence faut-il utiliser le shampoing?',
-                    text: '<p>Il n`y a pas de fréquence précise pour laver tes cheveux. Nous recommandons en général de les laver entre 3 et 5 fois par semaine selon tes besoins. Cela dépend du type de cheveux, lave-les moins souvent s`ils sont secs et plus souvent s`ils sont gras.</p>',
+                    title: 'À quelle fréquence faut-il utiliser le shampoing ?',
+                    text: "<p>Il n'y a pas de fréquence précise pour laver tes cheveux. Nous recommandons en général de les laver entre 3 et 5 fois par semaine selon tes besoins. Cela dépend du type de cheveux, lave-les moins souvent s'ils sont secs et plus souvent s'ils sont gras.</p>",
                 },
                 {
-                    title: 'Puis-je utiliser le shampooing sur les cheveux décolorés et/ou endommagés?',
-                    text: '<p>Oui, notre shampooing convient à tous types de cheveux. Sa formule hydrate, renforce et adoucit les cheveux. L`après-shampooing les revitalise en les hydratants de l`intérieur, il les renforce et évite les cassures tout en ravivant la couleur des cheveux.',
+                    title: 'Puis-je utiliser le shampooing sur les cheveux décolorés et/ou endommagés ?',
+                    text: "<p>Oui, notre shampooing convient à tous types de cheveux. Sa formule hydrate, renforce et adoucit les cheveux. L'après-shampooing les revitalise en les hydratants de l'intérieur, il les renforce et évite les cassures tout en ravivant la couleur des cheveux.",
                 },
                 {
-                    title: 'À quelle fréquence dois-je utiliser l`après-shampoing?',
+                    title: "À quelle fréquence dois-je utiliser l'après-shampoing ?",
                     text: "<p>Après chaque shampoing.</p>",
                 },
                 {
-                    title: 'Est-ce que je dois utiliser le masque hydratant après avoir utilisé l`après-shampoing?',
+                    title: "Est-ce que je dois utiliser le masque hydratant après avoir utilisé l'après-shampoing?",
                     text: "<p>Pour obtenir de meilleurs résultats, nous recommandons d'utiliser toute la gamme pour cheveux Like A Virgin. Utilise le scrub lavant purifiant et le masque capillaire plusieurs fois par semaine comme soins nettoyants et nourrissants intenses, et utilise notre élixir pour cheveux quotidiennement pour les protéger de la chaleur, les coiffer et pour maintenir un bon niveau d'hydratation dans ta chevelure.</p>",
                 },
             ],
@@ -406,19 +406,19 @@ const _content = {
             heading: 'Vos questions - réponses',
             items: [
                 {
-                    title: 'Comment appliquer le masque capillaire?',
+                    title: 'Comment appliquer le masque capillaire ?',
                     text: "<p>1. Shampouine tes cheveux comme d'habitude, en utilisant de préférence un shampoing sans sulfate.<br/>2. Répartis uniformément une quantité généreuse du soin sur tes cheveux préalablement séchés avec une serviette et brosse-les à l'aide de la brosse démêlante.<br/>3. Laisse agir pendant 5 à 10 minutes puis rince tes cheveux à l'eau chaude.<br/>4. Si tes cheveux sont secs, utilise ce soin 2 à 3 fois par semaine, si tes cheveux sont normaux, 1 à 2 fois par semaine et si tes cheveux sont gras, utilise-le seulement une fois par semaine en insistant sur les pointes et en évitant le cuir chevelu !</p>",
                 },
                 {
-                    title: 'Est-ce que je peux appliquer ce masque sur cheveux secs?',
+                    title: 'Est-ce que je peux appliquer ce masque sur cheveux secs ?',
                     text: "<p>Oui! Si tu veux consacrer un peu plus de temps au soin de tes cheveux, applique ton masque sur cheveux secs et laisse-les l'absorber pendant environ 20 minutes (tu peux le faire le dimanche matin avant de prendre ta douche !) ou pendant une nuit, si tes cheveux sont très secs.</p>",
                 },
                 {
-                    title: 'Est-ce que je peux dormir avec le masque sur les cheveux?',
+                    title: 'Est-ce que je peux dormir avec le masque sur les cheveux ?',
                     text: "<p>Tout à fait! Si tu penses que tes cheveux sont particulièrement secs, essaie de dormir avec notre masque capillaire. Applique SIMPLEMENT le masque à la fin de ta douche (ou sur cheveux secs) et recouvre tes cheveux avec un bonnet de douche ou une écharpe en soie qui ne craint rien. Rince le lendemain matin et tu auras des cheveux tout doux !</p>",
                 },
                 {
-                    title: 'Le masque peut-il être utilisé sur des cheveux lissés/teints chimiquement?',
+                    title: 'Le masque peut-il être utilisé sur des cheveux lissés/teints chimiquement ?',
                     text: "<p>Oui! Ce masque aide à réparer les cheveux abîmés par les teintures, la chaleur, les coiffures et les produits chimiques. Il aura un effet nourrissant et fortifiant.</p>",
                 },
             ],

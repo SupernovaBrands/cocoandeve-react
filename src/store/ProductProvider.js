@@ -72,7 +72,7 @@ const _content = {
                 {
                     type: 'swatch',
                     swatch: 'dark',
-                    text: 'Dark Shade - Pour un bronzage digne d`un retour de vacances. Parfait pour les teints médiums !',
+                    text: "Dark Shade - Pour un bronzage digne d'un retour de vacances. Parfait pour les teints médiums!",
                     class: 'dark',
                 },
                 {
@@ -276,8 +276,8 @@ const _content = {
             rating: '220',
             stars: '4.8',
             benefits: {
-                formula1: 'Un mélange puissant de principes actifs pour réparer les cheveux : les céramides biomimétiques, le complexe de kératine vegan et l`acide hyaluronique réduisent les dommages et réparent les cheveux affaiblis par la chaleur, les produits chimiques et les colorations.',
-                formula2: 'Cliniquement prouvé : améliore la résistance des cheveux de 85% et réduit les dommages jusqu`à 65%.',
+                formula1: "Un mélange puissant de principes actifs pour réparer les cheveux : les céramides biomimétiques, le complexe de kératine vegan et l'acide hyaluronique réduisent les dommages et réparent les cheveux affaiblis par la chaleur, les produits chimiques et les colorations.",
+                formula2: "Cliniquement prouvé : améliore la résistance des cheveux de 85% et réduit les dommages jusqu'à 65%.",
                 formula3: 'Les cheveux sont complètement régénérés et les cassures sont réparées dès la première utilisation pour des cheveux plus sains, plus lisses et plus doux.',
                 formula4: 'Formulé scientifiquement pour réparer et redonner vie à tes cheveux en seulement 5 minutes ! ',
             },
@@ -418,6 +418,8 @@ const _content = {
         us: {
             handle: 'super-nourishing-coconut-fig-hair-masque',
             price: '$39.90',
+            compareAtPrice: '',
+            saving: '',
             title1: '',
             title2: 'Like A Virgin Hair Masque',
             description: '1x Like a Virgin Hair Masque 7.2oz<br/>1x Tangle Tamer',
@@ -442,10 +444,10 @@ const _content = {
             rating: '7564',
             stars: '4.8',
             benefits: {
-                formula1: 'Hydrate et nourrit des longueurs jusqu`aux pointes. ',
+                formula1: "Hydrate et nourrit des longueurs jusqu'aux pointes.",
                 formula2: 'Transforme tes cheveux en seulement 10 minutes.',
                 formula3: 'Répare les cheveux secs et abimés. Prévient les fourches et dompte les frisottis. ',
-                formula4: 'Améliore la texture et redonne de l`éclat aux cheveux. ',
+                formula4: "Améliore la texture et redonne de l'éclat aux cheveux.",
             },
             asSeenin: 'Comme on peut le voir dans',
             atc: 'Ajouter au panier',
