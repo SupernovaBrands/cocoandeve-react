@@ -352,8 +352,8 @@ const SectionIRL = (props) => {
                     <IRLCard
                         name="@itshollylc"
                         caption={irlCtx.caption1}
-                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a487362b-b361-4df8-28e0-36a521557c00/400x"
-                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a487362b-b361-4df8-28e0-36a521557c00/400x"
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/960509a8-6a92-4c0c-e8b4-3cc10b6c6300/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/960509a8-6a92-4c0c-e8b4-3cc10b6c6300/400x"
                         handle={props.handle}
                     >
                         <p>{irlCtx.review1}</p>
@@ -391,8 +391,8 @@ const SectionIRL = (props) => {
                     <IRLCard
                         name="@llitvinovaa"
                         caption={irlCtx.caption4}
-                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a724bbe0-6572-4997-a9f4-f504053a4200/400x"
-                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7c4f5624-763f-46af-b37a-2ffcad792c00/400x"
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a487362b-b361-4df8-28e0-36a521557c00/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a487362b-b361-4df8-28e0-36a521557c00/400x"
                         handle={props.handle}
                     >
                         <p>{irlCtx.review4}</p>
