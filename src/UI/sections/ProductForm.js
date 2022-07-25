@@ -119,7 +119,12 @@ const ProductForm = (props) => {
                         <ReviewStar score={4.8} />
                         <span className='d-block yotpo-widget__total mt-lg-0 ms-lg-1 ms-1'><span className='d-none d-lg-inline-block'>4.8 stars</span> <a className="link-secondary text-underline" href={`${host}/products/${props.handle}#write-a-review`}>(220)</a></span>
                     </div>
-                    <p className="font-size-lg d-none d-lg-block order-lg-2" dangerouslySetInnerHTML={{ __html: description }}></p>
+                    {props.range === 'hair' ? (
+                        <p className="font-size-lg d-lg-block order-lg-2 mt-1 text-start" dangerouslySetInnerHTML={{ __html: description }}></p>
+                    ) : (
+                        <p className="font-size-lg d-none d-lg-block order-lg-2" dangerouslySetInnerHTML={{ __html: description }}></p>
+                    )}
+                    
                     <p className="my-1 order-lg-2 d-block">
                         {compareAtPrice !== '' && (<span className="text-linethrough mr-25 h2 d-inline-block mb-0 me-1">{compareAtPrice}</span>)}
                         <span className="mr-25 text-nowrap h2 d-inline-block mb-0">{price}</span>
@@ -155,7 +160,7 @@ const ProductForm = (props) => {
                             </div>
                     </div>
                     <hr className="mb-2 bg-primary-light-second mt-0 order-lg-2"/>
-                    <h2 className='d-block d-lg-none order-lg-2'>{props.range === 'tan' ? 'All you need for a perfect tan' : 'All you need for a perfect hair'}</h2>
+                    <h2 className='d-block d-lg-none order-lg-2'>{props.range === 'tan' ? 'All you need for a perfect tan' : 'All you need for perfect hair'}</h2>
                     <ul className="list-unstyled row mb-4 text-start order-lg-2">
                         {handle === 'sunny-honey-bali-bronzing-self-tan-set' ? (
                             <Fragment>
