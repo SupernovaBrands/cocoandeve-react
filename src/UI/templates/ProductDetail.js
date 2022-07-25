@@ -23,7 +23,9 @@ const ProductDetail = (props) => {
                         <CustomerReview range={props.range} handle={props.handle} />
                     </ ReviewProvider>
                 )}
-                <SeenIn handle={props.handle} />
+                <ReviewProvider>
+                <SeenIn handle={props.handle} range={props.range} />
+                </ReviewProvider>
                 <IRLProvider>
                     <SectionIRL range={props.range} handle={props.handle} />
                 </IRLProvider>
