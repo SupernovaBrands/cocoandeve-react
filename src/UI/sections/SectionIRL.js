@@ -405,12 +405,12 @@ const SectionIRL = (props) => {
                 content:
                     <IRLCard
                         name="@bilaldelpesche"
-                        caption={irlCtx.caption5}
+                        caption={irlCtx.caption1}
                         image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/eed416cb-2670-4167-838a-62fcf20efa00/400x"
                         comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ec0bbc04-5e4a-481b-6a8a-d3d96d118000/400x"
                         handle={props.handle}
                     >
-                        <p>{irlCtx.review5}</p>
+                        <p>{irlCtx.review1}</p>
                     </IRLCard>
             },
             {
@@ -418,12 +418,12 @@ const SectionIRL = (props) => {
                 content:
                     <IRLCard
                         name="@kaelatavares_"
-                        caption={irlCtx.caption6}
+                        caption={irlCtx.caption2}
                         image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae6a4377-05de-432f-d843-1db6d7e3c200/400x"
                         comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae6a4377-05de-432f-d843-1db6d7e3c200/400x"
                         handle={props.handle}
                     >
-                        <p>{irlCtx.review6}</p>
+                        <p>{irlCtx.review2}</p>
                     </IRLCard>
             },
             {
@@ -431,12 +431,12 @@ const SectionIRL = (props) => {
                 content:
                     <IRLCard
                         name="@zara.howey"
-                        caption={irlCtx.caption7}
+                        caption={irlCtx.caption3}
                         image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c866f6ed-affe-4025-7682-42d77c80a900/400x"
                         comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/fdcfcf9b-c7b8-4e6b-bb06-f527cdd00800/400x"
                         handle={props.handle}
                     >
-                        <p>{irlCtx.review7}</p>
+                        <p>{irlCtx.review3}</p>
                     </IRLCard>
             },
             {
@@ -444,12 +444,12 @@ const SectionIRL = (props) => {
                 content:
                     <IRLCard
                         name="@jasmine_lars"
-                        caption={irlCtx.caption8}
+                        caption={irlCtx.caption4}
                         image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5fbfa92b-05d7-4340-4fd5-cf7d9a6bdf00/400x"
                         comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1edca4dd-0bd1-48ab-ba08-de95aa161700/400x"
                         handle={props.handle}
                     >
-                        <p>{irlCtx.review8}</p>
+                        <p>{irlCtx.review4}</p>
                     </IRLCard>
             }
         ],
