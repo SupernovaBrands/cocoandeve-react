@@ -204,7 +204,7 @@ const irlReviews = {
     },
     "repairing-restoring-hair-mask": {
         us: {
-            title: 'Like A Virgin Results IRL',
+            title: 'Sweet Repair Results IRL',
             on: 'on',
             caption1: 'Sweet Repair Hair Mask',
             review1: 'Love this mask! Texture is a dream. I found it so nourishing my hair felt amazing after ❤️❤️',
