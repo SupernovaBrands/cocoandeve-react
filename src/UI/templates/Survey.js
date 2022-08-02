@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import '../../survey.scss';
 import Questions from "../../modules/questions";
 import QuestionBox from "../components/QuestionBox";
@@ -8,7 +8,7 @@ import SingleChoiceIcon from '../components/SingleChoiceIcon';
 import SingleChoiceImage from '../components/SingleChoiceImage';
 import EmailForm from '../components/EmailForm';
 import ResultContent from '../components/ResultContent';
-import { useResizeDetector } from 'react-resize-detector';
+// import { useResizeDetector } from 'react-resize-detector';
 
 import { setCookie, getCookie } from "../../modules/Utils";
 import ProductVariants from "../../modules/ProductVariants";
@@ -61,8 +61,8 @@ const Survey = () => {
     }
 
     // refference width and height
-    const targetRef = useRef();
-    const { width, height } = useResizeDetector({ targetRef });
+    // const targetRef = useRef();
+    // const { width, height } = useResizeDetector({ targetRef });
 
     // initial data
     let initialState = getCookie('surveyPosition') || 'start';
@@ -345,12 +345,12 @@ const Survey = () => {
         setPosition('question-1');
     }
 
-    useEffect(() => {
-        postIframeHeight('height', height);
-    }, [height]);
+    // useEffect(() => {
+    //     postIframeHeight('height', height);
+    // }, [height]);
 
     return (
-            <div ref={targetRef} className={`${currentPosition === 'start' ? 'cover' : ''} container container--survey`}>
+            <div className={`${currentPosition === 'start' ? 'cover' : ''} container container--survey`}>
                 <div className="row justify-content-center align-items-center survey-content">
                     { currentPosition === 'start' && (
                     <>
@@ -359,11 +359,11 @@ const Survey = () => {
                             <p className="mb-0">{Translations[lang].subheading}</p>
                             <button className="btn btn-primary text-white mt-4" onClick={() => startQuiz()}>{Translations[lang].btn.start}</button>
                         </div>
-                        <div className={`${height <= 535 ? 'pull-down' : ''} col-12 col-lg-5 offset-lg-1 survey-lp-image zindex-0`}>
+                        <div className="pull-down col-12 col-lg-5 offset-lg-1 survey-lp-image zindex-0">
                             <picture>
                                 <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" />
             					<source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b426a652-ee5d-4534-5039-4b10fe9a3200/828x" />
-                                <img className="w-100" loading={height <= 510 ? 'lazy' : ''} src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" alt="Tan Variants"/>
+                                <img className="w-100" loading='lazy' src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" alt="Tan Variants"/>
                             </picture>
                         </div>
                     </>) }
@@ -387,7 +387,7 @@ const Survey = () => {
                                                 switch(item.type) {
                                                 case 'MultipleChoice':
                                                     return (
-                                                        <QuestionBox lang={lang} currentAnswer={decodeAnswers(currentAnswer)} width={width} height={height} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="col-lg-10 offset-lg-1" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
+                                                        <QuestionBox lang={lang} currentAnswer={decodeAnswers(currentAnswer)} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="col-lg-10 offset-lg-1" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
                                                             <MultipleChoice answers={item.answers[lang]}
                                                                 lastFull={item.lastFull}
                                                                 maxChoose={item.maxChoose}
@@ -397,19 +397,19 @@ const Survey = () => {
                                                         );
                                                 case 'SingleChoiceIcon':
                                                     return (
-                                                        <QuestionBox lang={lang} currentAnswer={decodeAnswers(currentAnswer)} width={width} height={height} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
+                                                        <QuestionBox lang={lang} currentAnswer={decodeAnswers(currentAnswer)} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
                                                             <SingleChoiceIcon className='single-choice-icon' answers={item.answers[lang]} icons={item.icons} buttonType={item.buttonType}/>
                                                         </QuestionBox>
                                                     )
                                                 case 'SingleChoiceImage':
                                                     return (
-                                                        <QuestionBox lang={lang} currentAnswer={decodeAnswers(currentAnswer)} width={width} height={height} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
+                                                        <QuestionBox lang={lang} currentAnswer={decodeAnswers(currentAnswer)} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
                                                             <SingleChoiceImage className='single-choice-image' answers={item.answers[lang]} images={item.images}/>
                                                         </QuestionBox>
                                                     )
                                                 default:
                                                     return (
-                                                        <QuestionBox lang={lang} currentAnswer={decodeAnswers(currentAnswer)} width={width} height={height} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="col-lg-10 offset-lg-1" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
+                                                        <QuestionBox lang={lang} currentAnswer={decodeAnswers(currentAnswer)} totalQuestions={item.answers[lang].length} answerAction={answerAction} setCurrentQuestion={setQuestionState} currentQuestion={currentQuestion} key={key} colSize="col-lg-10 offset-lg-1" question={item.question[lang]} caption={item.caption ? item.caption[lang] : ''}>
                                                             <SingleChoice answers={item.answers[lang]} buttonType={item.buttonType}/>
                                                         </QuestionBox>
                                                         );
