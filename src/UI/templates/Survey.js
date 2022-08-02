@@ -359,7 +359,7 @@ const Survey = () => {
                             <p className="mb-0">{Translations[lang].subheading}</p>
                             <button className="btn btn-primary text-white mt-4" onClick={() => startQuiz()}>{Translations[lang].btn.start}</button>
                         </div>
-                        <div className="pull-down col-12 col-lg-5 offset-lg-1 survey-lp-image zindex-0">
+                        <div className="col-12 col-lg-5 offset-lg-1 survey-lp-image zindex-0">
                             <picture>
                                 <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" />
             					<source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b426a652-ee5d-4534-5039-4b10fe9a3200/828x" />
