@@ -216,7 +216,7 @@ const irlReviews = {
             review4: "An amazing hair mask to use in the summer for after-sun care and regular hydration upkeep for any type of hair. Its texture & smell are so joyful, and the packaging is a girl’s dream",
         },
         fr: {
-            title: 'Résultats de la gamme Like A Virgin',
+            title: 'Résultats Sweet Repair',
             on: 'sur',
             caption1: 'Masque Cheveux Sweet Repair',
             review1: 'J`adore ce masque ! La texture est incroyable. Il est très nourrissant et mes cheveux sont magnifiques après son utilisation ❤️❤️            ',
@@ -228,7 +228,7 @@ const irlReviews = {
             review4: "Un masque cheveux étonnant à utiliser en été comme soin après-soleil et pour une hydratation régulière de tous les types de cheveux. Sa texture et son odeur sont tellement agréables, et son packaging est un régal pour les yeux.",
         },
         de: {
-            title: 'Die echten Like A Virgin Ergebnisse ',
+            title: 'Sweet Repair Ergebnis IRL',
             on: 'auf',
             caption1: 'Sweet Repair Haarmaske',
             review1: 'Ich liebe diese Haarmaske! Die Textur ist ein Traum. Sie ist super pflegend und meine Haare fühlen sich nach der Anwendung fantastisch an ❤️❤',
