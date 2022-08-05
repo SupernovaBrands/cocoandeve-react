@@ -160,7 +160,15 @@ const ProductForm = (props) => {
                             </div>
                     </div>
                     <hr className="mb-2 bg-primary-light-second mt-0 order-lg-2"/>
-                    <h2 className='d-block d-lg-none order-lg-2'>{props.range === 'tan' ? 'All you need for a perfect tan' : 'All you need for perfect hair'}</h2>
+                    {activeStore === 'fr' && (
+                        <h2 className='d-block d-lg-none order-lg-2'>{props.range === 'tan' ? 'All you need for a perfect tan' : 'Tout ce dont tu as besoin pour des cheveux de rêve'}</h2>
+                    )}
+                    {activeStore === 'de' && (
+                        <h2 className='d-block d-lg-none order-lg-2'>{props.range === 'tan' ? 'All you need for a perfect tan' : 'Alles, was du für perfektes Haar brauchst'}</h2>
+                    )}
+                    {activeStore !== 'de' && activeStore !== 'fr' && (
+                        <h2 className='d-block d-lg-none order-lg-2'>{props.range === 'tan' ? 'All you need for a perfect tan' : 'All you need for perfect hair'}</h2>
+                    )}
                     <ul className="list-unstyled row mb-4 text-start order-lg-2">
                         {handle === 'sunny-honey-bali-bronzing-self-tan-set' ? (
                             <Fragment>
