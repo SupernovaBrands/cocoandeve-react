@@ -233,7 +233,7 @@ const irlReviews = {
             caption1: 'Sweet Repair Haarmaske',
             review1: 'Ich liebe diese Haarmaske! Die Textur ist ein Traum. Sie ist super pflegend und meine Haare fühlen sich nach der Anwendung fantastisch an ❤️❤',
             caption2: 'Sweet Repair Haarmaske',
-            review2: 'DIESE HAARMASKE HAT MEINE BESCHÄDIGTEN HAARE GERETTET! Ich blondiere meine Haare jetzt seit über einem Jahr und meine vorderen Strähnen waren so beschädigt, dass einige davon abfielen. Nichts ließ sie gesünder aussehen und pflegte mein Haar besser als diese Haarmaske!! Sie ist ein echter Lebensretter und ich möchte nichts anderes mehr verwenden, nachdem ich sie ausprobiert habe!',
+            review2: 'DIESE HAARMASKE HAT MEINE BESCHÄDIGTEN HAARE GERETTET! Ich blondiere meine Haare jetzt seit über einem Jahr und meine vorderen Strähnen waren so kaputt, dass einige davon abfielen. Nichts ließ sie gesünder aussehen und pflegte mein Haar besser als diese Haarmaske!! Sie ist ein echter Lebensretter und ich möchte jetzt nichts anderes mehr benutzen!',
             caption3: 'Sweet Repair Haarmaske',
             review3: 'Meine Haare fühlen sich so geschmeidig und glänzend an!! Liebe auch den Geruch, es ist definitiv meine neue Lieblingshaarmaske 😍',
             caption4: 'Sweet Repair Haarmaske',

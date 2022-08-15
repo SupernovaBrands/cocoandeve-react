@@ -268,7 +268,7 @@ const _content = {
             shades: []
         },
         fr: {
-            handle: 'deep-condition-bundle',
+            handle: 'repairing-restoring-hair-mask',
             price: '€34,90',
             title1: '',
             title2: 'Masque Cheveux Sweet Repair',
@@ -286,7 +286,7 @@ const _content = {
             shades: []
         },
         de: {
-            handle: 'deep-condition-bundle',
+            handle: 'repairing-restoring-hair-mask',
             price: '€34,90',
             title1: '',
             title2: 'Sweet Repair Haarmaske',
@@ -294,10 +294,10 @@ const _content = {
             rating: '220',
             stars: '4.8',
             benefits: {
-                formula1: 'Haarreparatur-Power-Mischung aus Wirkstoffen: Biomimetische Ceramide, veganer Keratin-Komplex und Hyaluronsäure reduzieren Haarschäden und reparieren geschwächtes Haar. ',
-                formula2: 'Klinisch erwiesen: Verbessert die Haarfestigkeit um 85% und reduziert Schäden um bis zu 65%.',
-                formula3: 'Das Haar wird vollständig wiederhergestellt und Risse werden ab der ersten Anwendung für gesünderes, glatteres und weicheres Haar repariert.',
-                formula4: 'Wissenschaftlich formuliert, um in nur 5 Minuten tiefgreifend zu reparieren und wiederherzustellen! ',
+                formula1: 'Wissenschaftlich entwickelt, um in nur 5 Minuten tiefgreifend zu reparieren und wiederherzustellen!',
+                formula2: 'Haarreparatur-Power-Formel mit aktiven Wirkstoffen: Biomimetische Ceramide, veganer Keratin-Komplex und Hyaluronsäure reduzieren Haarschäden und reparieren geschwächtes Haar.',
+                formula3: 'Das Haar wird vollständig wiederhergestellt und Risse werden ab der ersten Anwendung repariert: für gesünderes, glatteres und weicheres Haar.',
+                formula4: 'Klinisch erwiesen: Verbessert die Haarfestigkeit um 85% und reduziert Schäden um bis zu 65%.',
             },
             asSeenin: 'Empfohlen von',
             atc: 'Jetzt kaufen',
@@ -374,10 +374,10 @@ const _content = {
             rating: '1419',
             stars: '4.8',
             benefits: {
-                formula1: '26-mal mehr Feuchtigkeitspflege mit ResistHyalTM Hyaluronsäuren-Technologie & keine Silikone, die dem Haar Volumen entnehmen.',
+                formula1: '26-mal mehr Feuchtigkeitspflege mit ResistHyal™ Hyaluronsäuren-Technologie & keine Silikone, die dem Haar Volumen entnehmen.',
                 formula2: 'Dein Haar bleibt länger sauber & keine austrocknenden Sulfate.',
                 formula3: '7-in-1 Rezeptur für sofortige Feuchtigkeitspflege, Glanz, Geschmeidigkeit, Kraft und Volumen & kein Spliss oder Frizz.',
-                formula4: 'Beliebter Kokosnuss & Feigen Duft bringt dich ins Paradies.',
+                formula4: 'Unser Beliebter Duft aus Kokosnuss & Feige bringt dich ins Paradies.',
             },
             asSeenin: 'Empfohlen von',
             atc: 'Jetzt kaufen',
