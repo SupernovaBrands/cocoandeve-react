@@ -186,10 +186,10 @@ const _content = {
             rating: '1417',
             stars: '4.8',
             benefits: {
-                formula1: 'Après-Shampooing super Hydratant qui répare en profondeur pour des cheveux plus brillants, éclatants et lisses.',
-                formula2: 'Shampoing super hydratant qui hydrate et nettoie les cheveux sans décaper la couleur.',
+                formula1: 'Shampooing Super Hydratant qui hydrate et nettoie les cheveux sans abîmer les cheveux.',
+                formula2: 'Après-Shampooing Super Hydratant qui répare en profondeur pour des cheveux plus brillants, éclatants et lisses.',
                 formula3: 'Masque Super Nourrissant qui répare les cheveux de l’intérieur, améliorant la texture et la brillance dès le premier lavage.',
-                formula4: 'Parfum Signature Noix de Coco et Figue qui feront voyager tes cheveux au paradis !',
+                formula4: 'Parfum signature noix de coco et figue qui feront voyager tes cheveux au paradis !',
             },
             asSeenin: 'Comme on peut le voir dans',
             atc: 'Ajouter au panier',
