@@ -219,31 +219,37 @@ const _content = {
             price: 'RM316.00',
             compareAtPrice: 'RM395.00',
             saving: 'Save 20%',
+            description: '1x Super Hydrating Shampoo 250ml<br/>1x Super Hydrating Cream Conditioner 250ml<br/>1x Super Nourishing Hair Masque 212ml',
         },
         uk: {
             price: '£54.90',
             compareAtPrice: '£68.70',
             saving: 'Save 20%',
+            description: '1x Super Hydrating Shampoo 250ml<br/>1x Super Hydrating Cream Conditioner 250ml<br/>1x Super Nourishing Hair Masque 212ml',
         },
         ca: {
             price: '$97.30',
             compareAtPrice: '$121.70',
             saving: 'Save 20%',
+            description: '1x Super Hydrating Shampoo 250ml<br/>1x Super Hydrating Cream Conditioner 250ml<br/>1x Super Nourishing Hair Masque 212ml',
         },
         au: {
             price: '$103.70',
             compareAtPrice: '$129.70',
             saving: 'Save 20%',
+            description: '1x Super Hydrating Shampoo 250ml<br/>1x Super Hydrating Cream Conditioner 250ml<br/>1x Super Nourishing Hair Masque 212ml',
         },
         eu: {
             price: '€63,70',
             compareAtPrice: '€79,70',
             saving: 'Save 20%',
+            description: '1x Super Hydrating Shampoo 250ml<br/>1x Super Hydrating Cream Conditioner 250ml<br/>1x Super Nourishing Hair Masque 212ml',
         },
         int: {
             price: 'SG$102.90',
             compareAtPrice: 'SG$128.70',
             saving: 'Save 20%',
+            description: '1x Super Hydrating Shampoo 250ml<br/>1x Super Hydrating Cream Conditioner 250ml<br/>1x Super Nourishing Hair Masque 212ml',
         }
     },
     "repairing-restoring-hair-mask": {
@@ -305,21 +311,27 @@ const _content = {
         },
         my: {
             price: 'RM156.00',
+            description: '1x Sweet Repair Hair Mask 212ml<br/>',
         },
         uk: {
             price: '£30.90',
+            description: '1x Sweet Repair Hair Mask 212ml<br/>',
         },
         ca: {
             price: '$43.90',
+            description: '1x Sweet Repair Hair Mask 212ml<br/>',
         },
         au: {
             price: '$51.90',
+            description: '1x Sweet Repair Hair Mask 212ml<br/>',
         },
         eu: {
             price: '€34,90',
+            description: '1x Sweet Repair Hair Mask 212ml<br/>',
         },
         int: {
             price: 'SG$50.90',
+            description: '1x Sweet Repair Hair Mask 212ml<br/>',
         }
     },
     "shampoo-conditioner-set": {
@@ -346,7 +358,7 @@ const _content = {
         fr: {
             handle: 'shampoo-conditioner-set',
             price: '€38,00',
-            compareAtPrice: '€49,80',
+            compareAtPrice: '€38,00',
             saving: '24% de réduction',
             title1: '',
             title2: 'Shampooing et Après-Shampooing Super Hydratants',
@@ -366,7 +378,7 @@ const _content = {
         de: {
             handle: 'shampoo-conditioner-set',
             price: '€38,00',
-            compareAtPrice: '€49,80',
+            compareAtPrice: '€38,00',
             saving: 'Spare 24%',
             title1: '',
             title2: 'Super Pflegendes Shampoo & Conditioner Set',
@@ -386,32 +398,38 @@ const _content = {
         my: {
             price: 'RM184.00',
             compareAtPrice: 'RM226.00',
-            saving: '(Save 19%)',
+            saving: 'Save 19%',
+            description: '1x Super Hydrating Shampoo 250ml<br/>1x Super Hydrating Cream Conditioner 250ml',
         },
         uk: {
             price: '£34.00',
             compareAtPrice: '£45.80',
             saving: 'Save 26%',
+            description: '1x Super Hydrating Shampoo 250ml<br/>1x Super Hydrating Cream Conditioner 250ml',
         },
         ca: {
             price: '$53.00',
             compareAtPrice: '$65.80',
             saving: 'Save 19%',
+            description: '1x Super Hydrating Shampoo 250ml<br/>1x Super Hydrating Cream Conditioner 250ml',
         },
         au: {
             price: '$59.90',
             compareAtPrice: '$73.80',
             saving: 'Save 19%',
+            description: '1x Super Hydrating Shampoo 250ml<br/>1x Super Hydrating Cream Conditioner 250ml',
         },
         eu: {
             price: '€34,90',
-            compareAtPrice: '€49,80',
+            compareAtPrice: '€38,00',
             saving: 'Save 24%',
+            description: '1x Super Hydrating Shampoo 250ml<br/>1x Super Hydrating Cream Conditioner 250ml',
         },
         int: {
             price: 'SG$59.90',
             compareAtPrice: 'SG$73.80',
             saving: '19% de réduction',
+            description: '1x Super Hydrating Shampoo 250ml<br/>1x Super Hydrating Cream Conditioner 250ml',
         }
     },
     "super-nourishing-coconut-fig-hair-masque": {
@@ -473,21 +491,27 @@ const _content = {
         },
         my: {
             price: 'RM178.00',
+            description: '1x Like a Virgin Hair Masque 212ml<br/>1x Tangle Tamer',
         },
         uk: {
             price: '£32.90',
+            description: '1x Like a Virgin Hair Masque 212ml<br/>1x Tangle Tamer',
         },
         ca: {
             price: '$57.90',
+            description: '1x Like a Virgin Hair Masque 212ml<br/>1x Tangle Tamer',
         },
         au: {
             price: '57.90',
+            description: '1x Like a Virgin Hair Masque 212ml<br/>1x Tangle Tamer',
         },
         eu: {
             price: '€32,90',
+            description: '1x Like a Virgin Hair Masque 212ml<br/>1x Tangle Tamer',
         },
         int: {
             price: 'SG$57.90',
+            description: '1x Like a Virgin Hair Masque 212ml<br/>1x Tangle Tamer',
         }
     },
     default: {
