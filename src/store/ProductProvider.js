@@ -502,7 +502,7 @@ const _content = {
             description: '1x Like a Virgin Hair Masque 212ml<br/>1x Tangle Tamer',
         },
         au: {
-            price: '57.90',
+            price: '$57.90',
             description: '1x Like a Virgin Hair Masque 212ml<br/>1x Tangle Tamer',
         },
         eu: {
