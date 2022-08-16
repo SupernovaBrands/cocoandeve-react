@@ -358,7 +358,7 @@ const _content = {
         fr: {
             handle: 'shampoo-conditioner-set',
             price: '€38,00',
-            compareAtPrice: '€38,00',
+            compareAtPrice: '€49,80',
             saving: '24% de réduction',
             title1: '',
             title2: 'Shampooing et Après-Shampooing Super Hydratants',
@@ -378,7 +378,7 @@ const _content = {
         de: {
             handle: 'shampoo-conditioner-set',
             price: '€38,00',
-            compareAtPrice: '€38,00',
+            compareAtPrice: '€49,80',
             saving: 'Spare 24%',
             title1: '',
             title2: 'Super Pflegendes Shampoo & Conditioner Set',
@@ -420,8 +420,8 @@ const _content = {
             description: '1x Super Hydrating Shampoo 250ml<br/>1x Super Hydrating Cream Conditioner 250ml',
         },
         eu: {
-            price: '€34,90',
-            compareAtPrice: '€38,00',
+            price: '€38,00',
+            compareAtPrice: '€49,80',
             saving: 'Save 24%',
             description: '1x Super Hydrating Shampoo 250ml<br/>1x Super Hydrating Cream Conditioner 250ml',
         },
