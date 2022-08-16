@@ -18,15 +18,19 @@ const ProductDetail = (props) => {
         <ProductProvider>
             <ProductForm range={props.range} handle={props.handle} />
             <Suspense fallback={<div></div>}>
+                {props.handle !== 'repairing-restoring-hair-mask' && (
+                    <ReviewProvider>
+                        <CustomerReview range={props.range} handle={props.handle} />
+                    </ ReviewProvider>
+                )}
                 <ReviewProvider>
-                    <CustomerReview range={props.range} />
-                </ ReviewProvider>
-                <SeenIn handle={props.handle} />
+                <SeenIn handle={props.handle} range={props.range} />
+                </ReviewProvider>
                 <IRLProvider>
-                    <SectionIRL range={props.range} />
+                    <SectionIRL range={props.range} handle={props.handle} />
                 </IRLProvider>
                 <FaqProvider>
-                    <FaqAccordion range={props.range} />
+                    <FaqAccordion range={props.range} handle={props.handle} />
                 </FaqProvider>
             </Suspense>
         </ProductProvider>

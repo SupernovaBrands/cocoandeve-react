@@ -14,164 +14,507 @@ const SectionIRL = (props) => {
 	let activeStore = params.get('utm_store') || 'us';
 
 	const irlCtx = useContext(IRLContext);
-    irlCtx.storeChange(activeStore, props.range);
-
-    const CONTENT_TAN = [
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 active',
-            content:
-                <IRLCard
-                    name="@hughesyfit"
-                    caption={irlCtx.caption1}
-                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6dfe2acd-5388-48ff-3dd1-b2ed2b6cad00/200x"
-                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/13cb7403-0ef5-4216-3b94-e5ce95fbdc00/200x"
-                >
-                    <p>{irlCtx.review1}</p>
-
-                </IRLCard>
-        },
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
-            content:
-                <IRLCard
-                    name="@hannahtucker"
-                    caption={irlCtx.caption2}
-                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/14450439-ff6e-4fe2-0030-373f53899600/200x"
-                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/15647b0f-9340-41fb-4e09-f80692f0f800/200x"
-                >
-                    <p>{irlCtx.review2}</p>
-                </IRLCard>
-        },
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
-            content:
-                <IRLCard
-                    name="@orianavtorres"
-                    caption={irlCtx.caption3}
-                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7a518864-af70-46a1-6d76-8d8f43e1d100/200x"
-                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b734bbe7-e646-4ecf-d42e-5ee4c2c60300/200x"
-                >
-                    <p>{irlCtx.review3}</p>
-                </IRLCard>
-        },
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
-            content:
-                <IRLCard
-                    name="@jaydestella"
-                    caption={irlCtx.caption4}
-                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ed15f4ee-c1a7-4486-de95-81bf1b38c400/200x"
-                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/18084a86-e332-4463-03d3-292b438d6900/200x"
-                >
-                    <p>{irlCtx.review4}</p>
-                </IRLCard>
-        }
-    ]
-
-    const CONTENT_HAIR = [
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
-            content:
-                <IRLCard
-                    name="@thatcurlblog"
-                    caption={irlCtx.caption1}
-                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7fd80ee2-3a90-4835-6e85-e2552c85c500/400x"
-                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6d60ae9f-feab-48da-efc9-fad0bd41d100/400x"
-                >
-                    <p>{irlCtx.review1}</p>
-
-                </IRLCard>
-        },
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
-            content:
-                <IRLCard
-                    name="@mairaaiellohair"
-                    caption={irlCtx.caption2}
-                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e998a8b9-d0f4-43a0-3b99-eee55acc0300/400x"
-                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bddfa405-8940-4c07-6c7a-6d808ce03f00/400x"
-                >
-                    <p>{irlCtx.review2}</p>
-                </IRLCard>
-        },
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
-            content:
-                <IRLCard
-                    name="@lanasummer"
-                    caption={irlCtx.caption3}
-                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d6879fb3-f21e-41e7-13dc-d319a9d19000/400x"
-                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/15d98a3c-5e21-41f5-5720-6b5724d00e00/400x"
-                >
-                    <p>{irlCtx.review3}</p>
-                </IRLCard>
-        },
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
-            content:
-                <IRLCard
-                    name="@zainahussain"
-                    caption={irlCtx.caption4}
-                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a724bbe0-6572-4997-a9f4-f504053a4200/400x"
-                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7c4f5624-763f-46af-b37a-2ffcad792c00/400x"
-                >
-                    <p>{irlCtx.review4}</p>
-                </IRLCard>
-        },
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
-            content:
-                <IRLCard
-                    name="@bilaldelpesche"
-                    caption={irlCtx.caption5}
-                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/eed416cb-2670-4167-838a-62fcf20efa00/400x"
-                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ec0bbc04-5e4a-481b-6a8a-d3d96d118000/400x"
-                >
-                    <p>{irlCtx.review5}</p>
-                </IRLCard>
-        },
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
-            content:
-                <IRLCard
-                    name="@kaelatavares_"
-                    caption={irlCtx.caption6}
-                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae6a4377-05de-432f-d843-1db6d7e3c200/400x"
-                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae6a4377-05de-432f-d843-1db6d7e3c200/400x"
-                >
-                    <p>{irlCtx.review6}</p>
-                </IRLCard>
-        },
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
-            content:
-                <IRLCard
-                    name="@zara.howey"
-                    caption={irlCtx.caption7}
-                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c866f6ed-affe-4025-7682-42d77c80a900/400x"
-                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/fdcfcf9b-c7b8-4e6b-bb06-f527cdd00800/400x"
-                >
-                    <p>{irlCtx.review7}</p>
-                </IRLCard>
-        },
-        {
-            carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
-            content:
-                <IRLCard
-                    name="@jasmine_lars"
-                    caption={irlCtx.caption8}
-                    image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5fbfa92b-05d7-4340-4fd5-cf7d9a6bdf00/400x"
-                    comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1edca4dd-0bd1-48ab-ba08-de95aa161700/400x"
-                >
-                    <p>{irlCtx.review8}</p>
-                </IRLCard>
-        }
-    ]
-
-    let CONTENT = CONTENT_TAN;
-    if (props.range === 'hair') {
-        CONTENT = CONTENT_HAIR;
+    if (props.handle) {
+        irlCtx.storeChange(activeStore, props.handle);
+    } else {
+        irlCtx.storeChange(activeStore, props.range);
     }
+
+    const IRL_DATA = {
+        tan: [
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 active',
+                content:
+                    <IRLCard
+                        name="@hughesyfit"
+                        caption={irlCtx.caption1}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6dfe2acd-5388-48ff-3dd1-b2ed2b6cad00/200x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/13cb7403-0ef5-4216-3b94-e5ce95fbdc00/200x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review1}</p>
+    
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@hannahtucker"
+                        caption={irlCtx.caption2}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/14450439-ff6e-4fe2-0030-373f53899600/200x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/15647b0f-9340-41fb-4e09-f80692f0f800/200x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review2}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@orianavtorres"
+                        caption={irlCtx.caption3}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7a518864-af70-46a1-6d76-8d8f43e1d100/200x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b734bbe7-e646-4ecf-d42e-5ee4c2c60300/200x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review3}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@jaydestella"
+                        caption={irlCtx.caption4}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ed15f4ee-c1a7-4486-de95-81bf1b38c400/200x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/18084a86-e332-4463-03d3-292b438d6900/200x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review4}</p>
+                    </IRLCard>
+            }
+        ],
+        hair: [
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@thatcurlblog"
+                        caption={irlCtx.caption1}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7fd80ee2-3a90-4835-6e85-e2552c85c500/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6d60ae9f-feab-48da-efc9-fad0bd41d100/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review1}</p>
+    
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@mairaaiellohair"
+                        caption={irlCtx.caption2}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e998a8b9-d0f4-43a0-3b99-eee55acc0300/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bddfa405-8940-4c07-6c7a-6d808ce03f00/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review2}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@lanasummer"
+                        caption={irlCtx.caption3}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d6879fb3-f21e-41e7-13dc-d319a9d19000/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/15d98a3c-5e21-41f5-5720-6b5724d00e00/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review3}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@zainahussain"
+                        caption={irlCtx.caption4}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a724bbe0-6572-4997-a9f4-f504053a4200/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7c4f5624-763f-46af-b37a-2ffcad792c00/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review4}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@bilaldelpesche"
+                        caption={irlCtx.caption5}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/eed416cb-2670-4167-838a-62fcf20efa00/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ec0bbc04-5e4a-481b-6a8a-d3d96d118000/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review5}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@kaelatavares_"
+                        caption={irlCtx.caption6}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae6a4377-05de-432f-d843-1db6d7e3c200/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae6a4377-05de-432f-d843-1db6d7e3c200/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review6}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@zara.howey"
+                        caption={irlCtx.caption7}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c866f6ed-affe-4025-7682-42d77c80a900/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/fdcfcf9b-c7b8-4e6b-bb06-f527cdd00800/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review7}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@jasmine_lars"
+                        caption={irlCtx.caption8}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5fbfa92b-05d7-4340-4fd5-cf7d9a6bdf00/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1edca4dd-0bd1-48ab-ba08-de95aa161700/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review8}</p>
+                    </IRLCard>
+            }
+        ],
+        'sunny-honey-bali-bronzing-self-tan-set': [
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0 active',
+                content:
+                    <IRLCard
+                        name="@hughesyfit"
+                        caption={irlCtx.caption1}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6dfe2acd-5388-48ff-3dd1-b2ed2b6cad00/200x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/13cb7403-0ef5-4216-3b94-e5ce95fbdc00/200x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review1}</p>
+    
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@hannahtucker"
+                        caption={irlCtx.caption2}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/14450439-ff6e-4fe2-0030-373f53899600/200x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/15647b0f-9340-41fb-4e09-f80692f0f800/200x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review2}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@orianavtorres"
+                        caption={irlCtx.caption3}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7a518864-af70-46a1-6d76-8d8f43e1d100/200x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b734bbe7-e646-4ecf-d42e-5ee4c2c60300/200x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review3}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@jaydestella"
+                        caption={irlCtx.caption4}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ed15f4ee-c1a7-4486-de95-81bf1b38c400/200x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/18084a86-e332-4463-03d3-292b438d6900/200x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review4}</p>
+                    </IRLCard>
+            }
+        ],
+        "deep-condition-bundle": [
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@thatcurlblog"
+                        caption={irlCtx.caption1}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7fd80ee2-3a90-4835-6e85-e2552c85c500/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6d60ae9f-feab-48da-efc9-fad0bd41d100/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review1}</p>
+    
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@mairaaiellohair"
+                        caption={irlCtx.caption2}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e998a8b9-d0f4-43a0-3b99-eee55acc0300/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bddfa405-8940-4c07-6c7a-6d808ce03f00/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review2}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@lanasummer"
+                        caption={irlCtx.caption3}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d6879fb3-f21e-41e7-13dc-d319a9d19000/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/15d98a3c-5e21-41f5-5720-6b5724d00e00/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review3}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@zainahussain"
+                        caption={irlCtx.caption4}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a724bbe0-6572-4997-a9f4-f504053a4200/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7c4f5624-763f-46af-b37a-2ffcad792c00/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review4}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@bilaldelpesche"
+                        caption={irlCtx.caption5}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/eed416cb-2670-4167-838a-62fcf20efa00/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ec0bbc04-5e4a-481b-6a8a-d3d96d118000/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review5}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@kaelatavares_"
+                        caption={irlCtx.caption6}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae6a4377-05de-432f-d843-1db6d7e3c200/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae6a4377-05de-432f-d843-1db6d7e3c200/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review6}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@zara.howey"
+                        caption={irlCtx.caption7}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c866f6ed-affe-4025-7682-42d77c80a900/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/fdcfcf9b-c7b8-4e6b-bb06-f527cdd00800/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review7}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@jasmine_lars"
+                        caption={irlCtx.caption8}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5fbfa92b-05d7-4340-4fd5-cf7d9a6bdf00/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1edca4dd-0bd1-48ab-ba08-de95aa161700/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review8}</p>
+                    </IRLCard>
+            }
+        ],
+        "repairing-restoring-hair-mask": [
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@itshollylc"
+                        caption={irlCtx.caption1}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/960509a8-6a92-4c0c-e8b4-3cc10b6c6300/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/960509a8-6a92-4c0c-e8b4-3cc10b6c6300/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review1}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@monicarosemua"
+                        caption={irlCtx.caption2}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/303825ae-59a4-4452-3d5e-c590112e9a00/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/303825ae-59a4-4452-3d5e-c590112e9a00/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review2}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@valerie"
+                        caption={irlCtx.caption3}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/805bdce4-8380-405b-126f-7fd1cafd1b00/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/805bdce4-8380-405b-126f-7fd1cafd1b00/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review3}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@llitvinovaa"
+                        caption={irlCtx.caption4}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a487362b-b361-4df8-28e0-36a521557c00/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a487362b-b361-4df8-28e0-36a521557c00/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review4}</p>
+                    </IRLCard>
+            },
+        ],
+        "shampoo-conditioner-set": [
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@bilaldelpesche"
+                        caption={irlCtx.caption1}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/eed416cb-2670-4167-838a-62fcf20efa00/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ec0bbc04-5e4a-481b-6a8a-d3d96d118000/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review1}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@kaelatavares_"
+                        caption={irlCtx.caption2}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae6a4377-05de-432f-d843-1db6d7e3c200/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae6a4377-05de-432f-d843-1db6d7e3c200/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review2}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@zara.howey"
+                        caption={irlCtx.caption3}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c866f6ed-affe-4025-7682-42d77c80a900/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/fdcfcf9b-c7b8-4e6b-bb06-f527cdd00800/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review3}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@jasmine_lars"
+                        caption={irlCtx.caption4}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5fbfa92b-05d7-4340-4fd5-cf7d9a6bdf00/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1edca4dd-0bd1-48ab-ba08-de95aa161700/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review4}</p>
+                    </IRLCard>
+            }
+        ],
+        "super-nourishing-coconut-fig-hair-masque": [
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@thatcurlblog"
+                        caption={irlCtx.caption1}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7fd80ee2-3a90-4835-6e85-e2552c85c500/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6d60ae9f-feab-48da-efc9-fad0bd41d100/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review1}</p>
+    
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@mairaaiellohair"
+                        caption={irlCtx.caption2}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e998a8b9-d0f4-43a0-3b99-eee55acc0300/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bddfa405-8940-4c07-6c7a-6d808ce03f00/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review2}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@lanasummer"
+                        caption={irlCtx.caption3}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d6879fb3-f21e-41e7-13dc-d319a9d19000/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/15d98a3c-5e21-41f5-5720-6b5724d00e00/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review3}</p>
+                    </IRLCard>
+            },
+            {
+                carouselItemClass: 'carousel-item col-9 col-md-4 rounded px-0',
+                content:
+                    <IRLCard
+                        name="@zainahussain"
+                        caption={irlCtx.caption4}
+                        image="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a724bbe0-6572-4997-a9f4-f504053a4200/400x"
+                        comImage="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7c4f5624-763f-46af-b37a-2ffcad792c00/400x"
+                        handle={props.handle}
+                    >
+                        <p>{irlCtx.review4}</p>
+                    </IRLCard>
+            }
+        ]
+    }
+
+    let CONTENT = IRL_DATA[props.range];
+    if (props.handle) {
+        CONTENT = IRL_DATA[props.handle];
+    }
+    
 
 	return (
 		<section className='customer-reviews py-4'>

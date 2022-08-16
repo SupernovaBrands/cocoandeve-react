@@ -14,6 +14,7 @@ import { ReactComponent as FormulaList6 } from '../../assets/hair_icon_drop.svg'
 import { ReactComponent as FormulaList7 } from '../../assets/hair_icon_shield.svg';
 import { ReactComponent as FormulaList8 } from '../../assets/hair_icon_nourish.svg';
 import { ReactComponent as FormulaList9 } from '../../assets/hair_icon_signature.svg';
+import { ReactComponent as FormulaList10 } from '../../assets/hair_icon_pore.svg';
 
 const ProductForm = (props) => {
     let params = (new URL(document.location)).searchParams;
@@ -89,12 +90,15 @@ const ProductForm = (props) => {
         const mobileSwatchTrigger = document.querySelector('.product-swatch-mobile__trigger');
         if (mobileSwatchTrigger && mobileSwatch) {
             const observerCallback = (entries) => {
+                console.log('entries', entries)
                 entries.forEach((entry) => {
-                    if (window.innerWidth < 768) {
-                        if (entry.isIntersecting) {
-                            mobileSwatch.classList.remove('show');
-                        } else {
-                            mobileSwatch.classList.add('show');
+                    window.onscroll = function(ev) {
+                        if (window.innerWidth < 768) {
+                            if (entry.isIntersecting || (window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+                                mobileSwatch.classList.remove('show');
+                            } else {
+                                mobileSwatch.classList.add('show');
+                            }
                         }
                     }
                 });
@@ -113,13 +117,18 @@ const ProductForm = (props) => {
                     <h1 className="mb-1 mb-lg-2 order-lg-1">{ title2 }</h1>
                     <div className="d-flex mb-0 mb-lg-1 justify-content-center justify-content-lg-start order-lg-0">
                         <ReviewStar score={4.8} />
-                        <span className='d-block yotpo-widget__total mt-lg-0 ms-lg-1 ms-1'><span className='d-none d-lg-inline-block'>4.8 stars</span> <a className="link-secondary text-underline" href="https://www.cocoandeve.com/products/sunny-honey-bali-bronzing-self-tan-set#write-a-review">(220)</a></span>
+                        <span className='d-block yotpo-widget__total mt-lg-0 ms-lg-1 ms-1'><span className='d-none d-lg-inline-block'>4.8 stars</span> <a className="link-secondary text-underline" href={`${host}/products/${props.handle}#write-a-review`}>(220)</a></span>
                     </div>
-                    <p className="font-size-lg d-none d-lg-block order-lg-2" dangerouslySetInnerHTML={{ __html: description }}></p>
+                    {props.range === 'hair' ? (
+                        <p className="font-size-lg d-lg-block order-lg-2 mt-1 text-start" dangerouslySetInnerHTML={{ __html: description }}></p>
+                    ) : (
+                        <p className="font-size-lg d-none d-lg-block order-lg-2" dangerouslySetInnerHTML={{ __html: description }}></p>
+                    )}
+                    
                     <p className="my-1 order-lg-2 d-block">
-                        <span className="text-linethrough mr-25 text-muted h2 d-inline-block mb-0">{compareAtPrice}</span>
-                        <span className="mr-25 text-nowrap ms-1 h2 d-inline-block mb-0">{price}</span>
-                        <span className="text-primary text-nowrap text-save p-1 h2 fw-normal d-inline-block mb-0 py-0">({saving})</span>
+                        {compareAtPrice !== '' && (<span className="text-linethrough mr-25 h2 d-inline-block mb-0 me-1">{compareAtPrice}</span>)}
+                        <span className="mr-25 text-nowrap h2 d-inline-block mb-0">{price}</span>
+                        {saving !== '' && (<span className="text-primary text-nowrap text-save p-1 h2 fw-normal d-inline-block mb-0 py-0">({saving})</span>)}
                     </p>
                     {shades.length > 0 && (
                         <Fragment>
@@ -151,7 +160,15 @@ const ProductForm = (props) => {
                             </div>
                     </div>
                     <hr className="mb-2 bg-primary-light-second mt-0 order-lg-2"/>
-                    <h2 className='d-block d-lg-none order-lg-2'>All you need for a perfect tan</h2>
+                    {activeStore === 'fr' && (
+                        <h2 className='d-block d-lg-none order-lg-2'>{props.range === 'tan' ? 'All you need for a perfect tan' : 'Tout ce dont tu as besoin pour des cheveux de rêve'}</h2>
+                    )}
+                    {activeStore === 'de' && (
+                        <h2 className='d-block d-lg-none order-lg-2'>{props.range === 'tan' ? 'All you need for a perfect tan' : 'Alles, was du für perfektes Haar brauchst'}</h2>
+                    )}
+                    {activeStore !== 'de' && activeStore !== 'fr' && (
+                        <h2 className='d-block d-lg-none order-lg-2'>{props.range === 'tan' ? 'All you need for a perfect tan' : 'All you need for perfect hair'}</h2>
+                    )}
                     <ul className="list-unstyled row mb-4 text-start order-lg-2">
                         {handle === 'sunny-honey-bali-bronzing-self-tan-set' ? (
                             <Fragment>
@@ -190,10 +207,16 @@ const ProductForm = (props) => {
                                     <FormulaList8 className='me-g d-flex flex-shrink-0 justify-content-center' />
                                     {productCtx.benefits.formula3}
                                 </li>
+                                {handle === 'repairing-restoring-hair-mask' ? (
+                                <li className='col-12 d-flex align-items-center mb-2'>
+                                    <FormulaList10 className='me-g d-flex flex-shrink-0 justify-content-center' />
+                                    {productCtx.benefits.formula4}
+                                </li>
+                                ) : (
                                 <li className='col-12 d-flex align-items-center mb-2'>
                                     <FormulaList9 className='me-g d-flex flex-shrink-0 justify-content-center' />
                                     {productCtx.benefits.formula4}
-                                </li>
+                                </li>)}
                             </Fragment>
                         )}
                         
