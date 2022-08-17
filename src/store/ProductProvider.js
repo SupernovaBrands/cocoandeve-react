@@ -428,7 +428,7 @@ const _content = {
         int: {
             price: 'SG$59.90',
             compareAtPrice: 'SG$73.80',
-            saving: '19% de réduction',
+            saving: 'Save 19%',
             description: '1x Super Hydrating Shampoo 250ml<br/>1x Super Hydrating Cream Conditioner 250ml',
         }
     },

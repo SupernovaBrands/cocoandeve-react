@@ -47,7 +47,6 @@ const SingleChoiceImage = (props) => {
         return (e) => {
             const currentValue = e.target.value;
             const selected = selectedRangeIndex(currentValue);
-
             clearTimeout(timing);
             timing = setTimeout(() => {
                 setSelectedItem(answers[selected]);
@@ -65,10 +64,14 @@ const SingleChoiceImage = (props) => {
 
     const defaultSelected = currentAnswer && currentAnswer[currentQuestion] ? currentAnswer[currentQuestion] : null;
     const currentSlideValue = getCookie(`slide-question-${currentQuestion}`) ? getCookie(`slide-question-${currentQuestion}`) : defaultSelected ? getRangeNumber(answers.indexOf(defaultSelected)) : range;
-
     const [selectedItem, setSelectedItem] = useState(defaultSelected);
     const [currentSlide, setCurrentSlide] = useState(currentSlideValue);
 
+    setTimeout(() => {
+        answerAction(answers[0]);
+        setDisable(false);
+    });
+    
     useEffect(() => {
         if (currentSlide) setCookie(`slide-question-${currentQuestion}`, currentSlide);
         if (width && width > 992) {
