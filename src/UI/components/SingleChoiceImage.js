@@ -89,7 +89,7 @@ const SingleChoiceImage = (props) => {
                     return (
                         <div key={index} className='col-6 col-lg-3 px-1 pb-sm-2'>
                             <figure onClick={changeHandle(index)}>
-                                <picture className={`${item === selectedItem && width < 992 ? 'border border-5 border-primary' : ''} rounded rounded-circle d-block m-auto single-choice__image`}>
+                                <picture className={`${item === selectedItem && window.innerWidth < 992 ? 'border border-5 border-primary' : ''} rounded rounded-circle d-block m-auto single-choice__image`}>
                                     <source type="image/webp" srcSet={images[index].webp} />
                 					<source type="image/jpeg" srcSet={images[index].jpg} />
                                     <img src={`${images[index].webp}`} alt={item} className='d-block rounded rounded-circle w-100 p-0' loading="lazy"/>
