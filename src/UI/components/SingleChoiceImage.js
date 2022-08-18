@@ -62,13 +62,12 @@ const SingleChoiceImage = (props) => {
         return currentRange;
     }
 
-    const defaultSelected = currentAnswer && currentAnswer[currentQuestion] ? currentAnswer[currentQuestion] : null;
+    const defaultSelected = currentAnswer && currentAnswer[currentQuestion] ? currentAnswer[currentQuestion] : answers[0];
     const currentSlideValue = getCookie(`slide-question-${currentQuestion}`) ? getCookie(`slide-question-${currentQuestion}`) : defaultSelected ? getRangeNumber(answers.indexOf(defaultSelected)) : range;
     const [selectedItem, setSelectedItem] = useState(defaultSelected);
     const [currentSlide, setCurrentSlide] = useState(currentSlideValue);
-
     setTimeout(() => {
-        answerAction(answers[0]);
+        answerAction(defaultSelected);
         setDisable(false);
     });
     
