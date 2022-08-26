@@ -41,16 +41,6 @@ const ProductVariants = {
       "sku": "CE0000432030"
     },
     {
-      "id": 4630922559523,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001202020"
-    },
-    {
-      "id": 4630922559523,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001962020"
-    },
-    {
       "id": 4803978723363,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0001202020"
@@ -121,16 +111,6 @@ const ProductVariants = {
       "id": 4735725568054,
       "product_handle": "bronzing-self-tanner-drops",
       "sku": "CE0000432030"
-    },
-    {
-      "id": 4735725568054,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001202020"
-    },
-    {
-      "id": 4735725568054,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001962020"
     },
     {
       "id": 4733448945718,
@@ -205,16 +185,6 @@ const ProductVariants = {
       "sku": "CE0000432030"
     },
     {
-      "id": 4668753444917,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001202020"
-    },
-    {
-      "id": 4668753444917,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001962020"
-    },
-    {
       "id": 4849909563445,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0001202020"
@@ -265,16 +235,6 @@ const ProductVariants = {
       "id": 5748174848165,
       "product_handle": "bronzing-self-tanner-drops",
       "sku": "CE0000432030"
-    },
-    {
-      "id": 5748174848165,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001202020"
-    },
-    {
-      "id": 5748174848165,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001962020"
     },
     {
       "id": 5748175044773,
@@ -329,16 +289,6 @@ const ProductVariants = {
       "sku": "CE0000432030"
     },
     {
-      "id": 4735345885268,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001202020"
-    },
-    {
-      "id": 4735345885268,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001962020"
-    },
-    {
       "id": 4758303080532,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0001202020"
@@ -389,16 +339,6 @@ const ProductVariants = {
       "id": 6795584241848,
       "product_handle": "bronzing-self-tanner-drops",
       "sku": "CE0000432030"
-    },
-    {
-      "id": 6795584241848,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001202020"
-    },
-    {
-      "id": 6795584241848,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001962020"
     },
     {
       "id": 6795583717560,
@@ -453,16 +393,6 @@ const ProductVariants = {
       "sku": "CE0000432030"
     },
     {
-      "id": 4814015529069,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001202020"
-    },
-    {
-      "id": 4814015529069,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001962020"
-    },
-    {
       "id": 4812090867821,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0001202020"
@@ -513,16 +443,6 @@ const ProductVariants = {
       "id": 4834082979917,
       "product_handle": "bronzing-self-tanner-drops",
       "sku": "CE0000432030"
-    },
-    {
-      "id": 4834082979917,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001202020"
-    },
-    {
-      "id": 4834082979917,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001962020"
     },
     {
       "id": 4831011864653,
@@ -577,16 +497,6 @@ const ProductVariants = {
       "sku": "CE0000432030"
     },
     {
-      "id": 4803172827200,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001202020"
-    },
-    {
-      "id": 4803172827200,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001962020"
-    },
-    {
       "id": 4802587492416,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0001202020"
@@ -639,16 +549,6 @@ const ProductVariants = {
       "sku": "CE0000432030"
     },
     {
-      "id": 4803172827200,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001202020"
-    },
-    {
-      "id": 4803172827200,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001962020"
-    },
-    {
       "id": 4802587492416,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0001202020"
@@ -699,16 +599,6 @@ const ProductVariants = {
       "id": 6708374765641,
       "product_handle": "bronzing-self-tanner-drops",
       "sku": "CE0000432030"
-    },
-    {
-      "id": 6708374765641,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001202020"
-    },
-    {
-      "id": 6708374765641,
-      "product_handle": "bronzing-self-tanner-drops",
-      "sku": "CE0001962020"
     },
     {
       "id": 6708371652681,
