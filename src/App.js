@@ -11,10 +11,11 @@ const ProductDetail = lazy(() => import('./UI/templates/ProductDetail'));
 const TanRange = lazy(() => import('./UI/templates/TanRange'));
 const HairRange = lazy(() => import('./UI/templates/HairRange'));
 const Survey = lazy(() => import('./UI/templates/Survey'));
+const Sweepstakes = lazy(() => import('./UI/templates/Sweepstakes'));
 
 const App = () => {
-  const noHeader = () => window.location.pathname === '/customers-survey' || window.location.pathname === '/customers-survey/';
-  const noFooter = () => window.location.pathname === '/customers-survey' || window.location.pathname === '/customers-survey/';
+  const noHeader = () => window.location.pathname === '/customers-survey' || window.location.pathname === '/customers-survey/' || window.location.pathname.includes('blackfriday');
+  const noFooter = () => window.location.pathname === '/customers-survey' || window.location.pathname === '/customers-survey/' || window.location.pathname.includes('blackfriday');
 
   return (
     <Layout noFooter={noFooter()} noHeader={noHeader()}>
@@ -31,6 +32,7 @@ const App = () => {
           <Route path='/repairing-restoring-hair-mask' element={<ProductDetail handle="repairing-restoring-hair-mask" range="hair" />} />
           <Route path='/shampoo-conditioner-set' element={<ProductDetail handle="shampoo-conditioner-set" range="hair" />} />
           <Route path='/super-nourishing-coconut-fig-hair-masque' element={<ProductDetail handle="super-nourishing-coconut-fig-hair-masque" range="hair" />} />
+          <Route path='/blackfriday-sweepstakes' element={<Sweepstakes />} />
         </Routes>
       </Suspense>
     </Layout>

@@ -1,4 +1,22 @@
 import { useLayoutEffect, useState } from "react";
+import CryptoJS from 'crypto-js';
+import $ from 'jquery';
+
+const secrets = {
+	key: '2ab3fc92f6f75b39f96d2964d5ba92da',
+	vector: 'I8zyA4lVhMCaJ5Kg',
+};
+
+export const encryptParam = (content) => {
+	const encryptedMessage = {};
+	const code = CryptoJS.AES.encrypt(content, CryptoJS.enc.Utf8.parse(secrets.key), {
+		iv: CryptoJS.enc.Utf8.parse(secrets.vector),
+		mode: CryptoJS.mode.CBC,
+		padding: CryptoJS.pad.Pkcs7,
+	});
+	encryptedMessage.data = code.ciphertext.toString(CryptoJS.enc.Base64);
+	return encryptedMessage.data;
+};
 
 export const validateEmail = function (t) {
 	return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(String(t).toLowerCase());
@@ -97,4 +115,53 @@ export const decodeHtml = (html) => {
 	const txt = document.createElement('textarea');
 	txt.innerHTML = html;
 	return txt.value;
+};
+
+export const subscribeBluecoreRegistration = (
+	email,
+	phone,
+	country = '',
+	regSource = 'registration',
+) => {
+	const date = new Date();
+	const tse = date.getTime();
+	const content = `{email:'${email}',time:${tse}}`;
+	const signature = encryptParam(content);
+
+	const data = {
+		email,
+		country,
+		brand: 'cocoandeve',
+		domain: window.location.hostname,
+		phone: phone || '',
+		reg_source: regSource,
+		signature,
+	};
+
+	return $.post(`https://api.cocoandeve.com/bluecore/registrations.json`, data);
+};
+
+export const submitsToSmsBump = (phone, formId, countryLetterCode = null) => {
+	const country = countryLetterCode;
+	const phoneData = JSON.stringify({
+		country,
+		phone,
+		email: '',
+		form_id: formId,
+	});
+	return $.ajax({
+		url: 'https://api.smsbump.com/v2/formsPublic/subscribe',
+		method: 'POST',
+		cache: false,
+		data: phoneData,
+		contentType: 'application/json; charset=utf-8',
+		headers: { 'X-SMSBump-Platform': 'shopify' },
+		success(res) {
+			if (res.message) {
+				console.log(res.message);
+			} else {
+				console.log('smsbumperror');
+			}
+		},
+	});
 };

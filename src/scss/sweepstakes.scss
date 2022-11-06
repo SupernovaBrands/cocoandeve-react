@@ -1,25 +1,33 @@
-// [RangePage]
 @import '_core';
 
+@import 'bootstrap/common';
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/maps";
 @import "~bootstrap/scss/utilities";
 
+
 // Layout & components
+
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/buttons";
 @import "~bootstrap/scss/transitions";
-@import "~bootstrap/scss/carousel";
-@import "~bootstrap/scss/accordion";
+@import "~bootstrap/scss/forms";
 
 @import "~bootstrap/scss/utilities/api";
 
-@import '_core';
-@import 'common';
+@import 'core/fonts';
+@import 'core/type';
+@import 'core/grid';
+@import 'core/utilities';
 
-@import 'components/product-card.scss';
+@import 'components/svgs';
+@import 'components/forms';
 
-@import 'templates/range';
+@import 'sections/header';
+@import 'sections/footer';
+
+@import 'templates/sweepstakes.scss';
+
