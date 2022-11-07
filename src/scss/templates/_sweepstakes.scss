@@ -1,7 +1,7 @@
 
 .announcement-bar {
     &__timer {
-        background-color: black;
+        background-color: #0D0E09;
 
         ul {
             list-style: none;
@@ -40,11 +40,22 @@
             }
         }
     }
+    
 }
 
 .sweepstakes {
     min-height: 100vh;
     background-color: black;
+
+    &__logo {
+        svg {
+            width: 80px;
+
+            @include media-breakpoint-up(lg) {
+                width: 120px;
+            }
+        }
+    }
 
     &__wrapper {
         min-height: 87vh;
