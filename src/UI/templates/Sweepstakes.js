@@ -42,9 +42,10 @@ const Sweepstakes = () => {
     };
 
     const onCodeChange = (e) => {
-        setNumberCode(e.target.dataset.code.toString());
+        const phoneCode = $(e.target).find(`option[value='${e.target.value}']`).data('code');
+        setNumberCode(phoneCode);
         setLetterCode(e.target.value);
-        console.log('setNumberCode', numberCode, e.target);
+        
     };
 
     const onPhoneChange = (e) => {
