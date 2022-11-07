@@ -66,7 +66,8 @@ const Translations = {
             days: 'jours',
             hours: 'heures',
             minutes: 'minutes',
-            seconds: 'secondes'
+            seconds: 'secondes',
+            shopAll: 'Shop Coco &amp; Eve'
         }
     },
     de: {
@@ -109,7 +110,8 @@ const Translations = {
             days: 'Tagen',
             hours: 'Stunden',
             minutes: 'Minuten',
-            seconds: 'Sekunden'
+            seconds: 'Sekunden',
+            shopAll: 'Shop Coco &amp; Eve'
         }
     },
     ca: {
@@ -127,7 +129,8 @@ const Translations = {
             days: 'Hours',
             hours: 'Minutes',
             minutes: 'Minutes',
-            seconds: 'Seconds'
+            seconds: 'Seconds',
+            shopAll: 'Shop Coco &amp; Eve'
         }
     },
     us: {
@@ -145,7 +148,8 @@ const Translations = {
             days: 'Hours',
             hours: 'Minutes',
             minutes: 'Minutes',
-            seconds: 'Seconds'
+            seconds: 'Seconds',
+            shopAll: 'Shop Coco &amp; Eve'
         }
     },
     au: {
@@ -163,7 +167,8 @@ const Translations = {
             days: 'Hours',
             hours: 'Minutes',
             minutes: 'Minutes',
-            seconds: 'Seconds'
+            seconds: 'Seconds',
+            shopAll: 'Shop Coco &amp; Eve'
         }
     },
     eu: {
@@ -181,7 +186,8 @@ const Translations = {
             days: 'Hours',
             hours: 'Minutes',
             minutes: 'Minutes',
-            seconds: 'Seconds'
+            seconds: 'Seconds',
+            shopAll: 'Shop Coco &amp; Eve'
         }
     },
     uk: {
@@ -199,7 +205,8 @@ const Translations = {
             days: 'Hours',
             hours: 'Minutes',
             minutes: 'Minutes',
-            seconds: 'Seconds'
+            seconds: 'Seconds',
+            shopAll: 'Shop Coco &amp; Eve'
         }
     },
     ca: {
@@ -217,7 +224,8 @@ const Translations = {
             days: 'Hours',
             hours: 'Minutes',
             minutes: 'Minutes',
-            seconds: 'Seconds'
+            seconds: 'Seconds',
+            shopAll: 'Shop Coco &amp; Eve'
         }
     },  
     int: {
@@ -235,7 +243,8 @@ const Translations = {
             days: 'Hours',
             hours: 'Minutes',
             minutes: 'Minutes',
-            seconds: 'Seconds'
+            seconds: 'Seconds',
+            shopAll: 'Shop Coco &amp; Eve'
         }
     },  
     my: {
@@ -253,7 +262,8 @@ const Translations = {
             days: 'Hours',
             hours: 'Minutes',
             minutes: 'Minutes',
-            seconds: 'Seconds'
+            seconds: 'Seconds',
+            shopAll: 'Shop Coco &amp; Eve'
         }
     },  
 }
