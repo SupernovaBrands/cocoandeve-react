@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../../sweepstakes.scss';
 import Translations from '../../modules/translations';
 import timer from "../../modules/timer";
-import { validateEmail, subscribeBluecoreRegistration, submitsToSmsBump } from '../../modules/Utils';
+import { validateEmail, validatePhone, subscribeBluecoreRegistration, submitsToSmsBump } from '../../modules/Utils';
 import $ from 'jquery';
 import { ReactComponent as Logo } from '../../assets/ce-logo-white.svg';
 
@@ -45,13 +45,12 @@ const Sweepstakes = () => {
         const phoneCode = $(e.target).find(`option[value='${e.target.value}']`).data('code');
         setNumberCode(phoneCode);
         setLetterCode(e.target.value);
-        
     };
 
     const onPhoneChange = (e) => {
         setPhone(e.target.value);
-        setIsValidPhone(true);
-        console.log('phonecode', e.target.value);
+        setIsValidPhone(validatePhone(e.target.value));
+        console.log('phonecode', e.target.value, validatePhone(e.target.value));
     };
 
     const submitForm = (e) => {
@@ -109,16 +108,15 @@ const Sweepstakes = () => {
                         <div class="px-g col-lg-5 order-lg-1 my-lg-4 mt-n5">
                             {emailSubmitted || phoneSubmitted ? (
                                 <>
-                                <div class="sweepstakes__thank-you px-4 py-3 bg-white text-center rounded">
-                                    <h2 class="h1 text-secondary">{t.sweepstakes.ty_heading}</h2>
+                                <div class="sweepstakes__thank-you px-2 px-lg-4 py-3 bg-white text-center rounded"> 
+                                    <h2 class="h1 ">{t.sweepstakes.ty_heading}</h2>
                                     <p>{t.sweepstakes.ty_subHeading}</p>
-                                    <a href="https://www.cocoandeve.com" class="btn btn-lg btn-primary btn-block" dangerouslySetInnerHTML={{ __html: t.sweepstakes.shopAll}}></a>
                                 </div>
                                 <p class="font-size-xs text-gray-600 my-2 mb-lg-0 text-white" dangerouslySetInnerHTML={{ __html: t.sweepstakes.ty_note }}></p>
                                 </>
                             ) : (
-                                <form id="sweepstakes__form" class="sweepstakes__form px-4 py-3 bg-white text-center rounded"  onSubmit={submitForm}>
-                                    <h1 class="text-secondary">{t.sweepstakes.heading}</h1>
+                                <form id="sweepstakes__form" class="sweepstakes__form px-2 px-lg-4 py-3 bg-white text-center rounded"  onSubmit={submitForm}>
+                                    <h1 class="">{t.sweepstakes.heading}</h1>
                                     <p>{t.sweepstakes.subHeading}</p>
                                     
                                     <input type="email" className="form-control bg-light-gray border-0" placeholder={t.sweepstakes.emailPh} onChange={onEmailChange}/>
@@ -215,7 +213,7 @@ const Sweepstakes = () => {
                                     <p class="font-size-xs" dangerouslySetInnerHTML={{ __html: t.sweepstakes.toc }}></p>
                                     
                                     <div class="form-group">
-                                        <button id="sweepstakes__submit" type="submit" class={activeLang === 'fr' || activeLang === 'de' ? 'btn btn-lg btn-primary btn-block text-white px-2':'btn btn-lg btn-primary btn-block text-white'}>{t.sweepstakes.submit}</button>
+                                        <button disabled={!isValidEmail && !isValidPhone} id="sweepstakes__submit" type="submit" class={activeLang === 'fr' || activeLang === 'de' ? 'btn btn-lg btn-primary btn-block text-white px-2':'btn btn-lg btn-primary btn-block text-white'}>{t.sweepstakes.submit}</button>
                                     </div>
                                 </form>
                             )}

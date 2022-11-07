@@ -165,3 +165,5 @@ export const submitsToSmsBump = (phone, formId, countryLetterCode = null) => {
 		},
 	});
 };
+
+export const validatePhone = (phone) => /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s./0-9]*$/g.test(phone);
