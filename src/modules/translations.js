@@ -100,7 +100,8 @@ const Translations = {
             toc: 'By signing up you agree to receive exclusive offers via email/SMS, for more information see our <a href="/pages/privacy-policy-new">Privacy Policy</a>',
             ty_heading: 'You’re registered!',
             ty_subHeading: 'Stay tuned to receive your early access code on November 14!',
-            ty_note: '*Pre sale registration will run until November 13, 2022 21:00 EST. Coco & Eve reserves the right to cancel or alter any promotion without prior notice. In the event of any dispute, the decision of Coco & Eve is final. No purchase necessary to enter or win.'
+            ty_note: '*Pre sale registration will run until November 13, 2022 21:00 EST. Coco & Eve reserves the right to cancel or alter any promotion without prior notice. In the event of any dispute, the decision of Coco & Eve is final. No purchase necessary to enter or win.',
+            submit: 'Register now!'
         }
     },
     us: {
@@ -115,7 +116,33 @@ const Translations = {
             ty_note: '*Customers who sign up to our presale through SMS or email address will be given a chance to win up to $500 USD worth of products as well as $1000 salon services. Contest winners will be notified via SMS or email. Pre sale registration and contest will run until November 13, 2022 21:00 EST. Prizes cannot be used in conjunction with any other code, offer or promotion. Coco & Eve reserves the right to cancel or alter any promotion without prior notice. In the event of any dispute, the decision of Coco & Eve is final. No purchase necessary to enter or win. Each participant is only allowed one entry.',
             submit: 'Register now!'
         }
-    }
+    },
+    ca: {
+        sweepstakes: {
+            heading: 'Get early access to the biggest sale of the year! ',
+            subHeading: "Pre-register now, plus stand a chance to win $1000 of salon services and your Coco & Eve wishlist!",
+            emailPh: 'Email',
+            phonePh: 'Phone number',
+            toc: "By signing up you agree to receive exclusive offers via email/SMS, for more information see our <a href='/pages/privacy-policy-new'>Privacy Policy</a> ",
+            ty_heading: 'You’re registered!',
+            ty_subHeading: 'Stay tuned to receive your early access code on November 14, and find out if you’re a winner via email or SMS!',
+            ty_note: '*Customers who sign up to our presale through SMS or email address will be given a chance to win up to $500 USD worth of products as well as $1000 salon services. Contest winners will be notified via SMS or email. Pre sale registration and contest will run until November 13, 2022 21:00 EST. Prizes cannot be used in conjunction with any other code, offer or promotion. Coco & Eve reserves the right to cancel or alter any promotion without prior notice. In the event of any dispute, the decision of Coco & Eve is final. No purchase necessary to enter or win. Each participant is only allowed one entry. ',
+            submit: 'Register now!'
+        }
+    },  
+    int: {
+        sweepstakes: {
+            heading: 'Get early access to the biggest sale of the year! ',
+            subHeading: "Pre-register now, plus stand a chance to win $1000 of salon services and your Coco & Eve wishlist!",
+            emailPh: 'Email',
+            phonePh: 'Phone number',
+            toc: "By signing up you agree to receive exclusive offers via email/SMS, for more information see our <a href='/pages/privacy-policy-new'>Privacy Policy</a> ",
+            ty_heading: "You're registered!",
+            ty_subHeading: 'Stay tuned to receive your early access code on November 14, and find out if you’re a winner via email or SMS!',
+            ty_note: '*Customers who sign up to our presale through SMS or email address will be given a chance to win up to $500 USD worth of products as well as $1000 salon services. Contest winners will be notified via SMS or email. Pre sale registration and contest will run until November 13, 2022 21:00 EST. Prizes cannot be used in conjunction with any other code, offer or promotion. Coco & Eve reserves the right to cancel or alter any promotion without prior notice. In the event of any dispute, the decision of Coco & Eve is final. No purchase necessary to enter or win. Each participant is only allowed one entry. ',
+            submit: 'Register now!'
+        }
+    },  
 }
 
 export default Translations;
