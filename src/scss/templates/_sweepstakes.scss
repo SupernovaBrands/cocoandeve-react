@@ -59,12 +59,13 @@
 
     &__wrapper {
         min-height: 87vh;
-        padding: 50px 0;
+        padding: 10px 0;
         background-image: url('https://cdn.shopify.com/s/files/1/0286/1327/9779/files/mobile_bg.png?v=1667556038');
         background-repeat: no-repeat;
         background-size: 100%;
 
         @include media-breakpoint-up(lg) {
+            padding: 50px 0;
             background-image: url('https://cdn.shopify.com/s/files/1/0286/1327/9779/files/DT_bg.png?v=1667556041');
         }
     }
@@ -104,6 +105,11 @@
                 transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
                 opacity: 0;
             } 
+        }
+
+        .btn-primary[disabled] {
+            background-color: $light;
+            border-color: $light;
         }
     }
 }
