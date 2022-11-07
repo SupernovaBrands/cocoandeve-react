@@ -111,7 +111,7 @@ const Sweepstakes = () => {
                                 <div class="sweepstakes__thank-you px-4 py-3 bg-white text-center rounded">
                                     <h2 class="h1 text-secondary">{t.sweepstakes.ty_heading}</h2>
                                     <p>{t.sweepstakes.ty_subHeading}</p>
-                                    <a href="/" class="btn btn-lg btn-primary btn-block">Shop Coco &amp; Eve</a>
+                                    <a href="https://www.cocoandeve.com" class="btn btn-lg btn-primary btn-block">Shop Coco &amp; Eve</a>
                                 </div>
                             ) : (
                                 <form id="sweepstakes__form" class="sweepstakes__form px-4 py-3 bg-white text-center rounded"  onSubmit={submitForm}>
