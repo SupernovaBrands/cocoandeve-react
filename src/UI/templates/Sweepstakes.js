@@ -4,7 +4,7 @@ import Translations from '../../modules/translations';
 import timer from "../../modules/timer";
 import { validateEmail, subscribeBluecoreRegistration, submitsToSmsBump } from '../../modules/Utils';
 import $ from 'jquery';
-import { useSearchParams } from "react-router-dom";
+import { ReactComponent as Logo } from '../../assets/ce-logo-white.svg';
 
 const smsbumpIds = {
     us: { id: '137103', code: '1', letter: 'US' },
@@ -42,8 +42,9 @@ const Sweepstakes = () => {
     };
 
     const onCodeChange = (e) => {
-        setNumberCode(e.target.dataset.code);
+        setNumberCode(e.target.dataset.code.toString());
         setLetterCode(e.target.value);
+        console.log('setNumberCode', numberCode, e.target);
     };
 
     const onPhoneChange = (e) => {
@@ -72,7 +73,7 @@ const Sweepstakes = () => {
         }
     }
 
-    timer();
+    timer(activeLang);
 
     $.get('https://api.cocoandeve.com/geo', function(resp) {
         setCountry(resp.country_name);
@@ -83,7 +84,7 @@ const Sweepstakes = () => {
             <div class="announcement-bar announcement-bar__timer w-100 py-1">
                 <a href="https://www.cocoandeve.com/collections/all" class="text-decoration-none">
                     <div class="container text-center text-white d-flex align-items-center justify-content-between justify-content-lg-center">
-                        <span class="announcement-bar__timer__title d-block d-lg-inline me-lg-4 h2 mb-0 font-weight-normal">PRE REGISTRATION ENDS IN:</span>
+                        <span class="announcement-bar__timer__title d-block d-lg-inline me-lg-4 h2 mb-0 font-weight-normal">{t.sweepstakes.timerLabel}</span>
                         <ul class="list-inline mb-0 font-weight-bold d-none">
                             <li id="timerDays" class="list-inline-item position-relative me-2 h2 mb-0 font-weight-normal"></li>
                             <li id="timerHrs" class="list-inline-item position-relative me-2 h2 mb-0 font-weight-normal"></li>
@@ -93,6 +94,14 @@ const Sweepstakes = () => {
                     </div>
                 </a>
             </div>
+            <header className="container text-center sweepstakes__logo">
+                <nav className='navbar navbar-expand-lg p-1'>
+                    <a className='navbar-brand mx-auto text-secondary p-0' href='https://www.cocoandeve.com'>
+                    <span className='visually-hidden-focusable'>Coco &amp; Eve</span>
+                    <Logo />
+                    </a>
+                </nav>
+            </header>
             <div className='sweepstakes__wrapper d-flex align-items-center'>
                 <div id="waitlist-page" class="container px-0" data-page-type="Sweepstakes" data-form-id="#sweepstakes__form" data-email-form="#sweepstakes__email">
                     <div class="row m-0 align-items-center justify-content-end">
