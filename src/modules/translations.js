@@ -55,8 +55,8 @@ const Translations = {
         sweepstakes: {
             heading: 'Accède en avant-première aux plus grosses promotions de l’année !',
             subHeading: 'Préinscris-toi maintenant, et obtiens en plus une chance de gagner 1000$ de service de soins capillaires et ta wishlist Coco & Eve',
-            emailPh: 'Email',
-            phonePh: 'Phone number',
+            emailPh: 'Indique ton adresse e-mail',
+            phonePh: 'Numéro de téléphone',
             toc: "En t'inscrivant, tu acceptes de recevoir des offres exclusives par e-mail/SMS. Pour plus d'informations, consulte notre <a href='https://www.cocoandeve.com/pages/privacy-policy'>Politique de confidentialité</a>.",
             ty_heading: "Tu es inscrit !",
             ty_subHeading: "Reste à l'écoute pour recevoir ton code en avant-première le 14 novembre, et pour savoir si tu as gagné par e-mail ou sms",
