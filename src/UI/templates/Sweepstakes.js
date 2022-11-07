@@ -212,7 +212,7 @@ const Sweepstakes = () => {
                                     <p class="font-size-xs" dangerouslySetInnerHTML={{ __html: t.sweepstakes.toc }}></p>
                                     
                                     <div class="form-group">
-                                        <button id="sweepstakes__submit" type="submit" class="btn btn-lg btn-primary btn-block">{t.sweepstakes.submit}</button>
+                                        <button id="sweepstakes__submit" type="submit" class="btn btn-lg btn-primary btn-block text-white">{t.sweepstakes.submit}</button>
                                     </div>
                                 </form>
                             )}
