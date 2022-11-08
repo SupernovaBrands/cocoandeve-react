@@ -115,7 +115,7 @@ const Sweepstakes = () => {
                                 <p class="font-size-xs text-gray-600 my-2 mb-lg-0 text-white" dangerouslySetInnerHTML={{ __html: t.sweepstakes.ty_note }}></p>
                                 </>
                             ) : (
-                                <form id="sweepstakes__form" class="sweepstakes__form px-2 px-lg-4 py-3 bg-white text-center rounded"  onSubmit={submitForm}>
+                                <form class="sweepstakes__form px-2 px-lg-4 py-3 bg-white text-center rounded"  onSubmit={submitForm} id="sweepstakes-popup__form" reg-source="sweepstakes-popup" data-page="sweeptakes">
                                     <h1 class="">{t.sweepstakes.heading}</h1>
                                     <p>{t.sweepstakes.subHeading}</p>
                                     
