@@ -128,6 +128,9 @@ export const subscribeBluecoreRegistration = (
 	const content = `{email:'${email}',time:${tse}}`;
 	const signature = encryptParam(content);
 
+	const params = (new URL(document.location)).searchParams;
+	const store = params.get("utm_store") || 'us';
+
 	const data = {
 		email,
 		country,
@@ -136,6 +139,7 @@ export const subscribeBluecoreRegistration = (
 		phone: phone || '',
 		reg_source: regSource,
 		signature,
+		store
 	};
 
 	return $.post(`https://api.cocoandeve.com/bluecore/registrations.json`, data);
