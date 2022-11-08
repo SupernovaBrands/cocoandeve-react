@@ -196,7 +196,7 @@ const Translations = {
             subHeading: 'Pre-register now, plus stand a chance to win $1000 of salon services and your Coco & Eve wishlist!',
             emailPh: 'Email',
             phonePh: 'Phone number',
-            toc: 'By signing up you agree to receive exclusive offers via email or recurring automated marketing messages. For more info see our <a target="_blank" href="https://www.cocoandeve.com/pages/privacy-policy">Privacy Policy</a>. Message frequency varies. Msg & data rates may apply. Sign up not required for purchase.',
+            toc: 'By signing up you agree to receive exclusive offers via email/SMS, for more information see our <a href="https://www.cocoandeve.com/pages/privacy-policy-new">Privacy Policy</a>',
             ty_heading: 'You’re registered!',
             ty_subHeading: 'Stay tuned to receive your early access code on 14th November, and find out if you’re a winner via email or SMS!',
             ty_note: '*Customers who sign up to our presale through SMS or email address will be given a chance to win up to $500 USD worth of products as well as $1000 salon services. Contest winners will be notified via SMS or email. Pre sale registration and contest will run until November 13, 2022 21:00 EST. Prizes cannot be used in conjunction with any other code, offer or promotion. Coco & Eve reserves the right to cancel or alter any promotion without prior notice. In the event of any dispute, the decision of Coco & Eve is final. No purchase necessary to enter or win. Each participant is only allowed one entry.',
