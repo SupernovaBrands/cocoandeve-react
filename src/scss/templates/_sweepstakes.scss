@@ -60,13 +60,13 @@
     &__wrapper {
         min-height: 87vh;
         padding: 10px 0;
-        background-image: url('https://cdn.shopify.com/s/files/1/0286/1327/9779/files/mobile_bg.png?v=1667556038');
+        background-image: url('https://cdn.shopify.com/s/files/1/0286/1327/9779/files/LP_Mobile.jpg?v=1667872426');
         background-repeat: no-repeat;
         background-size: 100%;
 
         @include media-breakpoint-up(lg) {
             padding: 50px 0;
-            background-image: url('https://cdn.shopify.com/s/files/1/0286/1327/9779/files/DT_bg.png?v=1667556041');
+            background-image: url('https://cdn.shopify.com/s/files/1/0286/1327/9779/files/LP_Desktop.jpg?v=1667872426');
         }
     }
 
