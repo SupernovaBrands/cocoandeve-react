@@ -108,7 +108,7 @@ const Translations = {
             ty_subHeading: 'Stay tuned to receive your early access code on 14th November!',
             ty_note: '*Pre sale registration will run until November 13, 2022 21:00 EST. Coco & Eve reserves the right to cancel or alter any promotion without prior notice. In the event of any dispute, the decision of Coco & Eve is final. No purchase necessary to enter or win.',
             submit: 'Register now!',
-            timerLabel: 'PRE REGISTRATION ENDS IN:',
+            timerLabel: 'PRE REGISTRATION ENDS IN:',    
             days: 'Hours',
             hours: 'Minutes',
             minutes: 'Minutes',

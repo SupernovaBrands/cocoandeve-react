@@ -107,13 +107,10 @@ const Sweepstakes = () => {
                     <div class="row m-0 align-items-center justify-content-end">
                         <div class="px-g col-lg-5 order-lg-1 my-lg-4 mt-n5">
                             {emailSubmitted || phoneSubmitted ? (
-                                <>
                                 <div class="sweepstakes__thank-you px-2 px-lg-4 py-3 bg-white text-center rounded"> 
                                     <h2 class="h1 ">{t.sweepstakes.ty_heading}</h2>
                                     <p>{t.sweepstakes.ty_subHeading}</p>
                                 </div>
-                                <p class="font-size-xs text-gray-600 my-2 mb-lg-0 text-white" dangerouslySetInnerHTML={{ __html: t.sweepstakes.ty_note }}></p>
-                                </>
                             ) : (
                                 <form class="sweepstakes__form px-2 px-lg-4 py-3 bg-white text-center rounded"  onSubmit={submitForm} id="sweepstakes-popup__form" reg-source="sweepstakes-popup" data-page="sweeptakes">
                                     <h1 class="">{t.sweepstakes.heading}</h1>
@@ -217,6 +214,7 @@ const Sweepstakes = () => {
                                     </div>
                                 </form>
                             )}
+                            <p class="font-size-xs text-gray-600 my-2 mb-lg-0 text-white" dangerouslySetInnerHTML={{ __html: t.sweepstakes.ty_note }}></p>
                             <div className='social-icon d-flex justify-content-center mt-4'>
                                 <a class="mx-1" href="https://www.facebook.com/cocoandeve" target="_blank">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.3047 0H2.69532C1.20645 0 0 1.20645 0 2.69532V17.3047C0 18.7936 1.20645 20 2.69532 20H9.90023L9.91251 12.8526H8.05602C7.81504 12.8526 7.61857 12.6577 7.6178 12.4167L7.60936 10.1128C7.60783 9.8703 7.80429 9.67307 8.04681 9.67307H9.90023V7.44667C9.90023 4.86417 11.4781 3.45741 13.7828 3.45741H15.6738C15.9156 3.45741 16.1113 3.65311 16.1113 3.89563V5.83807C16.1113 6.07982 15.9156 6.27552 15.6738 6.27629H14.5134C13.2602 6.27629 13.0176 6.87184 13.0176 7.74598V9.67307H15.7713C16.0338 9.67307 16.2372 9.90254 16.2064 10.1627L15.9332 12.4666C15.9071 12.6869 15.7199 12.8526 15.4981 12.8526H13.0299L13.0176 20H17.3047C18.7928 20 20 18.7936 20 17.3047V2.69532C20 1.20645 18.7928 0 17.3047 0" fill="white"/></svg>
