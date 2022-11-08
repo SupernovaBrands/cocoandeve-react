@@ -23,7 +23,6 @@ const Sweepstakes = () => {
 	let lang = params.get("utm_store") || 'us';
     const activeLang = (['us', 'ca', 'au', 'uk', 'int', 'my', 'eu', 'de', 'fr'].indexOf(lang) !== -1) ? lang : 'us';
     const t =  Translations[activeLang];
-    console.log('store active:', activeLang);
 
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState(null);
