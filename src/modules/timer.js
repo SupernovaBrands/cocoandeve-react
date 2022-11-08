@@ -80,11 +80,11 @@ const initTimer = (activeLang) => {
         console.log('ready');
         // start & end from settings
         const startAt = getUtcTime('2022-10-29T17:02:00.000Z');
-        const endAt = getUtcTime('2022-12-03T17:00:00.000Z');
+        const endAt = getUtcTime('2022-11-14T10:00:00.000Z');
         const now = nowUtcTime();
         if (now > startAt && now < endAt) {
             $('.announcement-bar__timer').removeClass('d-none').addClass('d-block');
-            startCount('2022-12-03T17:00:00.000Z', activeLang);
+            startCount('2022-11-14T10:00:00.000Z', activeLang);
         } else {
             console.log('expired');
             $('.announcement-bar__timer').addClass('d-none');
