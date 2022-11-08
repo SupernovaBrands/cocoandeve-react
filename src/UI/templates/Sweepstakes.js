@@ -102,7 +102,7 @@ const Sweepstakes = () => {
                 </nav>
             </header>
             <div className='sweepstakes__wrapper d-flex align-items-lg-center'>
-                <div id="waitlist-page" class="container px-0" data-page-type="Sweepstakes" data-form-id="#sweepstakes__form" data-email-form="#sweepstakes__email">
+                <div id="waitlist-page" class="container px-0" data-page-type="Sweepstakes" data-form-id="#sweepstakes-popup__form" data-email-form="#sweepstakes-signup-popup__email">
                     <div class="row m-0 align-items-center justify-content-end">
                         <div class="px-g col-lg-5 order-lg-1 my-lg-4 mt-n5">
                             {emailSubmitted || phoneSubmitted ? (
