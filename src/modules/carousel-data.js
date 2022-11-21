@@ -332,8 +332,8 @@ const PRODUCTS_HAIR_3 = [
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
         content: <ProductCard
-            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/cd815d54-612e-4233-8595-5d2dfd83b600/828x"
-            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e3958709-ed8f-49cc-ba72-4bd711ab8a00/828x"
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8e88f246-0350-46a4-52fd-bd2c64a5bc00/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8e88f246-0350-46a4-52fd-bd2c64a5bc00/828x"
             rating={4.8}
             totalReviews='7340'
             handle='silky-hair-set' />
