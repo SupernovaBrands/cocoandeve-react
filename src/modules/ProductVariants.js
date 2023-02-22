@@ -79,6 +79,11 @@ const ProductVariants = {
       "id": 4543113592867,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
+    },
+    {
+      "id": 4543113592867,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072020"
     }
   ],
   "au.cocoandeve.com": [
@@ -161,6 +166,11 @@ const ProductVariants = {
       "id": 2251503566902,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
+    },
+    {
+      "id": 2251503566902,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072020"
     }
   ],
   "ca.cocoandeve.com": [
@@ -223,6 +233,11 @@ const ProductVariants = {
       "id": 3765691187253,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
+    },
+    {
+      "id": 3765691187253,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072020"
     }
   ],
   "de.cocoandeve.com": [
@@ -285,6 +300,11 @@ const ProductVariants = {
       "id": 5748176650405,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
+    },
+    {
+      "id": 5748176650405,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072020"
     }
   ],
   "eu.cocoandeve.com": [
@@ -347,6 +367,11 @@ const ProductVariants = {
       "id": 3686774374484,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
+    },
+    {
+      "id": 3686774374484,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072020"
     }
   ],
   "fr.cocoandeve.com": [
@@ -409,6 +434,11 @@ const ProductVariants = {
       "id": 6858547167416,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
+    },
+    {
+      "id": 6858547167416,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072020"
     }
   ],
   "int.cocoandeve.com": [
@@ -471,6 +501,11 @@ const ProductVariants = {
       "id": 3963752939629,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
+    },
+    {
+      "id": 3963752939629,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072020"
     }
   ],
   "uk.cocoandeve.com": [
@@ -533,6 +568,11 @@ const ProductVariants = {
       "id": 3680558776397,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
+    },
+    {
+      "id": 3680558776397,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072020"
     }
   ],
   "us.cocoandeve.com": [
@@ -595,6 +635,11 @@ const ProductVariants = {
       "id": 4024566186048,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
+    },
+    {
+      "id": 4024566186048,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072020"
     }
   ],
   "www.cocoandeve.com": [
@@ -657,6 +702,11 @@ const ProductVariants = {
       "id": 4024566186048,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
+    },
+    {
+      "id": 4024566186048,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072020"
     }
   ],
   "my.cocoandeve.com": [
@@ -719,6 +769,11 @@ const ProductVariants = {
       "id": 6708373127241,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
+    },
+    {
+      "id": 6708373127241,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072020"
     }
   ]
 };

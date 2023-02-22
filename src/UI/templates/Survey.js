@@ -152,7 +152,7 @@ const Survey = () => {
             } else if (thirdAnswered === 1) {
                 sku = 'CE0001512020'; // face tanning micromist
             } else {
-                sku = 'CE0001202020'; // glow essential medium
+                sku = 'CE0000072020'; // bali bronzing bundle medium
             }
         } else if (firstAnswered === 2) {
             if (thirdAnswered === 2) {
