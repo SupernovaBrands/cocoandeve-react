@@ -69,6 +69,16 @@ const ProductVariants = {
       "id": 4803978723363,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0002162020"
+    },
+    {
+      "id": 6741826994211,
+      "product_handle": "antioxidant-face-tanning-micromist",
+      "sku": "CE0001512020"
+    },
+    {
+      "id": 4543113592867,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072040"
     }
   ],
   "au.cocoandeve.com": [
@@ -141,6 +151,16 @@ const ProductVariants = {
       "id": 4733448945718,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0002162020"
+    },
+    {
+      "id": 6892921880630,
+      "product_handle": "antioxidant-face-tanning-micromist",
+      "sku": "CE0001512020"
+    },
+    {
+      "id": 2251503566902,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072040"
     }
   ],
   "ca.cocoandeve.com": [
@@ -193,6 +213,16 @@ const ProductVariants = {
       "id": 4849909563445,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0001962020"
+    },
+    {
+      "id": 7102154899509,
+      "product_handle": "antioxidant-face-tanning-micromist",
+      "sku": "CE0001512020"
+    },
+    {
+      "id": 3765691187253,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072040"
     }
   ],
   "de.cocoandeve.com": [
@@ -245,6 +275,16 @@ const ProductVariants = {
       "id": 5748175044773,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0001962020"
+    },
+    {
+      "id": 8110017544357,
+      "product_handle": "antioxidant-face-tanning-micromist",
+      "sku": "CE0001512020"
+    },
+    {
+      "id": 5748176650405,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072040"
     }
   ],
   "eu.cocoandeve.com": [
@@ -297,6 +337,16 @@ const ProductVariants = {
       "id": 4758303080532,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0001962020"
+    },
+    {
+      "id": 7708293365958,
+      "product_handle": "antioxidant-face-tanning-micromist",
+      "sku": "CE0001512020"
+    },
+    {
+      "id": 3686774374484,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072040"
     }
   ],
   "fr.cocoandeve.com": [
@@ -349,6 +399,16 @@ const ProductVariants = {
       "id": 6795583717560,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0001962020"
+    },
+    {
+      "id": 7240691515576,
+      "product_handle": "antioxidant-face-tanning-micromist",
+      "sku": "CE0001512020"
+    },
+    {
+      "id": 6858547167416,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072040"
     }
   ],
   "int.cocoandeve.com": [
@@ -401,6 +461,16 @@ const ProductVariants = {
       "id": 4812090867821,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0001962020"
+    },
+    {
+      "id": 6937480396909,
+      "product_handle": "antioxidant-face-tanning-micromist",
+      "sku": "CE0001512020"
+    },
+    {
+      "id": 3963752939629,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072040"
     }
   ],
   "uk.cocoandeve.com": [
@@ -453,6 +523,16 @@ const ProductVariants = {
       "id": 4831011864653,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0001962020"
+    },
+    {
+      "id": 6827730534477,
+      "product_handle": "antioxidant-face-tanning-micromist",
+      "sku": "CE0001512020"
+    },
+    {
+      "id": 3680558776397,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072040"
     }
   ],
   "us.cocoandeve.com": [
@@ -505,6 +585,16 @@ const ProductVariants = {
       "id": 4802587492416,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0001962020"
+    },
+    {
+      "id": 6684863397952,
+      "product_handle": "antioxidant-face-tanning-micromist",
+      "sku": "CE0001512020"
+    },
+    {
+      "id": 4024566186048,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072040"
     }
   ],
   "www.cocoandeve.com": [
@@ -557,6 +647,16 @@ const ProductVariants = {
       "id": 4802587492416,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0001962020"
+    },
+    {
+      "id": 6684863397952,
+      "product_handle": "antioxidant-face-tanning-micromist",
+      "sku": "CE0001512020"
+    },
+    {
+      "id": 4024566186048,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072040"
     }
   ],
   "my.cocoandeve.com": [
@@ -609,6 +709,16 @@ const ProductVariants = {
       "id": 6708371652681,
       "product_handle": "glow-essentials-bundle",
       "sku": "CE0001962020"
+    },
+    {
+      "id": 6878546067529,
+      "product_handle": "antioxidant-face-tanning-micromist",
+      "sku": "CE0001512020"
+    },
+    {
+      "id": 6708373127241,
+      "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
+      "sku": "CE0000072040"
     }
   ]
 };
