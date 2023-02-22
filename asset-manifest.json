@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "../static/js/main.61746ac1.js",
+    "main.js": "../static/js/main.efec8402.js",
     "static/css/138.2d0828fa.chunk.css": "../static/css/138.2d0828fa.chunk.css",
     "static/js/138.fa787b92.chunk.js": "../static/js/138.fa787b92.chunk.js",
     "static/js/217.0c6bc240.chunk.js": "../static/js/217.0c6bc240.chunk.js",
     "static/js/534.22d2d5ed.chunk.js": "../static/js/534.22d2d5ed.chunk.js",
     "static/css/146.8b0a33c2.chunk.css": "../static/css/146.8b0a33c2.chunk.css",
-    "static/js/146.fcb76078.chunk.js": "../static/js/146.fcb76078.chunk.js",
+    "static/js/146.95eec133.chunk.js": "../static/js/146.95eec133.chunk.js",
     "static/css/850.6f3e7825.chunk.css": "../static/css/850.6f3e7825.chunk.css",
     "static/js/850.4bd44699.chunk.js": "../static/js/850.4bd44699.chunk.js",
     "static/js/476.74847619.chunk.js": "../static/js/476.74847619.chunk.js",
@@ -18,7 +18,7 @@
     "static/js/889.7f48208a.chunk.js": "../static/js/889.7f48208a.chunk.js",
     "static/js/506.46edb27c.chunk.js": "../static/js/506.46edb27c.chunk.js",
     "static/css/284.7ff79403.chunk.css": "../static/css/284.7ff79403.chunk.css",
-    "static/js/284.69682f17.chunk.js": "../static/js/284.69682f17.chunk.js",
+    "static/js/284.7edadcdf.chunk.js": "../static/js/284.7edadcdf.chunk.js",
     "static/js/120.d4bc827c.chunk.js": "../static/js/120.d4bc827c.chunk.js",
     "static/js/484.22144cbd.chunk.js": "../static/js/484.22144cbd.chunk.js",
     "shampoo-conditioner-set/index.html": "../shampoo-conditioner-set/index.html",
@@ -62,6 +62,6 @@
     "static/media/chevron-down.svg": "../static/media/chevron-down.6b10250df20474511cb9f46a308f53e3.svg"
   },
   "entrypoints": [
-    "static/js/main.61746ac1.js"
+    "static/js/main.efec8402.js"
   ]
 }
