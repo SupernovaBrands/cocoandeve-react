@@ -150,7 +150,7 @@ const Survey = () => {
             if (thirdAnswered === 2) {
                 sku = 'CE0000032020'; // foam medium
             } else if (thirdAnswered === 1) {
-                sku = 'CE0000432040'; // drops medium
+                sku = 'CE0001512020'; // face tanning micromist
             } else {
                 sku = 'CE0001202020'; // glow essential medium
             }
@@ -160,7 +160,7 @@ const Survey = () => {
             } else if (thirdAnswered === 1) {
                 sku = 'CE0000432030'; // drops dark
             } else {
-                sku = 'CE0001962020'; // glow essential dark
+                sku = 'CE0000072040'; // bali bronzing bundle dark
             }
         } else if (firstAnswered === 3) {
             if (thirdAnswered === 2) {
@@ -168,7 +168,7 @@ const Survey = () => {
             } else if (thirdAnswered === 1) {
                 sku = 'CE0000432030'; // drops dark
             } else {
-                sku = 'CE0001962020'; // glow essential dark
+                sku = 'CE0000072040'; // bali bronzing bundle dark
             }
         }
 
