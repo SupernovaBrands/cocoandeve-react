@@ -90,7 +90,6 @@ const ProductForm = (props) => {
         const mobileSwatchTrigger = document.querySelector('.product-swatch-mobile__trigger');
         if (mobileSwatchTrigger && mobileSwatch) {
             const observerCallback = (entries) => {
-                console.log('entries', entries)
                 entries.forEach((entry) => {
                     window.onscroll = function(ev) {
                         if (window.innerWidth < 768) {

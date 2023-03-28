@@ -778,6 +778,39 @@ const productList = {
             price: 'RM156.00',
         },
     },
+    'antioxidant-face-tanning-micromist': {
+        us: {
+            price: '$29.90',
+            title: 'Antioxidant Face Tanning Micromist',
+        }
+    },
+    'date-night-kit': {
+        us: {
+            price: '$72.90',
+            title: 'Date Night Kit',
+            comparePrice: '$86.90',
+        }
+    },
+    'hair-repair-bundle': {
+        us: {
+            price: '$50.90',
+            title: 'Hair Repair Bundle',
+            comparePrice: '$59.90',
+        }
+    },
+    'bond-repair-restore-kit': {
+        us: {
+            price: '$93.90',
+            title: 'Bond Repair & Restore Kit',
+            comparePrice: '$117.70',
+        }
+    },
+    'bond-building-pre-shampoo-treatment': {
+        us: {
+            price: '$25.00',
+            title: 'Bond Building Pre-Shampoo Treatment',
+        }
+    },
 };
 
 const carouselSection = {

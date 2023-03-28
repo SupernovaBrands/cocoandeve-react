@@ -187,7 +187,6 @@ const Survey = () => {
         }
 
         const findVariant = variants.find((variant) => variant.sku === sku);
-        console.log(sku, findVariant, 'variant data');
 
         if (findVariant) {
             // handle when inside iframe

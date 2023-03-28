@@ -514,6 +514,28 @@ const _content = {
             description: '1x Like a Virgin Hair Masque 212ml<br/>1x Tangle Tamer',
         }
     },
+    "antioxidant-face-tanning-micromist": {
+        us: {
+            handle: 'antioxidant-face-tanning-micromist',
+            price: '$29.90',
+            compareAtPrice: '',
+            saving: '',
+            title1: '',
+            title2: 'Antioxidant Face Tanning Micromist',
+            description: '1x Antioxidant Face Tanning Micromist 2.54oz',
+            rating: '7564',
+            stars: '4.8',
+            benefits: {
+                formula1: 'Hydrates and deeply conditions. ',
+                formula2: 'Transform your hair in only 10 minutes.',
+                formula3: 'Restores dry damaged hair. Treats split ends and tames frizz. ',
+                formula4: 'Improves hair texture and shine.',
+            },
+            asSeenin: 'As seen in',
+            atc: 'Add to cart',
+            shades: []
+        }
+    },
     default: {
         price: '$70.10',
         compareAtPrice: '$87.70',
