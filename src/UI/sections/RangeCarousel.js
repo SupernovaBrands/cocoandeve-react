@@ -90,7 +90,6 @@ const RangeCarousel = (props) => {
 		carouselLoop('FeaturedValueSets');
 	}
 
-	
 
 	return (
 		<section className='product-carousel py-2 py-lg-4 overflow-hidden'>

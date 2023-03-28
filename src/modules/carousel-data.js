@@ -28,6 +28,18 @@ if (['ca', 'au'].includes(activeStore)) {
     });
 }
 
+if (['us'].includes(activeStore)) {
+    PRODUCTS_FACE.push({
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://cdn.shopify.com/s/files/1/0243/8817/3888/products/PDP_TanningMist_1_1140x.jpg"
+            comImg="https://cdn.shopify.com/s/files/1/0243/8817/3888/products/PDP_TanningMist_1_1140x.jpg"
+            rating={4.8}
+            totalReviews='48'
+            handle='antioxidant-face-tanning-micromist' />
+    });
+}
+
 const PRODUCTS_BODY = [
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
@@ -393,5 +405,72 @@ const PRODUCTS_HAIR_3 = [
             handle='daily-essentials-bundle' />
     },
 ];
+
+if (['us'].includes(activeStore)) {
+    PRODUCTS_HAIR_1.unshift({
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/Date_Night_No_Belly_Band_PDP_1140x.jpg?v=1673933285'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/Date_Night_No_Belly_Band_PDP_1140x.jpg?v=1673933285'
+            rating={4.8}
+            totalReviews='389'
+            handle='date-night-kit' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/HairRepairBundle_1140x1140_9381b082-032c-4b69-818b-7af278e217bc_1140x.jpg?v=1666153289'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/HairRepairBundle_1140x1140_9381b082-032c-4b69-818b-7af278e217bc_1140x.jpg?v=1666153289'
+            rating={4.9}
+            totalReviews='363'
+            handle='hair-repair-bundle' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/BondRepairandRestoreKit_PDP_1140x1140_4f22cdc1-07da-4231-ab92-a3864fa1bcc4_1140x.jpg?v=1673842738'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/BondRepairandRestoreKit_PDP_1140x1140_4f22cdc1-07da-4231-ab92-a3864fa1bcc4_1140x.jpg?v=1673842738'
+            rating={4.9}
+            totalReviews='273'
+            handle='bond-repair-restore-kit' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/PDP_BondBuildingPre-Shampoo_1140x.jpg?v=1663207008'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/PDP_BondBuildingPre-Shampoo_1140x.jpg?v=1663207008'
+            rating={4.9}
+            totalReviews='102'
+            handle='bond-building-pre-shampoo-treatment' />
+    });
+
+    PRODUCTS_HAIR_3.unshift({
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/Date_Night_No_Belly_Band_PDP_1140x.jpg?v=1673933285'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/Date_Night_No_Belly_Band_PDP_1140x.jpg?v=1673933285'
+            rating={4.8}
+            totalReviews='389'
+            handle='date-night-kit' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/HairRepairBundle_1140x1140_9381b082-032c-4b69-818b-7af278e217bc_1140x.jpg?v=1666153289'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/HairRepairBundle_1140x1140_9381b082-032c-4b69-818b-7af278e217bc_1140x.jpg?v=1666153289'
+            rating={4.9}
+            totalReviews='363'
+            handle='hair-repair-bundle' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/BondRepairandRestoreKit_PDP_1140x1140_4f22cdc1-07da-4231-ab92-a3864fa1bcc4_1140x.jpg?v=1673842738'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/BondRepairandRestoreKit_PDP_1140x1140_4f22cdc1-07da-4231-ab92-a3864fa1bcc4_1140x.jpg?v=1673842738'
+            rating={4.9}
+            totalReviews='273'
+            handle='bond-repair-restore-kit' />
+    });
+}
 
 export { PRODUCTS_FACE, PRODUCTS_BODY, PRODUCTS_VALUE_SETS, PRODUCTS_HAIR_1, PRODUCTS_HAIR_2, PRODUCTS_HAIR_3 };
