@@ -16,7 +16,7 @@ const Carousel = (props) => {
     }, []);
     
     return (
-        <div id={props.id} className={props.className} data-bs-ride="carousel" data-bs-interval="false" data-bs-touch="false">
+        <div id={props.id} className={props.className} data-bs-interval="false" data-bs-touch="false">
             {props.centered ? (
                 <ConditionWrapper
                     condition={props.items.length > 4 || props.forceCentered}
