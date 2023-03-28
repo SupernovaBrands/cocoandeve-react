@@ -103,7 +103,7 @@ const MultipleChoice = (props) => {
                                     <div className={`${answer.type !== 'checkbox' ? 'd-none' : ''} ${selectedItems.includes(answer.label) ? 'border-0 bg-primary': ''} custom-check me-1 mt-0 form-check-input text-center d-flex align-items-center justify-content-center`}>
                                         <Check className={`${!selectedItems.includes(answer.label) ? 'd-none': ''} svg text-white`}/>
                                     </div>
-                                    <span className="custom-check__answer">{ answer.label }</span>
+                                    <span className={`${answer.type === 'checkbox' ? 'custom-check__answer' : ''}`}>{ answer.label }</span>
                                 </label>
                             </div>
                         </div>
