@@ -191,12 +191,14 @@ const Survey = () => {
 
         if (findVariant) {
             // handle when inside iframe
+            let submitted = false;
             if (window.top !== window.self && currentPosition === 'finished') {
                 await saveData(findVariant.product_handle, findVariant.sku);
+                submitted = true;
                 completed(findVariant.product_handle,findVariant.sku);
             }
 
-            if (close) {
+            if (close && !submitted) {
                 await saveData(findVariant.product_handle, findVariant.sku);
                 setFinished();
                 completed(findVariant.product_handle,findVariant.sku);
