@@ -296,7 +296,7 @@ const Survey = () => {
         }
 
         const gAid = gId !== null ? gId : getCookie('_gid');
-        const data = { _ga: gAid, questions_answers: dataForSaving, email, product, sku };
+        const data = { _ga: gAid, questions_answers: dataForSaving, email, product, sku, store: site };
 
         return fetch('https://api.cocoandeve.com/surveys', {
             method: 'POST',
