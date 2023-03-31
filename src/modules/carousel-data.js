@@ -28,6 +28,18 @@ if (['ca', 'au'].includes(activeStore)) {
     });
 }
 
+if (['us'].includes(activeStore)) {
+    PRODUCTS_FACE.push({
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://cdn.shopify.com/s/files/1/0243/8817/3888/products/PDP_TanningMist_1_1140x.jpg"
+            comImg="https://cdn.shopify.com/s/files/1/0243/8817/3888/products/PDP_TanningMist_1_1140x.jpg"
+            rating={4.8}
+            totalReviews='48'
+            handle='antioxidant-face-tanning-micromist' />
+    });
+}
+
 const PRODUCTS_BODY = [
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
@@ -133,7 +145,7 @@ const PRODUCTS_VALUE_SETS = [
     }
 ];
 
-const PRODUCTS_HAIR_1 = [
+let PRODUCTS_HAIR_1 = [
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
         content: <ProductCard
@@ -169,6 +181,46 @@ const PRODUCTS_HAIR_1 = [
             rating={4.8}
             totalReviews='1417'
             handle='super-hydration-kit' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        onlyUs: true,
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/Date_Night_No_Belly_Band_PDP_1140x.jpg?v=1673933285'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/Date_Night_No_Belly_Band_PDP_1140x.jpg?v=1673933285'
+            rating={4.8}
+            totalReviews='389'
+            handle='date-night-kit' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        onlyUs: true,
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/HairRepairBundle_1140x1140_9381b082-032c-4b69-818b-7af278e217bc_1140x.jpg?v=1666153289'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/HairRepairBundle_1140x1140_9381b082-032c-4b69-818b-7af278e217bc_1140x.jpg?v=1666153289'
+            rating={4.9}
+            totalReviews='363'
+            handle='hair-repair-bundle' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        onlyUs: true,
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/BondRepairandRestoreKit_PDP_1140x1140_4f22cdc1-07da-4231-ab92-a3864fa1bcc4_1140x.jpg?v=1673842738'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/BondRepairandRestoreKit_PDP_1140x1140_4f22cdc1-07da-4231-ab92-a3864fa1bcc4_1140x.jpg?v=1673842738'
+            rating={4.9}
+            totalReviews='273'
+            handle='bond-repair-restore-kit' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        onlyUs: true,
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/PDP_BondBuildingPre-Shampoo_1140x.jpg?v=1663207008'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/PDP_BondBuildingPre-Shampoo_1140x.jpg?v=1663207008'
+            rating={4.9}
+            totalReviews='102'
+            handle='bond-building-pre-shampoo-treatment' />
     },
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
@@ -225,6 +277,10 @@ const PRODUCTS_HAIR_1 = [
             handle='repairing-restoring-hair-mask' />
     }
 ];
+
+if (!['us'].includes(activeStore)) {
+    PRODUCTS_HAIR_1 = PRODUCTS_HAIR_1.filter((i) => !i.onlyUs);
+}
 
 const PRODUCTS_HAIR_2 = [
     {
@@ -358,6 +414,36 @@ const PRODUCTS_HAIR_3 = [
     },
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        onlyUs: true,
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/Date_Night_No_Belly_Band_PDP_1140x.jpg?v=1673933285'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/Date_Night_No_Belly_Band_PDP_1140x.jpg?v=1673933285'
+            rating={4.8}
+            totalReviews='389'
+            handle='date-night-kit' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        onlyUs: true,
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/HairRepairBundle_1140x1140_9381b082-032c-4b69-818b-7af278e217bc_1140x.jpg?v=1666153289'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/HairRepairBundle_1140x1140_9381b082-032c-4b69-818b-7af278e217bc_1140x.jpg?v=1666153289'
+            rating={4.9}
+            totalReviews='363'
+            handle='hair-repair-bundle' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        onlyUs: true,
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/BondRepairandRestoreKit_PDP_1140x1140_4f22cdc1-07da-4231-ab92-a3864fa1bcc4_1140x.jpg?v=1673842738'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/BondRepairandRestoreKit_PDP_1140x1140_4f22cdc1-07da-4231-ab92-a3864fa1bcc4_1140x.jpg?v=1673842738'
+            rating={4.9}
+            totalReviews='273'
+            handle='bond-repair-restore-kit' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
         content: <ProductCard
             img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f3a5538e-0e90-4505-bfe6-bd95a542b100/828x"
             comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/704e5aab-f07e-43d0-b29b-77d41dfcfa00/828x"
@@ -393,5 +479,9 @@ const PRODUCTS_HAIR_3 = [
             handle='daily-essentials-bundle' />
     },
 ];
+
+if (!['us'].includes(activeStore)) {
+    PRODUCTS_HAIR_3 = PRODUCTS_HAIR_3.filter((i) => !i.onlyUs);
+}
 
 export { PRODUCTS_FACE, PRODUCTS_BODY, PRODUCTS_VALUE_SETS, PRODUCTS_HAIR_1, PRODUCTS_HAIR_2, PRODUCTS_HAIR_3 };

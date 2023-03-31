@@ -22,13 +22,11 @@ const StoreProvider = props => {
     
     const [storeState, dispatchStoreAction] = useReducer(storeReducer, store);
     const storeChangeHandler = (activeStore) => {
-        console.log('sss', activeStore)
         const store = ['us', 'fr', 'de'].includes(activeStore) ? activeStore : 'us';
         dispatchStoreAction({type: 'CHANGESTORE', changeValue: store})
     };
 
     const rangeChangeHandler = (range) => {
-        console.log('dd', range)
         dispatchStoreAction({type: 'CHANGERANGE', changeValue: range})
     };
 
