@@ -152,7 +152,7 @@ const Survey = () => {
             } else if (thirdAnswered === 1) {
                 sku = 'CE0001512020'; // face tanning micromist
             } else {
-                sku = 'CE0000072020'; // bali bronzing bundle medium
+                sku = 'CE0003532020'; // tan masters kit
             }
         } else if (firstAnswered === 2) {
             if (thirdAnswered === 2) {
@@ -176,6 +176,7 @@ const Survey = () => {
         const diffSkus = ['www.cocoandeve.com', 'us.cocoandeve.com', 'ca.cocoandeve.com', 'uk.cocoandeve.com']
         const caUs = ['www.cocoandeve.com', 'us.cocoandeve.com', 'ca.cocoandeve.com'];
         const us = ['www.cocoandeve.com', 'us.cocoandeve.com'];
+        const intMy = ['int.cocoandeve.com', 'my.cocoandeve.com'];
         if (diffSkus.includes(selectedSite)) {
             if (sku === 'CE0000032020') {
                 sku = 'CE0000036020';
@@ -185,17 +186,23 @@ const Survey = () => {
                 sku = 'CE0000036060';
             }
         }
+        // currently tan master kit is not available on INT/MY
+        if (intMy.includes(selectedSite) && sku === 'CE0003532020') {
+            sku = 'CE0000072020';
+        }
 
         const findVariant = variants.find((variant) => variant.sku === sku);
 
         if (findVariant) {
             // handle when inside iframe
+            let submitted = false;
             if (window.top !== window.self && currentPosition === 'finished') {
                 await saveData(findVariant.product_handle, findVariant.sku);
+                submitted = true;
                 completed(findVariant.product_handle,findVariant.sku);
             }
 
-            if (close) {
+            if (close && !submitted) {
                 await saveData(findVariant.product_handle, findVariant.sku);
                 setFinished();
                 completed(findVariant.product_handle,findVariant.sku);
@@ -295,7 +302,7 @@ const Survey = () => {
         }
 
         const gAid = gId !== null ? gId : getCookie('_gid');
-        const data = { _ga: gAid, questions_answers: dataForSaving, email, product, sku };
+        const data = { _ga: gAid, questions_answers: dataForSaving, email, product, sku, store: site };
 
         return fetch('https://api.cocoandeve.com/surveys', {
             method: 'POST',
