@@ -84,6 +84,11 @@ const ProductVariants = {
       "id": 6741826994211,
       "product_handle": "antioxidant-face-tanning-micromist",
       "sku": "CE0001512020"
+    },
+    {
+      "id": 6778958676003,
+      "product_handle": "tan-masters-kit",
+      "sku": "CE0003532020"
     }
   ],
   "au.cocoandeve.com": [
@@ -171,6 +176,11 @@ const ProductVariants = {
       "id": 6892921880630,
       "product_handle": "antioxidant-face-tanning-micromist",
       "sku": "CE0001512020"
+    },
+    {
+      "id": 6915856072758,
+      "product_handle": "tan-masters-kit",
+      "sku": "CE0003532020"
     }
   ],
   "ca.cocoandeve.com": [
@@ -238,6 +248,11 @@ const ProductVariants = {
       "id": 7102154899509,
       "product_handle": "antioxidant-face-tanning-micromist",
       "sku": "CE0001512020"
+    },
+    {
+      "id": 7144782626869,
+      "product_handle": "tan-masters-kit",
+      "sku": "CE0003532020"
     }
   ],
   "de.cocoandeve.com": [
@@ -305,6 +320,11 @@ const ProductVariants = {
       "id": 8110017544357,
       "product_handle": "antioxidant-face-tanning-micromist",
       "sku": "CE0001512020"
+    },
+    {
+      "id": 8146858508453,
+      "product_handle": "tan-masters-kit",
+      "sku": "CE0003532020"
     }
   ],
   "eu.cocoandeve.com": [
@@ -372,6 +392,11 @@ const ProductVariants = {
       "id": 7708293365958,
       "product_handle": "antioxidant-face-tanning-micromist",
       "sku": "CE0001512020"
+    },
+    {
+      "id": 7756544835782,
+      "product_handle": "tan-masters-kit",
+      "sku": "CE0003532020"
     }
   ],
   "fr.cocoandeve.com": [
@@ -439,6 +464,11 @@ const ProductVariants = {
       "id": 7240691515576,
       "product_handle": "antioxidant-face-tanning-micromist",
       "sku": "CE0001512020"
+    },
+    {
+      "id": 7263843123384,
+      "product_handle": "tan-masters-kit",
+      "sku": "CE0003532020"
     }
   ],
   "int.cocoandeve.com": [
@@ -506,6 +536,11 @@ const ProductVariants = {
       "id": 6937480396909,
       "product_handle": "antioxidant-face-tanning-micromist",
       "sku": "CE0001512020"
+    },
+    {
+      "id": 6974503616621,
+      "product_handle": "tan-masters-kit",
+      "sku": "CE0003532020"
     }
   ],
   "uk.cocoandeve.com": [
@@ -573,6 +608,11 @@ const ProductVariants = {
       "id": 6827730534477,
       "product_handle": "antioxidant-face-tanning-micromist",
       "sku": "CE0001512020"
+    },
+    {
+      "id": 6846803312717,
+      "product_handle": "tan-masters-kit",
+      "sku": "CE0003532020"
     }
   ],
   "us.cocoandeve.com": [
@@ -640,6 +680,11 @@ const ProductVariants = {
       "id": 6684863397952,
       "product_handle": "antioxidant-face-tanning-micromist",
       "sku": "CE0001512020"
+    },
+    {
+      "id": 6704402530368,
+      "product_handle": "tan-masters-kit",
+      "sku": "CE0003532020"
     }
   ],
   "www.cocoandeve.com": [
@@ -707,6 +752,11 @@ const ProductVariants = {
       "id": 6684863397952,
       "product_handle": "antioxidant-face-tanning-micromist",
       "sku": "CE0001512020"
+    },
+    {
+      "id": 6704402530368,
+      "product_handle": "tan-masters-kit",
+      "sku": "CE0003532020"
     }
   ],
   "my.cocoandeve.com": [
@@ -774,6 +824,11 @@ const ProductVariants = {
       "id": 6878546067529,
       "product_handle": "antioxidant-face-tanning-micromist",
       "sku": "CE0001512020"
+    },
+    {
+      "id": 6891143790665,
+      "product_handle": "tan-masters-kit",
+      "sku": "CE0003532020"
     }
   ]
 };
