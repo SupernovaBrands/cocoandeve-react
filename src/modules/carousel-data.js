@@ -375,7 +375,7 @@ const PRODUCTS_HAIR_2 = [
     },
 ];
 
-const PRODUCTS_HAIR_3 = [
+let PRODUCTS_HAIR_3 = [
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
         content: <ProductCard
