@@ -17,6 +17,8 @@ import { useSearchParams } from "react-router-dom";
 import { ReactComponent as LoaderSvg } from '../../assets/loader.svg';
 import Translations from '../../modules/translations';
 
+import { useIdleTimer } from 'react-idle-timer'
+
 const Survey = () => {
     const [searchParams] = useSearchParams();
     const site = searchParams.get('site');
@@ -24,6 +26,23 @@ const Survey = () => {
     const surveyState = searchParams.get('state');
     const language = searchParams.get('lang');
     const abTest = searchParams.get('abtest');
+
+    const onIdle = () => {
+        if (typeof (ga) === 'function') {
+            window.ga('send', 'event', {
+                eventCategory: 'Survey',
+                eventAction: 'user_bounce',
+                eventLabel: currentPosition,
+                eventValue: 0,
+            });
+        }
+    };
+
+    useIdleTimer({
+        onIdle,
+        timeout: 600000,
+        throttle: 500,
+    });
 
     const setCookieAnsweredQuestion = (object) => {
         if (typeof object === 'object') {
