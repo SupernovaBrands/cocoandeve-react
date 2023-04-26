@@ -27,23 +27,6 @@ const Survey = () => {
     const language = searchParams.get('lang');
     const abTest = searchParams.get('abtest');
 
-    const onIdle = () => {
-        if (typeof (ga) === 'function') {
-            window.ga('send', 'event', {
-                eventCategory: 'Survey',
-                eventAction: 'user_bounce',
-                eventLabel: currentPosition,
-                eventValue: 0,
-            });
-        }
-    };
-
-    useIdleTimer({
-        onIdle,
-        timeout: 600000,
-        throttle: 500,
-    });
-
     const setCookieAnsweredQuestion = (object) => {
         if (typeof object === 'object') {
             Object.entries(object).forEach((data) => {
@@ -133,6 +116,7 @@ const Survey = () => {
         }
 
         setProgress(currentQuestion / Questions.length * 100);
+        // console.log('currentQuestion', currentQuestion);
     }, [currentQuestion, currentPosition]);
 
     const answerAction = (question, answers) => {
@@ -369,6 +353,20 @@ const Survey = () => {
         postMessageData('Survey', 'started');
         setPosition('question-1');
     }
+
+    const onIdle = () => {
+        if (currentPosition !== 'start' && currentPosition !== 'finished') {
+            postMessageData('Survey', 'user_bounce', `question-${currentQuestion}`);
+        } else {
+            postMessageData('Survey', 'user_bounce', currentPosition);
+        }
+    };
+
+    useIdleTimer({
+        onIdle,
+        timeout: 300000,
+        throttle: 500,
+    });
 
     // useEffect(() => {
     //     postIframeHeight('height', height);
