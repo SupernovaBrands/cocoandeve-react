@@ -35,6 +35,7 @@ const Survey = () => {
                 eventLabel: currentPosition,
                 eventValue: 0,
             });
+            console.log('user inactive');
         }
     };
 
