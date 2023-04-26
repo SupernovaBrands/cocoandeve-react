@@ -176,7 +176,7 @@ const Survey = () => {
         const diffSkus = ['www.cocoandeve.com', 'us.cocoandeve.com', 'ca.cocoandeve.com', 'uk.cocoandeve.com']
         const caUs = ['www.cocoandeve.com', 'us.cocoandeve.com', 'ca.cocoandeve.com'];
         const us = ['www.cocoandeve.com', 'us.cocoandeve.com'];
-        const excludeSites = ['int.cocoandeve.com', 'my.cocoandeve.com', 'www.cocoandeve.com', 'us.cocoandeve.com', 'uk.cocoandeve.com'];
+        const excludeSites = ['int.cocoandeve.com', 'my.cocoandeve.com'];
         if (diffSkus.includes(selectedSite)) {
             if (sku === 'CE0000032020') {
                 sku = 'CE0000036020';
@@ -186,7 +186,7 @@ const Survey = () => {
                 sku = 'CE0000036060';
             }
         }
-        // currently tan master kit is not available on SG, US, UK & MY
+        // currently tan master kit is not available on SG & MY
         if (excludeSites.includes(selectedSite) && sku === 'CE0003532020') {
             sku = 'CE0000072020';
         }
