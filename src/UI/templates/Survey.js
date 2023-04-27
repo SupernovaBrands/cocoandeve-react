@@ -360,6 +360,7 @@ const Survey = () => {
         } else {
             postMessageData('Survey', 'user_bounce', currentPosition);
         }
+        console.log('useri');
     };
 
     useIdleTimer({
