@@ -17,6 +17,8 @@ import { useSearchParams } from "react-router-dom";
 import { ReactComponent as LoaderSvg } from '../../assets/loader.svg';
 import Translations from '../../modules/translations';
 
+import { useIdleTimer } from 'react-idle-timer'
+
 const Survey = () => {
     const [searchParams] = useSearchParams();
     const site = searchParams.get('site');
@@ -114,6 +116,7 @@ const Survey = () => {
         }
 
         setProgress(currentQuestion / Questions.length * 100);
+        // console.log('currentQuestion', currentQuestion);
     }, [currentQuestion, currentPosition]);
 
     const answerAction = (question, answers) => {
@@ -350,6 +353,20 @@ const Survey = () => {
         postMessageData('Survey', 'started');
         setPosition('question-1');
     }
+
+    const onIdle = () => {
+        if (currentPosition !== 'start' && currentPosition !== 'finished') {
+            postMessageData('Survey', 'user_bounce', `question-${currentQuestion}`);
+        } else {
+            postMessageData('Survey', 'user_bounce', currentPosition);
+        }
+    };
+
+    useIdleTimer({
+        onIdle,
+        timeout: 300000,
+        throttle: 500,
+    });
 
     // useEffect(() => {
     //     postIframeHeight('height', height);
