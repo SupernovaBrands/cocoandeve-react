@@ -11,14 +11,14 @@ const ProductCard = (props) => {
 	const storeCtx = useContext(StoreContext);
 	storeCtx.storeChange(activeStore);
 	storeCtx.rangeChange('hair');
-	
+
 	const productCardCtx = useContext(RangeContext);
 	const productContent = productCardCtx.products[props.handle][activeStore];
 
 	if (activeStore !== 'us') {
 		ProductUrl = ProductUrl.replace(ProductUrl.split('//')[1].split('.')[0], activeStore);
 	}
-	
+	console.log('productContent', productContent);
 	const productTitle = productContent.title ? productContent.title : productCardCtx.products[props.handle]['us'].title;
 	let carouselData = productCardCtx.carouselSection['tan'][activeStore];
 	if (!carouselData) {

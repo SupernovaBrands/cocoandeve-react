@@ -484,4 +484,120 @@ if (!['us'].includes(activeStore)) {
     PRODUCTS_HAIR_3 = PRODUCTS_HAIR_3.filter((i) => !i.onlyUs);
 }
 
-export { PRODUCTS_FACE, PRODUCTS_BODY, PRODUCTS_VALUE_SETS, PRODUCTS_HAIR_1, PRODUCTS_HAIR_2, PRODUCTS_HAIR_3 };
+const PRODUCTS_HAIR_AMAZON = [
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f3a5538e-0e90-4505-bfe6-bd95a542b100/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/704e5aab-f07e-43d0-b29b-77d41dfcfa00/828x"
+            rating={4.8}
+            title="Test"
+            totalReviews='1417'
+            handle='super-hydration-kit' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8e88f246-0350-46a4-52fd-bd2c64a5bc00/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8e88f246-0350-46a4-52fd-bd2c64a5bc00/828x"
+            rating={4.8}
+            totalReviews='7340'
+            title="Test"
+            handle='silky-hair-set' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/30afaedc-2ddc-44b9-e57e-1da4c5a0fa00/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e24dd53e-b0e1-4def-7490-9bb441048f00/828x"
+            rating={4.8}
+            totalReviews='1419'
+            title="Test"
+            handle='shampoo-conditioner-set' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2a3ce2b9-cbf2-4195-da7c-ab72f6e01300/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c6e40527-c0e7-4383-4fa1-5d7dfffe3e00/828x"
+            rating={4.8}
+            totalReviews='628'
+            title="Test"
+            handle='daily-essentials-bundle' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        onlyUs: true,
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/Date_Night_No_Belly_Band_PDP_1140x.jpg?v=1673933285'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/Date_Night_No_Belly_Band_PDP_1140x.jpg?v=1673933285'
+            rating={4.8}
+            totalReviews='389'
+            title="Test"
+            handle='date-night-kit' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        onlyUs: true,
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/HairRepairBundle_1140x1140_9381b082-032c-4b69-818b-7af278e217bc_1140x.jpg?v=1666153289'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/HairRepairBundle_1140x1140_9381b082-032c-4b69-818b-7af278e217bc_1140x.jpg?v=1666153289'
+            rating={4.9}
+            totalReviews='363'
+            title="Test"
+            handle='hair-repair-bundle' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        onlyUs: true,
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/BondRepairandRestoreKit_PDP_1140x1140_4f22cdc1-07da-4231-ab92-a3864fa1bcc4_1140x.jpg?v=1673842738'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/BondRepairandRestoreKit_PDP_1140x1140_4f22cdc1-07da-4231-ab92-a3864fa1bcc4_1140x.jpg?v=1673842738'
+            rating={4.9}
+            totalReviews='273'
+            title="Test"
+            handle='bond-repair-restore-kit' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f3a5538e-0e90-4505-bfe6-bd95a542b100/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/704e5aab-f07e-43d0-b29b-77d41dfcfa00/828x"
+            rating={4.8}
+            totalReviews='1417'
+            title="Test"
+            handle='super-hydration-kit' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8e88f246-0350-46a4-52fd-bd2c64a5bc00/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8e88f246-0350-46a4-52fd-bd2c64a5bc00/828x"
+            rating={4.8}
+            totalReviews='7340'
+            title="Test"
+            handle='silky-hair-set' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/30afaedc-2ddc-44b9-e57e-1da4c5a0fa00/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e24dd53e-b0e1-4def-7490-9bb441048f00/828x"
+            rating={4.8}
+            totalReviews='1419'
+            title="Test"
+            handle='shampoo-conditioner-set' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2a3ce2b9-cbf2-4195-da7c-ab72f6e01300/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c6e40527-c0e7-4383-4fa1-5d7dfffe3e00/828x"
+            rating={4.8}
+            totalReviews='628'
+            title="Test"
+            handle='daily-essentials-bundle' />
+    },
+];
+
+export { PRODUCTS_FACE, PRODUCTS_BODY, PRODUCTS_VALUE_SETS, PRODUCTS_HAIR_1, PRODUCTS_HAIR_2, PRODUCTS_HAIR_3, PRODUCTS_HAIR_AMAZON };

@@ -962,6 +962,80 @@ const carouselSection = {
             ]
         }
     },
+    amazonHair: {
+        us: {
+            title: 'Hair products for any occasion',
+            face: 'New',
+            body: 'Bestsellers',
+            valuesets: 'Kits',
+            learnMore: 'Learn More',
+            carouselTabs: [
+                {
+                    carouselId: 'FeaturedHair1',
+                    isTabActive: false,
+                    tabLabel: 'New'
+                },
+                {
+                    carouselId: 'FeaturedHair2',
+                    isTabActive: true,
+                    tabLabel: 'Bestsellers'
+                },
+                {
+                    carouselId: 'FeaturedHair3',
+                    isTabActive: false,
+                    tabLabel: 'Value Sets'
+                }
+            ]
+        },
+        fr: {
+            title: 'Des produits de soins capillaires pour toutes les occasions',
+            face: 'Nouveau',
+            body: 'Bestseller',
+            valuesets: 'Kits',
+            learnMore: 'En savoir plus',
+            carouselTabs: [
+                {
+                    carouselId: 'FeaturedHair1',
+                    isTabActive: false,
+                    tabLabel: 'Nouveau'
+                },
+                {
+                    carouselId: 'FeaturedHair2',
+                    isTabActive: true,
+                    tabLabel: 'Bestseller'
+                },
+                {
+                    carouselId: 'FeaturedHair3',
+                    isTabActive: false,
+                    tabLabel: 'Kits'
+                }
+            ]
+        },
+        de: {
+            title: 'Haarprodukte für jeden Anlass',
+            face: 'Neu',
+            body: 'Bestseller',
+            valuesets: 'Sets',
+            learnMore: 'Erfahre mehr',
+            carouselTabs: [
+                {
+                    carouselId: 'FeaturedHair1',
+                    isTabActive: false,
+                    tabLabel: 'Neu'
+                },
+                {
+                    carouselId: 'FeaturedHair2',
+                    isTabActive: true,
+                    tabLabel: 'Bestseller'
+                },
+                {
+                    carouselId: 'FeaturedHair3',
+                    isTabActive: false,
+                    tabLabel: 'Sets'
+                }
+            ]
+        }
+    },
 };
 
 const formulaSection = {
@@ -1030,6 +1104,7 @@ const formulaSection = {
 };
 
 const bannerSection = {
+
     tan: {
         us: {
             title: 'Sunny Honey',
@@ -1065,6 +1140,44 @@ const bannerSection = {
             mobile: {
                 webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/383dbdf2-f7e4-412b-8447-54dbb0984a00/828x',
                 jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/afa85196-4f02-42da-091e-393e63d1c900/828x',
+            }
+        }
+    },
+    amazonHair: {
+        us: {
+            title: 'Like A Virgin',
+            subtitle: 'Multi-award winning hair range',
+            desktop: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d41b7699-e9fe-4cda-1763-992ac35e6200/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4643aa92-c1a8-453b-8718-a8770794da00/2280x',
+            },
+            mobile: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/edd295fc-3ed4-4e94-dfe8-d586e0f91e00/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9ee68053-464d-4dc0-603a-80722b3dfa00/1140x',
+            }
+        },
+        ca: {
+            title: 'Like A Virgin',
+            subtitle: 'Multi-award winning hair range',
+            desktop: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d41b7699-e9fe-4cda-1763-992ac35e6200/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4643aa92-c1a8-453b-8718-a8770794da00/2280x',
+            },
+            mobile: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/edd295fc-3ed4-4e94-dfe8-d586e0f91e00/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9ee68053-464d-4dc0-603a-80722b3dfa00/1140x',
+            }
+        },
+        uk: {
+            title: 'Like A Virgin',
+            subtitle: 'Multi-award winning hair range',
+            desktop: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d41b7699-e9fe-4cda-1763-992ac35e6200/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4643aa92-c1a8-453b-8718-a8770794da00/2280x',
+            },
+            mobile: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/edd295fc-3ed4-4e94-dfe8-d586e0f91e00/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9ee68053-464d-4dc0-603a-80722b3dfa00/1140x',
             }
         }
     },
@@ -1106,7 +1219,7 @@ const bannerSection = {
             }
         }
     }
-    
+
 };
 
 const rangeReducer = (state, action) => {
