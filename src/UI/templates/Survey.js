@@ -352,6 +352,16 @@ const Survey = () => {
     const startQuiz = () => {
         postMessageData('Survey', 'started');
         setPosition('question-1');
+        const eventStarted = {
+            event: 'test_started_quiz',
+            event_params: {
+                param1: 'param1',
+                param2: 'param2'
+            },
+            purpose: 'debug'
+        };
+        window.dataLayer.push(eventStarted);
+        console.log('eventStarted', eventStarted);
     }
 
     const onIdle = () => {
