@@ -36,9 +36,9 @@ const AmazonHairRange = () => {
                 <BannerImage bannerData={bannerData} />
 				<BannerImage bannerData={bannerData2} />
 				<ReviewProvider>
-					<SeenIn range="hair" />
+					<SeenIn range="tan" />
                 </ReviewProvider>
-				<RealResults range="hair" />
+				<RealResults range="tan" />
             </Suspense>
 		</RangeProvider>
 	);

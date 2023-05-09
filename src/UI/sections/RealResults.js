@@ -12,15 +12,15 @@ const RealResults = (props) => {
 					<div className="carousel--centered">
 						<div className="carousel-inner row flex-nowrap mx-0">
 							{carouselData.map((result, i) =>
-								<RealResultCard result={result} active={i === 1}/>
+								<RealResultCard range={props.range} result={result} active={i === 1}/>
 							)}
 						</div>
 					</div>
-					<button data-bs-target="#realResults" className="carousel-control carousel-control-prev carousel-control--background floating-out-left justify-content-start text-primary" data-bs-slide="prev">
+					<button data-bs-target="#realResults" className="carousel-control carousel-control-prev carousel-control--background floating-out-start justify-content-start text-primary" data-bs-slide="prev">
 						<span class="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.627 22.627" class="svg"><path d="M16.2 1.885l-9.428 9.428 9.428 9.428-1.886 1.886L3 11.313 14.314 0z"></path></svg></span>
 						<span class="visually-hidden text-body">Previous</span>
 					</button>
-					<button data-bs-target="#realResults" class="carousel-control carousel-control-next carousel-control--background floating-out-right justify-content-end text-primary" data-bs-slide="next">
+					<button data-bs-target="#realResults" class="carousel-control carousel-control-next carousel-control--background floating-out-end justify-content-end text-primary" data-bs-slide="next">
 						<span class="carousel-control-next-icon d-flex justify-content-center align-items-center" aria-hidden="true"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.627 22.627" class="svg"><path d="M5.428 20.742l9.428-9.428-9.428-9.428L7.314 0l11.314 11.314L7.314 22.627z"></path></svg></span>
 						<span class="visually-hidden text-body">Next</span>
 					</button>
