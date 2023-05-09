@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.js": "../static/js/main.6400e978.js",
-    "static/css/138.f40f48a8.chunk.css": "../static/css/138.f40f48a8.chunk.css",
+    "main.js": "../static/js/main.90b075c0.js",
+    "static/css/138.a7fd492f.chunk.css": "../static/css/138.a7fd492f.chunk.css",
     "static/js/138.80fc3415.chunk.js": "../static/js/138.80fc3415.chunk.js",
     "static/js/217.8113bd5d.chunk.js": "../static/js/217.8113bd5d.chunk.js",
     "static/js/534.22d2d5ed.chunk.js": "../static/js/534.22d2d5ed.chunk.js",
-    "static/css/562.fa0c2e68.chunk.css": "../static/css/562.fa0c2e68.chunk.css",
+    "static/css/562.ee4eb3a1.chunk.css": "../static/css/562.ee4eb3a1.chunk.css",
     "static/js/562.2317f4df.chunk.js": "../static/js/562.2317f4df.chunk.js",
     "static/css/850.102afc36.chunk.css": "../static/css/850.102afc36.chunk.css",
     "static/js/850.4bd44699.chunk.js": "../static/js/850.4bd44699.chunk.js",
+    "static/js/948.b479d64e.chunk.js": "../static/js/948.b479d64e.chunk.js",
+    "static/js/267.93325433.chunk.js": "../static/js/267.93325433.chunk.js",
     "static/js/476.74847619.chunk.js": "../static/js/476.74847619.chunk.js",
     "static/js/430.81ad6c34.chunk.js": "../static/js/430.81ad6c34.chunk.js",
     "static/js/669.c5bc961d.chunk.js": "../static/js/669.c5bc961d.chunk.js",
@@ -17,11 +19,13 @@
     "static/js/568.230b6f84.chunk.js": "../static/js/568.230b6f84.chunk.js",
     "static/js/889.7f48208a.chunk.js": "../static/js/889.7f48208a.chunk.js",
     "static/js/269.d3a96553.chunk.js": "../static/js/269.d3a96553.chunk.js",
-    "static/js/506.da175228.chunk.js": "../static/js/506.da175228.chunk.js",
-    "static/css/284.d573ff48.chunk.css": "../static/css/284.d573ff48.chunk.css",
-    "static/js/284.d3ce609f.chunk.js": "../static/js/284.d3ce609f.chunk.js",
+    "static/js/48.634f1017.chunk.js": "../static/js/48.634f1017.chunk.js",
+    "static/css/284.de9be41a.chunk.css": "../static/css/284.de9be41a.chunk.css",
+    "static/js/284.944fbd9e.chunk.js": "../static/js/284.944fbd9e.chunk.js",
+    "static/js/445.f3e91102.chunk.js": "../static/js/445.f3e91102.chunk.js",
     "static/js/120.d4bc827c.chunk.js": "../static/js/120.d4bc827c.chunk.js",
     "static/js/484.22144cbd.chunk.js": "../static/js/484.22144cbd.chunk.js",
+    "static/js/660.7b5782df.chunk.js": "../static/js/660.7b5782df.chunk.js",
     "shampoo-conditioner-set/index.html": "../shampoo-conditioner-set/index.html",
     "sunny-honey-bali-bronzing-self-tan/index.html": "../sunny-honey-bali-bronzing-self-tan/index.html",
     "super-nourishing-coconut-fig-hair-masque/index.html": "../super-nourishing-coconut-fig-hair-masque/index.html",
@@ -29,7 +33,9 @@
     "repairing-restoring-hair-mask/index.html": "../repairing-restoring-hair-mask/index.html",
     "blackfriday-sweepstakes/index.html": "../blackfriday-sweepstakes/index.html",
     "range-tan/index.html": "../range-tan/index.html",
+    "range-hair-amazon/index.html": "../range-hair-amazon/index.html",
     "range-hair/index.html": "../range-hair/index.html",
+    "range-tan-amazon/index.html": "../range-tan-amazon/index.html",
     "range-tan-test/index.html": "../range-tan-test/index.html",
     "customers-survey/index.html": "../customers-survey/index.html",
     "static/media/diet.svg": "../static/media/diet.0ac4c8506977502e480bfda2b8a4d163.svg",
@@ -52,6 +58,7 @@
     "static/media/sun.svg": "../static/media/sun.061d71c580e3034c2962f9639ee7ad14.svg",
     "static/media/green-checkmark.svg": "../static/media/green-checkmark.f7ff7bb0306f8caba37fb948e2bf77fe.svg",
     "static/media/star-line.svg": "../static/media/star-line.3624e4d33d72deb2448dff4df1d5b47b.svg",
+    "static/media/star-five.svg": "../static/media/star-five.a33f63eb3f728e1407e3f9e1b6a599c4.svg",
     "static/media/star-full.svg": "../static/media/star-full.c06f8f36529dcb281c45610fe253de6b.svg",
     "static/media/check.svg": "../static/media/check.17a435a452a0d0862e75fff1b2095209.svg",
     "static/media/close.svg": "../static/media/close.7858cfb0a3ff676191c7ff65d51a6dc2.svg",
@@ -63,6 +70,6 @@
     "static/media/chevron-down.svg": "../static/media/chevron-down.6b10250df20474511cb9f46a308f53e3.svg"
   },
   "entrypoints": [
-    "static/js/main.6400e978.js"
+    "static/js/main.90b075c0.js"
   ]
 }
