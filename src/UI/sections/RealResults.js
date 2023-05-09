@@ -11,22 +11,9 @@ const RealResults = (props) => {
 				<div id="realResults" className="carousel slide carousel--loop carousel--real-result" data-bs-ride="carousel" data-bs-slide-number="4" data-bs-interval="false">
 					<div className="carousel--centered">
 						<div className="carousel-inner row flex-nowrap mx-0">
-							<RealResultCard />
-							<RealResultCard active={true} />
-							<RealResultCard />
-							<RealResultCard />
-							<RealResultCard />
-							<RealResultCard />
-							<RealResultCard />
-							<RealResultCard />
-							<RealResultCard />
-							<RealResultCard />
-							<RealResultCard />
-							<RealResultCard />
-							<RealResultCard />
-							<RealResultCard />
-							<RealResultCard />
-							<RealResultCard />
+							{carouselData.map((result, i) =>
+								<RealResultCard result={result} active={i === 1}/>
+							)}
 						</div>
 					</div>
 					<button data-bs-target="#realResults" className="carousel-control carousel-control-prev carousel-control--background floating-out-left justify-content-start text-primary" data-bs-slide="prev">
