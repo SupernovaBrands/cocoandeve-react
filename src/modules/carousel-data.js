@@ -611,13 +611,122 @@ const PRODUCTS_HAIR_AMAZON_CA = [
     },
 ];
 
+const PRODUCTS_TAN_AMAZON_UK = [
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8c2d8c7b-46d4-4303-9ae6-106d6e25d800/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1a30deb4-1d70-4ad8-af43-15b446aaae00/828x"
+            externalUrl='https://www.amazon.co.uk/dp/B091CF3JVM?maas=maas_adg_CC13AEB22B274A91DB2BCCB2E9DE3092_afap_abs&ref_=aa_maas&tag=maas'
+            handle='bronzing-self-tanner-drops'
+            ctaText='Shop on Amazon'
+            externalPrice='£22' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="../images/Featured_BronzingFoam_532x.jpg"
+            comImg="../compressed_images/Featured_BronzingFoam_532x.webp"
+            externalUrl='https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas'
+            handle='sunny-honey-bali-bronzing-self-tan-mousse'
+            ctaText='Shop on Amazon'
+            externalPrice='£26' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="../images/Featured_BaliBronzingBundle_532x.jpg"
+            comImg="../compressed_images/Featured_BaliBronzingBundle_532x.webp"
+            externalUrl='https://www.amazon.co.uk/dp/B08Y6T5LH7?maas=maas_adg_D744E9EA7D5ED9560F3C3A01B5FCBC30_afap_abs&ref_=aa_maas&tag=maas'
+            handle='sunny-honey-bali-bronzing-self-tan-set'
+            ctaText='Shop on Amazon'
+            externalPrice='£46' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5d900bf6-1945-4924-ad86-c4c2cad25400/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5d900bf6-1945-4924-ad86-c4c2cad25400/828x"
+            externalUrl='https://www.amazon.co.uk/dp/B08G1LQGLN?maas=maas_adg_41BA452BD27E9183A787C581A15F110D_afap_abs&ref_=aa_maas&tag=maas&th=1'
+            handle='sunny-honey-bali-bronzing-self-tan-set'
+            ctaText='Shop on Amazon'
+            externalPrice='£32' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="../images/Featured_TanBundlewithBackApplicator_532x.jpg"
+            comImg="../compressed_images/Featured_TanBundlewithBackApplicator_532x.webp"
+            externalUrl='https://www.amazon.co.uk/dp/B09XV2LZBN?maas=maas_adg_56A92FEFE18B2F481EACF2D502E06117_afap_abs&ref_=aa_maas&tag=maas'
+            handle='bali-bae-self-tan-set'
+            ctaText='Shop on Amazon'
+            externalPrice='£56' />
+    },
+];
+
+const PRODUCTS_TAN_AMAZON_CA = [
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8c2d8c7b-46d4-4303-9ae6-106d6e25d800/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1a30deb4-1d70-4ad8-af43-15b446aaae00/828x"
+            externalUrl='https://www.amazon.ca/dp/B091CF3JVM?maas=maas_adg_DA33E47C05DF88018AEAF652C9A3C6B2_afap_abs&ref_=aa_maas&tag=maas'
+            handle='bronzing-self-tanner-drops'
+            ctaText='Shop on Amazon'
+            externalPrice='$38' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="../images/Featured_BronzingFoam_532x.jpg"
+            comImg="../compressed_images/Featured_BronzingFoam_532x.webp"
+            externalUrl='https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas'
+            handle='sunny-honey-bali-bronzing-self-tan-mousse'
+            ctaText='Shop on Amazon'
+            externalPrice='$49' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="../images/Featured_BaliBronzingBundle_532x.jpg"
+            comImg="../compressed_images/Featured_BaliBronzingBundle_532x.webp"
+            externalUrl='https://www.amazon.ca/dp/B08Y6T5LH7?maas=maas_adg_D734E060FE25A5BCD74D084256D4EE36_afap_abs&ref_=aa_maas&tag=maas'
+            handle='sunny-honey-bali-bronzing-self-tan-set'
+            ctaText='Shop on Amazon'
+            externalPrice='$70' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5d900bf6-1945-4924-ad86-c4c2cad25400/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5d900bf6-1945-4924-ad86-c4c2cad25400/828x"
+            externalUrl='https://www.amazon.ca/dp/B0C45TL4YB?maas=maas_adg_2D63E5E984AAEA1EFFFC1E4AFAD04F84_afap_abs&ref_=aa_maas&tag=maas'
+            handle='sunny-honey-bali-bronzing-self-tan-set'
+            ctaText='Shop on Amazon'
+            externalPrice='$70' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="../images/Featured_TanBundlewithBackApplicator_532x.jpg"
+            comImg="../compressed_images/Featured_TanBundlewithBackApplicator_532x.webp"
+            externalUrl='https://www.amazon.ca/dp/B09XV2LZBN?maas=maas_adg_AF95642603D7372EAE55A8BA45298159_afap_abs&ref_=aa_maas&tag=maas'
+            handle='bali-bae-self-tan-set'
+            ctaText='Shop on Amazon'
+            externalPrice='$93' />
+    },
+];
+
 let PRODUCTS_HAIR_AMAZON = [];
+let PRODUCTS_TAN_AMAZON = [];
 if (['uk'].includes(activeStore)) {
     PRODUCTS_HAIR_AMAZON = [...PRODUCTS_HAIR_AMAZON_UK, ...PRODUCTS_HAIR_AMAZON_UK];
+    PRODUCTS_TAN_AMAZON = [...PRODUCTS_TAN_AMAZON_UK, ...PRODUCTS_TAN_AMAZON_UK];
 }
 
 if (['ca'].includes(activeStore)) {
     PRODUCTS_HAIR_AMAZON = [...PRODUCTS_HAIR_AMAZON_CA, ...PRODUCTS_HAIR_AMAZON_CA];
+    PRODUCTS_TAN_AMAZON = [...PRODUCTS_TAN_AMAZON_CA, ...PRODUCTS_TAN_AMAZON_CA];
 }
 
-export { PRODUCTS_FACE, PRODUCTS_BODY, PRODUCTS_VALUE_SETS, PRODUCTS_HAIR_1, PRODUCTS_HAIR_2, PRODUCTS_HAIR_3, PRODUCTS_HAIR_AMAZON };
+export { PRODUCTS_FACE, PRODUCTS_BODY, PRODUCTS_VALUE_SETS, PRODUCTS_HAIR_1, PRODUCTS_HAIR_2, PRODUCTS_HAIR_3, PRODUCTS_HAIR_AMAZON, PRODUCTS_TAN_AMAZON };

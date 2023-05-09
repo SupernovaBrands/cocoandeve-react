@@ -97,6 +97,10 @@
 			visibility: visible;
 		}
 
+		.carousel-item.col-9 {
+			max-width: 75%;
+		}
+
 		.carousel-item.col-md-3 {
 			@include media-breakpoint-up(lg) {
 				flex: 0 0 20%;

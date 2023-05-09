@@ -6,35 +6,26 @@ import RangeCarousel from "../sections/RangeCarousel";
 import BannerImage from '../sections/BannerImage';
 import ReviewProvider from '../../store/ReviewProvider';
 import RealResults from '../sections/RealResults';
+import WhatMakesDifferent from '../sections/WhatMakesDifferent';
 const SeenIn = lazy(() => import('../sections/SeenIn'));
 const AmazonHairRange = () => {
 	const bannerData = {
 		desktop: {
-			webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/90953968-87df-488e-8dde-b5c48c0d9200/828x',
-			jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/90953968-87df-488e-8dde-b5c48c0d9200/828x'
+			webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b93abb92-6a08-4555-e5cd-43fd63c22400/828x',
+			jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b93abb92-6a08-4555-e5cd-43fd63c22400/828x'
 		},
 		mobile: {
-			webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/90953968-87df-488e-8dde-b5c48c0d9200/828x',
-			jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/90953968-87df-488e-8dde-b5c48c0d9200/828x'
-		},
-	};
-	const bannerData2 = {
-		desktop: {
-			webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5b5fda47-5922-4528-5819-c34967619100/2280x',
-			jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5b5fda47-5922-4528-5819-c34967619100/2280x'
-		},
-		mobile: {
-			webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5b5fda47-5922-4528-5819-c34967619100/828x',
-			jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5b5fda47-5922-4528-5819-c34967619100/828x'
+			webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b93abb92-6a08-4555-e5cd-43fd63c22400/828x',
+			jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b93abb92-6a08-4555-e5cd-43fd63c22400/828x'
 		},
 	};
 	return (
 		<RangeProvider>
-			<RangeBanner range='amazonHair' />
-			<RangeCarousel range='amazonHair' />
+			<RangeBanner range='amazonTan' />
+			<RangeCarousel range='amazonTan' />
 			<Suspense fallback={<div></div>}>
                 <BannerImage bannerData={bannerData} />
-				<BannerImage bannerData={bannerData2} />
+				<WhatMakesDifferent />
 				<ReviewProvider>
 					<SeenIn range="tan" />
                 </ReviewProvider>
