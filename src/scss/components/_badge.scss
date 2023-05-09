@@ -1,8 +1,37 @@
 .badge {
+	display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.5em;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	min-width: calc-em(54);
 	line-height: $line-height-base;
-
-	&--square {
-		left: 2 * $grid-gutter-width;
-		top: $grid-gutter-width;
-	}
 }
+
+  .circle-badge {
+	width: $badge-circle-width;
+	height: $badge-circle-height;
+	right: calc-em(-5);
+	top: calc-em(-20);
+
+	@include media-breakpoint-up(lg) {
+	  width: calc-em(90);
+	  height: calc-em(90);
+	}
+  }
+
+  // colors
+
+  .badge-secondary {
+	background-color: $secondary;
+	color: #fff;
+  }
+
+  .badge-purple {
+	background-color: $sh-purple;
+	color: #fff;
+  }

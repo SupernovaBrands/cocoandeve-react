@@ -14,7 +14,7 @@ const Carousel = (props) => {
     useEffect(() => {
         carouselSwipe(props.id);
     }, []);
-    
+
     return (
         <div id={props.id} className={props.className} data-bs-interval="false" data-bs-touch="false">
             {props.centered ? (

@@ -12,6 +12,8 @@ const TanRange = lazy(() => import('./UI/templates/TanRange'));
 const HairRange = lazy(() => import('./UI/templates/HairRange'));
 const Survey = lazy(() => import('./UI/templates/Survey'));
 const Sweepstakes = lazy(() => import('./UI/templates/Sweepstakes'));
+const AmazonHairRange = lazy(() => import('./UI/templates/AmazonHairRange'));
+const AmazonTanRange = lazy(() => import('./UI/templates/AmazonTanRange'));
 
 const App = () => {
   const noHeader = () => window.location.pathname === '/customers-survey' || window.location.pathname === '/customers-survey/' || window.location.pathname.includes('blackfriday');
@@ -33,6 +35,8 @@ const App = () => {
           <Route path='/shampoo-conditioner-set' element={<ProductDetail handle="shampoo-conditioner-set" range="hair" />} />
           <Route path='/super-nourishing-coconut-fig-hair-masque' element={<ProductDetail handle="super-nourishing-coconut-fig-hair-masque" range="hair" />} />
           <Route path='/blackfriday-sweepstakes' element={<Sweepstakes />} />
+          <Route path='/range-hair-amazon' element={<AmazonHairRange />} />
+          <Route path='/range-tan-amazon' element={<AmazonTanRange />} />
         </Routes>
       </Suspense>
     </Layout>

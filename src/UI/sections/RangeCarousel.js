@@ -7,7 +7,7 @@ import { ReactComponent as ChevronPrev1 } from '../../assets/chevron-prev.svg';
 import { ReactComponent as ChevronNext1 } from '../../assets/chevron-next.svg';
 import { Fragment, useContext } from "react";
 import { useWindowSize } from "../../modules/Utils";
-import { PRODUCTS_FACE, PRODUCTS_BODY, PRODUCTS_VALUE_SETS, PRODUCTS_HAIR_1, PRODUCTS_HAIR_2, PRODUCTS_HAIR_3 } from "../../modules/carousel-data";
+import { PRODUCTS_FACE, PRODUCTS_BODY, PRODUCTS_VALUE_SETS, PRODUCTS_HAIR_1, PRODUCTS_HAIR_2, PRODUCTS_HAIR_3, PRODUCTS_HAIR_AMAZON, PRODUCTS_TAN_AMAZON } from "../../modules/carousel-data";
 
 const RangeCarousel = (props) => {
 
@@ -16,6 +16,7 @@ const RangeCarousel = (props) => {
 
 	const rangeCtx = useContext(RangeContext);
 	let carouselData = rangeCtx.carouselSection[props.range][activeStore];
+	console.log('carouselData', carouselData);
 	if (!carouselData) {
 		carouselData = rangeCtx.carouselSection[props.range]['us'];
 	}
@@ -76,6 +77,48 @@ const RangeCarousel = (props) => {
 
 	let CAROUSEL_TABS = CAROUSEL_TABS_TAN;
 
+	const CAROUSEL_TABS_AMAZON_HAIR = [
+		{
+			carouselId: 'FeaturedHair1',
+			isTabActive: false,
+			carouselItems: PRODUCTS_HAIR_1.length < 4 && PRODUCTS_HAIR_1.length > 1 && isMobile ? productFaceMerged : PRODUCTS_HAIR_1,
+			tabLabel: carouselData.face
+		},
+		{
+			carouselId: 'FeaturedHair2',
+			isTabActive: true,
+			carouselItems: PRODUCTS_HAIR_AMAZON,
+			tabLabel: carouselData.body
+		},
+		{
+			carouselId: 'FeaturedHair3',
+			isTabActive: false,
+			carouselItems: PRODUCTS_HAIR_3.length < 4 && isMobile ? productValuemerged : PRODUCTS_HAIR_3,
+			tabLabel: carouselData.valuesets
+		}
+	];
+
+	const CAROUSEL_TABS_AMAZON_TAN = [
+		{
+			carouselId: 'FeaturedHair1',
+			isTabActive: false,
+			carouselItems: PRODUCTS_FACE.length < 4 && PRODUCTS_FACE.length > 1 && isMobile ? productFaceMerged : PRODUCTS_FACE,
+			tabLabel: carouselData.face
+		},
+		{
+			carouselId: 'FeaturedHair2',
+			isTabActive: true,
+			carouselItems: PRODUCTS_TAN_AMAZON,
+			tabLabel: carouselData.body
+		},
+		{
+			carouselId: 'FeaturedHair3',
+			isTabActive: false,
+			carouselItems: PRODUCTS_VALUE_SETS.length < 4 && isMobile ? productValuemerged : PRODUCTS_VALUE_SETS,
+			tabLabel: carouselData.valuesets
+		}
+	];
+
 	if (props.range === 'hair') {
 		CAROUSEL_TABS = CAROUSEL_TABS_HAIR;
 
@@ -88,6 +131,18 @@ const RangeCarousel = (props) => {
 		carouselLoop('FeaturedBody');
 		carouselLoop('FeaturedFace');
 		carouselLoop('FeaturedValueSets');
+	} else if (props.range === 'amazonHair') {
+		CAROUSEL_TABS = CAROUSEL_TABS_AMAZON_HAIR;
+
+		carouselLoop('FeaturedHair1');
+		carouselLoop('FeaturedHair2');
+		carouselLoop('FeaturedHair3');
+	} else if (props.range === 'amazonTan') {
+		CAROUSEL_TABS = CAROUSEL_TABS_AMAZON_TAN;
+
+		carouselLoop('FeaturedHair1');
+		carouselLoop('FeaturedHair2');
+		carouselLoop('FeaturedHair3');
 	}
 
 

@@ -809,6 +809,28 @@ const productList = {
         us: {
             price: '$25.00',
             title: 'Bond Building Pre-Shampoo Treatment',
+        },
+        uk: {
+            price: '$25.00',
+            title: 'Bond Building Pre-Shampoo Treatment',
+        },
+        ca: {
+            price: '$25.00',
+            title: 'Bond Building Pre-Shampoo Treatment',
+        }
+    },
+    'masque-towelwrap': {
+        us: {
+            price: '$25.00',
+            title: "That's A Wrap Bundle",
+        },
+        uk: {
+            price: '$25.00',
+            title: "That's A Wrap Bundle",
+        },
+        ca: {
+            price: '$25.00',
+            title: "That's A Wrap Bundle",
         }
     },
 };
@@ -891,6 +913,154 @@ const carouselSection = {
     hair: {
         us: {
             title: 'Hair products for any occasion',
+            face: 'New',
+            body: 'Bestsellers',
+            valuesets: 'Kits',
+            learnMore: 'Learn More',
+            carouselTabs: [
+                {
+                    carouselId: 'FeaturedHair1',
+                    isTabActive: false,
+                    tabLabel: 'New'
+                },
+                {
+                    carouselId: 'FeaturedHair2',
+                    isTabActive: true,
+                    tabLabel: 'Bestsellers'
+                },
+                {
+                    carouselId: 'FeaturedHair3',
+                    isTabActive: false,
+                    tabLabel: 'Value Sets'
+                }
+            ]
+        },
+        fr: {
+            title: 'Des produits de soins capillaires pour toutes les occasions',
+            face: 'Nouveau',
+            body: 'Bestseller',
+            valuesets: 'Kits',
+            learnMore: 'En savoir plus',
+            carouselTabs: [
+                {
+                    carouselId: 'FeaturedHair1',
+                    isTabActive: false,
+                    tabLabel: 'Nouveau'
+                },
+                {
+                    carouselId: 'FeaturedHair2',
+                    isTabActive: true,
+                    tabLabel: 'Bestseller'
+                },
+                {
+                    carouselId: 'FeaturedHair3',
+                    isTabActive: false,
+                    tabLabel: 'Kits'
+                }
+            ]
+        },
+        de: {
+            title: 'Haarprodukte für jeden Anlass',
+            face: 'Neu',
+            body: 'Bestseller',
+            valuesets: 'Sets',
+            learnMore: 'Erfahre mehr',
+            carouselTabs: [
+                {
+                    carouselId: 'FeaturedHair1',
+                    isTabActive: false,
+                    tabLabel: 'Neu'
+                },
+                {
+                    carouselId: 'FeaturedHair2',
+                    isTabActive: true,
+                    tabLabel: 'Bestseller'
+                },
+                {
+                    carouselId: 'FeaturedHair3',
+                    isTabActive: false,
+                    tabLabel: 'Sets'
+                }
+            ]
+        }
+    },
+    amazonHair: {
+        us: {
+            title: 'Hair products for any occasion',
+            face: 'New',
+            body: 'Bestsellers',
+            valuesets: 'Kits',
+            learnMore: 'Learn More',
+            carouselTabs: [
+                {
+                    carouselId: 'FeaturedHair1',
+                    isTabActive: false,
+                    tabLabel: 'New'
+                },
+                {
+                    carouselId: 'FeaturedHair2',
+                    isTabActive: true,
+                    tabLabel: 'Bestsellers'
+                },
+                {
+                    carouselId: 'FeaturedHair3',
+                    isTabActive: false,
+                    tabLabel: 'Value Sets'
+                }
+            ]
+        },
+        fr: {
+            title: 'Des produits de soins capillaires pour toutes les occasions',
+            face: 'Nouveau',
+            body: 'Bestseller',
+            valuesets: 'Kits',
+            learnMore: 'En savoir plus',
+            carouselTabs: [
+                {
+                    carouselId: 'FeaturedHair1',
+                    isTabActive: false,
+                    tabLabel: 'Nouveau'
+                },
+                {
+                    carouselId: 'FeaturedHair2',
+                    isTabActive: true,
+                    tabLabel: 'Bestseller'
+                },
+                {
+                    carouselId: 'FeaturedHair3',
+                    isTabActive: false,
+                    tabLabel: 'Kits'
+                }
+            ]
+        },
+        de: {
+            title: 'Haarprodukte für jeden Anlass',
+            face: 'Neu',
+            body: 'Bestseller',
+            valuesets: 'Sets',
+            learnMore: 'Erfahre mehr',
+            carouselTabs: [
+                {
+                    carouselId: 'FeaturedHair1',
+                    isTabActive: false,
+                    tabLabel: 'Neu'
+                },
+                {
+                    carouselId: 'FeaturedHair2',
+                    isTabActive: true,
+                    tabLabel: 'Bestseller'
+                },
+                {
+                    carouselId: 'FeaturedHair3',
+                    isTabActive: false,
+                    tabLabel: 'Sets'
+                }
+            ]
+        }
+    },
+    amazonTan: {
+        us: {
+            title: 'Tan products for any occasion',
             face: 'New',
             body: 'Bestsellers',
             valuesets: 'Kits',
@@ -1105,11 +1275,87 @@ const bannerSection = {
                 jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c25f520f-7c4d-412a-9aa5-258798b21f00/1140x',
             }
         }
-    }
-    
+    },
+    amazonHair: {
+        us: {
+            title: 'Like A Virgin',
+            subtitle: 'Transform you hair so it feels like a virgin..again!',
+            desktop: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d41b7699-e9fe-4cda-1763-992ac35e6200/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4643aa92-c1a8-453b-8718-a8770794da00/2280x',
+            },
+            mobile: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/edd295fc-3ed4-4e94-dfe8-d586e0f91e00/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9ee68053-464d-4dc0-603a-80722b3dfa00/1140x',
+            }
+        },
+        ca: {
+            title: 'Like A Virgin',
+            subtitle: 'Transform you hair so it feels like a virgin..again!',
+            desktop: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d41b7699-e9fe-4cda-1763-992ac35e6200/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4643aa92-c1a8-453b-8718-a8770794da00/2280x',
+            },
+            mobile: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/edd295fc-3ed4-4e94-dfe8-d586e0f91e00/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9ee68053-464d-4dc0-603a-80722b3dfa00/1140x',
+            }
+        },
+        uk: {
+            title: 'Like A Virgin',
+            subtitle: 'Transform you hair so it feels like a virgin..again!',
+            desktop: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d41b7699-e9fe-4cda-1763-992ac35e6200/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4643aa92-c1a8-453b-8718-a8770794da00/2280x',
+            },
+            mobile: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/edd295fc-3ed4-4e94-dfe8-d586e0f91e00/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9ee68053-464d-4dc0-603a-80722b3dfa00/1140x',
+            }
+        }
+    },
+    amazonTan: {
+        us: {
+            title: 'Sunny Honey',
+            subtitle: 'The only self tanner you\'ll ever need.',
+            desktop: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a32c9238-f939-48ad-26ae-8134d5984f00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f316b48e-4bfb-40c3-cb09-d02bda3e0f00/2280x',
+            },
+            mobile: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/fbd4c71c-435a-4b30-7c71-4ee5781fb500/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4fb7c985-0105-4ce4-a970-8c513342b700/1140x',
+            }
+        },
+        ca: {
+            title: 'Sunny Honey',
+            subtitle: 'The only self tanner you\'ll ever need.',
+            desktop: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a32c9238-f939-48ad-26ae-8134d5984f00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f316b48e-4bfb-40c3-cb09-d02bda3e0f00/2280x',
+            },
+            mobile: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/fbd4c71c-435a-4b30-7c71-4ee5781fb500/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4fb7c985-0105-4ce4-a970-8c513342b700/1140x',
+            }
+        },
+        uk: {
+            title: 'Sunny Honey',
+            subtitle: 'The only self tanner you\'ll ever need.',
+            desktop: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a32c9238-f939-48ad-26ae-8134d5984f00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f316b48e-4bfb-40c3-cb09-d02bda3e0f00/2280x',
+            },
+            mobile: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/fbd4c71c-435a-4b30-7c71-4ee5781fb500/1140x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4fb7c985-0105-4ce4-a970-8c513342b700/1140x',
+            }
+        }
+    },
 };
 
 const rangeReducer = (state, action) => {
+    console.log('rangereducer action', action);
     return productList[action.productHandle][action.activeStore];
 };
 
