@@ -8,7 +8,7 @@ const RealResults = (props) => {
 		<section className="pt-4 pb-4 bg-yellow-light position-relative">
 			<div className="container p-0 p-md-1" id="real-results">
 				<h2 className="pb-2 mb-0 text-center h1">Real Results</h2>
-				<div id="realResults" className="carousel slide carousel--loop carousel--real-result" data-bs-ride="carousel" data-bs-slide-number="4">
+				<div id="realResults" className="carousel slide carousel--loop carousel--real-result" data-bs-interval="false" data-bs-slide-number="4">
 					<div className="carousel--centered">
 						<div className="carousel-inner row flex-nowrap mx-0 w-100">
 							{carouselData.map((result, i) =>
