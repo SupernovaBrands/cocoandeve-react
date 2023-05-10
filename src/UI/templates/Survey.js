@@ -369,13 +369,7 @@ const Survey = () => {
     const startQuiz = () => {
         postMessageData('Survey', 'started');
         setPosition('question-1');
-        const eventStarted = {
-            event: 'survey',
-            event_params: {
-                position: 'question_1'
-            }
-        };
-        sendTodataLayer(eventStarted);
+        sendTodataLayer('question_1');
     }
 
     const onIdle = () => {
