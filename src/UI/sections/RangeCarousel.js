@@ -16,7 +16,6 @@ const RangeCarousel = (props) => {
 
 	const rangeCtx = useContext(RangeContext);
 	let carouselData = rangeCtx.carouselSection[props.range][activeStore];
-	console.log('carouselData', carouselData);
 	if (!carouselData) {
 		carouselData = rangeCtx.carouselSection[props.range]['us'];
 	}
