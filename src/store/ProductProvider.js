@@ -571,7 +571,7 @@ const ProductProvider = props => {
     };
 
     const productContext = { ...productState, storeChange: storeChangeHandler };
-    
+
 
     return (
         <ProductContext.Provider value={productContext}>

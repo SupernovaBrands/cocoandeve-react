@@ -833,6 +833,20 @@ const productList = {
             title: "That's A Wrap Bundle",
         }
     },
+    'sunny-honey-bali-bronzing-self-tan-set-mitt': {
+        us: {
+            price: '$32.00',
+            title: 'Bali Bronzing Self Tanner Mousse Set',
+        },
+        uk: {
+            price: '$25.00',
+            title: 'Bali Bronzing Self Tanner Mousse Set',
+        },
+        ca: {
+            price: '$25.00',
+            title: 'Bali Bronzing Self Tanner Mousse Set',
+        }
+    }
 };
 
 const carouselSection = {

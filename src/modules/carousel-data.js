@@ -645,10 +645,10 @@ const PRODUCTS_TAN_AMAZON_UK = [
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
         content: <ProductCard
-            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5d900bf6-1945-4924-ad86-c4c2cad25400/828x"
-            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5d900bf6-1945-4924-ad86-c4c2cad25400/828x"
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/47a254b2-14c2-4a7b-dd6d-530064d5f400/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c548b49d-7cc2-44db-0949-555633529800/828x"
             externalUrl='https://www.amazon.co.uk/dp/B08G1LQGLN?maas=maas_adg_41BA452BD27E9183A787C581A15F110D_afap_abs&ref_=aa_maas&tag=maas&th=1'
-            handle='sunny-honey-bali-bronzing-self-tan-set'
+            handle='sunny-honey-bali-bronzing-self-tan-set-mitt'
             ctaText='Shop on Amazon'
             externalPrice='£32' />
     },
@@ -698,12 +698,12 @@ const PRODUCTS_TAN_AMAZON_CA = [
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
         content: <ProductCard
-            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5d900bf6-1945-4924-ad86-c4c2cad25400/828x"
-            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5d900bf6-1945-4924-ad86-c4c2cad25400/828x"
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/47a254b2-14c2-4a7b-dd6d-530064d5f400/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c548b49d-7cc2-44db-0949-555633529800/828x"
             externalUrl='https://www.amazon.ca/dp/B0C45TL4YB?maas=maas_adg_2D63E5E984AAEA1EFFFC1E4AFAD04F84_afap_abs&ref_=aa_maas&tag=maas'
-            handle='sunny-honey-bali-bronzing-self-tan-set'
+            handle='sunny-honey-bali-bronzing-self-tan-set-mitt'
             ctaText='Shop on Amazon'
-            externalPrice='$70' />
+            externalPrice='$55' />
     },
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
