@@ -298,6 +298,16 @@ const Survey = () => {
 
         // send completed event
         postMessageData('Survey', 'completed', email);
+        // send completed event GA4
+        window.dataLayer.push({
+            event: 'quiz',
+            event_params: {
+                category: 'Survey',
+                action: 'pageview',
+                label: 'question_position',
+                value: 'completed'
+            }
+        });
 
         const gaAnswers = decodeAnswers(currentAnswer)
         const keys = Object.keys(gaAnswers);
@@ -347,6 +357,16 @@ const Survey = () => {
                 'action': 'submitEmail',
                 'label': email,
             }, `https://${site}`);
+            // push event to GA4
+            window.dataLayer.push({
+                event: 'quiz',
+                event_params: {
+                    category: 'Survey',
+                    action: 'submitEmail',
+                    label: 'EmailAddress',
+                    value: email
+                }
+            });
         }
     }
 
