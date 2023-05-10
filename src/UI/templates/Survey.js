@@ -27,6 +27,19 @@ const Survey = () => {
     const language = searchParams.get('lang');
     const abTest = searchParams.get('abtest');
 
+    const sendTodataLayer = (position) => {
+        window.dataLayer.push({
+            event: 'quiz',
+            event_params: {
+                category: 'Survey',
+                action: 'pageview',
+                label: 'question_position',
+                value: position
+            }
+        });
+        console.log('dataLayer push', window.dataLayer);
+    };
+
     const setCookieAnsweredQuestion = (object) => {
         if (typeof object === 'object') {
             Object.entries(object).forEach((data) => {
@@ -72,6 +85,7 @@ const Survey = () => {
         postMessageData('Survey', 'started');
         initialState = 'question-1';
         setCookie('answeredQuestion', '');
+        sendTodataLayer('question_1');
     }
     const initialCurrentQuestion = getCookie('currentQuestion') ? parseInt(getCookie('currentQuestion'), 10) : 1;
     const initialSubmitted = getCookie('quizEmail') ? true : false;
@@ -238,11 +252,14 @@ const Survey = () => {
                     answerAction(questionIndex, '');
                     const targetQuestionIndex = currentQuestion < questionIndex ? questionIndex + 1 : questionIndex - 1;
                     setQuestion(targetQuestionIndex);
+                    sendTodataLayer(`question_${questionIndex}`);
                 } else {
                     setQuestion(questionIndex);
+                    sendTodataLayer(`question_${questionIndex}`);
                 }
             } else {
                 setQuestion(questionIndex);
+                sendTodataLayer(`question_${questionIndex}`);
             }
         } else if (questionIndex >= Questions.length) {
             if (additionalStep) {
@@ -353,15 +370,12 @@ const Survey = () => {
         postMessageData('Survey', 'started');
         setPosition('question-1');
         const eventStarted = {
-            event: 'test_started_quiz',
+            event: 'survey',
             event_params: {
-                param1: 'param1',
-                param2: 'param2'
-            },
-            purpose: 'debug'
+                position: 'question_1'
+            }
         };
-        window.dataLayer.push(eventStarted);
-        console.log('eventStarted', eventStarted);
+        sendTodataLayer(eventStarted);
     }
 
     const onIdle = () => {
