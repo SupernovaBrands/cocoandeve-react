@@ -37,7 +37,6 @@ const Survey = () => {
                 value: position
             }
         });
-        console.log('dataLayer push', window.dataLayer);
     };
 
     const setCookieAnsweredQuestion = (object) => {
