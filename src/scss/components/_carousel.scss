@@ -97,7 +97,7 @@
 			visibility: visible;
 		}
 
-		.carousel-item.col-9 {
+		.carousel-item.col-9:not(.carousel-item-prev):not(.carousel-item-end) {
 			max-width: 75%;
 		}
 
