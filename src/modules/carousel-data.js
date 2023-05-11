@@ -703,7 +703,7 @@ const PRODUCTS_TAN_AMAZON_CA = [
             externalUrl='https://www.amazon.ca/dp/B0C45TL4YB?maas=maas_adg_2D63E5E984AAEA1EFFFC1E4AFAD04F84_afap_abs&ref_=aa_maas&tag=maas'
             handle='sunny-honey-bali-bronzing-self-tan-set-mitt'
             ctaText='Shop on Amazon'
-            externalPrice='$55' />
+            externalPrice='$54' />
     },
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
