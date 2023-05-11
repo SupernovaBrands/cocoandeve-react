@@ -1297,7 +1297,6 @@ const bannerSection = {
 };
 
 const rangeReducer = (state, action) => {
-    console.log('rangereducer action', action);
     return productList[action.productHandle][action.activeStore];
 };
 
