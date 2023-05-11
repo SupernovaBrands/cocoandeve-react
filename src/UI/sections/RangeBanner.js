@@ -15,10 +15,12 @@ const RangeBanner = (props) => {
 
 	return (
 		<section className='range__banner jumbotron'>
-			<div className='d-lg-none text-center'>
-				<h1 className='mb-1'>{bannerSection.title}</h1>
-				<p className='mb-1'>{bannerSection.subtitle}</p>
-			</div>
+			{bannerSection.title && bannerSection.subtitle && (
+				<div className='d-lg-none text-center'>
+					<h1 className='mb-1'>{bannerSection.title}</h1>
+					<p className='mb-1'>{bannerSection.subtitle}</p>
+				</div>
+			)}
 
 			<picture className="d-block w-100">
 				<source srcSet={bannerSection.desktop.webpBanner} media="(min-width: 768px)" type="image/webp" />

@@ -2,6 +2,8 @@ import { ReactComponent as StarFive } from '../../assets/star-five.svg';
 
 const RealResultCard = (props) => {
 	const capitalize = s => (s && s[0].toUpperCase() + s.slice(1)) || "";
+	let params = (new URL(document.location)).searchParams;
+	let activeStore = params.get("utm_store") || 'us';
 	return (
 		<div className={`carousel-item col-9 col-lg-3 result-card ${props.active ? 'active' : ''}`}>
 			<picture className="d-block">
@@ -14,9 +16,9 @@ const RealResultCard = (props) => {
 					<StarFive />
 					<strong className={`badge mb-1 mt-1 ${props.range === 'hair' ? 'badge-secondary' : 'badge-purple'}`}>{capitalize(props.range)}</strong>
 				</p>
-				<p><strong>Product:&nbsp;</strong><a href={props.result.productHandle}>{props.result.productTitle}</a></p>
+				<p><strong>Product:&nbsp;</strong><a href={`https://${activeStore}.cocoandeve.com/products/${props.result.productHandle}`}>{props.result.productTitle}</a></p>
 				<p>{props.result.content}</p>
-				<p className="text-underline font-weight-bold">{props.result.name}</p>
+				<p className="text-underline fw-bold">{props.result.name}</p>
 			</div>
 		</div>
 	);

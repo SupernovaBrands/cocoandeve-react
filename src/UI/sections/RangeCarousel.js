@@ -99,22 +99,10 @@ const RangeCarousel = (props) => {
 
 	const CAROUSEL_TABS_AMAZON_TAN = [
 		{
-			carouselId: 'FeaturedHair1',
-			isTabActive: false,
-			carouselItems: PRODUCTS_FACE.length < 4 && PRODUCTS_FACE.length > 1 && isMobile ? productFaceMerged : PRODUCTS_FACE,
-			tabLabel: carouselData.face
-		},
-		{
 			carouselId: 'FeaturedHair2',
 			isTabActive: true,
 			carouselItems: PRODUCTS_TAN_AMAZON,
 			tabLabel: carouselData.body
-		},
-		{
-			carouselId: 'FeaturedHair3',
-			isTabActive: false,
-			carouselItems: PRODUCTS_VALUE_SETS.length < 4 && isMobile ? productValuemerged : PRODUCTS_VALUE_SETS,
-			tabLabel: carouselData.valuesets
 		}
 	];
 
@@ -132,16 +120,10 @@ const RangeCarousel = (props) => {
 		carouselLoop('FeaturedValueSets');
 	} else if (props.range === 'amazonHair') {
 		CAROUSEL_TABS = CAROUSEL_TABS_AMAZON_HAIR;
-
-		carouselLoop('FeaturedHair1');
 		carouselLoop('FeaturedHair2');
-		carouselLoop('FeaturedHair3');
 	} else if (props.range === 'amazonTan') {
 		CAROUSEL_TABS = CAROUSEL_TABS_AMAZON_TAN;
-
-		carouselLoop('FeaturedHair1');
 		carouselLoop('FeaturedHair2');
-		carouselLoop('FeaturedHair3');
 	}
 
 
