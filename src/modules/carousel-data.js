@@ -539,8 +539,8 @@ const PRODUCTS_HAIR_AMAZON_UK = [
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
         content: <ProductCard
-            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/18a41d7d-60e3-4fab-05e0-e86402a9a500/828x"
-            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2904a7b6-0289-47be-78fc-981eec823d00/828x"
+            img="https://cdn.shopify.com/s/files/1/0028/8253/5533/products/MasqueFullSizewithTangleTamer_828x.jpg"
+            comImg="https://cdn.shopify.com/s/files/1/0028/8253/5533/products/MasqueFullSizewithTangleTamer_828x.jpg"
             externalUrl='https://www.amazon.co.uk/dp/B07B8JN5NP?maas=maas_adg_5B1CE1E8545CD3C29F9C00AF74982268_afap_abs&ref_=aa_maas&tag=maas'
             handle='super-nourishing-coconut-fig-hair-masque'
             ctaText='Shop on Amazon'
@@ -602,8 +602,8 @@ const PRODUCTS_HAIR_AMAZON_CA = [
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
         content: <ProductCard
-            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/18a41d7d-60e3-4fab-05e0-e86402a9a500/828x"
-            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2904a7b6-0289-47be-78fc-981eec823d00/828x"
+            img="https://cdn.shopify.com/s/files/1/0028/8253/5533/products/MasqueFullSizewithTangleTamer_828x.jpg"
+            comImg="https://cdn.shopify.com/s/files/1/0028/8253/5533/products/MasqueFullSizewithTangleTamer_828x.jpg"
             externalUrl='https://www.amazon.ca/dp/B07B8JN5NP?maas=maas_adg_0E9342A56F401EFFF6CAF510C995DAD8_afap_abs&ref_=aa_maas&tag=maas'
             handle='super-nourishing-coconut-fig-hair-masque'
             externalPrice='$58'
@@ -703,7 +703,7 @@ const PRODUCTS_TAN_AMAZON_CA = [
             externalUrl='https://www.amazon.ca/dp/B0C45TL4YB?maas=maas_adg_2D63E5E984AAEA1EFFFC1E4AFAD04F84_afap_abs&ref_=aa_maas&tag=maas'
             handle='sunny-honey-bali-bronzing-self-tan-set-mitt'
             ctaText='Shop on Amazon'
-            externalPrice='$55' />
+            externalPrice='$54' />
     },
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
