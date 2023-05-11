@@ -30,7 +30,7 @@ const SeenIn = (props) => {
         },
         {
             carouselItemClass: 'carousel-item col-6 col-md-3  mt-5 text-center',
-            content: 
+            content:
                 <picture>
                     <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ba8ee58a-e3b6-4ecd-c87a-cd972531ac00/400x" />
                     <source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7ac8eb4b-b87e-4936-f86e-570abed4a000/400x" />
@@ -61,7 +61,7 @@ const SeenIn = (props) => {
 		<section className='as-seen-in py-4'>
             <div className='container p-0'>
                 <h2 className="h1 mb-4 text-center">{ctx.asSeenin}</h2>
-                <Carousel id="asSeenInCarousel" centered={true} items={CAROUSELITEMS} slideNumber="5" className="carousel slide carousel--loop overflow-hidden carousel--mobile-only-half-centered">
+                <Carousel id="asSeenInCarousel" centered={true} items={CAROUSELITEMS} slideNumber="5" className="carousel slide carousel--loop carousel--swipe overflow-hidden carousel--mobile-only-half-centered">
                     <button className="carousel-control carousel-control-prev carousel-control--background floating-out-left justify-content-start text-primary d-none" data-bs-target="#asSeenInCarousel" role="button" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.627 22.627" className="svg"><path d="M16.2 1.885l-9.428 9.428 9.428 9.428-1.886 1.886L3 11.313 14.314 0z"></path></svg></span>
                     </button>

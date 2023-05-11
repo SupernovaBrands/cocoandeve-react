@@ -97,8 +97,10 @@
 			visibility: visible;
 		}
 
-		.carousel-item.col-9:not(.carousel-item-prev):not(.carousel-item-end) {
-			max-width: 75%;
+		@include media-breakpoint-down(md) {
+			.carousel-item.col-9 {
+				max-width: 75%;
+			}
 		}
 
 		.carousel-item.col-md-3 {
