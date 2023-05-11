@@ -5,7 +5,7 @@ const RealResultCard = (props) => {
 	let params = (new URL(document.location)).searchParams;
 	let activeStore = params.get("utm_store") || 'us';
 	return (
-		<div className={`carousel-item col-9 col-lg-3 result-card ${props.active ? 'active' : ''}`}>
+		<div className={`carousel-item col-9 col-lg-3 result-card ${props.active ? 'active' : ''}`} >
 			<picture className="d-block">
 				<source srcSet={props.result.srcSet} media="(min-width: 992px)" />
 				<img alt={`${props.range} Review - ${props.result.name}`} className="w-100" src={props.result.img} />
