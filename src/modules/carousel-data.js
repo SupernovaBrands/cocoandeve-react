@@ -587,6 +587,7 @@ const PRODUCTS_HAIR_AMAZON_CA = [
             externalUrl='https://www.amazon.ca/dp/B098DV8QYS?maas=maas_adg_26A4820B93A87B21C18B89626920CE6B_afap_abs&ref_=aa_maas&tag=maas'
             handle='shampoo-conditioner-set'
             externalPrice='$53'
+            externalCompare='$66'
             ctaText='Shop on Amazon' />
     },
     {
@@ -640,7 +641,8 @@ const PRODUCTS_TAN_AMAZON_UK = [
             externalUrl='https://www.amazon.co.uk/dp/B08Y6T5LH7?maas=maas_adg_D744E9EA7D5ED9560F3C3A01B5FCBC30_afap_abs&ref_=aa_maas&tag=maas'
             handle='sunny-honey-bali-bronzing-self-tan-set'
             ctaText='Shop on Amazon'
-            externalPrice='£46' />
+            externalPrice='£46'
+            externalCompare='£58' />
     },
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
@@ -650,7 +652,8 @@ const PRODUCTS_TAN_AMAZON_UK = [
             externalUrl='https://www.amazon.co.uk/dp/B08G1LQGLN?maas=maas_adg_41BA452BD27E9183A787C581A15F110D_afap_abs&ref_=aa_maas&tag=maas&th=1'
             handle='sunny-honey-bali-bronzing-self-tan-set-mitt'
             ctaText='Shop on Amazon'
-            externalPrice='£32' />
+            externalPrice='£32'
+            externalCompare='£38' />
     },
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
@@ -660,7 +663,8 @@ const PRODUCTS_TAN_AMAZON_UK = [
             externalUrl='https://www.amazon.co.uk/dp/B09XV2LZBN?maas=maas_adg_56A92FEFE18B2F481EACF2D502E06117_afap_abs&ref_=aa_maas&tag=maas'
             handle='bali-bae-self-tan-set'
             ctaText='Shop on Amazon'
-            externalPrice='£56' />
+            externalPrice='£56'
+            externalCompare='£75' />
     },
 ];
 
@@ -693,7 +697,8 @@ const PRODUCTS_TAN_AMAZON_CA = [
             externalUrl='https://www.amazon.ca/dp/B08Y6T5LH7?maas=maas_adg_D734E060FE25A5BCD74D084256D4EE36_afap_abs&ref_=aa_maas&tag=maas'
             handle='sunny-honey-bali-bronzing-self-tan-set'
             ctaText='Shop on Amazon'
-            externalPrice='$70' />
+            externalPrice='$70'
+            externalCompare='$101' />
     },
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
@@ -703,6 +708,7 @@ const PRODUCTS_TAN_AMAZON_CA = [
             externalUrl='https://www.amazon.ca/dp/B0C45TL4YB?maas=maas_adg_2D63E5E984AAEA1EFFFC1E4AFAD04F84_afap_abs&ref_=aa_maas&tag=maas'
             handle='sunny-honey-bali-bronzing-self-tan-set-mitt'
             ctaText='Shop on Amazon'
+            externalCompare='$69'
             externalPrice='$54' />
     },
     {
@@ -713,6 +719,7 @@ const PRODUCTS_TAN_AMAZON_CA = [
             externalUrl='https://www.amazon.ca/dp/B09XV2LZBN?maas=maas_adg_AF95642603D7372EAE55A8BA45298159_afap_abs&ref_=aa_maas&tag=maas'
             handle='bali-bae-self-tan-set'
             ctaText='Shop on Amazon'
+            externalCompare='$129'
             externalPrice='$93' />
     },
 ];
