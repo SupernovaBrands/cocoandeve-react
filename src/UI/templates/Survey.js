@@ -27,6 +27,17 @@ const Survey = () => {
     const language = searchParams.get('lang');
     const abTest = searchParams.get('abtest');
 
+    const sendTodataLayer = (action) => {
+        const dataToPush = {
+            event: 'quiz',
+            event_params: {
+                category: 'Survey',
+                userAction: action
+            },
+        };
+        window.dataLayer.push(dataToPush);
+    };
+
     const setCookieAnsweredQuestion = (object) => {
         if (typeof object === 'object') {
             Object.entries(object).forEach((data) => {
@@ -72,6 +83,8 @@ const Survey = () => {
         postMessageData('Survey', 'started');
         initialState = 'question-1';
         setCookie('answeredQuestion', '');
+        setLastPosition(1);
+        sendTodataLayer('started');
     }
     const initialCurrentQuestion = getCookie('currentQuestion') ? parseInt(getCookie('currentQuestion'), 10) : 1;
     const initialSubmitted = getCookie('quizEmail') ? true : false;
@@ -80,6 +93,8 @@ const Survey = () => {
     const selectedSite = site ? site : 'dev.cocoandeve.com';
 
     const variants = ProductVariants[selectedSite];
+    const localLastPos = parseInt(localStorage.getItem('lastPos'), 10) || 0;
+    const localQuestionSkip = localStorage.getItem('skipQuestion') || false;
 
     // states
     const [currentPosition, setPosition] = useState(initialState);
@@ -89,6 +104,8 @@ const Survey = () => {
     const [submitted, setSubmitted] = useState(initialSubmitted);
     const [redirect, setRedirect] = useState(false);
     const [email, setEmail] = useState('');
+    const [lastPosition, setLastPosition] = useState(localLastPos);
+    const [questionSkip, setQuestionSkip] = useState(localQuestionSkip);
     const additionalStep = true;
 
     let lang = 'en';
@@ -116,8 +133,25 @@ const Survey = () => {
         }
 
         setProgress(currentQuestion / Questions.length * 100);
-        // console.log('currentQuestion', currentQuestion);
     }, [currentQuestion, currentPosition]);
+
+
+    useEffect(() => {
+        const localSkip = localStorage.getItem('skipQuestion');
+        if (questionSkip && !localSkip) {
+            sendTodataLayer('question_05_visit');
+            localStorage.setItem('skipQuestion', true);
+        }
+    }, [questionSkip]);
+
+    useEffect(() => {
+        // send data GA4 when user last position of question changed
+        const localPos = parseInt(localStorage.getItem('lastPos'), 10) || 0;
+        if (currentPosition !== 'start' && currentPosition !== 'finished' && localPos !== lastPosition) {
+            localStorage.setItem('lastPos', lastPosition);
+            sendTodataLayer(`question_0${lastPosition}_visit`);
+        }
+    }, [lastPosition]);
 
     const answerAction = (question, answers) => {
         currentAnswer[question] = answers;
@@ -210,6 +244,11 @@ const Survey = () => {
                 setFinished();
                 completed(findVariant.product_handle,findVariant.sku);
             }
+
+            // send completed event GA4
+            sendTodataLayer('completed');
+            setLastPosition(0);
+            setQuestionSkip(false);
         }
     }
 
@@ -227,6 +266,7 @@ const Survey = () => {
     const setFinished = () => {
         setCookie('surveyPosition', 'finished');
         setPosition('finished');
+        setLastPosition(0);
     }
 
     const setQuestionState = (questionIndex) => {
@@ -236,13 +276,17 @@ const Survey = () => {
                 const targetAnswer = decodeAnswers(currentAnswer)[targetQuestion.rule.question];
                 if (targetAnswer === targetQuestion.rule.answer[lang]) {
                     answerAction(questionIndex, '');
+                    setQuestionSkip(true);
                     const targetQuestionIndex = currentQuestion < questionIndex ? questionIndex + 1 : questionIndex - 1;
                     setQuestion(targetQuestionIndex);
+                    setLastPosition(prevPos => prevPos > targetQuestionIndex ? prevPos : targetQuestionIndex);
                 } else {
                     setQuestion(questionIndex);
+                    setLastPosition(prevPos => prevPos > questionIndex ? prevPos : questionIndex);
                 }
             } else {
                 setQuestion(questionIndex);
+                setLastPosition(prevPos => prevPos > questionIndex ? prevPos : questionIndex);
             }
         } else if (questionIndex >= Questions.length) {
             if (additionalStep) {
@@ -330,6 +374,8 @@ const Survey = () => {
                 'action': 'submitEmail',
                 'label': email,
             }, `https://${site}`);
+            // push event to GA4
+            sendTodataLayer('submitEmail');
         }
     }
 
@@ -352,6 +398,8 @@ const Survey = () => {
     const startQuiz = () => {
         postMessageData('Survey', 'started');
         setPosition('question-1');
+        sendTodataLayer('started');
+        setLastPosition(1);
     }
 
     const onIdle = () => {
@@ -372,6 +420,8 @@ const Survey = () => {
     // useEffect(() => {
     //     postIframeHeight('height', height);
     // }, [height]);
+
+
 
     return (
             <div className={`${currentPosition === 'start' ? 'cover' : ''} container container--survey`}>
