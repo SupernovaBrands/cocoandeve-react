@@ -16,7 +16,7 @@ const RealResultCard = (props) => {
 					<StarFive />
 					<strong className={`badge mb-1 mt-1 ${props.range === 'hair' ? 'badge-secondary' : 'badge-purple'}`}>{capitalize(props.range)}</strong>
 				</p>
-				<p><strong>Product:&nbsp;</strong><a href={`https://${activeStore}.cocoandeve.com/products/${props.result.productHandle}`}>{props.result.productTitle}</a></p>
+				<p><strong>Product:&nbsp;</strong><a href={props.result.amazonUrl[activeStore]}>{props.result.productTitle}</a></p>
 				<p>{props.result.content}</p>
 				<p className="text-underline fw-bold">{props.result.name}</p>
 			</div>
