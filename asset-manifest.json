@@ -1,31 +1,29 @@
 {
   "files": {
-    "main.js": "../static/js/main.d61cf959.js",
+    "main.js": "../static/js/main.ff3ec9d3.js",
     "static/css/138.2cacc8d1.chunk.css": "../static/css/138.2cacc8d1.chunk.css",
-    "static/js/138.80fc3415.chunk.js": "../static/js/138.80fc3415.chunk.js",
+    "static/js/138.ddce15c0.chunk.js": "../static/js/138.ddce15c0.chunk.js",
     "static/js/217.8113bd5d.chunk.js": "../static/js/217.8113bd5d.chunk.js",
     "static/js/534.22d2d5ed.chunk.js": "../static/js/534.22d2d5ed.chunk.js",
     "static/css/562.b9f85e0a.chunk.css": "../static/css/562.b9f85e0a.chunk.css",
-    "static/js/562.2295d682.chunk.js": "../static/js/562.2295d682.chunk.js",
+    "static/js/562.317ea43e.chunk.js": "../static/js/562.317ea43e.chunk.js",
     "static/css/850.102afc36.chunk.css": "../static/css/850.102afc36.chunk.css",
-    "static/js/850.4bd44699.chunk.js": "../static/js/850.4bd44699.chunk.js",
-    "static/js/948.25d1097a.chunk.js": "../static/js/948.25d1097a.chunk.js",
-    "static/js/267.f2b0c6f0.chunk.js": "../static/js/267.f2b0c6f0.chunk.js",
+    "static/js/850.17dbb674.chunk.js": "../static/js/850.17dbb674.chunk.js",
+    "static/js/948.26b82cf4.chunk.js": "../static/js/948.26b82cf4.chunk.js",
+    "static/js/267.045c507f.chunk.js": "../static/js/267.045c507f.chunk.js",
     "static/js/476.0d28aa91.chunk.js": "../static/js/476.0d28aa91.chunk.js",
-    "static/js/430.81ad6c34.chunk.js": "../static/js/430.81ad6c34.chunk.js",
-    "static/js/669.b64dbecc.chunk.js": "../static/js/669.b64dbecc.chunk.js",
+    "static/js/430.85d79b8a.chunk.js": "../static/js/430.85d79b8a.chunk.js",
+    "static/js/669.b110b66c.chunk.js": "../static/js/669.b110b66c.chunk.js",
     "static/js/315.18826710.chunk.js": "../static/js/315.18826710.chunk.js",
-    "static/js/289.45d1bcc5.chunk.js": "../static/js/289.45d1bcc5.chunk.js",
+    "static/js/289.f4488f5d.chunk.js": "../static/js/289.f4488f5d.chunk.js",
     "static/js/568.230b6f84.chunk.js": "../static/js/568.230b6f84.chunk.js",
-    "static/js/889.7f48208a.chunk.js": "../static/js/889.7f48208a.chunk.js",
     "static/js/269.d3a96553.chunk.js": "../static/js/269.d3a96553.chunk.js",
-    "static/js/48.ff2862b9.chunk.js": "../static/js/48.ff2862b9.chunk.js",
+    "static/js/396.a3497315.chunk.js": "../static/js/396.a3497315.chunk.js",
     "static/css/284.0ea72053.chunk.css": "../static/css/284.0ea72053.chunk.css",
-    "static/js/284.9fb6d74f.chunk.js": "../static/js/284.9fb6d74f.chunk.js",
+    "static/js/284.db743fb8.chunk.js": "../static/js/284.db743fb8.chunk.js",
     "static/js/445.f3e91102.chunk.js": "../static/js/445.f3e91102.chunk.js",
     "static/js/120.d4bc827c.chunk.js": "../static/js/120.d4bc827c.chunk.js",
-    "static/js/484.22144cbd.chunk.js": "../static/js/484.22144cbd.chunk.js",
-    "static/js/660.1854a2cb.chunk.js": "../static/js/660.1854a2cb.chunk.js",
+    "static/js/660.4ffcf0c6.chunk.js": "../static/js/660.4ffcf0c6.chunk.js",
     "shampoo-conditioner-set/index.html": "../shampoo-conditioner-set/index.html",
     "sunny-honey-bali-bronzing-self-tan/index.html": "../sunny-honey-bali-bronzing-self-tan/index.html",
     "super-nourishing-coconut-fig-hair-masque/index.html": "../super-nourishing-coconut-fig-hair-masque/index.html",
@@ -70,6 +68,6 @@
     "static/media/chevron-down.svg": "../static/media/chevron-down.6b10250df20474511cb9f46a308f53e3.svg"
   },
   "entrypoints": [
-    "static/js/main.d61cf959.js"
+    "static/js/main.ff3ec9d3.js"
   ]
 }
