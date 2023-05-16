@@ -557,6 +557,7 @@ const PRODUCTS_HAIR_AMAZON_CA = [
             externalUrl='https://www.amazon.ca/dp/B07PWVZXGF?maas=maas_adg_AEAC7B1677960BAF74A64260F78E8963_afap_abs&ref_=aa_maas&tag=maas'
             handle='masque-towelwrap'
             ctaText='Shop on Amazon'
+            externalCompare='$103'
             externalPrice='$78' />
     },
     {
