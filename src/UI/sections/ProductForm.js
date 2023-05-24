@@ -24,7 +24,7 @@ const ProductForm = (props) => {
     productCtx.storeChange(activeStore, props.handle);
 
     const host = 'https://www.cocoandeve.com';
-    
+
     const {
         price,
         compareAtPrice,
@@ -81,8 +81,14 @@ const ProductForm = (props) => {
                 eventValue: 0,
             });
         }
+        window.dataLayer.push({
+			event: 'lp_pdp_cta',
+			category: 'Add to Cart',
+			target: 'add_to_cart_lp_pdp',
+			product: handle,
+		});
         window.location.href = buttonUrl;
-        
+
     }
 
     setTimeout(function () {
@@ -106,7 +112,7 @@ const ProductForm = (props) => {
             observer.observe(mobileSwatchTrigger);
         }
     }, 500);
-    
+
     return (
         <div className="product-form container px-g mb-0 mt-lg-4">
             <div className="row align-items-start">
@@ -123,7 +129,7 @@ const ProductForm = (props) => {
                     ) : (
                         <p className="font-size-lg d-none d-lg-block order-lg-2" dangerouslySetInnerHTML={{ __html: description }}></p>
                     )}
-                    
+
                     <p className="my-1 order-lg-2 d-block">
                         {compareAtPrice !== '' && (<span className="text-linethrough mr-25 h2 d-inline-block mb-0 me-1">{compareAtPrice}</span>)}
                         <span className="mr-25 text-nowrap h2 d-inline-block mb-0">{price}</span>
@@ -218,7 +224,7 @@ const ProductForm = (props) => {
                                 </li>)}
                             </Fragment>
                         )}
-                        
+
                     </ul>
                     <div className='fixed-bottom d-lg-none mx-g mb-2 product-swatch-mobile'>
                         <button className='d-flex btn btn-primary btn-lg px-2 w-100' onClick={onAddToCart}>
