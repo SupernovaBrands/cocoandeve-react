@@ -35,4 +35,11 @@
             color: transparent;
         }
     }
+
+    &.question-box-type-2 {
+        max-width: 900px;
+        @include media-breakpoint-down(lg) {
+            max-width: 300px;
+        }
+    }
 }
