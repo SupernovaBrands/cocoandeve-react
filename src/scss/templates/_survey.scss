@@ -9,3 +9,17 @@
         bottom: -60px;
     }
 }
+
+@include media-breakpoint-up(lg) {
+    .survey--variant figcaption {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        @include make-col(4.5);
+
+    }
+
+    .cover--full {
+        height: 100vh;
+    }
+}

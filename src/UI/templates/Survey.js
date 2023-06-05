@@ -18,6 +18,7 @@ import { ReactComponent as LoaderSvg } from '../../assets/loader.svg';
 import Translations from '../../modules/translations';
 
 import { useIdleTimer } from 'react-idle-timer'
+import SurveyCover from "../components/SurveyCover";
 
 const Survey = () => {
     const [searchParams] = useSearchParams();
@@ -116,10 +117,11 @@ const Survey = () => {
 
     // handler hook side effect when state changed
     useEffect(() => {
+        const bgColor = abTest ? 'bg-survey-yellow' : 'bg-primary-light-second';
         if (currentPosition === 'start') {
-            document.getElementById('root').classList.add('bg-primary-light-second');
+            document.getElementById('root').classList.add(bgColor);
         } else {
-            document.getElementById('root').classList.remove('bg-primary-light-second');
+            document.getElementById('root').classList.remove(bgColor);
         }
 
         setCookie('surveyPosition', currentPosition);
@@ -400,6 +402,13 @@ const Survey = () => {
         setPosition('question-1');
         sendTodataLayer('started');
         setLastPosition(1);
+        const dataToPush = {
+            event: 'abtest_quiz_banner_click',
+            event_params: {
+                category: 'abtest'
+            },
+        };
+        window.dataLayer.push(dataToPush);
     }
 
     const onIdle = () => {
@@ -424,23 +433,11 @@ const Survey = () => {
 
 
     return (
-            <div className={`${currentPosition === 'start' ? 'cover' : ''} container container--survey`}>
+            <div className={`${currentPosition === 'start' ? 'cover' : ''} container container--survey ${currentPosition === 'start' && abTest ? 'cover--full' : ''}`}>
                 <div className="row justify-content-center align-items-center survey-content">
                     { currentPosition === 'start' && (
-                    <>
-                        <div className="col-12 col-lg-4 pt-4 text-center text-lg-start zindex-1">
-                            <h1 className="pt-sm-2">{Translations[lang].heading}</h1>
-                            <p className="mb-0">{Translations[lang].subheading}</p>
-                            <button className="btn btn-primary text-white mt-4" onClick={() => startQuiz()}>{Translations[lang].btn.start}</button>
-                        </div>
-                        <div className="col-12 col-lg-5 offset-lg-1 survey-lp-image zindex-0">
-                            <picture>
-                                <source type="image/webp" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" />
-            					<source type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b426a652-ee5d-4534-5039-4b10fe9a3200/828x" />
-                                <img className="w-100" loading='lazy' src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/02a8805f-afab-4d9d-31bb-c0c245264100/828x" alt="Tan Variants"/>
-                            </picture>
-                        </div>
-                    </>) }
+                        <SurveyCover startQuiz={startQuiz} abTest={abTest} />
+                    ) }
 
                     { currentPosition !== 'start' && currentPosition !== 'finished' && (
                         <>
