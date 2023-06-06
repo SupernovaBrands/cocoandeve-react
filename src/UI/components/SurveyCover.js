@@ -12,9 +12,9 @@ const SurveyCover = (props) => {
 		<>
 			{props.abTest && (
 				<figure className="col-12 position-relative survey--variant mb-0">
-					<picture>
+					<picture className="d-block">
 						<source media="(min-width:992px)"  type="image/jpeg" srcSet="https://cdn.shopify.com/s/files/1/0286/1327/9779/files/quiz-lp-dt.jpg?v=1685608844" />
-						<img className="w-100" loading='lazy' src="https://cdn.shopify.com/s/files/1/0286/1327/9779/files/quiz-lp-mb.jpg?v=1685608844" alt="Tan Variants"/>
+						<img className="w-100" loading='lazy' src="https://cdn.shopify.com/s/files/1/0286/1327/9779/files/quiz-lp-mb_v2_828x705_crop_center.jpg?v=1686043128" alt="Tan Variants"/>
 					</picture>
 					<figcaption className="text-center text-lg-start">
 						<h1 className="mb-1">Find your true colour match in 90 seconds!</h1>
