@@ -117,11 +117,11 @@ const Survey = () => {
 
     // handler hook side effect when state changed
     useEffect(() => {
-        const bgColor = abTest ? 'bg-survey-yellow' : 'bg-primary-light-second';
+        const bgColor = abTest ? ['bg-survey-yellow', 'survey--image'] : ['bg-primary-light-second'];
         if (currentPosition === 'start') {
-            document.getElementById('root').classList.add(bgColor);
+            document.getElementById('root').classList.add(...bgColor);
         } else {
-            document.getElementById('root').classList.remove(bgColor);
+            document.getElementById('root').classList.remove(...bgColor);
         }
 
         setCookie('surveyPosition', currentPosition);

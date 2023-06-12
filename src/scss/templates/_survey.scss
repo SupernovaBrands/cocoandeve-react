@@ -10,16 +10,30 @@
     }
 }
 
+.survey--variant picture {
+    opacity: 0;
+}
+
+.survey--image {
+    background-image: url("https://cdn.shopify.com/s/files/1/0286/1327/9779/files/quiz-lp-mb_v2_828x705_crop_center.jpg?v=1686043128");
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include media-breakpoint-up(lg) {
+        background-image: url("https://cdn.shopify.com/s/files/1/0286/1327/9779/files/Quiz_LP_DT.jpg?v=1686559948");
+        background-size: cover;
+    }
+}
+
 @include media-breakpoint-up(lg) {
     .survey--variant figcaption {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         @include make-col(4.5);
-
     }
 
     .cover--full {
         height: 100vh;
     }
+
 }
