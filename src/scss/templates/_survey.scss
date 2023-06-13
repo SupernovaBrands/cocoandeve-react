@@ -12,12 +12,15 @@
 
 .survey--variant picture {
     opacity: 0;
+    @include media-breakpoint-down(lg) {
+        padding-top: 35%;
+    }
 }
 
 .survey--image {
-    background-image: url("https://cdn.shopify.com/s/files/1/0286/1327/9779/files/quiz-lp-mb_v2_828x705_crop_center.jpg?v=1686043128");
+    background-image: url("https://cdn.shopify.com/s/files/1/0286/1327/9779/files/LP_Cover_Mobile_v02.jpg?v=1686643146");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
     @include media-breakpoint-up(lg) {
         background-image: url("https://cdn.shopify.com/s/files/1/0286/1327/9779/files/Quiz_LP_DT.jpg?v=1686559948");
         background-size: cover;
