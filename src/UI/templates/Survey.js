@@ -117,7 +117,7 @@ const Survey = () => {
 
     // handler hook side effect when state changed
     useEffect(() => {
-        const bgColor = abTest ? ['bg-survey-yellow', 'survey--image'] : ['bg-primary-light-second'];
+        const bgColor = abTest ? ['survey--image'] : ['bg-primary-light-second'];
         if (currentPosition === 'start') {
             document.getElementById('root').classList.add(...bgColor);
         } else {
