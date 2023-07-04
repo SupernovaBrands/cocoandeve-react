@@ -1,10 +1,10 @@
 const Translations = {
     en: {
-        heading: 'Find your perfect tan \nin 90 seconds!',
-        subheading: 'Take the Tan matching quiz to find your perfect shade of gorgeous glow. It only takes 90 seconds to find your true colour match.',
+        heading: 'Find your true colour match in 90 seconds!',
+        subheading: 'Get the perfect colour match for your skintone! No need to spend hours doing research on self-tanners. Just take our quiz, and we’ll do the rest.',
         caption: 'Your perfect shade is just a few clicks away',
         btn: {
-            start: 'Take the Quiz',
+            start: 'Find my Match',
             next: 'Next',
             prev: 'Previous Question',
             result: 'See results!',
