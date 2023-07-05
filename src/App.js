@@ -18,9 +18,11 @@ const AmazonTanRange = lazy(() => import('./UI/templates/AmazonTanRange'));
 const App = () => {
   const noHeader = () => window.location.pathname === '/customers-survey' || window.location.pathname === '/customers-survey/' || window.location.pathname.includes('blackfriday');
   const noFooter = () => window.location.pathname === '/customers-survey' || window.location.pathname === '/customers-survey/' || window.location.pathname.includes('blackfriday');
+  const timerBar = () => window.location.pathname === '/range-hair-amazon' || window.location.pathname === '/range-hair-amazon/'
+    || window.location.pathname === '/range-tan-amazon' || window.location.pathname === '/range-tan-amazon/';
 
   return (
-    <Layout noFooter={noFooter()} noHeader={noHeader()}>
+    <Layout noFooter={noFooter()} noHeader={noHeader()} timerBar={timerBar()}>
       <Suspense fallback={<div></div>}>
         <Routes>
           <Route path='/range-tan' element={<TanRange />} />
