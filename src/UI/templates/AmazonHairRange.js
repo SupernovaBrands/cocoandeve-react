@@ -7,6 +7,7 @@ import BannerImage from '../sections/BannerImage';
 import ReviewProvider from '../../store/ReviewProvider';
 import RealResults from '../sections/RealResults';
 import { amazonURLCategory } from '../../modules/Utils';
+import TimerBar from '../sections/TimerBar';
 const SeenIn = lazy(() => import('../sections/SeenIn'));
 const AmazonHairRange = () => {
 	const bannerData = {
