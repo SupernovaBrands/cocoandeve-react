@@ -130,8 +130,6 @@ const RangeCarousel = (props) => {
 		carouselLoop('FeaturedHair2');
 	}
 
-	console.log('CAROUSEL_TABS', CAROUSEL_TABS);
-
 
 	return (
 		<section className='product-carousel py-2 py-lg-4 overflow-hidden'>
