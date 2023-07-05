@@ -27,11 +27,11 @@ const Translations = {
         }
     },
     fr: {
-        heading: "Trouvez votre teinte d'autobronzant parfaite \nen 90 secondes !",
-        subheading: "Faites le quiz de compatibilité d'autobronzant pour trouver la teinte qui vous correspond le mieux. 90 secondes suffisent pour trouver la nuance parfaite.",
+        heading: "Trouvez votre teinte parfaite en 90 secondes !",
+        subheading: "Trouvez la teinte parfaite pour votre peau ! Fini les heures passées à chercher le bon autobronzant. Faites simplement notre quiz, et nous nous occupons du reste.",
         caption: "Votre teinte parfaite n'est plus qu'à quelques clics.",
         btn: {
-            start: 'Faire le quiz',
+            start: 'Trouver ma teinte',
             next: 'Suivant',
             prev: 'Question précédente',
             result: 'Voir les résultats !',
