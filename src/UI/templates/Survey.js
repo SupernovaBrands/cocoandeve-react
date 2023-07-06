@@ -117,7 +117,7 @@ const Survey = () => {
 
     // handler hook side effect when state changed
     useEffect(() => {
-        const bgColor = abTest ? ['survey--image'] : ['bg-primary-light-second'];
+        const bgColor = ['survey--image'];
         if (currentPosition === 'start') {
             document.getElementById('root').classList.add(...bgColor);
         } else {
@@ -402,13 +402,6 @@ const Survey = () => {
         setPosition('question-1');
         sendTodataLayer('started');
         setLastPosition(1);
-        const dataToPush = {
-            event: 'abtest_quiz_banner_click',
-            event_params: {
-                category: 'abtest'
-            },
-        };
-        window.dataLayer.push(dataToPush);
     }
 
     const onIdle = () => {
@@ -433,10 +426,10 @@ const Survey = () => {
 
 
     return (
-            <div className={`${currentPosition === 'start' ? 'cover' : ''} container container--survey ${currentPosition === 'start' && abTest ? 'cover--full' : ''}`}>
+            <div className={`${currentPosition === 'start' ? 'cover' : ''} container container--survey ${currentPosition === 'start' ? 'cover--full' : ''}`}>
                 <div className="row justify-content-center align-items-center survey-content">
                     { currentPosition === 'start' && (
-                        <SurveyCover startQuiz={startQuiz} abTest={abTest} />
+                        <SurveyCover startQuiz={startQuiz} />
                     ) }
 
                     { currentPosition !== 'start' && currentPosition !== 'finished' && (
