@@ -13,7 +13,7 @@
 .survey--variant picture {
     opacity: 0;
     @include media-breakpoint-down(lg) {
-        padding-top: 35%;
+        padding-top: 25%;
     }
 }
 
