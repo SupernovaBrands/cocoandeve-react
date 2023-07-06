@@ -54,11 +54,11 @@ const Translations = {
         }
     },
     de: {
-        heading: "Finde deine perfekte Bräune \nin 90 Sekunden!",
-        subheading: "Nimm am Selbstbräuner-Quiz teil, um deine perfekte Bräunungs-Nuance für einen wunderschönen Glow zu finden. Es dauert nur 90 Sekunden, um deine wahre Farbübereinstimmung zu finden.",
+        heading: "Finde in 90 Sekunden deine perfekte Nuance!",
+        subheading: "Finde die perfekte Nuance für deinen Hautton! Du musst nicht stundenlang nach Selbstbräunern suchen. Nimm einfach an unserem Quiz teil und wir erledigen den Rest.",
         caption: 'Deine perfekte Nuance ist nur ein paar Klicks entfernt',
         btn: {
-            start: 'Nimm an unserem Quiz teil',
+            start: 'Finde meine Nuance',
             next: 'Weiter',
             prev: 'Vorherige Frage',
             result: 'Siehe Ergebnisse!',
