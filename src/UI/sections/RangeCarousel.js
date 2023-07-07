@@ -106,7 +106,7 @@ const RangeCarousel = (props) => {
 			isTabActive: true,
 			carouselItems: PRODUCTS_TAN_AMAZON,
 			tabLabel: carouselData.body,
-			subHeading: null,
+			subHeading: 'Prices shown are before discount.',
 		}
 	];
 
@@ -129,8 +129,6 @@ const RangeCarousel = (props) => {
 		CAROUSEL_TABS = CAROUSEL_TABS_AMAZON_TAN;
 		carouselLoop('FeaturedHair2');
 	}
-
-	console.log('CAROUSEL_TABS', CAROUSEL_TABS);
 
 
 	return (
