@@ -228,7 +228,7 @@ const Survey = () => {
         // const diffSkus = ['www.cocoandeve.com', 'us.cocoandeve.com', 'ca.cocoandeve.com', 'uk.cocoandeve.com']
         // const caUs = ['www.cocoandeve.com', 'us.cocoandeve.com', 'ca.cocoandeve.com'];
         // const us = ['www.cocoandeve.com', 'us.cocoandeve.com'];
-        // const excludeSites = ['int.cocoandeve.com', 'my.cocoandeve.com'];
+        const excludeSites = ['int.cocoandeve.com', 'my.cocoandeve.com'];
         // if (diffSkus.includes(selectedSite)) {
         //     if (sku === 'CE0000032020') {
         //         sku = 'CE0000036020';
