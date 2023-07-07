@@ -30,7 +30,7 @@ const EmailForm = (props) => {
         <div className="col-12 col-lg-6 mt-4 pt-0 pt-lg-4 text-center">
             <p className="h1 mb-0">{t.formEmail.title}</p>
             <p className="mt-2 h4 fw-normal" dangerouslySetInnerHTML={{ __html: t.formEmail.caption }}></p>
-            {props.abTest && (<a href="#" className="d-block text-underline text-primary w-100 mt-2 mb-lg-4" onClick={viewMyResult}>or skip this step ></a>)}
+            {props.abTest && (<a href="#" className="d-block text-underline text-primary w-100 mt-2 mb-lg-4" onClick={viewMyResult}>or skip this step</a>)}
             <div className="col-12 col-lg-8 ms-auto me-auto mt-4">
                 <div className="form-group">
                     <form onSubmit={submitEmail}>

@@ -489,6 +489,16 @@ const Survey = () => {
                     }
 
                     { currentPosition === 'finished' && !submitted && additionalStep && !redirect && (
+                        <EmailForm lang={lang} onSubmit={onSubmit} viewMyResult={viewMyResult} abTest={abTest} />
+                    )
+                    }
+
+                    { currentPosition === 'finished' && submitted && additionalStep && !redirect && (
+                        <ResultContent lang={lang} viewMyResult={viewMyResult}/>
+                    )
+                    }
+
+                    { currentPosition === 'finished' && redirect && (
                         <>
                             {abTest ? (
                                 <div className="question-box question-box-type-2 analyzing d-flex justify-content-center align-items-center flex-column">
@@ -536,19 +546,6 @@ const Survey = () => {
                                 </div>
                             )}
                         </>
-                    )
-                    }
-
-                    { currentPosition === 'finished' && submitted && additionalStep && !redirect && (
-                        <ResultContent lang={lang} viewMyResult={viewMyResult}/>
-                    )
-                    }
-
-                    { currentPosition === 'finished' && redirect && (
-                        <div className="question-box analyzing d-flex justify-content-center align-items-center flex-column">
-                            <p className="question-box__title">{Translations[lang].loading}</p>
-                            <LoaderSvg className="loader mt-0 mb-0"/>
-                        </div>
                     )
                     }
             </div>
