@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "../static/js/main.1707028c.js",
+    "main.js": "../static/js/main.e6524d97.js",
     "static/js/628.2cc6602a.chunk.js": "../static/js/628.2cc6602a.chunk.js",
     "static/js/542.4e25c76d.chunk.js": "../static/js/542.4e25c76d.chunk.js",
     "static/js/217.c7d8be52.chunk.js": "../static/js/217.c7d8be52.chunk.js",
@@ -27,7 +27,7 @@
     "static/js/445.45b4ec91.chunk.js": "../static/js/445.45b4ec91.chunk.js",
     "static/js/120.d4bc827c.chunk.js": "../static/js/120.d4bc827c.chunk.js",
     "static/css/671.286d003a.chunk.css": "../static/css/671.286d003a.chunk.css",
-    "static/js/671.b8ac6d68.chunk.js": "../static/js/671.b8ac6d68.chunk.js",
+    "static/js/671.53e6b62c.chunk.js": "../static/js/671.53e6b62c.chunk.js",
     "static/js/660.4ffcf0c6.chunk.js": "../static/js/660.4ffcf0c6.chunk.js",
     "shampoo-conditioner-set/index.html": "../shampoo-conditioner-set/index.html",
     "hair-masque-amazon-us/index.html": "../hair-masque-amazon-us/index.html",
@@ -74,6 +74,6 @@
     "static/media/chevron-down.svg": "../static/media/chevron-down.6b10250df20474511cb9f46a308f53e3.svg"
   },
   "entrypoints": [
-    "static/js/main.1707028c.js"
+    "static/js/main.e6524d97.js"
   ]
 }
