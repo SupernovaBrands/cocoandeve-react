@@ -184,10 +184,10 @@ const Survey = () => {
         const thirdQuestion = Questions[2];
         const thirdAnswered = thirdQuestion.answers[lang].indexOf(thirdAnswer) + 1;
 
-        let sku = 'CE0000032020'; // foam medium
+        let sku = 'CE0000036020'; // foam medium
         if (firstAnswered === 1) {
             if (thirdAnswered === 2) {
-                sku = 'CE0000032020'; // foam medium
+                sku = ['eu.cocoandeve.com', 'de.cocoandeve.com', 'fr.cocoandeve.com'].includes(site) ? 'CE0000032020' : 'CE0000036020'; // foam medium
             } else if (thirdAnswered === 1) {
                 sku = 'CE0001512020'; // face tanning micromist
             } else {
@@ -195,7 +195,13 @@ const Survey = () => {
             }
         } else if (firstAnswered === 2) {
             if (thirdAnswered === 2) {
-                sku = 'CE0000032040'; // foam dark
+                sku = 'CE0000036040'; // foam dark
+                if (['eu.cocoandeve.com', 'de.cocoandeve.com', 'fr.cocoandeve.com'].includes(site)) {
+                    sku = 'CE0002732020';
+                }
+                if (['my.cocoandeve.com'].includes(site)) {
+                    sku = 'CE0000032040';
+                }
             } else if (thirdAnswered === 1) {
                 sku = 'CE0000432030'; // drops dark
             } else {
@@ -203,7 +209,14 @@ const Survey = () => {
             }
         } else if (firstAnswered === 3) {
             if (thirdAnswered === 2) {
-                sku = ['us.cocoandeve.com', 'www.cocoandeve.com'].includes(site) ? 'CE0000036060' : 'CE0000032060'; // foam ultra dark
+                // foam ultra dark
+                // sku = ['us.cocoandeve.com', 'www.cocoandeve.com'].includes(site) ? 'CE0000036060' : 'CE0000032060';
+                if (['int.cocoandeve.com', 'my.cocoandeve.com'].includes(site)) {
+                    sku = 'CE0000032060'
+                } else {
+                    sku = 'CE0000036060';
+                }
+
             } else if (thirdAnswered === 1) {
                 sku = 'CE0000432030'; // drops dark
             } else {
@@ -212,19 +225,19 @@ const Survey = () => {
         }
 
         // mapping for US,CA,UK store since foam medium and dark has different sku
-        const diffSkus = ['www.cocoandeve.com', 'us.cocoandeve.com', 'ca.cocoandeve.com', 'uk.cocoandeve.com']
-        const caUs = ['www.cocoandeve.com', 'us.cocoandeve.com', 'ca.cocoandeve.com'];
-        const us = ['www.cocoandeve.com', 'us.cocoandeve.com'];
-        const excludeSites = ['int.cocoandeve.com', 'my.cocoandeve.com'];
-        if (diffSkus.includes(selectedSite)) {
-            if (sku === 'CE0000032020') {
-                sku = 'CE0000036020';
-            } else if (sku === 'CE0000032040' && us.includes(selectedSite)) {
-                sku = 'CE0000036040';
-            } else if (sku === 'CE0000032060' && caUs.includes(selectedSite)) {
-                sku = 'CE0000036060';
-            }
-        }
+        // const diffSkus = ['www.cocoandeve.com', 'us.cocoandeve.com', 'ca.cocoandeve.com', 'uk.cocoandeve.com']
+        // const caUs = ['www.cocoandeve.com', 'us.cocoandeve.com', 'ca.cocoandeve.com'];
+        // const us = ['www.cocoandeve.com', 'us.cocoandeve.com'];
+        // const excludeSites = ['int.cocoandeve.com', 'my.cocoandeve.com'];
+        // if (diffSkus.includes(selectedSite)) {
+        //     if (sku === 'CE0000032020') {
+        //         sku = 'CE0000036020';
+        //     } else if (sku === 'CE0000032040' && us.includes(selectedSite)) {
+        //         sku = 'CE0000036040';
+        //     } else if (sku === 'CE0000032060' && caUs.includes(selectedSite)) {
+        //         sku = 'CE0000036060';
+        //     }
+        // }
         // currently tan master kit is not available on SG & MY
         if (excludeSites.includes(selectedSite) && sku === 'CE0003532020') {
             sku = 'CE0000072020';
