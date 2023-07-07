@@ -143,8 +143,9 @@ const ProductForm = (props) => {
 
                     <p className="my-1 order-lg-2 d-block">
                         {compareAtPrice !== '' && (<span className="text-linethrough mr-25 h2 d-inline-block mb-0 me-1">{compareAtPrice}</span>)}
-                        <span className="mr-25 text-nowrap h2 d-inline-block mb-0">{price}</span>
-                        {saving !== '' && (<span className="text-primary text-nowrap text-save p-1 h2 fw-normal d-inline-block mb-0 py-0">({saving})</span>)}
+                        <span className="mr-25 text-nowrap h2 d-inline-block mb-0">$31.20</span>
+                        <span className="mr-25 text-nowrap h2 d-inline-block mb-0 ms-1 text-linethrough">$39.00</span>
+                        <span className="text-primary text-nowrap text-save p-1 h2 d-inline-block mb-0 py-0">(20% Off)</span>
                     </p>
                     {shades.length > 0 && (
                         <Fragment>
@@ -253,13 +254,13 @@ const ProductDetail = (props) => {
             <ProductForm handle={props.handle} />
             <Suspense fallback={<div></div>}>
                 <ReviewProvider>
-                    <CustomerReview range="hair" handle={props.handle} />
+                    <CustomerReview range="hair" handle={props.handle} disabledLink={true} />
                 </ ReviewProvider>
                 <ReviewProvider>
                 <SeenIn handle={props.handle} range="hair" />
                 </ReviewProvider>
                 <IRLProvider>
-                    <SectionIRL range="hair" handle={props.handle} />
+                    <SectionIRL range="hair" handle={props.handle} disabledLink={true} />
                 </IRLProvider>
                 <FaqProvider>
                     <FaqAccordion range="hair" handle={props.handle} />
