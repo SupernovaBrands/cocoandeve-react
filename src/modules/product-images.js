@@ -136,6 +136,32 @@ const PRODUCT_IMAGES_LIST = {
             jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e72eb435-a27d-4877-01ff-e85476e9e500',
             webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/727f2c40-a535-4264-fcc2-e593f1d48300',
         }
+    ],
+    'hair-masque-amazon-us': [
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f04223a6-b140-4620-46d4-8e2f39bd2f00',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1ef295e7-79f5-4800-2f0c-39cfe79e7700',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/64a352ae-5435-4859-01d9-5f3140fa3200',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bd14eace-2a4e-447f-30ef-242de1163f00',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4c18d133-f17b-4a8e-c467-284d56d67100',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/703246b1-2fc6-4ae5-8bec-d63ac6388d00',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d4982b82-e9aa-4c15-433c-9e4941d29400',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/64817c85-8736-4f7d-49bc-10263071e100',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bc504642-9bd6-42bf-f0c1-56bc983abc00',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/ae44521e-a1c8-4394-669e-898ce437a600',
+        },
+        {
+            jpg: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e72eb435-a27d-4877-01ff-e85476e9e500',
+            webp: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/727f2c40-a535-4264-fcc2-e593f1d48300',
+        }
     ]
 };
 

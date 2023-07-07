@@ -8,6 +8,7 @@ import Layout from './UI/layout/Layout';
 // import ProductDetail from "./UI/templates/ProductDetail";
 
 const ProductDetail = lazy(() => import('./UI/templates/ProductDetail'));
+const HairMaskAmazon = lazy(() => import('./UI/templates/HairMaskAmazon'));
 const TanRange = lazy(() => import('./UI/templates/TanRange'));
 const HairRange = lazy(() => import('./UI/templates/HairRange'));
 const Survey = lazy(() => import('./UI/templates/Survey'));
@@ -37,6 +38,7 @@ const App = () => {
           <Route path='/shampoo-conditioner-set' element={<ProductDetail handle="shampoo-conditioner-set" range="hair" />} />
           <Route path='/super-nourishing-coconut-fig-hair-masque' element={<ProductDetail handle="super-nourishing-coconut-fig-hair-masque" range="hair" />} />
           <Route path='/blackfriday-sweepstakes' element={<Sweepstakes />} />
+          <Route path='/hair-masque-amazon-us' element={<HairMaskAmazon />} />
           <Route path='/range-hair-amazon' element={<AmazonHairRange />} />
           <Route path='/range-tan-amazon' element={<AmazonTanRange />} />
         </Routes>
