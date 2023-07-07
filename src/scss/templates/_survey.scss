@@ -9,3 +9,39 @@
         bottom: -60px;
     }
 }
+
+.survey--variant picture {
+    opacity: 0;
+    @include media-breakpoint-down(lg) {
+        padding-top: 35%;
+    }
+}
+
+.survey--image {
+    background-image: url("https://cdn.shopify.com/s/files/1/0286/1327/9779/files/LP_Quiz_Cover_Mobile_v3.jpg?v=1686732305");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    @include media-breakpoint-up(lg) {
+        background-image: url("https://cdn.shopify.com/s/files/1/0286/1327/9779/files/Quiz_LP_DT.jpg?v=1686559948");
+        background-position: 0% 0%;
+    }
+
+    .survey-content {
+        height: 100%;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .survey--variant figcaption {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        @include make-col(4.5);
+    }
+
+    .cover--full {
+        height: 100vh;
+    }
+
+}

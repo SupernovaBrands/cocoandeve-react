@@ -1,10 +1,10 @@
 const Translations = {
     en: {
-        heading: 'Find your perfect tan \nin 90 seconds!',
-        subheading: 'Take the Tan matching quiz to find your perfect shade of gorgeous glow. It only takes 90 seconds to find your true colour match.',
+        heading: 'Find your true colour match in 90 seconds!',
+        subheading: 'Get the perfect colour match for your skintone! No need to spend hours doing research on self-tanners. Just take our quiz, and we’ll do the rest.',
         caption: 'Your perfect shade is just a few clicks away',
         btn: {
-            start: 'Take the Quiz',
+            start: 'Find my Match',
             next: 'Next',
             prev: 'Previous Question',
             result: 'See results!',
@@ -27,11 +27,11 @@ const Translations = {
         }
     },
     fr: {
-        heading: "Trouvez votre teinte d'autobronzant parfaite \nen 90 secondes !",
-        subheading: "Faites le quiz de compatibilité d'autobronzant pour trouver la teinte qui vous correspond le mieux. 90 secondes suffisent pour trouver la nuance parfaite.",
+        heading: "Trouvez votre teinte parfaite en 90 secondes !",
+        subheading: "Trouvez la teinte parfaite pour votre peau ! Fini les heures passées à chercher le bon autobronzant. Faites simplement notre quiz, et nous nous occupons du reste.",
         caption: "Votre teinte parfaite n'est plus qu'à quelques clics.",
         btn: {
-            start: 'Faire le quiz',
+            start: 'Trouver ma teinte',
             next: 'Suivant',
             prev: 'Question précédente',
             result: 'Voir les résultats !',
@@ -54,11 +54,11 @@ const Translations = {
         }
     },
     de: {
-        heading: "Finde deine perfekte Bräune \nin 90 Sekunden!",
-        subheading: "Nimm am Selbstbräuner-Quiz teil, um deine perfekte Bräunungs-Nuance für einen wunderschönen Glow zu finden. Es dauert nur 90 Sekunden, um deine wahre Farbübereinstimmung zu finden.",
+        heading: "Finde in 90 Sekunden deine perfekte Nuance!",
+        subheading: "Finde die perfekte Nuance für deinen Hautton! Du musst nicht stundenlang nach Selbstbräunern suchen. Nimm einfach an unserem Quiz teil und wir erledigen den Rest.",
         caption: 'Deine perfekte Nuance ist nur ein paar Klicks entfernt',
         btn: {
-            start: 'Nimm an unserem Quiz teil',
+            start: 'Finde meine Nuance',
             next: 'Weiter',
             prev: 'Vorherige Frage',
             result: 'Siehe Ergebnisse!',
