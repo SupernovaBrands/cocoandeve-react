@@ -80,21 +80,25 @@ const TimerBar = (props) => {
 		<div class="announcement-bar announcement-bar__timer w-100 py-1 bg-primary-light">
 			<a href={props.url} class="text-decoration-none">
 				<div class="container text-center text-dark d-flex align-items-center justify-content-between justify-content-lg-center">
-					<span class="announcement-bar__timer__title d-block d-lg-inline me-lg-4 mb-0 fw-normal text-start font-size-sm font-size-dt-lg">Prime Day ends in:</span>
+					<span class="announcement-bar__timer__title d-block d-lg-inline me-lg-4 mb-0 fw-normal text-start">Prime Day ends in:</span>
 					<ul class="list-inline mb-0 fw-bold">
 						{stateDays > 0 && (
-							<li class="list-inline-item position-relative me-g h2 mb-0 fw-normal">
-								{`${stateDays} `} <span>{stateDays > 1 ? 'Days' : 'Day'}</span>
+							<li class="list-inline-item position-relative me-g mb-0 fw-normal">
+								<p className="mb-0">{`${stateDays} `}</p>
+								<span>{stateDays > 1 ? 'Days' : 'Day'}</span>
 							</li>
 						)}
-						<li class="list-inline-item position-relative me-g h2 mb-0 fw-normal">
-							{`${String(stateHours).padStart(2, '0')}`} <span>{stateHours > 1 ? 'Hours' : 'Hour'}</span>
+						<li class="list-inline-item position-relative me-g mb-0 fw-normal">
+							<p className="mb-0">{`${String(stateHours).padStart(2, '0')}`}</p>
+							<span>{stateHours > 1 ? 'Hours' : 'Hour'}</span>
 						</li>
-						<li class="list-inline-item position-relative me-g h2 mb-0 fw-normal">
-							{`${String(stateMinutes).padStart(2, '0')}`} <span>Minutes</span>
+						<li class="list-inline-item position-relative me-g mb-0 fw-normal">
+							<p className="mb-0">{`${String(stateMinutes).padStart(2, '0')}`}</p>
+							<span>Minutes</span>
 						</li>
-						<li class="list-inline-item position-relative h2 mb-0 fw-normal">
-							{`${String(stateSeconds).padStart(2, '0')}`} <span>Seconds</span>
+						<li class="list-inline-item position-relative mb-0 fw-normal">
+							<p className="mb-0">{`${String(stateSeconds).padStart(2, '0')}`}</p>
+							<span>Seconds</span>
 						</li>
 					</ul>
 				</div>
