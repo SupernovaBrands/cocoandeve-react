@@ -3,9 +3,19 @@
 
     &__timer {
 
+        &__title {
+            font-size: calc-em(17);
+            @include media-breakpoint-up(lg) {
+                font-size: calc-em(22);
+            }
+        }
+
         .list-inline-item {
-            @include media-breakpoint-down(lg) {
+            p {
                 font-size: calc-em(20);
+                @include media-breakpoint-up(lg) {
+                    font-size: calc-em(24);
+                }
             }
             &:not(:first-child) {
                 &:before {
@@ -17,11 +27,10 @@
 
             span {
                 display: block;
-                font-size: calc-em(9);
                 font-weight: normal;
-
+                font-size: calc-em(13);
                 @include media-breakpoint-up(lg) {
-                    font-size: calc-em(10);
+                    font-size: calc-em(16);
                 }
             }
         }
