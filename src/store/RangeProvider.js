@@ -1233,64 +1233,64 @@ const bannerSection = {
     amazonHair: {
         us: {
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d41b7699-e9fe-4cda-1763-992ac35e6200/2280x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4643aa92-c1a8-453b-8718-a8770794da00/2280x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/76aecdfb-2552-4fcc-c6a5-73d4d45cfd00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7943df4b-0075-4cfc-3a61-57cf94c9c100/2280x',
             },
             mobile: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/edd295fc-3ed4-4e94-dfe8-d586e0f91e00/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9ee68053-464d-4dc0-603a-80722b3dfa00/828x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8aeee2a5-cb8c-415b-4724-1b3db4798500/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/82815599-67f7-4e68-beef-b2eb4598f300/828x',
             }
         },
         ca: {
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/d41b7699-e9fe-4cda-1763-992ac35e6200/2280x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4643aa92-c1a8-453b-8718-a8770794da00/2280x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/76aecdfb-2552-4fcc-c6a5-73d4d45cfd00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7943df4b-0075-4cfc-3a61-57cf94c9c100/2280x',
             },
             mobile: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/edd295fc-3ed4-4e94-dfe8-d586e0f91e00/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9ee68053-464d-4dc0-603a-80722b3dfa00/828x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8aeee2a5-cb8c-415b-4724-1b3db4798500/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/82815599-67f7-4e68-beef-b2eb4598f300/828x',
             }
         },
         uk: {
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e9dce445-a551-452d-a214-8a2b31dfb100/2280x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/10049c7d-3216-4d97-20f8-298a255e3e00/2280x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/76aecdfb-2552-4fcc-c6a5-73d4d45cfd00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7943df4b-0075-4cfc-3a61-57cf94c9c100/2280x',
             },
             mobile: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b30a1f63-dc11-44b6-3c7a-927918e64300/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/64ef85a1-6416-470f-9bbc-377afdfc6f00/828x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8aeee2a5-cb8c-415b-4724-1b3db4798500/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/82815599-67f7-4e68-beef-b2eb4598f300/828x',
             }
         }
     },
     amazonTan: {
         us: {
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a32c9238-f939-48ad-26ae-8134d5984f00/2280x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f316b48e-4bfb-40c3-cb09-d02bda3e0f00/2280x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e28f6278-cf05-4f27-c9c4-4ee518538a00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7fa00b88-f72c-460c-c214-023662f35600/2280x',
             },
             mobile: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/fbd4c71c-435a-4b30-7c71-4ee5781fb500/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4fb7c985-0105-4ce4-a970-8c513342b700/828x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0421efc6-c39b-4813-d52c-861506881600/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/00d499b5-3878-4bad-7323-61cb275e3c00/828x',
             }
         },
         ca: {
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a32c9238-f939-48ad-26ae-8134d5984f00/2280x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f316b48e-4bfb-40c3-cb09-d02bda3e0f00/2280x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e28f6278-cf05-4f27-c9c4-4ee518538a00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7fa00b88-f72c-460c-c214-023662f35600/2280x',
             },
             mobile: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/fbd4c71c-435a-4b30-7c71-4ee5781fb500/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4fb7c985-0105-4ce4-a970-8c513342b700/828x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0421efc6-c39b-4813-d52c-861506881600/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/00d499b5-3878-4bad-7323-61cb275e3c00/828x',
             }
         },
         uk: {
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a32c9238-f939-48ad-26ae-8134d5984f00/2280x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f316b48e-4bfb-40c3-cb09-d02bda3e0f00/2280x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e28f6278-cf05-4f27-c9c4-4ee518538a00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7fa00b88-f72c-460c-c214-023662f35600/2280x',
             },
             mobile: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/fbd4c71c-435a-4b30-7c71-4ee5781fb500/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/4fb7c985-0105-4ce4-a970-8c513342b700/828x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0421efc6-c39b-4813-d52c-861506881600/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/00d499b5-3878-4bad-7323-61cb275e3c00/828x',
             }
         }
     },

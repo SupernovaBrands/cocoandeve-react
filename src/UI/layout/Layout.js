@@ -9,7 +9,7 @@ const Footer = lazy(() => import('../sections/Footer'));
 const Layout = (props) => {
   return (
     <Fragment>
-        { !props.noHeader && (<Header />) }
+        { !props.noHeader && (<Header timerBar={props.timerBar} />) }
         <main>{props.children}</main>
         { !props.noFooter && (
           <Suspense fallback={<div></div>}>

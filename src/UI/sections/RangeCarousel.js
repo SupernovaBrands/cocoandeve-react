@@ -81,19 +81,22 @@ const RangeCarousel = (props) => {
 			carouselId: 'FeaturedHair1',
 			isTabActive: false,
 			carouselItems: PRODUCTS_HAIR_1.length < 4 && PRODUCTS_HAIR_1.length > 1 && isMobile ? productFaceMerged : PRODUCTS_HAIR_1,
-			tabLabel: carouselData.face
+			tabLabel: carouselData.face,
+			subHeading: null,
 		},
 		{
 			carouselId: 'FeaturedHair2',
 			isTabActive: true,
 			carouselItems: PRODUCTS_HAIR_AMAZON,
-			tabLabel: carouselData.body
+			tabLabel: carouselData.body,
+			subHeading: 'Prices shown are before discount.',
 		},
 		{
 			carouselId: 'FeaturedHair3',
 			isTabActive: false,
 			carouselItems: PRODUCTS_HAIR_3.length < 4 && isMobile ? productValuemerged : PRODUCTS_HAIR_3,
-			tabLabel: carouselData.valuesets
+			tabLabel: carouselData.valuesets,
+			subHeading: null,
 		}
 	];
 
@@ -102,7 +105,8 @@ const RangeCarousel = (props) => {
 			carouselId: 'FeaturedHair2',
 			isTabActive: true,
 			carouselItems: PRODUCTS_TAN_AMAZON,
-			tabLabel: carouselData.body
+			tabLabel: carouselData.body,
+			subHeading: 'Prices shown are before discount.',
 		}
 	];
 
@@ -144,42 +148,47 @@ const RangeCarousel = (props) => {
 			</div>
             <div className='tab-content container px-0 px-md-2 text-center'>
 				{CAROUSEL_TABS.map((item, idx) => (
-					<Carousel key={`RangeCarousel${idx}`} id={item.carouselId} centered={true} items={item.carouselItems} slideNumber='4' className={`tab-pane fade carousel slide carousel--loop ${item.isTabActive ? 'show active' : ''}`} additionalClasses='row'>
-
-						{item.carouselItems.length > 4 && (
-							<Fragment>
-								<button className="carousel-control carousel-control-prev carousel-control--background floating-out-start justify-content-start text-primary" data-bs-target={`#${item.carouselId}`} data-bs-slide="prev">
-									<span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true">
-										<ChevronPrev1 className='svg' />
-									</span>
-									<span className='visually-hidden-focusable'>Prev</span>
-								</button>
-								<button className="carousel-control carousel-control-next carousel-control--background floating-out-end justify-content-end text-primary" data-bs-target={`#${item.carouselId}`} data-bs-slide="next">
-									<span className="carousel-control-next-icon d-flex justify-content-center align-items-center" aria-hidden="true">
-										<ChevronNext1 className='svg' />
-									</span>
-									<span className='visually-hidden-focusable'>Next</span>
-								</button>
-							</Fragment>
+					<>
+						{item.subHeading && (
+							<p className="mt-n2 text-primary">{item.subHeading}</p>
 						)}
+						<Carousel key={`RangeCarousel${idx}`} id={item.carouselId} centered={true} items={item.carouselItems} slideNumber='4' className={`tab-pane fade carousel slide carousel--loop ${item.isTabActive ? 'show active' : ''}`} additionalClasses='row'>
 
-						{item.carouselItems.length < 4 && item.carouselItems.length > 1 && width < 768 && (
-							<Fragment>
-								<button className="carousel-control carousel-control-prev carousel-control--background floating-out-start justify-content-start text-primary" data-bs-target={`#${item.carouselId}`} data-bs-slide="prev">
-									<span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true">
-										<ChevronPrev1 className='svg' />
-									</span>
-									<span className='visually-hidden-focusable'>Prev</span>
-								</button>
-								<button className="carousel-control carousel-control-next carousel-control--background floating-out-end justify-content-end text-primary" data-bs-target={`#${item.carouselId}`} data-bs-slide="next">
-									<span className="carousel-control-next-icon d-flex justify-content-center align-items-center" aria-hidden="true">
-										<ChevronNext1 className='svg' />
-									</span>
-									<span className='visually-hidden-focusable'>Next</span>
-								</button>
-							</Fragment>
-						)}
-					</Carousel>
+							{item.carouselItems.length > 4 && (
+								<Fragment>
+									<button className="carousel-control carousel-control-prev carousel-control--background floating-out-start justify-content-start text-primary" data-bs-target={`#${item.carouselId}`} data-bs-slide="prev">
+										<span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true">
+											<ChevronPrev1 className='svg' />
+										</span>
+										<span className='visually-hidden-focusable'>Prev</span>
+									</button>
+									<button className="carousel-control carousel-control-next carousel-control--background floating-out-end justify-content-end text-primary" data-bs-target={`#${item.carouselId}`} data-bs-slide="next">
+										<span className="carousel-control-next-icon d-flex justify-content-center align-items-center" aria-hidden="true">
+											<ChevronNext1 className='svg' />
+										</span>
+										<span className='visually-hidden-focusable'>Next</span>
+									</button>
+								</Fragment>
+							)}
+
+							{item.carouselItems.length < 4 && item.carouselItems.length > 1 && width < 768 && (
+								<Fragment>
+									<button className="carousel-control carousel-control-prev carousel-control--background floating-out-start justify-content-start text-primary" data-bs-target={`#${item.carouselId}`} data-bs-slide="prev">
+										<span className="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true">
+											<ChevronPrev1 className='svg' />
+										</span>
+										<span className='visually-hidden-focusable'>Prev</span>
+									</button>
+									<button className="carousel-control carousel-control-next carousel-control--background floating-out-end justify-content-end text-primary" data-bs-target={`#${item.carouselId}`} data-bs-slide="next">
+										<span className="carousel-control-next-icon d-flex justify-content-center align-items-center" aria-hidden="true">
+											<ChevronNext1 className='svg' />
+										</span>
+										<span className='visually-hidden-focusable'>Next</span>
+									</button>
+								</Fragment>
+							)}
+						</Carousel>
+					</>
 				))}
 			</div>
         </section>
