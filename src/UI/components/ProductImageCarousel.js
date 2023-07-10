@@ -21,7 +21,7 @@ const ProductImageCarousel = (props) => {
     return (
         <Fragment>
             <div key="product-image-carousel__container" className="product-image-carousel__container col-12 col-lg-6 order-lg-2">
-                <figure id="product-image-carousel" className="product-image-carousel carousel slide mb-1 mb-lg-0 g-0__in-container" data-bs-ride="carousel" data-bs-interval="false" data-bs-touch="false">
+                <figure id="product-image-carousel" className="product-image-carousel carousel slide mb-1 mb-lg-0 g-0__in-container" data-bs-interval="false" data-bs-touch="false">
                     <div key="div-carousel-1" className="carousel-inner">
                         {PRODUCT_IMAGES.map((image, index) => (
                             <ProductImageCarouselItem
@@ -47,7 +47,7 @@ const ProductImageCarousel = (props) => {
                 </figure>
             </div>
 
-            <div key="product-image-carousel__indicator" id="product-image-carousel__indicator" className="product-image-carousel__indicator carousel--swipe col-12 col-lg-1 order-lg-1 carousel slide carousel--loop mb-1 mb-lg-0 px-0 px-lg-g  d-none d-lg-block" data-bs-slide-number="5" data-bs-ride="carousel" data-bs-interval="false">
+            <div key="product-image-carousel__indicator" id="product-image-carousel__indicator" className="product-image-carousel__indicator carousel--swipe col-12 col-lg-1 order-lg-1 carousel slide carousel--loop mb-1 mb-lg-0 px-0 px-lg-g  d-none d-lg-block" data-bs-slide-number="5" data-bs-interval="false">
                 <button  key="btn4" className="carousel-indicator chevron-up btn-unstyled d-none d-lg-flex mx-auto mb-1 mb-lg-3 text-center align-items-center" data-bs-slide="prev" data-bs-target="#product-image-carousel__indicator" disabled>
                     <ChevronUp className='svg text-primary'/>
                 </button>

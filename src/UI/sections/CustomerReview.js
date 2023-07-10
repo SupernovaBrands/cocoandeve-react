@@ -19,6 +19,7 @@ const CustomerReview = (props) => {
                     caption={reviewsCtx.reviews[0].shade}
                     text={reviewsCtx.reviews[0].text}
                     handle={props.handle}
+                    disabledLink={props.disabledLink}
                 >
                     <div className='row no-gutters'>
                         <div className='col-6'>
@@ -46,6 +47,7 @@ const CustomerReview = (props) => {
                     caption={reviewsCtx.reviews[1].shade}
                     text={reviewsCtx.reviews[1].text}
                     handle={props.handle}
+                    disabledLink={props.disabledLink}
                 >
                     <div className='row no-gutters'>
                         <div className='col-6'>
@@ -66,6 +68,7 @@ const CustomerReview = (props) => {
                     caption={reviewsCtx.reviews[2].shade}
                     text={reviewsCtx.reviews[2].text}
                     handle={props.handle}
+                    disabledLink={props.disabledLink}
                 >
                     <div className='row no-gutters'>
                         <div className='col-6'>
@@ -86,6 +89,7 @@ const CustomerReview = (props) => {
                     caption={reviewsCtx.reviews[3].shade}
                     text={reviewsCtx.reviews[3].text}
                     handle={props.handle}
+                    disabledLink={props.disabledLink}
                 >
                     <div className='row no-gutters'>
                         <div className='col-6'>
@@ -106,6 +110,7 @@ const CustomerReview = (props) => {
                     caption={reviewsCtx.reviews[4].shade}
                     text={reviewsCtx.reviews[4].text}
                     handle={props.handle}
+                    disabledLink={props.disabledLink}
                 >
                     <div className='row no-gutters'>
                         <div className='col-6'>
@@ -133,6 +138,7 @@ const CustomerReview = (props) => {
                     caption={reviewsCtx.reviews[5].shade}
                     text={reviewsCtx.reviews[5].text}
                     handle={props.handle}
+                    disabledLink={props.disabledLink}
                  >
                     <div className='row no-gutters'>
                         <div className='col-6'>
@@ -160,6 +166,7 @@ const CustomerReview = (props) => {
                     caption={reviewsCtx.reviews[6].shade}
                     text={reviewsCtx.reviews[6].text}
                     handle={props.handle}
+                    disabledLink={props.disabledLink}
                     >
                     <div className='row no-gutters'>
                         <div className='col-6'>
@@ -183,6 +190,7 @@ const CustomerReview = (props) => {
                     caption={reviewsCtx.reviews[0].shade}
                     text={reviewsCtx.reviews[0].text}
                     handle={props.handle}
+                    disabledLink={props.disabledLink}
                 >
                     <div className='row no-gutters'>
                         <div className='col-6'>
@@ -203,6 +211,7 @@ const CustomerReview = (props) => {
                     caption={reviewsCtx.reviews[1].shade}
                     text={reviewsCtx.reviews[1].text}
                     handle={props.handle}
+                    disabledLink={props.disabledLink}
                 >
                     <div className='row no-gutters'>
                         <div className='col-6'>
@@ -223,6 +232,7 @@ const CustomerReview = (props) => {
                     caption={reviewsCtx.reviews[2].shade}
                     text={reviewsCtx.reviews[2].text}
                     handle={props.handle}
+                    disabledLink={props.disabledLink}
                 >
                     <div className='row no-gutters'>
                         <div className='col-6'>
@@ -243,6 +253,7 @@ const CustomerReview = (props) => {
                     caption={reviewsCtx.reviews[3].shade}
                     text={reviewsCtx.reviews[3].text}
                     handle={props.handle}
+                    disabledLink={props.disabledLink}
                 >
                     <div className='row no-gutters'>
                         <div className='col-6'>
@@ -263,6 +274,7 @@ const CustomerReview = (props) => {
                     caption={reviewsCtx.reviews[4].shade}
                     text={reviewsCtx.reviews[4].text}
                     handle={props.handle}
+                    disabledLink={props.disabledLink}
                 >
                     <div className='row no-gutters'>
                         <div className='col-6'>
@@ -283,6 +295,7 @@ const CustomerReview = (props) => {
                     caption={reviewsCtx.reviews[5].shade}
                     text={reviewsCtx.reviews[5].text}
                     handle={props.handle}
+                    disabledLink={props.disabledLink}
                  >
                     <div className='row no-gutters'>
                         <div className='col-6'>
@@ -303,6 +316,7 @@ const CustomerReview = (props) => {
                     caption={reviewsCtx.reviews[6].shade}
                     text={reviewsCtx.reviews[6].text}
                     handle={props.handle}
+                    disabledLink={props.disabledLink}
                     >
                     <div className='row no-gutters'>
                         <div className='col-6'>
