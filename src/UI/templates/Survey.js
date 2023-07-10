@@ -15,6 +15,7 @@ import ProductVariants from "../../modules/ProductVariants";
 import { useSearchParams } from "react-router-dom";
 
 import { ReactComponent as LoaderSvg } from '../../assets/loader.svg';
+import { ReactComponent as StarFive } from '../../assets/star-five.svg';
 import Translations from '../../modules/translations';
 
 import { useIdleTimer } from 'react-idle-timer'
@@ -501,7 +502,7 @@ const Survey = () => {
                     }
 
                     { currentPosition === 'finished' && !submitted && additionalStep && !redirect && (
-                        <EmailForm lang={lang} onSubmit={onSubmit} viewMyResult={viewMyResult} />
+                        <EmailForm lang={lang} onSubmit={onSubmit} viewMyResult={viewMyResult} abTest={abTest} />
                     )
                     }
 
@@ -511,10 +512,53 @@ const Survey = () => {
                     }
 
                     { currentPosition === 'finished' && redirect && (
-                        <div className="question-box analyzing d-flex justify-content-center align-items-center flex-column">
-                            <p className="question-box__title">{Translations[lang].loading}</p>
-                            <LoaderSvg className="loader mt-0 mb-0"/>
-                        </div>
+                        <>
+                            {abTest ? (
+                                <div className="question-box question-box-type-2 analyzing d-flex justify-content-center align-items-center flex-column">
+                                    <p className="question-box__title px-2 text-center">Finding your true colour match!</p>
+                                    <LoaderSvg className="loader mt-0 mb-0"/>
+                                    <div className="container mt-0 mt-lg-2">
+                                        <div className="row mt-2 mt-lg-4">
+                                            <div className="col-4 d-none d-lg-block">
+                                                <picture className="d-block">
+                                                    <source srcSet="https://cdn.shopify.com/s/files/1/0286/1327/9779/files/quiz-loading-1-review.jpg?v=1685596229" media="(min-width: 992px)" />
+                                                    <img className="w-100 rounded" src="https://cdn.shopify.com/s/files/1/0286/1327/9779/files/quiz-loading-1-review.jpg?v=1685596229" />
+                                                </picture>
+                                            </div>
+                                            <div className="col-4 d-none d-lg-block">
+                                                <picture className="d-block">
+                                                    <source srcSet="https://cdn.shopify.com/s/files/1/0286/1327/9779/files/quiz-loading-2-review.jpg?v=1685596229" media="(min-width: 992px)" />
+                                                    <img className="w-100 rounded" src="https://cdn.shopify.com/s/files/1/0286/1327/9779/files/quiz-loading-2-review.jpg?v=1685596229" />
+                                                </picture>
+                                            </div>
+                                            <div className="col-12 d-lg-none">
+                                                <picture className="d-block">
+                                                    <source srcSet="https://cdn.shopify.com/s/files/1/0286/1327/9779/files/quiz-loading-mob-review.jpg?v=1685596271" media="(min-width: 992px)" />
+                                                    <img className="w-100 rounded" src="https://cdn.shopify.com/s/files/1/0286/1327/9779/files/quiz-loading-mob-review.jpg?v=1685596271" />
+                                                </picture>
+                                            </div>
+                                            <div className="col-12 col-lg-4 d-flex align-items-center">
+                                                <div className="">
+                                                    <p className="d-flex align-items-center mb-1 mt-2 mt-lg-0">
+                                                        <StarFive /> <span className="ms-1 text-primary font-size-sm">4.8/5.0</span>
+                                                    </p>
+                                                    <p className="mb-0"><strong>I’m in love with this!</strong></p>
+                                                    <p className="fst-italic">It gives me a unique glow to the skin and looks really natural!</p>
+
+                                                    <strong className="d-block">Kristie</strong>
+                                                    <span className="font-size-sm">Shampoo & Conditioner Set</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ) : (
+                                <div className="question-box analyzing d-flex justify-content-center align-items-center flex-column">
+                                    <p className="question-box__title">{Translations[lang].loading}</p>
+                                    <LoaderSvg className="loader mt-0 mb-0"/>
+                                </div>
+                            )}
+                        </>
                     )
                     }
             </div>
