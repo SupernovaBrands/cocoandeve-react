@@ -275,7 +275,7 @@ const Survey = () => {
 
         setTimeout(function(){
             clearCookie();
-            window.top.location.href = `https://${selectedSite}/products/${handle}?survey=result&sku=${sku}`;
+            window.top.location.href = `https://${selectedSite}/products/${handle}?survey=result&sku=${sku}&quizstatus=completed`;
         }, 3000);
     }
 
