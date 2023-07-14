@@ -14,7 +14,7 @@ const Translations = {
         loading: 'Analysing your answers',
         formEmail: {
             title: 'We found your perfect match!',
-            caption: 'Enter your email to save your results!<br/>Plus, get a promo code for <strong>10% OFF</strong> your first purchase.',
+            caption: 'Enter your email to save your results!<br/>Plus, get a promo code for <strong>15% OFF</strong> your first purchase.',
             email: 'Email',
             button: 'Submit',
             term: 'I agree to <a target="_blank" href="https://www.cocoandeve.com/pages/privacy-policy">Privacy Policy</a> & <a target="_blank" href="https://www.cocoandeve.com/pages/terms-and-conditions">ToS</a>',
@@ -22,7 +22,7 @@ const Translations = {
         },
         result: {
             title: 'Thanks! Here is your promo code:',
-            code: 'QUIZ10',
+            code: 'QUIZ15',
             note: 'Promo code applies only for first purchases.'
         }
     },
@@ -41,7 +41,7 @@ const Translations = {
         loading: 'Analyse de vos réponses',
         formEmail: {
             title: 'We found your perfect match!',
-            caption: 'Enter your email to save your results!<br/>Plus, get a promo code for <strong>10% OFF</strong> your first purchase.',
+            caption: 'Enter your email to save your results!<br/>Plus, get a promo code for <strong>15% OFF</strong> your first purchase.',
             email: 'Email',
             button: 'Submit',
             term: 'I agree to <a target="_blank" href="https://www.cocoandeve.com/pages/privacy-policy">Privacy Policy</a> & <a target="_blank" href="https://www.cocoandeve.com/pages/terms-and-conditions">ToS</a>',
@@ -49,7 +49,7 @@ const Translations = {
         },
         result: {
             title: 'Thanks!\nHere is your promo code:',
-            code: 'QUIZ10',
+            code: 'QUIZ15',
             note: 'Promo code applies only for first purchases.'
         }
     },
@@ -68,7 +68,7 @@ const Translations = {
         loading: 'Analyse deiner Antworten',
         formEmail: {
             title: 'We found your perfect match!',
-            caption: 'Enter your email to save your results!<br/>Plus, get a promo code for <strong>10% OFF</strong> your first purchase.',
+            caption: 'Enter your email to save your results!<br/>Plus, get a promo code for <strong>15% OFF</strong> your first purchase.',
             email: 'Email',
             button: 'Submit',
             term: 'I agree to <a target="_blank" href="https://www.cocoandeve.com/pages/privacy-policy">Privacy Policy</a> & <a target="_blank" href="https://www.cocoandeve.com/pages/terms-and-conditions">ToS</a>',
@@ -76,7 +76,7 @@ const Translations = {
         },
         result: {
             title: 'Thanks! Here is your promo code:',
-            code: 'QUIZ10',
+            code: 'QUIZ15',
             note: 'Promo code applies only for first purchases.'
         }
     }
