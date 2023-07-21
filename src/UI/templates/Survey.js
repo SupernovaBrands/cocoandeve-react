@@ -401,7 +401,12 @@ const Survey = () => {
     }
 
     const skipForm = () => {
-        setSubmitted(true);
+        const stores = ['dev.cocoandeve.com', 'ca.cocoandeve.com', 'de.cocoandeve.com', 'eu.cocoandeve.com', 'uk.cocoandeve.com', 'us.cocoandeve.com', 'www.cocoandeve.com', 'fr.cocoandeve.com']
+        if (stores.includes(selectedSite)) {
+            setSubmitted(true);
+        } else {
+            viewMyResult();
+        }
     }
 
     const postIframeHeight = (key, val) => {
