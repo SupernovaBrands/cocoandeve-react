@@ -82,12 +82,11 @@ const Survey = () => {
     // initial data
     let initialState = getCookie('surveyPosition') || 'start';
     if (surveyState === 'started' && (getCookie('surveyPosition') === 'start' || getCookie('surveyPosition') === null || getCookie('surveyPosition') === '')) {
-        postMessageData('Survey', 'started');
         initialState = 'question-1';
         setCookie('answeredQuestion', '');
-        setLastPosition(1);
         sendTodataLayer('started');
     }
+
     const initialCurrentQuestion = getCookie('currentQuestion') ? parseInt(getCookie('currentQuestion'), 10) : 1;
     const initialSubmitted = getCookie('quizEmail') ? true : false;
     const answerData = getCookieAnsweredQuestion() ? getCookieAnsweredQuestion() : {};
@@ -401,6 +400,15 @@ const Survey = () => {
         gettingResult(true);
     }
 
+    const skipForm = () => {
+        const stores = ['dev.cocoandeve.com', 'ca.cocoandeve.com', 'de.cocoandeve.com', 'eu.cocoandeve.com', 'uk.cocoandeve.com', 'us.cocoandeve.com', 'www.cocoandeve.com', 'fr.cocoandeve.com']
+        if (stores.includes(selectedSite)) {
+            setSubmitted(true);
+        } else {
+            viewMyResult();
+        }
+    }
+
     const postIframeHeight = (key, val) => {
         if (window.top === window.self) return;
 
@@ -432,6 +440,13 @@ const Survey = () => {
         timeout: 300000,
         throttle: 500,
     });
+
+    useEffect(() => {
+        if (surveyState === 'started' && (getCookie('surveyPosition') === 'start' || getCookie('surveyPosition') === null || getCookie('surveyPosition') === '')) {
+            postMessageData('Survey', 'started');
+            setLastPosition(1);
+        }
+    }, []);
 
     // useEffect(() => {
     //     postIframeHeight('height', height);
@@ -502,7 +517,7 @@ const Survey = () => {
                     }
 
                     { currentPosition === 'finished' && !submitted && additionalStep && !redirect && (
-                        <EmailForm lang={lang} onSubmit={onSubmit} viewMyResult={viewMyResult} abTest={abTest} />
+                        <EmailForm lang={lang} onSubmit={onSubmit} viewMyResult={skipForm} abTest={abTest} />
                     )
                     }
 
