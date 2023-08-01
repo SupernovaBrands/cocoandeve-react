@@ -529,7 +529,7 @@ const Survey = () => {
                     { currentPosition === 'finished' && redirect && (
                         <>
                             {abTest ? (
-                                <div className="question-box question-box-type-2 analyzing d-flex justify-content-center align-items-center flex-column">
+                                <div className="question-box question-box-type-2 analyzing d-flex justify-content-center align-items-center flex-column mt-n2">
                                     <p className="question-box__title px-2 text-center">Finding your true colour match!</p>
                                     <LoaderSvg className="loader mt-0 mb-0"/>
                                     <div className="container mt-0 mt-lg-2">
