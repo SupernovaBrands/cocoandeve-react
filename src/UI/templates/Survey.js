@@ -529,11 +529,11 @@ const Survey = () => {
                     { currentPosition === 'finished' && redirect && (
                         <>
                             {abTest ? (
-                                <div className="question-box question-box-type-2 analyzing d-flex justify-content-center align-items-center flex-column mt-n2">
-                                    <p className="question-box__title px-2 text-center">Finding your true colour match!</p>
+                                <div className="question-box question-box-type-2 analyzing d-flex justify-content-center align-items-center flex-column mt-n4">
+                                    <p className="question-box__title px-2 text-center mb-0">Finding your true colour match!</p>
                                     <LoaderSvg className="loader mt-0 mb-0"/>
                                     <div className="container mt-0 mt-lg-2">
-                                        <div className="row mt-2 mt-lg-4">
+                                        <div className="row mt-1 mt-lg-4">
                                             <div className="col-4 d-none d-lg-block">
                                                 <picture className="d-block">
                                                     <source srcSet="https://cdn.shopify.com/s/files/1/0286/1327/9779/files/quiz-loading-1-review.jpg?v=1685596229" media="(min-width: 992px)" />
@@ -559,7 +559,7 @@ const Survey = () => {
                                                     </p>
                                                     <p className="mb-0"><strong>I’m in love with this!</strong></p>
                                                     <p className="fst-italic">It gives me a unique glow to the skin and looks really natural!</p>
-
+        
                                                     <strong className="d-block">Kristie</strong>
                                                     <span className="font-size-sm">Shampoo & Conditioner Set</span>
                                                 </div>

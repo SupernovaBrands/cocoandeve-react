@@ -21,7 +21,7 @@
 
     .loader {
         width: calc-em(130);
-        height: calc-em(130);
+        height: calc-em(100);
 
         @include media-breakpoint-up(lg) {
             width: calc-em(150);
