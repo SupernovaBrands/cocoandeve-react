@@ -17,10 +17,16 @@
 
     &.analyzing {
         height: 100vh;
+
+        &.analyzing-wrap-with-review {
+            @include media-breakpoint-down(lg) {
+                height: 680px;
+            }
+        }
     }
 
     .loader {
-        width: calc-em(100);
+        width: calc-em(130);
         height: calc-em(100);
 
         @include media-breakpoint-up(lg) {

@@ -41,6 +41,8 @@ const App = () => {
           <Route path='/hair-masque-amazon-us' element={<HairMaskAmazon />} />
           <Route path='/range-hair-amazon' element={<AmazonHairRange />} />
           <Route path='/range-tan-amazon' element={<AmazonTanRange />} />
+          <Route path='/amazon/hair-range' element={<AmazonHairRange />} />
+          <Route path='/amazon/tan-range' element={<AmazonTanRange />} />
         </Routes>
       </Suspense>
     </Layout>
