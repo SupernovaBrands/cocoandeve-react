@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "../static/js/main.aea8d369.js",
+    "main.js": "../static/js/main.555d1863.js",
     "static/js/628.2cc6602a.chunk.js": "../static/js/628.2cc6602a.chunk.js",
     "static/js/542.4e25c76d.chunk.js": "../static/js/542.4e25c76d.chunk.js",
     "static/js/217.c7d8be52.chunk.js": "../static/js/217.c7d8be52.chunk.js",
     "static/js/534.da32e140.chunk.js": "../static/js/534.da32e140.chunk.js",
-    "static/css/107.8ff437b9.chunk.css": "../static/css/107.8ff437b9.chunk.css",
-    "static/js/107.18145afd.chunk.js": "../static/js/107.18145afd.chunk.js",
+    "static/css/107.7ec08d19.chunk.css": "../static/css/107.7ec08d19.chunk.css",
+    "static/js/107.bdf71c17.chunk.js": "../static/js/107.bdf71c17.chunk.js",
     "static/css/850.edd8e14c.chunk.css": "../static/css/850.edd8e14c.chunk.css",
     "static/js/850.048b9ec1.chunk.js": "../static/js/850.048b9ec1.chunk.js",
-    "static/js/948.63b5bdfc.chunk.js": "../static/js/948.63b5bdfc.chunk.js",
+    "static/js/948.942829f7.chunk.js": "../static/js/948.942829f7.chunk.js",
     "static/js/267.58e44beb.chunk.js": "../static/js/267.58e44beb.chunk.js",
     "static/js/476.0d28aa91.chunk.js": "../static/js/476.0d28aa91.chunk.js",
     "static/js/430.c2448c5e.chunk.js": "../static/js/430.c2448c5e.chunk.js",
@@ -23,7 +23,7 @@
     "static/js/269.ae76d569.chunk.js": "../static/js/269.ae76d569.chunk.js",
     "static/js/181.f2c20bbe.chunk.js": "../static/js/181.f2c20bbe.chunk.js",
     "static/css/284.108e3142.chunk.css": "../static/css/284.108e3142.chunk.css",
-    "static/js/284.8a7e6bb4.chunk.js": "../static/js/284.8a7e6bb4.chunk.js",
+    "static/js/284.e7647e25.chunk.js": "../static/js/284.e7647e25.chunk.js",
     "static/js/445.45b4ec91.chunk.js": "../static/js/445.45b4ec91.chunk.js",
     "static/js/120.d4bc827c.chunk.js": "../static/js/120.d4bc827c.chunk.js",
     "static/css/671.286d003a.chunk.css": "../static/css/671.286d003a.chunk.css",
@@ -37,6 +37,8 @@
     "repairing-restoring-hair-mask/index.html": "../repairing-restoring-hair-mask/index.html",
     "blackfriday-sweepstakes/index.html": "../blackfriday-sweepstakes/index.html",
     "range-tan/index.html": "../range-tan/index.html",
+    "amazon/hair-range/index.html": "../amazon/hair-range/index.html",
+    "amazon/tan-range/index.html": "../amazon/tan-range/index.html",
     "range-hair-amazon/index.html": "../range-hair-amazon/index.html",
     "range-hair/index.html": "../range-hair/index.html",
     "range-tan-amazon/index.html": "../range-tan-amazon/index.html",
@@ -74,6 +76,6 @@
     "static/media/chevron-down.svg": "../static/media/chevron-down.6b10250df20474511cb9f46a308f53e3.svg"
   },
   "entrypoints": [
-    "static/js/main.aea8d369.js"
+    "static/js/main.555d1863.js"
   ]
 }
