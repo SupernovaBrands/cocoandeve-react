@@ -931,6 +931,32 @@ module.exports = function (webpackEnv) {
           {},
           {
             inject: false,
+            template: 'public/tan-range-test-2.html',
+            filename: 'amazon/tan-range-9/index.html'
+          },
+          isEnvProduction
+            ? {
+                minify: {
+                  removeComments: true,
+                  collapseWhitespace: true,
+                  removeRedundantAttributes: true,
+                  useShortDoctype: true,
+                  removeEmptyAttributes: true,
+                  removeStyleLinkTypeAttributes: true,
+                  keepClosingSlash: true,
+                  minifyJS: true,
+                  minifyCSS: true,
+                  minifyURLs: true,
+                },
+              }
+            : undefined
+        )
+      ),
+      new HtmlWebpackPlugin(
+        Object.assign(
+          {},
+          {
+            inject: false,
             template: 'public/amazon/hair-range.html',
             filename: 'amazon/tan-range/index.html'
           },
