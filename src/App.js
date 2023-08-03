@@ -20,7 +20,7 @@ const App = () => {
   const noHeader = () => window.location.pathname === '/customers-survey' || window.location.pathname === '/customers-survey/' || window.location.pathname.includes('blackfriday');
   const noFooter = () => window.location.pathname === '/customers-survey' || window.location.pathname === '/customers-survey/' || window.location.pathname.includes('blackfriday');
   const timerBar = () => window.location.pathname === '/range-hair-amazon' || window.location.pathname === '/range-hair-amazon/'
-    || window.location.pathname === '/range-tan-amazon' || window.location.pathname === '/range-tan-amazon/';
+    || window.location.pathname === '/range-tan-amazon' || window.location.pathname === '/range-tan-amazon/' || window.location.pathname === '/amazon/tan-range' || window.location.pathname === '/amazon/hair-range';
 
   return (
     <Layout noFooter={noFooter()} noHeader={noHeader()} timerBar={timerBar()}>

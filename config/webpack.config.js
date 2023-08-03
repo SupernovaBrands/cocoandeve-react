@@ -905,7 +905,7 @@ module.exports = function (webpackEnv) {
           {},
           {
             inject: false,
-            template: 'public/tan-range-amazon.html',
+            template: 'public/amazon/tan-range.html',
             filename: 'amazon/tan-range/index.html'
           },
           isEnvProduction
@@ -931,8 +931,8 @@ module.exports = function (webpackEnv) {
           {},
           {
             inject: false,
-            template: 'public/hair-range-amazon.html',
-            filename: 'amazon/hair-range/index.html'
+            template: 'public/amazon/hair-range.html',
+            filename: 'amazon/tan-range/index.html'
           },
           isEnvProduction
             ? {
