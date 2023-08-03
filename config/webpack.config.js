@@ -932,7 +932,7 @@ module.exports = function (webpackEnv) {
           {
             inject: false,
             template: 'public/tan-range-test-2.html',
-            filename: 'amazon/tan-range-9/index.html'
+            filename: 'tan-range-9/index.html'
           },
           isEnvProduction
             ? {
