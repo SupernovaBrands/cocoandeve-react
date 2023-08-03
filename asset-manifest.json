@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "../static/js/main.08c18186.js",
+    "main.js": "../static/js/main.bfd7f008.js",
     "static/js/628.2cc6602a.chunk.js": "../static/js/628.2cc6602a.chunk.js",
     "static/js/542.4e25c76d.chunk.js": "../static/js/542.4e25c76d.chunk.js",
     "static/js/217.c7d8be52.chunk.js": "../static/js/217.c7d8be52.chunk.js",
@@ -37,11 +37,11 @@
     "repairing-restoring-hair-mask/index.html": "../repairing-restoring-hair-mask/index.html",
     "blackfriday-sweepstakes/index.html": "../blackfriday-sweepstakes/index.html",
     "range-tan/index.html": "../range-tan/index.html",
-    "amazon/tan-range-9/index.html": "../amazon/tan-range-9/index.html",
     "amazon/tan-range/index.html": "../amazon/tan-range/index.html",
     "range-hair-amazon/index.html": "../range-hair-amazon/index.html",
     "range-hair/index.html": "../range-hair/index.html",
     "range-tan-amazon/index.html": "../range-tan-amazon/index.html",
+    "tan-range-9/index.html": "../tan-range-9/index.html",
     "range-tan-test/index.html": "../range-tan-test/index.html",
     "customers-survey/index.html": "../customers-survey/index.html",
     "static/media/diet.svg": "../static/media/diet.0ac4c8506977502e480bfda2b8a4d163.svg",
@@ -76,6 +76,6 @@
     "static/media/chevron-down.svg": "../static/media/chevron-down.6b10250df20474511cb9f46a308f53e3.svg"
   },
   "entrypoints": [
-    "static/js/main.08c18186.js"
+    "static/js/main.bfd7f008.js"
   ]
 }
