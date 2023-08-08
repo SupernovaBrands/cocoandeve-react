@@ -30,12 +30,12 @@ const DATA = [
 
 const IngredientCard = (props) => {
 	return (
-		<figure className="col-9 youth-revive__ingredients-card mb-2" ref={props.cardRef}>
-			<picture className="d-block mb-2">
-				<source srcSet={props.data.srcSet} media="(min-width: 992px)" />
-				<img className="w-100" src={props.data.src} />
+		<figure className="col-10 youth-revive__ingredients-card mb-0 pt-2 pt-lg-0" ref={props.cardRef}>
+			<picture className="d-block mb-0">
+				<source srcSet={props.data.srcSet} media="(min-width: 992px)" width="368" />
+				<img className="w-100" src={props.data.src} loading="lazy" width="280" />
 			</picture>
-			<figcaption>
+			<figcaption className="pt-25 pt-lg-0">
 				<strong className="d-block text-uppercase mb-1">{props.data.title}</strong>
 				<p className="mb-0 pe-lg-2">{props.data.desc}</p>
 			</figcaption>
@@ -78,7 +78,7 @@ const ReviveIngredients = () => {
 	return (
 		<section className="youth-revive__section youth-revive__ingredients-wrapper">
 			<div className="youth-revive__ingredients">
-				<div className="container px-g">
+				<div className="youth-revive__custom-scroll px-g">
 					<div className="row">
 						<h2 className="col-6 col-lg-4 youth-revive__ingredients-title mb-2 mb-lg-4">Discover the ingredients</h2>
 					</div>
@@ -88,11 +88,11 @@ const ReviveIngredients = () => {
 						<button type="button" className={`btn-unstyled ${leftDisabled ? 'btn-disabled' : ''}`} disabled={leftDisabled} onClick={scrollLeft}>
 							<ArrowLeft />
 						</button>
-						<button type="button" className={`btn-unstyled ${rightDisabled ? 'btn-disabled' : ''}`} disabled={rightDisabled} onClick={scrollRight}>
+						<button type="button" className={`btn-unstyled ms-1 ${rightDisabled ? 'btn-disabled' : ''}`} disabled={rightDisabled} onClick={scrollRight}>
 							<ArrowRight />
 						</button>
 					</div>
-					<div className="flex-nowrap row youth-revive__custom-scroll pe-3" onScroll={onScroll} ref={scrollRef}>
+					<div className="flex-nowrap row youth-revive__custom-scroll pe-3 pt-4" onScroll={onScroll} ref={scrollRef}>
 						{DATA.map((item, index) => (
 							<IngredientCard key={index} data={item} cardRef={cardRef} />
 						))}

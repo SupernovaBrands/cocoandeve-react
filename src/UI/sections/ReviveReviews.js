@@ -42,10 +42,10 @@ const REVIEW_DATA = [
 
 const ReviewCard = (props) => {
 	return (
-		<figure className="mb-0 col-9 col-lg-5" ref={props.cardRef}>
+		<figure className="mb-0 col-95 col-lg-5" ref={props.cardRef}>
 			<picture className="d-block mb-2">
-				<source srcSet={props.data.src} media="(min-width: 992px)" width="390" height="508" />
-				<img src={props.data.src} className="w-100" loading="lazy" width="257" height="335" />
+				<source srcSet={props.data.src} media="(min-width: 992px)" width="370" />
+				<img src={props.data.src} className="w-100" loading="lazy" width="280" />
 			</picture>
 			<figcaption>
 				<p className="youth-revive__reviews-text">{props.data.text}</p>

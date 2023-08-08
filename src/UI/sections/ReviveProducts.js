@@ -237,8 +237,8 @@ const ProductCard = (props) => {
 		<figure className="col-9 col-lg-5 youth-revive__products-card mb-0" ref={props.cardRef}>
 			<a href={`https://www.cocoandeve.com/products/${data.handle}`} className="d-block mb-2">
 				<picture>
-					<source srcSet={data.src} media="(min-width: 992px)" width="345" height="345" />
-					<img className="w-100" src={data.src} alt={title} width="255" height="255" />
+					<source srcSet={data.src} media="(min-width: 992px)" />
+					<img className="w-100" src={data.src} alt={title} />
 				</picture>
 			</a>
 			<figcaption className="font-size-base">
@@ -295,7 +295,7 @@ const ReviveProducts = () => {
 		<section className="youth-revive__section youth-revive__products px-g">
 			<div className="row align-items-lg-center">
 				<div className="col-12 col-lg-4">
-					<p className="h2 youth-revive__products-title fw-bold mb-0 mb-2 mb-lg-4">Restore hair<br />shine and <br className="d-none d-lg-block" />vitality</p>
+					<p className="h2 youth-revive__products-title fw-bold mb-0 mb-1 mb-lg-4">Restore hair<br />shine and <br className="d-none d-lg-block" />vitality</p>
 					<div className="youth-revive__carousel-control mb-3 mb-lg-0">
 						<button type="button" className={`btn-unstyled ${leftDisabled ? 'btn-disabled' : ''}`} disabled={leftDisabled} onClick={scrollLeft}>
 							<ArrowLeft />
@@ -306,7 +306,7 @@ const ReviveProducts = () => {
 					</div>
 				</div>
 				<div className="col-12 col-lg-8">
-					<div className="row flex-nowrap youth-revive__custom-scroll pe-lg-2" ref={scrollRef} onScroll={onScroll}>
+					<div className="row flex-nowrap youth-revive__custom-scroll pe-lg-2 pb-2 pb-lg-0" ref={scrollRef} onScroll={onScroll}>
 						{PRODUCTS.map((item, i) => (
 							<ProductCard key={i} data={item} cardRef={cardRef} />
 						))}

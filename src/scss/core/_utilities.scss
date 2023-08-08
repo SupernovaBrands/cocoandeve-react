@@ -39,6 +39,10 @@
 	margin-left: $spacer * 0.25 !important;
 }
 
+.pt-25, .py-25 {
+	padding-top: $spacer * 0.25;
+}
+
 .fit--cover {
 	object-fit: cover;
 }
