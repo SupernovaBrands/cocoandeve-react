@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Layout from './UI/layout/Layout';
+import YouthRevive from "./UI/templates/YouthRevive";
 
 // import QuantityBox from '../components/QuantityBox';
 // import Survey from './UI/templates/Survey';
@@ -17,7 +18,8 @@ const AmazonTanRange = lazy(() => import('./UI/templates/AmazonTanRange'));
 
 const App = () => {
   const noHeader = () => window.location.pathname === '/customers-survey' || window.location.pathname === '/customers-survey/';
-  const noFooter = () => window.location.pathname === '/customers-survey' || window.location.pathname === '/customers-survey/';
+  const noFooter = () => window.location.pathname === '/customers-survey' || window.location.pathname === '/customers-survey/'
+    || window.location.pathname === '/range-youth-revive' || window.location.pathname === '/range-youth-revive/';
   const timerBar = () => window.location.pathname === '/range-hair-amazon' || window.location.pathname === '/range-hair-amazon/'
     || window.location.pathname === '/range-tan-amazon' || window.location.pathname === '/range-tan-amazon/';
 
@@ -39,6 +41,7 @@ const App = () => {
           <Route path='/hair-masque-amazon-us' element={<HairMaskAmazon />} />
           <Route path='/range-hair-amazon' element={<AmazonHairRange />} />
           <Route path='/range-tan-amazon' element={<AmazonTanRange />} />
+          <Route path='/range-youth-revive' element={<YouthRevive />} />
         </Routes>
       </Suspense>
     </Layout>

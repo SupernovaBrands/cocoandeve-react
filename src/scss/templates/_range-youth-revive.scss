@@ -1,0 +1,350 @@
+@function calculate-left($breakpoint) {
+	@return calc(((100% - #{map-get($container-max-widths , $breakpoint)}) / 2) + (#{$grid-gutter-width-lg}) - (#{$grid-gutter-width}));
+}
+
+.youth-revive {
+
+	&__section {
+		padding-bottom: calc-em(40);
+		@include media-breakpoint-up(lg) {
+			padding-bottom: calc-em(100);
+		}
+	}
+
+	&__carousel-control {
+		.btn-disabled path {
+			stroke: #BDBDBD;
+		}
+	}
+
+	&__custom-scroll {
+
+		overflow: auto hidden;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		scroll-behavior: smooth;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding-left: calculate-left(lg) !important;
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding-left: calculate-left(xl) !important;
+		}
+	}
+
+	&__products {
+		@include media-breakpoint-up(lg) {
+			padding-left: calculate-left(lg) !important;
+			&-title {
+				@include font-size(calc-em(48));
+			}
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding-left: calculate-left(xl) !important;
+		}
+
+		&-card {
+			&-title {
+				min-height: 60px;
+				@include media-breakpoint-up(lg) {
+					min-height: 36px;
+				}
+			}
+			&-title-fr {
+				min-height: 100px;
+				@include media-breakpoint-up(lg) {
+					min-height: 60px;
+				}
+			}
+			.btn {
+				border: 2px solid $body-color;
+			}
+		}
+	}
+
+	&__reviews {
+		@include media-breakpoint-up(lg) {
+			padding-left: calculate-left(lg) !important;
+
+			&-text {
+				min-height: 140px;
+			}
+
+			&-title {
+				@include font-size(calc-em(48));
+			}
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding-left: calculate-left(xl) !important;
+		}
+
+		// @include media-breakpoint-down(md) {
+		// 	.youth-revive__custom-scroll::-webkit-scrollbar {
+		// 		display: block;
+		// 	}
+		// }
+	}
+
+	&__ingredients {
+		background-color: #fff8e8;
+		padding-top: calc-em(40);
+		padding-bottom: calc-em(40);
+
+		@include media-breakpoint-up(lg) {
+			padding-top: calc-em(60);
+			padding-bottom: calc-em(60);
+			&-card {
+				@include make-col(3.55, 12);
+			}
+			&-title {
+				@include font-size(calc-em(48));
+			}
+			&-control {
+				left: calculate-left(xl);
+			}
+		}
+	}
+
+	&__banner-text {
+		figcaption {
+			position: absolute;
+			bottom: 35px;
+			left: 20px;
+			right: 20px;
+
+			@include media-breakpoint-up(lg) {
+				@include font-size($h2-font-size);
+			}
+		}
+
+		&-title,
+		&-caption {
+			@include font-size($h2-font-size);
+			@include media-breakpoint-up(lg) {
+				@include font-size($h1-font-size-lg);
+			}
+		}
+
+		&-desc {
+			@include font-size($font-size-base);
+			@include media-breakpoint-up(lg) {
+				@include font-size($h2-font-size-lg);
+			}
+		}
+
+		&-caption {
+			color: #bdbdbd;
+		}
+
+		@include media-breakpoint-up(lg) {
+			&-wrapper {
+				grid-column-start: col-start 2;
+				grid-column-end: span 5;
+			}
+			&-content {
+				display: grid;
+				grid-template-columns: repeat(6,[col-start] minmax(0,70px));
+				column-gap: 30px;
+				align-content: center;
+			}
+
+			svg {
+				transform: scale(2);
+			}
+
+			&-title-gap {
+				padding-top: calc-em(80) !important;
+			}
+		}
+	}
+
+	&__banner-text-reverse {
+		background-color: #fff8e8;
+
+		&-title {
+			@include font-size($h2-font-size);
+			@include media-breakpoint-up(lg) {
+				@include font-size(calc-em(48));
+				&-gap {
+					margin-bottom: calc-em(30) !important;
+				}
+			}
+		}
+
+		&-sub,
+		&-caption {
+			@include media-breakpoint-up(lg) {
+				@include font-size(calc-em(34));
+			}
+		}
+	}
+
+	&__footer {
+		figcaption {
+			bottom: 45px;
+			@include font-size($h2-font-size);
+			min-height: calc-em(48);
+		}
+
+		p {
+			padding-top: 40px;
+			text-align: center;
+			padding-bottom: 10px;
+			@include font-size(calc-em(10));
+			@include media-breakpoint-up(lg) {
+				@include font-size($font-size-base);
+			}
+		}
+	}
+
+	&__routine {
+		&-text {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 10px;
+			text-align: center;
+			@include media-breakpoint-up(lg) {
+				@include font-size($h2-font-size);
+				text-align: left;
+				left: 24px;
+				bottom: 20px;
+				right: auto;
+			}
+		}
+
+		@include media-breakpoint-up(lg) {
+			&-title {
+				@include font-size(calc-em(48));
+			}
+
+			&-sub,
+			figcaption {
+				@include font-size($h2-font-size-lg);
+			}
+
+			&-key {
+				min-height: calc-em(85);
+			}
+
+			&-hiw {
+				margin-bottom: 8px;
+			}
+		}
+	}
+
+	&__articles figcaption {
+		position: absolute;
+		bottom: 24px;
+		left: 22.5px;
+		@include media-breakpoint-up(lg) {
+			left: 30px;
+		}
+
+		.youth-revive__articles-title {
+			@include font-size($h2-font-size-lg);
+			@include media-breakpoint-up(lg) {
+				min-height: 50px;
+			}
+		}
+
+		.btn {
+			border: 2px solid $body-color;
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+		&__accordion-title {
+			@include font-size(calc-em(48));
+		}
+	}
+}
+
+.faq-accordion,
+.accordion-button,
+.accordion-collapse {
+	background-color: white !important;
+}
+
+@include media-breakpoint-up(lg) {
+	main {
+		display: flex;
+		flex-flow: column;
+
+		.range__banner {
+			order: 1;
+		}
+		.youth-revive__products {
+			order: 2;
+		}
+		.youth-revive__banner-text {
+			order: 3;
+		}
+		.youth-revive__ingredients-wrapper {
+			order: 4;
+		}
+
+		.youth-revive__reviews {
+			order: 5;
+		}
+		.youth-revive__banner-text-reverse-wrapper {
+			order: 6;
+		}
+		.youth-revive__routine {
+			order: 7;
+		}
+		.youth-revive__articles {
+			order: 8;
+		}
+		.youth-revive__accordion {
+			order: 9;
+		}
+		.youth-revive__footer {
+			order: 10;
+		}
+	}
+
+	.col-lg-7 {
+		flex: 0 0 58.33333%;
+		max-width: 58.33333%;
+	}
+
+	.col-lg-4 {
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%;
+	}
+	.col-lg-8 {
+		flex: 0 0 66.66667%;
+		max-width: 66.66667%;
+	}
+
+	.offset-lg-4 {
+		margin-left: 33.33333%;
+	}
+	.offset-lg-3 {
+		margin-left: 25%;
+	}
+	.offset-lg-2 {
+		margin-left: 16.66667%;
+	}
+	.col-lg-3 {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+	.col-lg-9 {
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+	.col-lg-auto {
+		flex: 0 0 auto;
+		width: auto;
+		max-width: 100%;
+	}
+}
