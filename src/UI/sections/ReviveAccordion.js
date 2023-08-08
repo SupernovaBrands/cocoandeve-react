@@ -74,7 +74,7 @@ const FaqAccordion = (props) => {
     };
 
 	return (
-		<section className={`youth-revive__section youth-revive__accordion pt-25 pt-lg-0`}>
+		<section className={`youth-revive__section youth-revive__accordion pt-2 pt-lg-0`}>
             <div className="container px-g">
                 <h2 className="text-lg-center youth-revive__accordion-title mb-0 pb-lg-2">Your questions – <br className="d-lg-none"/>answered</h2>
                 <div className="row">
