@@ -80,8 +80,7 @@ const ReviveReviews = () => {
 	};
 	const onScroll = () => {
 		const pos = scrollRef.current?.scrollLeft;
-		const end = window.innerWidth < 992 ? 997 : 1103;
-		console.log('pos', pos);
+		const end = window.innerWidth < 992 ? 997 : 974;
 		if (pos <= 0) {
 			setLeftDisabled(true);
 		} else if (pos >= end) {
