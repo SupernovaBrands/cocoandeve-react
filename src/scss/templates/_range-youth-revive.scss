@@ -94,6 +94,12 @@
 			.btn {
 				border: 2px solid $body-color;
 			}
+
+			@include media-breakpoint-down(md) {
+				&-text {
+					min-height: calc-em(60);
+				}
+			}
 		}
 	}
 
@@ -119,9 +125,9 @@
 			padding-left: calculate-left(xl) !important;
 		}
 
-		@include media-breakpoint-up(xxl) {
-			padding-left: calculate-left(xxl) !important;
-		}
+		// @include media-breakpoint-up(xxl) {
+		// 	padding-left: calculate-left(xxl) !important;
+		// }
 
 		// @include media-breakpoint-down(md) {
 		// 	.youth-revive__custom-scroll::-webkit-scrollbar {
@@ -231,15 +237,24 @@
 			@include media-breakpoint-up(lg) {
 				@include font-size(calc-em(48));
 				&-gap {
-					margin-bottom: calc-em(30) !important;
+					margin-bottom: calc-em(42.5) !important;
 				}
 			}
 		}
 
-		&-sub,
-		&-caption {
-			@include media-breakpoint-up(lg) {
+		@include media-breakpoint-up(lg) {
+			&-sub,
+			&-caption {
 				@include font-size(calc-em(34));
+			}
+
+			&-wrapper {
+				grid-column-start: col-start 3;
+				grid-column-end: span 7;
+			}
+			&-content {
+				column-gap: 15px;
+				grid-template-columns: repeat(8,[col-start] minmax(0,70px));
 			}
 		}
 	}
@@ -426,5 +441,26 @@
 		flex: 0 0 auto;
 		width: auto;
 		max-width: 100%;
+	}
+	.col-lg-review {
+		@include make-col(4.85, 12);
+
+		&--left {
+			@include make-col(2.7, 12);
+		}
+		&--right {
+			@include make-col(9.3, 12);
+		}
+	}
+
+	.col-lg-product {
+		@include make-col(5.5, 12);
+		&--left {
+			@include make-col(3.75, 12);
+		}
+
+		&--right {
+			@include make-col(8.25, 12);
+		}
 	}
 }

@@ -65,7 +65,9 @@ const ReviveIngredients = () => {
 	};
 	const onScroll = () => {
 		const pos = scrollRef.current?.scrollLeft;
-		const end = window.innerWidth < 992 ? 660 : 220;
+		const cWidth = scrollRef.current?.clientWidth;
+		const sWidth = scrollRef.current?.scrollWidth;
+		const end = sWidth - cWidth;
 		if (pos <= 0) {
 			setLeftDisabled(true);
 		} else if (pos >= end) {

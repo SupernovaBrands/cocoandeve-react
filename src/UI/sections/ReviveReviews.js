@@ -42,14 +42,14 @@ const REVIEW_DATA = [
 
 const ReviewCard = (props) => {
 	return (
-		<figure className="mb-0 col-95 col-lg-5" ref={props.cardRef}>
+		<figure className="mb-0 col-95 col-lg-review" ref={props.cardRef}>
 			<picture className="d-block mb-2">
 				<source srcSet={props.data.src} media="(min-width: 992px)" width="370" />
 				<img src={props.data.src} className="w-100" loading="lazy" width="280" />
 			</picture>
 			<figcaption>
 				<p className="youth-revive__reviews-text">{props.data.text}</p>
-				<div className="youth-revive__reviews-user">
+				<div className="youth-revive__reviews-user mb-2 mb-lg-0">
 					<strong className="me-1">{props.data.name}</strong>
 					<a href={`https://www.cocoandeve.com/products/${props.data.productHandle}`} className="text-body">{props.data.productTitle}</a>
 				</div>
@@ -80,7 +80,11 @@ const ReviveReviews = () => {
 	};
 	const onScroll = () => {
 		const pos = scrollRef.current?.scrollLeft;
-		const end = window.innerWidth < 992 ? 997 : 974;
+		const cWidth = scrollRef.current?.clientWidth;
+		const sWidth = scrollRef.current?.scrollWidth;
+		const end = sWidth - cWidth;
+		console.log('pos', pos);
+		console.log('end', end);
 		if (pos <= 0) {
 			setLeftDisabled(true);
 		} else if (pos >= end) {
@@ -91,23 +95,25 @@ const ReviveReviews = () => {
 		}
 	};
 	return (
-		<section className="youth-revive__section youth-revive__reviews row align-items-center ms-0 pt-4 pt-lg-0">
-			<div className="col-12 col-lg-3 px-g">
-				<p className="youth-revive__reviews-title mb-0 h2 mb-2 mb-lg-4">Our powerhouse in action</p>
-				<div className="youth-revive__carousel-control mb-3 mb-lg-0">
-					<button type="button" className={`btn-unstyled ${leftDisabled ? 'btn-disabled' : ''}`} disabled={leftDisabled} onClick={scrollLeft}>
-						<ArrowLeft />
-					</button>
-					<button type="button" className={`btn-unstyled ${rightDisabled ? 'btn-disabled' : ''}`} disabled={rightDisabled} onClick={scrollRight}>
-						<ArrowRight />
-					</button>
+		<section className="youth-revive__section youth-revive__reviews ms-0 pt-4 pt-lg-0 px-g">
+			<div className="row align-items-center">
+				<div className="col-12 col-lg-review--left px-g">
+					<p className="youth-revive__reviews-title mb-0 h2 mb-2 mb-lg-4">Our powerhouse <br className="d-none d-lg-block" />in action</p>
+					<div className="youth-revive__carousel-control mb-3 mb-lg-0">
+						<button type="button" className={`btn-unstyled ${leftDisabled ? 'btn-disabled' : ''}`} disabled={leftDisabled} onClick={scrollLeft}>
+							<ArrowLeft />
+						</button>
+						<button type="button" className={`btn-unstyled ${rightDisabled ? 'btn-disabled' : ''}`} disabled={rightDisabled} onClick={scrollRight}>
+							<ArrowRight />
+						</button>
+					</div>
 				</div>
-			</div>
-			<div className="col-12 col-lg-9 ps-g pe-2 pe-lg-4">
-				<div className="row flex-nowrap youth-revive__custom-scroll" ref={scrollRef} onScroll={onScroll}>
-					{REVIEW_DATA.map((review, id) => (
-						<ReviewCard key={id} data={review} cardRef={cardRef} />
-					))}
+				<div className="col-12 col-lg-review--right">
+					<div className="row flex-nowrap youth-revive__custom-scroll pe-2 pe-lg-4" ref={scrollRef} onScroll={onScroll}>
+						{REVIEW_DATA.map((review, id) => (
+							<ReviewCard key={id} data={review} cardRef={cardRef} />
+						))}
+					</div>
 				</div>
 			</div>
 		</section>
