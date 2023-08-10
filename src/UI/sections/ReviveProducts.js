@@ -283,7 +283,7 @@ const ReviveProducts = () => {
 		const pos = scrollRef.current?.scrollLeft;
 		const cWidth = scrollRef.current?.clientWidth;
 		const sWidth = scrollRef.current?.scrollWidth;
-		const end = sWidth - cWidth;
+		const end = (sWidth - cWidth) - 1;
 		if (pos <= 0) {
 			setLeftDisabled(true);
 		} else if (pos >= end) {

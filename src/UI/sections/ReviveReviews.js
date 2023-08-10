@@ -82,9 +82,7 @@ const ReviveReviews = () => {
 		const pos = scrollRef.current?.scrollLeft;
 		const cWidth = scrollRef.current?.clientWidth;
 		const sWidth = scrollRef.current?.scrollWidth;
-		const end = sWidth - cWidth;
-		console.log('pos', pos);
-		console.log('end', end);
+		const end = (sWidth - cWidth) - 1;
 		if (pos <= 0) {
 			setLeftDisabled(true);
 		} else if (pos >= end) {
