@@ -5,7 +5,7 @@ import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
 const PRODUCTS = [
 	{
 		handle: 'pro-youth-shampoo-conditioner',
-		info: 'Cleanses, clarifies, and strengthens hair from root to tip',
+		info: 'Cleanses, strengthens and conditioners hair for youthful locks.',
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b24c1481-7b40-46b5-fd79-238233b53a00/public',
 		ca: {
 			price: '$56',
@@ -48,7 +48,7 @@ const PRODUCTS = [
 	},
 	{
 		handle: 'honey-bliss-hair-set',
-		info: 'Cleanses, clarifies, and strengthens hair from root to tip',
+		info: 'Transforms and revitalises hair. Enhances shine, strength, and volume with every wash.',
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7529711a-e2d8-4f92-262b-7d7a2abe3f00/public',
 		ca: {
 			price: '$94',
@@ -194,7 +194,7 @@ const PRODUCTS = [
 	},
 	{
 		handle: 'pro-youth-scalp-massager',
-		info: 'Cleanses, clarifies, and strengthens hair from root to tip',
+		info: 'Sloughs away dead skin cells and stimulate your scalp',
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f560eae0-905a-4dc1-a34c-33cebfc6c500/public',
 		ca: {
 			price: '$19',
