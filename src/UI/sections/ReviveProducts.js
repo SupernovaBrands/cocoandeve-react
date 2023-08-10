@@ -234,7 +234,7 @@ const ProductCard = (props) => {
 	let activeStore = params.get('utm_store') || 'us';
 	const title = (data[activeStore].title) ? data[activeStore].title : data['us'].title;
 	return (
-		<figure className="col-9 col-lg-5 youth-revive__products-card mb-0" ref={props.cardRef}>
+		<figure className="col-9 col-lg-5 youth-revive__products-card mb-0 col-lg-product" ref={props.cardRef}>
 			<a href={`https://www.cocoandeve.com/products/${data.handle}`} className="d-block mb-2">
 				<picture>
 					<source srcSet={data.src} media="(min-width: 992px)" />
@@ -253,7 +253,7 @@ const ProductCard = (props) => {
 						<span className="fw-bold">{data[activeStore].price}</span>
 					</p>
 				</div>
-				<p dangerouslySetInnerHTML={{ __html: data.info }} className="mb-3" />
+				<p dangerouslySetInnerHTML={{ __html: data.info }} className="mb-3 youth-revive__products-card-text" />
 				<a href={`https://www.cocoandeve.com/products/${data.handle}`} className="btn bg-white rounded-pill">Learn more</a>
 			</figcaption>
 		</figure>
@@ -281,7 +281,9 @@ const ReviveProducts = () => {
 	};
 	const onScroll = () => {
 		const pos = scrollRef.current?.scrollLeft;
-		const end = window.innerWidth < 992 ? 1260 : 1210;
+		const cWidth = scrollRef.current?.clientWidth;
+		const sWidth = scrollRef.current?.scrollWidth;
+		const end = sWidth - cWidth;
 		if (pos <= 0) {
 			setLeftDisabled(true);
 		} else if (pos >= end) {
@@ -294,7 +296,7 @@ const ReviveProducts = () => {
 	return (
 		<section className="youth-revive__section youth-revive__products px-g">
 			<div className="row align-items-lg-center">
-				<div className="col-12 col-lg-4">
+				<div className="col-12 col-lg-4 col-lg-product--left">
 					<p className="h2 youth-revive__products-title fw-bold mb-0 mb-1 mb-lg-4">Restore hair<br />shine and <br className="d-none d-lg-block" />vitality</p>
 					<div className="youth-revive__carousel-control mb-3 mb-lg-0">
 						<button type="button" className={`btn-unstyled ${leftDisabled ? 'btn-disabled' : ''}`} disabled={leftDisabled} onClick={scrollLeft}>
@@ -305,7 +307,7 @@ const ReviveProducts = () => {
 						</button>
 					</div>
 				</div>
-				<div className="col-12 col-lg-8">
+				<div className="col-12 col-lg-8 col-lg-product--right">
 					<div className="row flex-nowrap youth-revive__custom-scroll pe-lg-2 pb-2 pb-lg-0" ref={scrollRef} onScroll={onScroll}>
 						{PRODUCTS.map((item, i) => (
 							<ProductCard key={i} data={item} cardRef={cardRef} />
