@@ -620,7 +620,7 @@ const PRODUCTS_HAIR_AMAZON_US = [
         content: <ProductCard
             img="https://cdn.shopify.com/s/files/1/0286/1327/9779/products/That_saWrap-LeafPrint_5fc1d002-b50b-4ad4-acca-ba3fe7d92d51_828x.jpg?v=1644811592"
             comImg="https://cdn.shopify.com/s/files/1/0286/1327/9779/products/That_saWrap-LeafPrint_5fc1d002-b50b-4ad4-acca-ba3fe7d92d51_828x.jpg?v=1644811592"
-            externalUrl='https://www.amazon.com/dp/B07PWVZXGF?maas=maas_adg_AEAC7B1677960BAF74A64260F78E8963_afap_abs&ref_=aa_maas&tag=maas'
+            externalUrl='https://www.amazon.com/dp/B07PWVZXGF?maas=maas_adg_4FCA2D3B9B9B9A092AC2010614B4C001_afap_abs&ref_=aa_maas&tag=maas'
             handle='masque-towelwrap'
             ctaText='Shop on Amazon'
             externalPrice='$49.40' />
@@ -630,7 +630,7 @@ const PRODUCTS_HAIR_AMAZON_US = [
         content: <ProductCard
             img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/cbc423ec-78a5-44e7-1170-3a7359ca1900/828x"
             comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/80718850-39b2-4d3a-f82c-09be6320c700/828x"
-            externalUrl='https://www.amazon.com/dp/B0B44W2CGG?maas=maas_adg_90D0ADB01669C00F080BBD1A2EC3E2EE_afap_abs&ref_=aa_maas&tag=maas'
+            externalUrl='https://www.amazon.com/dp/B0B44W2CGG?maas=maas_adg_4DD5E108AF8D4D3187405533BBEF18F4_afap_abs&ref_=aa_maas&tag=maas'
             handle='repairing-restoring-hair-mask'
             externalPrice='$36'
             ctaText='Shop on Amazon' />
@@ -640,7 +640,7 @@ const PRODUCTS_HAIR_AMAZON_US = [
         content: <ProductCard
             img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/PDP_BondBuildingPre-Shampoo_1140x.jpg?v=1663207008'
             comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/PDP_BondBuildingPre-Shampoo_1140x.jpg?v=1663207008'
-            externalUrl='https://www.amazon.com/dp/B0BC874RGL?maas=maas_adg_804394199A6D30DE982F0D901BBA0C9D_afap_abs&ref_=aa_maas&tag=maas'
+            externalUrl='https://www.amazon.com/dp/B0BC874RGL?maas=maas_adg_EFF6789140F3C3B66A03F7189C2CC69D_afap_abs&ref_=aa_maas&tag=maas'
             handle='bond-building-pre-shampoo-treatment'
             externalPrice='$25'
             ctaText='Shop on Amazon' />
@@ -650,7 +650,7 @@ const PRODUCTS_HAIR_AMAZON_US = [
         content: <ProductCard
             img='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/83693b27-bd85-4f7d-6593-f016800dbf00/828x'
             comImg='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/83693b27-bd85-4f7d-6593-f016800dbf00/828x'
-            externalUrl='https://www.amazon.com/dp/B098DV8QYS?maas=maas_adg_26A4820B93A87B21C18B89626920CE6B_afap_abs&ref_=aa_maas&tag=maas'
+            externalUrl='https://www.amazon.com/dp/B098DV8QYS?maas=maas_adg_D3FD459F5DD86B524E92CC705F1CC887_afap_abs&ref_=aa_maas&tag=maas'
             handle='shampoo-conditioner-set'
             externalPrice='$50'
             externalCompare='$40'
@@ -659,9 +659,39 @@ const PRODUCTS_HAIR_AMAZON_US = [
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
         content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/dbcf0446-892a-4a6e-803e-6f90c4546d00/540x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/dbcf0446-892a-4a6e-803e-6f90c4546d00/540x"
+            externalUrl='https://www.amazon.com/dp/B0C5WS9TY3?maas=maas_adg_4BFA3EDE31166F8892F17BCD73747625_afap_abs&ref_=aa_maas&tag=maas'
+            handle='pro-youth-hair-scalp-mask'
+            ctaText='Shop on Amazon'
+            externalPrice='$39' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/3231e5d6-58e1-4e28-819b-86f074e3c200/540x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/3231e5d6-58e1-4e28-819b-86f074e3c200/540x"
+            externalUrl='https://www.amazon.com/dp/B0C5WKXCPC?maas=maas_adg_43039F1618BFFD7F96A017CAA91C1482_afap_abs&ref_=aa_maas&tag=maas'
+            handle='pro-youth-shampoo'
+            ctaText='Shop on Amazon'
+            externalPrice='$28' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://us.cocoandeve.com/cdn/shop/files/YR_cond1_540x.jpg?v=1686023897"
+            comImg="https://us.cocoandeve.com/cdn/shop/files/YR_cond1_540x.jpg?v=1686023897"
+            externalUrl='https://www.amazon.com/dp/B0C5WRWL7J?maas=maas_adg_3F39092FBF2812EA65060F159245437F_afap_abs&ref_=aa_maas&tag=maas'
+            handle='pro-youth-conditioner'
+            ctaText='Shop on Amazon'
+            externalPrice='$28' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
             img='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7f217f70-0515-4725-cbe0-c222428f9c00/828x'
             comImg='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e42ff618-fb4d-4f4d-4282-5ac6d54f2100/828x'
-            externalUrl='https://www.amazon.com/dp/B08T1LNVGQ?maas=maas_adg_3EB8D5C4CDB4D2192EC0F57FACB9C5D8_afap_abs&ref_=aa_maas&tag=maas'
+            externalUrl='https://www.amazon.com/dp/B08T1LNVGQ?maas=maas_adg_215118DFAAD9134B056E4FE1DB919020_afap_abs&ref_=aa_maas&tag=maas'
             handle='miracle-elixir-hair-oil-treatment'
             externalPrice='$29'
             ctaText='Shop on Amazon' />
