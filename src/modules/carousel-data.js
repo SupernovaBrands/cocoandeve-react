@@ -826,7 +826,7 @@ const PRODUCTS_TAN_AMAZON_US = [
         content: <ProductCard
             img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8c2d8c7b-46d4-4303-9ae6-106d6e25d800/828x"
             comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1a30deb4-1d70-4ad8-af43-15b446aaae00/828x"
-            externalUrl='https://www.amazon.com/dp/B091CF3JVM?maas=maas_adg_DA33E47C05DF88018AEAF652C9A3C6B2_afap_abs&ref_=aa_maas&tag=maas'
+            externalUrl='https://www.amazon.com/dp/B093GGY999?maas=maas_adg_95123B1DBD887D1F65B597C886C0C708_afap_abs&ref_=aa_maas&tag=maas'
             handle='bronzing-self-tanner-drops'
             ctaText='Shop on Amazon'
             externalPrice='$28' />
@@ -836,7 +836,7 @@ const PRODUCTS_TAN_AMAZON_US = [
         content: <ProductCard
             img="../images/Featured_BronzingFoam_532x.jpg"
             comImg="../compressed_images/Featured_BronzingFoam_532x.webp"
-            externalUrl='https://www.amazon.com/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas'
+            externalUrl='https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas'
             handle='sunny-honey-bali-bronzing-self-tan-mousse'
             ctaText='Shop on Amazon'
             externalPrice='$35' />
@@ -846,7 +846,7 @@ const PRODUCTS_TAN_AMAZON_US = [
         content: <ProductCard
             img="../images/Featured_BaliBronzingBundle_532x.jpg"
             comImg="../compressed_images/Featured_BaliBronzingBundle_532x.webp"
-            externalUrl='https://www.amazon.com/dp/B08Y6T5LH7?maas=maas_adg_D734E060FE25A5BCD74D084256D4EE36_afap_abs&ref_=aa_maas&tag=maas'
+            externalUrl='https://www.amazon.com/Coco-Eve-Bronzing-Natural-Applicator/dp/B08Y6T5LH7?maas=maas_adg_89858128EB4B59E13DDDC23F6CDB5AFA_afap_abs&ref_=aa_maas&tag=maas'
             handle='sunny-honey-bali-bronzing-self-tan-set'
             ctaText='Shop on Amazon'
             externalPrice='$52'
@@ -857,7 +857,7 @@ const PRODUCTS_TAN_AMAZON_US = [
         content: <ProductCard
             img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/47a254b2-14c2-4a7b-dd6d-530064d5f400/828x"
             comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c548b49d-7cc2-44db-0949-555633529800/828x"
-            externalUrl='https://www.amazon.com/dp/B0C45TL4YB?maas=maas_adg_2D63E5E984AAEA1EFFFC1E4AFAD04F84_afap_abs&ref_=aa_maas&tag=maas'
+            externalUrl='https://www.amazon.com/dp/B08G1LYFR8?maas=maas_adg_248F8A4B622A6FF205E576D7C8BB6B05_afap_abs&ref_=aa_maas&tag=maas'
             handle='sunny-honey-bali-bronzing-self-tan-set-mitt'
             ctaText='Shop on Amazon'
             externalCompare='$69'
@@ -868,11 +868,21 @@ const PRODUCTS_TAN_AMAZON_US = [
         content: <ProductCard
             img="../images/Featured_TanBundlewithBackApplicator_532x.jpg"
             comImg="../compressed_images/Featured_TanBundlewithBackApplicator_532x.webp"
-            externalUrl='https://www.amazon.com/dp/B09XV2LZBN?maas=maas_adg_AF95642603D7372EAE55A8BA45298159_afap_abs&ref_=aa_maas&tag=maas'
+            externalUrl='https://www.amazon.com/dp/B09XV2RXRX?maas=maas_adg_7CFE625C755C996326665C1E0E3FA887_afap_abs&ref_=aa_maas&tag=maas'
             handle='bali-bae-self-tan-set'
             ctaText='Shop on Amazon'
             externalCompare='$95'
             externalPrice='$69' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://dev.cocoandeve.com/cdn/shop/products/PDP_TanningMist_1_384x.jpg?v=1670921006"
+            comImg="https://dev.cocoandeve.com/cdn/shop/products/PDP_TanningMist_1_384x.jpg?v=1670921006"
+            externalUrl='https://www.amazon.com/dp/B0BNPVZS65?maas=maas_adg_CEAA7C37CF22953ECB18C9C29A8D5868_afap_abs&ref_=aa_maas&tag=maas'
+            handle='antioxidant-face-tanning-micromist'
+            ctaText='Shop on Amazon'
+            externalPrice='$29.20' />
     },
 ];
 

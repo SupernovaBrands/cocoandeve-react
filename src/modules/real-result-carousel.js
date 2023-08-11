@@ -10,6 +10,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B098DV8QYS?maas=maas_adg_26A4820B93A87B21C18B89626920CE6B_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B098DV8QYS?maas=maas_adg_9D69CD94DF536A9F73D2637F5B51FEC9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B098DV8QYS?maas=maas_adg_D3FD459F5DD86B524E92CC705F1CC887_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -22,6 +23,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08T1LNVGQ?maas=maas_adg_3EB8D5C4CDB4D2192EC0F57FACB9C5D8_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B08T1LNVGQ?maas=maas_adg_CF441D485C3337415EFD0F9EF22FECE8_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08T1LNVGQ?maas=maas_adg_215118DFAAD9134B056E4FE1DB919020_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -34,6 +36,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B098DV8QYS?maas=maas_adg_26A4820B93A87B21C18B89626920CE6B_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B098DV8QYS?maas=maas_adg_9D69CD94DF536A9F73D2637F5B51FEC9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B098DV8QYS?maas=maas_adg_D3FD459F5DD86B524E92CC705F1CC887_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -46,6 +49,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08T1LNVGQ?maas=maas_adg_3EB8D5C4CDB4D2192EC0F57FACB9C5D8_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B08T1LNVGQ?maas=maas_adg_CF441D485C3337415EFD0F9EF22FECE8_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08T1LNVGQ?maas=maas_adg_215118DFAAD9134B056E4FE1DB919020_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -58,6 +62,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B07B8JN5NP?maas=maas_adg_0E9342A56F401EFFF6CAF510C995DAD8_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07B8JN5NP?maas=maas_adg_5B1CE1E8545CD3C29F9C00AF74982268_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B07B8JN5NP?maas=maas_adg_4F3ED5E0875A067E27CAAA567D8DBA16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -70,6 +75,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B07B8JN5NP?maas=maas_adg_0E9342A56F401EFFF6CAF510C995DAD8_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07B8JN5NP?maas=maas_adg_5B1CE1E8545CD3C29F9C00AF74982268_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B07B8JN5NP?maas=maas_adg_4F3ED5E0875A067E27CAAA567D8DBA16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -82,6 +88,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B0BC874RGL?maas=maas_adg_804394199A6D30DE982F0D901BBA0C9D_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B0BC874RGL?maas=maas_adg_F9229F3B4AC9ADDF11A6BD751CDC22CF_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B0BC874RGL?maas=maas_adg_EFF6789140F3C3B66A03F7189C2CC69D_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -94,6 +101,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B0BC874RGL?maas=maas_adg_804394199A6D30DE982F0D901BBA0C9D_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B0BC874RGL?maas=maas_adg_F9229F3B4AC9ADDF11A6BD751CDC22CF_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B0BC874RGL?maas=maas_adg_EFF6789140F3C3B66A03F7189C2CC69D_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -118,6 +126,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B098DV8QYS?maas=maas_adg_26A4820B93A87B21C18B89626920CE6B_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B098DV8QYS?maas=maas_adg_9D69CD94DF536A9F73D2637F5B51FEC9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B098DV8QYS?maas=maas_adg_D3FD459F5DD86B524E92CC705F1CC887_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		}
 	],
@@ -132,6 +141,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -144,6 +154,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -156,6 +167,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -168,6 +180,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B091CF3JVM?maas=maas_adg_DA33E47C05DF88018AEAF652C9A3C6B2_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B091CF3JVM?maas=maas_adg_CC13AEB22B274A91DB2BCCB2E9DE3092_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B093GGY999?maas=maas_adg_95123B1DBD887D1F65B597C886C0C708_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -180,6 +193,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -192,6 +206,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -204,6 +219,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B091CF3JVM?maas=maas_adg_DA33E47C05DF88018AEAF652C9A3C6B2_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B091CF3JVM?maas=maas_adg_CC13AEB22B274A91DB2BCCB2E9DE3092_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B093GGY999?maas=maas_adg_95123B1DBD887D1F65B597C886C0C708_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 
@@ -217,6 +233,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -229,6 +246,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -241,6 +259,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -253,6 +272,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -265,6 +285,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -277,6 +298,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -289,6 +311,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -301,6 +324,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -313,6 +337,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -325,6 +350,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -337,6 +363,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -349,6 +376,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
@@ -361,6 +389,7 @@ const REAL_RESULT_DATA = {
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B08FX6ZGS7?maas=maas_adg_0496C4F1C4AE39E2A882CD0F493BF870_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 	]
