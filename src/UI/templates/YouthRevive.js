@@ -93,7 +93,7 @@ const YouthRevive = () => {
 	};
 	return (
 		<RangeProvider>
-			<BannerImage isClickable={true} externalUrl={`http://www.cocoandeve.com/collections/youth-revive`} bannerData={bannerData} className="youth-revive__section" />
+			<BannerImage isClickable={true} externalUrl={`http://www.cocoandeve.com/collections/youth-revive`} bannerData={bannerData} className="youth-revive__section youth-revive__range__banner" />
 			{/* <RangeCarousel range='amazonTan' /> */}
 			<ReviveProducts />
 			<Suspense fallback={<div></div>}>
