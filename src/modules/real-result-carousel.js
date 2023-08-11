@@ -107,13 +107,14 @@ const REAL_RESULT_DATA = {
 		{
 			img: '//cdn.shopify.com/s/files/1/0225/4641/5693/files/Review_1_592x.jpg',
 			srcSet: '//cdn.shopify.com/s/files/1/0225/4641/5693/files/Review_1_530x.jpg',
-			productHandle: 'Shampoo & Conditioner',
-			productTitle: 'hydrating-shampoo-conditioner-bundle',
+			productHandle: 'hydrating-shampoo-conditioner-bundle',
+			productTitle: 'Shampoo & Conditioner',
 			content: 'Coco & Eve’s super hydrating shampoo & conditioner has completely revolutionised my haircare routine. My hair has never been so happy, and I’ve never received quite so many compliments about how healthy it looks!',
 			name: '@Alissa',
 			amazonUrl: {
 				ca: 'https://www.amazon.ca/dp/B098DV8QYS?maas=maas_adg_26A4820B93A87B21C18B89626920CE6B_afap_abs&ref_=aa_maas&tag=maas',
 				uk: 'https://www.amazon.co.uk/dp/B098DV8QYS?maas=maas_adg_9D69CD94DF536A9F73D2637F5B51FEC9_afap_abs&ref_=aa_maas&tag=maas',
+				us: 'https://www.amazon.com/dp/B098DV8QYS?maas=maas_adg_D3FD459F5DD86B524E92CC705F1CC887_afap_abs&ref_=aa_maas&tag=maas',
 			}
 		},
 		{
