@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "../static/css/main.8c60f57d.css",
-    "main.js": "../static/js/main.dc195c30.js",
+    "main.js": "../static/js/main.8ab837a3.js",
     "static/js/628.99099701.chunk.js": "../static/js/628.99099701.chunk.js",
     "static/js/542.116a9080.chunk.js": "../static/js/542.116a9080.chunk.js",
     "static/js/217.2ce762bc.chunk.js": "../static/js/217.2ce762bc.chunk.js",
@@ -31,12 +31,12 @@
     "static/js/269.ae76d569.chunk.js": "../static/js/269.ae76d569.chunk.js",
     "static/js/181.f2c20bbe.chunk.js": "../static/js/181.f2c20bbe.chunk.js",
     "static/css/180.c9d174bb.chunk.css": "../static/css/180.c9d174bb.chunk.css",
-    "static/js/180.ec58114d.chunk.js": "../static/js/180.ec58114d.chunk.js",
+    "static/js/180.78f3f046.chunk.js": "../static/js/180.78f3f046.chunk.js",
     "static/js/445.45b4ec91.chunk.js": "../static/js/445.45b4ec91.chunk.js",
     "static/js/120.d4bc827c.chunk.js": "../static/js/120.d4bc827c.chunk.js",
     "static/css/671.165797ef.chunk.css": "../static/css/671.165797ef.chunk.css",
     "static/js/671.53e6b62c.chunk.js": "../static/js/671.53e6b62c.chunk.js",
-    "static/js/294.2a9b8731.chunk.js": "../static/js/294.2a9b8731.chunk.js",
+    "static/js/294.8cd4a337.chunk.js": "../static/js/294.8cd4a337.chunk.js",
     "static/media/hand-icon-sm.svg": "../static/media/hand-icon-sm.a2cf79194afbf8a709152898ab1b64dd.svg",
     "shampoo-conditioner-set/index.html": "../shampoo-conditioner-set/index.html",
     "hair-masque-amazon-us/index.html": "../hair-masque-amazon-us/index.html",
@@ -93,6 +93,6 @@
   },
   "entrypoints": [
     "static/css/main.8c60f57d.css",
-    "static/js/main.dc195c30.js"
+    "static/js/main.8ab837a3.js"
   ]
 }
