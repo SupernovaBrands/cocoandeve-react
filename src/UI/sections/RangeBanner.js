@@ -15,7 +15,7 @@ const RangeBanner = (props) => {
 	}
 
 	return (
-		<section className='range__banner jumbotron'>
+		<section className='range__banner1 jumbotron'>
 			{bannerSection.title && bannerSection.subtitle && (
 				<div className='d-lg-none text-center'>
 					<h1 className='mb-1'>{bannerSection.title}</h1>

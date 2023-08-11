@@ -4,7 +4,7 @@ const BannerImage = (props) => {
 	let activeStore = params.get('utm_store') || 'us';
 	const banner = props.bannerData[activeStore];
 	return (
-		<section className='range__banner'>
+		<section className='range__banner1'>
 			<picture className="d-block w-100">
 				<source srcSet={props.bannerData.desktop[activeStore].webpBanner} media="(min-width: 768px)" type="image/webp" />
 				<source srcSet={props.bannerData.desktop[activeStore].jpegBanner} media="(min-width: 768px)" type="image/jpeg" />
