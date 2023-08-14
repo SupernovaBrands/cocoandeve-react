@@ -847,24 +847,48 @@ const productList = {
             title: 'Bali Bronzing Self Tanner Mousse Set',
         }
     },
-    'pro-youth-conditioner': {
-        us: {
-            price: '$28.00',
-            title: 'Pro Youth Conditioner',
-        }
-    },
     'pro-youth-shampoo': {
         us: {
             price: '$28.00',
             title: 'Pro Youth Shampoo',
-        }
+        },
+        uk: {
+            price: '£25',
+            title: 'Pro Youth Shampoo',
+        },
+        ca: {
+            price: '$33',
+            title: 'Pro Youth Shampoo',
+        },
+    },
+    'pro-youth-conditioner': {
+        us: {
+            price: '$28.00',
+            title: 'Pro Youth Conditioner',
+        },
+        uk: {
+            price: '£25',
+            title: 'Pro Youth Conditioner',
+        },
+        ca: {
+            price: '$33',
+            title: 'Pro Youth Conditioner',
+        },
     },
     'pro-youth-hair-scalp-mask': {
         us: {
             price: '$39',
             title: 'Pro Youth Hair & Scalp Mask',
-        }
-    },
+        },
+        uk: {
+            price: '£32',
+            title: 'Pro Youth Hair & Scalp Mask',
+        },
+        ca: {
+            price: '$52',
+            title: 'Pro Youth Hair & Scalp Mask',
+        },
+    }
 };
 
 const carouselSection = {
@@ -1251,32 +1275,41 @@ const bannerSection = {
     amazonHair: {
         us: {
             desktop: {
+<<<<<<< HEAD
                 webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c37f698c-5589-4180-8774-34b1f498d100/2280x',
 				jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c37f698c-5589-4180-8774-34b1f498d100/2280x'
             },
             mobile: {
                 webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5c5fb1dc-7f64-407c-b753-f93a0e576e00/828x',
 				jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5c5fb1dc-7f64-407c-b753-f93a0e576e00/828x'
+=======
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bb7b7fe9-cf9f-473a-c89b-dbf49add5700/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/570bd7ab-db5d-44cb-5ffd-76da63405b00/2280x',
+            },
+            mobile: {
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2045c807-7b87-42a7-f4e6-56c1f441da00/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b002a910-93dc-49e9-3e42-a05aadb5aa00/828x',
+>>>>>>> 865cx0uy6
             }
         },
         ca: {
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/76aecdfb-2552-4fcc-c6a5-73d4d45cfd00/2280x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7943df4b-0075-4cfc-3a61-57cf94c9c100/2280x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bb7b7fe9-cf9f-473a-c89b-dbf49add5700/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/570bd7ab-db5d-44cb-5ffd-76da63405b00/2280x',
             },
             mobile: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8aeee2a5-cb8c-415b-4724-1b3db4798500/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/82815599-67f7-4e68-beef-b2eb4598f300/828x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2045c807-7b87-42a7-f4e6-56c1f441da00/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b002a910-93dc-49e9-3e42-a05aadb5aa00/828x',
             }
         },
         uk: {
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/76aecdfb-2552-4fcc-c6a5-73d4d45cfd00/2280x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7943df4b-0075-4cfc-3a61-57cf94c9c100/2280x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bb7b7fe9-cf9f-473a-c89b-dbf49add5700/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/570bd7ab-db5d-44cb-5ffd-76da63405b00/2280x',
             },
             mobile: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8aeee2a5-cb8c-415b-4724-1b3db4798500/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/82815599-67f7-4e68-beef-b2eb4598f300/828x',
+                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2045c807-7b87-42a7-f4e6-56c1f441da00/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b002a910-93dc-49e9-3e42-a05aadb5aa00/828x',
             }
         }
     },
