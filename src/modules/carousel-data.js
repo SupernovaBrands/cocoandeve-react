@@ -529,6 +529,36 @@ const PRODUCTS_HAIR_AMAZON_UK = [
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
         content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b807e7af-834e-4b59-9553-a293956f7f00/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/77cb0822-dfb3-4041-6efb-f37ad19fbf00/828x"
+            externalUrl='https://www.amazon.co.uk/dp/B0C5WKXCPC?maas=maas_adg_620E5343FDF02198E3998D725AF3EAF5_afap_abs&ref_=aa_maas&tag=maas'
+            handle='pro-youth-shampoo'
+            ctaText='Shop on Amazon'
+            externalPrice='£25' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/38edcb2b-d83b-48a3-4a49-f9316156c800/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/502108cc-a3d3-4224-f6b6-ddeb2e22df00/828x"
+            externalUrl='https://www.amazon.co.uk/dp/B0C5WRWL7J?maas=maas_adg_65CAE8B4289042D66D20925983C273B9_afap_abs&ref_=aa_maas&tag=maas'
+            handle='pro-youth-conditioner'
+            ctaText='Shop on Amazon'
+            externalPrice='£25' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/11d8c6ad-5d43-464e-f42a-7a214d946400/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6a4c9eeb-ceed-4bc1-2b30-39cf7e1d2a00/828x"
+            externalUrl='https://www.amazon.co.uk/dp/B0C5WS9TY3?maas=maas_adg_702C06A572C594D7A7AE05D394905B0B_afap_abs&ref_=aa_maas&tag=maas'
+            handle='pro-youth-hair-scalp-mask'
+            ctaText='Shop on Amazon'
+            externalPrice='£32' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
             img='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7f217f70-0515-4725-cbe0-c222428f9c00/828x'
             comImg='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e42ff618-fb4d-4f4d-4282-5ac6d54f2100/828x'
             externalUrl='https://www.amazon.co.uk/dp/B08T1LNVGQ?maas=maas_adg_CF441D485C3337415EFD0F9EF22FECE8_afap_abs&ref_=aa_maas&tag=maas'
