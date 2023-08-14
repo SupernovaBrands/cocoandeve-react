@@ -659,8 +659,8 @@ const PRODUCTS_HAIR_AMAZON_US = [
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
         content: <ProductCard
-            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/dbcf0446-892a-4a6e-803e-6f90c4546d00/540x"
-            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/dbcf0446-892a-4a6e-803e-6f90c4546d00/540x"
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/31aed411-8ccc-4c35-6098-c496c08ae000/540x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/31aed411-8ccc-4c35-6098-c496c08ae000/540x"
             externalUrl='https://www.amazon.com/dp/B0C5WS9TY3?maas=maas_adg_4BFA3EDE31166F8892F17BCD73747625_afap_abs&ref_=aa_maas&tag=maas'
             handle='pro-youth-hair-scalp-mask'
             ctaText='Shop on Amazon'
@@ -882,7 +882,7 @@ const PRODUCTS_TAN_AMAZON_US = [
             externalUrl='https://www.amazon.com/dp/B0BNPVZS65?maas=maas_adg_CEAA7C37CF22953ECB18C9C29A8D5868_afap_abs&ref_=aa_maas&tag=maas'
             handle='antioxidant-face-tanning-micromist'
             ctaText='Shop on Amazon'
-            externalPrice='$29.20' />
+            externalPrice='$29' />
     },
 ];
 
