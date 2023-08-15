@@ -19,7 +19,7 @@ const AccordionPanel = (props) => {
 					Hair is up to 93% shinier, with up to 105% more volume and up to 3x scalp hydration.
 					<br />
 					<br />
-					*Based on a 29-day clinical trial with 20 women using the full hair routine
+					<em className="font-size-sm">*Based on a 29-day clinical trial with 20 women using the full hair routine</em>
 					</div>
 				</div>
 			</div>
