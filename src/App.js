@@ -19,7 +19,7 @@ const App = () => {
   const noHeader = () => window.location.pathname === '/customers-survey' || window.location.pathname === '/customers-survey/';
   const noFooter = () => window.location.pathname === '/customers-survey' || window.location.pathname === '/customers-survey/';
   const timerBar = () => window.location.pathname === '/range-hair-amazon' || window.location.pathname === '/range-hair-amazon/'
-    || window.location.pathname === '/range-tan-amazon' || window.location.pathname === '/range-tan-amazon/';
+    || window.location.pathname === '/range-tan-amazon' || window.location.pathname === '/range-tan-amazon/' || window.location.pathname === '/amazon/tan-range' || window.location.pathname === '/amazon/hair-range';
 
   return (
     <Layout noFooter={noFooter()} noHeader={noHeader()} timerBar={timerBar()}>
@@ -39,6 +39,8 @@ const App = () => {
           <Route path='/hair-masque-amazon-us' element={<HairMaskAmazon />} />
           <Route path='/range-hair-amazon' element={<AmazonHairRange />} />
           <Route path='/range-tan-amazon' element={<AmazonTanRange />} />
+          <Route path='/amazon/hair-range' element={<AmazonHairRange />} />
+          <Route path='/amazon/tan-range' element={<AmazonTanRange />} />
         </Routes>
       </Suspense>
     </Layout>

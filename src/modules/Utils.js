@@ -112,10 +112,12 @@ export const amazonURLCategory = (category, store) => {
 		hair: {
 			uk: 'https://www.amazon.co.uk/stores/page/73EB383A-0D5B-4815-AD1A-1D53AF91257C?maas=maas_adg_1CBD9151722FD1E6D80695A466C703B9_afap_abs&ref_=aa_maas&tag=maas&ingress=0&visitId=85bad842-4cce-4d44-9e6e-0773f987681d',
 			ca: 'https://www.amazon.ca/stores/page/E88EB243-042C-45EA-8E5A-85C24F0B5518?maas=maas_adg_066FB6ADCB3D34C5C84D10435FE7CA06_afap_abs&ref_=aa_maas&tag=maas&ingress=0&visitId=98f9d60a-8849-48d2-8a2e-608236613cc2',
+			us: 'https://www.amazon.com/stores/page/F6A4C595-BE43-47EC-AF52-69B7F928338D?maas=maas_adg_9C15237B24D7AA8571C9D57088E962C4_afap_abs&ref_=aa_maas&tag=maas&ingress=0&visitId=1e61f264-8ffd-412c-8c15-e0d6b4fb1db1',
 		},
 		tan: {
 			uk: 'https://www.amazon.co.uk/stores/page/F5EB63AC-511F-4AD6-9AF8-213CF9A29981?maas=maas_adg_15E1185328F695836719AC829FA0F953_afap_abs&ref_=aa_maas&tag=maas&ingress=0&visitId=85bad842-4cce-4d44-9e6e-0773f987681d',
 			ca: 'https://www.amazon.ca/stores/page/62DA8CF6-1C4E-471F-BEFD-E9966CE8A77A?maas=maas_adg_83004979AD11957D98C8A4B4BCF99A7B_afap_abs&ref_=aa_maas&tag=maas&ingress=0&visitId=98f9d60a-8849-48d2-8a2e-608236613cc2',
+			us: 'https://www.amazon.com/stores/page/625620AE-A1A6-4BA7-B96A-D5B30A3CC86A?maas=maas_adg_11BC824AB7F015141459718164D63A86_afap_abs&ref_=aa_maas&tag=maas&ingress=0&visitId=1e61f264-8ffd-412c-8c15-e0d6b4fb1db1',
 		}
 	};
 	return typeof dataUrl[category][store] !== 'undefined' ? dataUrl[category][store] : 'https://www.cocoandeve.com';

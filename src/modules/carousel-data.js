@@ -613,6 +613,101 @@ const PRODUCTS_HAIR_AMAZON_CA = [
     },
 ];
 
+
+const PRODUCTS_HAIR_AMAZON_US = [
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://cdn.shopify.com/s/files/1/0286/1327/9779/products/That_saWrap-LeafPrint_5fc1d002-b50b-4ad4-acca-ba3fe7d92d51_828x.jpg?v=1644811592"
+            comImg="https://cdn.shopify.com/s/files/1/0286/1327/9779/products/That_saWrap-LeafPrint_5fc1d002-b50b-4ad4-acca-ba3fe7d92d51_828x.jpg?v=1644811592"
+            externalUrl='https://www.amazon.com/dp/B07PWVZXGF?maas=maas_adg_4FCA2D3B9B9B9A092AC2010614B4C001_afap_abs&ref_=aa_maas&tag=maas'
+            handle='masque-towelwrap'
+            ctaText='Shop on Amazon'
+            externalPrice='$49.40' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/cbc423ec-78a5-44e7-1170-3a7359ca1900/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/80718850-39b2-4d3a-f82c-09be6320c700/828x"
+            externalUrl='https://www.amazon.com/dp/B0B44W2CGG?maas=maas_adg_4DD5E108AF8D4D3187405533BBEF18F4_afap_abs&ref_=aa_maas&tag=maas'
+            handle='repairing-restoring-hair-mask'
+            externalPrice='$36'
+            ctaText='Shop on Amazon' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/PDP_BondBuildingPre-Shampoo_1140x.jpg?v=1663207008'
+            comImg='https://cdn.shopify.com/s/files/1/0243/8817/3888/products/PDP_BondBuildingPre-Shampoo_1140x.jpg?v=1663207008'
+            externalUrl='https://www.amazon.com/dp/B0BC874RGL?maas=maas_adg_EFF6789140F3C3B66A03F7189C2CC69D_afap_abs&ref_=aa_maas&tag=maas'
+            handle='bond-building-pre-shampoo-treatment'
+            externalPrice='$25'
+            ctaText='Shop on Amazon' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/83693b27-bd85-4f7d-6593-f016800dbf00/828x'
+            comImg='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/83693b27-bd85-4f7d-6593-f016800dbf00/828x'
+            externalUrl='https://www.amazon.com/dp/B098DV8QYS?maas=maas_adg_D3FD459F5DD86B524E92CC705F1CC887_afap_abs&ref_=aa_maas&tag=maas'
+            handle='shampoo-conditioner-set'
+            externalPrice='$50'
+            externalCompare='$40'
+            ctaText='Shop on Amazon' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/31aed411-8ccc-4c35-6098-c496c08ae000/540x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/31aed411-8ccc-4c35-6098-c496c08ae000/540x"
+            externalUrl='https://www.amazon.com/dp/B0C5WS9TY3?maas=maas_adg_4BFA3EDE31166F8892F17BCD73747625_afap_abs&ref_=aa_maas&tag=maas'
+            handle='pro-youth-hair-scalp-mask'
+            ctaText='Shop on Amazon'
+            externalPrice='$39' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/3231e5d6-58e1-4e28-819b-86f074e3c200/540x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/3231e5d6-58e1-4e28-819b-86f074e3c200/540x"
+            externalUrl='https://www.amazon.com/dp/B0C5WKXCPC?maas=maas_adg_43039F1618BFFD7F96A017CAA91C1482_afap_abs&ref_=aa_maas&tag=maas'
+            handle='pro-youth-shampoo'
+            ctaText='Shop on Amazon'
+            externalPrice='$28' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://us.cocoandeve.com/cdn/shop/files/YR_cond1_540x.jpg?v=1686023897"
+            comImg="https://us.cocoandeve.com/cdn/shop/files/YR_cond1_540x.jpg?v=1686023897"
+            externalUrl='https://www.amazon.com/dp/B0C5WRWL7J?maas=maas_adg_3F39092FBF2812EA65060F159245437F_afap_abs&ref_=aa_maas&tag=maas'
+            handle='pro-youth-conditioner'
+            ctaText='Shop on Amazon'
+            externalPrice='$28' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7f217f70-0515-4725-cbe0-c222428f9c00/828x'
+            comImg='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e42ff618-fb4d-4f4d-4282-5ac6d54f2100/828x'
+            externalUrl='https://www.amazon.com/dp/B08T1LNVGQ?maas=maas_adg_215118DFAAD9134B056E4FE1DB919020_afap_abs&ref_=aa_maas&tag=maas'
+            handle='miracle-elixir-hair-oil-treatment'
+            externalPrice='$29'
+            ctaText='Shop on Amazon' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://cdn.shopify.com/s/files/1/0028/8253/5533/products/MasqueFullSizewithTangleTamer_828x.jpg"
+            comImg="https://cdn.shopify.com/s/files/1/0028/8253/5533/products/MasqueFullSizewithTangleTamer_828x.jpg"
+            externalUrl='https://www.amazon.com/dp/B07B8JN5NP?maas=maas_adg_0E9342A56F401EFFF6CAF510C995DAD8_afap_abs&ref_=aa_maas&tag=maas'
+            handle='super-nourishing-coconut-fig-hair-masque'
+            externalPrice='$39'
+            ctaText='Shop on Amazon' />
+    },
+];
+
 const PRODUCTS_TAN_AMAZON_UK = [
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
@@ -725,6 +820,72 @@ const PRODUCTS_TAN_AMAZON_CA = [
     },
 ];
 
+const PRODUCTS_TAN_AMAZON_US = [
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8c2d8c7b-46d4-4303-9ae6-106d6e25d800/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1a30deb4-1d70-4ad8-af43-15b446aaae00/828x"
+            externalUrl='https://www.amazon.com/dp/B093GGY999?maas=maas_adg_95123B1DBD887D1F65B597C886C0C708_afap_abs&ref_=aa_maas&tag=maas'
+            handle='bronzing-self-tanner-drops'
+            ctaText='Shop on Amazon'
+            externalPrice='$28' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="../images/Featured_BronzingFoam_532x.jpg"
+            comImg="../compressed_images/Featured_BronzingFoam_532x.webp"
+            externalUrl='https://www.amazon.com/dp/B08FXDYMRH?maas=maas_adg_8E2ACDFC950C0C2707421D264CF0BD16_afap_abs&ref_=aa_maas&tag=maas'
+            handle='sunny-honey-bali-bronzing-self-tan-mousse'
+            ctaText='Shop on Amazon'
+            externalPrice='$35' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="../images/Featured_BaliBronzingBundle_532x.jpg"
+            comImg="../compressed_images/Featured_BaliBronzingBundle_532x.webp"
+            externalUrl='https://www.amazon.com/Coco-Eve-Bronzing-Natural-Applicator/dp/B08Y6T5LH7?maas=maas_adg_89858128EB4B59E13DDDC23F6CDB5AFA_afap_abs&ref_=aa_maas&tag=maas'
+            handle='sunny-honey-bali-bronzing-self-tan-set'
+            ctaText='Shop on Amazon'
+            externalPrice='$52'
+            externalCompare='$74' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/47a254b2-14c2-4a7b-dd6d-530064d5f400/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c548b49d-7cc2-44db-0949-555633529800/828x"
+            externalUrl='https://www.amazon.com/dp/B08G1LYFR8?maas=maas_adg_248F8A4B622A6FF205E576D7C8BB6B05_afap_abs&ref_=aa_maas&tag=maas'
+            handle='sunny-honey-bali-bronzing-self-tan-set-mitt'
+            ctaText='Shop on Amazon'
+            externalCompare='$69'
+            externalPrice='$54' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="../images/Featured_TanBundlewithBackApplicator_532x.jpg"
+            comImg="../compressed_images/Featured_TanBundlewithBackApplicator_532x.webp"
+            externalUrl='https://www.amazon.com/dp/B09XV2RXRX?maas=maas_adg_7CFE625C755C996326665C1E0E3FA887_afap_abs&ref_=aa_maas&tag=maas'
+            handle='bali-bae-self-tan-set'
+            ctaText='Shop on Amazon'
+            externalCompare='$95'
+            externalPrice='$69' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://dev.cocoandeve.com/cdn/shop/products/PDP_TanningMist_1_384x.jpg?v=1670921006"
+            comImg="https://dev.cocoandeve.com/cdn/shop/products/PDP_TanningMist_1_384x.jpg?v=1670921006"
+            externalUrl='https://www.amazon.com/dp/B0BNPVZS65?maas=maas_adg_CEAA7C37CF22953ECB18C9C29A8D5868_afap_abs&ref_=aa_maas&tag=maas'
+            handle='antioxidant-face-tanning-micromist'
+            ctaText='Shop on Amazon'
+            externalPrice='$29' />
+    },
+];
+
 let PRODUCTS_HAIR_AMAZON = [];
 let PRODUCTS_TAN_AMAZON = [];
 if (['uk'].includes(activeStore)) {
@@ -735,6 +896,11 @@ if (['uk'].includes(activeStore)) {
 if (['ca'].includes(activeStore)) {
     PRODUCTS_HAIR_AMAZON = [...PRODUCTS_HAIR_AMAZON_CA, ...PRODUCTS_HAIR_AMAZON_CA];
     PRODUCTS_TAN_AMAZON = [...PRODUCTS_TAN_AMAZON_CA, ...PRODUCTS_TAN_AMAZON_CA];
+}
+
+if (['us'].includes(activeStore)) {
+    PRODUCTS_HAIR_AMAZON = [...PRODUCTS_HAIR_AMAZON_US, ...PRODUCTS_HAIR_AMAZON_US];
+    PRODUCTS_TAN_AMAZON = [...PRODUCTS_TAN_AMAZON_US, ...PRODUCTS_TAN_AMAZON_US];
 }
 
 export { PRODUCTS_FACE, PRODUCTS_BODY, PRODUCTS_VALUE_SETS, PRODUCTS_HAIR_1, PRODUCTS_HAIR_2, PRODUCTS_HAIR_3, PRODUCTS_HAIR_AMAZON, PRODUCTS_TAN_AMAZON };
