@@ -11,12 +11,15 @@ const AccordionPanel = (props) => {
 			<div className="accordion-item border-0">
 				<div className="accordion-header" id="headingBenefit1">
 					<button onClick={() => props.setPanelActive(1)} className="accordion-button youth-revive__banner-text-title youth-revive__banner-text-title-gap fw-bold px-0 pb-0 pt-1 mb-1 mb-lg-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBenefitOne" aria-expanded="true" aria-controls="collapseBenefitOne">
-					Honey + Retinol + Prebiotics and Probiotics
+					The world’s first anti-aging haircare range with a superstar set of ingredients.
 					</button>
 				</div>
 				<div id="collapseBenefitOne" className="accordion-collapse collapse show" aria-labelledby="headingBenefit1" data-bs-parent="#accordionReviveBanner">
 					<div className="accordion-body youth-revive__banner-text-desc mb-g mb-lg-2 p-0">
-					The world's first range with a superstar set of ingredients. Youth Revive's innovative formula addresses the signs of aging and promote healthier, stronger, and shinier hair from the first use.
+					Hair is up to 93% shinier, with up to 105% more volume and up to 3x scalp hydration.
+					<br />
+					<br />
+					<em className="font-size-sm">*Based on a 29-day clinical trial with 20 women using the full hair routine</em>
 					</div>
 				</div>
 			</div>
