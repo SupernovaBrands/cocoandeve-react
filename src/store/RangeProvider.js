@@ -1285,21 +1285,21 @@ const bannerSection = {
         },
         ca: {
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bb7b7fe9-cf9f-473a-c89b-dbf49add5700/2280x',
+                // webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bb7b7fe9-cf9f-473a-c89b-dbf49add5700/2280x',
                 jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/570bd7ab-db5d-44cb-5ffd-76da63405b00/2280x',
             },
             mobile: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2045c807-7b87-42a7-f4e6-56c1f441da00/828x',
+                // webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2045c807-7b87-42a7-f4e6-56c1f441da00/828x',
                 jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b002a910-93dc-49e9-3e42-a05aadb5aa00/828x',
             }
         },
         uk: {
             desktop: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bb7b7fe9-cf9f-473a-c89b-dbf49add5700/2280x',
+                // webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bb7b7fe9-cf9f-473a-c89b-dbf49add5700/2280x',
                 jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/570bd7ab-db5d-44cb-5ffd-76da63405b00/2280x',
             },
             mobile: {
-                webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2045c807-7b87-42a7-f4e6-56c1f441da00/828x',
+                // webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2045c807-7b87-42a7-f4e6-56c1f441da00/828x',
                 jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b002a910-93dc-49e9-3e42-a05aadb5aa00/828x',
             }
         }
