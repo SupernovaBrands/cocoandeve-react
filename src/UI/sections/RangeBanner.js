@@ -28,12 +28,16 @@ const RangeBanner = (props) => {
 				wrapper={(children) => <a href={props.externalUrl}>{children}</a>}
 			>
 				<picture className="d-block w-100">
-					<source srcSet={bannerSection.desktop.webpBanner} media="(min-width: 768px)" type="image/webp" />
+					{bannerSection.desktop.webpBanner && (
+						<source srcSet={bannerSection.desktop.webpBanner} media="(min-width: 768px)" type="image/webp" />
+					)}
 					<source srcSet={bannerSection.desktop.jpegBanner} media="(min-width: 768px)" type="image/jpeg" />
-					<source srcSet={bannerSection.mobile.webpBanner} type="image/webp" />
-					<source srcSet={bannerSection.mobile.webpBanner} type="image/jpeg" />
+					{bannerSection.mobile.webpBanner && (
+						<source srcSet={bannerSection.mobile.webpBanner} type="image/webp" />
+					)}
+					<source srcSet={bannerSection.mobile.jpegBanner} type="image/jpeg" />
 					<img
-						src={bannerSection.mobile.webpBanner}
+						src={bannerSection.mobile.webpBanner ? bannerSection.mobile.webpBanner : bannerSection.mobile.jpegBanner}
 						alt="Range banner"
 						className="w-100 fit--cover" />
 				</picture>
