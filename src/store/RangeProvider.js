@@ -847,22 +847,9 @@ const productList = {
             title: 'Bali Bronzing Self Tanner Mousse Set',
         }
     },
-<<<<<<< HEAD
-    'pro-youth-conditioner': {
-        us: {
-            price: '$28.00',
-            title: 'Pro Youth Conditioner',
-        }
-    },
     'pro-youth-shampoo': {
         us: {
             price: '$28.00',
-            title: 'Pro Youth Shampoo',
-        }
-=======
-    'pro-youth-shampoo': {
-        us: {
-            price: '$28',
             title: 'Pro Youth Shampoo',
         },
         uk: {
@@ -876,7 +863,7 @@ const productList = {
     },
     'pro-youth-conditioner': {
         us: {
-            price: '$28',
+            price: '$28.00',
             title: 'Pro Youth Conditioner',
         },
         uk: {
@@ -887,16 +874,11 @@ const productList = {
             price: '$33',
             title: 'Pro Youth Conditioner',
         },
->>>>>>> 865cx0uy6
     },
     'pro-youth-hair-scalp-mask': {
         us: {
             price: '$39',
             title: 'Pro Youth Hair & Scalp Mask',
-<<<<<<< HEAD
-        }
-    },
-=======
         },
         uk: {
             price: '£32',
@@ -907,7 +889,6 @@ const productList = {
             title: 'Pro Youth Hair & Scalp Mask',
         },
     }
->>>>>>> 865cx0uy6
 };
 
 const carouselSection = {
