@@ -7,30 +7,30 @@ const PRODUCTS = [
 		handle: 'pro-youth-shampoo-conditioner',
 		info: 'Cleanses, strengthens and conditioners hair for youthful locks.',
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b24c1481-7b40-46b5-fd79-238233b53a00/public',
-		ca: {
-			price: '$56',
-			crossedPrice: '$66',
-		},
 		us: {
 			price: '$47.50',
-			crossedPrice: '$56',
+			crossedPrice: '$56.00',
 			title: 'Pro Youth Shampoo & Conditioner Set',
+		},
+		ca: {
+			price: '$56.00',
+			crossedPrice: '$66.00',
 		},
 		uk: {
 			price: '£42.50',
-			crossedPrice: '£50',
+			crossedPrice: '£50.00',
 		},
 		eu: {
-			price: '47,50€',
-			crossedPrice: '56€',
+			price: '47.50€',
+			crossedPrice: '56.00€',
 		},
 		au: {
 			price: '$63',
 			crossedPrice: '$74',
 		},
 		int: {
-			price: 'S$66',
-			crossedPrice: 'S$78',
+			price: '$66.00',
+			crossedPrice: '$78.00',
 		},
 		my: {
 			price: 'RM192',
@@ -50,30 +50,30 @@ const PRODUCTS = [
 		handle: 'honey-bliss-hair-set',
 		info: 'Transforms and revitalises hair. Enhances shine, strength, and volume with every wash.',
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7529711a-e2d8-4f92-262b-7d7a2abe3f00/public',
-		ca: {
-			price: '$94',
-			crossedPrice: '$118',
-		},
 		us: {
-			price: '$76',
-			crossedPrice: '$95',
+			price: '$76.00',
+			crossedPrice: '$95.00',
 			title: 'Honey Bliss Hair Set',
 		},
+		ca: {
+			price: '$94.00',
+			crossedPrice: '$118.00',
+		},
 		uk: {
-			price: '£66',
-			crossedPrice: '£82',
+			price: '£66.00',
+			crossedPrice: '£82.00',
 		},
 		eu: {
-			price: '76€',
-			crossedPrice: '95€',
+			price: '76.00€',
+			crossedPrice: '95.00€',
 		},
 		au: {
 			price: '$98',
 			crossedPrice: '$123',
 		},
 		int: {
-			price: 'S$104',
-			crossedPrice: 'S$130',
+			price: '$130.00',
+			crossedPrice: '$104.00',
 		},
 		my: {
 			price: 'RM318',
@@ -94,24 +94,24 @@ const PRODUCTS = [
 		handle: 'pro-youth-hair-scalp-mask',
 		info: 'Restores shine and vitality, whilst rebalances the scalp for healthy future hair growth.',
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9d74d9d2-f469-4846-6d0c-bce8c78a2600/public',
-		ca: {
-			price: '$52',
-		},
 		us: {
-			price: '$39',
+			price: '$39.00',
 			title: 'Pro Youth Hair & Scalp Mask',
 		},
+		ca: {
+			price: '$52.00',
+		},
 		uk: {
-			price: '£32',
+			price: '£32.00',
 		},
 		eu: {
-			price: '36€',
+			price: '36.00€',
 		},
 		au: {
 			price: '$49',
 		},
 		int: {
-			price: 'S$52',
+			price: '$52.00',
 		},
 		my: {
 			price: 'RM172',
@@ -128,24 +128,24 @@ const PRODUCTS = [
 		handle: 'pro-youth-shampoo',
 		info: 'Cleanses, clarifies and strengthens for youthful-looking hair with double the shine.',
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/dbfa45cf-6dd1-43e6-8af0-2dc5c33e9a00/public',
-		ca: {
-			price: '$33',
-		},
 		us: {
-			price: '$28',
+			price: '$28.00',
 			title: 'Pro Youth Shampoo',
 		},
+		ca: {
+			price: '$33.00',
+		},
 		uk: {
-			price: '£25',
+			price: '£25.00',
 		},
 		eu: {
-			price: '28€',
+			price: '28.00€',
 		},
 		au: {
 			price: '$37',
 		},
 		int: {
-			price: 'S$39',
+			price: '$39.00',
 		},
 		my: {
 			price: 'RM113',
@@ -162,24 +162,24 @@ const PRODUCTS = [
 		handle: 'pro-youth-conditioner',
 		info: 'Nourishes and revitalises hair for ultra-shiny strands with a reduction in breakage.',
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/024a3ec4-c481-4525-2742-bf34592e9b00/public',
-		ca: {
-			price: '$33',
-		},
 		us: {
-			price: '$28',
+			price: '$28.00',
 			title: 'Pro Youth Conditioner',
 		},
+		ca: {
+			price: '$33.00',
+		},
 		uk: {
-			price: '£25',
+			price: '£25.01',
 		},
 		eu: {
-			price: '28€',
+			price: '28.00€',
 		},
 		au: {
 			price: '$37',
 		},
 		int: {
-			price: 'S$39',
+			price: '$39.00',
 		},
 		my: {
 			price: 'RM113',
@@ -196,24 +196,24 @@ const PRODUCTS = [
 		handle: 'pro-youth-scalp-massager',
 		info: 'Sloughs away dead skin cells and stimulate your scalp',
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f560eae0-905a-4dc1-a34c-33cebfc6c500/public',
-		ca: {
-			price: '$19',
-		},
 		us: {
-			price: '$14',
+			price: '$14.00',
 			title: 'Pro Youth Scalp Massager',
 		},
+		ca: {
+			price: '$19.00',
+		},
 		uk: {
-			price: '£12',
+			price: '£12.00',
 		},
 		eu: {
-			price: '14€',
+			price: '14.00€',
 		},
 		au: {
 			price: '$21',
 		},
 		int: {
-			price: 'S$19',
+			price: '$19.00',
 		},
 		my: {
 			price: 'RM59',
