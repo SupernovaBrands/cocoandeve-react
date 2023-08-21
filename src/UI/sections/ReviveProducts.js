@@ -72,8 +72,8 @@ const PRODUCTS = [
 			crossedPrice: '$123',
 		},
 		int: {
-			price: '$130.00',
-			crossedPrice: '$104.00',
+			price: '$104.00',
+			crossedPrice: '$130.00',
 		},
 		my: {
 			price: 'RM318',
@@ -170,7 +170,7 @@ const PRODUCTS = [
 			price: '$33.00',
 		},
 		uk: {
-			price: '£25.01',
+			price: '£25.00',
 		},
 		eu: {
 			price: '28.00€',
