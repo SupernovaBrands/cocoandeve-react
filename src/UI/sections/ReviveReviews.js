@@ -19,7 +19,7 @@ const REVIEW_DATA = [
 	},
 	{
 		name: 'Jewel using:',
-		text: 'I love the way the products smell, so fresh and not overbearing. My hair became a lot smoother and hydrated and I have very dry hair from frequent colouring and being in chlorine. I the used the hair mask 2 times a week. I am so happy with the results! - Pro Youth Hair & Scalp Mask',
+		text: 'I love the way the products smell, so fresh and not overbearing. My hair became a lot smoother and hydrated and I have very dry hair from frequent colouring and being in chlorine. I the used the hair mask 2 times a week. I am so happy with the results!',
 		productTitle: 'Pro Youth Hair & Scalp Mask',
 		productHandle: 'pro-youth-hair-scalp-mask',
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/18df9656-90c2-4fc1-2d1b-3e4bc113b200/public',

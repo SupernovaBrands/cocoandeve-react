@@ -47,7 +47,8 @@ const App = () => {
           <Route path='/amazon/tan-range-9' element={<AmazonTanRange />} />
           <Route path='/range-youth-revive' element={<YouthRevive />} />
           <Route path='/tan-range-9' element={<AmazonTanRange />} />
-
+          <Route path='/amazon/tan-range' element={<AmazonTanRange />} />
+          <Route path='/range-youth-revive' element={<YouthRevive />} />
         </Routes>
       </Suspense>
     </Layout>
