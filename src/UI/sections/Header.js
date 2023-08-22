@@ -13,7 +13,7 @@ const Header = (props) => {
     LOGO_URL = amazonURL(utmStore);
   }
   return (
-    <header className={`text-center ${isYR ? 'position-fixed bg-white w-100' : ''}`}>
+    <header className={`text-center ${isYR ? 'position-fixed bg-white w-100 yl-lp-header' : ''}`}>
       {props.timerBar && (
         <TimerBar url={LOGO_URL} />
       )}
