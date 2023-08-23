@@ -5,7 +5,7 @@ import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
 const PRODUCTS = [
 	{
 		handle: 'pro-youth-shampoo-conditioner',
-		info: 'Cleanses, strengthens and conditioners hair for youthful locks.',
+		info: 'Cleanses, strengthens and conditions hair for youthful locks.',
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b24c1481-7b40-46b5-fd79-238233b53a00/public',
 		us: {
 			price: '$47.50',

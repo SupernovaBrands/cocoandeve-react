@@ -31,7 +31,7 @@ const AccordionPanel = (props) => {
 				</div>
 				<div id="collapseBenefitTwo" className="accordion-collapse collapse" aria-labelledby="headingBenefit2" data-bs-parent="#accordionReviveBanner">
 					<div className="accordion-body youth-revive__banner-text-desc mb-g mb-lg-2 p-0">
-					Dermatologically-tested, PH neutral and free from silicones and drying sulfates that irritate your scalp and damagechemically treated hair.
+					Dermatologically-tested, PH neutral and free from silicones and drying sulfates that irritate your scalp and damage chemically treated hair.
 					</div>
 				</div>
 			</div>
