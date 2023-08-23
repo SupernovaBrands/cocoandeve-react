@@ -44,7 +44,7 @@ const ReviveRoutine = () => {
 								</div>
 								<strong className="youth-revive__routine-hiw d-block">How it works:</strong>
 								<ul className="mb-0">
-									<li>Strengthens weak, fragile, ageing hair</li>
+									<li>Strengthens weak, fragile, aging hair</li>
 									<li>Increase volume and shine</li>
 									<li>Smoothes and softens hair</li>
 									<li>Rebalances and hydrates the scalp</li>
