@@ -5,6 +5,7 @@ import TimerBar from './TimerBar';
 const Header = (props) => {
   const isTanAmazon = window.location.pathname === '/range-tan-amazon/' || window.location.pathname === '/range-tan-amazon';
   const isHairAmazon = window.location.pathname === '/range-hair-amazon/' || window.location.pathname === '/range-hair-amazon';
+  const isYR = window.location.pathname == '/range-youth-revive/'
   const [searchParams] = useSearchParams();
   const utmStore = searchParams.get('utm_store');
   let LOGO_URL = 'https://www.cocoandeve.com';
@@ -12,7 +13,7 @@ const Header = (props) => {
     LOGO_URL = amazonURL(utmStore);
   }
   return (
-    <header className="text-center">
+    <header className={`text-center ${isYR ? 'position-fixed bg-white w-100 yl-lp-header' : ''}`}>
       {props.timerBar && (
         <TimerBar url={LOGO_URL} />
       )}
