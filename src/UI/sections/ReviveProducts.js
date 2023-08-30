@@ -25,8 +25,8 @@ const PRODUCTS = [
 			crossedPrice: '56.00€',
 		},
 		au: {
-			price: '$47.50',
-			crossedPrice: '$56',
+			price: '$63.00',
+			crossedPrice: '$74.00',
 		},
 		int: {
 			price: '$66.00',
@@ -68,8 +68,8 @@ const PRODUCTS = [
 			crossedPrice: '95.00€',
 		},
 		au: {
-			price: '$76',
-			crossedPrice: '$95',
+			price: '$98.00',
+			crossedPrice: '$123.00',
 		},
 		int: {
 			price: '$104.00',
@@ -108,7 +108,7 @@ const PRODUCTS = [
 			price: '36.00€',
 		},
 		au: {
-			price: '$39',
+			price: '$49.00',
 		},
 		int: {
 			price: '$52.00',
@@ -142,7 +142,7 @@ const PRODUCTS = [
 			price: '28.00€',
 		},
 		au: {
-			price: '$28',
+			price: '$37.00',
 		},
 		int: {
 			price: '$39.00',
@@ -176,7 +176,7 @@ const PRODUCTS = [
 			price: '28.00€',
 		},
 		au: {
-			price: '$28',
+			price: '$37.00',
 		},
 		int: {
 			price: '$39.00',
@@ -210,7 +210,7 @@ const PRODUCTS = [
 			price: '14.00€',
 		},
 		au: {
-			price: '$14',
+			price: '$21.00',
 		},
 		int: {
 			price: '$19.00',
