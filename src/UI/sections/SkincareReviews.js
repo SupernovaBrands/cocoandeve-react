@@ -33,16 +33,16 @@ const REVIEW_DATA = [
 const ReviewCard = (props) => {
 	return (
 		<figure className="mb-0 col-95 col-lg-review" ref={props.cardRef}>
-			<picture className="d-block mb-2">
+			<picture className="d-block mb-1">
 				<source srcSet={props.data.src} media="(min-width: 992px)" width="370" />
 				<img src={props.data.src} className="w-100" loading="lazy" width="280" />
 			</picture>
 			<figcaption>
-                <div className="youth-revive__reviews-user mb-2 mb-lg-0">
+                <div className="youth-revive__reviews-user mb-1 mb-lg-0">
 					<strong className="me-1">{props.data.name}</strong>
 					<a href={`https://www.cocoandeve.com/products/${props.data.productHandle}`} className="text-body">{props.data.productTitle}</a>
 				</div>
-				<p className="youth-revive__reviews-text">{props.data.text}</p>
+				<p className="youth-revive__reviews-text mb-4">{props.data.text}</p>
 			</figcaption>
 		</figure>
 	);

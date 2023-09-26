@@ -77,7 +77,7 @@ const PRODUCTS = [
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/59333e95-7e41-4dd7-7a76-2c43af5c3400/public',
 		us: {
 			price: '$36.00',
-			title: 'Antioxidant Hydrating Milky Toner',
+			title: 'Antioxidant Milky Toner',
 		},
 		ca: {
 			price: '$44.00',
@@ -111,40 +111,31 @@ const PRODUCTS = [
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2df76d57-a36a-4d04-34fc-2fd091a60e00/public',
 		us: {
 			price: '$42.00',
-            crossedPrice: '$53.00',
 			title: 'Double Cleanser Set',
 		},
 		ca: {
 			price: '$57.00',
-            crossedPrice: '$71.00',
 		},
 		uk: {
 			price: '£32.00',
-            crossedPrice: '£40.00',
 		},
 		eu: {
 			price: '39.00€',
-            crossedPrice: '49.00€',
 		},
 		au: {
 			price: '$62.00',
-            crossedPrice: '$77.00',
 		},
 		int: {
 			price: '$57.00',
-            crossedPrice: '$71.00',
 		},
 		my: {
 			price: 'RM192',
-            crossedPrice: 'RM240',
 		},
 		de: {
 			price: '39,00€',
-            crossedPrice: '49,00€',
 		},
 		fr: {
 			price: '39,00€',
-            crossedPrice: '49,00€',
 			title: 'Double Cleanser Set',
 		},
 	},
@@ -154,40 +145,31 @@ const PRODUCTS = [
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/832b88a6-8182-45fb-f4dc-c43f74d91200/public',
 		us: {
 			price: '$71.00',
-            crossedPrice: '$89.00',
 			title: 'Glow Getter Set',
 		},
 		ca: {
 			price: '$92.00',
-            crossedPrice: '$115.00',
 		},
 		uk: {
 			price: '£53.00',
-            crossedPrice: '£66.00',
 		},
 		eu: {
 			price: '66.00€',
-            crossedPrice: '82.00€',
 		},
 		au: {
 			price: '$101.00',
-            crossedPrice: '$126.00',
 		},
 		int: {
 			price: '$93.00',
-            crossedPrice: '$116.00',
 		},
 		my: {
 			price: 'RM318',
-            crossedPrice: 'RM398',
 		},
 		de: {
 			price: '66,00€',
-            crossedPrice: '82,00€',
 		},
 		fr: {
 			price: '66,00€',
-            crossedPrice: '82,00€',
 			title: 'Glow Getter Set',
 		},
 	},
@@ -207,7 +189,7 @@ const ProductCard = (props) => {
 				</picture>
 			</a>
 			<figcaption className="font-size-base">
-				<div className={`d-flex justify-content-between mb-1 ${activeStore === 'fr' ? 'd-flex justify-content-between mb-1 youth-revive__products-card-title-fr' : 'youth-revive__products-card-title'}`}>
+				<div className={`d-flex justify-content-between mb-1 ${activeStore === 'fr' ? 'd-flex justify-content-between mb-1 youth-revive__products-card-title-fr' : 'skincare__products-card-title'}`}>
 					<p className="fw-bold mb-0 text-uppercase me-2">
 						<a href={`https://www.cocoandeve.com/products/${data.handle}`} className="text-body text-decoration-none">{title}</a>
 					</p>
@@ -262,7 +244,7 @@ const ReviveProducts = () => {
 		<section className="youth-revive__section youth-revive__products px-g">
 			<div className="row align-items-lg-center">
 				<div className="col-12 col-lg-4 col-lg-product--left">
-					<p className="h2 youth-revive__products-title fw-bold mb-0 mb-1 mb-lg-4">Cleanse,<br />repeat, treat</p>
+					<p className="h2 youth-revive__products-title fw-bold mb-0 mb-1 mb-lg-4">Cleanse,<br className="d-none d-lg-block" /> repeat, treat</p>
 					<div className="youth-revive__carousel-control mb-3 mb-lg-0">
 						<button type="button" className={`btn-unstyled ${leftDisabled ? 'btn-disabled' : ''}`} disabled={leftDisabled} onClick={scrollLeft}>
 							<ArrowLeft />

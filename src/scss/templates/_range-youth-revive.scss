@@ -492,6 +492,17 @@
 		}
 	}
 
+	&__products {
+		&-card {
+			&-title {
+				min-height: 40px;
+				@include media-breakpoint-up(lg) {
+					min-height: 36px;
+				}
+			}
+		}
+	}
+
 	&__banner-text-reverse {
 		background: linear-gradient(47.65deg, #FDEFB0 5.23%, #FFC5F6 94.22%);
 	}
@@ -499,27 +510,27 @@
 	&__result-card {
 		background: linear-gradient(47.65deg, #FDEFB0 5.23%, #FFC5F6 94.22%);
 		border-radius: 16px;
-		padding: 16px 16px;
+		padding: 8px 16px;
 		@include media-breakpoint-up(lg) {
 			padding: 48px 32px;
 		}
 	}
 
-	&-desc {
-		@include font-size($font-size-base);
-		@include media-breakpoint-up(lg) {
-			@include font-size($h2-font-size-lg);
-		}
-	}
-
 	&__banner-text {
 		&-title {
-			@include font-size($h2-font-size);
+			@include font-size(calc-em(32));
 			@include media-breakpoint-up(lg) {
 				@include font-size(calc-em(48));
 				&-gap {
 					margin-bottom: calc-em(42.5) !important;
 				}
+			}
+		}
+
+		&-desc {
+			@include font-size(calc-em(14));
+			@include media-breakpoint-up(lg) {
+				@include font-size($h2-font-size-lg);
 			}
 		}
 	}

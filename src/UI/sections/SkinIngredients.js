@@ -97,7 +97,7 @@ const ReviveIngredients = () => {
 	};
 	return (
 		<section className="youth-revive__section skincare__ingredients-wrapper">
-			<div className="youth-revive__ingredients skincare__ingredients">
+			<div className="youth-revive__ingredients skincare__ingredients pt-0">
 				<div className="position-relative px-g">
 					<div className="youth-revive__carousel-control youth-revive__ingredients-control position-absolute top-0">
 						<button type="button" className={`btn-unstyled ${leftDisabled ? 'btn-disabled' : ''}`} disabled={leftDisabled} onClick={scrollLeft}>

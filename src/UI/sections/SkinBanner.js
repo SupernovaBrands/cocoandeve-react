@@ -79,19 +79,19 @@ const BannerText = () => {
 			<figure className={`col-12 col-lg-6 order-lg-1 position-relative text-white mb-0 pe-lg-0 pt-g pt-lg-0 panel__1 ${panelActive === 1 ? '' : 'd-none'}`}>
 				<source type="image/jpeg" media="(min-width: 992px)" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f4fc8aa0-f8ef-4fbe-b4eb-80db94a29500/726x" />
 				<img className="w-100" src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e6ab66bb-7211-4496-e6da-46281b97c100/828x" />
-				<figcaption className="px-g col-lg-9 mx-lg-auto">Experience an unreal glow with our new collection</figcaption>
+				<figcaption className="p-0 col-lg-9 mx-lg-auto">Experience an unreal glow with our new collection</figcaption>
 			</figure>
 			<figure className={`col-12 col-lg-6 order-lg-1 position-relative text-white mb-0 pe-lg-0 pt-g pt-lg-0 panel__2 ${panelActive === 2 ? '' : 'd-none'}`}>
 				<source type="image/jpeg" media="(min-width: 992px)" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5085b09d-a1ed-4ebb-9d21-917480e68800/726x" />
 				<img className="w-100" src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7e5ed9a9-2a2f-4f27-4347-b3b454505000/828x" />
-				<figcaption className="px-g col-lg-9 mx-lg-auto">
+				<figcaption className="p-0 col-lg-9 mx-lg-auto">
 				Dermatologically-tested, and free from silicones
 				</figcaption>
 			</figure>
 			<figure className={`col-12 col-lg-6 order-lg-1 position-relative text-white mb-0 pe-lg-0 pt-g pt-lg-0 panel__3 ${panelActive === 3 ? '' : 'd-none'}`}>
 				<source type="image/jpeg" media="(min-width: 992px)" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0b1dbf24-d668-462a-ec99-e959ef880700/726x" />
 				<img className="w-100" src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f676c334-9560-45f3-0f0f-ab65dee4e700/828x" />
-				<figcaption className="px-g col-lg-9 mx-lg-auto">
+				<figcaption className="p-0 col-lg-9 mx-lg-auto">
                 Sourced ethically and responsibly where the welfare
 				</figcaption>
 			</figure>

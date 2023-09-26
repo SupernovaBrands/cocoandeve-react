@@ -46,10 +46,10 @@ const AccordionPanel = (props) => {
 const ReviveBannerReverse = () => {
 	const [panelActive, setPanelActive] = useState(1);
 	return (
-		<section className="youth-revive__section youth-revive__banner-text-reverse-wrapper">
+		<section className="youth-revive__section youth-revive__banner-text-reverse-wrapper pt-2">
 			<div className="row youth-revive__banner-text skincare__banner-text-reverse align-items-lg-center">
 				<div className="col-12 col-lg-6 px-2 px-lg-g pe-lg-0 youth-revive__banner-text-content youth-revive__banner-text-reverse-content">
-					<div className="youth-revive__banner-text-wrapper youth-revive__banner-text-reverse-wrapper py-3 py-lg-0 pe-lg-g">
+					<div className="youth-revive__banner-text-wrapper youth-revive__banner-text-reverse-wrapper pt-3 pb-1 py-lg-0 pe-lg-g">
 						<p className="youth-revive__banner-text-reverse-title youth-revive__banner-text-reverse-title-gap fw-bold d-none d-lg-block mb-lg-0">Meet your new<br className="d-none d-lg-block" />'glow-to' daily<br className="d-none d-lg-block" />routine</p>
 						<AccordionPanel setPanelActive={setPanelActive} />
 						{/* <p className="youth-revive__banner-text-reverse-title fw-bold d-none d-lg-block mb-lg-4 youth-revive__banner-text-reverse-title-gap">Meet your new favourite hair routine</p>
