@@ -53,7 +53,7 @@ const AccordionPanel = (props) => {
 const BannerText = () => {
 	const [panelActive, setPanelActive] = useState(1);
 	return (
-		<section className="row youth-revive__banner-text youth-revive__section pt-4 pt-lg-0">
+		<section className="row youth-revive__banner-text youth-revive__section pt-4 pt-lg-0 pb-4">
 			<div className="col-12 col-lg-6 order-lg-2 px-2 px-lg-g ps-lg-0 youth-revive__banner-text-content">
 				<div className="youth-revive__banner-text-wrapper mb-2 mb-lg-0 pt-1">
 					{panelActive === 1 && (

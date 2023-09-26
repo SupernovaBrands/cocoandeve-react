@@ -38,11 +38,11 @@ const SkinResults = () => {
 	return (
 		<section className="youth-revive__section px-g container skincare__results">
             <div className="row">
-			    <p className="youth-revive__banner-text-reverse-title fw-bold d-lg-block mb-3 mt-3">Results after double cleansing*</p>
+			    <p className="youth-revive__banner-text-reverse-title fw-bold d-lg-block mb-3 mt-4">Results after double cleansing*</p>
                 {RESULTS.map((a, index) => (
 					<ResultCard key={index} data={a} />
 				))}
-                <p className="skincare__banner-text-desc mb-g mb-lg-2">*Based on a consumer assessment after the usage of the Seed Oil Cleanser & Fruit Enzyme Cleanser together,<br className="d-none d-lg-block" />conducted by 30 women over a period of 1 week.</p>
+                <p className="skincare__banner-text-desc mb-g mb-lg-2 mt-1">*Based on a consumer assessment after the usage of the Seed Oil Cleanser & Fruit Enzyme Cleanser together,<br className="d-none d-lg-block" />conducted by 30 women over a period of 1 week.</p>
             </div>
 		</section>
 	);
