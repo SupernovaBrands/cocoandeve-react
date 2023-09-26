@@ -2,7 +2,7 @@
 	@return calc(((100% - #{map-get($container-max-widths , $breakpoint)}) / 2) + (#{$grid-gutter-width-lg}) - (#{$grid-gutter-width}));
 }
 
-.youth-revive {
+.skincare {
 
 	&__section {
 		padding-bottom: calc-em(35);
@@ -130,7 +130,7 @@
 		// }
 
 		// @include media-breakpoint-down(md) {
-		// 	.youth-revive__custom-scroll::-webkit-scrollbar {
+		// 	.skincare__custom-scroll::-webkit-scrollbar {
 		// 		display: block;
 		// 	}
 		// }
@@ -167,7 +167,7 @@
 			}
 		}
 
-		.youth-revive__custom-scroll{
+		.skincare__custom-scroll{
 			&::-webkit-scrollbar {
 				display: none;
 			}
@@ -330,7 +330,7 @@
 			left: 30px;
 		}
 
-		.youth-revive__articles-title {
+		.skincare__articles-title {
 			@include font-size($h2-font-size-lg);
 			@include media-breakpoint-up(lg) {
 				min-height: 50px;
@@ -342,16 +342,9 @@
 		}
 	}
 
-	&__product-title {
-		@include font-size(calc-em(20));
-	}
-
 	@include media-breakpoint-up(lg) {
 		&__accordion-title {
 			@include font-size(calc-em(48));
-		}
-		&__product-title {
-			@include font-size(calc-em(32));
 		}
 	}
 
@@ -367,7 +360,7 @@
 	}
 }
 
-.youth-revive__accordion {
+.skincare__accordion {
 	.faq-accordion,
 	.accordion-button,
 	.accordion-collapse {
@@ -375,7 +368,7 @@
 	}
 }
 
-.youth-revive__range__banner {
+.skincare__range__banner {
 	margin-top: 60px;
 }
 
@@ -388,35 +381,35 @@
 		display: flex;
 		flex-flow: column;
 
-		.youth-revive__range__banner {
+		.skincare__range__banner {
 			order: 1;
 		}
-		.youth-revive__products {
+		.skincare__products {
 			order: 2;
 		}
-		.youth-revive__banner-text {
+		.skincare__banner-text {
 			order: 3;
 		}
-		.youth-revive__ingredients-wrapper, .skincare__banner-text-reverse-wrapper, .skincare__results {
+		.skincare__ingredients-wrapper {
 			order: 4;
 		}
 
-		.youth-revive__reviews, .skincare__ingredients-wrapper {
+		.skincare__reviews {
 			order: 5;
 		}
-		.youth-revive__banner-text-reverse-wrapper {
+		.skincare__banner-text-reverse-wrapper {
 			order: 6;
 		}
-		.youth-revive__routine {
+		.skincare__routine {
 			order: 7;
 		}
-		.youth-revive__articles, .skincare__reviews {
+		.skincare__articles {
 			order: 8;
 		}
-		.youth-revive__accordion {
+		.skincare__accordion {
 			order: 9;
 		}
-		.youth-revive__footer {
+		.skincare__footer {
 			order: 10;
 		}
 	}
@@ -476,51 +469,6 @@
 
 		&--right {
 			@include make-col(8.25, 12);
-		}
-	}
-}
-
-.skincare {
-	&__ingredients {
-		background-color: #ffffff;
-	}
-
-	@include media-breakpoint-up(lg) {
-		&__banner {
-			padding-left: 0 !important;
-			padding-right: 0 !important;
-		}
-	}
-
-	&__banner-text-reverse {
-		background: linear-gradient(47.65deg, #FDEFB0 5.23%, #FFC5F6 94.22%);
-	}
-
-	&__result-card {
-		background: linear-gradient(47.65deg, #FDEFB0 5.23%, #FFC5F6 94.22%);
-		border-radius: 16px;
-		padding: 16px 16px;
-		@include media-breakpoint-up(lg) {
-			padding: 48px 32px;
-		}
-	}
-
-	&-desc {
-		@include font-size($font-size-base);
-		@include media-breakpoint-up(lg) {
-			@include font-size($h2-font-size-lg);
-		}
-	}
-
-	&__banner-text {
-		&-title {
-			@include font-size($h2-font-size);
-			@include media-breakpoint-up(lg) {
-				@include font-size(calc-em(48));
-				&-gap {
-					margin-bottom: calc-em(42.5) !important;
-				}
-			}
 		}
 	}
 }
