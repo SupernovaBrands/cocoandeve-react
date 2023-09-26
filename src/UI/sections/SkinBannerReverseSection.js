@@ -30,7 +30,7 @@ const AccordionPanel = (props) => {
 			<div className="accordion-item border-0">
 				<div className="accordion-header" id="headingThree">
 					<button onClick={() => props.setPanelActive(3)} className="accordion-button youth-revive__banner-text-title youth-revive__banner-text-reverse-caption fw-bold px-0 pb-0 pt-0 mb-g mb-lg-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-					Step 3: Antioxidant Hydrating<br className="d-none d-lg-block" />Milky Toner
+					Step 3: Antioxidant Hydrating <br className="d-none d-lg-block" />Milky Toner
 					</button>
 				</div>
 				<div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionReviveBannerReverse">
@@ -50,7 +50,7 @@ const ReviveBannerReverse = () => {
 			<div className="row youth-revive__banner-text skincare__banner-text-reverse align-items-lg-center">
 				<div className="col-12 col-lg-6 px-2 px-lg-g pe-lg-0 youth-revive__banner-text-content youth-revive__banner-text-reverse-content">
 					<div className="youth-revive__banner-text-wrapper youth-revive__banner-text-reverse-wrapper pt-3 pb-1 py-lg-0 pe-lg-g">
-						<p className="youth-revive__banner-text-reverse-title youth-revive__banner-text-reverse-title-gap fw-bold d-none d-lg-block mb-lg-0">Meet your new<br className="d-none d-lg-block" />'glow-to' daily<br className="d-none d-lg-block" />routine</p>
+						<p className="youth-revive__banner-text-reverse-title fw-bold d-none d-lg-block mb-4">Meet your new<br className="d-none d-lg-block" />'glow-to' daily<br className="d-none d-lg-block" />routine</p>
 						<AccordionPanel setPanelActive={setPanelActive} />
 						{/* <p className="youth-revive__banner-text-reverse-title fw-bold d-none d-lg-block mb-lg-4 youth-revive__banner-text-reverse-title-gap">Meet your new favourite hair routine</p>
 						<p className="youth-revive__banner-text-title youth-revive__banner-text-reverse-sub mb-1 fw-bold mb-lg-2">Step 1: Pro Youth Shampoo</p>

@@ -96,7 +96,7 @@ const ReviveIngredients = () => {
 		}
 	};
 	return (
-		<section className="youth-revive__section skincare__ingredients-wrapper">
+		<section className="youth-revive__section skincare__ingredients-wrapper pb-4">
 			<div className="youth-revive__ingredients skincare__ingredients pt-0">
 				<div className="position-relative px-g">
 					<div className="youth-revive__carousel-control youth-revive__ingredients-control position-absolute top-0">

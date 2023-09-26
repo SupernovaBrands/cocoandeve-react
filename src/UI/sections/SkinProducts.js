@@ -200,7 +200,7 @@ const ProductCard = (props) => {
 						<span className="fw-bold">{data[activeStore].price}</span>
 					</p>
 				</div>
-				<p dangerouslySetInnerHTML={{ __html: data.info }} className="mb-3 youth-revive__products-card-text" />
+				<p dangerouslySetInnerHTML={{ __html: data.info }} className="mb-2 youth-revive__products-card-text" />
 				<a href={`https://www.cocoandeve.com/products/${data.handle}`} className="btn bg-white rounded-pill">Buy now</a>
 			</figcaption>
 		</figure>
@@ -255,7 +255,7 @@ const ReviveProducts = () => {
 					</div>
 				</div>
 				<div className="col-12 col-lg-8 col-lg-product--right">
-					<div className="row flex-nowrap youth-revive__custom-scroll pe-lg-2 pb-2 pb-lg-0" ref={scrollRef} onScroll={onScroll}>
+					<div className="row flex-nowrap youth-revive__custom-scroll pe-lg-2 pb-4 pb-lg-0" ref={scrollRef} onScroll={onScroll}>
 						{PRODUCTS.map((item, i) => (
 							<ProductCard key={i} data={item} cardRef={cardRef} />
 						))}
