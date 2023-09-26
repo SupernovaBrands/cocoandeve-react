@@ -10,7 +10,7 @@ const AccordionPanel = (props) => {
 		<div className="accordion accordion-flush youth-revive__accordion-panel" id="accordionReviveBanner">
 			<div className="accordion-item border-0">
 				<div className="accordion-header" id="headingBenefit1">
-					<button onClick={() => props.setPanelActive(1)} className="accordion-button youth-revive__banner-text-title fw-bold px-0 pb-0 pt-1 mb-1 mb-lg-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBenefitOne" aria-expanded="true" aria-controls="collapseBenefitOne">
+					<button onClick={() => props.setPanelActive(1)} className="accordion-button youth-revive__banner-text-title fw-bold px-0 pb-0 pt-1 mb-1 mb-lg-2 youth-revive__banner-text-title-gap" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBenefitOne" aria-expanded="true" aria-controls="collapseBenefitOne">
 					Introducing our NEW mega-watt skincare collection
 					</button>
 				</div>
