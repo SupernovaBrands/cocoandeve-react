@@ -200,7 +200,7 @@ const ProductCard = (props) => {
 						<span className="fw-bold">{data[activeStore].price}</span>
 					</p>
 				</div>
-				<p dangerouslySetInnerHTML={{ __html: data.info }} className="mb-2 youth-revive__products-card-text" />
+				<p dangerouslySetInnerHTML={{ __html: data.info }} className="mb-2 youth-revive__products-card-text skincare__products-card-text" />
 				<a href={`https://www.cocoandeve.com/products/${data.handle}`} className="btn bg-white rounded-pill">Buy now</a>
 			</figcaption>
 		</figure>

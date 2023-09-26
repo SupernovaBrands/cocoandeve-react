@@ -3,7 +3,7 @@ import { useState } from "react";
 const ReviveBannerReverse = () => {
 	const [panelActive, setPanelActive] = useState(1);
 	return (
-		<section className="youth-revive__section skincare__banner-text-reverse-wrapper pt-2">
+		<section className="youth-revive__section skincare__banner-text-reverse-wrapper pt-1">
 			<div className="row youth-revive__banner-text align-items-lg-center">
 				<div className="col-12 col-lg-6 px-2 px-lg-g pe-lg-0 youth-revive__banner-text-content youth-revive__banner-text-reverse-content">
 					<div className="youth-revive__banner-text-wrapper youth-revive__banner-text-reverse-wrapper pt-4 pb-1 py-lg-0 pe-lg-g">
