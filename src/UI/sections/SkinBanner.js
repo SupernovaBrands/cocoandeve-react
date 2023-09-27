@@ -94,14 +94,14 @@ const BannerText = () => {
 						src='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5085b09d-a1ed-4ebb-9d21-917480e68800/726x'
 						className="w-100" />
 				</picture>
-				<figcaption className="p-0 col-lg-12 mx-lg-auto text-center">
+				<figcaption className="p-0 col-lg-12 mx-lg-auto text-lg-center">
 				Dermatologically-tested, and free from silicones
 				</figcaption>
 			</figure>
 			<figure className={`col-12 col-lg-6 order-lg-1 position-relative text-white mb-0 pe-lg-0 pt-g pt-lg-0 panel__3 ${panelActive === 3 ? '' : 'd-none'}`}>
 				<source type="image/jpeg" media="(min-width: 992px)" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0b1dbf24-d668-462a-ec99-e959ef880700/726x" />
 				<img className="w-100" src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f676c334-9560-45f3-0f0f-ab65dee4e700/828x" />
-				<figcaption className="p-0 col-lg-12 mx-lg-auto text-center">
+				<figcaption className="p-0 col-lg-12 mx-lg-auto text-lg-center">
                 Sourced ethically and responsibly where the welfare
 				</figcaption>
 			</figure>

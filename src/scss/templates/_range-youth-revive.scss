@@ -179,11 +179,12 @@
 	&__banner-text {
 		figcaption {
 			position: absolute;
-			bottom: 35px;
+			bottom: 25px;
 			left: 20px;
 			right: 20px;
 
 			@include media-breakpoint-up(lg) {
+				bottom: 35px;
 				@include font-size($h2-font-size);
 			}
 		}
