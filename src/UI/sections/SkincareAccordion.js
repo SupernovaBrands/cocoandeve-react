@@ -88,11 +88,6 @@ const FaqAccordion = (props) => {
                         text: 'Want to make sure your products are free from silicones and alcohol? You’re in luck, our skincare range has been formulated without them!',
                     },
                     {
-                        id: 14,
-                        title: 'Is the product alcohol free?',
-                        text: 'Want to make sure your products are free from silicones and alcohol? You’re in luck, our skincare range has been formulated without them!',
-                    },
-                    {
                         id: 15,
                         title: 'Is the product suitable for sensitive skin?',
                         text: 'Our Antioxidant Hydrating Milk Toner is designed to be suitable for all skin types. That said, everyone’s skin is unique. If you have particularly sensitive or delicate skin, we encourage a patch test before full use to ensure it’s the perfect fit for you.',

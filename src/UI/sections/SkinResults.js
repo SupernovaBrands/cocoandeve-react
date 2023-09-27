@@ -3,7 +3,7 @@ import { useState } from "react";
 const RESULTS = [
 	{
 		percentage: '86%',
-		info: 'that the routine removed more makeup',
+		info: 'agreed that the routine removed more makeup',
         className: 'col-lg-3',
 	},
 	{
@@ -42,7 +42,7 @@ const SkinResults = () => {
                 {RESULTS.map((a, index) => (
 					<ResultCard key={index} data={a} />
 				))}
-                <p className="skincare__banner-text-desc mb-g mb-lg-2 px-g">*Based on a consumer assessment after the usage of the Seed Oil Cleanser & Fruit Enzyme Cleanser together,<br className="d-none d-lg-block" />conducted by 30 women over a period of 1 week.</p>
+                <p className="skincare__banner-text-desc mb-g mb-lg-2 px-g">*Based on a consumer assessment after the usage of the Seed Oil Cleanser & Fruit Enzyme Cleanser together, <br className="d-none d-lg-block" />conducted by 30 women over a period of 1 week.</p>
             </div>
 		</section>
 	);

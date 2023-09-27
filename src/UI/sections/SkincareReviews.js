@@ -4,7 +4,7 @@ import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
 
 const REVIEW_DATA = [
 	{
-		name: 'Brooke Ayres using:',
+		name: 'Brooke Ayres',
 		text: 'My skin loved these products! Together, they left my skin soft, glowy and supple. I must say, the Seed Oil Cleanser with the Enzyme Cleanser are a beautiful match. They cleansed any makeup and impurities I had on and also provided gentle exfoliation, leaving my skin feeling refreshed!',
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f0117b5b-8b24-4c59-aab7-1db3cb490700/public',
 	},

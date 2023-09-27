@@ -62,27 +62,27 @@ const ReviveBannerReverse = () => {
 				<figure className={`col-12 col-lg-6 position-relative text-white mb-0 ps-lg-0 pt-25 pt-lg-0 ${panelActive === 1 ? '' : 'd-none'}`}>
 					<picture className="d-block w-100">
 						<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/9f12878a-3c20-452a-1c14-61ac8d69d500/828x' media="(min-width: 768px)" type="image/jpeg" />
-						<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2bc8ae5a-e5e5-4020-cadd-36ca49252900/726x' type="image/jpeg" />
+						<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2bc8ae5a-e5e5-4020-cadd-36ca49252900/828x' type="image/jpeg" />
 						<img
-							src='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2bc8ae5a-e5e5-4020-cadd-36ca49252900/726x'
+							src='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2bc8ae5a-e5e5-4020-cadd-36ca49252900/828x'
 							className="w-100" />
 					</picture>
 				</figure>
 				<figure className={`col-12 col-lg-6 position-relative text-white mb-0 ps-lg-0 pt-25 pt-lg-0 ${panelActive === 2 ? '' : 'd-none'}`}>
 					<picture className="d-block w-100">
 						<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1bb3a576-f846-4cf1-b47e-eb5781770300/828x' media="(min-width: 768px)" type="image/jpeg" />
-						<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a327ab3b-080b-4186-ae61-7b8a01317800/726x' type="image/jpeg" />
+						<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a327ab3b-080b-4186-ae61-7b8a01317800/828x' type="image/jpeg" />
 						<img
-							src='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a327ab3b-080b-4186-ae61-7b8a01317800/726x'
+							src='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/a327ab3b-080b-4186-ae61-7b8a01317800/828x'
 							className="w-100" />
 					</picture>
 				</figure>
 				<figure className={`col-12 col-lg-6 position-relative text-white mb-0 ps-lg-0 pt-25 pt-lg-0 ${panelActive === 3 ? '' : 'd-none'}`}>
 					<picture className="d-block w-100">
 						<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/c8d87cf4-8cf3-4d41-3d9f-04c772d26c00/828x' media="(min-width: 768px)" type="image/jpeg" />
-						<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/99f8cf32-183d-4d5a-5f5c-9636a7046900/726x' type="image/jpeg" />
+						<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/99f8cf32-183d-4d5a-5f5c-9636a7046900/828x' type="image/jpeg" />
 						<img
-							src='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/99f8cf32-183d-4d5a-5f5c-9636a7046900/726x'
+							src='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/99f8cf32-183d-4d5a-5f5c-9636a7046900/828x'
 							className="w-100" />
 					</picture>
 				</figure>

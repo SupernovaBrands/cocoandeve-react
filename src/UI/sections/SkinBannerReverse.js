@@ -7,7 +7,7 @@ const ReviveBannerReverse = () => {
 			<div className="row youth-revive__banner-text align-items-lg-center">
 				<div className="col-12 col-lg-6 px-2 px-lg-g pe-lg-0 youth-revive__banner-text-content youth-revive__banner-text-reverse-content">
 					<div className="youth-revive__banner-text-wrapper youth-revive__banner-text-reverse-wrapper pt-4 pb-1 py-lg-0 pe-lg-g">
-						<p className="youth-revive__banner-text-reverse-title fw-bold d-lg-block mb-1">Meet the Power<br className="d-none d-lg-block" />Couple!</p>
+						<p className="youth-revive__banner-text-reverse-title fw-bold d-lg-block mb-1">Meet the Power <br className="d-none d-lg-block" />Couple!</p>
                         <p className="youth-revive__banner-text-desc mb-3 mb-lg-2 p-0">
                         Take your skin-purifying routine to the next <br className="d-lg-none"/>level <br className="d-none d-lg-block"/>with our glow-inducing double-<br className="d-lg-none"/>cleansing duo, <br className="d-none d-lg-block"/>formulated to be doubly effective when used <br className="d-none d-lg-block"/>together.
                         </p>

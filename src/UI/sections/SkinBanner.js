@@ -10,7 +10,7 @@ const AccordionPanel = (props) => {
 		<div className="accordion accordion-flush youth-revive__accordion-panel" id="accordionReviveBanner">
 			<div className="accordion-item border-0">
 				<div className="accordion-header" id="headingBenefit1">
-					<button onClick={() => props.setPanelActive(1)} className="accordion-button youth-revive__banner-text-title fw-bold px-0 pb-0 pt-1 mb-1 mb-lg-2 youth-revive__banner-text-title-gap" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBenefitOne" aria-expanded="true" aria-controls="collapseBenefitOne">
+					<button onClick={() => props.setPanelActive(1)} className="accordion-button youth-revive__banner-text-title fw-bold px-0 pb-0 pt-1 mb-1 mb-lg-2 skincare__banner-text-title-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBenefitOne" aria-expanded="true" aria-controls="collapseBenefitOne">
 					Introducing our NEW mega-watt skincare collection
 					</button>
 				</div>
@@ -79,9 +79,9 @@ const BannerText = () => {
 			<figure className={`col-12 col-lg-6 order-lg-1 position-relative text-white mb-0 pe-lg-0 pt-g pt-lg-0 panel__1 ${panelActive === 1 ? '' : 'd-none'}`}>
 				<picture className="d-block w-100">
 					<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e6ab66bb-7211-4496-e6da-46281b97c100/828x' media="(min-width: 768px)" type="image/jpeg" />
-					<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f4fc8aa0-f8ef-4fbe-b4eb-80db94a29500/726x' type="image/jpeg" />
+					<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f4fc8aa0-f8ef-4fbe-b4eb-80db94a29500/828x' type="image/jpeg" />
 					<img
-						src='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f4fc8aa0-f8ef-4fbe-b4eb-80db94a29500/726x'
+						src='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f4fc8aa0-f8ef-4fbe-b4eb-80db94a29500/828x'
 						className="w-100" />
 				</picture>
 				<figcaption className="p-0 col-lg-12 mx-lg-auto text-lg-center">Experience an unreal glow with our new collection</figcaption>
@@ -89,18 +89,23 @@ const BannerText = () => {
 			<figure className={`col-12 col-lg-6 order-lg-1 position-relative text-white mb-0 pe-lg-0 pt-g pt-lg-0 panel__2 ${panelActive === 2 ? '' : 'd-none'}`}>
 				<picture className="d-block w-100">
 					<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/7e5ed9a9-2a2f-4f27-4347-b3b454505000/828x' media="(min-width: 768px)" type="image/jpeg" />
-					<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5085b09d-a1ed-4ebb-9d21-917480e68800/726x' type="image/jpeg" />
+					<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5085b09d-a1ed-4ebb-9d21-917480e68800/828x' type="image/jpeg" />
 					<img
-						src='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5085b09d-a1ed-4ebb-9d21-917480e68800/726x'
+						src='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/5085b09d-a1ed-4ebb-9d21-917480e68800/828x'
 						className="w-100" />
 				</picture>
 				<figcaption className="p-0 col-lg-12 mx-lg-auto text-lg-center">
-				Dermatologically-tested, and free from silicones
+				Dermatologically tested, and free from silicones
 				</figcaption>
 			</figure>
 			<figure className={`col-12 col-lg-6 order-lg-1 position-relative text-white mb-0 pe-lg-0 pt-g pt-lg-0 panel__3 ${panelActive === 3 ? '' : 'd-none'}`}>
-				<source type="image/jpeg" media="(min-width: 992px)" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0b1dbf24-d668-462a-ec99-e959ef880700/726x" />
-				<img className="w-100" src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f676c334-9560-45f3-0f0f-ab65dee4e700/828x" />
+				<picture className="d-block w-100">
+					<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0b1dbf24-d668-462a-ec99-e959ef880700/828x' media="(min-width: 768px)" type="image/jpeg" />
+					<source srcSet='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/f676c334-9560-45f3-0f0f-ab65dee4e700/828x' type="image/jpeg" />
+					<img
+						src='https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0b1dbf24-d668-462a-ec99-e959ef880700/828x'
+						className="w-100" />
+				</picture>
 				<figcaption className="p-0 col-lg-12 mx-lg-auto text-lg-center">
                 Sourced ethically and responsibly where the welfare
 				</figcaption>

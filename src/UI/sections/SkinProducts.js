@@ -8,32 +8,32 @@ const PRODUCTS = [
 		info: 'An oil-based cleanser, expertly formulated to work as the first step in your routine.',
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/b4393b17-4c4e-4ba2-373c-f00f66ad3800/public',
 		us: {
-			price: '$28.00',
+			price: '$28',
 			title: 'Seed Oil Cleanser',
 		},
 		ca: {
-			price: '$38.00',
+			price: '$38',
 		},
 		uk: {
-			price: '£21.00',
+			price: '£21',
 		},
 		eu: {
-			price: '25.00€',
+			price: '25€',
 		},
 		au: {
-			price: '$42.00',
+			price: '$42',
 		},
 		int: {
-			price: '$38.00',
+			price: '$38',
 		},
 		my: {
 			price: 'RM123',
 		},
 		de: {
-			price: '25,00€',
+			price: '25€',
 		},
 		fr: {
-			price: '25,00€',
+			price: '25€',
 			title: 'Seed Oil Cleanser',
 		},
 	},
@@ -42,32 +42,32 @@ const PRODUCTS = [
 		info: 'A water-based cleanser enriched with fruit enzymes - the perfect second step in your routine.',
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6332c005-90fa-4028-2105-c74f2a7ae600/public',
 		us: {
-			price: '$25.00',
+			price: '$25',
 			title: 'Fruit Enzyme Cleanser',
 		},
 		ca: {
-			price: '$33.00',
+			price: '$33',
 		},
 		uk: {
-			price: '£19.00',
+			price: '£19',
 		},
 		eu: {
-			price: '24.00€',
+			price: '24€',
 		},
 		au: {
-			price: '$35.00',
+			price: '$35',
 		},
 		int: {
-			price: '$33.00',
+			price: '$33',
 		},
 		my: {
 			price: 'RM117',
 		},
 		de: {
-			price: '24,00€',
+			price: '24€',
 		},
 		fr: {
-			price: '24,00€',
+			price: '24€',
 			title: 'Fruit Enzyme Cleanser',
 		},
 	},
@@ -76,32 +76,32 @@ const PRODUCTS = [
 		info: 'A super hydrating milky toner that perfectly preps the skin for the rest of your regime.',
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/59333e95-7e41-4dd7-7a76-2c43af5c3400/public',
 		us: {
-			price: '$36.00',
+			price: '$36',
 			title: 'Antioxidant Milky Toner',
 		},
 		ca: {
-			price: '$44.00',
+			price: '$44',
 		},
 		uk: {
-			price: '£26.00',
+			price: '£26',
 		},
 		eu: {
-			price: '33.00€',
+			price: '33€',
 		},
 		au: {
-			price: '$49.00',
+			price: '$49',
 		},
 		int: {
-			price: '$45.00',
+			price: '$45',
 		},
 		my: {
 			price: 'RM158',
 		},
 		de: {
-			price: '33,00€',
+			price: '33€',
 		},
 		fr: {
-			price: '33,00€',
+			price: '33€',
 			title: 'Antioxidant Hydrating Milky Toner',
 		},
 	},
@@ -110,33 +110,42 @@ const PRODUCTS = [
 		info: `Your ready-made, two-step routine for the best cleanse you'll ever have!`,
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2df76d57-a36a-4d04-34fc-2fd091a60e00/public',
 		us: {
-			price: '$42.00',
+			price: '$42',
+			crossedPrice: '$53',
 			title: 'Double Cleanser Set',
 		},
 		ca: {
-			price: '$57.00',
+			price: '$57',
+			crossedPrice: '$71',
 		},
 		uk: {
-			price: '£32.00',
+			price: '£32',
+			crossedPrice: '£40',
 		},
 		eu: {
-			price: '39.00€',
+			price: '39€',
+			crossedPrice: '49€',
 		},
 		au: {
-			price: '$62.00',
+			price: '$61',
+			crossedPrice: '$77',
 		},
 		int: {
-			price: '$57.00',
+			price: '$57',
+			crossedPrice: '$71',
 		},
 		my: {
 			price: 'RM192',
+			crossedPrice: 'RM240',
 		},
 		de: {
-			price: '39,00€',
+			price: '39€',
+			crossedPrice: '49€',
 		},
 		fr: {
-			price: '39,00€',
+			price: '39€',
 			title: 'Double Cleanser Set',
+			crossedPrice: '49€',
 		},
 	},
 	{
@@ -144,32 +153,41 @@ const PRODUCTS = [
 		info: 'A trio of cleansing and nourishing skincare staples to reveal your glow every day.',
 		src: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/832b88a6-8182-45fb-f4dc-c43f74d91200/public',
 		us: {
-			price: '$71.00',
+			price: '$71',
+			crossedPrice: '$89',
 			title: 'Glow Getter Set',
 		},
 		ca: {
-			price: '$92.00',
+			price: '$92',
+			crossedPrice: '$115',
 		},
 		uk: {
-			price: '£53.00',
+			price: '£53',
+			crossedPrice: '£66',
 		},
 		eu: {
-			price: '66.00€',
+			price: '66€',
+			crossedPrice: '82€',
 		},
 		au: {
-			price: '$101.00',
+			price: '$101',
+			crossedPrice: '$126',
 		},
 		int: {
-			price: '$93.00',
+			price: '$93',
+			crossedPrice: '$116',
 		},
 		my: {
 			price: 'RM318',
+			crossedPrice: 'RM398',
 		},
 		de: {
-			price: '66,00€',
+			price: '66€',
+			crossedPrice: '82€',
 		},
 		fr: {
-			price: '66,00€',
+			price: '66€',
+			crossedPrice: '82€',
 			title: 'Glow Getter Set',
 		},
 	},
