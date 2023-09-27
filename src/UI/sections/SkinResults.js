@@ -28,7 +28,7 @@ const ResultCard = (props) => {
 		<div className={`col-6 ${props.data.className} position-relative mb-1 mb-lg-3`}>
             <div className="skincare__result-card h-100">
                 <p className="skincare__banner-text-title fw-bold d-lg-block mb-1">{props.data.percentage}</p>
-                <p className="skincare__banner-text-desc mb-g mb-lg-2 p-01">{props.data.info}</p>
+                <p className="skincare__banner-text-desc-info mb-g mb-lg-2 p-01 font-size-md">{props.data.info}</p>
             </div>
 		</div>
 	);
