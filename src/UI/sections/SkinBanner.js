@@ -107,7 +107,7 @@ const BannerText = () => {
 						className="w-100" />
 				</picture>
 				<figcaption className="p-0 col-lg-12 mx-lg-auto text-lg-center">
-                Sourced ethically and responsibly where the welfare
+                Sourced ethically and responsibly
 				</figcaption>
 			</figure>
 		</section>
