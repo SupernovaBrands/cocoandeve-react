@@ -5,7 +5,7 @@ import TimerBar from './TimerBar';
 const Header = (props) => {
   const isTanAmazon = window.location.pathname === '/range-tan-amazon/' || window.location.pathname === '/range-tan-amazon';
   const isHairAmazon = window.location.pathname === '/range-hair-amazon/' || window.location.pathname === '/range-hair-amazon';
-  const isYR = window.location.pathname == '/range-youth-revive/'
+  const isYR = window.location.pathname == '/range-youth-revive/' || window.location.pathname == '/range-skincare/'
   const [searchParams] = useSearchParams();
   const utmStore = searchParams.get('utm_store');
   let LOGO_URL = 'https://www.cocoandeve.com';

@@ -179,11 +179,12 @@
 	&__banner-text {
 		figcaption {
 			position: absolute;
-			bottom: 35px;
+			bottom: 25px;
 			left: 20px;
 			right: 20px;
 
 			@include media-breakpoint-up(lg) {
+				bottom: 35px;
 				@include font-size($h2-font-size);
 			}
 		}
@@ -236,6 +237,7 @@
 			@include font-size($h2-font-size);
 			@include media-breakpoint-up(lg) {
 				@include font-size(calc-em(48));
+				line-height: 48px;
 				&-gap {
 					margin-bottom: calc-em(42.5) !important;
 				}
@@ -264,6 +266,7 @@
 			bottom: 45px;
 			@include font-size($h2-font-size);
 			min-height: calc-em(48);
+			line-height: 24px;
 		}
 
 		p {
@@ -342,9 +345,16 @@
 		}
 	}
 
+	&__product-title {
+		@include font-size(calc-em(20));
+	}
+
 	@include media-breakpoint-up(lg) {
 		&__accordion-title {
 			@include font-size(calc-em(48));
+		}
+		&__product-title {
+			@include font-size(calc-em(32));
 		}
 	}
 
@@ -390,11 +400,11 @@
 		.youth-revive__banner-text {
 			order: 3;
 		}
-		.youth-revive__ingredients-wrapper {
+		.youth-revive__ingredients-wrapper, .skincare__banner-text-reverse-wrapper, .skincare__results {
 			order: 4;
 		}
 
-		.youth-revive__reviews {
+		.youth-revive__reviews, .skincare__ingredients-wrapper {
 			order: 5;
 		}
 		.youth-revive__banner-text-reverse-wrapper {
@@ -403,7 +413,7 @@
 		.youth-revive__routine {
 			order: 7;
 		}
-		.youth-revive__articles {
+		.youth-revive__articles, .skincare__reviews {
 			order: 8;
 		}
 		.youth-revive__accordion {
@@ -469,6 +479,75 @@
 
 		&--right {
 			@include make-col(8.25, 12);
+		}
+	}
+}
+
+.skincare {
+	&__ingredients {
+		background-color: #ffffff;
+	}
+
+	@include media-breakpoint-up(lg) {
+		&__banner {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+	}
+
+	&__products {
+		&-card {
+			&-title {
+				min-height: 40px;
+				@include media-breakpoint-up(lg) {
+					min-height: 36px;
+				}
+			}
+		}
+		&-card-text {
+			line-height: 16px;
+		}
+	}
+
+	&__banner-text-reverse {
+		background: linear-gradient(47.65deg, #FDEFB0 5.23%, #FFC5F6 94.22%);
+	}
+
+	&__banner-text-title-top {
+		padding-top: 2em!important;
+	}
+
+	&__result-card {
+		background: linear-gradient(47.65deg, #FDEFB0 5.23%, #FFC5F6 94.22%);
+		border-radius: 16px;
+		padding: 12px 15px;
+		@include media-breakpoint-up(lg) {
+			padding: 22px 24px;
+		}
+	}
+
+	&__banner-text {
+		&-title {
+			@include font-size(calc-em(32));
+			@include media-breakpoint-up(lg) {
+				@include font-size(calc-em(48));
+				&-gap {
+					margin-bottom: calc-em(42.5) !important;
+				}
+			}
+		}
+
+		&-desc {
+			line-height: 20px;
+			@include font-size(calc-em(14));
+			@include media-breakpoint-up(lg) {
+				@include font-size($h2-font-size-lg);
+			}
+		}
+
+		&-desc-info {
+			line-height: 20px;
+			@include font-size(calc-em(16));
 		}
 	}
 }
