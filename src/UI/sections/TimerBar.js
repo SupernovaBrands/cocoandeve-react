@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const TimerBar = (props) => {
 
 	const START = '2022-12-19T11:00:00.000Z';
-	const END = '2023-07-13T00:00:00.000Z';
+	const END = '2023-10-12T00:00:00.000Z';
 
 	const [showTimer, setShowTimer] = useState(false);
 	const [stateDays, setStateDays] = useState(0);
