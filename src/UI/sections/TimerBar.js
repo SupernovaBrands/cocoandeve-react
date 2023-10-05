@@ -80,7 +80,7 @@ const TimerBar = (props) => {
 		<div class="announcement-bar announcement-bar__timer w-100 py-1 bg-primary-light">
 			<a href={props.url} class="text-decoration-none">
 				<div class="container text-center text-dark d-flex align-items-center justify-content-between justify-content-lg-center">
-					<span class="announcement-bar__timer__title d-block d-lg-inline me-lg-4 mb-0 fw-normal text-start">Prime Day ends in:</span>
+					<span class="announcement-bar__timer__title d-block d-lg-inline me-lg-4 mb-0 fw-normal text-start">Prime Deal ends in:</span>
 					<ul class="list-inline mb-0 fw-bold">
 						{stateDays > 0 && (
 							<li class="list-inline-item position-relative me-g mb-0 fw-normal">

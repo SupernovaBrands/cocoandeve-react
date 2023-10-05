@@ -283,6 +283,37 @@ const productList = {
             comparePrice: 'RM388.00',
         },
     },
+    'tan-activating-body-oil-spf30': {
+        us: {
+            price: '$28.00',
+            title: 'Tan Boosting Anti-Aging Body Oil SPF30+',
+        },
+        ca: {
+            price: '$28.00',
+        },
+        uk: {
+            price: '£28.00',
+            title: 'Tan Boosting Anti-Aging Body Oil SPF30',
+        },
+        eu: {
+            price: '€33,00',
+        },
+        au: {
+            price: '$81.70',
+        },
+        int: {
+            price: 'SG$44.00',
+        },
+        de: {
+            price: '€33,00',
+        },
+        fr: {
+            price: '€33,0',
+        },
+        my: {
+            price: 'RM139.00',
+        },
+    },
     'glowy-face-tan-set': {
         us: {
             price: '$62.20',

@@ -232,7 +232,10 @@ const ProductForm = (props) => {
                         )}
 
                     </ul>
-                    <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/bbbd22d0-6618-40f5-5629-a065ae4c3300/828x" class="order-lg-2 mb-2" />
+                    <picture className="order-lg-2 mb-2">
+                        <source media="(min-width:992px)"  type="image/jpeg" srcSet="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/559b0538-bc70-4a30-9fb7-8a0cfda3e300/1140x" />
+                        <img src="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/559b0538-bc70-4a30-9fb7-8a0cfda3e300/828x" className="w-100" />
+                    </picture>
                     <div className='fixed-bottom d-lg-none mx-g mb-2 product-swatch-mobile'>
                         <button className='d-flex btn btn-primary btn-lg px-2 w-100' onClick={onAddToCart}>
                             <span className="text-white w-100 m-0 d-block text-start" >Shop now  on Amazon</span>
