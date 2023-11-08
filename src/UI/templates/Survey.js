@@ -558,9 +558,9 @@ const Survey = () => {
                                                 </p>
                                                 <p className="mb-0"><strong>I’m in love with this!</strong></p>
                                                 <p className="fst-italic">It gives me a unique glow to the skin and looks really natural!</p>
-    
+
                                                 <strong className="d-block">Kristie</strong>
-                                                <span className="font-size-sm">Shampoo & Conditioner Set</span>
+                                                <span className="font-size-sm">Antioxidant Face Tanning Micromist</span>
                                             </div>
                                         </div>
                                     </div>
