@@ -401,7 +401,12 @@ const Survey = () => {
     }
 
     const skipForm = () => {
-        viewMyResult();
+        const stores = ['dev.cocoandeve.com', 'ca.cocoandeve.com', 'de.cocoandeve.com', 'eu.cocoandeve.com', 'uk.cocoandeve.com', 'us.cocoandeve.com', 'www.cocoandeve.com', 'fr.cocoandeve.com']
+        if (stores.includes(selectedSite)) {
+            setSubmitted(true);
+        } else {
+            viewMyResult();
+        }
     }
 
     const postIframeHeight = (key, val) => {
@@ -512,7 +517,7 @@ const Survey = () => {
                     }
 
                     { currentPosition === 'finished' && !submitted && additionalStep && !redirect && (
-                        <EmailForm lang={lang} onSubmit={onSubmit} viewMyResult={skipForm} abTest={abTest} />
+                        <EmailForm lang={lang} onSubmit={onSubmit} viewMyResult={viewMyResult} abTest={abTest} />
                     )
                     }
 
