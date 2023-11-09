@@ -401,12 +401,13 @@ const Survey = () => {
     }
 
     const skipForm = () => {
-        const stores = ['dev.cocoandeve.com', 'ca.cocoandeve.com', 'de.cocoandeve.com', 'eu.cocoandeve.com', 'uk.cocoandeve.com', 'us.cocoandeve.com', 'www.cocoandeve.com', 'fr.cocoandeve.com']
-        if (stores.includes(selectedSite)) {
-            setSubmitted(true);
-        } else {
-            viewMyResult();
-        }
+        // const stores = ['dev.cocoandeve.com', 'ca.cocoandeve.com', 'de.cocoandeve.com', 'eu.cocoandeve.com', 'uk.cocoandeve.com', 'us.cocoandeve.com', 'www.cocoandeve.com', 'fr.cocoandeve.com']
+        // if (stores.includes(selectedSite)) {
+        //     setSubmitted(true);
+        // } else {
+        //     viewMyResult();
+        // }
+        viewMyResult();
     }
 
     const postIframeHeight = (key, val) => {
@@ -558,9 +559,9 @@ const Survey = () => {
                                                 </p>
                                                 <p className="mb-0"><strong>I’m in love with this!</strong></p>
                                                 <p className="fst-italic">It gives me a unique glow to the skin and looks really natural!</p>
-
+    
                                                 <strong className="d-block">Kristie</strong>
-                                                <span className="font-size-sm">Antioxidant Face Tanning Micromist</span>
+                                                <span className="font-size-sm">Shampoo & Conditioner Set</span>
                                             </div>
                                         </div>
                                     </div>
