@@ -107,7 +107,7 @@ const Survey = () => {
     const [email, setEmail] = useState('');
     const [lastPosition, setLastPosition] = useState(localLastPos);
     const [questionSkip, setQuestionSkip] = useState(localQuestionSkip);
-    const additionalStep = true;
+    const additionalStep = false; // set true again later once BFCM done
 
     let lang = 'en';
 
