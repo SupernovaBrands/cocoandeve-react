@@ -1307,31 +1307,31 @@ const bannerSection = {
         us: {
             desktop: {
                 // webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2c87251b-3ddd-4b71-862c-2b5094fbe600/public',
-				jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/3d671b11-55e7-4738-a33a-c1790cc7b400/public'
+				jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6d221966-645e-49b3-63b3-8a3deca83c00/public'
             },
             mobile: {
                 // webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/3983c708-152f-447f-4416-5f5152c8d400/828x',
-				jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0661cb3c-70db-4f3b-a43b-a3544b05f000/828x'
+				jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/057b6abe-41ec-4de6-1b86-008ebce8e700/828x'
             }
         },
         ca: {
             desktop: {
                 // webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2c87251b-3ddd-4b71-862c-2b5094fbe600/public',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/3d671b11-55e7-4738-a33a-c1790cc7b400/public',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6d221966-645e-49b3-63b3-8a3deca83c00/public',
             },
             mobile: {
                 // webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/3983c708-152f-447f-4416-5f5152c8d400/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0661cb3c-70db-4f3b-a43b-a3544b05f000/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/057b6abe-41ec-4de6-1b86-008ebce8e700/828x',
             }
         },
         uk: {
             desktop: {
                 // webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/2c87251b-3ddd-4b71-862c-2b5094fbe600/public',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/3d671b11-55e7-4738-a33a-c1790cc7b400/public',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6d221966-645e-49b3-63b3-8a3deca83c00/public',
             },
             mobile: {
                 // webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/3983c708-152f-447f-4416-5f5152c8d400/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0661cb3c-70db-4f3b-a43b-a3544b05f000/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/057b6abe-41ec-4de6-1b86-008ebce8e700/828x',
             }
         }
     },
@@ -1339,31 +1339,31 @@ const bannerSection = {
         us: {
             desktop: {
                 // webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e28f6278-cf05-4f27-c9c4-4ee518538a00/2280x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/933f7325-9b3f-421b-effb-fbd41b3f4c00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6d221966-645e-49b3-63b3-8a3deca83c00/2280x',
             },
             mobile: {
                 // webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0421efc6-c39b-4813-d52c-861506881600/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0066bc7b-0be7-43a2-5094-92d616116200/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/057b6abe-41ec-4de6-1b86-008ebce8e700/828x',
             }
         },
         ca: {
             desktop: {
                 // webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e28f6278-cf05-4f27-c9c4-4ee518538a00/2280x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/933f7325-9b3f-421b-effb-fbd41b3f4c00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6d221966-645e-49b3-63b3-8a3deca83c00/2280x',
             },
             mobile: {
                 // webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0421efc6-c39b-4813-d52c-861506881600/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0066bc7b-0be7-43a2-5094-92d616116200/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/057b6abe-41ec-4de6-1b86-008ebce8e700/828x',
             }
         },
         uk: {
             desktop: {
                 // webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/e28f6278-cf05-4f27-c9c4-4ee518538a00/2280x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/933f7325-9b3f-421b-effb-fbd41b3f4c00/2280x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/6d221966-645e-49b3-63b3-8a3deca83c00/2280x',
             },
             mobile: {
                 // webpBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0421efc6-c39b-4813-d52c-861506881600/828x',
-                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/0066bc7b-0be7-43a2-5094-92d616116200/828x',
+                jpegBanner: 'https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/057b6abe-41ec-4de6-1b86-008ebce8e700/828x',
             }
         }
     },
