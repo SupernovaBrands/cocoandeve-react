@@ -742,16 +742,6 @@ const PRODUCTS_TAN_AMAZON_UK = [
     {
         carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
         content: <ProductCard
-            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8c2d8c7b-46d4-4303-9ae6-106d6e25d800/828x"
-            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1a30deb4-1d70-4ad8-af43-15b446aaae00/828x"
-            externalUrl='https://www.amazon.co.uk/dp/B091CF3JVM?maas=maas_adg_CC13AEB22B274A91DB2BCCB2E9DE3092_afap_abs&ref_=aa_maas&tag=maas'
-            handle='bronzing-self-tanner-drops'
-            ctaText='Shop on Amazon'
-            externalPrice='£22' />
-    },
-    {
-        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
-        content: <ProductCard
             img="../images/Featured_BronzingFoam_532x.jpg"
             comImg="../compressed_images/Featured_BronzingFoam_532x.webp"
             externalUrl='https://www.amazon.co.uk/dp/B07Z53CNBS?maas=maas_adg_23731EDEA691F1F1C4B2B94B758963F9_afap_abs&ref_=aa_maas&tag=maas'
@@ -792,6 +782,26 @@ const PRODUCTS_TAN_AMAZON_UK = [
             externalPrice='£56'
             externalCompare='£75' />
     },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="../images/bodyoilpdp_532x.jpg"
+            comImg="../compressed_images/bodyoilpdp_532x.webp"
+            externalUrl='https://www.amazon.co.uk/dp/B0C5MG4CH9?maas=maas_adg_308CC8A741FB2DD646883DF0E261D2CF_afap_abs&ref_=aa_maas&tag=maas'
+            handle='tan-activating-body-oil-spf30'
+            ctaText='Shop on Amazon'
+            externalPrice='£28' />
+    },
+    {
+        carouselItemClass: 'carousel-item col-9 col-md-4 product-card text-center',
+        content: <ProductCard
+            img="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/8c2d8c7b-46d4-4303-9ae6-106d6e25d800/828x"
+            comImg="https://imagedelivery.net/ghVX8djKS3R8-n0oGeWHEA/1a30deb4-1d70-4ad8-af43-15b446aaae00/828x"
+            externalUrl='https://www.amazon.co.uk/dp/B091CF3JVM?maas=maas_adg_CC13AEB22B274A91DB2BCCB2E9DE3092_afap_abs&ref_=aa_maas&tag=maas'
+            handle='bronzing-self-tanner-drops'
+            ctaText='Shop on Amazon'
+            externalPrice='£22' />
+    }
 ];
 
 const PRODUCTS_TAN_AMAZON_CA = [

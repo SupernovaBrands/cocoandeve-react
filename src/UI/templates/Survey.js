@@ -107,7 +107,7 @@ const Survey = () => {
     const [email, setEmail] = useState('');
     const [lastPosition, setLastPosition] = useState(localLastPos);
     const [questionSkip, setQuestionSkip] = useState(localQuestionSkip);
-    const additionalStep = true;
+    const additionalStep = false; // set true again later once BFCM done
 
     let lang = 'en';
 
@@ -517,7 +517,7 @@ const Survey = () => {
                     }
 
                     { currentPosition === 'finished' && !submitted && additionalStep && !redirect && (
-                        <EmailForm lang={lang} onSubmit={onSubmit} viewMyResult={skipForm} abTest={abTest} />
+                        <EmailForm lang={lang} onSubmit={onSubmit} viewMyResult={viewMyResult} abTest={abTest} />
                     )
                     }
 
@@ -558,9 +558,9 @@ const Survey = () => {
                                                 </p>
                                                 <p className="mb-0"><strong>I’m in love with this!</strong></p>
                                                 <p className="fst-italic">It gives me a unique glow to the skin and looks really natural!</p>
-    
+
                                                 <strong className="d-block">Kristie</strong>
-                                                <span className="font-size-sm">Shampoo & Conditioner Set</span>
+                                                <span className="font-size-sm">Antioxidant Face Tanning Micromist</span>
                                             </div>
                                         </div>
                                     </div>

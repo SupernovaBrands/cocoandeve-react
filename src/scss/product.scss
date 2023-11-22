@@ -1,4 +1,4 @@
-// [ProductPage] 
+// [ProductPage]
 @import '_core';
 
 @import "~bootstrap/scss/functions";
@@ -14,6 +14,7 @@
 @import "~bootstrap/scss/transitions";
 @import "~bootstrap/scss/accordion";
 @import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/type";
 
 @import "~bootstrap/scss/utilities/api";
 
@@ -21,6 +22,8 @@
 @import 'core/type';
 @import 'core/grid';
 @import 'core/utilities';
+
+@import 'common';
 
 @import 'components/svgs';
 @import 'components/carousel';
