@@ -1,6 +1,16 @@
 .announcement-bar {
     padding: calc-em(9.5) 0;
 
+    a {
+		color: white;
+		text-decoration: none;
+        text-transform: uppercase;
+	}
+
+	&__timer ul {
+        border-bottom: 2px solid #fff;
+    }
+
     &__timer {
 
         &__title {
