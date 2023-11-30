@@ -107,7 +107,7 @@ const Survey = () => {
     const [email, setEmail] = useState('');
     const [lastPosition, setLastPosition] = useState(localLastPos);
     const [questionSkip, setQuestionSkip] = useState(localQuestionSkip);
-    const additionalStep = false; // set true again later once BFCM done
+    const additionalStep = true;
 
     let lang = 'en';
 
@@ -197,7 +197,7 @@ const Survey = () => {
             if (thirdAnswered === 2) {
                 sku = 'CE0000036040'; // foam dark
                 if (['eu.cocoandeve.com', 'de.cocoandeve.com', 'fr.cocoandeve.com'].includes(site)) {
-                    sku = 'CE0002732020';
+                    sku = 'CE0000036040';
                 }
                 if (['my.cocoandeve.com'].includes(site)) {
                     sku = 'CE0000032040';

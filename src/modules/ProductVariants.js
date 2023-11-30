@@ -274,7 +274,7 @@ const ProductVariants = {
     {
       "id": 5748176486565,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-mousse",
-      "sku": "CE0002732020"
+      "sku": "CE0000036040"
     },
     {
       "id": 5748176486565,
@@ -346,7 +346,7 @@ const ProductVariants = {
     {
       "id": 3686774145108,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-mousse",
-      "sku": "CE0002732020"
+      "sku": "CE0000036040"
     },
     {
       "id": 3686774145108,
@@ -418,7 +418,7 @@ const ProductVariants = {
     {
       "id": 6858547069112,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-mousse",
-      "sku": "CE0002732020"
+      "sku": "CE0000036040"
     },
     {
       "id": 6858547069112,
