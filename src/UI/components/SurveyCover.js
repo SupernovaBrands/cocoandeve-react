@@ -8,6 +8,7 @@ const SurveyCover = (props) => {
     if (language && ['en','de','fr'].includes(language)) {
         lang = language;
     }
+	const usSite = props.selectedSite === 'us.cocoandeve.com' || props.selectedSite === 'www.cocoandeve.com' || props.selectedSite === 'dev.cocoandeve.com';
 	return (
 		<figure className="col-12 position-relative survey--variant mb-0">
 			<picture className="d-block">
@@ -15,7 +16,10 @@ const SurveyCover = (props) => {
 				<img className="w-100" loading='lazy' src="https://cdn.shopify.com/s/files/1/0286/1327/9779/files/quiz-lp-mb_v2_828x705_crop_center.jpg?v=1686043128" alt="Tan Variants"/>
 			</picture>
 			<figcaption className="text-center text-lg-start">
-				<h1 className="mb-1">{Translations[lang].heading}</h1>
+				<h1 className="mb-1">
+					{usSite && ('Find your true colour match in 90 seconds!')}
+					{!usSite && Translations[lang].heading}
+				</h1>
 				<p className="mb-g mb-lg-4 pe-lg-3">{Translations[lang].subheading}</p>
 				<button className="btn btn-lg btn-primary rounded-lg px-3" onClick={() => props.startQuiz()}>{Translations[lang].btn.start}</button>
 			</figcaption>

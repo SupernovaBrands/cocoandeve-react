@@ -458,7 +458,7 @@ const Survey = () => {
             <div className={`${currentPosition === 'start' ? 'cover' : ''} container container--survey ${currentPosition === 'start' ? 'cover--full' : ''}`}>
                 <div className="row justify-content-center align-items-center survey-content">
                     { currentPosition === 'start' && (
-                        <SurveyCover startQuiz={startQuiz} />
+                        <SurveyCover startQuiz={startQuiz} selectedSite={selectedSite} />
                     ) }
 
                     { currentPosition !== 'start' && currentPosition !== 'finished' && (
