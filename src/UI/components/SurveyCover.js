@@ -17,7 +17,7 @@ const SurveyCover = (props) => {
 			</picture>
 			<figcaption className="text-center text-lg-start">
 				<h1 className="mb-1">
-					{usSite && ('Find your true colour match in 90 seconds!')}
+					{usSite && ('Find your true color match in 90 seconds!')}
 					{!usSite && Translations[lang].heading}
 				</h1>
 				<p className="mb-g mb-lg-4 pe-lg-3">{Translations[lang].subheading}</p>
