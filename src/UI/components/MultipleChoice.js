@@ -30,9 +30,9 @@ const MultipleChoice = (props) => {
     const clearOther = () => {
         let currentItems = [...selectedItems];
         currentItems = currentItems.filter((item,index)=> !item.includes('other:'))
+        setDisable(currentItems.length === 0);
         setSelectedItems(currentItems);
         answerAction(currentItems);
-        setDisable(currentItems.length === 0);
     }
 
     const updateItems = (text, disableAll = false) => {
