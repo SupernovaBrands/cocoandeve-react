@@ -32,6 +32,7 @@ const MultipleChoice = (props) => {
         currentItems = currentItems.filter((item,index)=> !item.includes('other:'))
         setSelectedItems(currentItems);
         answerAction(currentItems);
+        setDisable(currentItems.length === 0);
     }
 
     const updateItems = (text, disableAll = false) => {
@@ -63,7 +64,8 @@ const MultipleChoice = (props) => {
                 currentItems.push(text);
             }
         }
-        setDisable(false);
+
+        setDisable(currentItems.length === 0);
         setSelectedItems(currentItems);
         answerAction(currentItems);
     };
