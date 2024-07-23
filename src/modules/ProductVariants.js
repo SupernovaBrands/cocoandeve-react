@@ -1,6 +1,16 @@
 const ProductVariants = {
   "dev.cocoandeve.com": [
     {
+      "id": 6955368054819,
+      "product_handle": "anti-aging-tanning-serum",
+      "sku": "CE0004122020"
+    },
+    {
+      "id": 6803514687523,
+      "product_handle": "tan-activating-body-oil-spf",
+      "sku": "CE0001992020"
+    },
+    {
       "id": 4543113592867,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
@@ -92,6 +102,16 @@ const ProductVariants = {
     }
   ],
   "au.cocoandeve.com": [
+    {
+      "id": 7299675717686,
+      "product_handle": "anti-aging-tanning-serum",
+      "sku": "CE0004122020"
+    },
+    {
+      "id": 6936709988406,
+      "product_handle": "tan-activating-body-oil-spf",
+      "sku": "CE0001992020"
+    },
     {
       "id": 2251503566902,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
@@ -185,6 +205,16 @@ const ProductVariants = {
   ],
   "ca.cocoandeve.com": [
     {
+      "id": 7405748256821,
+      "product_handle": "anti-aging-tanning-serum",
+      "sku": "CE0004122020"
+    },
+    {
+      "id": 7174695288885,
+      "product_handle": "tan-activating-body-oil-spf",
+      "sku": "CE0001992020"
+    },
+    {
       "id": 3765691187253,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
@@ -256,6 +286,16 @@ const ProductVariants = {
     }
   ],
   "de.cocoandeve.com": [
+    {
+      "id": 0,
+      "product_handle": "anti-aging-tanning-serum",
+      "sku": "CE0004122020"
+    },
+    {
+      "id": 8172332220581,
+      "product_handle": "tan-activating-body-oil-spf",
+      "sku": "CE0001992020"
+    },
     {
       "id": 5748176650405,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
@@ -329,6 +369,16 @@ const ProductVariants = {
   ],
   "eu.cocoandeve.com": [
     {
+      "id": 8984359534932,
+      "product_handle": "anti-aging-tanning-serum",
+      "sku": "CE0004122020"
+    },
+    {
+      "id": 7777872249030,
+      "product_handle": "tan-activating-body-oil-spf",
+      "sku": "CE0001992020"
+    },
+    {
       "id": 3686774374484,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
@@ -400,6 +450,16 @@ const ProductVariants = {
     }
   ],
   "fr.cocoandeve.com": [
+    {
+      "id": 0,
+      "product_handle": "anti-aging-tanning-serum",
+      "sku": "CE0004122020"
+    },
+    {
+      "id": 0,
+      "product_handle": "tan-activating-body-oil-spf",
+      "sku": "CE0001992020"
+    },
     {
       "id": 6858547167416,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
@@ -473,6 +533,16 @@ const ProductVariants = {
   ],
   "int.cocoandeve.com": [
     {
+      "id": 7261059874925,
+      "product_handle": "anti-aging-tanning-serum",
+      "sku": "CE0004122020"
+    },
+    {
+      "id": 6991280504941,
+      "product_handle": "tan-activating-body-oil-spf",
+      "sku": "CE0001992020"
+    },
+    {
       "id": 3963752939629,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
@@ -544,6 +614,16 @@ const ProductVariants = {
     }
   ],
   "uk.cocoandeve.com": [
+    {
+      "id": 7051075747917,
+      "product_handle": "anti-aging-tanning-serum",
+      "sku": "CE0004122020"
+    },
+    {
+      "id": 6859969036365,
+      "product_handle": "tan-activating-body-oil-spf",
+      "sku": "CE0001992020"
+    },
     {
       "id": 3680558776397,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
@@ -617,6 +697,16 @@ const ProductVariants = {
   ],
   "us.cocoandeve.com": [
     {
+      "id": 6906141147200,
+      "product_handle": "anti-aging-tanning-serum",
+      "sku": "CE0004122020"
+    },
+    {
+      "id": 6719477350464,
+      "product_handle": "tan-activating-body-oil-spf",
+      "sku": "CE0001992020"
+    },
+    {
       "id": 4024566186048,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
@@ -689,6 +779,16 @@ const ProductVariants = {
   ],
   "www.cocoandeve.com": [
     {
+      "id": 6906141147200,
+      "product_handle": "anti-aging-tanning-serum",
+      "sku": "CE0004122020"
+    },
+    {
+      "id": 6719477350464,
+      "product_handle": "tan-activating-body-oil-spf",
+      "sku": "CE0001992020"
+    },
+    {
       "id": 4024566186048,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",
       "sku": "CE0000072040"
@@ -760,6 +860,16 @@ const ProductVariants = {
     }
   ],
   "my.cocoandeve.com": [
+    {
+      "id": 7035486928969,
+      "product_handle": "anti-aging-tanning-serum",
+      "sku": "CE0004122020"
+    },
+    {
+      "id": 6900612956233,
+      "product_handle": "tan-activating-body-oil-spf",
+      "sku": "CE0001992020"
+    },
     {
       "id": 6708373127241,
       "product_handle": "sunny-honey-bali-bronzing-self-tan-set",

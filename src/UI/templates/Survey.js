@@ -175,9 +175,9 @@ const Survey = () => {
         const firstAnswered = firstQuestion.answers[lang].indexOf(firstAnswer) + 1;
 
         // check second answer
-        // const secondAnswer = currentAnswer[2];
-        // const secondQuestion = Questions[1];
-        // const secondAnswered = firstQuestion.answers.indexOf(secondAnswer) + 1;
+        const secondAnswer = currentAnswer[2];
+        const secondQuestion = Questions[1];
+        const secondAnswered = secondQuestion.answers[lang].indexOf(secondAnswer) + 1;
 
         // check third answer
         const thirdAnswer = currentAnswer[3];
@@ -187,7 +187,11 @@ const Survey = () => {
         let sku = 'CE0000036020'; // foam medium
         if (firstAnswered === 1) {
             if (thirdAnswered === 2) {
-                sku = ['eu.cocoandeve.com', 'de.cocoandeve.com', 'fr.cocoandeve.com'].includes(site) ? 'CE0000032020' : 'CE0000036020'; // foam medium
+                if (secondAnswered === 1 || secondAnswered === 3) { // second answer: Fair, Medium
+                    sku = 'CE0001992020'; // tan boosting body oil
+                } else {
+                    sku = ['eu.cocoandeve.com', 'de.cocoandeve.com', 'fr.cocoandeve.com'].includes(site) ? 'CE0000032020' : 'CE0000036020'; // foam medium
+                }
             } else if (thirdAnswered === 1) {
                 sku = 'CE0001512020'; // face tanning micromist
             } else {
@@ -218,7 +222,8 @@ const Survey = () => {
                 }
 
             } else if (thirdAnswered === 1) {
-                sku = 'CE0000432030'; // drops dark
+                // sku = 'CE0000432030'; // drops dark
+                sku = 'CE0004122020'; // anti aging tanning serum
             } else {
                 sku = 'CE0000072040'; // bali bronzing bundle dark
             }
