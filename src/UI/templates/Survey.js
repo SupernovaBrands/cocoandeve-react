@@ -189,7 +189,7 @@ const Survey = () => {
             if (thirdAnswered === 2) {
                 sku = ['eu.cocoandeve.com', 'de.cocoandeve.com', 'fr.cocoandeve.com'].includes(site) ? 'CE0000032020' : 'CE0000036020'; // foam medium
             } else if (thirdAnswered === 1) {
-                sku = 'CE0001512020'; // face tanning micromist
+                sku = ['int.cocoandeve.com'].includes(site) ? 'CE0000432030' : 'CE0001512020'; // face tanning micromist
             } else {
                 sku = 'CE0003532020'; // tan masters kit
             }
