@@ -34,19 +34,19 @@ const Questions = [
         answers: {
             en:[
             'Fair',
-            'Light',
+            // 'Light',
             'Medium',
             'Dark',
             ],
             de: [
                 'Sehr hell',
-                'Hell',
+                // 'Hell',
                 'Mittel',
                 'Dunkel',
             ],
             fr: [
                 'Très claire',
-                'Claire',
+                // 'Claire',
                 'Médium',
                 'Foncée',
             ],

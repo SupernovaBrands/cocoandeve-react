@@ -187,7 +187,7 @@ const Survey = () => {
         let sku = 'CE0000036020'; // foam medium
         if (firstAnswered === 1) {
             if (thirdAnswered === 2) {
-                if (secondAnswered === 1 || secondAnswered === 3) { // second answer: Fair, Medium
+                if (secondAnswered === 1 || secondAnswered === 2) { // second answer: Fair, Medium
                     sku = 'CE0001992020'; // tan boosting body oil
                 } else {
                     sku = ['eu.cocoandeve.com', 'de.cocoandeve.com', 'fr.cocoandeve.com'].includes(site) ? 'CE0000032020' : 'CE0000036020'; // foam medium

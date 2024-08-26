@@ -4,20 +4,22 @@ import { SurveyContext } from './QuestionBox';
 import { getCookie, setCookie } from '../../modules/Utils';
 
 const SingleChoiceImage = (props) => {
-    const { 
-        answerAction, 
-        currentQuestion, 
-        setDisable, 
+    const {
+        answerAction,
+        currentQuestion,
+        setDisable,
         width,
         currentAnswer,
     } = useContext(SurveyContext);
-    const { 
+    const {
         answers,
         images,
     } = props;
 
-    const dataRange = [12, 38, 63, 89];
-    const range = 12;
+    // const dataRange = [12, 38, 63, 89];
+    // const range = 12;
+    const dataRange = [16, 50, 84];
+    const range = 16;
     let timing = null;
 
     const changeHandle = ((index) => {
@@ -70,7 +72,7 @@ const SingleChoiceImage = (props) => {
         answerAction(defaultSelected);
         setDisable(false);
     });
-    
+
     useEffect(() => {
         if (currentSlide) setCookie(`slide-question-${currentQuestion}`, currentSlide);
         if (width && width > 992) {
@@ -81,12 +83,12 @@ const SingleChoiceImage = (props) => {
     }, [currentSlide, currentQuestion, width]);
 
     return (
-        <div className='single-choice row position-relative w-100'>
+        <div className={`single-choice row position-relative w-100 ${currentQuestion === 2 ? 'justify-content-center' : ''}`}>
             <input type="range" onChange={rangeChange()} className="form-range position-absolute single-choice__slide d-none d-lg-block" id="slide-selector" defaultValue={currentSlide}></input>
             {
                 answers.map((item,index) => {
                     return (
-                        <div key={index} className='col-6 col-lg-3 px-1 pb-sm-2'>
+                        <div key={index} className='col-6 col-lg-4 px-1 pb-sm-2'>
                             <figure onClick={changeHandle(index)}>
                                 <picture className={`${item === selectedItem && window.innerWidth < 992 ? 'border border-5 border-primary' : ''} rounded rounded-circle d-block m-auto single-choice__image`}>
                                     <source type="image/webp" srcSet={images[index].webp} />
